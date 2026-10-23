@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B1/B2 English Check-Up</title>
+<meta name="description" content="Free, friendly English check-ups for B1/B2 learners preparing for Aptis and Cambridge exams.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script src="api.js"></script>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: the student's dashboard. A "focus first" card on top, then one card per check-up with its result */
+:root {
+  --paper: #f5f7f6;
+  --sheet: #ffffff;
+  --ink: #1f2a30;
+  --ink-soft: #5a676e;
+  --rule: #dbe2e0;
+  --accent: #1f5f73;
+  --accent-soft: #e3eff1;
+  --start: #c4572e;
+  --start-soft: #fbece4;
+  --mid: #a8700f;
+  --ok: #2e7a50;
+  --ok-soft: #e4f2ea;
+  --font-display: "Literata", Georgia, "Times New Roman", serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #111a1d; --sheet: #19242a; --ink: #e6eeef; --ink-soft: #a2b1b6; --rule: #2c3a40;
+    --accent: #7fc0d1; --accent-soft: #1e3740; --start: #f0956f; --start-soft: #3a2620; --mid: #e2b25c;
+    --ok: #78c99a; --ok-soft: #1d3428; color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 56px;
+}
+.wrap { max-width: 720px; margin: 0 auto; display: grid; gap: 20px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 700; text-wrap: balance; margin: 0; line-height: 1.25; }
+h1 { font-size: clamp(1.7rem, 5vw, 2.2rem); }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1.05rem; }
+p { margin: 0; }
+.eyebrow { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 700; }
+.muted { color: var(--ink-soft); }
+.small { font-size: .9rem; }
+.intro { display: grid; gap: 8px; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; padding: 20px; display: grid; gap: 12px; min-width: 0; }
+.focus { border: 2px solid var(--start); background: var(--start-soft); }
+.focus .tag { color: var(--start); }
+.tag { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.cards { display: grid; gap: 14px; }
+.card-top { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; justify-content: space-between; }
+.status { font-size: .78rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; border-radius: 999px; padding: 2px 10px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+.status.done { background: var(--ok-soft); color: var(--ok); }
+.status.wait { background: transparent; border: 1px solid var(--rule); color: var(--ink-soft); }
+.score { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.score .num { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1; font-variant-numeric: tabular-nums; }
+.bar { height: 8px; background: var(--rule); border-radius: 999px; overflow: hidden; }
+.bar > span { display: block; height: 100%; border-radius: 999px; background: var(--accent); }
+.band { font-weight: 700; }
+.band.strong { color: var(--ok); }
+.band.nearly { color: var(--mid); }
+.band.practise { color: var(--start); }
+.criteria { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 20px; }
+@media (max-width: 520px) { .criteria { grid-template-columns: minmax(0, 1fr); } }
+.criterion { display: grid; gap: 4px; }
+.criterion .row { display: flex; justify-content: space-between; gap: 8px; font-size: .92rem; }
+.feedback { background: var(--paper); border-radius: 8px; padding: 12px 14px; white-space: pre-line; }
+.exam-tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 1px 8px; vertical-align: middle; white-space: nowrap; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+button, .btn {
+  font: inherit; font-weight: 700; border-radius: 8px; padding: 10px 18px; cursor: pointer; text-decoration: none; display: inline-block;
+  border: 1px solid var(--accent); background: var(--accent); color: var(--sheet);
+}
+button.ghost, .btn.ghost { background: transparent; color: var(--accent); }
+button:disabled { opacity: .5; cursor: progress; }
+button:focus-visible, .btn:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+input[type="text"] { font: inherit; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 8px; background: var(--paper); color: var(--ink); width: 100%; }
+label.field { display: grid; gap: 6px; font-weight: 700; }
+.link-box { font-size: .85rem; overflow-wrap: anywhere; user-select: all; background: var(--paper); border-radius: 6px; padding: 6px 10px; }
+.warn { color: var(--start); font-weight: 700; }
+</style>
+
+<div class="wrap">
+  <header class="intro">
+    <p class="eyebrow">English exam preparation</p>
+    <h1 id="hello">B1/B2 English Check-Up</h1>
+    <p id="intro-text">Three short check-ups show you and your teacher where to start, so your lessons focus on what will help you most for your <strong>Aptis</strong> or <strong>Cambridge</strong> exam. They are not tests you can pass or fail.</p>
+  </header>
+
+  <!-- First visit: ask the student's name and make their personal link -->
+  <section class="sheet" id="register" hidden>
+    <h2>Welcome! What's your name?</h2>
+    <p class="muted">Type your first name and the first letter of your last name. We'll make you a personal page to keep all your results in one place.</p>
+    <label class="field" for="reg-name">Your name
+      <input type="text" id="reg-name" autocomplete="name" placeholder="e.g. Maria L">
+    </label>
+    <div class="btn-row"><button type="button" id="reg-go" disabled>Make my page</button></div>
+    <p id="reg-status" aria-live="polite"></p>
+  </section>
+
+  <p class="muted" id="loading-note" hidden>Loading your page&hellip;</p>
+
+  <!-- Dashboard -->
+  <div id="dash" hidden style="display:grid;gap:20px">
+    <section class="sheet focus" id="focus">
+      <span class="tag">Focus first</span>
+      <p class="muted">Loading your results&hellip;</p>
+    </section>
+
+    <div class="cards" id="cards"></div>
+
+    <section class="sheet">
+      <h3>Your personal link</h3>
+      <p class="muted small">Bookmark this page, or save the link, so you can come back to your results on any device.</p>
+      <p class="link-box" id="my-link"></p>
+      <div class="btn-row"><button type="button" class="ghost" id="copy-link">Copy my link</button><span class="small" id="copy-status" aria-live="polite"></span></div>
+    </section>
+  </div>
+</div>
+
+<script>
+const BASE = SITE;
+const STUDENT = STUDENT_CODE;
+let STUDENT_NAME = "";
+let SENT = "";
+const LINK = (test) => BASE + (test ? test + ".html" : "") + "?student=" + encodeURIComponent(STUDENT);
+const SECTIONS = [
+  { key: "grammar", label: "Grammar", info: "30 questions, about 15 minutes. Tenses, articles, conditionals and more." },
+  { key: "vocab", label: "Vocabulary", info: "24 questions, about 12 minutes. Collocations, phrasal verbs, word formation and more." },
+  { key: "writing", label: "Writing", info: "Two short texts in the style of your exam. Bill marks them and sends you feedback." }
+];
+const CRITERIA = [
+  { key: "content", name: "Content", help: "Did you answer every part of the task?" },
+  { key: "communicative", name: "Communication", help: "Is the style right for the reader?" },
+  { key: "organisation", name: "Organisation", help: "Is it clear, with paragraphs and linking words?" },
+  { key: "language", name: "Language", help: "Range and accuracy of grammar and vocabulary." }
+];
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const pctOf = (s) => s.key === "writing" ? s.data.total / 20 : s.data.score / s.data.total;
+const bandOf = (p) => p >= 0.85 ? ["Strong", "strong"] : p >= 0.6 ? ["Nearly there", "nearly"] : ["Let's practise", "practise"];
+const examLabel = (note) => note === "Both" ? "Cambridge + Aptis" : note && note.indexOf("Student") === 0 ? "" : note;
+
+function bar(p) { const b = el("div", "bar"); const s = el("span"); s.style.width = Math.round(p * 100) + "%"; b.append(s); return b; }
+
+// The weakest area inside a grammar or vocabulary result.
+function weakestArea(d) {
+  if (d.plan && d.plan.length) {
+    const a = d.areas.find((x) => String(d.plan[0]).toLowerCase().indexOf(x.name.toLowerCase().slice(0, 12)) === 0);
+    if (a) return a;
+  }
+  return d.areas.slice().sort((x, y) => x.score - y.score)[0];
+}
+function weakestCriterion(w) {
+  return CRITERIA.slice().sort((x, y) => Number(w.scores[x.key]) - Number(w.scores[y.key]))[0];
+}
+
+function renderFocus(data) {
+  const box = $("focus"); box.textContent = "";
+  box.append(el("span", "tag", "Focus first"));
+  const done = SECTIONS.filter((s) => s.key === "writing" ? data.writing && data.writing.marked : data[s.key])
+    .map((s) => Object.assign({}, s, { data: data[s.key] }));
+  const notDone = SECTIONS.filter((s) => !(s.key === "writing" ? data.writing : data[s.key]));
+  if (!done.length) {
+    box.append(el("h2", null, data.writing ? "Your writing is with Bill" : "Start with any check-up"));
+    box.append(el("p", null, data.writing
+      ? "While you wait for your writing feedback, try the Grammar or Vocabulary check-up."
+      : "Each one takes 15 minutes or less. When you've done one, this box will show you exactly what to practise first."));
+    return;
+  }
+  const order = { grammar: 0, vocab: 1, writing: 2 };
+  done.sort((a, b) => (pctOf(a) - pctOf(b)) || (order[a.key] - order[b.key]));
+  const f = done[0];
+  const p = pctOf(f);
+  box.append(el("h2", null, f.label));
+  if (f.key === "writing") {
+    const c = weakestCriterion(f.data);
+    box.append(el("p", null, `Your writing score was ${f.data.total} out of 20 (${Math.round(p * 100)}%), ` + (done.length > 1 ? "your lowest section so far." : "your only marked section so far.")));
+    const start = el("p"); start.append(el("strong", null, "Start with: "), f.data.focus ? f.data.focus : `${c.name}. ${c.help}`);
+    box.append(start);
+  } else {
+    const a = weakestArea(f.data);
+    box.append(el("p", null, `You scored ${f.data.score} out of ${f.data.total} (${Math.round(p * 100)}%), ` + (done.length > 1 ? "your lowest section so far." : "your only completed section so far.")));
+    const start = el("p"); start.append(el("strong", null, "Start with: "), `${a.name} (${a.score} out of 3) `);
+    const lbl = examLabel(a.note); if (lbl) start.append(el("span", "exam-tag", lbl));
+    box.append(start);
+    const go = el("a", "btn", `Open my ${f.label} results`); go.href = LINK(f.key); go.target = "_top";
+    const row = el("div", "btn-row"); row.append(go); box.append(row);
+  }
+  if (notDone.length) box.append(el("p", "muted small", "Not done yet: " + notDone.map((s) => s.label).join(", ") + ". Complete them for the full picture."));
+}
+
+function sectionCard(s, data) {
+  const card = el("section", "sheet");
+  const top = el("div", "card-top"); top.append(el("h2", null, s.label));
+  const d = data[s.key];
+  const go = el("a", "btn"); go.target = "_top"; go.href = LINK(s.key);
+  if (s.key !== "writing") {
+    if (!d) {
+      top.append(el("span", "status", "Not started"));
+      card.append(top, el("p", "muted", s.info));
+      go.textContent = "Start " + s.label;
+    } else {
+      const p = d.score / d.total, [bandText, bandCls] = bandOf(p);
+      top.append(el("span", "status done", "Done " + d.date));
+      const sc = el("div", "score"); sc.append(el("span", "num", `${d.score}/${d.total}`), el("span", "band " + bandCls, bandText));
+      const a = weakestArea(d);
+      const st = el("p"); st.append(el("strong", null, "Start here: "), `${a.name} `);
+      const lbl = examLabel(a.note); if (lbl) st.append(el("span", "exam-tag", lbl));
+      const strong = d.areas.filter((x) => x.score === 3).map((x) => x.name);
+      card.append(top, sc, bar(p), st);
+      if (strong.length) card.append(el("p", "muted small", "Strong areas: " + strong.join(", ")));
+      go.textContent = "See my results"; go.className = "btn ghost";
+    }
+  } else {
+    if (!d) {
+      top.append(el("span", "status", "Not started"));
+      card.append(top, el("p", "muted", s.info));
+      go.textContent = "Start Writing";
+    } else if (!d.marked) {
+      top.append(el("span", "status wait", "Waiting for feedback"));
+      card.append(top, el("p", null, `You sent your ${d.exam} writing on ${d.date}. Bill will mark it and your feedback will appear here.`));
+      go.textContent = "Write again"; go.className = "btn ghost";
+    } else {
+      const p = d.total / 20, [bandText, bandCls] = bandOf(p);
+      top.append(el("span", "status done", "Marked"));
+      const sc = el("div", "score"); sc.append(el("span", "num", `${d.total}/20`), el("span", "band " + bandCls, bandText), el("span", "muted small", d.exam));
+      const crit = el("div", "criteria");
+      CRITERIA.forEach((c) => {
+        const v = Number(d.scores[c.key]) || 0;
+        const box = el("div", "criterion");
+        const row = el("div", "row"); row.append(el("span", null, c.name), el("strong", null, `${v}/5`));
+        box.append(row, bar(v / 5)); crit.append(box);
+      });
+      card.append(top, sc, bar(p), crit);
+      if (d.feedback) { card.append(el("h3", null, "Feedback from Bill"), el("div", "feedback", d.feedback)); }
+      if (d.focus) { const f = el("p"); f.append(el("strong", null, "Work on next: "), d.focus); card.append(f); }
+      go.textContent = "Write again"; go.className = "btn ghost";
+    }
+  }
+  const row = el("div", "btn-row"); row.append(go); card.append(row);
+  return card;
+}
+
+function renderDashboard(data) {
+  const name = data.name || STUDENT_NAME;
+  if (name) $("hello").textContent = `Welcome back, ${name}!`;
+  const none = !data.grammar && !data.vocab && !data.writing;
+  $("hello").textContent = name ? (none ? `Welcome, ${name}!` : `Welcome back, ${name}!`) : $("hello").textContent;
+  $("intro-text").textContent = none
+    ? (SENT ? `Bill made this page for you on ${SENT}. ` : "") + "Pick any section below to start. Each one takes about 15 minutes, and your results will appear here."
+    : "Here are your results so far, and where to start.";
+  renderFocus(data);
+  const cards = $("cards"); cards.textContent = "";
+  SECTIONS.forEach((s) => cards.append(sectionCard(s, data)));
+}
+
+function startDashboard() {
+  $("dash").hidden = false;
+  $("my-link").textContent = LINK("");
+  renderDashboard({ name: STUDENT_NAME, grammar: null, vocab: null, writing: null });
+  $("focus").querySelector("h2").textContent = "Loading your results…";
+  google.script.run
+    .withSuccessHandler(renderDashboard)
+    .withFailureHandler(() => {
+      const box = $("focus"); box.textContent = "";
+      box.append(el("span", "tag", "Focus first"), el("p", "warn", "Your results couldn't load just now. Please reload the page in a minute."));
+    })
+    .getDashboard(STUDENT);
+}
+
+// Name form: makes (or completes) the student's personal link.
+$("reg-name").addEventListener("input", (e) => { $("reg-go").disabled = e.target.value.trim().length < 2; });
+$("reg-go").addEventListener("click", () => {
+  const name = $("reg-name").value.trim();
+  $("reg-go").disabled = true;
+  $("reg-status").textContent = "Making your page…";
+  google.script.run
+    .withSuccessHandler((code) => {
+      const url = BASE + "?student=" + encodeURIComponent(code);
+      $("reg-status").textContent = "";
+      const msg = el("p"); msg.append("Your page is ready. ");
+      const a = el("a", "btn", "Open my page"); a.href = url; a.target = "_top";
+      $("reg-status").append(msg, a);
+      try { window.top.location.href = url; } catch (e) {}
+    })
+    .withFailureHandler(() => { $("reg-status").textContent = "Something went wrong. Please try again."; $("reg-go").disabled = false; })
+    .registerStudent(name, STUDENT);
+});
+
+$("copy-link").addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText(LINK("")); $("copy-status").textContent = "Copied!"; }
+  catch (e) { const r = document.createRange(); r.selectNodeContents($("my-link")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); $("copy-status").textContent = "Selected. Press Ctrl+C (or Cmd+C) to copy."; }
+});
+
+(async () => {
+  if (STUDENT) $("loading-note").hidden = false;
+  const info = await loadInfo(); STUDENT_NAME = info.name; SENT = info.sent;
+  $("loading-note").hidden = true;
+  if (STUDENT && STUDENT_NAME) startDashboard();
+  else $("register").hidden = false;
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B1/B2 Vocabulary Check-Up</title>
+<meta name="description" content="Free, friendly English check-ups for B1/B2 learners preparing for Aptis and Cambridge exams.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script src="api.js"></script>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: one calm column; one question at a time; results lead with strengths, then a single "start here" card */
+:root {
+  --paper: #f5f7f6;
+  --sheet: #ffffff;
+  --ink: #1f2a30;
+  --ink-soft: #5a676e;
+  --rule: #dbe2e0;
+  --accent: #1f5f73;
+  --accent-soft: #e3eff1;
+  --start: #c4572e;
+  --start-soft: #fbece4;
+  --ok: #2e7a50;
+  --ok-soft: #e4f2ea;
+  --font-display: "Literata", Georgia, "Times New Roman", serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #111a1d; --sheet: #19242a; --ink: #e6eeef; --ink-soft: #a2b1b6;
+    --rule: #2c3a40; --accent: #7fc0d1; --accent-soft: #1e3740;
+    --start: #f0956f; --start-soft: #3a2620; --ok: #78c99a; --ok-soft: #1d3428; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #111a1d; --sheet: #19242a; --ink: #e6eeef; --ink-soft: #a2b1b6;
+  --rule: #2c3a40; --accent: #7fc0d1; --accent-soft: #1e3740;
+  --start: #f0956f; --start-soft: #3a2620; --ok: #78c99a; --ok-soft: #1d3428; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 56px;
+}
+.wrap { max-width: 640px; margin: 0 auto; display: grid; gap: 20px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 700; text-wrap: balance; margin: 0; line-height: 1.25; }
+h1 { font-size: clamp(1.7rem, 5vw, 2.2rem); }
+h2 { font-size: 1.35rem; }
+h3 { font-size: 1.15rem; }
+p { margin: 0; }
+.eyebrow { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 700; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; padding: 24px; display: grid; gap: 16px; min-width: 0; }
+.muted { color: var(--ink-soft); }
+.calm { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.calm li { position: relative; padding-left: 20px; }
+.calm li::before { content: ""; position: absolute; left: 0; top: .6em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+label.field { display: grid; gap: 6px; font-weight: 700; }
+input[type="text"] {
+  font: inherit; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 8px;
+  background: var(--paper); color: var(--ink); width: 100%;
+}
+input[type="text"]:focus-visible, button:focus-visible, .option:focus-within, a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+button, .btn {
+  font: inherit; font-weight: 700; border-radius: 8px; padding: 10px 18px; cursor: pointer;
+  border: 1px solid var(--accent); background: var(--accent); color: var(--sheet); text-decoration: none; display: inline-block;
+}
+button.ghost, .btn.ghost { background: transparent; color: var(--accent); }
+button:disabled { opacity: .45; cursor: not-allowed; }
+
+/* Quiz */
+.progress { display: grid; gap: 6px; }
+.bar { height: 6px; background: var(--rule); border-radius: 999px; overflow: hidden; }
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0; transition: width .25s ease; }
+.qnum { font-variant-numeric: tabular-nums; }
+.cheer { background: var(--accent-soft); color: var(--accent); border-radius: 8px; padding: 8px 12px; font-weight: 700; }
+.prompt { font-family: var(--font-display); font-size: 1.3rem; font-weight: 500; line-height: 1.45; }
+.prompt .gap { display: inline-block; min-width: 3.2em; border-bottom: 2px solid var(--ink-soft); }
+.options { display: grid; gap: 8px; }
+.option {
+  display: flex; gap: 12px; align-items: center; padding: 12px 14px; border: 1px solid var(--rule);
+  border-radius: 8px; cursor: pointer; background: var(--paper);
+}
+.option:hover { border-color: var(--accent); }
+.option input { accent-color: var(--accent); width: 18px; height: 18px; margin: 0; flex: none; }
+.option.chosen { border-color: var(--accent); background: var(--accent-soft); }
+.option.unsure { border-style: dashed; color: var(--ink-soft); }
+
+/* Results */
+.hello { display: grid; gap: 8px; }
+.strengths { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.strengths li { background: var(--ok-soft); color: var(--ok); border-radius: 999px; padding: 4px 12px; font-weight: 700; font-size: .92rem; }
+.start-card { border: 2px solid var(--start); background: var(--start-soft); border-radius: 12px; padding: 20px; display: grid; gap: 14px; min-width: 0; }
+.start-card .tag { color: var(--start); font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.label { font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 2px; }
+.ask { font-style: italic; }
+.fix { display: grid; gap: 4px; background: var(--sheet); border-radius: 8px; padding: 10px 12px; }
+.fix .was { color: var(--ink-soft); text-decoration: line-through; }
+.fix .now { color: var(--ok); font-weight: 700; }
+.plan { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.plan li { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 12px; padding-bottom: 16px; position: relative; }
+.plan li:not(:last-child)::after { content: ""; position: absolute; left: 15px; top: 32px; bottom: 0; width: 2px; background: var(--rule); }
+.plan .step { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; background: var(--accent-soft); color: var(--accent); font-variant-numeric: tabular-nums; }
+.plan li:first-child .step { background: var(--start); color: var(--sheet); }
+.plan .when { font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
+details { border: 1px solid var(--rule); border-radius: 8px; padding: 10px 14px; background: var(--paper); }
+details[open] { padding-bottom: 14px; }
+summary { cursor: pointer; font-weight: 700; }
+details > div { display: grid; gap: 10px; margin-top: 10px; }
+.areas { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.area { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-items: center; }
+.dots { display: flex; gap: 4px; }
+.dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--rule); }
+.dot.on { background: var(--ok); border-color: var(--ok); }
+.area .chip { grid-column: 1 / -1; justify-self: start; font-size: .78rem; color: var(--ink-soft); }
+textarea {
+  width: 100%; min-height: 200px; font: .9rem/1.45 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  padding: 12px; border: 1px solid var(--rule); border-radius: 8px; background: var(--paper); color: var(--ink); resize: vertical;
+}
+.email { font-weight: 700; user-select: all; overflow-wrap: anywhere; }
+.practice-sheet { display: grid; gap: 10px; margin-top: 18px; }
+.practice { display: grid; gap: 12px; }
+.pq { border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; background: var(--sheet); display: grid; gap: 10px; min-width: 0; }
+.pq-q { font-size: 1.05rem; line-height: 1.5; }
+.pq-q .gap { display: inline-block; min-width: 2.6em; border-bottom: 2px solid var(--ink-soft); }
+.pq-n { font-weight: 700; color: var(--ink-soft); margin-right: 6px; font-variant-numeric: tabular-nums; }
+.pq-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.pq-opt { background: var(--paper); color: var(--ink); border: 1px solid var(--rule); font-weight: 400; padding: 8px 14px; }
+.pq-opt:hover:not(:disabled) { border-color: var(--accent); }
+.pq-opt:disabled { cursor: default; opacity: 1; }
+.pq-opt.right { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); font-weight: 700; }
+.pq-opt.wrong { background: var(--start-soft); border-color: var(--start); color: var(--start); text-decoration: line-through; }
+.pq-why { font-size: .95rem; padding: 8px 10px; border-radius: 8px; background: var(--start-soft); }
+.pq-why.ok { background: var(--ok-soft); }
+.tally { font-weight: 700; color: var(--accent); }
+.sent-note { font-weight: 700; color: var(--ink-soft); }
+.home-link { display: inline-block; margin-bottom: 10px; color: var(--accent); font-weight: 700; text-decoration: none; }
+.home-link:hover { text-decoration: underline; }
+.exam-tag { display: inline-block; font-family: var(--font-body); font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 1px 8px; vertical-align: middle; white-space: nowrap; }
+.sent-note.ok { color: var(--ok); }
+.sent-note.warn { color: var(--start); }
+.status { color: var(--ok); font-weight: 700; min-height: 1.5em; }
+.send-steps { margin: 0; padding-left: 1.4em; display: grid; gap: 6px; }
+@media (prefers-reduced-motion: reduce) { .bar > span { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <a class="home-link" id="home-link" href="#" target="_top">&larr; All check-ups</a>
+    <p class="eyebrow">English exam preparation</p>
+    <h1>B1/B2 Vocabulary Check-Up</h1>
+  </header>
+
+  <!-- Start screen -->
+  <section class="sheet" id="start">
+    <p><strong>This is not a test you can pass or fail.</strong> It helps you and your teacher find the best place to start, so your lessons focus on what will help you most.</p>
+    <ul class="calm">
+      <li>24 short questions, about 12 minutes.</li>
+      <li>Each area is marked with the exam it matters most for: <span class="exam-tag">Cambridge</span>, <span class="exam-tag">Aptis</span> or <span class="exam-tag">Both</span>.</li>
+      <li>If you don't know an answer, choose <strong>"I'm not sure"</strong>. That's helpful, and much better than guessing.</li>
+      <li>Please don't use a dictionary or translator. We want to see what you know today.</li>
+      <li>You can go back and change your answers. If you close the page, your answers are saved.</li>
+    </ul>
+    <label class="field" for="student-name">Your first name
+      <input type="text" id="student-name" autocomplete="given-name" placeholder="e.g. Maria">
+    </label>
+    <div class="btn-row">
+      <button type="button" id="begin" disabled>Start</button>
+    </div>
+  </section>
+
+  <!-- Question screen -->
+  <section class="sheet" id="quiz" hidden>
+    <div class="progress">
+      <p class="eyebrow qnum" id="qcount">Question 1 of 24</p>
+      <div class="bar"><span id="qbar"></span></div>
+    </div>
+    <p class="cheer" id="cheer" hidden></p>
+    <p class="prompt" id="qprompt"></p>
+    <div class="options" id="qoptions" role="radiogroup" aria-labelledby="qprompt"></div>
+    <div class="btn-row">
+      <button type="button" class="ghost" id="back">Back</button>
+      <button type="button" id="next" disabled>Next</button>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="sheet" id="results" hidden>
+    <div class="hello">
+      <p class="eyebrow">Your results</p>
+      <h2 id="hello-title">Well done!</h2>
+      <p id="hello-text"></p>
+      <p class="sent-note" id="send-status" aria-live="polite"></p>
+    </div>
+    <div class="hello">
+      <h3>What you already do well</h3>
+      <ul class="strengths" id="strengths"></ul>
+      <p class="muted" id="strengths-note"></p>
+    </div>
+  </section>
+
+  <section class="sheet" id="start-here" hidden>
+    <div class="hello">
+      <h2>Your starting point</h2>
+      <p class="muted">You don't need to fix everything at once. Start with this one area. When it feels easy, move to the next.</p>
+    </div>
+    <div id="start-card"></div>
+  </section>
+
+  <section class="sheet" id="plan-box" hidden>
+    <h2>Your plan</h2>
+    <ol class="plan" id="plan"></ol>
+    <div id="later"></div>
+  </section>
+
+  <section class="sheet" id="all-box" hidden>
+    <details>
+      <summary>See all eight areas</summary>
+      <div>
+        <p class="muted">Each dot is one correct answer out of three.</p>
+        <ul class="areas" id="areas"></ul>
+      </div>
+    </details>
+  </section>
+
+  <section class="sheet" id="send" hidden>
+    <div id="send-fallback" hidden>
+      <h2>Your results didn't send</h2>
+      <p>Please try again. If it still doesn't work, copy your results and send them to Bill in your Preply chat or by email to <span class="email">wmackenz@gmail.com</span>.</p>
+      <div class="btn-row">
+        <button type="button" id="retry">Try again</button>
+        <button type="button" class="ghost" id="copy">Copy my results</button>
+      </div>
+      <p class="status" id="copy-status" aria-live="polite"></p>
+      <details>
+        <summary>Show my results as text</summary>
+        <div><textarea id="summary" readonly aria-label="Results"></textarea></div>
+      </details>
+    </div>
+    <div class="btn-row">
+      <a class="btn" id="next-test" href="#" target="_top">Next: Grammar Check-Up</a>
+      <a class="btn ghost" id="home-link-2" href="#" target="_top">All check-ups</a>
+      <button type="button" class="ghost" id="restart">Take the test again</button>
+    </div>
+  </section>
+</div>
+
+<script>
+const TEACHER_EMAIL = "wmackenz@gmail.com";
+const UNSURE = -1;
+
+const TRAPS = {
+  1: { name: "Collocations (make, do, take)", exam: "Both", worksheet: "",
+       ask: "Which word do English speakers naturally put with this one?",
+       rule: "Some words go together by habit, not logic. We make a decision, a mistake and money. We do homework, exercise and a favour. We say heavy traffic, heavy rain and strong coffee.",
+       tip: "Learn words in pairs, not alone: write down \"make a decision\", not just \"decision\"." },
+  2: { name: "Confusing word pairs", exam: "Both", worksheet: "",
+       ask: "Which of these two similar words fits the meaning exactly?",
+       rule: "Some pairs look alike but mean different things. Lend = give for a time; borrow = take for a time. Bring = towards here; take = away from here. Steal a thing; rob a person or a place. Boring describes the thing; bored describes how you feel.",
+       tip: "Keep a short list of the pairs you mix up, and test yourself once a week." },
+  3: { name: "Phrasal verbs", exam: "Cambridge", worksheet: "",
+       ask: "What does the whole phrase mean, not just the verb?",
+       rule: "A phrasal verb is a verb plus a small word (up, out, on, off, after). Together they have a new meaning. Give up = stop. Look after = take care of. Run out of = have none left. Put off = delay.",
+       tip: "Learn each phrasal verb in a full sentence, and group them by topic: travel, work, home." },
+  4: { name: "Word formation", exam: "Cambridge", worksheet: "",
+       ask: "Does the gap need a noun, a verb, an adjective or an adverb?",
+       rule: "Look at the words around the gap. After a, the or my, you usually need a noun (success). After be or before a noun, you need an adjective (successful). To say how something is done, you need an adverb, often ending in -ly (successfully). Check if the meaning is negative: un-, in-, dis-, -less.",
+       tip: "When you learn a new word, write down its family: succeed, success, successful, successfully." },
+  5: { name: "Words + prepositions", exam: "Both", worksheet: "",
+       ask: "Which small word always comes after this word?",
+       rule: "Many verbs and adjectives are always followed by the same preposition: interested in, good at, afraid of, depend on, listen to, wait for, responsible for, married to.",
+       tip: "Learn the word and its preposition together: \"interested in\", never just \"interested\"." },
+  6: { name: "Formal and informal words", exam: "Both", worksheet: "",
+       ask: "Who will read this: a friend or an official?",
+       rule: "Formal writing uses more formal words: receive (not get), purchase (not buy), require (not need), assist (not help), inform (not tell), cancel (not call off). With friends, short everyday words are better.",
+       tip: "In a formal email, check every verb: is there a more formal word you could use?" },
+  7: { name: "Linking words", exam: "Both", worksheet: "",
+       ask: "Am I adding, contrasting, giving a reason, or giving a result?",
+       rule: "Adding: and, also, in addition. Contrast: but, however, although, despite. Reason: because, since. Result: so, therefore, as a result. Although is followed by a full sentence; despite is followed by a noun or -ing.",
+       tip: "Say \"despite the rain\" or \"although it was raining\", never \"despite it was raining\"." },
+  8: { name: "Word meaning and synonyms", exam: "Aptis", worksheet: "",
+       ask: "What does this word mean here? What other words in the sentence help?",
+       rule: "Aptis tests vocabulary with synonyms (words with the same meaning), opposites and short definitions. Read the whole sentence: the other words are your clues. Many words have more than one meaning.",
+       tip: "When you learn a word, learn one synonym with it: big = large, start = begin, quick = fast." }
+};
+
+const PRACTICE = {
+  1: [
+    { q: "I ___ my homework every evening.", o: ["make", "do", "take"], a: 1, why: "We do homework, housework and exercise." },
+    { q: "She ___ a lot of money in her new job.", o: ["does", "takes", "makes"], a: 2, why: "We make money, make a decision and make a mistake." },
+    { q: "I like my coffee very ___.", o: ["strong", "heavy", "hard"], a: 0, why: "Coffee and tea are strong, not heavy." },
+    { q: "We had ___ rain all weekend.", o: ["strong", "heavy", "big"], a: 1, why: "We say heavy rain and heavy traffic." },
+    { q: "Let's ___ a break for ten minutes.", o: ["make", "do", "take"], a: 2, why: "We take a break, take a photo and take a seat." },
+    { q: "I'll ___ you a call tomorrow.", o: ["give", "make", "do"], a: 0, why: "We give someone a call." },
+    { q: "He ___ a real effort to arrive early.", o: ["did", "made", "took"], a: 1, why: "We make an effort." },
+    { q: "I always ___ exercise in the morning.", o: ["make", "play", "do"], a: 2, why: "We do exercise. (We play sports with a ball: play tennis.)" }
+  ],
+  2: [
+    { q: "My brother ___ me his car for the weekend.", o: ["lent", "borrowed", "rented"], a: 0, why: "Lend = give for a short time. He gave me his car." },
+    { q: "Could you ___ me how to get to the station?", o: ["say", "tell", "speak"], a: 1, why: "Tell needs a person after it: tell me." },
+    { q: "She ___ that she was tired.", o: ["told", "talked", "said"], a: 2, why: "Say doesn't need a person after it: she said that..." },
+    { q: "Don't forget to ___ your passport to the airport.", o: ["bring", "take", "fetch"], a: 1, why: "You are going away from here to the airport, so take." },
+    { q: "Someone ___ my wallet on the train.", o: ["robbed", "stole", "borrowed"], a: 1, why: "You steal a thing (a wallet). You rob a person or a place." },
+    { q: "Can I ___ some money until Friday?", o: ["borrow", "lend", "owe"], a: 0, why: "Borrow = take for a short time. I take the money from you." },
+    { q: "The film was very ___. I nearly fell asleep.", o: ["bored", "boring", "bore"], a: 1, why: "-ing describes the thing (a boring film). -ed describes how you feel (I was bored)." },
+    { q: "I'm really ___ in history.", o: ["interesting", "interest", "interested"], a: 2, why: "-ed describes how a person feels: I'm interested." }
+  ],
+  3: [
+    { q: "The meeting has been ___ until next week.", o: ["put on", "put off", "put out"], a: 1, why: "Put off = delay, move to a later time." },
+    { q: "Can you ___ the lights when you leave?", o: ["turn off", "turn up", "turn over"], a: 0, why: "Turn off = stop a machine or light." },
+    { q: "If you don't know a word, ___ it ___ in a dictionary.", o: ["look / after", "look / up", "look / for"], a: 1, why: "Look up = find information in a book or online." },
+    { q: "I'm ___ my keys. Have you seen them?", o: ["looking after", "looking up", "looking for"], a: 2, why: "Look for = try to find." },
+    { q: "She ___ her mother. They have the same eyes.", o: ["takes after", "takes up", "takes off"], a: 0, why: "Take after = look or act like an older family member." },
+    { q: "The plane ___ at 6 a.m.", o: ["took up", "took off", "took after"], a: 1, why: "Take off = leave the ground (for planes)." },
+    { q: "Please ___ this form and give it back to me.", o: ["fill up", "fill in", "fill on"], a: 1, why: "Fill in = write information in a form. (Fill up = make full.)" },
+    { q: "I ___ an old friend in town yesterday.", o: ["ran out of", "ran over", "ran into"], a: 2, why: "Run into = meet someone by chance." }
+  ],
+  4: [
+    { q: "He answered the question ___.", o: ["correct", "correctly", "correction"], a: 1, why: "It describes how he answered, so you need an adverb: correctly." },
+    { q: "Thank you for all your ___.", o: ["helpful", "helpfully", "help"], a: 2, why: "After your, you need a noun: help." },
+    { q: "The instructions were very ___ to understand.", o: ["easy", "easily", "ease"], a: 0, why: "After be (were very), you need an adjective: easy." },
+    { q: "I'm sorry, the manager is ___ today.", o: ["available", "unavailable", "availability"], a: 1, why: "\"I'm sorry\" tells us the meaning is negative: unavailable." },
+    { q: "There has been a big ___ in prices.", o: ["increasing", "increased", "increase"], a: 2, why: "After a big, you need a noun: an increase." },
+    { q: "Our ___ time is 10 a.m.", o: ["arrive", "arrival", "arriving"], a: 1, why: "After our, you need a noun: arrival." },
+    { q: "She's very ___ about her new job.", o: ["excite", "excited", "exciting"], a: 1, why: "It describes how she feels: excited." },
+    { q: "It was ___ of him to forget your birthday.", o: ["thoughtful", "thought", "thoughtless"], a: 2, why: "Forgetting a birthday is a bad thing, so the negative: thoughtless." }
+  ],
+  5: [
+    { q: "I'm afraid ___ spiders.", o: ["from", "of", "with"], a: 1, why: "Afraid of." },
+    { q: "We're waiting ___ the bus.", o: ["for", "to", "on"], a: 0, why: "Wait for." },
+    { q: "Please listen ___ me.", o: ["at", "for", "to"], a: 2, why: "Listen to." },
+    { q: "She is married ___ a doctor.", o: ["with", "to", "by"], a: 1, why: "Married to (not with)." },
+    { q: "Who is responsible ___ this project?", o: ["for", "of", "about"], a: 0, why: "Responsible for." },
+    { q: "I'm worried ___ my exam.", o: ["for", "of", "about"], a: 2, why: "Worried about." },
+    { q: "Thank you ___ your help.", o: ["to", "for", "of"], a: 1, why: "Thank you for." },
+    { q: "He apologised ___ being late.", o: ["for", "of", "about"], a: 0, why: "Apologise for." }
+  ],
+  6: [
+    { q: "Formal email: Could you ___ me with my application?", o: ["help out", "assist", "give a hand to"], a: 1, why: "Assist is the formal word for help." },
+    { q: "Formal email: I would like to ___ two tickets.", o: ["grab", "pick up", "purchase"], a: 2, why: "Purchase is the formal word for buy." },
+    { q: "Formal notice: All applicants ___ a valid passport.", o: ["require", "gotta have", "need to have got"], a: 0, why: "Require is the formal word for need." },
+    { q: "Message to a friend: ___ you at the café at six!", o: ["I shall meet", "See", "I look forward to meeting"], a: 1, why: "With a friend, short everyday words are best: See you!" },
+    { q: "Formal email: ___, the hotel room was very noisy.", o: ["But", "Anyway", "However"], a: 2, why: "However is more formal than But at the start of a sentence." },
+    { q: "Formal email: I am writing to ___ about the course dates.", o: ["enquire", "check out", "ask around"], a: 0, why: "Enquire is the formal word for ask." },
+    { q: "Formal notice: Tomorrow's meeting has been ___.", o: ["called off", "cancelled", "scrapped"], a: 1, why: "Cancelled is the formal word. Called off is informal." },
+    { q: "Formal email: Please ___ me if you require further information.", o: ["give me a shout", "contact", "drop"], a: 1, why: "Contact is the formal choice. Give me a shout is very informal." }
+  ],
+  7: [
+    { q: "I was tired, ___ I finished the report.", o: ["because", "so", "but"], a: 2, why: "The two ideas contrast, so use but." },
+    { q: "She stayed at home ___ she was ill.", o: ["because", "although", "despite"], a: 0, why: "Being ill is the reason, so use because." },
+    { q: "The hotel was expensive. ___, it was very comfortable.", o: ["Therefore", "However", "Because"], a: 1, why: "The second sentence contrasts with the first, so use however." },
+    { q: "___ being tired, he kept working.", o: ["Although", "However", "Despite"], a: 2, why: "Despite is followed by -ing or a noun: despite being tired." },
+    { q: "It was snowing heavily, ___ the flight was cancelled.", o: ["so", "although", "despite"], a: 0, why: "The cancellation is a result of the snow, so use so." },
+    { q: "The course is very useful. ___, it is free.", o: ["However", "In addition", "Although"], a: 1, why: "We're adding another good point, so use in addition." },
+    { q: "___ the high price, many people bought it.", o: ["Although", "Because", "In spite of"], a: 2, why: "In spite of (like despite) is followed by a noun: the high price." },
+    { q: "He passed the exam ___ he didn't study much.", o: ["although", "despite", "so"], a: 0, why: "Although is followed by a full sentence: he didn't study much." }
+  ],
+  8: [
+    { q: "Which word means the same as \"purchase\"?", o: ["sell", "buy", "borrow"], a: 1, why: "Purchase = buy." },
+    { q: "Which word is the opposite of \"cheap\"?", o: ["small", "easy", "expensive"], a: 2, why: "Cheap means low in price. The opposite is expensive." },
+    { q: "A place where you can borrow books for free is a ___.", o: ["library", "bookshop", "school"], a: 0, why: "A library lends books. A bookshop sells them." },
+    { q: "If something is \"essential\", it is ___.", o: ["quite nice", "very necessary", "not important"], a: 1, why: "Essential = completely necessary." },
+    { q: "Which word means the same as \"enormous\"?", o: ["tiny", "quiet", "huge"], a: 2, why: "Enormous = huge, very big." },
+    { q: "Someone who is \"reliable\" ___.", o: ["can be trusted", "is often late", "talks a lot"], a: 0, why: "Reliable = you can trust or depend on them." },
+    { q: "Which word means the same as \"rapidly\"?", o: ["slowly", "quickly", "carefully"], a: 1, why: "Rapidly = quickly." },
+    { q: "A person who repairs cars is a ___.", o: ["chef", "plumber", "mechanic"], a: 2, why: "A mechanic repairs cars. A plumber repairs pipes." }
+  ]
+};
+// When two areas have the same score, start with the one that matters most in exams.
+const PRIORITY = [1, 4, 2, 5, 7, 3, 6, 8];
+
+const QUESTIONS = [
+  { trap: 1, q: "Everyone ___ mistakes when they learn a language.", o: ["does", "makes", "takes", "has"], a: 1 },
+  { trap: 2, q: "Can I ___ your pen for a minute?", o: ["lend", "borrow", "rent", "give"], a: 1 },
+  { trap: 3, q: "I've decided to ___ smoking.", o: ["give up", "give in", "give out", "give back"], a: 0 },
+  { trap: 4, q: "The party was a great ___.", o: ["succeed", "success", "successful", "successfully"], a: 1 },
+  { trap: 5, q: "Are you interested ___ joining our club?", o: ["on", "in", "at", "for"], a: 1 },
+  { trap: 6, q: "Formal email: I would like to ___ you that I cannot attend.", o: ["tell", "inform", "say", "let know"], a: 1 },
+  { trap: 7, q: "___ it was raining, we went for a walk.", o: ["Despite", "Although", "However", "Because"], a: 1 },
+  { trap: 8, q: "Which word means the same as \"begin\"?", o: ["finish", "start", "continue", "stop"], a: 1 },
+  { trap: 1, q: "There was very ___ traffic on the way home.", o: ["strong", "big", "heavy", "hard"], a: 2 },
+  { trap: 2, q: "Two men ___ the bank yesterday.", o: ["stole", "robbed", "took", "borrowed"], a: 1 },
+  { trap: 3, q: "We've ___ milk. Can you buy some?", o: ["run over", "run into", "run out of", "run away"], a: 2 },
+  { trap: 4, q: "She drives very ___.", o: ["careful", "care", "carefully", "careless"], a: 2 },
+  { trap: 5, q: "It depends ___ the weather.", o: ["of", "from", "on", "in"], a: 2 },
+  { trap: 6, q: "Formal email: I ___ your letter on 3 March.", o: ["got", "grabbed", "picked up", "received"], a: 3 },
+  { trap: 7, q: "___ the rain, we went for a walk.", o: ["Although", "Even", "But", "Despite"], a: 3 },
+  { trap: 8, q: "A person who travels to work by train or bus every day is a ___.", o: ["tourist", "commuter", "pilot", "guide"], a: 1 },
+  { trap: 1, q: "Could you ___ me a favour?", o: ["make", "give", "do", "take"], a: 2 },
+  { trap: 2, q: "When you come to my party, please ___ some music.", o: ["take", "bring", "carry", "send"], a: 1 },
+  { trap: 3, q: "Who will ___ your dog while you're on holiday?", o: ["look for", "look up", "look into", "look after"], a: 3 },
+  { trap: 4, q: "It's ___ to drive without a seat belt.", o: ["danger", "dangerous", "dangerously", "endanger"], a: 1 },
+  { trap: 5, q: "She's very good ___ languages.", o: ["in", "on", "at", "with"], a: 2 },
+  { trap: 6, q: "Message to a friend: ___ for the lovely present!", o: ["Thanks so much", "I am grateful", "I would like to express my gratitude", "Please accept my thanks"], a: 0 },
+  { trap: 7, q: "The train was very late. ___, I missed my meeting.", o: ["However", "Although", "As a result", "Despite"], a: 2 },
+  { trap: 8, q: "The film was \"hilarious\". This means it was very ___.", o: ["sad", "long", "scary", "funny"], a: 3 }
+];
+
+const CHEERS = {
+  4: "Good start. Keep going at your own pace.",
+  8: "A third of the way there. You're doing well.",
+  12: "Halfway! Take a breath if you need one.",
+  16: "Two thirds done. Not long now.",
+  20: "Nearly finished. Just four more."
+};
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+let state = { name: "", index: 0, answers: new Array(QUESTIONS.length).fill(null) };
+let pending = null;
+const DEMO = (Q.get("demo") === "1");
+const BASE = SITE;
+const STUDENT = STUDENT_CODE;
+let STUDENT_NAME = "";
+const KEY = "gcu-vocab-state" + (STUDENT ? "-" + STUDENT : "");
+const OTHER_KEY = "gcu-state" + (STUDENT ? "-" + STUDENT : "");
+// Bill's blank link: add &fresh=1 to forget answers saved in this browser.
+const FRESH = (Q.get("fresh") === "1");
+if (FRESH) { try { localStorage.removeItem(KEY); } catch (e) {} }
+const HOME = BASE + (STUDENT ? "?student=" + encodeURIComponent(STUDENT) : "");
+const LINK = (test) => BASE + test + ".html" + (STUDENT ? "?student=" + encodeURIComponent(STUDENT) : "");
+document.getElementById("home-link").href = HOME;
+document.getElementById("home-link-2").href = HOME;
+document.getElementById("next-test").href = LINK("grammar");
+
+// Results are sent to Bill automatically, once, as soon as the test is finished.
+function sendResults() {
+  const st = $("send-status");
+  if (state.sent) { st.textContent = "\u2713 Your results have been sent to Bill."; st.className = "sent-note ok"; return; }
+  if (!pending) return;
+  st.textContent = "Sending your results to Bill\u2026"; st.className = "sent-note";
+  $("send-fallback").hidden = true;
+  google.script.run
+    .withSuccessHandler(() => { state.sent = true; save(); st.textContent = "\u2713 Your results have been sent to Bill."; st.className = "sent-note ok"; })
+    .withFailureHandler(() => { st.textContent = "Your results didn't send. See the note at the bottom of the page."; st.className = "sent-note warn"; $("send-fallback").hidden = false; })
+    .submitResults(pending);
+}
+
+function save() { if (DEMO) return; try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+function load() {
+  try {
+    const s = JSON.parse(localStorage.getItem(KEY) || "null");
+    if (s && Array.isArray(s.answers) && s.answers.length === QUESTIONS.length) state = s;
+  } catch (e) {}
+}
+
+function show(screen) {
+  $("start").hidden = screen !== "start";
+  $("quiz").hidden = screen !== "quiz";
+  ["results", "start-here", "plan-box", "all-box", "send"].forEach((id) => ($(id).hidden = screen !== "results"));
+  window.scrollTo(0, 0);
+}
+
+function renderQuestion() {
+  const i = state.index, item = QUESTIONS[i];
+  $("qcount").textContent = `Question ${i + 1} of ${QUESTIONS.length}`;
+  $("qbar").style.width = `${(i / QUESTIONS.length) * 100}%`;
+  const cheer = CHEERS[i];
+  $("cheer").hidden = !cheer;
+  $("cheer").textContent = cheer || "";
+  const prompt = $("qprompt");
+  prompt.textContent = "";
+  item.q.split("___").forEach((part, k, arr) => {
+    prompt.append(part);
+    if (k < arr.length - 1) { const g = el("span", "gap"); g.setAttribute("aria-label", "blank"); prompt.append(g); }
+  });
+  const box = $("qoptions");
+  box.textContent = "";
+  const choices = item.o.map((text, k) => ({ text, value: k })).concat([{ text: "I'm not sure", value: UNSURE }]);
+  choices.forEach(({ text, value }) => {
+    const id = `q${i}-o${value}`;
+    const lab = el("label", "option" + (value === UNSURE ? " unsure" : "") + (state.answers[i] === value ? " chosen" : ""));
+    lab.htmlFor = id;
+    const inp = document.createElement("input");
+    inp.type = "radio"; inp.name = `q${i}`; inp.id = id; inp.value = value;
+    inp.checked = state.answers[i] === value;
+    inp.addEventListener("change", () => {
+      state.answers[i] = value; save();
+      box.querySelectorAll(".option").forEach((o) => o.classList.remove("chosen"));
+      lab.classList.add("chosen");
+      $("next").disabled = false;
+    });
+    lab.append(inp, el("span", null, text));
+    box.append(lab);
+  });
+  $("back").disabled = i === 0;
+  $("next").disabled = state.answers[i] === null;
+  $("next").textContent = i === QUESTIONS.length - 1 ? "See my results" : "Next";
+}
+
+function score() {
+  const byTrap = {};
+  Object.keys(TRAPS).forEach((t) => (byTrap[t] = { correct: 0, total: 0, unsure: 0 }));
+  const mistakes = [];
+  QUESTIONS.forEach((item, i) => {
+    const ans = state.answers[i];
+    byTrap[item.trap].total++;
+    if (ans === item.a) byTrap[item.trap].correct++;
+    else {
+      if (ans === UNSURE) byTrap[item.trap].unsure++;
+      mistakes.push({ n: i + 1, item, unsure: ans === UNSURE, chose: ans === UNSURE ? "I'm not sure" : (item.o[ans] ?? "(no answer)") });
+    }
+  });
+  const total = Object.values(byTrap).reduce((s, v) => s + v.correct, 0);
+  const unsure = Object.values(byTrap).reduce((s, v) => s + v.unsure, 0);
+  const weakest = [...PRIORITY].sort((a, b) => (byTrap[a].correct - byTrap[b].correct) || (PRIORITY.indexOf(a) - PRIORITY.indexOf(b)));
+  const strongest = [...PRIORITY].sort((a, b) => (byTrap[b].correct - byTrap[a].correct) || (PRIORITY.indexOf(a) - PRIORITY.indexOf(b)));
+  return { byTrap, total, unsure, weakest, strongest, mistakes };
+}
+
+function band(c) { return c === 3 ? "Strong" : c === 2 ? "Nearly there" : "Let's practise"; }
+
+function helloText(total) {
+  const pct = total / QUESTIONS.length;
+  if (pct >= 0.85) return "That's an excellent result. Your vocabulary is a real strength. We'll polish the last few details together.";
+  if (pct >= 0.65) return "That's a good result. You already have a solid base, and a few focused lessons will make a real difference.";
+  if (pct >= 0.45) return "You have a good foundation to build on. Every student has a few areas to work on, and now we know exactly where yours are.";
+  return "Thank you for being honest. This gives us a clear starting point, and we'll take it one step at a time. Small steps add up quickly.";
+}
+
+function fixBlock(m) {
+  const d = el("div", "fix");
+  if (m.unsure) {
+    d.append(el("p", "muted", "You weren't sure about this one. Here's the answer:"));
+  } else {
+    const was = el("p"); was.append("You chose: ", el("span", "was", m.item.q.replace("___", m.chose))); d.append(was);
+  }
+  const now = el("p"); now.append("Correct: ", el("span", "now", m.item.q.replace("___", m.item.o[m.item.a]))); d.append(now);
+  return d;
+}
+function examTag(t) { return el("span", "exam-tag", TRAPS[t].exam === "Both" ? "Cambridge + Aptis" : TRAPS[t].exam); }
+function labelled(label, body) { const d = el("div"); d.append(el("span", "label", label), body); return d; }
+
+// A short self-check practice sheet: tap an answer, see right or wrong and why.
+function practiceBlock(trap, count) {
+  const items = PRACTICE[trap].slice(0, count);
+  const wrap = el("div", "practice");
+  const tally = el("p", "tally"); tally.setAttribute("aria-live", "polite");
+  let done = 0, right = 0;
+  const update = () => {
+    if (done < items.length) { tally.textContent = `${done} of ${items.length} answered`; return; }
+    const msg = right === items.length ? "Perfect! You've got this." :
+      right >= items.length - 2 ? "Great work. Read the explanations for the ones you missed." :
+      "Good effort. Read the explanations, then try the worksheet with your teacher.";
+    tally.textContent = `${right} out of ${items.length} correct. ${msg}`;
+  };
+  items.forEach((it, n) => {
+    const box = el("div", "pq");
+    const p = el("p", "pq-q");
+    p.append(el("span", "pq-n", `${n + 1}.`));
+    it.q.split("___").forEach((part, k, arr) => { p.append(part); if (k < arr.length - 1) p.append(el("span", "gap")); });
+    const opts = el("div", "pq-opts");
+    const why = el("p", "pq-why"); why.hidden = true;
+    it.o.forEach((text, k) => {
+      const b = el("button", "pq-opt", text); b.type = "button";
+      b.addEventListener("click", () => {
+        opts.querySelectorAll("button").forEach((x, j) => {
+          x.disabled = true;
+          if (j === it.a) x.classList.add("right");
+        });
+        if (k !== it.a) b.classList.add("wrong");
+        const ok = k === it.a;
+        done++; if (ok) right++;
+        why.textContent = (ok ? "Correct! " : "Not quite. ") + it.why;
+        why.classList.toggle("ok", ok);
+        why.hidden = false;
+        update();
+      });
+      opts.append(b);
+    });
+    box.append(p, opts, why);
+    wrap.append(box);
+  });
+  update();
+  wrap.append(tally);
+  return wrap;
+}
+
+function renderResults() {
+  const r = score(), name = state.name;
+  $("hello-title").textContent = `Well done, ${name}!`;
+  $("hello-text").textContent = `You answered ${r.total} out of ${QUESTIONS.length} questions correctly. ${helloText(r.total)}`;
+
+  // Strengths: every area with 3/3, or the best two if none are perfect.
+  const strong = r.strongest.filter((t) => r.byTrap[t].correct === 3);
+  const showStrong = strong.length ? strong : r.strongest.filter((t) => r.byTrap[t].correct >= 2).slice(0, 2);
+  const sl = $("strengths"); sl.textContent = "";
+  showStrong.forEach((t) => sl.append(el("li", null, TRAPS[t].name)));
+  $("strengths-note").textContent = showStrong.length
+    ? (strong.length ? "You got every question right in these areas." : "These were your strongest areas.")
+    : "Every student starts somewhere. Your strengths will grow quickly from here.";
+  $("strengths").hidden = showStrong.length === 0;
+
+  const focusList = r.weakest.filter((t) => r.byTrap[t].correct < 3).slice(0, 3);
+  const card = $("start-card"); card.textContent = "";
+  $("start-here").hidden = false;
+  if (!focusList.length) {
+    card.append(el("p", null, "You got every question right. Your teacher will bring some harder B2 practice to keep you moving forward."));
+  } else {
+    const t = focusList[0], info = TRAPS[t];
+    const box = el("article", "start-card");
+    const h = el("h3", null, info.name + " "); h.append(examTag(t));
+    box.append(el("span", "tag", "Start here"), h);
+    box.append(labelled("Ask yourself", el("p", "ask", info.ask)));
+    box.append(labelled("The rule", el("p", null, info.rule)));
+    const mine = r.mistakes.filter((m) => m.item.trap === t);
+    if (mine.length) {
+      const list = el("div"); list.style.display = "grid"; list.style.gap = "8px";
+      mine.forEach((m) => list.append(fixBlock(m)));
+      box.append(labelled("Let's look at your answers", list));
+    }
+    box.append(labelled("Remember", el("p", null, info.tip)));
+    if (info.worksheet) box.append(labelled("Your worksheet", el("p", null, info.worksheet)));
+    card.append(box);
+    const prac = el("div", "practice-sheet");
+    prac.append(el("h3", null, "Practise now"), el("p", "muted", "Eight quick questions on this area. Tap an answer to see if you're right, and why. There's no score for your teacher here; this is just for you."));
+    prac.append(practiceBlock(t, 8));
+    card.append(prac);
+  }
+
+  // Plan
+  const plan = $("plan"); plan.textContent = "";
+  const whens = ["First", "Next", "Then"];
+  focusList.forEach((t, k) => {
+    const li = el("li");
+    const body = el("div");
+    const pname = el("p", null, TRAPS[t].name + " "); pname.append(examTag(t));
+    body.append(el("span", "when", whens[k]), pname);
+    li.append(el("span", "step", String(k + 1)), body);
+    plan.append(li);
+  });
+  const after = el("li"); const ab = el("div");
+  ab.append(el("span", "when", "After that"), el("p", null, "Your teacher will check your progress and choose what comes next."));
+  after.append(el("span", "step", String(focusList.length + 1)), ab);
+  plan.append(after);
+
+  const later = $("later"); later.textContent = "";
+  focusList.slice(1).forEach((t, k) => {
+    const info = TRAPS[t];
+    const d = el("details");
+    d.append(el("summary", null, `Preview step ${k + 2}: ${info.name}`));
+    const inner = el("div");
+    inner.append(labelled("Ask yourself", el("p", "ask", info.ask)));
+    inner.append(labelled("The rule", el("p", null, info.rule)));
+    if (info.worksheet) inner.append(labelled("Your worksheet", el("p", null, info.worksheet)));
+    inner.append(labelled("Try four questions", practiceBlock(t, 4)));
+    d.append(inner);
+    later.append(d);
+  });
+  if (focusList.length > 1) later.prepend(el("p", "muted", "No need to look at these yet. They're here when you're ready."));
+  later.style.display = "grid"; later.style.gap = "8px";
+
+  // All areas
+  const areas = $("areas"); areas.textContent = "";
+  r.strongest.forEach((t) => {
+    const v = r.byTrap[t];
+    const li = el("li", "area");
+    const dots = el("span", "dots"); dots.setAttribute("aria-label", `${v.correct} of ${v.total} correct`);
+    for (let k = 0; k < v.total; k++) dots.append(el("span", "dot" + (k < v.correct ? " on" : "")));
+    const nm = el("span", null, TRAPS[t].name + " "); nm.append(examTag(t));
+    li.append(nm, dots, el("span", "chip", band(v.correct)));
+    areas.append(li);
+  });
+
+  // Teacher summary
+  const pct = Math.round((r.total / QUESTIONS.length) * 100);
+  const date = new Date().toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" });
+  const lines = [
+    "VOCABULARY CHECK-UP RESULTS",
+    `Student: ${name}`,
+    `Date: ${date}`,
+    `Score: ${r.total}/${QUESTIONS.length} (${pct}%). "I'm not sure" answers: ${r.unsure}`,
+    "",
+    "PLAN"
+  ];
+  if (!focusList.length) lines.push("All areas secure.");
+  focusList.forEach((t, k) => lines.push(`${k + 1}. ${TRAPS[t].name} (${TRAPS[t].exam}): ${r.byTrap[t].correct}/3`));
+  lines.push("", "STRENGTHS");
+  lines.push(strong.length ? strong.map((t) => TRAPS[t].name).join(", ") : "No area at 3/3.");
+  lines.push("", "ALL AREAS (weakest first)");
+  r.weakest.forEach((t) => lines.push(`${TRAPS[t].name} (${TRAPS[t].exam}): ${r.byTrap[t].correct}/3${r.byTrap[t].unsure ? ` (${r.byTrap[t].unsure} not sure)` : ""}`));
+  lines.push("", "WRONG OR NOT SURE");
+  if (!r.mistakes.length) lines.push("None.");
+  r.mistakes.forEach((m) => lines.push(`Q${m.n} ${TRAPS[m.item.trap].name}: chose "${m.chose}", correct "${m.item.o[m.item.a]}"`));
+  const text = lines.join("\n");
+  $("summary").value = text;
+  pending = {
+    name, student: STUDENT, score: String(r.total), unsure: String(r.unsure),
+    strengths: strong.map((t) => TRAPS[t].name).join(", "),
+    wrong: r.mistakes.map((m) => `Q${m.n} ${TRAPS[m.item.trap].name}: chose "${m.chose}", correct "${m.item.o[m.item.a]}"`).join("\n"),
+    summary: text
+  };
+  focusList.forEach((t, k) => (pending[`p${k + 1}`] = TRAPS[t].name));
+  Object.keys(TRAPS).forEach((t) => (pending[`a${t}`] = String(r.byTrap[t].correct)));
+  pending.test = "vocab";
+  sendResults();
+  $("copy-status").textContent = "";
+}
+
+$("student-name").addEventListener("input", (e) => { $("begin").disabled = e.target.value.trim().length === 0; });
+$("begin").addEventListener("click", () => {
+  const name = $("student-name").value.trim();
+  if (state.name !== name || state.answers.every((a) => a !== null)) {
+    state = { name, index: 0, answers: new Array(QUESTIONS.length).fill(null) };
+  }
+  save(); show("quiz"); renderQuestion();
+});
+$("next").addEventListener("click", () => {
+  if (state.index < QUESTIONS.length - 1) { state.index++; save(); renderQuestion(); }
+  else { renderResults(); show("results"); }
+});
+$("back").addEventListener("click", () => { if (state.index > 0) { state.index--; save(); renderQuestion(); } });
+$("copy").addEventListener("click", async () => {
+  const ta = $("summary");
+  try { await navigator.clipboard.writeText(ta.value); $("copy-status").textContent = "Copied! Now paste it into an email or a Preply message to Bill."; }
+  catch (e) {
+    $("send-fallback").hidden = false; ta.closest("details").open = true; ta.focus(); ta.select();
+    $("copy-status").textContent = "The text is selected. Press Ctrl+C (or Cmd+C on a Mac) to copy it.";
+  }
+});
+$("retry").addEventListener("click", sendResults);
+$("restart").addEventListener("click", () => {
+  state = { name: state.name, index: 0, answers: new Array(QUESTIONS.length).fill(null) };
+  save(); $("student-name").value = state.name; $("begin").disabled = !state.name; $("begin").textContent = "Start"; show("start");
+});
+
+(async () => {
+  const info = await loadInfo(); STUDENT_NAME = info.name;
+load();
+// Fill in the name from the other check-up, so students only type it once.
+if (!state.name && STUDENT_NAME) state.name = STUDENT_NAME;
+if (!state.name && !FRESH) {
+  try { const o = JSON.parse(localStorage.getItem(OTHER_KEY) || "null"); if (o && o.name && o.name !== "Test Student") state.name = o.name; } catch (e) {}
+}
+// Teacher test link: add ?demo=1 to the page link to fill in sample answers and jump to the results.
+if (!DEMO && state.name === "Test Student") {
+  state = { name: "", index: 0, answers: new Array(QUESTIONS.length).fill(null) };
+  try { localStorage.removeItem(KEY); } catch (e) {}
+}
+if (DEMO) {
+  const sample = [0, 1, 0, 1, 1, 0, 1, 1, 2, 0, 2, 2, 2, 3, -1, 1, 2, 0, 3, 1, 2, 0, 2, 3];
+  state = { name: "Test Student", index: QUESTIONS.length - 1, answers: sample };
+}
+if (state.name) { $("student-name").value = state.name; $("begin").disabled = false; }
+if (state.name && state.answers.every((a) => a !== null)) {
+  renderResults(); show("results");
+} else if (state.name && state.answers.some((a) => a !== null)) {
+  $("begin").textContent = "Continue where I stopped";
+}
+})();
+</script>
+
+</body>
+</html>

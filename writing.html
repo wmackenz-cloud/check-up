@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B1/B2 Writing Check-Up</title>
+<meta name="description" content="Free, friendly English check-ups for B1/B2 learners preparing for Aptis and Cambridge exams.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script src="api.js"></script>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: one calm column; choose your exam, then two task cards with live word counts */
+:root {
+  --paper: #f5f7f6;
+  --sheet: #ffffff;
+  --ink: #1f2a30;
+  --ink-soft: #5a676e;
+  --rule: #dbe2e0;
+  --accent: #1f5f73;
+  --accent-soft: #e3eff1;
+  --start: #c4572e;
+  --start-soft: #fbece4;
+  --ok: #2e7a50;
+  --ok-soft: #e4f2ea;
+  --font-display: "Literata", Georgia, "Times New Roman", serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #111a1d; --sheet: #19242a; --ink: #e6eeef; --ink-soft: #a2b1b6; --rule: #2c3a40;
+    --accent: #7fc0d1; --accent-soft: #1e3740; --start: #f0956f; --start-soft: #3a2620;
+    --ok: #78c99a; --ok-soft: #1d3428; color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 56px;
+}
+.wrap { max-width: 680px; margin: 0 auto; display: grid; gap: 20px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 700; text-wrap: balance; margin: 0; line-height: 1.25; }
+h1 { font-size: clamp(1.7rem, 5vw, 2.2rem); }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1.1rem; }
+p { margin: 0; }
+.eyebrow { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 700; }
+.muted { color: var(--ink-soft); }
+.home-link { display: inline-block; margin-bottom: 10px; color: var(--accent); font-weight: 700; text-decoration: none; }
+.home-link:hover { text-decoration: underline; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; padding: 22px; display: grid; gap: 14px; min-width: 0; }
+.exam-choices { display: grid; gap: 10px; }
+.exam-choice {
+  font: inherit; text-align: left; color: var(--ink); background: var(--paper); cursor: pointer;
+  border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px; display: grid; gap: 2px;
+}
+.exam-choice:hover { border-color: var(--accent); }
+.exam-choice strong { font-size: 1.05rem; }
+.tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; justify-self: start; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .9rem; color: var(--ink-soft); }
+.situation { background: var(--paper); border-left: 3px solid var(--accent); border-radius: 6px; padding: 12px 14px; white-space: pre-line; }
+.prompt { font-weight: 700; }
+.choice-list { display: grid; gap: 8px; }
+.choice { display: flex; gap: 10px; align-items: flex-start; border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; cursor: pointer; background: var(--paper); }
+.choice input { margin-top: .35em; accent-color: var(--accent); }
+.choice.chosen { border-color: var(--accent); background: var(--accent-soft); }
+textarea {
+  width: 100%; min-height: 220px; font: 1.05rem/1.6 var(--font-body); color: var(--ink); background: var(--paper);
+  border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; resize: vertical;
+}
+textarea.short { min-height: 120px; }
+input[type="text"] { font: inherit; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 8px; background: var(--paper); color: var(--ink); width: 100%; }
+textarea:focus-visible, input:focus-visible, button:focus-visible, a:focus-visible, .choice:focus-within { outline: 3px solid var(--accent); outline-offset: 2px; }
+.count { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--ink-soft); }
+.count.good { color: var(--ok); }
+.count.over { color: var(--start); }
+.tips { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+button, .btn {
+  font: inherit; font-weight: 700; border-radius: 8px; padding: 10px 18px; cursor: pointer; text-decoration: none; display: inline-block;
+  border: 1px solid var(--accent); background: var(--accent); color: var(--sheet);
+}
+button.ghost, .btn.ghost { background: transparent; color: var(--accent); }
+button:disabled { opacity: .45; cursor: not-allowed; }
+.confirm { background: var(--accent-soft); border-radius: 10px; padding: 14px 16px; display: grid; gap: 10px; }
+.status { font-weight: 700; }
+.status.warn { color: var(--start); }
+.done-mark { font-size: 2.5rem; color: var(--ok); line-height: 1; }
+label.field { display: grid; gap: 6px; font-weight: 700; }
+</style>
+
+<div class="wrap">
+  <header>
+    <a class="home-link" id="home-link" href="#" target="_top">&larr; All check-ups</a>
+    <p class="eyebrow">English exam preparation</p>
+    <h1>B1/B2 Writing Check-Up</h1>
+  </header>
+
+  <!-- Step 1: choose the exam -->
+  <section class="sheet" id="choose">
+    <p><strong>Write two short texts in the style of your exam.</strong> Bill will read them, mark them with the official criteria, and send you feedback on your dashboard.</p>
+    <p class="muted">Allow about 30 to 50 minutes. Please don't use a translator or AI tools; we want to see your own writing today. Your work is saved as you type, so you can stop and come back.</p>
+    <h2>Which exam are you preparing for?</h2>
+    <div class="exam-choices">
+      <button type="button" class="exam-choice" data-exam="aptis"><strong>Aptis General</strong><span class="muted">Two emails about the same news: one to a friend, one formal. About 30 minutes.</span></button>
+      <button type="button" class="exam-choice" data-exam="b1"><strong>Cambridge B1 Preliminary</strong><span class="muted">An email of about 100 words, then an article or a story. About 45 minutes.</span></button>
+      <button type="button" class="exam-choice" data-exam="b2"><strong>Cambridge B2 First</strong><span class="muted">An essay, then an email or a review, 140 to 190 words each. About 80 minutes.</span></button>
+    </div>
+  </section>
+
+  <!-- Step 2: the tasks -->
+  <div id="write" hidden style="display:grid;gap:20px">
+    <section class="sheet">
+      <div class="btn-row" style="justify-content:space-between">
+        <p><span class="eyebrow">Your exam</span><br><strong id="exam-name"></strong></p>
+        <button type="button" class="ghost" id="change-exam">Change exam</button>
+      </div>
+      <details>
+        <summary><strong>Tips for this exam</strong></summary>
+        <ul class="tips" id="tips" style="margin-top:8px"></ul>
+      </details>
+    </section>
+
+    <div id="tasks" style="display:grid;gap:20px"></div>
+
+    <section class="sheet" id="send-box">
+      <h2>Send your writing to Bill</h2>
+      <label class="field" for="student-name" id="name-field">Your name
+        <input type="text" id="student-name" autocomplete="name" placeholder="e.g. Maria L">
+      </label>
+      <p class="muted" id="send-hint"></p>
+      <div class="btn-row"><button type="button" id="send">Send my writing</button></div>
+      <div class="confirm" id="confirm" hidden>
+        <p><strong>Ready to send?</strong> You won't be able to change your writing after this.</p>
+        <div class="btn-row">
+          <button type="button" id="confirm-yes">Yes, send it</button>
+          <button type="button" class="ghost" id="confirm-no">Keep writing</button>
+        </div>
+      </div>
+      <p class="status" id="status" aria-live="polite"></p>
+    </section>
+  </div>
+
+  <!-- Step 3: sent -->
+  <section class="sheet" id="done" hidden>
+    <span class="done-mark" aria-hidden="true">&#10003;</span>
+    <h2>Your writing has been sent to Bill</h2>
+    <p>Well done for finishing. Bill will mark your writing using the same four criteria the examiners use: content, communication, organisation and language. Your feedback will appear on your dashboard.</p>
+    <div class="btn-row">
+      <a class="btn" id="home-link-2" href="#" target="_top">Back to my dashboard</a>
+      <button type="button" class="ghost" id="again">Write again</button>
+    </div>
+  </section>
+</div>
+
+<script>
+const BASE = SITE;
+const DEMO = (Q.get("demo") === "1");
+const STUDENT = STUDENT_CODE;
+let STUDENT_NAME = "";
+const KEY = "gcu-writing" + (STUDENT ? "-" + STUDENT : "");
+// Bill's blank link: add &fresh=1 to forget answers saved in this browser.
+const FRESH = (Q.get("fresh") === "1");
+if (FRESH) { try { localStorage.removeItem(KEY); } catch (e) {} }
+const HOME = BASE + (STUDENT ? "?student=" + encodeURIComponent(STUDENT) : "");
+document.getElementById("home-link").href = HOME;
+document.getElementById("home-link-2").href = HOME;
+
+const CLUB_NEWS = "You are a member of a cooking club. You receive this message from the club:\n\n\"Dear member, because of building work, our club will move to a new building on the other side of town from next month. Classes will also move from Saturday mornings to Thursday evenings. We would like to hear your views.\"";
+
+const EXAMS = {
+  aptis: {
+    label: "Aptis General",
+    tips: [
+      "The friend email should sound relaxed: short sentences, contractions (I'm, don't) and friendly phrases are fine.",
+      "The formal email needs full forms (I am, I would), a clear reason for writing in the first line, polite requests, and paragraphs.",
+      "Answer every part of the task in both emails.",
+      "Keep to the word counts. Examiners notice texts that are much too short."
+    ],
+    tasks: [
+      { tag: "Aptis Writing Part 4", title: "Informal email to a friend", min: 40, max: 50, target: "40 to 50 words", time: "About 10 minutes", short: true,
+        situation: CLUB_NEWS,
+        prompt: "Write an email to your friend, who is also a member of the club. Write about your feelings and what you think you will do." },
+      { tag: "Aptis Writing Part 4", title: "Formal email to the club manager", min: 120, max: 150, target: "120 to 150 words", time: "About 20 minutes",
+        situation: CLUB_NEWS,
+        prompt: "Write an email to the club manager. Write about your feelings and what you think about the changes, and suggest how the club could help members like you." }
+    ]
+  },
+  b1: {
+    label: "Cambridge B1 Preliminary",
+    tips: [
+      "In the email, answer all four notes. Missing one costs marks for content.",
+      "Use paragraphs, and link your ideas with and, but, because, so and however.",
+      "Use a range of tenses and some interesting vocabulary, then check your spelling and punctuation.",
+      "In Part 2, choose the question you have most to say about."
+    ],
+    tasks: [
+      { tag: "B1 Preliminary Writing Part 1", title: "Email", min: 80, max: 120, target: "about 100 words", time: "About 20 minutes",
+        situation: "Read this email from your English-speaking friend Sam, and the notes you have made.\n\n\"Hi! I'm planning to visit your town next month for a weekend. (Note: Great!)\nWhat's the best way to travel there? (Note: Explain)\nI'd love to try some local food. What do you recommend? (Note: Tell Sam)\nWould you like to meet on Saturday? (Note: Yes, and suggest something to do)\"",
+        prompt: "Write your email to Sam, using all the notes." },
+      { tag: "B1 Preliminary Writing Part 2", title: "Article or story", min: 80, max: 120, target: "about 100 words", time: "About 25 minutes",
+        choices: [
+          { id: "article", title: "Article", situation: "You see this notice in an English-language magazine:\n\n\"Articles wanted! A great day out. Where is the best place you have visited for a day out? What did you do there? Why would you recommend it?\"", prompt: "Write an article answering these questions." },
+          { id: "story", title: "Story", situation: "Your English teacher has asked you to write a story. Your story must begin with this sentence:\n\n\"When Alex opened the door, there was a big surprise waiting.\"", prompt: "Write your story." }
+        ] }
+    ]
+  },
+  b2: {
+    label: "Cambridge B2 First",
+    tips: [
+      "Plan for five minutes before you write. Use paragraphs: introduction, your points, conclusion.",
+      "In the essay, write about both notes and add a third idea of your own. Give your opinion clearly.",
+      "Use a range of linking words (however, on the other hand, as a result) and some less common vocabulary.",
+      "Match the style to the reader: semi-formal for the essay and review, friendly for an email to a friend."
+    ],
+    tasks: [
+      { tag: "B2 First Writing Part 1", title: "Essay", min: 140, max: 190, target: "140 to 190 words", time: "About 40 minutes",
+        situation: "In your English class you have been talking about technology. Now your teacher has asked you to write an essay.\n\n\"Has the internet made our lives better?\"\n\nNotes. Write about:\n1. communication\n2. work or studies\n3. ............ (your own idea)",
+        prompt: "Write your essay, using all the notes and giving reasons for your point of view." },
+      { tag: "B2 First Writing Part 2", title: "Email or review", min: 140, max: 190, target: "140 to 190 words", time: "About 40 minutes",
+        choices: [
+          { id: "email", title: "Email to a friend", situation: "You have received this email from your English-speaking friend Chris:\n\n\"I want to learn a new skill in my free time, like cooking, a musical instrument or a language. Which do you think I should choose, and how should I start?\"", prompt: "Write your email to Chris." },
+          { id: "review", title: "Review", situation: "You see this announcement on an English-language website:\n\n\"Reviews wanted: a place to eat. Tell us about a café or restaurant you have visited. Describe the food and the atmosphere, and say whether you would recommend it to other people.\"", prompt: "Write your review." }
+        ] }
+    ]
+  }
+};
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const countWords = (t) => (String(t).trim().match(/\S+/g) || []).length;
+
+let state = { exam: null, texts: {}, choice: {}, name: STUDENT_NAME || "", sent: false };
+function save() { if (DEMO) return; try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+function load() { try { const s = JSON.parse(localStorage.getItem(KEY) || "null"); if (s && typeof s === "object") state = Object.assign(state, s); } catch (e) {} }
+
+function show(screen) {
+  $("choose").hidden = screen !== "choose";
+  $("write").hidden = screen !== "write";
+  $("done").hidden = screen !== "done";
+  window.scrollTo(0, 0);
+}
+
+function taskInfo(exam, n) {
+  const t = EXAMS[exam].tasks[n];
+  if (!t.choices) return t;
+  const pick = t.choices.find((c) => c.id === state.choice[exam + n]) || null;
+  return Object.assign({}, t, pick ? { situation: pick.situation, prompt: pick.prompt, title: pick.title } : {}, { picked: !!pick });
+}
+
+function renderCount(node, words, t) {
+  node.textContent = `${words} word${words === 1 ? "" : "s"} · target: ${t.target}`;
+  node.className = "count" + (words >= t.min && words <= t.max ? " good" : words > t.max ? " over" : "");
+}
+
+function renderTasks() {
+  const exam = state.exam, def = EXAMS[exam];
+  $("exam-name").textContent = def.label;
+  const tips = $("tips"); tips.textContent = "";
+  def.tips.forEach((t) => tips.append(el("li", null, t)));
+  const box = $("tasks"); box.textContent = "";
+  def.tasks.forEach((t, n) => {
+    const card = el("section", "sheet");
+    card.append(el("span", "tag", t.tag));
+    card.append(el("h2", null, `Task ${n + 1}: ${t.title}`));
+    const meta = el("div", "meta"); meta.append(el("span", null, t.time), el("span", null, "Write " + t.target)); card.append(meta);
+    const keyName = exam + n;
+    const body = el("div"); body.style.display = "grid"; body.style.gap = "12px";
+    const area = el("textarea", t.short ? "short" : "");
+    area.id = "text-" + n;
+    area.setAttribute("aria-label", `Task ${n + 1}`);
+    area.value = state.texts[keyName] || "";
+    const count = el("p", "count");
+    const fill = () => {
+      body.textContent = "";
+      const info = taskInfo(exam, n);
+      if (t.choices && !info.picked) { body.append(el("p", "muted", "Choose one question first.")); return; }
+      body.append(el("div", "situation", info.situation), el("p", "prompt", info.prompt + " Write " + t.target + "."), area, count);
+      renderCount(count, countWords(area.value), t);
+    };
+    if (t.choices) {
+      card.append(el("p", "prompt", "Choose one of these questions:"));
+      const list = el("div", "choice-list");
+      t.choices.forEach((c) => {
+        const lab = el("label", "choice" + (state.choice[keyName] === c.id ? " chosen" : ""));
+        const r = document.createElement("input"); r.type = "radio"; r.name = "choice" + n; r.id = "choice-" + n + "-" + c.id; r.checked = state.choice[keyName] === c.id;
+        r.addEventListener("change", () => {
+          state.choice[keyName] = c.id; save();
+          list.querySelectorAll(".choice").forEach((x) => x.classList.remove("chosen")); lab.classList.add("chosen");
+          fill(); updateSend();
+        });
+        lab.htmlFor = r.id;
+        lab.append(r, el("span", null, c.title));
+        list.append(lab);
+      });
+      card.append(list);
+    }
+    area.addEventListener("input", () => { state.texts[keyName] = area.value; save(); renderCount(count, countWords(area.value), t); updateSend(); });
+    card.append(body);
+    fill();
+    box.append(card);
+  });
+  updateSend();
+}
+
+function readiness() {
+  const exam = state.exam, def = EXAMS[exam];
+  const missing = [];
+  def.tasks.forEach((t, n) => {
+    const info = taskInfo(exam, n);
+    if (t.choices && !info.picked) missing.push(`choose a question for Task ${n + 1}`);
+    else if (countWords(state.texts[exam + n] || "") < Math.ceil(t.min / 2)) missing.push(`write more for Task ${n + 1}`);
+  });
+  if (!$("student-name").value.trim()) missing.push("type your name");
+  return missing;
+}
+function updateSend() {
+  const missing = readiness();
+  $("send").disabled = missing.length > 0;
+  $("send-hint").textContent = missing.length ? "Before sending: " + missing.join(", ") + "." : "Read your writing through once more before you send it.";
+}
+
+function submit() {
+  const exam = state.exam, def = EXAMS[exam];
+  const name = $("student-name").value.trim();
+  const t1 = taskInfo(exam, 0), t2 = taskInfo(exam, 1);
+  const payload = {
+    student: STUDENT, name, exam: def.label,
+    t1title: `${t1.tag}: ${t1.title}`, t1text: state.texts[exam + 0] || "",
+    t2title: `${t2.tag}: ${t2.title}`, t2text: state.texts[exam + 1] || ""
+  };
+  $("confirm").hidden = true;
+  $("send").disabled = true;
+  $("status").className = "status";
+  $("status").textContent = "Sending your writing to Bill…";
+  google.script.run
+    .withSuccessHandler(() => { state.sent = true; save(); $("status").textContent = ""; show("done"); })
+    .withFailureHandler(() => {
+      $("status").className = "status warn";
+      $("status").textContent = "Your writing didn't send. Please check your internet connection and try again. Your text is still saved here.";
+      $("send").disabled = false;
+    })
+    .submitWriting(payload);
+}
+
+document.querySelectorAll(".exam-choice").forEach((b) => b.addEventListener("click", () => {
+  state.exam = b.dataset.exam; save(); renderTasks(); show("write");
+}));
+$("change-exam").addEventListener("click", () => show("choose"));
+$("student-name").addEventListener("input", (e) => { state.name = e.target.value; save(); updateSend(); });
+$("send").addEventListener("click", () => { $("confirm").hidden = false; });
+$("confirm-no").addEventListener("click", () => { $("confirm").hidden = true; });
+$("confirm-yes").addEventListener("click", submit);
+$("again").addEventListener("click", () => { state = { exam: null, texts: {}, choice: {}, name: state.name, sent: false }; save(); show("choose"); });
+
+(async () => {
+  const info = await loadInfo(); STUDENT_NAME = info.name;
+  if (STUDENT_NAME) state.name = STUDENT_NAME;
+load();
+if (DEMO) {
+  state = {
+    exam: "aptis", name: "Test Student", sent: false, choice: {},
+    texts: {
+      aptis0: "Hi Ana! Did you see the news about the club? I'm not happy because I work late on Thursdays so I can't go to the classes. Maybe I will try to change my shift. What will you do? Let's talk soon!",
+      aptis1: "Dear Sir or Madam,\n\nI am writing about the changes to the cooking club. I have been a member for two years and I really enjoy the Saturday classes.\n\nUnfortunately, I work until eight o'clock on Thursdays, so I will not be able to attend the new classes. Also, the new building is very far from my home and there is not a good bus service.\n\nI understand that the building work is necessary. However, I would like to suggest that the club offers one class on Saturday mornings for members who work in the evening. Another idea is to record the classes so we can watch them online.\n\nI would be grateful if you could consider these suggestions. I look forward to hearing from you.\n\nYours faithfully,\nMaria Lopez"
+    }
+  };
+}
+if (state.name) $("student-name").value = state.name;
+if (STUDENT_NAME) $("name-field").hidden = true;
+if (state.sent) show("done");
+else if (state.exam && EXAMS[state.exam]) { renderTasks(); show("write"); }
+else show("choose");
+})();
+</script>
+
+</body>
+</html>
