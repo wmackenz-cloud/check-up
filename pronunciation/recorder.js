@@ -207,16 +207,16 @@
       if (!me || !me.code) { if (empty) empty.textContent = "Type your name at the top to see your recordings."; return; }
       if (empty) empty.textContent = "Loading your recordings…";
       api("listRecordings", me.code).then(function (items) {
-        const only = Number(ul.dataset.lesson || 0);
-        items = (items || []).filter(function (x) { return !only || x.lesson === only; });
-        if (empty) empty.textContent = items.length ? "" : (only ? "No recordings for this lesson yet." : "No recordings yet.");
-        items.forEach(function (x) { ul.appendChild(item(x, !only)); });
+        const only = ul.dataset.lesson === undefined ? null : Number(ul.dataset.lesson);
+        items = (items || []).filter(function (x) { return only === null || x.lesson === only; });
+        if (empty) empty.textContent = items.length ? "" : (only !== null ? "Nothing recorded here yet." : "No recordings yet.");
+        items.forEach(function (x) { ul.appendChild(item(x, only === null)); });
       }).catch(function () { if (empty) empty.textContent = "Your recordings could not be loaded right now. Try again later."; });
     });
   }
   function item(x, showLesson) {
     const li = el("li");
-    const title = (showLesson ? (x.lesson > 6 ? "Drill " + (x.lesson - 6) : "Lesson " + x.lesson) + ": " : "") + x.label;
+    const title = (showLesson && x.lesson ? (x.lesson > 6 ? "Drill " + (x.lesson - 6) : "Lesson " + x.lesson) + ": " : "") + x.label;
     const play = el("button", { type: "button", text: "▶ Play" });
     const del = el("button", { type: "button", class: "ghost", text: "Delete" });
     li.appendChild(el("div", {}, [el("strong", { text: title }), el("div", { class: "when", text: when(x.date) + (x.seconds ? " · " + mmss(x.seconds) : "") })]));
@@ -251,6 +251,30 @@
     });
   }
 
+  // Lesson pages: the student taps the words they found hard, then opens a practice page for them.
+  const pick = document.getElementById("pick");
+  if (pick) {
+    const go = document.getElementById("pick-go");
+    const more = document.getElementById("pick-more");
+    const chosen = function () {
+      const w = Array.prototype.map.call(pick.querySelectorAll(".wchip[aria-pressed=true]"), function (b) { return b.textContent; });
+      (more && more.value || "").split(",").forEach(function (x) { x = x.trim(); if (x) w.push(x.slice(0, 40)); });
+      return w;
+    };
+    const update = function () { const n = chosen().length; go.disabled = !n; go.textContent = n ? "Practise these " + n + " words" : "Tap the words you found difficult"; };
+    pick.addEventListener("click", function (e) {
+      const b = e.target.closest(".wchip"); if (!b) return;
+      b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); update();
+    });
+    if (more) more.addEventListener("input", update);
+    go.addEventListener("click", function () {
+      const u = new URL("practice.html", location.href);
+      u.searchParams.set("w", chosen().join(","));
+      if (me) { u.searchParams.set("student", me.code); u.searchParams.set("who", me.name); }
+      location.href = u.href;
+    });
+    update();
+  }
   document.querySelectorAll(".rec").forEach(recorder);
   keepAnswers();
   const pr = document.getElementById("print"); if (pr) pr.addEventListener("click", function () { window.print(); });

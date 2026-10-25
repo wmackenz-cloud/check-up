@@ -40,3 +40,11 @@
 .ladder p { margin: 3px 0; font-weight: 700; font-size: 1.08rem; }
 .ladder.beat p { font-weight: 400; }
 .tnote { border-left: 4px solid var(--accent); padding: 2px 0 2px 14px; margin: 12px 0; }
+.pw { font-size: 1.5rem; color: var(--accent); }
+.tip-list { background: var(--accent-soft); border-radius: 10px; padding: 4px 14px; margin: 8px 0; }
+.tip-list p { margin: 6px 0; }
+.say { margin: 8px 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+.wchip { background: var(--sheet); color: var(--ink); border: 1px solid var(--blank-line); font-weight: 400; padding: 6px 12px; min-height: 40px; }
+.wchip[aria-pressed="true"] { background: var(--bad); border-color: var(--bad); color: #fff; font-weight: 700; }
+#pick-more { width: 100%; }

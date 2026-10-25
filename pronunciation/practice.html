@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>My Practice Words</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="../grammar-traps/traps.css">
+<link rel="stylesheet" href="pron.css">
+</head>
+<body data-lesson="0">
+<header class="top">
+  <p class="eyebrow"><a class="keep" href="index.html">My recordings</a> &middot; Word practice</p>
+  <h1>My Practice Words</h1>
+  <p class="lead">These are the words to work on. For each one: listen, say it three times, say it in the sentence, then record it.</p>
+</header>
+<div class="who" id="who"><span>Loading&hellip;</span></div>
+<main class="sheet">
+<div id="words"></div>
+<section id="mine-wrap">
+<h2 class="ex">Your word practice recordings</h2>
+<p class="hint">Practise again in a few days and record the same words. Compare the dates to hear your progress.</p>
+<ul class="mine mine-list" data-lesson="0"></ul><p class="hint"></p>
+</section>
+</main>
+<p class="foot">The voice on this page is your device's computer voice. It is a good model for the sounds, but Bill's voice in class is the best model.</p>
+<script>
+// Builds one practice card per word: ?w=worked,friends,three  (a word can carry its own sentence: three:I think there are three trees.)
+(function () {
+  const READING = "Last summer I worked in a small shop. I talked to customers and helped them choose clothes. My friends think it's a boring job, but I liked it. Three days a week I started work at seven o'clock and finished at three. Next year I want to study business in the city, and I hope to open my own shop.";
+  const SENTS = READING.match(/[^.]+\./g).map(function (s) { return s.trim(); });
+  const box = document.getElementById("words");
+  const raw = new URLSearchParams(location.search).get("w") || "";
+  const items = raw.split(/[,\n]/).map(function (x) { return x.trim(); }).filter(Boolean).slice(0, 15);
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function tips(w) {
+    const t = []; const lw = w.toLowerCase();
+    const last = lw.split(/\s+/).pop();
+    if (/th/.test(lw)) t.push("<strong>th:</strong> put the tip of your tongue between your teeth and blow. Check in a mirror.");
+    if (/(sh|ch)/.test(lw)) t.push("<strong>sh / ch:</strong> push your lips forward and round them.");
+    if (/ed$/.test(last)) {
+      if (/(t|d)ed$/.test(last)) t.push("<strong>-ed:</strong> here it is an extra syllable: \"id\" (" + esc(last.replace(/ed$/, "")) + "-id).");
+      else t.push("<strong>-ed:</strong> no extra syllable. End with a clear t or d sound, and join it to the next word (worked in = work-tin).");
+    } else if (/[^s]s$|'s$/.test(last)) t.push("<strong>-s:</strong> make the s or z sound at the end clear. Do not drop it.");
+    else if (/[bcdfgkmnpt]$/.test(last)) t.push("<strong>Last sound:</strong> finish the word. Let a little air out on the last sound.");
+    if (/[^aeiou\s]{2,}$/.test(last.replace(/e$/, ""))) t.push("<strong>Two sounds at the end:</strong> build it from the end. Say the last two sounds, then the whole word.");
+    if (!t.length) t.push("Say every sound, all the way to the end of the word.");
+    return t;
+  }
+  function sentenceFor(w, own) {
+    if (own) return own;
+    const re = new RegExp("\\b" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i");
+    for (let i = 0; i < SENTS.length; i++) if (re.test(SENTS[i])) return SENTS[i];
+    return "";
+  }
+  function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 16) || "word"; }
+  const canSpeak = "speechSynthesis" in window;
+  let voice = null;
+  function pickVoice() {
+    if (!canSpeak) return;
+    const vs = speechSynthesis.getVoices();
+    const pref = ["en-CA", "en-US", "en-GB", "en-AU"];
+    for (let i = 0; i < pref.length && !voice; i++) voice = vs.find(function (v) { return v.lang === pref[i] && /natural|enhanced|premium|samantha|google/i.test(v.name); }) || null;
+    for (let i = 0; i < pref.length && !voice; i++) voice = vs.find(function (v) { return v.lang === pref[i]; }) || null;
+    if (!voice) voice = vs.find(function (v) { return /^en/.test(v.lang); }) || null;
+  }
+  if (canSpeak) { pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
+  function speak(text, rate) {
+    if (!canSpeak) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    if (voice) { u.voice = voice; u.lang = voice.lang; } else u.lang = "en-US";
+    u.rate = rate;
+    speechSynthesis.speak(u);
+  }
+  if (!items.length) {
+    box.innerHTML = '<p>There are no words on this page yet. Use the link Bill sent you, or choose words at the end of Lesson 1.</p>';
+    return;
+  }
+  box.innerHTML = items.map(function (it, i) {
+    const k = it.indexOf(":");
+    const w = (k > -1 ? it.slice(0, k) : it).trim().slice(0, 40);
+    const s = sentenceFor(w, k > -1 ? it.slice(k + 1).trim().slice(0, 160) : "");
+    return '<h2 class="' + (i ? "ex" : "") + '">' + (i + 1) + '. <span class="pw">' + esc(w) + '</span></h2>' +
+      '<div class="tip-list">' + tips(w).map(function (t) { return "<p>" + t + "</p>"; }).join("") + '</div>' +
+      '<div class="rec-row say">' +
+        (canSpeak ? '<button type="button" class="ghost" data-say="' + esc(w) + '" data-rate="0.9">&#9654; Listen</button><button type="button" class="ghost" data-say="' + esc(w) + '" data-rate="0.55">&#9654; Slowly</button>' : '') +
+        '<span class="hint">Then say it three times.</span></div>' +
+      (s ? '<p class="read-text">' + esc(s) + '</p><div class="rec-row say">' + (canSpeak ? '<button type="button" class="ghost" data-say="' + esc(s) + '" data-rate="0.85">&#9654; Listen to the sentence</button>' : '') + '</div>' : '') +
+      '<div class="rec" data-part="w-' + slug(w) + '" data-label="Practice: ' + esc(w) + '" data-max="60" data-tip="Say the word three times' + (s ? ', then the sentence' : '') + '."><p class="hint">Loading the recorder&hellip;</p></div>';
+  }).join("");
+  box.addEventListener("click", function (e) {
+    const b = e.target.closest("[data-say]");
+    if (b) speak(b.getAttribute("data-say"), Number(b.getAttribute("data-rate")));
+  });
+})();
+</script>
+<script src="../api.js"></script>
+<script src="recorder.js"></script>
+</body>
+</html>
