@@ -190,7 +190,8 @@
         refreshLists();
       }).catch(function (err) {
         save.disabled = false; redo.disabled = false;
-        say("It did not save (" + (err && err.message || "connection problem") + "). Check your internet and press Save again.", "bad");
+        say("Sorry, it did not save. Check your internet and press Save again in a minute.", "bad");
+        if (window.console) console.warn("saveRecording failed:", err && err.message);
         const dl = el("a", { href: url, download: slug(me.name) + "-lesson" + LESSON + "-" + part + (blob.type.indexOf("mp4") > -1 ? ".m4a" : ".webm"), text: "Or download the recording and send it to Bill on Preply." });
         msg.appendChild(document.createElement("br")); msg.appendChild(dl);
       });
