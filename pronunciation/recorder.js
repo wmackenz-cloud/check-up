@@ -215,7 +215,7 @@
   }
   function item(x, showLesson) {
     const li = el("li");
-    const title = (showLesson ? "Lesson " + x.lesson + ": " : "") + x.label;
+    const title = (showLesson ? (x.lesson > 6 ? "Drill " + (x.lesson - 6) : "Lesson " + x.lesson) + ": " : "") + x.label;
     const play = el("button", { type: "button", text: "▶ Play" });
     const del = el("button", { type: "button", class: "ghost", text: "Delete" });
     li.appendChild(el("div", {}, [el("strong", { text: title }), el("div", { class: "when", text: when(x.date) + (x.seconds ? " · " + mmss(x.seconds) : "") })]));
