@@ -48,3 +48,4 @@
 .wchip { background: var(--sheet); color: var(--ink); border: 1px solid var(--blank-line); font-weight: 400; padding: 6px 12px; min-height: 40px; }
 .wchip[aria-pressed="true"] { background: var(--bad); border-color: var(--bad); color: #fff; font-weight: 700; }
 #pick-more { width: 100%; }
+button:disabled { opacity: .55; cursor: default; }
