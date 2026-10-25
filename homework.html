@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>My Homework</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="grammar-traps/traps.css?v=2">
+<style>
+  [hidden] { display: none !important; }
+  .hw-note { background: var(--accent-soft); border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; padding: 10px 16px; margin: 14px 0 18px; }
+  .hw-note p { margin: 4px 0; }
+  .hw-note .from { font-size: .85rem; color: var(--ink-soft); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+  .progress { display: flex; align-items: center; gap: 12px; margin: 8px 0 14px; font-weight: 700; }
+  .bar { flex: 1; height: 10px; border-radius: 5px; background: var(--rule); overflow: hidden; }
+  .bar i { display: block; height: 100%; width: 0; background: var(--ok); transition: width .3s; }
+  .tasks { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .task { background: var(--sheet); border: 1px solid var(--rule); border-radius: 14px; padding: 14px 16px; margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 14px; }
+  .task .n { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; color: var(--accent); width: 1.4em; text-align: center; grid-row: span 3; }
+  .task .kind { font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; justify-self: start; }
+  .k-pron { background: #f6e3dc; color: #8a3a1f; } .k-grammar { background: var(--accent-soft); color: var(--accent); }
+  .k-vocab { background: #efe6f7; color: #5b3a7a; } .k-check { background: #fff2cc; color: #7a5a00; } .k-words { background: #f6e3dc; color: #8a3a1f; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .task .kind { background: var(--accent-soft); color: var(--accent); } }
+  .task strong { font-size: 1.12rem; }
+  .task .how { color: var(--ink-soft); font-size: .95rem; margin: 0; }
+  .task .acts { grid-column: 2; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .task.done { border-color: var(--ok); background: var(--ok-soft); }
+  .task.done strong { text-decoration: line-through; text-decoration-color: var(--ok); }
+  .donebtn[aria-pressed="true"] { background: var(--ok); border-color: var(--ok); color: #fff; }
+  .all-done { text-align: center; border: 2px solid var(--ok); background: var(--ok-soft); border-radius: 14px; padding: 14px; font-weight: 700; color: var(--ok); margin-top: 16px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <p class="eyebrow">English with Bill</p>
+  <h1 id="title">My Homework</h1>
+  <p class="lead" id="sub"></p>
+</header>
+<main>
+  <div class="hw-note" id="note" hidden><p class="from">A note from Bill</p><p id="note-text"></p></div>
+  <div class="progress" id="prog" hidden><span id="prog-text"></span><span class="bar"><i id="prog-bar"></i></span></div>
+  <ol class="tasks" id="tasks"></ol>
+  <div class="all-done" id="alldone" hidden>All done. Great work! Bill will go through it with you in your next lesson.</div>
+  <p class="hint" id="empty" hidden>This homework link is not complete. Please ask Bill to send it again.</p>
+</main>
+<p class="foot">Tick each task when you finish it. Your ticks stay on this device.</p>
+<script>
+(function () {
+  const Q = new URLSearchParams(location.search);
+  const who = (Q.get("who") || "").trim();
+  let hw = null;
+  try {
+    let b = (Q.get("h") || "").replace(/-/g, "+").replace(/_/g, "/");
+    while (b.length % 4) b += "=";
+    hw = JSON.parse(decodeURIComponent(escape(atob(b))));
+  } catch (e) { hw = null; }
+  if (!hw || !Array.isArray(hw.i) || !hw.i.length) { document.getElementById("empty").hidden = false; return; }
+
+  const KIND = {
+    pron: ["Pronunciation", "Record yourself on the page and press Save. Bill will listen."],
+    words: ["Practice words", "Listen to each word, say it three times, then record it and press Save."],
+    grammar: ["Grammar", "Read the rule, fill in the boxes, then check your answers at the end."],
+    vocab: ["Vocabulary", "Read the rule, fill in the boxes, then check your answers at the end."],
+    check: ["Check-Up", "Answer the questions. Your results go to Bill automatically."]
+  };
+  document.getElementById("title").textContent = who ? who + "'s homework" : "My homework";
+  if (hw.d) {
+    const d = new Date(hw.d + "T12:00:00");
+    if (!isNaN(d)) document.getElementById("sub").textContent = "To finish before your lesson on " + d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) + ".";
+  }
+  if (hw.n) { document.getElementById("note").hidden = false; document.getElementById("note-text").textContent = hw.n; }
+
+  const key = "hw-done-" + (Q.get("h") || "").slice(-40);
+  let done = {};
+  try { done = JSON.parse(localStorage.getItem(key) || "{}") || {}; } catch (e) {}
+  const list = document.getElementById("tasks");
+  const base = new URL("./", location.href);
+  function safeUrl(p) {
+    try { const u = new URL(p, base); return u.origin === base.origin ? u.href : ""; } catch (e) { return ""; }
+  }
+  function refresh() {
+    const n = hw.i.length, k = hw.i.filter(function (_, i) { return done[i]; }).length;
+    document.getElementById("prog").hidden = false;
+    document.getElementById("prog-text").textContent = k + " of " + n + " done";
+    document.getElementById("prog-bar").style.width = Math.round(100 * k / n) + "%";
+    document.getElementById("alldone").hidden = k !== n;
+  }
+  hw.i.forEach(function (it, i) {
+    const kind = KIND[it[0]] || ["Task", ""];
+    const li = document.createElement("li"); li.className = "task" + (done[i] ? " done" : "");
+    const num = document.createElement("span"); num.className = "n"; num.textContent = i + 1;
+    const tag = document.createElement("span"); tag.className = "kind k-" + it[0]; tag.textContent = kind[0];
+    const title = document.createElement("strong"); title.textContent = it[1];
+    const how = document.createElement("p"); how.className = "how"; how.textContent = kind[1];
+    const acts = document.createElement("div"); acts.className = "acts";
+    let url = safeUrl(it[2]);
+    // Pronunciation, practice words and check-ups need the student's name so their work is saved for them.
+    if (url && /^(pron|words|check)$/.test(it[0]) && Q.get("student")) {
+      const u = new URL(url); u.searchParams.set("student", Q.get("student")); if (who) u.searchParams.set("who", who); url = u.href;
+    }
+    if (url) { const a = document.createElement("a"); a.className = "btn"; a.href = url; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Open"; acts.appendChild(a); }
+    const tick = document.createElement("button"); tick.type = "button"; tick.className = "ghost donebtn";
+    const setTick = function () { tick.setAttribute("aria-pressed", done[i] ? "true" : "false"); tick.textContent = done[i] ? "✓ Done" : "Mark as done"; li.classList.toggle("done", !!done[i]); };
+    tick.addEventListener("click", function () { done[i] = !done[i]; try { localStorage.setItem(key, JSON.stringify(done)); } catch (e) {} setTick(); refresh(); });
+    setTick(); acts.appendChild(tick);
+    li.append(num, tag, title, how, acts);
+    list.appendChild(li);
+  });
+  refresh();
+})();
+</script>
+</body>
+</html>
