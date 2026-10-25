@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
-<link rel="stylesheet" href="traps.css">
+<link rel="stylesheet" href="traps.css?v=1792888638">
 </head>
 <body class="student">
 <header class="top">
@@ -88,8 +88,8 @@
 <li><del>I want going home.</del> I want <strong>to go</strong> home.</li>
 </ul>
 <h2 id="ex1" class="ex">Exercise 1: Sort the verbs</h2>
-<p>Put each verb in the correct column: enjoy, want, finish, decide, avoid, hope, mind, promise, keep, refuse, practise, manage, suggest, afford, miss, agree.</p>
-<table class="sort"><thead><tr><th>+ -ing</th><th>+ to + verb</th></tr></thead><tbody><tr><td><textarea class="blank area" rows="6" aria-label="+ -ing" data-k="sa"></textarea></td><td><textarea class="blank area" rows="6" aria-label="+ to + verb" data-k="sb"></textarea></td></tr></tbody></table>
+<p>Put each verb in the correct column.</p>
+<div class="sorter" data-k="sort4"><p class="hint sort-how">Tap a word, then tap the column it belongs in. On a computer you can also drag the words.</p><div class="bank drop" data-col=""><button type="button" class="chip" draggable="true" data-i="0" data-a="0">enjoy</button><button type="button" class="chip" draggable="true" data-i="5" data-a="0">practise</button><button type="button" class="chip" draggable="true" data-i="10" data-a="1">hope</button><button type="button" class="chip" draggable="true" data-i="15" data-a="1">agree</button><button type="button" class="chip" draggable="true" data-i="3" data-a="0">mind</button><button type="button" class="chip" draggable="true" data-i="8" data-a="1">want</button><button type="button" class="chip" draggable="true" data-i="13" data-a="1">manage</button><button type="button" class="chip" draggable="true" data-i="1" data-a="0">finish</button><button type="button" class="chip" draggable="true" data-i="6" data-a="0">suggest</button><button type="button" class="chip" draggable="true" data-i="11" data-a="1">promise</button><button type="button" class="chip" draggable="true" data-i="4" data-a="0">keep</button><button type="button" class="chip" draggable="true" data-i="9" data-a="1">decide</button><button type="button" class="chip" draggable="true" data-i="14" data-a="1">afford</button><button type="button" class="chip" draggable="true" data-i="2" data-a="0">avoid</button><button type="button" class="chip" draggable="true" data-i="7" data-a="0">miss</button><button type="button" class="chip" draggable="true" data-i="12" data-a="1">refuse</button></div><div class="cols" style="--n:2"><div class="col" data-col="0"><p class="col-h">+ -ing</p><div class="drop" data-col="0"></div></div><div class="col" data-col="1"><p class="col-h">+ to + verb</p><div class="drop" data-col="1"></div></div></div><div class="sort-acts"><button type="button" class="sort-check">Check my answers</button><button type="button" class="ghost sort-reset">Start again</button><span class="sort-result" aria-live="polite"></span></div></div>
 <h2 id="ex2" class="ex">Exercise 2: -ing or to + verb?</h2>
 <ol>
 <li>I enjoy <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"> (read) in bed.</li>
@@ -186,6 +186,46 @@
     if (!confirm("Clear all your answers on this page?")) return;
     fields.forEach(function (f) { f.value = ""; });
     saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    location.reload();
+  });
+  // Word sorting exercises
+  document.querySelectorAll(".sorter").forEach(function (box) {
+    var k = box.dataset.k, sel = null;
+    var chips = box.querySelectorAll(".chip"), bank = box.querySelector(".bank"), result = box.querySelector(".sort-result");
+    var place = saved[k] || {};
+    function dropFor(col) { return col === "" ? bank : box.querySelector('.col .drop[data-col="' + col + '"]'); }
+    chips.forEach(function (c) { var at = place[c.dataset.i]; if (at !== undefined && at !== "") { var d = dropFor(String(at)); if (d) d.appendChild(c); } });
+    function store() {
+      place = {}; chips.forEach(function (c) { place[c.dataset.i] = c.parentNode.dataset.col; });
+      saved[k] = place; try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
+    }
+    function clearMarks() { chips.forEach(function (c) { c.classList.remove("ok", "bad"); }); result.textContent = ""; }
+    function select(c) { if (sel) sel.classList.remove("picked"); sel = (sel === c) ? null : c; if (sel) sel.classList.add("picked"); box.classList.toggle("picking", !!sel); }
+    function moveTo(drop) { if (!sel || !drop) return; drop.appendChild(sel); sel.classList.remove("picked"); sel = null; box.classList.remove("picking"); clearMarks(); store(); }
+    box.addEventListener("click", function (e) {
+      var c = e.target.closest(".chip");
+      if (c) { if (sel && sel !== c && c.parentNode !== sel.parentNode) { moveTo(c.parentNode); } else { select(c); } return; }
+      var d = e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop"));
+      if (d) moveTo(d);
+    });
+    box.addEventListener("dragstart", function (e) { var c = e.target.closest(".chip"); if (!c) return; select(c); if (sel !== c) select(c); e.dataTransfer.setData("text/plain", c.dataset.i); });
+    box.addEventListener("dragover", function (e) { if (e.target.closest(".drop, .col")) e.preventDefault(); });
+    box.addEventListener("drop", function (e) {
+      e.preventDefault();
+      var i = e.dataTransfer.getData("text/plain"); var c = box.querySelector('.chip[data-i="' + i + '"]'); if (!c) return;
+      sel = c; moveTo(e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop")));
+    });
+    box.querySelector(".sort-check").addEventListener("click", function () {
+      var right = 0, left = 0;
+      chips.forEach(function (c) {
+        c.classList.remove("ok", "bad");
+        var col = c.parentNode.dataset.col;
+        if (col === "") { left++; return; }
+        if (col === c.dataset.a) { right++; c.classList.add("ok"); } else c.classList.add("bad");
+      });
+      result.textContent = right + " of " + chips.length + " correct" + (left ? " (" + left + " still to place)" : (right === chips.length ? ". Well done!" : ". Move the red ones and check again."));
+    });
+    box.querySelector(".sort-reset").addEventListener("click", function () { chips.forEach(function (c) { bank.appendChild(c); }); select(null); if (sel) select(sel); clearMarks(); store(); });
   });
   var pr = document.getElementById("print");
   if (pr) pr.addEventListener("click", function () { window.print(); });

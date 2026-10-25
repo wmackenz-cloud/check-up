@@ -101,3 +101,21 @@ details.answers summary { cursor: pointer; padding: 12px 16px; font-weight: 700;
   details.answers:not([open]) > .answers-body { display: block; }
   .blank { border-bottom: 1px solid #555; background: none; }
 }
+/* Word sorting: tap or drag words into columns */
+.sorter { border: 1px solid var(--rule); border-radius: 12px; padding: 10px 12px; margin: 12px 0; background: var(--paper); }
+.sorter .bank { display: flex; flex-wrap: wrap; gap: 8px; min-height: 48px; padding: 8px; border: 2px dashed var(--blank-line); border-radius: 10px; background: var(--sheet); }
+.sorter .cols { display: grid; grid-template-columns: repeat(var(--n, 2), minmax(0, 1fr)); gap: 10px; margin-top: 10px; }
+@media (max-width: 520px) { .sorter .cols { grid-template-columns: minmax(0, 1fr); } }
+.sorter .col { border: 2px solid var(--accent); border-radius: 10px; background: var(--sheet); cursor: pointer; }
+.sorter.picking .col { box-shadow: 0 0 0 3px var(--accent-soft); }
+.sorter .col-h { margin: 0; padding: 6px 10px; background: var(--accent); color: var(--sheet); font-weight: 700; border-radius: 7px 7px 0 0; }
+.sorter .col .drop { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px; min-height: 70px; }
+.sorter .chip { font: inherit; font-weight: 700; font-size: .95rem; background: var(--blank); color: var(--ink); border: 1px solid var(--blank-line); border-radius: 999px; padding: 6px 12px; cursor: grab; touch-action: manipulation; }
+.sorter .chip.picked { background: var(--accent); color: var(--sheet); border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.sorter .chip.ok { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); }
+.sorter .chip.ok::after { content: " \2713"; }
+.sorter .chip.bad { background: color-mix(in srgb, var(--bad) 14%, var(--sheet)); border-color: var(--bad); color: var(--bad); }
+.sorter .chip.bad::after { content: " \2717"; }
+.sorter .sort-acts { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+.sorter .sort-result { font-weight: 700; }
+@media print { .sorter .sort-acts, .sorter .sort-how { display: none; } }
