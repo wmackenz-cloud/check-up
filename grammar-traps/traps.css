@@ -119,3 +119,12 @@ details.answers summary { cursor: pointer; padding: 12px 16px; font-weight: 700;
 .sorter .sort-acts { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
 .sorter .sort-result { font-weight: 700; }
 @media print { .sorter .sort-acts, .sorter .sort-how { display: none; } }
+/* Send my answers to Bill */
+.send-box { border: 2px solid var(--accent); border-radius: 14px; padding: 4px 16px 14px; margin: 26px 0 10px; background: var(--accent-soft); display: grid; gap: 8px; }
+.send-box h2.ex { border-top: none; padding-top: 14px; margin-top: 0; }
+.send-box p { margin: 0; }
+.send-name { display: grid; gap: 4px; font-weight: 700; }
+.send-box .blank.area, .send-box .blank.long { background: var(--sheet); }
+.send-msg { font-weight: 700; }
+.send-msg.ok { color: var(--ok); } .send-msg.bad { color: var(--bad); }
+@media print { .send-box { display: none; } }

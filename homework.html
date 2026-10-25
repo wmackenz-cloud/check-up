@@ -98,8 +98,8 @@
     const how = document.createElement("p"); how.className = "how"; how.textContent = kind[1];
     const acts = document.createElement("div"); acts.className = "acts";
     let url = safeUrl(it[2]);
-    // Pronunciation, practice words and check-ups need the student's name so their work is saved for them.
-    if (url && /^(pron|words|check)$/.test(it[0]) && Q.get("student")) {
+    // Every task gets the student's name, so their answers and recordings are saved for them.
+    if (url && /^(pron|words|check|grammar|vocab)$/.test(it[0]) && Q.get("student")) {
       const u = new URL(url); u.searchParams.set("student", Q.get("student")); if (who) u.searchParams.set("who", who); url = u.href;
     }
     if (url) { const a = document.createElement("a"); a.className = "btn"; a.href = url; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Open"; acts.appendChild(a); }
