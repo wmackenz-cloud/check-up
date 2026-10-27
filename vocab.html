@@ -164,7 +164,7 @@ textarea {
   <section class="sheet" id="start">
     <p><strong>This is not a test you can pass or fail.</strong> It helps you and your teacher find the best place to start, so your lessons focus on what will help you most.</p>
     <ul class="calm">
-      <li>24 short questions, about 12 minutes.</li>
+      <li>27 short questions, about 14 minutes.</li>
       <li>Each area is marked with the exam it matters most for: <span class="exam-tag">Cambridge</span>, <span class="exam-tag">Aptis</span> or <span class="exam-tag">Both</span>.</li>
       <li>If you don't know an answer, choose <strong>"I'm not sure"</strong>. That's helpful, and much better than guessing.</li>
       <li>Please don't use a dictionary or translator. We want to see what you know today.</li>
@@ -181,7 +181,7 @@ textarea {
   <!-- Question screen -->
   <section class="sheet" id="quiz" hidden>
     <div class="progress">
-      <p class="eyebrow qnum" id="qcount">Question 1 of 24</p>
+      <p class="eyebrow qnum" id="qcount">Question 1 of 27</p>
       <div class="bar"><span id="qbar"></span></div>
     </div>
     <p class="cheer" id="cheer" hidden></p>
@@ -224,7 +224,7 @@ textarea {
 
   <section class="sheet" id="all-box" hidden>
     <details>
-      <summary>See all eight areas</summary>
+      <summary>See all nine areas</summary>
       <div>
         <p class="muted">Each dot is one correct answer out of three.</p>
         <ul class="areas" id="areas"></ul>
@@ -290,7 +290,11 @@ const TRAPS = {
   8: { name: "Word meaning and synonyms", exam: "Aptis", worksheet: "",
        ask: "What does this word mean here? What other words in the sentence help?",
        rule: "Aptis tests vocabulary with synonyms (words with the same meaning), opposites and short definitions. Read the whole sentence: the other words are your clues. Many words have more than one meaning.",
-       tip: "When you learn a word, learn one synonym with it: big = large, start = begin, quick = fast." }
+       tip: "When you learn a word, learn one synonym with it: big = large, start = begin, quick = fast." },
+  9: { name: "So, too and very", exam: "Both", worksheet: "",
+       ask: "Is this just strong, strong with a result, or a problem?",
+       rule: "Very makes a word stronger: very hot. So is stronger and often adds a result with that: so hot that I couldn't drink it. Too means more than is OK, so there is a problem: too hot to drink. Before a noun, use such a: such a hot day.",
+       tip: "Never use too as praise. Say \"Your English is very good\", not \"too good\"." }
 };
 
 const PRACTICE = {
@@ -373,10 +377,20 @@ const PRACTICE = {
     { q: "Someone who is \"reliable\" ___.", o: ["can be trusted", "is often late", "talks a lot"], a: 0, why: "Reliable = you can trust or depend on them." },
     { q: "Which word means the same as \"rapidly\"?", o: ["slowly", "quickly", "carefully"], a: 1, why: "Rapidly = quickly." },
     { q: "A person who repairs cars is a ___.", o: ["chef", "plumber", "mechanic"], a: 2, why: "A mechanic repairs cars. A plumber repairs pipes." }
+  ],
+  9: [
+    { q: "These jeans are ___ small. I need a bigger size.", o: ["very", "too", "so"], a: 1, why: "Too means more than is OK. The jeans don't fit, so it's a problem." },
+    { q: "I was ___ tired that I fell asleep on the sofa.", o: ["so", "too", "very"], a: 0, why: "So ... that gives a result: so tired that I fell asleep." },
+    { q: "Thank you! The flowers are ___ beautiful.", o: ["too", "very", "such"], a: 1, why: "Very is for praise. Too beautiful would mean there's a problem." },
+    { q: "It's ___ late to call her now.", o: ["too", "so", "very"], a: 0, why: "Too + adjective + to: too late to call." },
+    { q: "It was ___ nice day that we had a picnic.", o: ["so", "such a", "too"], a: 1, why: "Before a noun (day), use such a: such a nice day." },
+    { q: "There were ___ people on the bus. I couldn't sit down.", o: ["too much", "too many", "very"], a: 1, why: "People can be counted, so too many." },
+    { q: "I drank ___ coffee that I couldn't sleep.", o: ["so much", "so many", "too"], a: 0, why: "Coffee can't be counted, so so much ... that." },
+    { q: "My grandmother is 90, but she is still ___ active.", o: ["too", "very", "so much"], a: 1, why: "Being active is a good thing, so very, not too." }
   ]
 };
 // When two areas have the same score, start with the one that matters most in exams.
-const PRIORITY = [1, 4, 2, 5, 7, 3, 6, 8];
+const PRIORITY = [1, 4, 2, 5, 7, 9, 3, 6, 8];
 
 const QUESTIONS = [
   { trap: 1, q: "Everyone ___ mistakes when they learn a language.", o: ["does", "makes", "takes", "has"], a: 1 },
@@ -387,6 +401,7 @@ const QUESTIONS = [
   { trap: 6, q: "Formal email: I would like to ___ you that I cannot attend.", o: ["tell", "inform", "say", "let know"], a: 1 },
   { trap: 7, q: "___ it was raining, we went for a walk.", o: ["Despite", "Although", "However", "Because"], a: 1 },
   { trap: 8, q: "Which word means the same as \"begin\"?", o: ["finish", "start", "continue", "stop"], a: 1 },
+  { trap: 9, q: "This soup is ___ hot to eat. I'll wait a few minutes.", o: ["very", "so", "too", "such"], a: 2 },
   { trap: 1, q: "There was very ___ traffic on the way home.", o: ["strong", "big", "heavy", "hard"], a: 2 },
   { trap: 2, q: "Two men ___ the bank yesterday.", o: ["stole", "robbed", "took", "borrowed"], a: 1 },
   { trap: 3, q: "We've ___ milk. Can you buy some?", o: ["run over", "run into", "run out of", "run away"], a: 2 },
@@ -395,6 +410,7 @@ const QUESTIONS = [
   { trap: 6, q: "Formal email: I ___ your letter on 3 March.", o: ["got", "grabbed", "picked up", "received"], a: 3 },
   { trap: 7, q: "___ the rain, we went for a walk.", o: ["Although", "Even", "But", "Despite"], a: 3 },
   { trap: 8, q: "A person who travels to work by train or bus every day is a ___.", o: ["tourist", "commuter", "pilot", "guide"], a: 1 },
+  { trap: 9, q: "The film was ___ good that we watched it twice.", o: ["too", "so", "very", "such a"], a: 1 },
   { trap: 1, q: "Could you ___ me a favour?", o: ["make", "give", "do", "take"], a: 2 },
   { trap: 2, q: "When you come to my party, please ___ some music.", o: ["take", "bring", "carry", "send"], a: 1 },
   { trap: 3, q: "Who will ___ your dog while you're on holiday?", o: ["look for", "look up", "look into", "look after"], a: 3 },
@@ -402,15 +418,16 @@ const QUESTIONS = [
   { trap: 5, q: "She's very good ___ languages.", o: ["in", "on", "at", "with"], a: 2 },
   { trap: 6, q: "Message to a friend: ___ for the lovely present!", o: ["Thanks so much", "I am grateful", "I would like to express my gratitude", "Please accept my thanks"], a: 0 },
   { trap: 7, q: "The train was very late. ___, I missed my meeting.", o: ["However", "Although", "As a result", "Despite"], a: 2 },
-  { trap: 8, q: "The film was \"hilarious\". This means it was very ___.", o: ["sad", "long", "scary", "funny"], a: 3 }
+  { trap: 8, q: "The film was \"hilarious\". This means it was very ___.", o: ["sad", "long", "scary", "funny"], a: 3 },
+  { trap: 9, q: "Your English is ___ good! You've made great progress.", o: ["too", "so much", "very", "such"], a: 2 }
 ];
 
 const CHEERS = {
   4: "Good start. Keep going at your own pace.",
-  8: "A third of the way there. You're doing well.",
-  12: "Halfway! Take a breath if you need one.",
-  16: "Two thirds done. Not long now.",
-  20: "Nearly finished. Just four more."
+  9: "A third of the way there. You're doing well.",
+  13: "Halfway! Take a breath if you need one.",
+  18: "Two thirds done. Not long now.",
+  23: "Nearly finished. Just four more."
 };
 
 const $ = (id) => document.getElementById(id);
@@ -747,7 +764,7 @@ if (!DEMO && state.name === "Test Student") {
   try { localStorage.removeItem(KEY); } catch (e) {}
 }
 if (DEMO) {
-  const sample = [0, 1, 0, 1, 1, 0, 1, 1, 2, 0, 2, 2, 2, 3, -1, 1, 2, 0, 3, 1, 2, 0, 2, 3];
+  const sample = [0, 1, 0, 1, 1, 0, 1, 1, 0, 2, 0, 2, 2, 2, 3, -1, 1, 1, 2, 0, 3, 1, 2, 0, 2, 3, 2];
   state = { name: "Test Student", index: QUESTIONS.length - 1, answers: sample };
 }
 if (state.name) { $("student-name").value = state.name; $("begin").disabled = false; }
