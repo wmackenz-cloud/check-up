@@ -163,7 +163,7 @@ textarea {
   <section class="sheet" id="start">
     <p><strong>This is not a test you can pass or fail.</strong> It helps you and your teacher find the best place to start, so your lessons focus on what will help you most.</p>
     <ul class="calm">
-      <li>30 short questions, about 15 minutes.</li>
+      <li>33 short questions, about 17 minutes.</li>
       <li>If you don't know an answer, choose <strong>"I'm not sure"</strong>. That's helpful, and much better than guessing.</li>
       <li>Please don't use a dictionary or translator. We want to see what you know today.</li>
       <li>You can go back and change your answers. If you close the page, your answers are saved.</li>
@@ -179,7 +179,7 @@ textarea {
   <!-- Question screen -->
   <section class="sheet" id="quiz" hidden>
     <div class="progress">
-      <p class="eyebrow qnum" id="qcount">Question 1 of 30</p>
+      <p class="eyebrow qnum" id="qcount">Question 1 of 33</p>
       <div class="bar"><span id="qbar"></span></div>
     </div>
     <p class="cheer" id="cheer" hidden></p>
@@ -222,7 +222,7 @@ textarea {
 
   <section class="sheet" id="all-box" hidden>
     <details>
-      <summary>See all ten areas</summary>
+      <summary>See all eleven areas</summary>
       <div>
         <p class="muted">Each dot is one correct answer out of three.</p>
         <ul class="areas" id="areas"></ul>
@@ -296,7 +296,11 @@ const TRAPS = {
   10: { name: "Reported speech", worksheet: "Student 10: Reported Speech",
         ask: "Did I move the tense back? If it was a question, is it in normal order?",
         rule: "Move the tense one step back: \"I'm tired\" becomes She said she was tired. Reported questions use normal word order: She asked where I lived. Tell needs a person: She told me.",
-        tip: "Say He asked where I worked, not He asked where did I work." }
+        tip: "Say He asked where I worked, not He asked where did I work." },
+  11: { name: "Negative infinitives (not to)", worksheet: "Negative Infinitives (your teacher will share it with you)",
+        ask: "Where does not go? Did I add don't by mistake?",
+        rule: "To make an infinitive negative, put not before to: not to + verb. She told me not to call. Never add don't or no: not to don't call or no to call. With want, need and like, make the main verb negative instead: I don't want to go.",
+        tip: "Learn not to as one chunk and say it fast: not to worry, not to be late, not to forget." }
 };
 // Practice questions shown with the results. a = index of the correct option.
 const PRACTICE = {
@@ -399,10 +403,20 @@ const PRACTICE = {
     { q: "\"Don't be late,\" she told us. She told us ___ late.", o: ["don't be", "not to be", "to not"], a: 1, why: "For a negative order, use not to + verb." },
     { q: "\"I've finished,\" he said. He said he ___ finished.", o: ["has", "had", "have"], a: 1, why: "Present perfect moves back to past perfect: had finished." },
     { q: "She ___ that she was hungry.", o: ["told", "said", "asked"], a: 1, why: "No person after the verb, so use said." }
+  ],
+  11: [
+    { q: "My mother told me ___ worry.", o: ["not to", "no to", "don't"], a: 0, why: "Not goes before to: told me not to worry." },
+    { q: "It's important ___ while driving.", o: ["not to text", "to don't text", "not texting"], a: 0, why: "It's important + not to + verb." },
+    { q: "He promised ___ late again.", o: ["not be", "not to be", "to no be"], a: 1, why: "Promise + not to + verb. Don't forget to." },
+    { q: "The sign warns visitors ___ the animals.", o: ["don't feed", "not to feed", "not feed"], a: 1, why: "Warn someone not to do something." },
+    { q: "I try ___ coffee after 4 pm.", o: ["not drink", "not to drink", "to don't drink"], a: 1, why: "Try + not to + verb. Never use don't after to." },
+    { q: "They chose ___ the meeting.", o: ["not to attend", "to not attending", "don't attend"], a: 0, why: "Choose + not to + verb, with the base form: attend." },
+    { q: "I spoke quietly so as ___ the baby.", o: ["not to wake", "to not waking", "no wake"], a: 0, why: "So as not to + verb shows the purpose." },
+    { q: "I ___ go to the party. I'm too tired.", o: ["want not to", "don't want to", "want no to"], a: 1, why: "With want, make the main verb negative: I don't want to go." }
   ]
 };
 // When two areas have the same score, start with the one that matters most in exams.
-const PRIORITY = [3, 1, 5, 6, 2, 4, 7, 8, 9, 10];
+const PRIORITY = [3, 1, 5, 11, 6, 2, 4, 7, 8, 9, 10];
 
 const QUESTIONS = [
   { trap: 1, q: "I ___ to London three times.", o: ["went", "have been", "was going", "go"], a: 1 },
@@ -415,6 +429,7 @@ const QUESTIONS = [
   { trap: 8, q: "This bridge ___ in 1890.", o: ["built", "was built", "is building", "has built"], a: 1 },
   { trap: 9, q: "The man ___ lives next door is a doctor.", o: ["which", "whose", "where", "who"], a: 3 },
   { trap: 10, q: "She asked me where ___.", o: ["did I live", "I lived", "do I live", "I did live"], a: 1 },
+  { trap: 11, q: "The doctor advised me ___ so much sugar.", o: ["no to eat", "not to eat", "to don't eat", "not eat"], a: 1 },
   { trap: 1, q: "She ___ her job two years ago.", o: ["has left", "left", "leaves", "has been leaving"], a: 1 },
   { trap: 3, q: "___ life in a big city can be stressful.", o: ["The", "A", "An", "(no word)"], a: 3 },
   { trap: 6, q: "If I ___ you, I'd take the job.", o: ["am", "will be", "were", "would be"], a: 2 },
@@ -425,6 +440,7 @@ const QUESTIONS = [
   { trap: 7, q: "That ___ be Tom's car. His car is red, and this one is blue.", o: ["mustn't", "can't", "might", "must"], a: 1 },
   { trap: 10, q: "He ___ me that he was busy.", o: ["said", "told", "spoke", "talked"], a: 1 },
   { trap: 9, q: "That's the woman ___ son plays for the national team.", o: ["who", "who's", "whose", "which"], a: 2 },
+  { trap: 11, q: "I set two alarms so as ___ my flight.", o: ["not to miss", "to not missing", "don't miss", "not missing"], a: 0 },
   { trap: 1, q: "We ___ in this house since 2019.", o: ["live", "are living", "lived", "have lived"], a: 3 },
   { trap: 5, q: "We decided ___ the train.", o: ["taking", "to take", "take", "took"], a: 1 },
   { trap: 3, q: "It's ___ best restaurant in town.", o: ["a", "the", "an", "(no word)"], a: 1 },
@@ -434,15 +450,16 @@ const QUESTIONS = [
   { trap: 7, q: "She didn't answer her phone last night. She ___ asleep.", o: ["might be", "can't be", "must be", "might have been"], a: 3 },
   { trap: 9, q: "Toronto, ___ is in Canada, is a very big city.", o: ["that", "which", "where", "who"], a: 1 },
   { trap: 8, q: "I ___ yesterday. The hairdresser did a great job.", o: ["cut my hair", "had my hair cut", "had cut my hair", "have my hair cut"], a: 1 },
-  { trap: 10, q: "\"I'll call you tomorrow,\" she said. She said she ___ me the next day.", o: ["will call", "would call", "calls", "is calling"], a: 1 }
+  { trap: 10, q: "\"I'll call you tomorrow,\" she said. She said she ___ me the next day.", o: ["will call", "would call", "calls", "is calling"], a: 1 },
+  { trap: 11, q: "She decided ___ the expensive shoes.", o: ["to don't buy", "not buying", "not to buy", "no to buy"], a: 2 }
 ];
 
 const CHEERS = {
   5: "Good start. Keep going at your own pace.",
-  10: "A third of the way there. You're doing well.",
-  15: "Halfway! Take a breath if you need one.",
-  20: "Two thirds done. Not long now.",
-  25: "Nearly finished. Just five more."
+  11: "A third of the way there. You're doing well.",
+  16: "Halfway! Take a breath if you need one.",
+  22: "Two thirds done. Not long now.",
+  28: "Nearly finished. Just five more."
 };
 
 const $ = (id) => document.getElementById(id);
@@ -773,7 +790,7 @@ if (!DEMO && state.name === "Test Student") {
   try { localStorage.removeItem(KEY); } catch (e) {}
 }
 if (DEMO) {
-  const sample = [1, 0, 2, 0, 3, 1, 1, 1, 3, 0, 1, -1, 2, 0, 1, 0, 3, 1, 0, 2, 0, 1, 1, 3, 0, 2, -1, 0, 1, 1];
+  const sample = [1, 0, 2, 0, 3, 1, 1, 1, 3, 0, 1, 1, -1, 2, 0, 1, 0, 3, 1, 0, 2, 0, 0, 1, 1, 3, 0, 2, -1, 0, 1, 1, 0];
   state = { name: "Test Student", index: QUESTIONS.length - 1, answers: sample };
 }
 if (state.name) { $("student-name").value = state.name; $("begin").disabled = false; }
