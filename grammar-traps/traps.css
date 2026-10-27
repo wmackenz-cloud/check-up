@@ -128,3 +128,13 @@ details.answers summary { cursor: pointer; padding: 12px 16px; font-weight: 700;
 .send-msg { font-weight: 700; }
 .send-msg.ok { color: var(--ok); } .send-msg.bad { color: var(--bad); }
 @media print { .send-box { display: none; } }
+
+/* Breadcrumbs on teacher pages */
+.crumbs ol { list-style: none; margin: 0 0 6px; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 2px 0;
+  font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; color: var(--ink-soft); }
+.crumbs li { margin: 0; display: inline-flex; align-items: center; }
+.crumbs li + li::before { content: "\203A"; margin: 0 .6em; color: var(--ink-soft); font-size: 1.1em; }
+.crumbs a { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; padding: 4px 0; }
+.crumbs a:hover { text-decoration-thickness: 2px; }
+.crumbs [aria-current] { color: var(--ink-soft); }
+@media print { .crumbs { display: none; } }
