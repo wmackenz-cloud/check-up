@@ -138,3 +138,19 @@ details.answers summary { cursor: pointer; padding: 12px 16px; font-weight: 700;
 .crumbs a:hover { text-decoration-thickness: 2px; }
 .crumbs [aria-current] { color: var(--ink-soft); }
 @media print { .crumbs { display: none; } }
+
+/* Teacher menu bar (teacher-nav.js) */
+body > .tnav { max-width: none; margin: -28px -16px 22px; position: sticky; top: 0; z-index: 20;
+  background: var(--sheet); border-bottom: 1px solid var(--rule); box-shadow: 0 1px 6px rgba(0, 0, 0, .05); }
+.tnav ul { list-style: none; margin: 0 auto; padding: 0 10px; max-width: 980px; display: flex; gap: 2px;
+  overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.tnav ul::-webkit-scrollbar { display: none; }
+.tnav li { margin: 0; flex: none; }
+.tnav a { display: block; padding: 12px 12px 10px; color: var(--ink-soft); font-weight: 700; font-size: .92rem;
+  text-decoration: none; border-bottom: 3px solid transparent; white-space: nowrap; }
+.tnav a:hover { color: var(--accent); }
+.tnav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+.tnav a:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+.tnav a[target="_blank"]::after { content: " \2197"; font-weight: 400; font-size: .8em; }
+@media print { .tnav { display: none !important; } }
+body > .lessons { margin-left: auto; margin-right: auto; }
