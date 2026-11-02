@@ -32,6 +32,10 @@
   .task.done { border-color: var(--ok); background: var(--ok-soft); }
   .task.done strong { text-decoration: line-through; text-decoration-color: var(--ok); }
   .donebtn[aria-pressed="true"] { background: var(--ok); border-color: var(--ok); color: #fff; }
+  .hw-goal { background: var(--sheet); border: 2px solid var(--accent); border-radius: 12px; padding: 10px 16px; margin: 10px 0 6px; }
+  .hw-goal p { margin: 4px 0; }
+  .hw-goal .from { font-size: .85rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+  .hw-goal #goal-text { font-size: 1.08rem; }
   .all-done { text-align: center; border: 2px solid var(--ok); background: var(--ok-soft); border-radius: 14px; padding: 14px; font-weight: 700; color: var(--ok); margin-top: 16px; }
 </style>
 </head>
@@ -39,6 +43,7 @@
 <header class="top">
   <p class="eyebrow">English with Bill</p>
   <h1 id="title">My Homework</h1>
+  <div class="hw-goal" id="goal" hidden><p class="from">Lesson goal</p><p id="goal-text"></p></div>
   <p class="lead" id="sub"></p>
 </header>
 <main>
@@ -73,6 +78,11 @@
   if (hw.d) {
     const d = new Date(hw.d + "T12:00:00");
     if (!isNaN(d)) document.getElementById("sub").textContent = "To finish before your lesson on " + d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) + ".";
+  }
+  // The lesson goal Bill wrote in the lesson plan: "By the end of the lesson you will know and understand how to ..."
+  if (hw.g) {
+    const g = String(hw.g).trim().replace(/^by the end of (the|this) lesson,? (the student|you) will know and understand how to\s*/i, "").replace(/^(how )?to\s+/i, "");
+    if (g) { document.getElementById("goal").hidden = false; document.getElementById("goal-text").textContent = "By the end of the lesson you will know and understand how to " + g + (/[.!?]$/.test(g) ? "" : "."); }
   }
   if (hw.n) { document.getElementById("note").hidden = false; document.getElementById("note-text").textContent = hw.n; }
 
