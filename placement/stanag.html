@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>STANAG Placement Check</title>
+<meta name="description" content="An online English placement check in reading, listening and writing on the NATO STANAG 6001 scale, Levels 1 to 3.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<script src="../api.js"></script>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: one calm column; three parts (reading, listening, writing) chosen from a part bar; each part is marked when the student is ready */
+:root {
+  --paper: #f5f7f6;
+  --sheet: #ffffff;
+  --ink: #1f2a30;
+  --ink-soft: #5a676e;
+  --rule: #dbe2e0;
+  --accent: #1f5f73;
+  --accent-soft: #e3eff1;
+  --start: #c4572e;
+  --start-soft: #fbece4;
+  --ok: #2e7a50;
+  --ok-soft: #e4f2ea;
+  --font-display: "Literata", Georgia, "Times New Roman", serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #111a1d; --sheet: #19242a; --ink: #e6eeef; --ink-soft: #a2b1b6;
+    --rule: #2c3a40; --accent: #7fc0d1; --accent-soft: #1e3740;
+    --start: #f0956f; --start-soft: #3a2620; --ok: #78c99a; --ok-soft: #1d3428; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #111a1d; --sheet: #19242a; --ink: #e6eeef; --ink-soft: #a2b1b6;
+  --rule: #2c3a40; --accent: #7fc0d1; --accent-soft: #1e3740;
+  --start: #f0956f; --start-soft: #3a2620; --ok: #78c99a; --ok-soft: #1d3428; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 56px;
+}
+.wrap { max-width: 680px; margin: 0 auto; display: grid; gap: 20px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 700; text-wrap: balance; margin: 0; line-height: 1.25; }
+h1 { font-size: clamp(1.7rem, 5vw, 2.2rem); }
+h2 { font-size: 1.35rem; }
+h3 { font-size: 1.15rem; }
+p { margin: 0; }
+.eyebrow { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 700; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; padding: 24px; display: grid; gap: 16px; min-width: 0; }
+.muted { color: var(--ink-soft); }
+.calm { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.calm li { position: relative; padding-left: 20px; }
+.calm li::before { content: ""; position: absolute; left: 0; top: .6em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+label.field { display: grid; gap: 6px; font-weight: 700; }
+input[type="text"] {
+  font: inherit; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 8px;
+  background: var(--paper); color: var(--ink); width: 100%;
+}
+input[type="text"]:focus-visible, textarea:focus-visible, button:focus-visible, .option:focus-within, a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+button, .btn {
+  font: inherit; font-weight: 700; border-radius: 8px; padding: 10px 18px; cursor: pointer;
+  border: 1px solid var(--accent); background: var(--accent); color: var(--sheet); text-decoration: none; display: inline-block;
+}
+button.ghost, .btn.ghost { background: transparent; color: var(--accent); }
+button:disabled { opacity: .45; cursor: not-allowed; }
+.home-link { display: inline-block; margin-bottom: 10px; color: var(--accent); font-weight: 700; text-decoration: none; }
+.home-link:hover { text-decoration: underline; }
+
+/* Part bar */
+.parts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.part-btn { background: var(--sheet); color: var(--ink); border: 1px solid var(--rule); font-weight: 700; padding: 10px 8px; display: grid; gap: 0; text-align: center; line-height: 1.3; }
+.part-btn small { font-weight: 400; color: var(--ink-soft); font-size: .8rem; }
+.part-btn[aria-current="step"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.part-btn.done small { color: var(--ok); font-weight: 700; }
+
+/* Texts and questions */
+.tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; justify-self: start; }
+.text-box { background: var(--paper); border-left: 3px solid var(--accent); border-radius: 6px; padding: 14px 16px; display: grid; gap: 10px; }
+.text-box .subject { font-style: italic; font-weight: 700; }
+.text-box p { font-family: var(--font-display); font-size: 1.02rem; line-height: 1.65; }
+.text-title { font-family: var(--font-body); font-size: 1rem; font-weight: 700; }
+fieldset.q { border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px 14px; margin: 0; display: grid; gap: 8px; min-width: 0; }
+fieldset.q legend { font-weight: 700; padding: 0 4px; line-height: 1.45; }
+.qn { color: var(--ink-soft); font-variant-numeric: tabular-nums; margin-right: 4px; }
+.options { display: grid; gap: 8px; }
+.option {
+  display: flex; gap: 12px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--rule);
+  border-radius: 8px; cursor: pointer; background: var(--paper);
+}
+.option:hover { border-color: var(--accent); }
+.option input { accent-color: var(--accent); width: 18px; height: 18px; margin: .2em 0 0; flex: none; }
+.option .letter { font-weight: 700; color: var(--ink-soft); }
+.option.chosen { border-color: var(--accent); background: var(--accent-soft); }
+fieldset.q.marked .option { cursor: default; }
+fieldset.q.marked .option:hover { border-color: var(--rule); }
+fieldset.q.marked .option.chosen:hover { border-color: var(--accent); }
+.verdict { font-weight: 700; font-size: .95rem; }
+.verdict.ok { color: var(--ok); }
+.verdict.bad { color: var(--start); }
+fieldset.q.right { border-color: var(--ok); }
+fieldset.q.wrong { border-color: var(--start); }
+.confirm { background: var(--accent-soft); border-radius: 10px; padding: 14px 16px; display: grid; gap: 10px; }
+
+/* Audio player */
+.player { border: 1px solid var(--rule); border-radius: 10px; padding: 14px; background: var(--paper); display: grid; gap: 10px; }
+.player .bar { height: 8px; background: var(--rule); border-radius: 999px; overflow: hidden; }
+.player .bar > span { display: block; height: 100%; background: var(--accent); width: 0; }
+.player .plays { font-weight: 700; font-variant-numeric: tabular-nums; }
+.player .note { font-weight: 700; color: var(--start); }
+.player .time { font-variant-numeric: tabular-nums; color: var(--ink-soft); font-size: .92rem; }
+
+/* Results */
+.result { border: 2px solid var(--accent); background: var(--accent-soft); border-radius: 12px; padding: 18px; display: grid; gap: 10px; min-width: 0; }
+.result .level { font-family: var(--font-display); font-size: 1.7rem; font-weight: 700; line-height: 1.2; }
+.result .confirm-note { font-weight: 700; }
+.scores { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.scores li { display: flex; justify-content: space-between; gap: 12px; background: var(--sheet); border-radius: 8px; padding: 8px 12px; flex-wrap: wrap; }
+.scores .band { font-size: .85rem; font-weight: 700; color: var(--ink-soft); }
+.scores .band.secure { color: var(--ok); }
+.scores .band.border { color: var(--accent); }
+.check-note { background: var(--start-soft); border-radius: 8px; padding: 10px 12px; font-weight: 700; }
+
+/* Writing */
+.situation { font-weight: 700; }
+textarea {
+  width: 100%; min-height: 220px; font: 1.05rem/1.6 var(--font-body); color: var(--ink); background: var(--paper);
+  border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; resize: vertical;
+}
+textarea.summary { min-height: 200px; font: .9rem/1.45 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
+.count { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--ink-soft); }
+.count.good { color: var(--ok); }
+.count.over { color: var(--start); }
+.status { font-weight: 700; min-height: 1.5em; color: var(--ok); }
+.email { font-weight: 700; user-select: all; overflow-wrap: anywhere; }
+details { border: 1px solid var(--rule); border-radius: 8px; padding: 10px 14px; background: var(--paper); }
+summary { cursor: pointer; font-weight: 700; }
+details > div { display: grid; gap: 10px; margin-top: 10px; }
+.sec-head { display: grid; gap: 4px; }
+@media (max-width: 420px) {
+  .sheet { padding: 18px 16px; }
+  .part-btn { padding: 8px 4px; font-size: .95rem; }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <a class="home-link" id="home-link" href="../" target="_top">&larr; All check-ups</a>
+    <p class="eyebrow">STANAG 6001 practice</p>
+    <h1>STANAG Placement Check</h1>
+  </header>
+
+  <!-- Start screen -->
+  <section class="sheet" id="start">
+    <p>This check helps your tutor estimate your English level in reading, listening and writing, on the NATO STANAG 6001 scale, Levels 1 to 3. It is a practice estimate, not the official JFLT. Each part gets harder as you go. Do your best, and if a section feels much too difficult, move on to the next part.</p>
+    <ul class="calm">
+      <li><strong>Total time:</strong> about 70 minutes (Reading 25, Listening 15, Writing 30). You can do it in two sessions.</li>
+      <li>Your answers are saved in this browser as you go, so you can stop and come back later on the same device.</li>
+      <li>Please don't use a dictionary, a translator or AI tools. We want to see what you know today.</li>
+      <li>The reading and listening parts are marked on the page. Your tutor marks the writing.</li>
+      <li>The result is an estimated level to help plan your lessons. It is not an official exam result.</li>
+    </ul>
+    <label class="field" for="student-name">Your name
+      <input type="text" id="student-name" autocomplete="name" placeholder="e.g. Marta G">
+    </label>
+    <div class="btn-row">
+      <button type="button" id="begin" disabled>Start</button>
+    </div>
+  </section>
+
+  <!-- Part bar -->
+  <nav class="parts" id="parts" aria-label="Parts of the check" hidden>
+    <button type="button" class="part-btn" data-part="reading">Reading<small id="pb-reading">25 min</small></button>
+    <button type="button" class="part-btn" data-part="listening">Listening<small id="pb-listening">15 min</small></button>
+    <button type="button" class="part-btn" data-part="writing">Writing<small id="pb-writing">30 min</small></button>
+  </nav>
+
+  <!-- Part 1: Reading -->
+  <div id="part-reading" class="part" hidden style="display:grid;gap:20px">
+    <section class="sheet">
+      <p class="eyebrow">Part 1</p>
+      <h2>Reading</h2>
+      <p>Read each text and choose the best answer (a, b, c or d).</p>
+      <p class="muted">When you have answered all the questions, press "Mark my reading" at the bottom of the page.</p>
+    </section>
+    <div id="reading-sections" style="display:grid;gap:20px"></div>
+    <section class="sheet" id="reading-submit-box">
+      <div class="btn-row"><button type="button" id="reading-submit">Mark my reading</button></div>
+      <div class="confirm" id="reading-confirm" hidden>
+        <p id="reading-confirm-text"></p>
+        <div class="btn-row">
+          <button type="button" id="reading-confirm-yes">Yes, mark it</button>
+          <button type="button" class="ghost" id="reading-confirm-no">Go back to the questions</button>
+        </div>
+      </div>
+    </section>
+    <section class="sheet" id="reading-results" hidden tabindex="-1" aria-live="polite"></section>
+  </div>
+
+  <!-- Part 2: Listening -->
+  <div id="part-listening" class="part" hidden style="display:grid;gap:20px">
+    <section class="sheet">
+      <p class="eyebrow">Part 2</p>
+      <h2>Listening</h2>
+      <p>You can play each recording twice. Read the questions before you listen.</p>
+      <p class="muted">You can't skip forward or back in a recording, so listen carefully. You can answer while you listen and after the second play. When you have finished all three sections, press "Mark my listening".</p>
+    </section>
+    <div id="listening-sections" style="display:grid;gap:20px"></div>
+    <section class="sheet" id="listening-submit-box">
+      <div class="btn-row"><button type="button" id="listening-submit">Mark my listening</button></div>
+      <div class="confirm" id="listening-confirm" hidden>
+        <p id="listening-confirm-text"></p>
+        <div class="btn-row">
+          <button type="button" id="listening-confirm-yes">Yes, mark it</button>
+          <button type="button" class="ghost" id="listening-confirm-no">Go back to the questions</button>
+        </div>
+      </div>
+    </section>
+    <section class="sheet" id="listening-results" hidden tabindex="-1" aria-live="polite"></section>
+  </div>
+
+  <!-- Part 3: Writing -->
+  <div id="part-writing" class="part" hidden style="display:grid;gap:20px">
+    <section class="sheet">
+      <p class="eyebrow">Part 3</p>
+      <h2>Writing</h2>
+      <p>Complete as many tasks as you can. Plan for a few minutes before you write.</p>
+      <p class="muted">Your tutor, Bill, will read and mark your writing. Nothing here is marked automatically. Your writing is saved in this browser as you type, so you can stop and come back.</p>
+    </section>
+    <div id="writing-tasks" style="display:grid;gap:20px"></div>
+    <section class="sheet" id="send-box">
+      <h2>Send your work to Bill</h2>
+      <p>When you have finished, press <strong>"Copy my writing"</strong>. It copies your three texts and your reading and listening results. Then paste them into a Preply message to Bill, or an email to <span class="email">wmackenz@gmail.com</span>.</p>
+      <div class="btn-row"><button type="button" id="copy-writing">Copy my writing</button></div>
+      <p class="status" id="copy-status" aria-live="polite"></p>
+      <details id="summary-box">
+        <summary>Show my work as text</summary>
+        <div><textarea class="summary" id="summary" readonly aria-label="My work as text"></textarea></div>
+      </details>
+    </section>
+  </div>
+</div>
+
+<script>
+const LETTERS = ["a", "b", "c", "d"];
+
+// Reading: texts and questions from the Student Booklet. "a" is the index of the correct option (0 = a).
+const READING = [
+ {
+  "id": "A",
+  "level": "Level 1",
+  "texts": [
+   {
+    "title": "Text A1: Notice",
+    "paras": [
+     "BASE GYM: NEW HOURS. From Monday 4 March, the base gym will open at 06:00 and close at 21:00 on weekdays. On Saturdays it opens at 08:00 and closes at 14:00. It is closed on Sundays. Bring your ID card. Towels are not provided."
+    ],
+    "qs": [
+     {
+      "n": 1,
+      "q": "What time does the gym close on Wednesday?",
+      "o": [
+       "14:00",
+       "20:00",
+       "21:00",
+       "06:00"
+      ],
+      "a": 2
+     },
+     {
+      "n": 2,
+      "q": "When is the gym closed?",
+      "o": [
+       "Saturday morning",
+       "Sunday",
+       "Monday",
+       "Every evening"
+      ],
+      "a": 1
+     },
+     {
+      "n": 3,
+      "q": "What must you bring?",
+      "o": [
+       "A towel",
+       "Your ID card",
+       "A friend",
+       "A form"
+      ],
+      "a": 1
+     }
+    ]
+   },
+   {
+    "title": "Text A2: Message",
+    "paras": [
+     "Marco, the meeting with the captain is moved from 10:00 to 11:30 tomorrow. It is now in Room 12, not the main office. Please bring the training schedule. Luca"
+    ],
+    "qs": [
+     {
+      "n": 4,
+      "q": "Where is the meeting now?",
+      "o": [
+       "The main office",
+       "The captain's office",
+       "Room 12",
+       "The gym"
+      ],
+      "a": 2
+     },
+     {
+      "n": 5,
+      "q": "What time is the meeting now?",
+      "o": [
+       "10:00",
+       "11:30",
+       "12:00",
+       "10:30"
+      ],
+      "a": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B",
+  "level": "Level 2",
+  "texts": [
+   {
+    "title": "Text B1: News report. Flooding Response in Northern Region",
+    "paras": [
+     "Engineers from the 2nd Engineer Regiment arrived in the town of Valmora on Tuesday after three days of heavy rain caused the river to burst its banks. More than 400 residents had already left their homes, and local authorities requested military support on Monday evening.",
+     "The soldiers built temporary barriers along a two-kilometre section of the river and helped civil protection teams move families to a sports centre that is being used as a shelter. Two bridges were closed because inspectors were concerned about damage to their foundations.",
+     "According to the regiment's commanding officer, the main priorities for the next 48 hours are restoring road access to three villages in the hills and delivering drinking water. “The water level has started to drop, but we expect more rain on Thursday,” he said. Residents have been told not to return home until the barriers have been checked."
+    ],
+    "qs": [
+     {
+      "n": 6,
+      "q": "Why did the soldiers go to Valmora?",
+      "o": [
+       "For a training exercise",
+       "Local authorities asked for help",
+       "The bridges had collapsed",
+       "To build a sports centre"
+      ],
+      "a": 1
+     },
+     {
+      "n": 7,
+      "q": "What happened before the soldiers arrived?",
+      "o": [
+       "More than 400 residents had left their homes",
+       "The bridges were repaired",
+       "The water level dropped",
+       "The roads to the villages reopened"
+      ],
+      "a": 0
+     },
+     {
+      "n": 8,
+      "q": "Why were two bridges closed?",
+      "o": [
+       "Water was flowing over them",
+       "The soldiers needed them",
+       "There was possible damage to their foundations",
+       "There was too much traffic"
+      ],
+      "a": 2
+     },
+     {
+      "n": 9,
+      "q": "What is one priority for the next two days?",
+      "o": [
+       "Building a new bridge",
+       "Delivering drinking water",
+       "Moving the shelter",
+       "Inspecting every home"
+      ],
+      "a": 1
+     },
+     {
+      "n": 10,
+      "q": "What have residents been told?",
+      "o": [
+       "To return on Thursday",
+       "To wait until the barriers have been checked",
+       "To go to the villages in the hills",
+       "To help the soldiers build barriers"
+      ],
+      "a": 1
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "C",
+  "level": "Level 3",
+  "texts": [
+   {
+    "title": "Text C1: Opinion article. Interoperability Is More Than Shared Equipment",
+    "paras": [
+     "Discussions of alliance readiness tend to focus on hardware: compatible radios, common ammunition standards, aircraft that can refuel from one another's tankers. These matters are important, but they risk obscuring a less visible requirement. Multinational forces succeed or fail largely on whether their people can understand one another under pressure.",
+     "Language is the obvious example. A staff officer who can follow a briefing but cannot challenge an assumption in it is, in practical terms, a passive participant. Yet language proficiency is only part of the problem. Different national armies carry different expectations about how orders are given, how much initiative junior leaders may take, and whether bad news travels quickly or slowly up the chain of command. When these expectations collide, the result is rarely open conflict. More often it is a quiet misunderstanding that surfaces only when a plan is already under way.",
+     "Investing in exchanges, joint exercises and shared professional education is therefore not a luxury to be cut when budgets tighten. It is arguably the cheapest form of readiness available. Equipment can be purchased in a single contract; trust and mutual understanding take years to build and can be lost far more quickly."
+    ],
+    "qs": [
+     {
+      "n": 11,
+      "q": "What is the writer's main argument?",
+      "o": [
+       "Alliances should buy more compatible equipment",
+       "Human understanding matters as much as compatible equipment",
+       "Language training is too expensive",
+       "Junior leaders need more initiative"
+      ],
+      "a": 1
+     },
+     {
+      "n": 12,
+      "q": "Why does the writer mention the staff officer?",
+      "o": [
+       "To show that understanding a briefing is not the same as taking a full part in it",
+       "To criticize the quality of briefings",
+       "To show that officers lack equipment",
+       "To argue for shorter briefings"
+      ],
+      "a": 0
+     },
+     {
+      "n": 13,
+      "q": "According to the writer, what usually happens when national expectations collide?",
+      "o": [
+       "Open conflict between units",
+       "A misunderstanding that is noticed late",
+       "The plan is cancelled",
+       "Budgets are cut"
+      ],
+      "a": 1
+     },
+     {
+      "n": 14,
+      "q": "In the last paragraph, “not a luxury” suggests that this investment is:",
+      "o": [
+       "expensive",
+       "necessary",
+       "optional",
+       "temporary"
+      ],
+      "a": 1
+     },
+     {
+      "n": 15,
+      "q": "Which statement would the writer most likely agree with?",
+      "o": [
+       "Trust is easier to build than equipment is to buy",
+       "Exchanges should be the first thing cut in a budget crisis",
+       "Trust is slow to build and quick to lose",
+       "Equipment matters more than people"
+      ],
+      "a": 2
+     }
+    ]
+   }
+  ]
+ }
+];
+
+const LISTENING = [
+ {
+  "id": "A",
+  "level": "Level 1",
+  "title": "Section A: Voice message",
+  "audio": "audio/stanag-listening-a.mp3",
+  "qs": [
+   {
+    "n": 16,
+    "q": "Where should the group meet?",
+    "o": [
+     "The front gate",
+     "The car park",
+     "Inside the canteen",
+     "Room 4"
+    ],
+    "a": 1
+   },
+   {
+    "n": 17,
+    "q": "What time should they meet?",
+    "o": [
+     "07:00",
+     "07:15",
+     "07:30",
+     "07:50"
+    ],
+    "a": 1
+   },
+   {
+    "n": 18,
+    "q": "What should they bring?",
+    "o": [
+     "A water bottle and a rain jacket",
+     "An ID card and lunch",
+     "A laptop",
+     "A helmet and boots"
+    ],
+    "a": 0
+   }
+  ]
+ },
+ {
+  "id": "B",
+  "level": "Level 2",
+  "title": "Section B: Briefing",
+  "audio": "audio/stanag-listening-b.mp3",
+  "qs": [
+   {
+    "n": 19,
+    "q": "When does the main group travel to the training area?",
+    "o": [
+     "Monday morning",
+     "Tuesday morning",
+     "Wednesday",
+     "Saturday"
+    ],
+    "a": 1
+   },
+   {
+    "n": 20,
+    "q": "Why will convoys use the northern route?",
+    "o": [
+     "It is faster",
+     "The main road is being repaired",
+     "The weather is bad",
+     "It is safer at night"
+    ],
+    "a": 1
+   },
+   {
+    "n": 21,
+    "q": "What will happen on Thursday?",
+    "o": [
+     "Communications practice",
+     "A night activity",
+     "A casualty evacuation exercise",
+     "Return to base"
+    ],
+    "a": 2
+   },
+   {
+    "n": 22,
+    "q": "What could change Friday's night activity?",
+    "o": [
+     "The weather",
+     "Transport problems",
+     "The medical unit",
+     "Lieutenant Bianchi"
+    ],
+    "a": 0
+   },
+   {
+    "n": 23,
+    "q": "Who should you contact about transport?",
+    "o": [
+     "The advance team",
+     "The medical unit",
+     "Lieutenant Bianchi",
+     "The company commanders"
+    ],
+    "a": 2
+   }
+  ]
+ },
+ {
+  "id": "C",
+  "level": "Level 3",
+  "title": "Section C: Interview",
+  "audio": "audio/stanag-listening-c.mp3",
+  "qs": [
+   {
+    "n": 24,
+    "q": "According to the colonel, what is the main advantage of civilian contractors?",
+    "o": [
+     "They are more loyal",
+     "They can be cheaper and bring specialist skills",
+     "They work closer to the front",
+     "They need no contracts"
+    ],
+    "a": 1
+   },
+   {
+    "n": 25,
+    "q": "What is his main concern?",
+    "o": [
+     "Contractors are badly trained",
+     "Contractors may not continue when conditions become dangerous",
+     "Contracts are too long",
+     "Soldiers dislike working with contractors"
+    ],
+    "a": 1
+   },
+   {
+    "n": 26,
+    "q": "What is his position?",
+    "o": [
+     "Stop using contractors completely",
+     "Use contractors selectively",
+     "Use many more contractors",
+     "He has no clear opinion"
+    ],
+    "a": 1
+   },
+   {
+    "n": 27,
+    "q": "What does he mean when he says the savings appear this year but the risks may not appear for a decade?",
+    "o": [
+     "Contracts last ten years",
+     "Short-term savings can hide long-term risks",
+     "Budgets are planned every ten years",
+     "The risks are not real"
+    ],
+    "a": 1
+   }
+  ]
+ }
+];
+
+const WRITING = [
+ {
+  "n": 1,
+  "min": 40,
+  "max": 60,
+  "target": "40 to 60 words",
+  "prompt": "Write a short message to a colleague. You cannot attend tomorrow's meeting. Explain why and suggest another day."
+ },
+ {
+  "n": 2,
+  "min": 120,
+  "max": 150,
+  "target": "120 to 150 words",
+  "prompt": "Write an email to your supervisor about a recent training activity, exercise or trip you took part in. Describe what happened, what went well, and one problem and how it was solved."
+ },
+ {
+  "n": 3,
+  "min": 200,
+  "max": 250,
+  "target": "200 to 250 words",
+  "prompt": "“Language training should be compulsory for all military personnel, not only for those going on international postings.” Do you agree? Give your reasons with examples, and explain the opposing view."
+ }
+];
+
+// Cut-offs from the Teacher Guide: [secure from, borderline at].
+const CUTS = {
+  reading: { A: [4, 3], B: [4, 3], C: [4, 3] },
+  listening: { A: [3, 2], B: [4, 3], C: [3, 2] }
+};
+const MAX_PLAYS = 2;
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const countWords = (t) => (String(t).trim().match(/\S+/g) || []).length;
+const readingQs = () => READING.flatMap((s) => s.texts.flatMap((t) => t.qs.map((q) => Object.assign({ sec: s.id }, q))));
+const listeningQs = () => LISTENING.flatMap((s) => s.qs.map((q) => Object.assign({ sec: s.id }, q)));
+
+const DEMO = (Q.get("demo") === "1");
+const STUDENT = STUDENT_CODE;
+const KEY = "stanag-state" + (STUDENT ? "-" + STUDENT : "");
+// Bill's blank link: add &fresh=1 to forget answers saved in this browser.
+const FRESH = (Q.get("fresh") === "1");
+if (FRESH) { try { localStorage.removeItem(KEY); } catch (e) {} }
+const HOME = SITE.replace(/placement\/$/, "") + (STUDENT ? "?student=" + encodeURIComponent(STUDENT) : "");
+$("home-link").href = HOME;
+
+const blank = () => ({ name: "", started: false, part: "reading", ans: {}, rDone: false, lDone: false, plays: { A: 0, B: 0, C: 0 }, w: { 1: "", 2: "", 3: "" } });
+let state = blank();
+function save() { if (DEMO) return; try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+function load() {
+  try {
+    const s = JSON.parse(localStorage.getItem(KEY) || "null");
+    if (s && typeof s === "object") { const b = blank(); state = Object.assign(b, s); state.plays = Object.assign(b.plays, s.plays || {}); state.w = Object.assign(b.w, s.w || {}); state.ans = s.ans || {}; }
+  } catch (e) {}
+}
+
+// ---------- Scoring ----------
+function band(skill, sec, score) {
+  const [secure, border] = CUTS[skill][sec];
+  return score >= secure ? "secure" : score >= border ? "border" : "not";
+}
+function score(skill) {
+  const qs = skill === "reading" ? readingQs() : listeningQs();
+  const out = { A: 0, B: 0, C: 0 }, totals = { A: 0, B: 0, C: 0 };
+  qs.forEach((q) => { totals[q.sec]++; if (state.ans[q.n] === q.a) out[q.sec]++; });
+  const b = {}; ["A", "B", "C"].forEach((s) => (b[s] = band(skill, s, out[s])));
+  let level;
+  if (b.A !== "secure") level = "below Level 1";
+  else if (b.B !== "secure") level = "Level 1" + (b.B === "border" ? "+" : "");
+  else if (b.C !== "secure") level = "Level 2" + (b.C === "border" ? "+" : "");
+  else level = "Level 3 or above";
+  const check = out.C > out.B;
+  return { scores: out, totals, bands: b, level, check, total: out.A + out.B + out.C, max: qs.length };
+}
+const BAND_TEXT = { secure: "secure", border: "borderline", not: "not yet" };
+
+// ---------- Questions ----------
+function questionBlock(q, skill) {
+  const fs = el("fieldset", "q"); fs.id = "q" + q.n; fs.dataset.skill = skill;
+  const lg = el("legend"); lg.append(el("span", "qn", q.n + "."), q.q); fs.append(lg);
+  const box = el("div", "options");
+  q.o.forEach((text, k) => {
+    const id = `q${q.n}-${LETTERS[k]}`;
+    const lab = el("label", "option" + (state.ans[q.n] === k ? " chosen" : "")); lab.htmlFor = id;
+    const inp = document.createElement("input"); inp.type = "radio"; inp.name = "q" + q.n; inp.id = id; inp.value = String(k);
+    inp.checked = state.ans[q.n] === k;
+    inp.addEventListener("change", () => {
+      state.ans[q.n] = k; save();
+      box.querySelectorAll(".option").forEach((o) => o.classList.remove("chosen")); lab.classList.add("chosen");
+    });
+    lab.append(inp, el("span", null, ""));
+    lab.lastChild.append(el("span", "letter", LETTERS[k] + ") "), text);
+    box.append(lab);
+  });
+  fs.append(box);
+  fs.append(Object.assign(el("p", "verdict"), { hidden: true }));
+  return fs;
+}
+function lockAndMark(skill) {
+  const qs = skill === "reading" ? readingQs() : listeningQs();
+  qs.forEach((q) => {
+    const fs = $("q" + q.n); if (!fs) return;
+    const ok = state.ans[q.n] === q.a;
+    fs.classList.add("marked", ok ? "right" : "wrong");
+    fs.querySelectorAll("input").forEach((i) => (i.disabled = true));
+    const v = fs.querySelector(".verdict"); v.hidden = false;
+    v.className = "verdict " + (ok ? "ok" : "bad");
+    v.textContent = ok ? "✓ Correct" : (state.ans[q.n] == null ? "✗ Not answered" : "✗ Not correct");
+  });
+}
+
+// ---------- Reading ----------
+function renderReading() {
+  const box = $("reading-sections"); box.textContent = "";
+  READING.forEach((s) => {
+    const sec = el("section", "sheet"); sec.setAttribute("aria-labelledby", "rs-" + s.id);
+    const h = el("h3", null, "Section " + s.id); h.id = "rs-" + s.id; sec.append(h);
+    s.texts.forEach((t) => {
+      const tb = el("div", "text-box");
+      tb.append(el("p", "text-title", t.title));
+      if (t.subject) tb.append(el("p", "subject", t.subject));
+      t.paras.forEach((p) => tb.append(el("p", null, p)));
+      sec.append(tb);
+      t.qs.forEach((q) => sec.append(questionBlock(q, "reading")));
+    });
+    box.append(sec);
+  });
+}
+
+// ---------- Listening ----------
+function fmt(t) { if (!isFinite(t)) return "0:00"; const m = Math.floor(t / 60), s = Math.floor(t % 60); return m + ":" + String(s).padStart(2, "0"); }
+function player(s) {
+  const wrap = el("div", "player");
+  const audio = document.createElement("audio");
+  audio.preload = "none"; audio.src = s.audio; audio.id = "audio-" + s.id;
+  audio.setAttribute("aria-hidden", "true");
+  const row = el("div", "btn-row");
+  const btn = el("button", null, "Play the recording"); btn.type = "button"; btn.id = "play-" + s.id;
+  const pause = el("button", "ghost", "Pause"); pause.type = "button"; pause.hidden = true;
+  row.append(btn, pause);
+  const bar = el("div", "bar"); bar.setAttribute("aria-hidden", "true"); const fill = el("span"); bar.append(fill);
+  const time = el("p", "time", "");
+  const plays = el("p", "plays"); plays.setAttribute("aria-live", "polite");
+  const note = el("p", "note"); note.hidden = true; note.setAttribute("role", "status");
+  wrap.append(audio, row, bar, time, plays, note);
+
+  let starting = false, broken = false, lastT = 0, resetting = false;
+  const left = () => MAX_PLAYS - (state.plays[s.id] || 0);
+  function refresh() {
+    const playing = !audio.paused && !audio.ended;
+    const midway = audio.currentTime > 0 && !audio.ended;
+    if (broken) { btn.disabled = true; pause.hidden = true; plays.textContent = ""; return; }
+    if (playing) { btn.disabled = true; btn.textContent = "Playing…"; pause.hidden = false; }
+    else if (midway) { btn.disabled = false; btn.textContent = "Continue"; pause.hidden = true; }
+    else { pause.hidden = true; btn.disabled = left() <= 0; btn.textContent = left() <= 0 ? "No plays left" : (state.plays[s.id] ? "Play again" : "Play the recording"); }
+    const n = left();
+    plays.textContent = n <= 0 && !playing && !midway
+      ? "You have listened twice. Answer the questions now."
+      : `Plays left: ${n} of ${MAX_PLAYS}` + (playing || midway ? " (this play is counted)" : "");
+  }
+  function fail() {
+    broken = true; starting = false; bar.hidden = true; time.hidden = true;
+    note.hidden = false; note.textContent = "This recording isn't ready yet. Your tutor will play it in your lesson.";
+    refresh();
+  }
+  btn.addEventListener("click", () => {
+    if (broken) return;
+    const midway = audio.currentTime > 0 && !audio.ended;
+    if (!midway) { if (left() <= 0) return; starting = true; if (audio.ended || audio.currentTime) { resetting = true; audio.currentTime = 0; } }
+    const p = audio.play();
+    if (p && p.catch) p.catch((e) => { if (e && e.name === "NotAllowedError") { starting = false; refresh(); } else fail(); });
+  });
+  pause.addEventListener("click", () => audio.pause());
+  audio.addEventListener("playing", () => {
+    if (starting) { starting = false; state.plays[s.id] = (state.plays[s.id] || 0) + 1; save(); }
+    refresh();
+  });
+  audio.addEventListener("pause", refresh);
+  audio.addEventListener("ended", () => { lastT = 0; refresh(); });
+  audio.addEventListener("error", fail);
+  audio.addEventListener("timeupdate", () => {
+    if (!audio.seeking) lastT = audio.currentTime;
+    const d = audio.duration; fill.style.width = (isFinite(d) && d ? (audio.currentTime / d) * 100 : 0) + "%";
+    time.textContent = fmt(audio.currentTime) + (isFinite(d) ? " / " + fmt(d) : "");
+  });
+  // No seeking: put the recording back where it was (media keys or browser menus could try).
+  audio.addEventListener("seeking", () => {
+    if (resetting) { resetting = false; return; }
+    if (Math.abs(audio.currentTime - lastT) > 0.75) audio.currentTime = lastT;
+  });
+  refresh();
+  return wrap;
+}
+function renderListening() {
+  const box = $("listening-sections"); box.textContent = "";
+  LISTENING.forEach((s) => {
+    const sec = el("section", "sheet"); sec.setAttribute("aria-labelledby", "ls-" + s.id);
+    const head = el("div", "sec-head");
+    const h = el("h3", null, s.title); h.id = "ls-" + s.id; head.append(h);
+    head.append(el("p", "muted", "Take 30 seconds to read the questions, then play the recording."));
+    sec.append(head, player(s));
+    s.qs.forEach((q) => sec.append(questionBlock(q, "listening")));
+    box.append(sec);
+  });
+}
+
+// ---------- Results ----------
+function renderResult(skill) {
+  const r = score(skill);
+  const box = $(skill + "-results"); box.textContent = ""; box.hidden = false;
+  const label = skill === "reading" ? "reading" : "listening";
+  box.append(el("p", "eyebrow", "Your " + label + " results"));
+  const card = el("div", "result");
+  card.append(el("p", null, `Estimated ${label} level`));
+  const lv = el("p", "level", r.level); lv.id = skill + "-level"; card.append(lv);
+  card.append(el("p", "confirm-note", "Your tutor will confirm your level."));
+  card.append(el("p", "muted", "This is an estimate to help plan your lessons, not an official exam result."));
+  box.append(card);
+  if (r.check) box.append(el("p", "check-note", "Your Section C score is higher than your Section B score, so this result needs checking with Bill. He will go through it with you."));
+  const list = el("ul", "scores");
+  const sections = skill === "reading" ? READING : LISTENING;
+  sections.forEach((s) => {
+    const li = el("li"); li.id = `${skill}-score-${s.id}`;
+    li.append(el("span", null, `Section ${s.id}: ${r.scores[s.id]} of ${r.totals[s.id]}`), el("span", "band " + r.bands[s.id], BAND_TEXT[r.bands[s.id]]));
+    list.append(li);
+  });
+  box.append(list);
+  box.append(el("p", null, `Total: ${r.total} of ${r.max}.`));
+  const next = skill === "reading" ? "listening" : "writing";
+  const row = el("div", "btn-row");
+  const go = el("button", null, skill === "reading" ? "Next: Listening" : "Next: Writing"); go.type = "button";
+  go.addEventListener("click", () => showPart(next));
+  row.append(go); box.append(row);
+  $(skill + "-submit-box").hidden = true;
+  lockAndMark(skill);
+}
+function trySubmit(skill) {
+  const qs = skill === "reading" ? readingQs() : listeningQs();
+  const missing = qs.filter((q) => state.ans[q.n] == null).length;
+  if (missing) {
+    $(skill + "-confirm-text").textContent = `You have ${missing} question${missing === 1 ? "" : "s"} without an answer. ${missing === 1 ? "It" : "They"} will count as not correct. Mark your ${skill} now?`;
+    $(skill + "-confirm").hidden = false;
+    return;
+  }
+  finish(skill);
+}
+function finish(skill) {
+  $(skill + "-confirm").hidden = true;
+  if (skill === "reading") state.rDone = true; else state.lDone = true;
+  save(); renderResult(skill); updatePartBar();
+  $(skill + "-results").focus({ preventScroll: true });
+  $(skill + "-results").scrollIntoView({ block: "start" });
+}
+
+// ---------- Writing ----------
+function renderCount(node, t, words) {
+  node.textContent = `${words} word${words === 1 ? "" : "s"} · target: ${t.target}`;
+  node.className = "count" + (words >= t.min && words <= t.max ? " good" : words > t.max ? " over" : "");
+}
+function renderWriting() {
+  const box = $("writing-tasks"); box.textContent = "";
+  WRITING.forEach((t) => {
+    const card = el("section", "sheet");
+    const h = el("h3", null, `Task ${t.n} (${t.target})`); h.id = "wt-" + t.n;
+    card.append(h, el("p", "situation", t.prompt));
+    const ta = document.createElement("textarea"); ta.id = "w" + t.n;
+    ta.setAttribute("aria-labelledby", "wt-" + t.n); ta.setAttribute("aria-describedby", "wc-" + t.n);
+    ta.spellcheck = false; ta.value = state.w[t.n] || "";
+    const count = el("p", "count"); count.id = "wc-" + t.n; count.setAttribute("aria-live", "polite");
+    ta.addEventListener("input", () => { state.w[t.n] = ta.value; save(); renderCount(count, t, countWords(ta.value)); $("summary").value = summaryText(); $("copy-status").textContent = ""; updatePartBar(); });
+    renderCount(count, t, countWords(ta.value));
+    card.append(ta, count);
+    box.append(card);
+  });
+}
+function summaryText() {
+  const date = new Date().toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" });
+  const lines = ["STANAG PLACEMENT CHECK", `Student: ${state.name}${STUDENT ? " (" + STUDENT + ")" : ""}`, `Date: ${date}`, ""];
+  [["reading", state.rDone], ["listening", state.lDone]].forEach(([skill, done]) => {
+    lines.push(skill.toUpperCase());
+    if (!done) { lines.push("Not marked yet."); lines.push(""); return; }
+    const r = score(skill);
+    lines.push(`Estimated level: ${r.level}${r.check ? " (Section C higher than B: needs checking)" : ""}`);
+    ["A", "B", "C"].forEach((s) => lines.push(`Section ${s}: ${r.scores[s]}/${r.totals[s]} (${BAND_TEXT[r.bands[s]]})`));
+    const qs = skill === "reading" ? readingQs() : listeningQs();
+    const wrong = qs.filter((q) => state.ans[q.n] !== q.a).map((q) => q.n + (state.ans[q.n] == null ? " (blank)" : " (" + LETTERS[state.ans[q.n]] + ")"));
+    lines.push("Not correct: " + (wrong.length ? wrong.join(", ") : "none"));
+    if (skill === "listening") lines.push(`Plays used: A ${state.plays.A}, B ${state.plays.B}, C ${state.plays.C}`);
+    lines.push("");
+  });
+  lines.push("WRITING");
+  WRITING.forEach((t) => {
+    const txt = (state.w[t.n] || "").trim();
+    lines.push("", `Task ${t.n} (${t.target}): ${countWords(txt)} words`, txt || "(not written)");
+  });
+  return lines.join("\n");
+}
+
+// ---------- Parts ----------
+function updatePartBar() {
+  $("pb-reading").textContent = state.rDone ? "✓ Marked" : "35 min";
+  $("pb-listening").textContent = state.lDone ? "✓ Marked" : "20 min";
+  const words = WRITING.reduce((n, t) => n + countWords(state.w[t.n] || ""), 0);
+  $("pb-writing").textContent = words ? words + " words" : "45 min";
+  $("pb-reading").parentNode.classList.toggle("done", state.rDone);
+  $("pb-listening").parentNode.classList.toggle("done", state.lDone);
+}
+function showPart(p) {
+  state.part = p; save();
+  $("start").hidden = true; $("parts").hidden = false;
+  ["reading", "listening", "writing"].forEach((k) => {
+    $("part-" + k).hidden = k !== p;
+    const b = document.querySelector(`.part-btn[data-part="${k}"]`);
+    if (k === p) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current");
+  });
+  // Stop any recording when leaving the listening part.
+  if (p !== "listening") document.querySelectorAll("audio").forEach((a) => a.pause());
+  if (p === "writing") { $("summary").value = summaryText(); }
+  updatePartBar();
+  window.scrollTo(0, 0);
+}
+
+document.querySelectorAll(".part-btn").forEach((b) => b.addEventListener("click", () => showPart(b.dataset.part)));
+$("student-name").addEventListener("input", (e) => { $("begin").disabled = e.target.value.trim().length === 0; });
+$("begin").addEventListener("click", () => {
+  state.name = $("student-name").value.trim().replace(/[<>]/g, ""); state.started = true; save(); showPart(state.part || "reading");
+});
+["reading", "listening"].forEach((skill) => {
+  $(skill + "-submit").addEventListener("click", () => trySubmit(skill));
+  $(skill + "-confirm-yes").addEventListener("click", () => finish(skill));
+  $(skill + "-confirm-no").addEventListener("click", () => { $(skill + "-confirm").hidden = true; });
+});
+$("copy-writing").addEventListener("click", async () => {
+  const ta = $("summary"); ta.value = summaryText();
+  try { await navigator.clipboard.writeText(ta.value); $("copy-status").textContent = "Copied! Now paste it into a Preply message or an email to Bill."; }
+  catch (e) {
+    $("summary-box").open = true; ta.focus(); ta.select();
+    $("copy-status").textContent = "The text is selected. Press Ctrl+C (or Cmd+C on a Mac) to copy it, then paste it to Bill.";
+  }
+});
+
+(async () => {
+  load();
+  renderReading(); renderListening(); renderWriting();
+  const who = (Q.get("who") || "").trim();
+  if (!state.name && who) state.name = who;
+  if (!state.name && STUDENT) { const info = await loadInfo(); if (info.name) state.name = info.name; }
+  if (DEMO) { state = blank(); state.name = "Test Student"; state.started = true; }
+  if (state.name) { $("student-name").value = state.name; $("begin").disabled = false; }
+  if (state.rDone) renderResult("reading");
+  if (state.lDone) renderResult("listening");
+  if (state.started) { $("begin").textContent = "Continue where I stopped"; }
+  updatePartBar();
+})();
+</script>
+</body>
+</html>
