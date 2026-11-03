@@ -24,7 +24,7 @@
   .task .kind { font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; justify-self: start; }
   .k-pron { background: #f6e3dc; color: #8a3a1f; } .k-grammar { background: var(--accent-soft); color: var(--accent); }
   .k-vocab { background: #efe6f7; color: #5b3a7a; } .k-check { background: #fff2cc; color: #7a5a00; } .k-words { background: #f6e3dc; color: #8a3a1f; }
-  .k-link { background: #e4f2ea; color: #2e7a50; }
+  .k-link { background: #e4f2ea; color: #2e7a50; } .k-stanag { background: #e3e8f4; color: #2b3f73; }
   @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .task .kind { background: var(--accent-soft); color: var(--accent); } }
   .task strong { font-size: 1.12rem; }
   .task .how { color: var(--ink-soft); font-size: .95rem; margin: 0; }
@@ -72,6 +72,7 @@
     grammar: ["Grammar", "Read the rule, fill in the boxes, then check your answers at the end."],
     vocab: ["Vocabulary", "Read the rule, fill in the boxes, then check your answers at the end."],
     check: ["Check-Up", "Answer the questions. Your results go to Bill automatically."],
+    stanag: ["STANAG", "Open the document, work through it, and bring your answers to our next lesson."],
     link: ["Lesson resource", "Open it and have a look before your lesson."]
   };
   document.getElementById("title").textContent = who ? who + "'s homework" : "My homework";
@@ -110,7 +111,7 @@
     const how = document.createElement("p"); how.className = "how"; how.textContent = kind[1];
     const acts = document.createElement("div"); acts.className = "acts";
     // Lesson resources (a Google Doc, a video) can be on any https site; everything else must be on this site.
-    let url = it[0] === "link" ? (/^https:\/\/\S+$/i.test(it[2] || "") ? it[2] : "") : safeUrl(it[2]);
+    let url = (it[0] === "link" || it[0] === "stanag") ? (/^https:\/\/\S+$/i.test(it[2] || "") ? it[2] : "") : safeUrl(it[2]);
     // Every task gets the student's name, so their answers and recordings are saved for them.
     if (url && /^(pron|words|check|grammar|vocab)$/.test(it[0]) && Q.get("student")) {
       const u = new URL(url); u.searchParams.set("student", Q.get("student")); if (who) u.searchParams.set("who", who); url = u.href;

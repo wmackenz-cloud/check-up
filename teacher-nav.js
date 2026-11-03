@@ -12,6 +12,7 @@
   var RES = [
     { label: "Grammar Traps", note: "11 worksheets with teacher notes", href: "grammar-traps/index.html", match: "grammar-traps/" },
     { label: "Vocabulary", note: "9 worksheets, one per Check-Up area", href: "vocabulary/index.html", match: "vocabulary/" },
+    { label: "STANAG / JFLT", note: "Placement check, speaking interview, military vocabulary", href: "stanag/index.html", match: "stanag/" },
     { label: "Pronunciation", note: "Lessons and drills for Vietnamese speakers", href: "pronunciation/teacher-f42702.html", match: "pronunciation/" },
     { label: "Speaking Confidence", note: "4-lesson series in Google Drive", href: "https://drive.google.com/drive/folders/1IH6FfV2yImOwFIoIR-C-zsapwcYrFUGO" },
     null,
