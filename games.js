@@ -353,62 +353,74 @@
     bar.update(marks(), true);
   });
 
-  // ---------- Check my writing (Claude, through Bill's Writing checker) ----------
+  // ---------- Check my writing: a Check button for each sentence (Claude, through Bill's Writing checker) ----------
   var LABEL = { correct: "Correct", almost: "Almost", wrong: "Let's fix this", "off-task": "Check the task", empty: "" };
   document.querySelectorAll(".g-write").forEach(function (box) {
     var inputs = Array.prototype.filter.call(box.querySelectorAll("input.blank, textarea.blank"), function (f) { return f.type !== "hidden"; });
     var record = box.querySelector("input.g-record");
-    var g = "write-" + (box.dataset.g || "w"), st = state[g];
+    var g = "write-" + (box.dataset.g || "w");
+    var st = state[g]; if (!st || st.kind !== "write") st = state[g] = { kind: "write", items: {} };
     if (CHECK_URL) stars.add(g, labelFor(box));
-    var acts = el("div", "g-write-acts game-ui");
-    var go = btn("Check my writing");
-    var msg = el("p", "g-write-msg"); msg.setAttribute("aria-live", "polite");
-    acts.append(go, msg); box.append(acts);
-    var boxes = inputs.map(function (f) { var fb = el("div", "g-fb game-ui"); fb.hidden = true; f.after(fb); return fb; });
-    function show(results, texts, quiet) {
-      var good = 0, done = 0;
-      results.forEach(function (r, i) {
-        var fb = boxes[i]; fb.innerHTML = ""; fb.className = "g-fb game-ui " + r.status;
-        if (r.status === "empty") { fb.hidden = true; return; }
-        done++; if (r.status === "correct") good++;
-        fb.hidden = false;
-        fb.append(el("strong", "g-fb-tag", (r.status === "correct" ? "✓ " : "") + (LABEL[r.status] || "Check")));
-        if (r.corrected && r.corrected !== texts[i]) { var c = el("span", "g-fb-fix"); c.append(el("span", "g-fb-lab", "Better: "), el("em", null, r.corrected)); fb.append(c); }
-        if (r.note) fb.append(el("span", "g-fb-note", r.note));
-        if (!quiet) flash(fb, "pop");
-      });
-      var all = inputs.length;
-      if (done === all && good === all) {
-        msg.innerHTML = "<strong>Perfect!</strong> All " + all + " sentences are correct.";
-        stars.set(g, "gold", quiet);
-        if (!quiet) celebrate(acts);
-      } else if (done < all) msg.textContent = good + " correct so far. Write all " + all + " sentences, then check again.";
-      else { msg.textContent = good + " of " + all + " correct. Change the sentences that need it, then check again."; stars.set(g, "done", quiet); }
-      if (record) record.value = results.map(function (r, i) { return (i + 1) + ". " + texts[i] + " → " + (LABEL[r.status] || r.status) + (r.corrected ? " (" + r.corrected + ")" : ""); }).join(" | ");
+    var summary = el("p", "g-write-msg game-ui"); summary.setAttribute("aria-live", "polite");
+    box.append(summary);
+    function prompt(f) {
+      var li = f.closest("li"); if (!li) return "";
+      var c = li.cloneNode(true); c.querySelectorAll("input, textarea, .game-ui").forEach(function (x) { x.remove(); });
+      return c.textContent.replace(/\s+/g, " ").replace(/[:\s]+$/, "").trim();
     }
-    if (st && st.texts && st.texts.join("\n") === inputs.map(function (f) { return f.value.trim(); }).join("\n")) show(st.results, st.texts, true);
-    inputs.forEach(function (f, i) { f.addEventListener("input", function () { boxes[i].hidden = true; }); });
-    go.addEventListener("click", function () {
-      var texts = inputs.map(function (f) { return f.value.trim(); });
-      if (!texts.some(Boolean)) { msg.textContent = "Write your sentences first."; return; }
-      if (!CHECK_URL) { msg.textContent = "The writing check isn't switched on yet. Send your answers to Bill instead."; return; }
-      go.disabled = true; go.textContent = "Checking…"; msg.textContent = "";
-      var ctrl = window.AbortController ? new AbortController() : null, timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 30000);
+    var rows = inputs.map(function (f, i) {
+      var go = btn("Check", "g-check g-wcheck game-ui");
+      var fb = el("div", "g-fb game-ui"); fb.hidden = true; fb.setAttribute("aria-live", "polite");
+      f.after(go); go.after(fb);
+      f.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); go.click(); } });
+      f.addEventListener("input", function () { if (st.items[i]) { fb.hidden = true; } });
+      go.addEventListener("click", function () { check(i); });
+      return { f: f, go: go, fb: fb };
+    });
+    function note(i, text) { var fb = rows[i].fb; fb.className = "g-fb game-ui info"; fb.innerHTML = ""; fb.append(el("span", "g-fb-note", text)); fb.hidden = false; }
+    function show(i, quiet) {
+      var it = st.items[i], r = it.result, fb = rows[i].fb;
+      fb.innerHTML = ""; fb.className = "g-fb game-ui " + r.status; fb.hidden = false;
+      fb.append(el("strong", "g-fb-tag", (r.status === "correct" ? "✓ " : "") + (LABEL[r.status] || "Check")));
+      if (r.corrected && r.corrected !== it.text) { var c = el("span", "g-fb-fix"); c.append(el("span", "g-fb-lab", "Better: "), el("em", null, r.corrected)); fb.append(c); }
+      if (r.note) fb.append(el("span", "g-fb-note", r.note));
+      if (!quiet) flash(fb, "pop");
+    }
+    function tally(quiet) {
+      var all = inputs.length, good = 0, done = 0;
+      inputs.forEach(function (f, i) { var it = st.items[i]; if (it && it.text === f.value.trim()) { done++; if (it.result.status === "correct") good++; } });
+      if (!done) { summary.textContent = ""; }
+      else if (good === all) {
+        summary.innerHTML = "<strong>Perfect!</strong> All " + all + " sentences are correct.";
+        stars.set(g, "gold", quiet); if (!quiet) celebrate(summary);
+      } else summary.textContent = good + " of " + all + " sentences correct so far.";
+      if (record) record.value = inputs.map(function (f, i) { var it = st.items[i]; return it ? (i + 1) + ". " + it.text + " → " + (LABEL[it.result.status] || it.result.status) + (it.result.corrected ? " (" + it.result.corrected + ")" : "") : ""; }).filter(Boolean).join(" | ");
+    }
+    function check(i) {
+      var row = rows[i], text = row.f.value.trim();
+      if (!text) { note(i, "Write your answer first."); return; }
+      if (!CHECK_URL) { note(i, "The writing check isn't switched on yet. Bill will check this one when you send your answers."); return; }
+      row.go.disabled = true; row.go.textContent = "Checking…";
+      var p = prompt(row.f), ctrl = window.AbortController ? new AbortController() : null, timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 30000);
       fetch(CHECK_URL, { method: "POST", body: JSON.stringify({ action: "checkWriting", args: [{
-        lesson: (document.querySelector("h1") || {}).textContent || "", task: box.dataset.task || "", focus: box.dataset.focus || "", answers: texts }] }),
-        signal: ctrl ? ctrl.signal : undefined })
+        lesson: (document.querySelector("h1") || {}).textContent || "",
+        task: (box.dataset.task || "") + (p ? " This answer is for the prompt: “" + p + "”." : ""),
+        focus: box.dataset.focus || "", answers: [text] }] }), signal: ctrl ? ctrl.signal : undefined })
         .then(function (r) { return r.json(); })
         .then(function (j) {
           if (!j.ok) throw new Error(j.error || "failed");
-          state[g] = { texts: texts, results: j.data.results }; save();
-          show(j.data.results, texts, false);
+          st.items[i] = { text: text, result: j.data.results[0] }; save();
+          show(i, false); tally(false);
         })
         .catch(function (e) {
           var t = e && e.message || "";
-          msg.textContent = /busy day|Write something/.test(t) ? t : "Sorry, the check didn't work. Check your internet and try again in a minute.";
+          note(i, /busy day|Write something/.test(t) ? t : "Sorry, the check didn't work. Check your internet and try again in a minute.");
         })
-        .then(function () { clearTimeout(timer); go.disabled = false; go.textContent = "Check my writing"; });
-    });
+        .then(function () { clearTimeout(timer); row.go.disabled = false; row.go.textContent = "Check"; });
+    }
+    // Show earlier checks again, for sentences that haven't changed since.
+    inputs.forEach(function (f, i) { var it = st.items[i]; if (it && it.text === f.value.trim()) show(i, true); });
+    tally(true);
   });
 
   stars.draw();

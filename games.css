@@ -60,6 +60,9 @@ li.done .opts button:not(.ok):not(.bad) { opacity: .35; }
 .g-fb-lab { font-weight: 700; }
 .g-fb-fix em { font-style: normal; font-weight: 700; color: var(--ink); }
 .g-fb[hidden] { display: none !important; }
+.g-fb.info { border-left-color: var(--accent); background: var(--accent-soft); }
+.g-wcheck { margin-left: 8px; font-size: .88rem; padding: 4px 14px; border-radius: 999px; vertical-align: middle; }
+.g-write .g-write-msg { margin-top: 10px; }
 
 /* Spot the mistake: correct sentences */
 .g-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
