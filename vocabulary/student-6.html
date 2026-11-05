@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <link rel="stylesheet" href="../grammar-traps/traps.css?v=1793206303">
+<link rel="stylesheet" href="../games.css?v=1793970000">
 </head>
 <body class="student" data-item="vocab-6">
 <header class="top">
@@ -19,7 +20,7 @@
   <div class="tools">
     <button type="button" id="print">Print or save as PDF</button>
     <button type="button" class="ghost" id="clear">Clear my answers</button>
-    <span class="hint">Type your answers in the boxes. They stay on this device.</span>
+    <span class="hint">Tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
   </div>
 </header>
 <main class="sheet">
@@ -141,34 +142,50 @@
 </tbody>
 </table>
 <h2 id="ex1" class="ex">Exercise 1: Formal or informal?</h2>
-<p>Write F (formal) or I (informal).</p>
-<ol>
-<li>I'm writing to complain about my order. <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"></li>
-<li>Can't wait to see you! <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"></li>
-<li>I would be grateful if you could reply soon. <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"></li>
-<li>Sorry I didn't call you back. <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"></li>
-<li>Please find attached my CV. <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"></li>
-<li>See you soon! <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"></li>
+<p>Read each sentence. Is it formal or informal? Tap <strong>formal</strong> or <strong>informal</strong>. Try to get a green dot for every sentence: right first time!</p>
+<ol class="g-pick" data-g="ex1">
+<li data-a="0" data-form="formal" data-q="I&#x27;m writing to complain about my order. (formal or informal?) ___">I'm writing to complain about my order. <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-1"> <span class="opts game-ui"><button>formal</button><button>informal</button></span></li>
+<li data-a="1" data-form="informal" data-q="Can&#x27;t wait to see you! (formal or informal?) ___">Can't wait to see you! <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-2"> <span class="opts game-ui"><button>formal</button><button>informal</button></span></li>
+<li data-a="0" data-form="formal" data-q="I would be grateful if you could reply soon. (formal or informal?) ___">I would be grateful if you could reply soon. <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-3"> <span class="opts game-ui"><button>formal</button><button>informal</button></span></li>
+<li data-a="1" data-form="informal" data-q="Sorry I didn&#x27;t call you back. (formal or informal?) ___">Sorry I didn't call you back. <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-4"> <span class="opts game-ui"><button>formal</button><button>informal</button></span></li>
+<li data-a="0" data-form="formal" data-q="Please find attached my CV. (formal or informal?) ___">Please find attached my CV. <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-5"> <span class="opts game-ui"><button>formal</button><button>informal</button></span></li>
+<li data-a="1" data-form="informal" data-q="See you soon! (formal or informal?) ___">See you soon! <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-6"> <span class="opts game-ui"><button>formal</button><button>informal</button></span></li>
 </ol>
-<h2 id="ex2" class="ex">Exercise 2: Make it formal</h2>
-<p>Rewrite each sentence for a formal email.</p>
+<h2 id="ex2" class="ex">Exercise 2: Match the pairs</h2>
+<p>Tap an informal word, then tap the formal word with the same meaning. Look at the table above if you need help.</p>
+<div class="g-match" data-g="ex2m">
+<ul>
+<li data-l="get" data-r="receive" data-q="Match: get">get = receive<input class="blank" type="hidden" data-k="ex2m-1"></li>
+<li data-l="ask for" data-r="request" data-q="Match: ask for">ask for = request<input class="blank" type="hidden" data-k="ex2m-2"></li>
+<li data-l="help" data-r="assist" data-q="Match: help">help = assist<input class="blank" type="hidden" data-k="ex2m-3"></li>
+<li data-l="buy" data-r="purchase" data-q="Match: buy">buy = purchase<input class="blank" type="hidden" data-k="ex2m-4"></li>
+<li data-l="need" data-r="require" data-q="Match: need">need = require<input class="blank" type="hidden" data-k="ex2m-5"></li>
+<li data-l="tell" data-r="inform" data-q="Match: tell">tell = inform<input class="blank" type="hidden" data-k="ex2m-6"></li>
+</ul>
+</div>
+<h2 id="ex3" class="ex">Exercise 3: Make it formal</h2>
+<p>Rewrite each sentence for a formal email. Use the formal words from the table, and use full forms (<em>I am</em>, not <em>I'm</em>). Type your sentence, then press <strong>Check</strong> to see if it is correct and formal.</p>
+<div class="g-write" data-g="ex3" data-task="Rewrite each informal sentence so that it is suitable for a formal email. Keep the same meaning." data-focus="Each answer should be a formal version of the informal sentence in the prompt, with the same meaning. Check that the student uses formal vocabulary from the lesson (for example request, inform, require, approximately, I apologise, I am unable to attend, receive, I look forward to hearing from you, Could you please..., I would be grateful if you could...), full forms instead of contractions (I am, cannot), and no slang. Any correct formal version is fine; it does not have to match one model answer. Also check grammar and spelling.">
 <ol>
-<li>I want to ask for some information. <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>Can you tell me the price? <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>I need about two hours to finish. <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>Sorry, but I can't come to the meeting. <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>I got your letter yesterday. <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>Write back soon. <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
+<li>I want to ask for some information. <input class="blank long" type="text" aria-label="Formal version of: I want to ask for some information." autocomplete="off" spellcheck="false" data-k="ex3-1"></li>
+<li>Can you tell me the price? <input class="blank long" type="text" aria-label="Formal version of: Can you tell me the price?" autocomplete="off" spellcheck="false" data-k="ex3-2"></li>
+<li>I need about two hours to finish. <input class="blank long" type="text" aria-label="Formal version of: I need about two hours to finish." autocomplete="off" spellcheck="false" data-k="ex3-3"></li>
+<li>Sorry, but I can't come to the meeting. <input class="blank long" type="text" aria-label="Formal version of: Sorry, but I can't come to the meeting." autocomplete="off" spellcheck="false" data-k="ex3-4"></li>
+<li>I got your letter yesterday. <input class="blank long" type="text" aria-label="Formal version of: I got your letter yesterday." autocomplete="off" spellcheck="false" data-k="ex3-5"></li>
+<li>Write back soon. <input class="blank long" type="text" aria-label="Formal version of: Write back soon." autocomplete="off" spellcheck="false" data-k="ex3-6"></li>
 </ol>
-<h2 id="ex3" class="ex">Exercise 3: Sort the phrases</h2>
+<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="ex3-check"></p>
+</div>
+<h2 id="ex4" class="ex">Exercise 4: Sort the phrases</h2>
 <p>Put each phrase in the correct column.</p>
-<div class="sorter" data-k="sort4"><p class="hint sort-how">Tap a word, then tap the column it belongs in. On a computer you can also drag the words.</p><div class="bank drop" data-col=""><button type="button" class="chip" draggable="true" data-i="0" data-a="0">Dear Mr Lee,</button><button type="button" class="chip" draggable="true" data-i="5" data-a="1">Lots of love,</button><button type="button" class="chip" draggable="true" data-i="3" data-a="0">Thank you for your email.</button><button type="button" class="chip" draggable="true" data-i="1" data-a="0">Kind regards,</button><button type="button" class="chip" draggable="true" data-i="6" data-a="1">Speak soon!</button><button type="button" class="chip" draggable="true" data-i="4" data-a="1">Hi Tom,</button><button type="button" class="chip" draggable="true" data-i="2" data-a="0">I look forward to hearing from you.</button><button type="button" class="chip" draggable="true" data-i="7" data-a="1">Great to hear from you!</button></div><div class="cols" style="--n:2"><div class="col" data-col="0"><p class="col-h">Formal</p><div class="drop" data-col="0"></div></div><div class="col" data-col="1"><p class="col-h">Informal</p><div class="drop" data-col="1"></div></div></div><div class="sort-acts"><button type="button" class="sort-check">Check my answers</button><button type="button" class="ghost sort-reset">Start again</button><span class="sort-result" aria-live="polite"></span></div></div>
+<div class="sorter g-sort" data-k="sort4"><p class="hint sort-how">Tap a phrase, then tap the column it belongs in. On a computer you can also drag the phrases. Right answers stay; wrong ones jump back.</p><div class="bank drop" data-col=""><button type="button" class="chip" draggable="true" data-i="0" data-a="0">Dear Mr Lee,</button><button type="button" class="chip" draggable="true" data-i="5" data-a="1">Lots of love,</button><button type="button" class="chip" draggable="true" data-i="3" data-a="0">Thank you for your email.</button><button type="button" class="chip" draggable="true" data-i="1" data-a="0">Kind regards,</button><button type="button" class="chip" draggable="true" data-i="6" data-a="1">Speak soon!</button><button type="button" class="chip" draggable="true" data-i="4" data-a="1">Hi Tom,</button><button type="button" class="chip" draggable="true" data-i="2" data-a="0">I look forward to hearing from you.</button><button type="button" class="chip" draggable="true" data-i="7" data-a="1">Great to hear from you!</button></div><div class="cols" style="--n:2"><div class="col" data-col="0"><p class="col-h">Formal</p><div class="drop" data-col="0"></div></div><div class="col" data-col="1"><p class="col-h">Informal</p><div class="drop" data-col="1"></div></div></div><div class="sort-acts"><button type="button" class="ghost sort-reset">Start again</button></div></div>
 <details class="answers">
   <summary>Check your answers</summary>
   <div class="answers-body">
 <p><strong>Exercise 1:</strong> 1 F 2 I 3 F 4 I 5 F 6 I</p>
-<p><strong>Exercise 2 (example answers):</strong> 1 I would like to request some information. 2 Could you please inform me of the price? 3 I require approximately two hours to finish. 4 I apologise, but I am unable to attend the meeting. 5 I received your letter yesterday. 6 I look forward to hearing from you.</p>
-<p><strong>Exercise 3:</strong> Formal: Dear Mr Lee, / Kind regards, / I look forward to hearing from you. / Thank you for your email. Informal: Hi Tom, / Lots of love, / Speak soon! / Great to hear from you!</p>
+<p><strong>Exercise 2:</strong> get = receive; ask for = request; help = assist; buy = purchase; need = require; tell = inform.</p>
+<p><strong>Exercise 3 (example answers):</strong> 1 I would like to request some information. 2 Could you please inform me of the price? 3 I require approximately two hours to finish. 4 I apologise, but I am unable to attend the meeting. 5 I received your letter yesterday. 6 I look forward to hearing from you.</p>
+<p><strong>Exercise 4:</strong> Formal: Dear Mr Lee, / Kind regards, / I look forward to hearing from you. / Thank you for your email. Informal: Hi Tom, / Lots of love, / Speak soon! / Great to hear from you!</p>
   </div>
 </details>
 </main>
@@ -191,46 +208,8 @@
     if (!confirm("Clear all your answers on this page?")) return;
     fields.forEach(function (f) { f.value = ""; });
     saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
     location.reload();
-  });
-  // Word sorting exercises
-  document.querySelectorAll(".sorter").forEach(function (box) {
-    var k = box.dataset.k, sel = null;
-    var chips = box.querySelectorAll(".chip"), bank = box.querySelector(".bank"), result = box.querySelector(".sort-result");
-    var place = saved[k] || {};
-    function dropFor(col) { return col === "" ? bank : box.querySelector('.col .drop[data-col="' + col + '"]'); }
-    chips.forEach(function (c) { var at = place[c.dataset.i]; if (at !== undefined && at !== "") { var d = dropFor(String(at)); if (d) d.appendChild(c); } });
-    function store() {
-      place = {}; chips.forEach(function (c) { place[c.dataset.i] = c.parentNode.dataset.col; });
-      saved[k] = place; try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
-    }
-    function clearMarks() { chips.forEach(function (c) { c.classList.remove("ok", "bad"); }); result.textContent = ""; }
-    function select(c) { if (sel) sel.classList.remove("picked"); sel = (sel === c) ? null : c; if (sel) sel.classList.add("picked"); box.classList.toggle("picking", !!sel); }
-    function moveTo(drop) { if (!sel || !drop) return; drop.appendChild(sel); sel.classList.remove("picked"); sel = null; box.classList.remove("picking"); clearMarks(); store(); }
-    box.addEventListener("click", function (e) {
-      var c = e.target.closest(".chip");
-      if (c) { if (sel && sel !== c && c.parentNode !== sel.parentNode) { moveTo(c.parentNode); } else { select(c); } return; }
-      var d = e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop"));
-      if (d) moveTo(d);
-    });
-    box.addEventListener("dragstart", function (e) { var c = e.target.closest(".chip"); if (!c) return; select(c); if (sel !== c) select(c); e.dataTransfer.setData("text/plain", c.dataset.i); });
-    box.addEventListener("dragover", function (e) { if (e.target.closest(".drop, .col")) e.preventDefault(); });
-    box.addEventListener("drop", function (e) {
-      e.preventDefault();
-      var i = e.dataTransfer.getData("text/plain"); var c = box.querySelector('.chip[data-i="' + i + '"]'); if (!c) return;
-      sel = c; moveTo(e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop")));
-    });
-    box.querySelector(".sort-check").addEventListener("click", function () {
-      var right = 0, left = 0;
-      chips.forEach(function (c) {
-        c.classList.remove("ok", "bad");
-        var col = c.parentNode.dataset.col;
-        if (col === "") { left++; return; }
-        if (col === c.dataset.a) { right++; c.classList.add("ok"); } else c.classList.add("bad");
-      });
-      result.textContent = right + " of " + chips.length + " correct" + (left ? " (" + left + " still to place)" : (right === chips.length ? ". Well done!" : ". Move the red ones and check again."));
-    });
-    box.querySelector(".sort-reset").addEventListener("click", function () { chips.forEach(function (c) { bank.appendChild(c); }); select(null); if (sel) select(sel); clearMarks(); store(); });
   });
   var pr = document.getElementById("print");
   if (pr) pr.addEventListener("click", function () { window.print(); });
@@ -240,7 +219,8 @@
   window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
 })();
 </script>
+<script src="../games.js?v=1793970000"></script>
 <script src="../api.js?v=1792889681"></script>
-<script src="../work.js?v=1792889681"></script>
+<script src="../work.js?v=1793900000"></script>
 </body>
 </html>

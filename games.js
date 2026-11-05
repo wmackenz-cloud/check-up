@@ -71,9 +71,13 @@
     }
   };
   function labelFor(node) {
-    var h = node.previousElementSibling;
-    while (h && !/^H2$/.test(h.tagName)) h = h.previousElementSibling;
-    return h ? h.textContent.replace(/:.*/, "").trim() : "Exercise";
+    // The nearest exercise heading before this game (looking up through its containers too).
+    for (var n = node; n && n !== document.body; n = n.parentElement) {
+      for (var h = n.previousElementSibling; h; h = h.previousElementSibling) {
+        if (/^H2$/.test(h.tagName)) return h.textContent.replace(/:.*/, "").trim();
+      }
+    }
+    return "Exercise";
   }
 
   // ---------- The score bar under each game: one dot per question ----------
@@ -189,7 +193,10 @@
         }
         if (!li.classList.contains("found")) found();
         var first = tokens[badAt[0]];
-        badAt.forEach(function (j, n) { var t = tokens[j]; t.classList.remove("found"); if (n) t.hidden = true; });
+        badAt.forEach(function (j, n) {
+          var t = tokens[j]; t.classList.remove("found");
+          if (n) { t.hidden = true; var sp = t.previousSibling; if (sp && sp.nodeType === 3 && /^\s+$/.test(sp.textContent)) sp.textContent = ""; }
+        });
         first.textContent = li.dataset.fix; first.classList.add("fixed");
         opts.querySelectorAll("button").forEach(function (b) { b.disabled = true; if (b.textContent === li.dataset.fix) b.classList.add("ok"); });
         hint.textContent = ""; li.classList.add("done");
@@ -267,10 +274,12 @@
       });
       hint.addEventListener("click", function () {
         var f = ins.filter(function (x) { return !right(x); })[0] || ins[0];
-        var first = answers(f)[0].split(" ")[0];
-        f.value = first + (answers(f)[0].indexOf(" ") > -1 ? " " : ""); f.focus(); f.classList.remove("bad");
+        // A one-word answer shows only its first letter; a longer answer shows its first word.
+        var full = answers(f)[0], oneWord = full.indexOf(" ") < 0;
+        var first = oneWord ? full.charAt(0) : full.split(" ")[0];
+        f.value = first + (oneWord ? "" : " "); f.focus(); f.classList.remove("bad");
         if (!s.hint) { s.hint = true; s.miss++; st[i] = s; save(); streak.miss(); }
-        msg.textContent = "The answer starts with “" + first + "”.";
+        msg.textContent = oneWord ? "The answer starts with the letter “" + first + "” (" + full.length + " letters)." : "The answer starts with “" + first + "”.";
       });
       show.addEventListener("click", function () {
         ins.forEach(function (f) { f.value = answers(f)[0]; f.dispatchEvent(new Event("input", { bubbles: true })); });

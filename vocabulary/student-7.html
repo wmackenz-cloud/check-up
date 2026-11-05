@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <link rel="stylesheet" href="../grammar-traps/traps.css?v=1793206303">
+<link rel="stylesheet" href="../games.css?v=1793970000">
 </head>
 <body class="student" data-item="vocab-7">
 <header class="top">
@@ -19,7 +20,7 @@
   <div class="tools">
     <button type="button" id="print">Print or save as PDF</button>
     <button type="button" class="ghost" id="clear">Clear my answers</button>
-    <span class="hint">Type your answers in the boxes. They stay on this device.</span>
+    <span class="hint">Tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
   </div>
 </header>
 <main class="sheet">
@@ -86,34 +87,47 @@
 <li><del>Because of I was ill, I stayed home.</del> <strong>Because</strong> I was ill, I stayed home.</li>
 </ul>
 <h2 id="ex1" class="ex">Exercise 1: Choose the correct linking word</h2>
-<ol>
-<li>I like my job. (<input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2">), the salary is low. (However / Although)</li>
-<li>(<input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2">) the traffic, we arrived on time. (Although / Despite)</li>
-<li>She passed the exam (<input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2">) she studied hard. (because / because of)</li>
-<li>The train was cancelled. (<input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2">), we took a taxi. (Therefore / Whereas)</li>
-<li>(<input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2">) he is rich, he isn't happy. (Even though / In spite of)</li>
-<li>My brother loves football, (<input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2">) I prefer tennis. (whereas / therefore)</li>
+<p>Tap the correct linking word. Look at the words after the gap: is it a noun, or a subject + verb? Try to get a green dot for every sentence!</p>
+<ol class="g-pick" data-g="ex1">
+<li data-a="0" data-form="However," data-q="I like my job. ___, the salary is low. (However / Although)">I like my job. <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-1"> the salary is low. <span class="opts game-ui"><button>However</button><button>Although</button></span></li>
+<li data-a="1" data-form="Despite" data-q="___ the traffic, we arrived on time. (Although / Despite)"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-2"> the traffic, we arrived on time. <span class="opts game-ui"><button>Although</button><button>Despite</button></span></li>
+<li data-a="0" data-form="because" data-q="She passed the exam ___ she studied hard. (because / because of)">She passed the exam <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-3"> she studied hard. <span class="opts game-ui"><button>because</button><button>because of</button></span></li>
+<li data-a="0" data-form="Therefore," data-q="The train was cancelled. ___, we took a taxi. (Therefore / Whereas)">The train was cancelled. <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-4"> we took a taxi. <span class="opts game-ui"><button>Therefore</button><button>Whereas</button></span></li>
+<li data-a="0" data-form="Even though" data-q="___ he is rich, he isn&#x27;t happy. (Even though / In spite of)"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-5"> he is rich, he isn't happy. <span class="opts game-ui"><button>Even though</button><button>In spite of</button></span></li>
+<li data-a="0" data-form="whereas" data-q="My brother loves football, ___ I prefer tennis. (whereas / therefore)">My brother loves football, <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-6"> I prefer tennis. <span class="opts game-ui"><button>whereas</button><button>therefore</button></span></li>
 </ol>
-<h2 id="ex2" class="ex">Exercise 2: Rewrite with despite</h2>
-<ol>
-<li>Although it was cold, we went swimming. <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>Although she was tired, she finished the report. <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>Although he had a lot of experience, he didn't get the job. <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
+<h2 id="ex2" class="ex">Exercise 2: Word order</h2>
+<p>Tap the words in the right order to make a sentence. Tap a word in your sentence to send it back. Look at the commas and full stops: they help you!</p>
+<ol class="g-order" data-g="ex2o">
+<li data-answer="I stayed at home because I was ill." data-alt="Because I was ill I stayed at home." data-q="Put the words in order: I stayed at home because I was ill."><input class="blank" type="hidden" data-k="ex2o-1"></li>
+<li data-answer="Despite the rain, we enjoyed the trip." data-q="Put the words in order: Despite the rain, we enjoyed the trip."><input class="blank" type="hidden" data-k="ex2o-2"></li>
+<li data-answer="The flat was small. However, it was very comfortable." data-q="Put the words in order: The flat was small. However, it was very comfortable."><input class="blank" type="hidden" data-k="ex2o-3"></li>
+<li data-answer="My brother likes tea, whereas I prefer coffee." data-q="Put the words in order: My brother likes tea, whereas I prefer coffee."><input class="blank" type="hidden" data-k="ex2o-4"></li>
+<li data-answer="She got the job because of her experience." data-q="Put the words in order: She got the job because of her experience."><input class="blank" type="hidden" data-k="ex2o-5"></li>
+<li data-answer="Although he was tired, he finished his work." data-q="Put the words in order: Although he was tired, he finished his work."><input class="blank" type="hidden" data-k="ex2o-6"></li>
 </ol>
-<h2 id="ex3" class="ex">Exercise 3: Join the sentences</h2>
-<p>Use the word in brackets.</p>
-<ol>
-<li>The hotel was expensive. The rooms were small. (and) <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>I didn't go to work. I was ill. (because) <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>The course was difficult. I enjoyed it. (although) <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>Prices went up. Fewer people bought tickets. (as a result) <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
+<h2 id="ex3" class="ex">Exercise 3: Rewrite with despite</h2>
+<p>Write the sentence again with <strong>despite</strong>. Keep the same meaning. Remember: <em>despite</em> + a noun or an <em>-ing</em> form. Type the whole sentence, then press <strong>Check</strong> (or Enter).</p>
+<ol class="g-type" data-g="ex3">
+<li data-q="Although it was cold, we went swimming. Rewrite with despite: ___">Although it was cold, we went swimming.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex3-1" data-ok="Despite the cold, we went swimming.|Despite the cold weather, we went swimming.|We went swimming despite the cold.|We went swimming despite the cold weather.|Despite it being cold, we went swimming.|Despite being cold, we went swimming.|We went swimming despite it being cold.|Despite the fact that it was cold, we went swimming.|We went swimming despite the fact that it was cold."></li>
+<li data-q="Although she was tired, she finished the report. Rewrite with despite: ___">Although she was tired, she finished the report.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex3-2" data-ok="Despite being tired, she finished the report.|Despite her tiredness, she finished the report.|Despite feeling tired, she finished the report.|Despite her being tired, she finished the report.|She finished the report despite being tired.|She finished the report despite her tiredness.|She finished the report despite feeling tired.|Despite the fact that she was tired, she finished the report.|She finished the report despite the fact that she was tired."></li>
+<li data-q="Although he had a lot of experience, he didn&#x27;t get the job. Rewrite with despite: ___">Although he had a lot of experience, he didn't get the job.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex3-3" data-ok="Despite having a lot of experience, he didn&#x27;t get the job.|Despite his experience, he didn&#x27;t get the job.|Despite having lots of experience, he didn&#x27;t get the job.|Despite having a lot of experience, he did not get the job.|Despite his long experience, he didn&#x27;t get the job.|Despite all his experience, he didn&#x27;t get the job.|Despite his many years of experience, he didn&#x27;t get the job.|He didn&#x27;t get the job despite having a lot of experience.|He didn&#x27;t get the job despite his experience.|He didn&#x27;t get the job despite having lots of experience.|Despite the fact that he had a lot of experience, he didn&#x27;t get the job.|He didn&#x27;t get the job despite the fact that he had a lot of experience."></li>
+</ol>
+<h2 id="ex4" class="ex">Exercise 4: Join the sentences</h2>
+<p>Join the two sentences with the word in brackets. Type the new sentence, then press <strong>Check</strong>. Stuck? Tap <strong>Hint</strong>.</p>
+<ol class="g-type" data-g="ex4">
+<li data-q="The hotel was expensive. The rooms were small. (and) ___">The hotel was expensive. The rooms were small. (and)<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex4-1" data-ok="The hotel was expensive and the rooms were small.|The hotel was expensive and its rooms were small.|The hotel was expensive and had small rooms.|The rooms were small and the hotel was expensive."></li>
+<li data-q="I didn&#x27;t go to work. I was ill. (because) ___">I didn't go to work. I was ill. (because)<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex4-2" data-ok="I didn&#x27;t go to work because I was ill.|Because I was ill, I didn&#x27;t go to work.|I did not go to work because I was ill.|Because I was ill, I did not go to work."></li>
+<li data-q="The course was difficult. I enjoyed it. (although) ___">The course was difficult. I enjoyed it. (although)<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex4-3" data-ok="Although the course was difficult, I enjoyed it.|I enjoyed the course although it was difficult.|I enjoyed it although the course was difficult.|Although it was difficult, I enjoyed the course."></li>
+<li data-q="Prices went up. Fewer people bought tickets. (as a result) ___">Prices went up. Fewer people bought tickets. (as a result)<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex4-4" data-ok="Prices went up. As a result, fewer people bought tickets.|Prices went up and, as a result, fewer people bought tickets.|As a result of prices going up, fewer people bought tickets.|As a result of the price increase, fewer people bought tickets.|As a result of higher prices, fewer people bought tickets.|Fewer people bought tickets as a result of prices going up.|Fewer people bought tickets as a result of the price increase.|Fewer people bought tickets as a result of higher prices."></li>
 </ol>
 <details class="answers">
   <summary>Check your answers</summary>
   <div class="answers-body">
 <p><strong>Exercise 1:</strong> 1 However 2 Despite 3 because 4 Therefore 5 Even though 6 whereas</p>
-<p><strong>Exercise 2:</strong> 1 Despite the cold, we went swimming. 2 Despite being tired, she finished the report. (or Despite her tiredness) 3 Despite having a lot of experience, he didn't get the job.</p>
-<p><strong>Exercise 3 (example answers):</strong> 1 The hotel was expensive and the rooms were small. 2 I didn't go to work because I was ill. 3 Although the course was difficult, I enjoyed it. 4 Prices went up. As a result, fewer people bought tickets.</p>
+<p><strong>Exercise 2:</strong> 1 I stayed at home because I was ill. 2 Despite the rain, we enjoyed the trip. 3 The flat was small. However, it was very comfortable. 4 My brother likes tea, whereas I prefer coffee. 5 She got the job because of her experience. 6 Although he was tired, he finished his work.</p>
+<p><strong>Exercise 3:</strong> 1 Despite the cold, we went swimming. 2 Despite being tired, she finished the report. (or Despite her tiredness) 3 Despite having a lot of experience, he didn't get the job.</p>
+<p><strong>Exercise 4 (example answers):</strong> 1 The hotel was expensive and the rooms were small. 2 I didn't go to work because I was ill. 3 Although the course was difficult, I enjoyed it. 4 Prices went up. As a result, fewer people bought tickets.</p>
   </div>
 </details>
 </main>
@@ -136,46 +150,8 @@
     if (!confirm("Clear all your answers on this page?")) return;
     fields.forEach(function (f) { f.value = ""; });
     saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
     location.reload();
-  });
-  // Word sorting exercises
-  document.querySelectorAll(".sorter").forEach(function (box) {
-    var k = box.dataset.k, sel = null;
-    var chips = box.querySelectorAll(".chip"), bank = box.querySelector(".bank"), result = box.querySelector(".sort-result");
-    var place = saved[k] || {};
-    function dropFor(col) { return col === "" ? bank : box.querySelector('.col .drop[data-col="' + col + '"]'); }
-    chips.forEach(function (c) { var at = place[c.dataset.i]; if (at !== undefined && at !== "") { var d = dropFor(String(at)); if (d) d.appendChild(c); } });
-    function store() {
-      place = {}; chips.forEach(function (c) { place[c.dataset.i] = c.parentNode.dataset.col; });
-      saved[k] = place; try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
-    }
-    function clearMarks() { chips.forEach(function (c) { c.classList.remove("ok", "bad"); }); result.textContent = ""; }
-    function select(c) { if (sel) sel.classList.remove("picked"); sel = (sel === c) ? null : c; if (sel) sel.classList.add("picked"); box.classList.toggle("picking", !!sel); }
-    function moveTo(drop) { if (!sel || !drop) return; drop.appendChild(sel); sel.classList.remove("picked"); sel = null; box.classList.remove("picking"); clearMarks(); store(); }
-    box.addEventListener("click", function (e) {
-      var c = e.target.closest(".chip");
-      if (c) { if (sel && sel !== c && c.parentNode !== sel.parentNode) { moveTo(c.parentNode); } else { select(c); } return; }
-      var d = e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop"));
-      if (d) moveTo(d);
-    });
-    box.addEventListener("dragstart", function (e) { var c = e.target.closest(".chip"); if (!c) return; select(c); if (sel !== c) select(c); e.dataTransfer.setData("text/plain", c.dataset.i); });
-    box.addEventListener("dragover", function (e) { if (e.target.closest(".drop, .col")) e.preventDefault(); });
-    box.addEventListener("drop", function (e) {
-      e.preventDefault();
-      var i = e.dataTransfer.getData("text/plain"); var c = box.querySelector('.chip[data-i="' + i + '"]'); if (!c) return;
-      sel = c; moveTo(e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop")));
-    });
-    box.querySelector(".sort-check").addEventListener("click", function () {
-      var right = 0, left = 0;
-      chips.forEach(function (c) {
-        c.classList.remove("ok", "bad");
-        var col = c.parentNode.dataset.col;
-        if (col === "") { left++; return; }
-        if (col === c.dataset.a) { right++; c.classList.add("ok"); } else c.classList.add("bad");
-      });
-      result.textContent = right + " of " + chips.length + " correct" + (left ? " (" + left + " still to place)" : (right === chips.length ? ". Well done!" : ". Move the red ones and check again."));
-    });
-    box.querySelector(".sort-reset").addEventListener("click", function () { chips.forEach(function (c) { bank.appendChild(c); }); select(null); if (sel) select(sel); clearMarks(); store(); });
   });
   var pr = document.getElementById("print");
   if (pr) pr.addEventListener("click", function () { window.print(); });
@@ -185,7 +161,8 @@
   window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
 })();
 </script>
+<script src="../games.js?v=1793970000"></script>
 <script src="../api.js?v=1792889681"></script>
-<script src="../work.js?v=1792889681"></script>
+<script src="../work.js?v=1793900000"></script>
 </body>
 </html>

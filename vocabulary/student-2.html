@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <link rel="stylesheet" href="../grammar-traps/traps.css?v=1793206303">
+<link rel="stylesheet" href="../games.css?v=1793970000">
 </head>
 <body class="student" data-item="vocab-2">
 <header class="top">
@@ -19,7 +20,7 @@
   <div class="tools">
     <button type="button" id="print">Print or save as PDF</button>
     <button type="button" class="ghost" id="clear">Clear my answers</button>
-    <span class="hint">Type your answers in the boxes. They stay on this device.</span>
+    <span class="hint">Tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
   </div>
 </header>
 <main class="sheet">
@@ -98,39 +99,54 @@
 <li><del>The holiday was very funny.</del> The holiday was a lot of <strong>fun</strong>.</li>
 </ul>
 <h2 id="ex1" class="ex">Exercise 1: Choose the correct word</h2>
-<ol>
-<li>Can you (say / tell) me the time? <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>I (lost / missed) my train this morning. <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>Could I (borrow / lend) your car tomorrow? <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>This photo (remembers / reminds) me of my holiday. <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>Prices always (rise / raise) in December. <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>He's very (sensible / sensitive). He gets upset easily. <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>The film was really (fun / funny). We laughed all evening. <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>The weather can (affect / effect) your mood. <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
+<p>Tap the correct word. Can you get all 8 right first time?</p>
+<ol class="g-pick" data-g="ex1">
+<li data-a="1" data-form="tell" data-q="Can you ___ me the time?">Can you <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e1-1"> me the time? <span class="opts game-ui"><button>say</button><button>tell</button></span></li>
+<li data-a="1" data-form="missed" data-q="I ___ my train this morning.">I <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e1-2"> my train this morning. <span class="opts game-ui"><button>lost</button><button>missed</button></span></li>
+<li data-a="0" data-form="borrow" data-q="Could I ___ your car tomorrow?">Could I <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e1-3"> your car tomorrow? <span class="opts game-ui"><button>borrow</button><button>lend</button></span></li>
+<li data-a="1" data-form="reminds" data-q="This photo ___ me of my holiday.">This photo <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e1-4"> me of my holiday. <span class="opts game-ui"><button>remembers</button><button>reminds</button></span></li>
+<li data-a="0" data-form="rise" data-q="Prices always ___ in December.">Prices always <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e1-5"> in December. <span class="opts game-ui"><button>rise</button><button>raise</button></span></li>
+<li data-a="1" data-form="sensitive" data-q="He&#x27;s very ___. He gets upset easily.">He's very <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e1-6">. He gets upset easily. <span class="opts game-ui"><button>sensible</button><button>sensitive</button></span></li>
+<li data-a="1" data-form="funny" data-q="The film was really ___. We laughed all evening.">The film was really <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e1-7">. We laughed all evening. <span class="opts game-ui"><button>fun</button><button>funny</button></span></li>
+<li data-a="0" data-form="affect" data-q="The weather can ___ your mood.">The weather can <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e1-8"> your mood. <span class="opts game-ui"><button>affect</button><button>effect</button></span></li>
 </ol>
 <h2 id="ex2" class="ex">Exercise 2: Complete the sentences</h2>
-<p>Use a word from the table in the correct form.</p>
-<ol>
-<li>When you come to my house, please <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"> your photos.</li>
-<li>The thieves <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"> three paintings from the museum.</li>
-<li>The government wants to improve the <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"> situation.</li>
-<li>I <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"> my grandmother a lot. She lives in another country.</li>
-<li>What is the <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"> exchange rate today?</li>
-<li>The company <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"> salaries by 5% last year.</li>
+<p>Use a word from the table in the correct form. Type your answer, then press <strong>Check</strong> (or Enter). Stuck? Tap <strong>Hint</strong>, but then it won't count as right first time.</p>
+<ol class="g-type" data-g="ex2">
+<li data-q="When you come to my house, please ___ your photos.">When you come to my house, please <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e2-1" data-ok="bring"> your photos.</li>
+<li data-q="The thieves ___ three paintings from the museum.">The thieves <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e2-2" data-ok="stole|took"> three paintings from the museum.</li>
+<li data-q="The government wants to improve the ___ situation.">The government wants to improve the <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e2-3" data-ok="economic"> situation.</li>
+<li data-q="I ___ my grandmother a lot. She lives in another country.">I <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e2-4" data-ok="miss"> my grandmother a lot. She lives in another country.</li>
+<li data-q="What is the ___ exchange rate today?">What is the <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e2-5" data-ok="current"> exchange rate today?</li>
+<li data-q="The company ___ salaries by 5% last year.">The company <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e2-6" data-ok="raised"> salaries by 5% last year.</li>
 </ol>
-<h2 id="ex3" class="ex">Exercise 3: Correct the mistakes</h2>
-<ol>
-<li>My friend said me a funny story. <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>I forgot to bring my umbrella to the office yesterday, so I bring it home today. <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>Can you remember me to buy milk? <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
-<li>The new rules had a big affect on small businesses. <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="1"></li>
+<h2 id="ex3" class="ex">Exercise 3: Find the mistake</h2>
+<p>Each sentence has one wrong word. Tap it, then choose the right word.</p>
+<ol class="g-spot" data-g="ex3">
+<li data-bad="said" data-fix="told" data-opts="told,said,talked" data-q="My friend said me a funny story."><span class="sent">My friend said me a funny story.</span><input class="blank" type="hidden" data-k="e3-1"></li>
+<li data-bad="bring" data-fix="take" data-opts="take,bring" data-q="When you go to Anna&#x27;s party tonight, please bring her this present."><span class="sent">When you go to Anna's party tonight, please bring her this present.</span><input class="blank" type="hidden" data-k="e3-2"></li>
+<li data-bad="remember" data-fix="remind" data-opts="remind,remember,recall" data-q="Can you remember me to buy milk?"><span class="sent">Can you remember me to buy milk?</span><input class="blank" type="hidden" data-k="e3-3"></li>
+<li data-bad="affect" data-fix="effect" data-opts="effect,affect" data-q="The new rules had a big affect on small businesses."><span class="sent">The new rules had a big affect on small businesses.</span><input class="blank" type="hidden" data-k="e3-4"></li>
 </ol>
+<h2 id="ex4" class="ex">Exercise 4: Match the meanings</h2>
+<p>Tap a word, then tap its meaning.</p>
+<div class="g-match" data-g="ex4m">
+<ul>
+<li data-l="borrow" data-r="take something for a short time" data-q="Match: borrow">borrow = take something for a short time<input class="blank" type="hidden" data-k="e4-1"></li>
+<li data-l="lend" data-r="give something for a short time" data-q="Match: lend">lend = give something for a short time<input class="blank" type="hidden" data-k="e4-2"></li>
+<li data-l="economical" data-r="saves money" data-q="Match: economical">economical = saves money<input class="blank" type="hidden" data-k="e4-3"></li>
+<li data-l="sensitive" data-r="gets upset or hurt easily" data-q="Match: sensitive">sensitive = gets upset or hurt easily<input class="blank" type="hidden" data-k="e4-4"></li>
+<li data-l="current" data-r="happening now" data-q="Match: current">current = happening now<input class="blank" type="hidden" data-k="e4-5"></li>
+<li data-l="funny" data-r="makes you laugh" data-q="Match: funny">funny = makes you laugh<input class="blank" type="hidden" data-k="e4-6"></li>
+</ul>
+</div>
 <details class="answers">
   <summary>Check your answers</summary>
   <div class="answers-body">
 <p><strong>Exercise 1:</strong> 1 tell 2 missed 3 borrow 4 reminds 5 rise 6 sensitive 7 funny 8 affect</p>
 <p><strong>Exercise 2:</strong> 1 bring 2 stole 3 economic 4 miss 5 current 6 raised</p>
-<p><strong>Exercise 3:</strong> 1 My friend <strong>told</strong> me a funny story. 2 ... so I <strong>took</strong> it home today. (Away from the office, so <em>take</em>; the past is <em>took</em>.) 3 Can you <strong>remind</strong> me to buy milk? 4 The new rules had a big <strong>effect</strong> on small businesses.</p>
+<p><strong>Exercise 3:</strong> 1 My friend <strong>told</strong> me a funny story. 2 When you go to Anna's party tonight, please <strong>take</strong> her this present. (Away from me, to a place I'm not going, so <em>take</em>.) 3 Can you <strong>remind</strong> me to buy milk? 4 The new rules had a big <strong>effect</strong> on small businesses.</p>
+<p><strong>Exercise 4:</strong> borrow = take something for a short time; lend = give something for a short time; economical = saves money; sensitive = gets upset or hurt easily; current = happening now; funny = makes you laugh.</p>
   </div>
 </details>
 </main>
@@ -153,46 +169,8 @@
     if (!confirm("Clear all your answers on this page?")) return;
     fields.forEach(function (f) { f.value = ""; });
     saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
     location.reload();
-  });
-  // Word sorting exercises
-  document.querySelectorAll(".sorter").forEach(function (box) {
-    var k = box.dataset.k, sel = null;
-    var chips = box.querySelectorAll(".chip"), bank = box.querySelector(".bank"), result = box.querySelector(".sort-result");
-    var place = saved[k] || {};
-    function dropFor(col) { return col === "" ? bank : box.querySelector('.col .drop[data-col="' + col + '"]'); }
-    chips.forEach(function (c) { var at = place[c.dataset.i]; if (at !== undefined && at !== "") { var d = dropFor(String(at)); if (d) d.appendChild(c); } });
-    function store() {
-      place = {}; chips.forEach(function (c) { place[c.dataset.i] = c.parentNode.dataset.col; });
-      saved[k] = place; try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
-    }
-    function clearMarks() { chips.forEach(function (c) { c.classList.remove("ok", "bad"); }); result.textContent = ""; }
-    function select(c) { if (sel) sel.classList.remove("picked"); sel = (sel === c) ? null : c; if (sel) sel.classList.add("picked"); box.classList.toggle("picking", !!sel); }
-    function moveTo(drop) { if (!sel || !drop) return; drop.appendChild(sel); sel.classList.remove("picked"); sel = null; box.classList.remove("picking"); clearMarks(); store(); }
-    box.addEventListener("click", function (e) {
-      var c = e.target.closest(".chip");
-      if (c) { if (sel && sel !== c && c.parentNode !== sel.parentNode) { moveTo(c.parentNode); } else { select(c); } return; }
-      var d = e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop"));
-      if (d) moveTo(d);
-    });
-    box.addEventListener("dragstart", function (e) { var c = e.target.closest(".chip"); if (!c) return; select(c); if (sel !== c) select(c); e.dataTransfer.setData("text/plain", c.dataset.i); });
-    box.addEventListener("dragover", function (e) { if (e.target.closest(".drop, .col")) e.preventDefault(); });
-    box.addEventListener("drop", function (e) {
-      e.preventDefault();
-      var i = e.dataTransfer.getData("text/plain"); var c = box.querySelector('.chip[data-i="' + i + '"]'); if (!c) return;
-      sel = c; moveTo(e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop")));
-    });
-    box.querySelector(".sort-check").addEventListener("click", function () {
-      var right = 0, left = 0;
-      chips.forEach(function (c) {
-        c.classList.remove("ok", "bad");
-        var col = c.parentNode.dataset.col;
-        if (col === "") { left++; return; }
-        if (col === c.dataset.a) { right++; c.classList.add("ok"); } else c.classList.add("bad");
-      });
-      result.textContent = right + " of " + chips.length + " correct" + (left ? " (" + left + " still to place)" : (right === chips.length ? ". Well done!" : ". Move the red ones and check again."));
-    });
-    box.querySelector(".sort-reset").addEventListener("click", function () { chips.forEach(function (c) { bank.appendChild(c); }); select(null); if (sel) select(sel); clearMarks(); store(); });
   });
   var pr = document.getElementById("print");
   if (pr) pr.addEventListener("click", function () { window.print(); });
@@ -202,7 +180,8 @@
   window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
 })();
 </script>
+<script src="../games.js?v=1793970000"></script>
 <script src="../api.js?v=1792889681"></script>
-<script src="../work.js?v=1792889681"></script>
+<script src="../work.js?v=1793900000"></script>
 </body>
 </html>

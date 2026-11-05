@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <link rel="stylesheet" href="../grammar-traps/traps.css?v=1793206303">
+<link rel="stylesheet" href="../games.css?v=1793970000">
 </head>
 <body class="student" data-item="vocab-8">
 <header class="top">
@@ -19,7 +20,7 @@
   <div class="tools">
     <button type="button" id="print">Print or save as PDF</button>
     <button type="button" class="ghost" id="clear">Clear my answers</button>
-    <span class="hint">Type your answers in the boxes. They stay on this device.</span>
+    <span class="hint">Tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
   </div>
 </header>
 <main class="sheet">
@@ -132,46 +133,60 @@
 </tbody>
 </table>
 <h2 id="ex1" class="ex">Exercise 1: Write a synonym</h2>
-<ol>
-<li>begin <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>wealthy <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>reply <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>hard <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>select <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>frequently <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
+<p>Type a word with the same meaning, then press <strong>Check</strong> (or Enter). The table above can help you. Stuck? Tap <strong>Hint</strong>.</p>
+<ol class="g-type" data-g="ex1">
+<li data-q="begin = ___">begin = <input class="blank mid" type="text" aria-label="A synonym for begin" autocomplete="off" spellcheck="false" data-k="ex1-1" data-ok="start|commence"></li>
+<li data-q="wealthy = ___">wealthy = <input class="blank mid" type="text" aria-label="A synonym for wealthy" autocomplete="off" spellcheck="false" data-k="ex1-2" data-ok="rich|well-off|well off"></li>
+<li data-q="reply = ___">reply = <input class="blank mid" type="text" aria-label="A synonym for reply" autocomplete="off" spellcheck="false" data-k="ex1-3" data-ok="answer|respond|response"></li>
+<li data-q="hard = ___">hard = <input class="blank mid" type="text" aria-label="A synonym for hard" autocomplete="off" spellcheck="false" data-k="ex1-4" data-ok="difficult|tough"></li>
+<li data-q="select = ___">select = <input class="blank mid" type="text" aria-label="A synonym for select" autocomplete="off" spellcheck="false" data-k="ex1-5" data-ok="choose|pick"></li>
+<li data-q="frequently = ___">frequently = <input class="blank mid" type="text" aria-label="A synonym for frequently" autocomplete="off" spellcheck="false" data-k="ex1-6" data-ok="often|regularly"></li>
 </ol>
-<h2 id="ex2" class="ex">Exercise 2: Which word matches the definition?</h2>
-<p>Choose from: <em>exhausted, enormous, delighted, furious, fascinating, tiny</em>.</p>
-<ol>
-<li>very, very big <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>very, very small <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>very angry <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>very tired <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>very happy <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>very interesting <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
+<h2 id="ex2" class="ex">Exercise 2: Match the synonyms</h2>
+<p>Tap a word, then tap the word with the same meaning.</p>
+<div class="g-match" data-g="ex2m">
+<ul>
+<li data-l="end" data-r="finish" data-q="Match: end">end = finish<input class="blank" type="hidden" data-k="ex2m-1"></li>
+<li data-l="quick" data-r="fast" data-q="Match: quick">quick = fast<input class="blank" type="hidden" data-k="ex2m-2"></li>
+<li data-l="correct" data-r="right" data-q="Match: correct">correct = right<input class="blank" type="hidden" data-k="ex2m-3"></li>
+<li data-l="enough" data-r="sufficient" data-q="Match: enough">enough = sufficient<input class="blank" type="hidden" data-k="ex2m-4"></li>
+<li data-l="big" data-r="large" data-q="Match: big">big = large<input class="blank" type="hidden" data-k="ex2m-5"></li>
+<li data-l="surprised" data-r="amazed" data-q="Match: surprised">surprised = amazed<input class="blank" type="hidden" data-k="ex2m-6"></li>
+</ul>
+</div>
+<h2 id="ex3" class="ex">Exercise 3: Which word matches the definition?</h2>
+<p>Choose from: <em>exhausted, enormous, delighted, furious, fascinating, tiny</em>. Type the word, then press <strong>Check</strong>.</p>
+<ol class="g-type" data-g="ex3">
+<li data-q="very, very big = ___">very, very big <input class="blank mid" type="text" aria-label="The word for: very, very big" autocomplete="off" spellcheck="false" data-k="ex3-1" data-ok="enormous|huge"></li>
+<li data-q="very, very small = ___">very, very small <input class="blank mid" type="text" aria-label="The word for: very, very small" autocomplete="off" spellcheck="false" data-k="ex3-2" data-ok="tiny"></li>
+<li data-q="very angry = ___">very angry <input class="blank mid" type="text" aria-label="The word for: very angry" autocomplete="off" spellcheck="false" data-k="ex3-3" data-ok="furious"></li>
+<li data-q="very tired = ___">very tired <input class="blank mid" type="text" aria-label="The word for: very tired" autocomplete="off" spellcheck="false" data-k="ex3-4" data-ok="exhausted"></li>
+<li data-q="very happy = ___">very happy <input class="blank mid" type="text" aria-label="The word for: very happy" autocomplete="off" spellcheck="false" data-k="ex3-5" data-ok="delighted|thrilled"></li>
+<li data-q="very interesting = ___">very interesting <input class="blank mid" type="text" aria-label="The word for: very interesting" autocomplete="off" spellcheck="false" data-k="ex3-6" data-ok="fascinating"></li>
 </ol>
-<h2 id="ex3" class="ex">Exercise 3: Odd one out</h2>
-<p>Which word does not belong? Write it.</p>
-<ol>
-<li>huge, enormous, tiny, large <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>annoyed, furious, angry, thrilled <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>excellent, dreadful, terrible, awful <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
-<li>start, begin, finish, commence <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2"></li>
+<h2 id="ex4" class="ex">Exercise 4: Odd one out</h2>
+<p>Three words have a similar meaning. One word does not belong. Tap it.</p>
+<ol class="g-pick" data-g="ex4">
+<li data-a="2" data-form="tiny" data-q="Odd one out: huge, enormous, tiny, large. Answer: ___">Odd one out: <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-1"> <span class="opts game-ui"><button>huge</button><button>enormous</button><button>tiny</button><button>large</button></span></li>
+<li data-a="3" data-form="thrilled" data-q="Odd one out: annoyed, furious, angry, thrilled. Answer: ___">Odd one out: <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-2"> <span class="opts game-ui"><button>annoyed</button><button>furious</button><button>angry</button><button>thrilled</button></span></li>
+<li data-a="0" data-form="excellent" data-q="Odd one out: excellent, dreadful, terrible, awful. Answer: ___">Odd one out: <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-3"> <span class="opts game-ui"><button>excellent</button><button>dreadful</button><button>terrible</button><button>awful</button></span></li>
+<li data-a="2" data-form="finish" data-q="Odd one out: start, begin, finish, commence. Answer: ___">Odd one out: <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-4"> <span class="opts game-ui"><button>start</button><button>begin</button><button>finish</button><button>commence</button></span></li>
 </ol>
-<h2 id="ex4" class="ex">Exercise 4: Make it stronger</h2>
-<p>Rewrite the sentence with a stronger word.</p>
-<ol>
-<li>The film was very good. It was <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2">.</li>
-<li>After the race I was very tired. I was <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2">.</li>
-<li>The flat was very small. It was <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="2">.</li>
+<h2 id="ex5" class="ex">Exercise 5: Make it stronger</h2>
+<p>Complete the second sentence with a stronger word. Type it, then press <strong>Check</strong>.</p>
+<ol class="g-type" data-g="ex5">
+<li data-q="The film was very good. It was ___.">The film was very good. It was <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-1" data-ok="excellent|fantastic|great|brilliant|amazing|wonderful|superb|outstanding|fabulous|terrific">.</li>
+<li data-q="After the race I was very tired. I was ___.">After the race I was very tired. I was <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-2" data-ok="exhausted|worn out|shattered">.</li>
+<li data-q="The flat was very small. It was ___.">The flat was very small. It was <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-3" data-ok="tiny">.</li>
 </ol>
 <details class="answers">
   <summary>Check your answers</summary>
   <div class="answers-body">
 <p><strong>Exercise 1:</strong> 1 start 2 rich 3 answer 4 difficult 5 choose 6 often</p>
-<p><strong>Exercise 2:</strong> 1 enormous 2 tiny 3 furious 4 exhausted 5 delighted 6 fascinating</p>
-<p><strong>Exercise 3:</strong> 1 tiny 2 thrilled 3 excellent 4 finish</p>
-<p><strong>Exercise 4:</strong> 1 excellent / fantastic 2 exhausted 3 tiny</p>
+<p><strong>Exercise 2:</strong> end = finish; quick = fast; correct = right; enough = sufficient; big = large; surprised = amazed.</p>
+<p><strong>Exercise 3:</strong> 1 enormous 2 tiny 3 furious 4 exhausted 5 delighted 6 fascinating</p>
+<p><strong>Exercise 4:</strong> 1 tiny 2 thrilled 3 excellent 4 finish</p>
+<p><strong>Exercise 5:</strong> 1 excellent / fantastic 2 exhausted 3 tiny</p>
   </div>
 </details>
 </main>
@@ -194,46 +209,8 @@
     if (!confirm("Clear all your answers on this page?")) return;
     fields.forEach(function (f) { f.value = ""; });
     saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
     location.reload();
-  });
-  // Word sorting exercises
-  document.querySelectorAll(".sorter").forEach(function (box) {
-    var k = box.dataset.k, sel = null;
-    var chips = box.querySelectorAll(".chip"), bank = box.querySelector(".bank"), result = box.querySelector(".sort-result");
-    var place = saved[k] || {};
-    function dropFor(col) { return col === "" ? bank : box.querySelector('.col .drop[data-col="' + col + '"]'); }
-    chips.forEach(function (c) { var at = place[c.dataset.i]; if (at !== undefined && at !== "") { var d = dropFor(String(at)); if (d) d.appendChild(c); } });
-    function store() {
-      place = {}; chips.forEach(function (c) { place[c.dataset.i] = c.parentNode.dataset.col; });
-      saved[k] = place; try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
-    }
-    function clearMarks() { chips.forEach(function (c) { c.classList.remove("ok", "bad"); }); result.textContent = ""; }
-    function select(c) { if (sel) sel.classList.remove("picked"); sel = (sel === c) ? null : c; if (sel) sel.classList.add("picked"); box.classList.toggle("picking", !!sel); }
-    function moveTo(drop) { if (!sel || !drop) return; drop.appendChild(sel); sel.classList.remove("picked"); sel = null; box.classList.remove("picking"); clearMarks(); store(); }
-    box.addEventListener("click", function (e) {
-      var c = e.target.closest(".chip");
-      if (c) { if (sel && sel !== c && c.parentNode !== sel.parentNode) { moveTo(c.parentNode); } else { select(c); } return; }
-      var d = e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop"));
-      if (d) moveTo(d);
-    });
-    box.addEventListener("dragstart", function (e) { var c = e.target.closest(".chip"); if (!c) return; select(c); if (sel !== c) select(c); e.dataTransfer.setData("text/plain", c.dataset.i); });
-    box.addEventListener("dragover", function (e) { if (e.target.closest(".drop, .col")) e.preventDefault(); });
-    box.addEventListener("drop", function (e) {
-      e.preventDefault();
-      var i = e.dataTransfer.getData("text/plain"); var c = box.querySelector('.chip[data-i="' + i + '"]'); if (!c) return;
-      sel = c; moveTo(e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop")));
-    });
-    box.querySelector(".sort-check").addEventListener("click", function () {
-      var right = 0, left = 0;
-      chips.forEach(function (c) {
-        c.classList.remove("ok", "bad");
-        var col = c.parentNode.dataset.col;
-        if (col === "") { left++; return; }
-        if (col === c.dataset.a) { right++; c.classList.add("ok"); } else c.classList.add("bad");
-      });
-      result.textContent = right + " of " + chips.length + " correct" + (left ? " (" + left + " still to place)" : (right === chips.length ? ". Well done!" : ". Move the red ones and check again."));
-    });
-    box.querySelector(".sort-reset").addEventListener("click", function () { chips.forEach(function (c) { bank.appendChild(c); }); select(null); if (sel) select(sel); clearMarks(); store(); });
   });
   var pr = document.getElementById("print");
   if (pr) pr.addEventListener("click", function () { window.print(); });
@@ -243,7 +220,8 @@
   window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
 })();
 </script>
+<script src="../games.js?v=1793970000"></script>
 <script src="../api.js?v=1792889681"></script>
-<script src="../work.js?v=1792889681"></script>
+<script src="../work.js?v=1793900000"></script>
 </body>
 </html>

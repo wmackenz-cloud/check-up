@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <link rel="stylesheet" href="traps.css?v=1793206303">
+<link rel="stylesheet" href="../games.css?v=1793970000">
 </head>
 <body class="student" data-item="trap-3">
 <header class="top">
@@ -19,7 +20,7 @@
   <div class="tools">
     <button type="button" id="print">Print or save as PDF</button>
     <button type="button" class="ghost" id="clear">Clear my answers</button>
-    <span class="hint">Type your answers in the boxes. They stay on this device.</span>
+    <span class="hint">Tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
   </div>
 </header>
 <main class="sheet">
@@ -75,64 +76,98 @@
 <li><del>I love the music.</del> I love <strong>music</strong>. (all music, in general)</li>
 </ul>
 <h2 id="ex1" class="ex">Exercise 1: a or an?</h2>
-<ol>
-<li><input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> apple</li>
-<li><input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> university</li>
-<li><input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> hour</li>
-<li><input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> honest man</li>
-<li><input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> uniform</li>
-<li><input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> interesting book</li>
-<li><input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> one-way ticket</li>
-<li><input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> MP3 player</li>
+<p>Tap <strong>a</strong> or <strong>an</strong>. Say the word out loud: listen to the first <em>sound</em>, not the letter.</p>
+<ol class="g-pick" data-g="ex1">
+<li data-a="1" data-form="an" data-q="___ apple"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-1"> apple <span class="opts game-ui"><button>a</button><button>an</button></span></li>
+<li data-a="0" data-form="a" data-q="___ university"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-2"> university <span class="opts game-ui"><button>a</button><button>an</button></span></li>
+<li data-a="1" data-form="an" data-q="___ hour"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-3"> hour <span class="opts game-ui"><button>a</button><button>an</button></span></li>
+<li data-a="1" data-form="an" data-q="___ honest man"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-4"> honest man <span class="opts game-ui"><button>a</button><button>an</button></span></li>
+<li data-a="0" data-form="a" data-q="___ uniform"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-5"> uniform <span class="opts game-ui"><button>a</button><button>an</button></span></li>
+<li data-a="1" data-form="an" data-q="___ interesting book"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-6"> interesting book <span class="opts game-ui"><button>a</button><button>an</button></span></li>
+<li data-a="0" data-form="a" data-q="___ one-way ticket"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-7"> one-way ticket <span class="opts game-ui"><button>a</button><button>an</button></span></li>
+<li data-a="1" data-form="an" data-q="___ MP3 player"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-8"> MP3 player <span class="opts game-ui"><button>a</button><button>an</button></span></li>
 </ol>
-<h2 id="ex2" class="ex">Exercise 2: a, an, the, or nothing (write X)</h2>
-<ol>
-<li>My brother is <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> architect.</li>
-<li>Can you pass me <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> salt, please?</li>
-<li>I don't like <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> cold weather.</li>
-<li>We stayed in <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> hotel. <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> hotel was next to the beach.</li>
-<li>She plays <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> violin in an orchestra.</li>
-<li>They play <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> golf every Sunday.</li>
-<li>Mount Everest is <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> highest mountain in <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> world.</li>
-<li>I usually have <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> lunch at one o'clock.</li>
-<li>He lives in <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> Netherlands.</li>
-<li>She lives in <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> Italy.</li>
-<li><input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> money doesn't make you happy.</li>
-<li>Is there <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> bank near here?</li>
-<li>I want to visit <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> Amazon river.</li>
-<li>I go to <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> bed at eleven.</li>
+<h2 id="ex2" class="ex">Exercise 2: a, an, the, or nothing?</h2>
+<p>Tap <strong>a</strong>, <strong>an</strong>, <strong>the</strong>, or <strong>X</strong> (X = no article). Sentences 4 and 5 are about the same hotel; sentences 8 and 9 are about the same mountain.</p>
+<ol class="g-pick" data-g="ex2">
+<li data-a="1" data-form="an" data-q="My brother is ___ architect.">My brother is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-1"> architect. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="2" data-form="the" data-q="Can you pass me ___ salt, please?">Can you pass me <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-2"> salt, please? <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="3" data-form="X" data-q="I don&#x27;t like ___ cold weather.">I don't like <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-3"> cold weather. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="0" data-form="a" data-q="We stayed in ___ hotel.">We stayed in <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-4"> hotel. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="2" data-form="The" data-q="We stayed in a hotel. ___ hotel was next to the beach.">We stayed in a hotel. <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-5"> hotel was next to the beach. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="2" data-form="the" data-q="She plays ___ violin in an orchestra.">She plays <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-6"> violin in an orchestra. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="3" data-form="X" data-q="They play ___ golf every Sunday.">They play <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-7"> golf every Sunday. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="2" data-form="the" data-q="Mount Everest is ___ highest mountain in the world.">Mount Everest is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-8"> highest mountain in the world. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="2" data-form="the" data-q="Mount Everest is the highest mountain in ___ world.">Mount Everest is the highest mountain in <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-9"> world. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="3" data-form="X" data-q="I usually have ___ lunch at one o&#x27;clock.">I usually have <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-10"> lunch at one o'clock. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="2" data-form="the" data-q="He lives in ___ Netherlands.">He lives in <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-11"> Netherlands. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="3" data-form="X" data-q="She lives in ___ Italy.">She lives in <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-12"> Italy. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="3" data-form="X" data-q="___ money doesn&#x27;t make you happy."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-13"> money doesn't make you happy. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="0" data-form="a" data-q="Is there ___ bank near here?">Is there <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-14"> bank near here? <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="2" data-form="the" data-q="I want to visit ___ Amazon river.">I want to visit <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-15"> Amazon river. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="3" data-form="X" data-q="I go to ___ bed at eleven.">I go to <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-16"> bed at eleven. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
 </ol>
 <h2 id="ex3" class="ex">Exercise 3: General or specific? Choose</h2>
-<ol>
-<li>(Children / The children) need a lot of sleep.</li>
-<li>(Children / The children) in my class are very noisy.</li>
-<li>I love (music / the music). I listen to it every day.</li>
-<li>(Music / The music) in this restaurant is too loud.</li>
-<li>(Life / The life) in a big city can be stressful.</li>
-<li>(Water / The water) in this lake is very clean.</li>
+<p>Tap the right answer. Is it <strong>in general</strong> (no article) or <strong>a specific one</strong> (the)?</p>
+<ol class="g-pick" data-g="ex3">
+<li data-a="0" data-form="Children" data-q="___ need a lot of sleep."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-1"> need a lot of sleep. <span class="opts game-ui"><button>Children</button><button>The children</button></span></li>
+<li data-a="1" data-form="The children" data-q="___ in my class are very noisy."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-2"> in my class are very noisy. <span class="opts game-ui"><button>Children</button><button>The children</button></span></li>
+<li data-a="0" data-form="music" data-q="I love ___. I listen to it every day.">I love <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-3">. I listen to it every day. <span class="opts game-ui"><button>music</button><button>the music</button></span></li>
+<li data-a="1" data-form="The music" data-q="___ in this restaurant is too loud."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-4"> in this restaurant is too loud. <span class="opts game-ui"><button>Music</button><button>The music</button></span></li>
+<li data-a="0" data-form="Life" data-q="___ in a big city can be stressful."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-5"> in a big city can be stressful. <span class="opts game-ui"><button>Life</button><button>The life</button></span></li>
+<li data-a="1" data-form="The water" data-q="___ in this lake is very clean."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-6"> in this lake is very clean. <span class="opts game-ui"><button>Water</button><button>The water</button></span></li>
 </ol>
 <h2 id="ex4" class="ex">Exercise 4: Find and correct the mistake</h2>
-<p>Some sentences are correct. Tick them.</p>
-<ol>
-<li>She is very good teacher.</li>
-<li>I went to the work early today.</li>
-<li>The moon is very bright tonight.</li>
-<li>He is the most intelligent person I know.</li>
-<li>I'd like a information about the course.</li>
-<li>We had a dinner at an Italian restaurant.</li>
-<li>The dogs are better pets than the cats.</li>
-<li>Can you play the piano?</li>
+<p>Some sentences have a mistake: tap the wrong words, then choose the correct words. Some sentences are correct: tap <strong>No mistake</strong>. In sentence 7 the whole sentence is the problem: tap any word.</p>
+<ol class="g-spot" data-g="ex4" data-allow-ok>
+<li data-bad="very" data-fix="a very" data-opts="a very,the very,very" data-q="She is very good teacher."><span class="sent">She is very good teacher.</span><input class="blank" type="hidden" data-k="ex4-1"></li>
+<li data-bad="the work" data-fix="work" data-opts="work,the work,a work" data-q="I went to the work early today."><span class="sent">I went to the work early today.</span><input class="blank" type="hidden" data-k="ex4-2"></li>
+<li data-bad="" data-fix="" data-opts="" data-q="The moon is very bright tonight."><span class="sent">The moon is very bright tonight.</span><input class="blank" type="hidden" data-k="ex4-3"></li>
+<li data-bad="" data-fix="" data-opts="" data-q="He is the most intelligent person I know."><span class="sent">He is the most intelligent person I know.</span><input class="blank" type="hidden" data-k="ex4-4"></li>
+<li data-bad="a information" data-fix="some information" data-opts="some information,a information,an information" data-q="I&#x27;d like a information about the course."><span class="sent">I'd like a information about the course.</span><input class="blank" type="hidden" data-k="ex4-5"></li>
+<li data-bad="a dinner" data-fix="dinner" data-opts="dinner,a dinner,the dinner" data-q="We had a dinner at an Italian restaurant."><span class="sent">We had a dinner at an Italian restaurant.</span><input class="blank" type="hidden" data-k="ex4-6"></li>
+<li data-bad="The dogs are better pets than the cats" data-fix="Dogs are better pets than cats" data-opts="Dogs are better pets than cats,The dogs are better pets than cats,Dogs are better pets than the cats" data-q="The dogs are better pets than the cats."><span class="sent">The dogs are better pets than the cats.</span><input class="blank" type="hidden" data-k="ex4-7"></li>
+<li data-bad="" data-fix="" data-opts="" data-q="Can you play the piano?"><span class="sent">Can you play the piano?</span><input class="blank" type="hidden" data-k="ex4-8"></li>
 </ol>
 <h2 id="ex5" class="ex">Exercise 5: Complete the story with a, an, the, or X</h2>
-<p>Last summer I went on (1) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> trip to (2) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> Portugal. I stayed in (3) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> old house near (4) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> sea. (5) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> house had (6) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> beautiful garden. Every morning I had (7) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> breakfast outside. I'm not (8) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> good cook, so I ate in (9) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> restaurants most evenings. (10) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> best meal I had was fresh fish in (11) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> small village. (12) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> people there were very friendly. It was (13) <input class="blank short" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="3"> wonderful holiday.</p>
-<h2 id="ex6" class="ex">Exercise 6: About you</h2>
-<p>Write two or three sentences for each. Check every article.</p>
-<ol>
-<li>Describe your job or your last job.</li>
-<li>Describe the best meal you have ever had.</li>
-<li>Describe a room in your home.</li>
+<p>Read the story. Then tap <strong>a</strong>, <strong>an</strong>, <strong>the</strong>, or <strong>X</strong> (no article) for each gap, from 1 to 13.</p>
+<p>Last summer I went on (1) ___ trip to (2) ___ Portugal. I stayed in (3) ___ old house near (4) ___ sea. (5) ___ house had (6) ___ beautiful garden. Every morning I had (7) ___ breakfast outside. I'm not (8) ___ good cook, so I ate in (9) ___ restaurants most evenings. (10) ___ best meal I had was fresh fish in (11) ___ small village. (12) ___ people there were very friendly. It was (13) ___ wonderful holiday.</p>
+<ol class="g-pick" data-g="ex5">
+<li data-a="0" data-form="a" data-q="Last summer I went on ___ trip">Last summer I went on <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-1"> trip <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="3" data-form="X" data-q="to ___ Portugal.">to <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-2"> Portugal. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="1" data-form="an" data-q="I stayed in ___ old house">I stayed in <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-3"> old house <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="2" data-form="the" data-q="near ___ sea.">near <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-4"> sea. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="2" data-form="The" data-q="___ house had"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-5"> house had <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="0" data-form="a" data-q="___ beautiful garden."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-6"> beautiful garden. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="3" data-form="X" data-q="Every morning I had ___ breakfast outside.">Every morning I had <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-7"> breakfast outside. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="0" data-form="a" data-q="I&#x27;m not ___ good cook,">I'm not <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-8"> good cook, <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="3" data-form="X" data-q="so I ate in ___ restaurants most evenings.">so I ate in <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-9"> restaurants most evenings. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="2" data-form="The" data-q="___ best meal I had was fresh fish"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-10"> best meal I had was fresh fish <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="0" data-form="a" data-q="in ___ small village.">in <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-11"> small village. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="2" data-form="The" data-q="___ people there were very friendly."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-12"> people there were very friendly. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
+<li data-a="0" data-form="a" data-q="It was ___ wonderful holiday.">It was <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-13"> wonderful holiday. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>X</button></span></li>
 </ol>
-<h2 id="ex7" class="ex">Exercise 7: Speaking</h2>
+<h2 id="ex6" class="ex">Exercise 6: Word order</h2>
+<p>Tap the words in the right order to make a sentence. Tap a word in your sentence to send it back. Watch the little words: a, an and the.</p>
+<ol class="g-order" data-g="ex6o">
+<li data-answer="She is the best teacher in our school." data-q="Put the words in order: She is the best teacher in our school."><input class="blank" type="hidden" data-k="ex6o-1"></li>
+<li data-answer="I go to work by bus." data-q="Put the words in order: I go to work by bus."><input class="blank" type="hidden" data-k="ex6o-2"></li>
+<li data-answer="Could you open the window for me?" data-q="Put the words in order: Could you open the window for me?"><input class="blank" type="hidden" data-k="ex6o-3"></li>
+<li data-answer="My sister is an engineer in Berlin." data-names="Berlin" data-q="Put the words in order: My sister is an engineer in Berlin."><input class="blank" type="hidden" data-k="ex6o-4"></li>
+<li data-answer="We had dinner in a small restaurant." data-alt="In a small restaurant we had dinner." data-q="Put the words in order: We had dinner in a small restaurant."><input class="blank" type="hidden" data-k="ex6o-5"></li>
+<li data-answer="There is a bank near the station." data-alt="Near the station there is a bank." data-q="Put the words in order: There is a bank near the station."><input class="blank" type="hidden" data-k="ex6o-6"></li>
+</ol>
+<h2 id="ex7" class="ex">Exercise 7: About you</h2>
+<p>Write two or three sentences for each. Check every article. Press <strong>Check</strong> after each answer to see if it is correct.</p>
+<div class="g-write" data-g="ex7w" data-task="Write two or three true sentences about yourself for each prompt. Be careful with articles (a, an, the, or no article)." data-focus="The student writes two or three sentences for each prompt: 1) Describe your job or your last job; 2) Describe the best meal you have ever had; 3) Describe a room in your home. Check the articles above all: a/an for jobs and for one countable thing mentioned for the first time (a/an by the first sound); the for something already mentioned, something the listener knows, superlatives and things there is only one of; no article for plural or uncountable nouns in general, meals, most countries, and go to work / at home / to bed. Also check the rest of the grammar.">
+<ol>
+<li>Describe your job or your last job.<br><textarea class="blank area" rows="3" aria-label="Describe your job or your last job." autocomplete="off" spellcheck="false" data-k="ex7w-1"></textarea></li>
+<li>Describe the best meal you have ever had.<br><textarea class="blank area" rows="3" aria-label="Describe the best meal you have ever had." autocomplete="off" spellcheck="false" data-k="ex7w-2"></textarea></li>
+<li>Describe a room in your home.<br><textarea class="blank area" rows="3" aria-label="Describe a room in your home." autocomplete="off" spellcheck="false" data-k="ex7w-3"></textarea></li>
+</ol>
+<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="ex7w-check"></p>
+</div>
+<h2 id="ex8" class="ex">Exercise 8: Speaking</h2>
 <ul>
 <li>Describe your town: Is there a park? Where is the best place to eat?</li>
 <li>Do you prefer cats or dogs? Why? (Talk about them in general: no article.)</li>
@@ -142,10 +177,11 @@
   <summary>Check your answers</summary>
   <div class="answers-body">
 <p><strong>Exercise 1:</strong> 1 an, 2 a, 3 an, 4 an, 5 a, 6 an, 7 a (sounds like "won"), 8 an (sounds like "em").</p>
-<p><strong>Exercise 2:</strong> 1 an, 2 the, 3 X, 4 a / The, 5 the, 6 X, 7 the / the, 8 X, 9 the, 10 X, 11 X, 12 a, 13 the, 14 X.</p>
+<p><strong>Exercise 2:</strong> 1 an, 2 the, 3 X, 4 a, 5 The, 6 the, 7 X, 8 the, 9 the, 10 X, 11 the, 12 X, 13 X, 14 a, 15 the, 16 X.</p>
 <p><strong>Exercise 3:</strong> 1 Children, 2 The children, 3 music, 4 The music, 5 Life, 6 The water.</p>
 <p><strong>Exercise 4:</strong> 1 She is a very good teacher. 2 I went to work early today. 3 Correct. 4 Correct. 5 some information (uncountable). 6 We had dinner at an Italian restaurant. 7 Dogs are better pets than cats. 8 Correct.</p>
 <p><strong>Exercise 5:</strong> 1 a, 2 X, 3 an, 4 the, 5 The, 6 a, 7 X, 8 a, 9 X, 10 The, 11 a, 12 The, 13 a.</p>
+<p><strong>Exercise 6:</strong> 1 She is the best teacher in our school. 2 I go to work by bus. 3 Could you open the window for me? 4 My sister is an engineer in Berlin. 5 We had dinner in a small restaurant. 6 There is a bank near the station.</p>
   </div>
 </details>
 </main>
@@ -168,46 +204,8 @@
     if (!confirm("Clear all your answers on this page?")) return;
     fields.forEach(function (f) { f.value = ""; });
     saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
     location.reload();
-  });
-  // Word sorting exercises
-  document.querySelectorAll(".sorter").forEach(function (box) {
-    var k = box.dataset.k, sel = null;
-    var chips = box.querySelectorAll(".chip"), bank = box.querySelector(".bank"), result = box.querySelector(".sort-result");
-    var place = saved[k] || {};
-    function dropFor(col) { return col === "" ? bank : box.querySelector('.col .drop[data-col="' + col + '"]'); }
-    chips.forEach(function (c) { var at = place[c.dataset.i]; if (at !== undefined && at !== "") { var d = dropFor(String(at)); if (d) d.appendChild(c); } });
-    function store() {
-      place = {}; chips.forEach(function (c) { place[c.dataset.i] = c.parentNode.dataset.col; });
-      saved[k] = place; try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
-    }
-    function clearMarks() { chips.forEach(function (c) { c.classList.remove("ok", "bad"); }); result.textContent = ""; }
-    function select(c) { if (sel) sel.classList.remove("picked"); sel = (sel === c) ? null : c; if (sel) sel.classList.add("picked"); box.classList.toggle("picking", !!sel); }
-    function moveTo(drop) { if (!sel || !drop) return; drop.appendChild(sel); sel.classList.remove("picked"); sel = null; box.classList.remove("picking"); clearMarks(); store(); }
-    box.addEventListener("click", function (e) {
-      var c = e.target.closest(".chip");
-      if (c) { if (sel && sel !== c && c.parentNode !== sel.parentNode) { moveTo(c.parentNode); } else { select(c); } return; }
-      var d = e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop"));
-      if (d) moveTo(d);
-    });
-    box.addEventListener("dragstart", function (e) { var c = e.target.closest(".chip"); if (!c) return; select(c); if (sel !== c) select(c); e.dataTransfer.setData("text/plain", c.dataset.i); });
-    box.addEventListener("dragover", function (e) { if (e.target.closest(".drop, .col")) e.preventDefault(); });
-    box.addEventListener("drop", function (e) {
-      e.preventDefault();
-      var i = e.dataTransfer.getData("text/plain"); var c = box.querySelector('.chip[data-i="' + i + '"]'); if (!c) return;
-      sel = c; moveTo(e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop")));
-    });
-    box.querySelector(".sort-check").addEventListener("click", function () {
-      var right = 0, left = 0;
-      chips.forEach(function (c) {
-        c.classList.remove("ok", "bad");
-        var col = c.parentNode.dataset.col;
-        if (col === "") { left++; return; }
-        if (col === c.dataset.a) { right++; c.classList.add("ok"); } else c.classList.add("bad");
-      });
-      result.textContent = right + " of " + chips.length + " correct" + (left ? " (" + left + " still to place)" : (right === chips.length ? ". Well done!" : ". Move the red ones and check again."));
-    });
-    box.querySelector(".sort-reset").addEventListener("click", function () { chips.forEach(function (c) { bank.appendChild(c); }); select(null); if (sel) select(sel); clearMarks(); store(); });
   });
   var pr = document.getElementById("print");
   if (pr) pr.addEventListener("click", function () { window.print(); });
@@ -217,7 +215,8 @@
   window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
 })();
 </script>
+<script src="../games.js?v=1793970000"></script>
 <script src="../api.js?v=1792889681"></script>
-<script src="../work.js?v=1792889681"></script>
+<script src="../work.js?v=1793900000"></script>
 </body>
 </html>

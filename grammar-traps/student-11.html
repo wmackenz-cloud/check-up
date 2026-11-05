@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <link rel="stylesheet" href="traps.css?v=1793206303">
+<link rel="stylesheet" href="../games.css?v=1793970000">
 </head>
 <body class="student" data-item="trap-11">
 <header class="top">
@@ -19,7 +20,7 @@
   <div class="tools">
     <button type="button" id="print">Print or save as PDF</button>
     <button type="button" class="ghost" id="clear">Clear my answers</button>
-    <span class="hint">Type your answers in the boxes. They stay on this device.</span>
+    <span class="hint">Tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
   </div>
 </header>
 <main class="sheet">
@@ -54,47 +55,60 @@
 <li><del>I want not to go.</del> I <strong>don't want to</strong> go. (With <em>want</em>, <em>need</em> and <em>like</em>, make the main verb negative.)</li>
 </ul>
 <h2 id="ex1" class="ex">Exercise 1: Right or wrong?</h2>
-<p>Put each phrase in the correct column.</p>
-<div class="sorter" data-k="sort11"><p class="hint sort-how">Tap a word, then tap the column it belongs in. On a computer you can also drag the words.</p><div class="bank drop" data-col=""><button type="button" class="chip" draggable="true" data-i="1" data-a="1">to don't go</button><button type="button" class="chip" draggable="true" data-i="6" data-a="0">not to be late</button><button type="button" class="chip" draggable="true" data-i="8" data-a="0">not to forget</button><button type="button" class="chip" draggable="true" data-i="5" data-a="1">to no speak</button><button type="button" class="chip" draggable="true" data-i="9" data-a="1">not forget to</button><button type="button" class="chip" draggable="true" data-i="3" data-a="1">no to eat</button><button type="button" class="chip" draggable="true" data-i="4" data-a="0">so as not to miss</button><button type="button" class="chip" draggable="true" data-i="2" data-a="0">not to worry</button><button type="button" class="chip" draggable="true" data-i="0" data-a="0">not to go</button><button type="button" class="chip" draggable="true" data-i="7" data-a="1">don't to call</button></div><div class="cols" style="--n:2"><div class="col" data-col="0"><p class="col-h">Correct</p><div class="drop" data-col="0"></div></div><div class="col" data-col="1"><p class="col-h">Wrong</p><div class="drop" data-col="1"></div></div></div><div class="sort-acts"><button type="button" class="sort-check">Check my answers</button><button type="button" class="ghost sort-reset">Start again</button><span class="sort-result" aria-live="polite"></span></div></div>
+<p>Put each phrase in the correct column: <strong>Correct</strong> or <strong>Wrong</strong>.</p>
+<div class="sorter g-sort" data-k="sort11"><p class="hint sort-how">Tap a word, then tap the column it belongs in. On a computer you can also drag the words. Right answers stay; wrong ones jump back.</p><div class="bank drop" data-col=""><button type="button" class="chip" draggable="true" data-i="1" data-a="1">to don't go</button><button type="button" class="chip" draggable="true" data-i="6" data-a="0">not to be late</button><button type="button" class="chip" draggable="true" data-i="8" data-a="0">not to forget</button><button type="button" class="chip" draggable="true" data-i="5" data-a="1">to no speak</button><button type="button" class="chip" draggable="true" data-i="9" data-a="1">not forget to</button><button type="button" class="chip" draggable="true" data-i="3" data-a="1">no to eat</button><button type="button" class="chip" draggable="true" data-i="4" data-a="0">so as not to miss</button><button type="button" class="chip" draggable="true" data-i="2" data-a="0">not to worry</button><button type="button" class="chip" draggable="true" data-i="0" data-a="0">not to go</button><button type="button" class="chip" draggable="true" data-i="7" data-a="1">don't to call</button></div><div class="cols" style="--n:2"><div class="col" data-col="0"><p class="col-h">Correct</p><div class="drop" data-col="0"></div></div><div class="col" data-col="1"><p class="col-h">Wrong</p><div class="drop" data-col="1"></div></div></div><div class="sort-acts"><button type="button" class="ghost sort-reset">Start again</button></div></div>
 <h2 id="ex2" class="ex">Exercise 2: Make it negative</h2>
-<p>Rewrite each sentence so the <strong>bold</strong> infinitive becomes negative.</p>
-<ol>
-<li>The doctor advised me <strong>to eat</strong> fast food.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k1"></li>
-<li>I promised my teacher <strong>to forget</strong> my homework again.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k2"></li>
-<li>They chose <strong>to attend</strong> the meeting because it wasn't mandatory.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k3"></li>
-<li>The sign warns visitors <strong>to feed</strong> the animals.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k4"></li>
-<li>It is important <strong>to text</strong> while driving.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k5"></li>
-<li>My friend reminded me <strong>to be</strong> late for the interview.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k6"></li>
+<p>Make the <strong>bold</strong> infinitive negative. Type the whole new sentence, then press <strong>Check</strong> (or Enter). Stuck? Tap <strong>Hint</strong>, but then it won't count as right first time.</p>
+<ol class="g-type" data-g="ex2">
+<li data-q="Make it negative: The doctor advised me to eat fast food.">The doctor advised me <strong>to eat</strong> fast food.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex2-1" data-ok="The doctor advised me not to eat fast food."></li>
+<li data-q="Make it negative: I promised my teacher to forget my homework again.">I promised my teacher <strong>to forget</strong> my homework again.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex2-2" data-ok="I promised my teacher not to forget my homework again."></li>
+<li data-q="Make it negative: They chose to attend the meeting because it wasn&#x27;t mandatory.">They chose <strong>to attend</strong> the meeting because it wasn't mandatory.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex2-3" data-ok="They chose not to attend the meeting because it wasn&#x27;t mandatory."></li>
+<li data-q="Make it negative: The sign warns visitors to feed the animals.">The sign warns visitors <strong>to feed</strong> the animals.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex2-4" data-ok="The sign warns visitors not to feed the animals."></li>
+<li data-q="Make it negative: It is important to text while driving.">It is important <strong>to text</strong> while driving.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex2-5" data-ok="It is important not to text while driving.|It&#x27;s important not to text while driving."></li>
+<li data-q="Make it negative: My friend reminded me to be late for the interview.">My friend reminded me <strong>to be</strong> late for the interview.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex2-6" data-ok="My friend reminded me not to be late for the interview."></li>
 </ol>
 <h2 id="ex3" class="ex">Exercise 3: Fill in the blanks</h2>
-<p>Complete each sentence with <em>not to</em> + a verb from the box. Use each verb once.</p>
+<p>Type <em>not to</em> + a verb from the box, then press <strong>Check</strong>. Use each verb once.</p>
 <table><tbody><tr><td><strong>laugh</strong></td><td><strong>wake</strong></td><td><strong>spill</strong></td><td><strong>worry</strong></td><td><strong>be</strong></td></tr></tbody></table>
-<ol>
-<li>She tried her best <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k7"> the coffee on her new white dress.</li>
-<li>My mother told me <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k8"> about the exam results until tomorrow.</li>
-<li>The tour guide warned us <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k9"> late for the bus.</li>
-<li>I set my alarm on low so as <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k10"> my roommate up.</li>
-<li>It was hard <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k11"> when the clown tripped over the bucket.</li>
+<ol class="g-type" data-g="ex3">
+<li data-q="She tried her best ___ the coffee on her new white dress.">She tried her best <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex3-1" data-ok="not to spill"> the coffee on her new white dress.</li>
+<li data-q="My mother told me ___ about the exam results until tomorrow.">My mother told me <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex3-2" data-ok="not to worry"> about the exam results until tomorrow.</li>
+<li data-q="The tour guide warned us ___ late for the bus.">The tour guide warned us <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex3-3" data-ok="not to be"> late for the bus.</li>
+<li data-q="I set my alarm on low so as ___ my roommate up.">I set my alarm on low so as <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex3-4" data-ok="not to wake"> my roommate up.</li>
+<li data-q="It was hard ___ when the clown tripped over the bucket.">It was hard <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex3-5" data-ok="not to laugh"> when the clown tripped over the bucket.</li>
 </ol>
 <h2 id="ex4" class="ex">Exercise 4: Find and correct the mistake</h2>
-<p>Each sentence has one mistake. Write the correct sentence.</p>
-<ol>
-<li>She decided to don't buy the expensive shoes.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k12"></li>
-<li>It is crucial no to touch the hot stove.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k13"></li>
-<li>The teacher asked the students to no speak during the test.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k14"></li>
-<li>I try not eat sugar after 8 pm.<br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k15"></li>
-<li>He agreed to not tell anyone. <em>(This one is common in speech. Write the better form for an exam.)</em><br><input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k16"></li>
+<p>Each sentence has one mistake. Tap the wrong words, then choose the correct words. (Sentence 5 is common in speech. Choose the better form for an exam.)</p>
+<ol class="g-spot" data-g="ex4">
+<li data-bad="to don&#x27;t" data-fix="not to" data-opts="not to,to don&#x27;t,don&#x27;t to" data-q="She decided to don&#x27;t buy the expensive shoes."><span class="sent">She decided to don't buy the expensive shoes.</span><input class="blank" type="hidden" data-k="ex4-1"></li>
+<li data-bad="no" data-fix="not" data-opts="not,no,don&#x27;t" data-q="It is crucial no to touch the hot stove."><span class="sent">It is crucial no to touch the hot stove.</span><input class="blank" type="hidden" data-k="ex4-2"></li>
+<li data-bad="to no" data-fix="not to" data-opts="not to,to no,no to" data-q="The teacher asked the students to no speak during the test."><span class="sent">The teacher asked the students to no speak during the test.</span><input class="blank" type="hidden" data-k="ex4-3"></li>
+<li data-bad="not eat" data-fix="not to eat" data-opts="not to eat,not eat,not eating" data-q="I try not eat sugar after 8 pm."><span class="sent">I try not eat sugar after 8 pm.</span><input class="blank" type="hidden" data-k="ex4-4"></li>
+<li data-bad="to not" data-fix="not to" data-opts="not to,to not,to don&#x27;t" data-q="He agreed to not tell anyone."><span class="sent">He agreed to not tell anyone.</span><input class="blank" type="hidden" data-k="ex4-5"></li>
 </ol>
-<h2 id="ex5" class="ex">Exercise 5: About you</h2>
-<p>Write one sentence for each prompt with <em>not to</em>. Then say it out loud.</p>
-<ol>
-<li>Advice a parent once gave you: <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k17"></li>
-<li>A New Year's resolution: <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k18"></li>
-<li>A rule at your workplace or school: <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k19"></li>
-<li>A warning for a visitor to your city: <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k20"></li>
-<li>Something you decided not to do last week, and why: <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="k21"></li>
+<h2 id="ex5" class="ex">Exercise 5: Word order</h2>
+<p>Tap the words in the right order to make a sentence. Tap a word in your sentence to send it back.</p>
+<ol class="g-order" data-g="ex5o">
+<li data-answer="She told me not to call her after ten." data-q="Put the words in order: She told me not to call her after ten."><input class="blank" type="hidden" data-k="ex5o-1"></li>
+<li data-answer="We decided not to go out last night." data-alt="Last night we decided not to go out." data-q="Put the words in order: We decided not to go out last night."><input class="blank" type="hidden" data-k="ex5o-2"></li>
+<li data-answer="The doctor advised him not to drink coffee." data-q="Put the words in order: The doctor advised him not to drink coffee."><input class="blank" type="hidden" data-k="ex5o-3"></li>
+<li data-answer="It&#x27;s important not to forget your passport." data-q="Put the words in order: It&#x27;s important not to forget your passport."><input class="blank" type="hidden" data-k="ex5o-4"></li>
+<li data-answer="I left early so as not to miss the train." data-q="Put the words in order: I left early so as not to miss the train."><input class="blank" type="hidden" data-k="ex5o-5"></li>
+<li data-answer="Please try not to be late tomorrow." data-q="Put the words in order: Please try not to be late tomorrow."><input class="blank" type="hidden" data-k="ex5o-6"></li>
 </ol>
-<h2 id="ex6" class="ex">Exercise 6: Speaking drills: answer without freezing</h2>
+<h2 id="ex6" class="ex">Exercise 6: About you</h2>
+<p>Write one sentence for each prompt with <em>not to</em>. Press <strong>Check</strong> after each one to see if it is correct. Then say it out loud.</p>
+<div class="g-write" data-g="ex6" data-task="Write one true sentence for each prompt, using not to + verb (a negative infinitive)." data-focus="The student writes one sentence for each of five prompts: 1) advice a parent once gave them; 2) a New Year&#x27;s resolution; 3) a rule at their workplace or school; 4) a warning for a visitor to their city; 5) something they decided not to do last week, and why. Check the negative infinitive above all: not comes before to, followed by the base verb (not to go, not to be); never to don&#x27;t / don&#x27;t to / no to / to no, and not &#x27;not eat&#x27; without to. &#x27;to not&#x27; is understood in speech, but suggest &#x27;not to&#x27; as the better form. With want, need and like, the main verb should be negative (I don&#x27;t want to go, not I want not to go). Also check the rest of the grammar. A sentence that fits the prompt is fine.">
+<ol>
+<li>Advice a parent once gave you: <input class="blank long" type="text" aria-label="Advice a parent once gave you" autocomplete="off" spellcheck="false" data-k="ex6-1"></li>
+<li>A New Year's resolution: <input class="blank long" type="text" aria-label="A New Year&#x27;s resolution" autocomplete="off" spellcheck="false" data-k="ex6-2"></li>
+<li>A rule at your workplace or school: <input class="blank long" type="text" aria-label="A rule at your workplace or school" autocomplete="off" spellcheck="false" data-k="ex6-3"></li>
+<li>A warning for a visitor to your city: <input class="blank long" type="text" aria-label="A warning for a visitor to your city" autocomplete="off" spellcheck="false" data-k="ex6-4"></li>
+<li>Something you decided not to do last week, and why: <input class="blank long" type="text" aria-label="Something you decided not to do last week, and why" autocomplete="off" spellcheck="false" data-k="ex6-5"></li>
+</ol>
+<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="ex6-check"></p>
+</div>
+<h2 id="ex7" class="ex">Exercise 7: Speaking drills: answer without freezing</h2>
 <p>Hesitation usually comes from building each sentence from zero. These drills make <em>not to</em> automatic, so you can think about your ideas instead.</p>
 <p><strong>Drill 1: Repeat and speed up.</strong> Say each chunk three times: slow, normal, fast. <em>not to worry &middot; not to forget &middot; not to be late &middot; not to tell anyone &middot; so as not to wake anyone</em></p>
 <p><strong>Drill 2: Swap one word.</strong> Your teacher says a new word. Change the sentence right away. <em>She told me not to call her. &rarr; email &rarr; text &rarr; visit &rarr; wait for</em></p>
@@ -120,7 +134,8 @@
 <p><strong>Exercise 2:</strong> 1 advised me not to eat, 2 promised my teacher not to forget, 3 chose not to attend, 4 warns visitors not to feed, 5 important not to text, 6 reminded me not to be late.</p>
 <p><strong>Exercise 3:</strong> 1 not to spill, 2 not to worry, 3 not to be, 4 not to wake, 5 not to laugh.</p>
 <p><strong>Exercise 4:</strong> 1 decided not to buy, 2 crucial not to touch, 3 asked the students not to speak, 4 try not to eat, 5 agreed not to tell anyone.</p>
-<p><strong>Exercise 5:</strong> Answers will vary. Check that not comes before to, and the verb after it is the base form (not to go, not to be).</p>
+<p><strong>Exercise 5:</strong> 1 She told me not to call her after ten. 2 We decided not to go out last night. 3 The doctor advised him not to drink coffee. 4 It's important not to forget your passport. 5 I left early so as not to miss the train. 6 Please try not to be late tomorrow.</p>
+<p><strong>Exercise 6:</strong> Answers will vary. Check that not comes before to, and the verb after it is the base form (not to go, not to be).</p>
   </div>
 </details>
 </main>
@@ -143,46 +158,8 @@
     if (!confirm("Clear all your answers on this page?")) return;
     fields.forEach(function (f) { f.value = ""; });
     saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
     location.reload();
-  });
-  // Word sorting exercises
-  document.querySelectorAll(".sorter").forEach(function (box) {
-    var k = box.dataset.k, sel = null;
-    var chips = box.querySelectorAll(".chip"), bank = box.querySelector(".bank"), result = box.querySelector(".sort-result");
-    var place = saved[k] || {};
-    function dropFor(col) { return col === "" ? bank : box.querySelector('.col .drop[data-col="' + col + '"]'); }
-    chips.forEach(function (c) { var at = place[c.dataset.i]; if (at !== undefined && at !== "") { var d = dropFor(String(at)); if (d) d.appendChild(c); } });
-    function store() {
-      place = {}; chips.forEach(function (c) { place[c.dataset.i] = c.parentNode.dataset.col; });
-      saved[k] = place; try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
-    }
-    function clearMarks() { chips.forEach(function (c) { c.classList.remove("ok", "bad"); }); result.textContent = ""; }
-    function select(c) { if (sel) sel.classList.remove("picked"); sel = (sel === c) ? null : c; if (sel) sel.classList.add("picked"); box.classList.toggle("picking", !!sel); }
-    function moveTo(drop) { if (!sel || !drop) return; drop.appendChild(sel); sel.classList.remove("picked"); sel = null; box.classList.remove("picking"); clearMarks(); store(); }
-    box.addEventListener("click", function (e) {
-      var c = e.target.closest(".chip");
-      if (c) { if (sel && sel !== c && c.parentNode !== sel.parentNode) { moveTo(c.parentNode); } else { select(c); } return; }
-      var d = e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop"));
-      if (d) moveTo(d);
-    });
-    box.addEventListener("dragstart", function (e) { var c = e.target.closest(".chip"); if (!c) return; select(c); if (sel !== c) select(c); e.dataTransfer.setData("text/plain", c.dataset.i); });
-    box.addEventListener("dragover", function (e) { if (e.target.closest(".drop, .col")) e.preventDefault(); });
-    box.addEventListener("drop", function (e) {
-      e.preventDefault();
-      var i = e.dataTransfer.getData("text/plain"); var c = box.querySelector('.chip[data-i="' + i + '"]'); if (!c) return;
-      sel = c; moveTo(e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop")));
-    });
-    box.querySelector(".sort-check").addEventListener("click", function () {
-      var right = 0, left = 0;
-      chips.forEach(function (c) {
-        c.classList.remove("ok", "bad");
-        var col = c.parentNode.dataset.col;
-        if (col === "") { left++; return; }
-        if (col === c.dataset.a) { right++; c.classList.add("ok"); } else c.classList.add("bad");
-      });
-      result.textContent = right + " of " + chips.length + " correct" + (left ? " (" + left + " still to place)" : (right === chips.length ? ". Well done!" : ". Move the red ones and check again."));
-    });
-    box.querySelector(".sort-reset").addEventListener("click", function () { chips.forEach(function (c) { bank.appendChild(c); }); select(null); if (sel) select(sel); clearMarks(); store(); });
   });
   var pr = document.getElementById("print");
   if (pr) pr.addEventListener("click", function () { window.print(); });
@@ -192,7 +169,8 @@
   window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
 })();
 </script>
+<script src="../games.js?v=1793970000"></script>
 <script src="../api.js?v=1792889681"></script>
-<script src="../work.js?v=1792889681"></script>
+<script src="../work.js?v=1793900000"></script>
 </body>
 </html>

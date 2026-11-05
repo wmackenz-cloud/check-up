@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <link rel="stylesheet" href="../grammar-traps/traps.css?v=1793206303">
+<link rel="stylesheet" href="../games.css?v=1793970000">
 </head>
 <body class="student" data-item="stanag-vocab-2">
 <header class="top">
@@ -19,7 +20,7 @@
   <div class="tools">
     <button type="button" id="print">Print or save as PDF</button>
     <button type="button" class="ghost" id="clear">Clear my answers</button>
-    <span class="hint">Type your answers in the boxes. They stay on this device.</span>
+    <span class="hint">Tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
   </div>
 </header>
 <main class="sheet">
@@ -54,56 +55,72 @@
 </table>
 <h2 id="ex1" class="ex">Exercise 1: Routine or right now?</h2>
 <p>Which time expressions usually go with the present simple (routines and habits), and which go with the present continuous (now, or a temporary situation)? Sort them.</p>
-<div class="sorter" data-k="sort1"><p class="hint sort-how">Tap a word, then tap the column it belongs in. On a computer you can also drag the words.</p><div class="bank drop" data-col=""><button type="button" class="chip" draggable="true" data-i="0" data-a="0">every morning</button><button type="button" class="chip" draggable="true" data-i="1" data-a="1">right now</button><button type="button" class="chip" draggable="true" data-i="2" data-a="0">twice a week</button><button type="button" class="chip" draggable="true" data-i="3" data-a="1">this week</button><button type="button" class="chip" draggable="true" data-i="4" data-a="0">usually</button><button type="button" class="chip" draggable="true" data-i="5" data-a="1">at the moment</button><button type="button" class="chip" draggable="true" data-i="6" data-a="0">on Mondays</button><button type="button" class="chip" draggable="true" data-i="7" data-a="1">currently</button><button type="button" class="chip" draggable="true" data-i="8" data-a="0">hardly ever</button><button type="button" class="chip" draggable="true" data-i="9" data-a="1">this month</button></div><div class="cols" style="--n:2"><div class="col" data-col="0"><p class="col-h">Present simple: routines</p><div class="drop" data-col="0"></div></div><div class="col" data-col="1"><p class="col-h">Present continuous: now or temporary</p><div class="drop" data-col="1"></div></div></div><div class="sort-acts"><button type="button" class="sort-check">Check my answers</button><button type="button" class="ghost sort-reset">Start again</button><span class="sort-result" aria-live="polite"></span></div></div>
-<p>Now write the correct form of the verb in brackets.</p>
-<ol>
-<li>Corporal Bianchi usually <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s1"> (start) work at 07:00.</li>
-<li>Please wait. The duty officer <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s2"> (speak) on the phone right now.</li>
-<li>We <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s3"> (not / have) PT on Fridays.</li>
-<li>This month the battalion <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s4"> (prepare) for a big inspection.</li>
+<div class="sorter g-sort" data-k="sort1"><p class="hint sort-how">Tap a word, then tap the column it belongs in. On a computer you can also drag the words. Right answers stay; wrong ones jump back.</p><div class="bank drop" data-col=""><button type="button" class="chip" draggable="true" data-i="0" data-a="0">every morning</button><button type="button" class="chip" draggable="true" data-i="1" data-a="1">right now</button><button type="button" class="chip" draggable="true" data-i="2" data-a="0">twice a week</button><button type="button" class="chip" draggable="true" data-i="3" data-a="1">this week</button><button type="button" class="chip" draggable="true" data-i="4" data-a="0">usually</button><button type="button" class="chip" draggable="true" data-i="5" data-a="1">at the moment</button><button type="button" class="chip" draggable="true" data-i="6" data-a="0">on Mondays</button><button type="button" class="chip" draggable="true" data-i="7" data-a="1">currently</button><button type="button" class="chip" draggable="true" data-i="8" data-a="0">hardly ever</button><button type="button" class="chip" draggable="true" data-i="9" data-a="1">this month</button></div><div class="cols" style="--n:2"><div class="col" data-col="0"><p class="col-h">Present simple: routines</p><div class="drop" data-col="0"></div></div><div class="col" data-col="1"><p class="col-h">Present continuous: now or temporary</p><div class="drop" data-col="1"></div></div></div><div class="sort-acts"><button type="button" class="ghost sort-reset">Start again</button></div></div>
+<p>Now type the correct form of the verb in brackets, then press <strong>Check</strong> (or Enter).</p>
+<ol class="g-type" data-g="e1">
+<li data-q="Corporal Bianchi usually ___ (start) work at 07:00.">Corporal Bianchi usually <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e1-1" data-ok="starts"> (start) work at 07:00.</li>
+<li data-q="Please wait. The duty officer ___ (speak) on the phone right now.">Please wait. The duty officer <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e1-2" data-ok="is speaking|&#x27;s speaking"> (speak) on the phone right now.</li>
+<li data-q="We ___ (not / have) PT on Fridays.">We <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e1-3" data-ok="don&#x27;t have|do not have"> (not / have) PT on Fridays.</li>
+<li data-q="This month the battalion ___ (prepare) for a big inspection.">This month the battalion <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e1-4" data-ok="is preparing|&#x27;s preparing"> (prepare) for a big inspection.</li>
 </ol>
 <h2 id="ex2" class="ex">Exercise 2: Word partners</h2>
-<p>Match the beginnings (1 to 8) with the endings (a to h) to make common phrases.</p>
-<p><strong>Endings:</strong> a) your kit &nbsp; b) an inspection &nbsp; c) leave &nbsp; d) the duty roster &nbsp; e) a night shift &nbsp; f) call &nbsp; g) the mess &nbsp; h) guard</p>
-<table>
-<thead><tr><th>Beginning</th><th>Letter</th></tr></thead>
-<tbody>
-<tr><td>1. go on</td><td><input class="blank short" type="text" aria-label="Letter for go on" autocomplete="off" spellcheck="false" data-k="s5"></td></tr>
-<tr><td>2. stand</td><td><input class="blank short" type="text" aria-label="Letter for stand" autocomplete="off" spellcheck="false" data-k="s6"></td></tr>
-<tr><td>3. work</td><td><input class="blank short" type="text" aria-label="Letter for work" autocomplete="off" spellcheck="false" data-k="s7"></td></tr>
-<tr><td>4. pass</td><td><input class="blank short" type="text" aria-label="Letter for pass" autocomplete="off" spellcheck="false" data-k="s8"></td></tr>
-<tr><td>5. check</td><td><input class="blank short" type="text" aria-label="Letter for check" autocomplete="off" spellcheck="false" data-k="s9"></td></tr>
-<tr><td>6. eat in</td><td><input class="blank short" type="text" aria-label="Letter for eat in" autocomplete="off" spellcheck="false" data-k="s10"></td></tr>
-<tr><td>7. be on</td><td><input class="blank short" type="text" aria-label="Letter for be on" autocomplete="off" spellcheck="false" data-k="s11"></td></tr>
-<tr><td>8. pack</td><td><input class="blank short" type="text" aria-label="Letter for pack" autocomplete="off" spellcheck="false" data-k="s12"></td></tr>
-</tbody>
-</table>
+<p>Make common phrases. Tap a beginning, then tap its ending. Use each ending once.</p>
+<div class="g-match" data-g="e2">
+<ul>
+<li data-l="go on" data-r="leave" data-q="Match: go on">go on = leave<input class="blank" type="hidden" data-k="e2-1"></li>
+<li data-l="stand" data-r="guard" data-q="Match: stand">stand = guard<input class="blank" type="hidden" data-k="e2-2"></li>
+<li data-l="work" data-r="a night shift" data-q="Match: work">work = a night shift<input class="blank" type="hidden" data-k="e2-3"></li>
+<li data-l="pass" data-r="an inspection" data-q="Match: pass">pass = an inspection<input class="blank" type="hidden" data-k="e2-4"></li>
+<li data-l="check" data-r="the duty roster" data-q="Match: check">check = the duty roster<input class="blank" type="hidden" data-k="e2-5"></li>
+<li data-l="eat in" data-r="the mess" data-q="Match: eat in">eat in = the mess<input class="blank" type="hidden" data-k="e2-6"></li>
+<li data-l="be on" data-r="call" data-q="Match: be on">be on = call<input class="blank" type="hidden" data-k="e2-7"></li>
+<li data-l="pack" data-r="your kit" data-q="Match: pack">pack = your kit<input class="blank" type="hidden" data-k="e2-8"></li>
+</ul>
+</div>
 <h2 id="ex3" class="ex">Exercise 3: Complete the sentences</h2>
 <p>Word bank: <em>duty officer, guard duty, kit, leave, mess, off duty, roll call, sentry</em></p>
-<ol>
-<li>I'm <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s13"> today, so I can go into town.</li>
-<li>The <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s14"> at the gate asked to see my pass.</li>
-<li>If there's a problem at night, call the <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s15">.</li>
-<li>Before the inspection, everyone is cleaning their <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s16">.</li>
-<li><input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s17"> is at 07:45, so don't be late.</li>
-<li>Two soldiers are on <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s18"> at the main gate all night.</li>
-<li>She's going home on <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s19"> next week to see her family.</li>
-<li>The food in the <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s20"> is good, but breakfast is very early.</li>
+<p>Use each word or phrase once. Type the word or phrase in the gap, then press <strong>Check</strong> (or Enter). Stuck? Tap <strong>Hint</strong>, but then it won't count as right first time.</p>
+<ol class="g-type" data-g="e3">
+<li data-q="I&#x27;m ___ today, so I can go into town.">I'm <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e3-1" data-ok="off duty"> today, so I can go into town.</li>
+<li data-q="The ___ at the gate asked to see my pass.">The <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e3-2" data-ok="sentry"> at the gate asked to see my pass.</li>
+<li data-q="If there&#x27;s a problem at night, call the ___.">If there's a problem at night, call the <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e3-3" data-ok="duty officer">.</li>
+<li data-q="Before the inspection, everyone is cleaning their ___.">Before the inspection, everyone is cleaning their <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e3-4" data-ok="kit">.</li>
+<li data-q="___ is at 07:45, so don&#x27;t be late."><input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e3-5" data-ok="Roll call"> is at 07:45, so don't be late.</li>
+<li data-q="Two soldiers are on ___ at the main gate all night.">Two soldiers are on <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e3-6" data-ok="guard duty|guard"> at the main gate all night.</li>
+<li data-q="She&#x27;s going home on ___ next week to see her family.">She's going home on <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e3-7" data-ok="leave"> next week to see her family.</li>
+<li data-q="The food in the ___ is good, but breakfast is very early.">The food in the <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e3-8" data-ok="mess"> is good, but breakfast is very early.</li>
 </ol>
-<h2 id="ex4" class="ex">Exercise 4: Reading</h2>
+<h2 id="ex4" class="ex">Exercise 4: Word order</h2>
+<p>Tap the words in the right order to make a sentence. Tap a word in your sentence to send it back. Think: routine (present simple) or now (present continuous)?</p>
+<ol class="g-order" data-g="e4">
+<li data-answer="Roll call is at 07:45 every morning." data-alt="Every morning roll call is at 07:45." data-q="Put the words in order: Roll call is at 07:45 every morning."><input class="blank" type="hidden" data-k="e4-1"></li>
+<li data-answer="We usually have PT three times a week." data-alt="Usually we have PT three times a week.|Three times a week we usually have PT." data-q="Put the words in order: We usually have PT three times a week."><input class="blank" type="hidden" data-k="e4-2"></li>
+<li data-answer="I am working the night shift this week." data-alt="This week I am working the night shift." data-q="Put the words in order: I am working the night shift this week."><input class="blank" type="hidden" data-k="e4-3"></li>
+<li data-answer="How often do you do guard duty?" data-q="Put the words in order: How often do you do guard duty?"><input class="blank" type="hidden" data-k="e4-4"></li>
+<li data-answer="She is on leave until Monday." data-names="Monday" data-q="Put the words in order: She is on leave until Monday."><input class="blank" type="hidden" data-k="e4-5"></li>
+<li data-answer="The duty officer is speaking on the phone right now." data-alt="Right now the duty officer is speaking on the phone." data-q="Put the words in order: The duty officer is speaking on the phone right now."><input class="blank" type="hidden" data-k="e4-6"></li>
+</ol>
+<h2 id="ex5" class="ex">Exercise 5: Reading</h2>
 <div class="rule">
 <p><strong>A Week to Remember</strong></p>
 <p>Sergeant Marco Galli works in the logistics company of a multinational brigade headquarters in southern Europe. On a normal day, his routine is simple. He arrives at 06:45, takes roll call for his section at 07:30 and then spends most of the morning checking stores and vehicles. He usually eats lunch in the sergeants' mess, and three afternoons a week he has PT with his section. Once or twice a month his name is on the duty roster as duty NCO, so he stays on base overnight and is on call for any problems.</p>
 <p>This week, however, is different. A team from higher headquarters is visiting, and the whole company is preparing for a major inspection. Marco's soldiers are working longer shifts, and nobody is taking leave until Friday. &ldquo;Everyone is a bit tired at the moment,&rdquo; Marco admits. &ldquo;But inspections are useful. They show us what we do well and what we need to fix before a real deployment.&rdquo;</p>
 </div>
-<ol>
-<li>What does Marco do at 07:30? <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s21"></li>
-<li>How often does he have PT? <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s22"></li>
-<li>What happens when he is duty NCO? <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s23"></li>
-<li>Why is this week different? <input class="blank long" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="s24"></li>
+<p>Read the text. Then answer the questions: type the missing word or words from the text, then press <strong>Check</strong>.</p>
+<ol class="g-type" data-g="e5">
+<li data-q="What does Marco do at 07:30? He takes ___ for his section.">What does Marco do at 07:30?<br>He takes <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e5-1" data-ok="roll call"> for his section.</li>
+<li data-q="How often does he have PT? He has PT ___ afternoons a week.">How often does he have PT?<br>He has PT <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e5-2" data-ok="three|3"> afternoons a week.</li>
+<li data-q="What happens when he is duty NCO? He stays on base ___ and is on call for any problems.">What happens when he is duty NCO?<br>He stays on base <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e5-3" data-ok="overnight|all night|at night|for the night"> and is on call for any problems.</li>
+<li data-q="Why is this week different? A team from higher headquarters is ___, and the company is preparing for a major ___.">Why is this week different?<br>A team from higher headquarters is <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e5-4" data-ok="visiting|coming|here">, and the company is preparing for a major <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="e5-5" data-ok="inspection">.</li>
+</ol>
+<p>Now give your opinion. Write two to four sentences, then press <strong>Check</strong>.</p>
+<div class="g-write" data-g="e5w" data-task="Answer the question about the reading &#x27;A Week to Remember&#x27;: Marco says inspections are useful. Do you agree? Why or why not? The student writes two to four sentences giving an opinion and a reason." data-focus="Military context: daily duties and life on base, a kit or unit inspection before a deployment. Check the lesson vocabulary (inspection, kit, duty roster, shift, on duty, on leave, routine) and the present simple for routines and opinions (I think, inspections show) and the present continuous for now. Check giving reasons with because, and articles and prepositions.">
+<ol start="5">
 <li>Marco says inspections are useful. Do you agree? Why or why not?<br><textarea class="blank area" rows="3" aria-label="Your opinion" data-k="s25"></textarea></li>
 </ol>
-<h2 id="ex5" class="ex">Exercise 5: Speaking</h2>
+<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="e5w-check"></p>
+</div>
+<h2 id="ex6" class="ex">Exercise 6: Speaking</h2>
 <p>Make a few notes for each question. We will talk about them in our lesson.</p>
 <ol>
 <li>Describe a normal working day for you, from the moment you arrive until you go home.<br><textarea class="blank area" rows="2" aria-label="Notes" data-k="s26"></textarea></li>
@@ -111,7 +128,7 @@
 <li>What are you working on at the moment that is different from your normal routine?<br><textarea class="blank area" rows="2" aria-label="Notes" data-k="s28"></textarea></li>
 <li>Challenge: Many forces now use cameras, sensors and civilian contractors for base security. Should soldiers and officers still do guard duty themselves? What would happen if guard duty disappeared completely?<br><textarea class="blank area" rows="2" aria-label="Notes" data-k="s29"></textarea></li>
 </ol>
-<h2 id="ex6" class="ex">Exercise 6: Prepositions and articles</h2>
+<h2 id="ex7" class="ex">Exercise 7: Prepositions and articles</h2>
 <p>Practise prepositions and articles with the vocabulary from this lesson.</p>
 <h3>Part A: Prepositions</h3>
 <div class="rule">
@@ -123,16 +140,16 @@
 <li><strong>responsible for</strong>: The duty officer is responsible for the base at night.</li>
 </ul>
 </div>
-<p>Write the missing preposition in each gap.</p>
-<ol>
-<li>Roll call is <input class="blank short" type="text" aria-label="Preposition 1" autocomplete="off" spellcheck="false" data-k="p1"> 07:45 every morning.</li>
-<li>We have a kit inspection <input class="blank short" type="text" aria-label="Preposition 2" autocomplete="off" spellcheck="false" data-k="p2"> Friday.</li>
-<li>PT usually starts early <input class="blank short" type="text" aria-label="Preposition 3" autocomplete="off" spellcheck="false" data-k="p3"> the morning.</li>
-<li>Sergeant Ruiz is working today. He is <input class="blank short" type="text" aria-label="Preposition 4" autocomplete="off" spellcheck="false" data-k="p4"> duty until 18:00.</li>
-<li>The soldiers usually have dinner <input class="blank short" type="text" aria-label="Preposition 5" autocomplete="off" spellcheck="false" data-k="p5"> the mess at 19:00.</li>
-<li>She is <input class="blank short" type="text" aria-label="Preposition 6" autocomplete="off" spellcheck="false" data-k="p6"> leave until next Monday, visiting her family.</li>
-<li>The sentry <input class="blank short" type="text" aria-label="Preposition 7" autocomplete="off" spellcheck="false" data-k="p7"> the main gate checked our ID cards.</li>
-<li>The duty officer is responsible <input class="blank short" type="text" aria-label="Preposition 8" autocomplete="off" spellcheck="false" data-k="p8"> the base at night.</li>
+<p>Tap the missing preposition in each sentence.</p>
+<ol class="g-pick" data-g="e7a">
+<li data-a="0" data-form="at" data-q="Roll call is ___ 07:45 every morning.">Roll call is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7a-1"> 07:45 every morning. <span class="opts game-ui"><button>at</button><button>in</button><button>on</button><button>for</button></span></li>
+<li data-a="0" data-form="on" data-q="We have a kit inspection ___ Friday.">We have a kit inspection <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7a-2"> Friday. <span class="opts game-ui"><button>on</button><button>in</button><button>at</button><button>to</button></span></li>
+<li data-a="0" data-form="in" data-q="PT usually starts early ___ the morning.">PT usually starts early <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7a-3"> the morning. <span class="opts game-ui"><button>in</button><button>on</button><button>at</button><button>for</button></span></li>
+<li data-a="0" data-form="on" data-q="Sergeant Ruiz is working today. He is ___ duty until 18:00.">Sergeant Ruiz is working today. He is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7a-4"> duty until 18:00. <span class="opts game-ui"><button>on</button><button>in</button><button>at</button><button>for</button></span></li>
+<li data-a="0" data-form="in" data-q="The soldiers usually have dinner ___ the mess at 19:00.">The soldiers usually have dinner <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7a-5"> the mess at 19:00. <span class="opts game-ui"><button>in</button><button>on</button><button>to</button><button>for</button></span></li>
+<li data-a="0" data-form="on" data-q="She is ___ leave until next Monday, visiting her family.">She is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7a-6"> leave until next Monday, visiting her family. <span class="opts game-ui"><button>on</button><button>in</button><button>at</button><button>for</button></span></li>
+<li data-a="0" data-form="at" data-q="The sentry ___ the main gate checked our ID cards.">The sentry <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7a-7"> the main gate checked our ID cards. <span class="opts game-ui"><button>at</button><button>in</button><button>for</button><button>to</button></span></li>
+<li data-a="0" data-form="for" data-q="The duty officer is responsible ___ the base at night.">The duty officer is responsible <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7a-8"> the base at night. <span class="opts game-ui"><button>for</button><button>of</button><button>at</button><button>with</button></span></li>
 </ol>
 <h3>Part B: Articles</h3>
 <div class="rule">
@@ -143,24 +160,24 @@
 <li><strong>a / an</strong> for one of many, or for a job: an inspection, a nurse.</li>
 </ul>
 </div>
-<p>Write a, an, the or – (no article) in each gap.</p>
-<ol>
-<li>Nobody knew about it, but this morning the commander held <input class="blank short" type="text" aria-label="Article 1" autocomplete="off" spellcheck="false" data-k="r1"> inspection.</li>
-<li>After guard duty, I went straight to <input class="blank short" type="text" aria-label="Article 2" autocomplete="off" spellcheck="false" data-k="r2"> bed.</li>
-<li>Lunch is served in <input class="blank short" type="text" aria-label="Article 3" autocomplete="off" spellcheck="false" data-k="r3"> mess from 12:00.</li>
-<li>We have <input class="blank short" type="text" aria-label="Article 4" autocomplete="off" spellcheck="false" data-k="r4"> PT three times a week.</li>
-<li>Report any incident to <input class="blank short" type="text" aria-label="Article 5" autocomplete="off" spellcheck="false" data-k="r5"> duty officer.</li>
-<li>My sister is <input class="blank short" type="text" aria-label="Article 6" autocomplete="off" spellcheck="false" data-k="r6"> nurse at the military hospital.</li>
-<li>I usually have <input class="blank short" type="text" aria-label="Article 7" autocomplete="off" spellcheck="false" data-k="r7"> breakfast at 06:30.</li>
-<li>Two soldiers stand guard at <input class="blank short" type="text" aria-label="Article 8" autocomplete="off" spellcheck="false" data-k="r8"> main gate all night.</li>
+<p>Tap <strong>a</strong>, <strong>an</strong>, <strong>the</strong> or <strong>– (nothing)</strong> for each gap.</p>
+<ol class="g-pick" data-g="e7b">
+<li data-a="1" data-form="an" data-q="Nobody knew about it, but this morning the commander held ___ inspection.">Nobody knew about it, but this morning the commander held <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7b-1"> inspection. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>– (nothing)</button></span></li>
+<li data-a="3" data-form="–" data-q="After guard duty, I went straight to ___ bed.">After guard duty, I went straight to <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7b-2"> bed. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>– (nothing)</button></span></li>
+<li data-a="2" data-form="the" data-q="Lunch is served in ___ mess from 12:00.">Lunch is served in <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7b-3"> mess from 12:00. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>– (nothing)</button></span></li>
+<li data-a="3" data-form="–" data-q="We have ___ PT three times a week.">We have <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7b-4"> PT three times a week. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>– (nothing)</button></span></li>
+<li data-a="2" data-form="the" data-q="Report any incident to ___ duty officer.">Report any incident to <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7b-5"> duty officer. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>– (nothing)</button></span></li>
+<li data-a="0" data-form="a" data-q="My sister is ___ nurse at the military hospital.">My sister is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7b-6"> nurse at the military hospital. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>– (nothing)</button></span></li>
+<li data-a="3" data-form="–" data-q="I usually have ___ breakfast at 06:30.">I usually have <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7b-7"> breakfast at 06:30. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>– (nothing)</button></span></li>
+<li data-a="2" data-form="the" data-q="Two soldiers stand guard at ___ main gate all night.">Two soldiers stand guard at <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="e7b-8"> main gate all night. <span class="opts game-ui"><button>a</button><button>an</button><button>the</button><button>– (nothing)</button></span></li>
 </ol>
 <h3>Part C: Find the mistake</h3>
-<p>Each sentence has one mistake. Write the sentence correctly.</p>
-<ol>
-<li>I arrived to the base at 07:00.<br><input class="blank long" type="text" aria-label="Correct sentence 1" autocomplete="off" spellcheck="false" data-k="m1"></li>
-<li>She is on the leave until Monday.<br><input class="blank long" type="text" aria-label="Correct sentence 2" autocomplete="off" spellcheck="false" data-k="m2"></li>
-<li>We have roll call in 07:45 every day.<br><input class="blank long" type="text" aria-label="Correct sentence 3" autocomplete="off" spellcheck="false" data-k="m3"></li>
-<li>He is cook in the mess.<br><input class="blank long" type="text" aria-label="Correct sentence 4" autocomplete="off" spellcheck="false" data-k="m4"></li>
+<p>Each sentence has one mistake. Tap the wrong word, then choose the correct words. If a word is missing, tap the word just after the gap.</p>
+<ol class="g-spot" data-g="e7c">
+<li data-bad="to" data-fix="at" data-opts="at,in,on" data-q="I arrived to the base at 07:00."><span class="sent">I arrived to the base at 07:00.</span><input class="blank" type="hidden" data-k="e7c-1"></li>
+<li data-bad="the leave" data-fix="leave" data-opts="leave,a leave,the leave" data-q="She is on the leave until Monday."><span class="sent">She is on the leave until Monday.</span><input class="blank" type="hidden" data-k="e7c-2"></li>
+<li data-bad="in" data-fix="at" data-opts="at,on,in" data-q="We have roll call in 07:45 every day."><span class="sent">We have roll call in 07:45 every day.</span><input class="blank" type="hidden" data-k="e7c-3"></li>
+<li data-bad="cook" data-fix="a cook" data-opts="a cook,an cook,cooks" data-q="He is cook in the mess."><span class="sent">He is cook in the mess.</span><input class="blank" type="hidden" data-k="e7c-4"></li>
 </ol>
 <h2 id="hw" class="ex">Homework</h2>
 <p>A new officer from another NATO country is joining your unit next month. Write 100 to 150 words describing a typical week on your base (routine, duties, meals, leave) and explain what is happening in your unit at the moment.</p>
@@ -169,11 +186,12 @@
   <summary>Check your answers</summary>
   <div class="answers-body">
 <p><strong>Exercise 1:</strong> Present simple: every morning, twice a week, usually, on Mondays, hardly ever. Present continuous: right now, this week, at the moment, currently, this month. Verbs: 1 starts, 2 is speaking, 3 don't have, 4 is preparing.</p>
-<p><strong>Exercise 2:</strong> 1 c (go on leave), 2 h (stand guard), 3 e (work a night shift), 4 b (pass an inspection), 5 d (check the duty roster), 6 g (eat in the mess), 7 f (be on call), 8 a (pack your kit).</p>
+<p><strong>Exercise 2:</strong> go on leave, stand guard, work a night shift, pass an inspection, check the duty roster, eat in the mess, be on call, pack your kit.</p>
 <p><strong>Exercise 3:</strong> 1 off duty, 2 sentry, 3 duty officer, 4 kit, 5 Roll call, 6 guard duty, 7 leave, 8 mess.</p>
-<p><strong>Exercise 4:</strong> 1 He takes roll call for his section; 2 three afternoons a week; 3 he stays on base overnight and is on call for any problems; 4 a team from higher headquarters is visiting and the company is preparing for a major inspection (longer shifts, no leave until Friday); 5 open answer.</p>
-<p><strong>Exercise 6:</strong> Part A: 1 at, 2 on, 3 in, 4 on, 5 in, 6 on, 7 at, 8 for. Part B: 1 an, 2 – (no article), 3 the, 4 – (no article), 5 the, 6 a, 7 – (no article), 8 the. Part C: 1 I arrived at the base at 07:00. 2 She is on leave until Monday. 3 We have roll call at 07:45 every day. 4 He is a cook in the mess.</p>
-<p><strong>Exercise 5 and homework:</strong> your own answers. We will go through them together.</p>
+<p><strong>Exercise 4:</strong> 1 Roll call is at 07:45 every morning. 2 We usually have PT three times a week. 3 I am working the night shift this week. 4 How often do you do guard duty? 5 She is on leave until Monday. 6 The duty officer is speaking on the phone right now. (Time phrases like <em>every morning</em>, <em>this week</em> and <em>right now</em> can also go at the start.)</p>
+<p><strong>Exercise 5:</strong> 1 He takes roll call for his section; 2 three afternoons a week; 3 he stays on base overnight and is on call for any problems; 4 a team from higher headquarters is visiting and the company is preparing for a major inspection (longer shifts, no leave until Friday); 5 open answer.</p>
+<p><strong>Exercise 7:</strong> Part A: 1 at, 2 on, 3 in, 4 on, 5 in, 6 on, 7 at, 8 for. Part B: 1 an, 2 – (no article), 3 the, 4 – (no article), 5 the, 6 a, 7 – (no article), 8 the. Part C: 1 I arrived at the base at 07:00. 2 She is on leave until Monday. 3 We have roll call at 07:45 every day. 4 He is a cook in the mess.</p>
+<p><strong>Exercise 6 and homework:</strong> your own answers. We will go through them together.</p>
   </div>
 </details>
 </main>
@@ -196,46 +214,8 @@
     if (!confirm("Clear all your answers on this page?")) return;
     fields.forEach(function (f) { f.value = ""; });
     saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
     location.reload();
-  });
-  // Word sorting exercises
-  document.querySelectorAll(".sorter").forEach(function (box) {
-    var k = box.dataset.k, sel = null;
-    var chips = box.querySelectorAll(".chip"), bank = box.querySelector(".bank"), result = box.querySelector(".sort-result");
-    var place = saved[k] || {};
-    function dropFor(col) { return col === "" ? bank : box.querySelector('.col .drop[data-col="' + col + '"]'); }
-    chips.forEach(function (c) { var at = place[c.dataset.i]; if (at !== undefined && at !== "") { var d = dropFor(String(at)); if (d) d.appendChild(c); } });
-    function store() {
-      place = {}; chips.forEach(function (c) { place[c.dataset.i] = c.parentNode.dataset.col; });
-      saved[k] = place; try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
-    }
-    function clearMarks() { chips.forEach(function (c) { c.classList.remove("ok", "bad"); }); result.textContent = ""; }
-    function select(c) { if (sel) sel.classList.remove("picked"); sel = (sel === c) ? null : c; if (sel) sel.classList.add("picked"); box.classList.toggle("picking", !!sel); }
-    function moveTo(drop) { if (!sel || !drop) return; drop.appendChild(sel); sel.classList.remove("picked"); sel = null; box.classList.remove("picking"); clearMarks(); store(); }
-    box.addEventListener("click", function (e) {
-      var c = e.target.closest(".chip");
-      if (c) { if (sel && sel !== c && c.parentNode !== sel.parentNode) { moveTo(c.parentNode); } else { select(c); } return; }
-      var d = e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop"));
-      if (d) moveTo(d);
-    });
-    box.addEventListener("dragstart", function (e) { var c = e.target.closest(".chip"); if (!c) return; select(c); if (sel !== c) select(c); e.dataTransfer.setData("text/plain", c.dataset.i); });
-    box.addEventListener("dragover", function (e) { if (e.target.closest(".drop, .col")) e.preventDefault(); });
-    box.addEventListener("drop", function (e) {
-      e.preventDefault();
-      var i = e.dataTransfer.getData("text/plain"); var c = box.querySelector('.chip[data-i="' + i + '"]'); if (!c) return;
-      sel = c; moveTo(e.target.closest(".drop") || (e.target.closest(".col") && e.target.closest(".col").querySelector(".drop")));
-    });
-    box.querySelector(".sort-check").addEventListener("click", function () {
-      var right = 0, left = 0;
-      chips.forEach(function (c) {
-        c.classList.remove("ok", "bad");
-        var col = c.parentNode.dataset.col;
-        if (col === "") { left++; return; }
-        if (col === c.dataset.a) { right++; c.classList.add("ok"); } else c.classList.add("bad");
-      });
-      result.textContent = right + " of " + chips.length + " correct" + (left ? " (" + left + " still to place)" : (right === chips.length ? ". Well done!" : ". Move the red ones and check again."));
-    });
-    box.querySelector(".sort-reset").addEventListener("click", function () { chips.forEach(function (c) { bank.appendChild(c); }); select(null); if (sel) select(sel); clearMarks(); store(); });
   });
   var pr = document.getElementById("print");
   if (pr) pr.addEventListener("click", function () { window.print(); });
@@ -245,7 +225,8 @@
   window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
 })();
 </script>
+<script src="../games.js?v=1793970000"></script>
 <script src="../api.js?v=1792889681"></script>
-<script src="../work.js?v=1792889681"></script>
+<script src="../work.js?v=1793900000"></script>
 </body>
 </html>
