@@ -1,12 +1,16 @@
 // Lesson games: instant feedback for exercises, and a celebration for a perfect score.
 // Kinds of game (each inside an exercise):
-//   <ol class="g-pick" data-g="name" [data-timed]>  each <li data-a="1" data-form="done" data-q="..."> with a <span class="gap"></span>
-//         and <span class="opts"><button>make</button>...</span>: tap the right word. data-timed adds a beat-the-clock timer.
+//   <ol class="g-pick" data-g="name">  each <li data-a="1" data-form="done" data-q="..."> with a <span class="gap"></span>
+//         and <span class="opts"><button>make</button>...</span>: tap the right word.
 //   <ol class="g-spot" data-g="name" [data-allow-ok]>  each <li data-bad="have met" data-fix="met" data-opts="met,have met" data-q="...">
 //         with <span class="sent">sentence</span>: tap the wrong word(s), then pick the fix. data-bad="" = the sentence is correct,
 //         and data-allow-ok on the list adds a "No mistake" button.
 //   <ol class="g-type" data-g="name">  each <li data-q="..."> with <input class="blank" data-ok="went|have gone">: type, then Check.
 //         A Hint shows the first word; after two tries, Show answer appears.
+//   <ol class="g-order" data-g="name">  each <li data-answer="Have you ever been to Japan?" [data-alt="other|correct orders"] [data-names="Japan"]>
+//         with a hidden <input class="blank">: tap the words to build the sentence. Right words stay; wrong ones go back.
+//   <div class="g-match" data-g="name"><ul><li data-l="take a break" data-r="stop working for a while">...</ul></div>
+//         (each li holds a hidden <input class="blank">): tap a card, then its partner.
 //   <div class="sorter g-sort" data-k="name">  the usual sorter, but each word is marked the moment it lands.
 //   <div class="g-write" data-task="..." data-focus="...">  free writing with "Check my writing": Claude checks each sentence
 //         through Bill's Writing checker (tools/writing-checker.gs).
@@ -104,33 +108,11 @@
   }
   function marksOf(st, n) { var m = []; for (var i = 0; i < n; i++) { var s = st[i]; m.push(s && s.done ? (s.miss ? "later" : "first") : ""); } return m; }
 
-  // ---------- Tap the right word (with an optional clock) ----------
+  // ---------- Tap the right word ----------
   document.querySelectorAll(".g-pick").forEach(function (list) {
     var g = list.dataset.g, items = Array.prototype.slice.call(list.children);
     var st = fresh(g, "pick");
     var bar = scoreBar(list, items.length, g);
-    var clock = null, t0 = 0, tick = null, bestKey = g + "-best";
-    if (list.hasAttribute("data-timed")) {
-      clock = el("p", "g-clock");
-      bar.el.prepend(clock);
-      var best = state[bestKey];
-      clock.innerHTML = "<span class=\"g-time\">0.0 s</span>" + (best ? " <span class=\"g-best\">Best: " + best.toFixed(1) + " s</span>" : " <span class=\"g-best\">The clock starts on your first tap.</span>");
-    }
-    function startClock() {
-      if (!clock || t0 || marksOf(st, items.length).some(Boolean)) return;
-      t0 = performance.now();
-      tick = setInterval(function () { clock.querySelector(".g-time").textContent = ((performance.now() - t0) / 1000).toFixed(1) + " s"; }, 100);
-    }
-    function stopClock(perfect) {
-      if (!clock || !t0) return;
-      clearInterval(tick); var secs = (performance.now() - t0) / 1000; t0 = 0;
-      var best = state[bestKey], note;
-      if (perfect && (!best || secs < best)) { state[bestKey] = secs; save(); note = best ? "New best time!" : "Your first best time!"; }
-      else if (perfect) note = "Best: " + best.toFixed(1) + " s. Can you beat it?";
-      else note = "Get them all right first time to set a best time.";
-      clock.innerHTML = "<span class=\"g-time\">" + secs.toFixed(1) + " s</span> <span class=\"g-best\">" + note + "</span>";
-      if (perfect && note.indexOf("best") > -1) flash(clock, "pop");
-    }
     items.forEach(function (li, i) {
       var gap = li.querySelector(".gap"), opts = li.querySelectorAll(".opts button"), input = li.querySelector("input.blank");
       var s = st[i] || { miss: 0, tried: [] };
@@ -145,12 +127,10 @@
         if (s.tried.indexOf(b.textContent) > -1) { b.disabled = true; b.classList.add("bad"); }
         b.addEventListener("click", function () {
           if (li.classList.contains("done")) return;
-          startClock();
           if (String(j) === li.dataset.a) {
             s.done = true; st[i] = s; save(); solve(false);
             if (!s.miss) streak.hit(gap);
-            var m = marksOf(st, items.length);
-            if (bar.update(m)) stopClock(m.every(function (x) { return x === "first"; }));
+            bar.update(marksOf(st, items.length));
           } else { s.miss++; s.tried.push(b.textContent); st[i] = s; save(); streak.miss(); b.classList.add("bad"); b.disabled = true; flash(b, "shake"); flash(gap, "shake"); }
         });
       });
@@ -301,6 +281,115 @@
       if (s.done && s.vals && s.vals.length === ins.length) solve(true); else if (s.done) { s.done = false; }
     });
     bar.update(marksOf(st, items.length), true);
+  });
+
+  // ---------- Word order: tap the words to build the sentence ----------
+  function shuffled(arr, seed) {
+    var a = arr.slice(), x = seed || 7;
+    for (var i = a.length - 1; i > 0; i--) { x = (x * 9301 + 49297) % 233280; var j = Math.floor(x / 233280 * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  function seedOf(t) { var h = 0; for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) % 100000; return h + 1; }
+  document.querySelectorAll(".g-order").forEach(function (list) {
+    var g = list.dataset.g, items = Array.prototype.slice.call(list.children);
+    var st = fresh(g, "order");
+    var bar = scoreBar(list, items.length, g);
+    items.forEach(function (li, i) {
+      var input = li.querySelector("input.blank"), s = st[i] || { miss: 0 };
+      var answer = li.dataset.answer.trim(), end = (answer.match(/[.?!]$/) || [""])[0];
+      var words = answer.slice(0, answer.length - end.length).trim().split(/\s+/);
+      var keepCap = function (w) { return w === "I" || /^[A-Z]{2,}$/.test(w) || (li.dataset.names || "").split(",").indexOf(w) > -1; };
+      var shown = words.map(function (w, k) { return k === 0 && !keepCap(w) ? w.charAt(0).toLowerCase() + w.slice(1) : w; });
+      var okLists = [words].concat((li.dataset.alt || "").split("|").filter(Boolean).map(function (a) { return a.replace(/[.?!]$/, "").trim().split(/\s+/); }));
+      var box = el("div", "g-order-box game-ui");
+      var line = el("div", "g-line"); line.setAttribute("aria-label", "Your sentence");
+      var endMark = el("span", "g-end", end);
+      var bank = el("div", "g-bank"); bank.setAttribute("aria-label", "Words to use");
+      var row = el("div", "g-order-acts");
+      var redo = btn("Start again", "ghost g-redo"); var msg = el("span", "g-type-msg"); msg.setAttribute("aria-live", "polite");
+      row.append(redo, msg);
+      box.append(line, bank, row);
+      li.append(box);
+      var chips = shuffled(shown.map(function (w, k) { return { w: w, k: k }; }), seedOf(answer));
+      if (chips.map(function (c) { return c.k; }).join() === shown.map(function (w, k) { return k; }).join()) chips.reverse();
+      chips = chips.map(function (c) { var b = btn(c.w, "g-chip"); b.dataset.w = c.w; bank.append(b); return b; });
+      line.append(endMark);
+      function built() { return Array.prototype.map.call(line.querySelectorAll(".g-chip"), function (b) { return b.dataset.w; }); }
+      function same(a, b) { return a.length === b.length && a.every(function (w, k) { return w.toLowerCase() === b[k].toLowerCase(); }); }
+      function solve(quietly) {
+        li.classList.add("done");
+        line.innerHTML = ""; words.forEach(function (w) { var b = btn(w, "g-chip ok"); b.disabled = true; line.append(b); });
+        line.append(endMark); bank.hidden = true; redo.hidden = true;
+        msg.textContent = s.miss ? "✓ Got it!" : "✓ Right first time!";
+        input.value = answer + (s.miss ? " (" + s.miss + " wrong tr" + (s.miss > 1 ? "ies" : "y") + " first)" : "");
+        if (!quietly) flash(line, "pop");
+      }
+      function check() {
+        var b = built(); if (b.length < words.length) return;
+        if (okLists.some(function (ok) { return same(b, ok); })) {
+          s.done = true; st[i] = s; save(); solve(false); if (!s.miss) streak.hit(line); bar.update(marksOf(st, items.length));
+          return;
+        }
+        s.miss++; st[i] = s; save(); streak.miss();
+        var placed = line.querySelectorAll(".g-chip");
+        placed.forEach(function (c, k) { c.classList.add(c.dataset.w.toLowerCase() === words[k].toLowerCase() ? "ok" : "bad"); });
+        flash(line, "shake");
+        msg.textContent = "Not quite. The green words are in the right place.";
+        setTimeout(function () { placed.forEach(function (c) { if (c.classList.contains("bad")) { c.classList.remove("bad"); bank.append(c); } c.classList.remove("ok"); }); }, 1100);
+      }
+      bank.addEventListener("click", function (e) { var c = e.target.closest(".g-chip"); if (!c || li.classList.contains("done")) return; line.insertBefore(c, endMark); msg.textContent = ""; check(); });
+      line.addEventListener("click", function (e) { var c = e.target.closest(".g-chip"); if (!c || li.classList.contains("done")) return; bank.append(c); });
+      redo.addEventListener("click", function () { line.querySelectorAll(".g-chip").forEach(function (c) { bank.append(c); }); msg.textContent = ""; });
+      if (s.done) solve(true);
+    });
+    bar.update(marksOf(st, items.length), true);
+  });
+
+  // ---------- Matching pairs: tap one, then its partner ----------
+  document.querySelectorAll(".g-match").forEach(function (box) {
+    var g = box.dataset.g, src = Array.prototype.slice.call(box.querySelectorAll("li[data-l]"));
+    var st = fresh(g, "match");
+    var board = el("div", "g-board game-ui"), left = el("div", "g-col"), right = el("div", "g-col");
+    board.append(left, right);
+    box.append(board);
+    var bar = scoreBar(board, src.length, g);
+    var sel = null, colors = 0;
+    var L = src.map(function (li, i) { var b = btn(li.dataset.l, "g-card"); b.dataset.i = i; b.dataset.side = "l"; left.append(b); return b; });
+    var R = shuffled(src.map(function (li, i) { return i; }), seedOf(src.map(function (li) { return li.dataset.r; }).join())).map(function (i) {
+      var b = btn(src[i].dataset.r, "g-card"); b.dataset.i = i; b.dataset.side = "r"; right.append(b); return b;
+    });
+    var Rby = {}; R.forEach(function (b) { Rby[b.dataset.i] = b; });
+    function lock(i, quietly) {
+      var s = st[i], n = (colors++ % 6) + 1;
+      [L[i], Rby[i]].forEach(function (b) { b.classList.remove("picked"); b.classList.add("ok", "c" + n); b.disabled = true; if (!quietly) flash(b, "pop"); });
+      // Move the meaning next to its partner, so the finished board reads as a list.
+      var cur = Array.prototype.slice.call(right.children), slots = new Array(src.length);
+      cur.forEach(function (c) { if (c.disabled) slots[Number(c.dataset.i)] = c; });
+      var rest = cur.filter(function (c) { return !c.disabled; });
+      for (var k = 0; k < slots.length; k++) { if (!slots[k]) slots[k] = rest.shift(); }
+      slots.forEach(function (c) { right.append(c); });
+      var input = src[i].querySelector("input.blank");
+      if (input) input.value = src[i].dataset.l + " = " + src[i].dataset.r + (s.miss ? " (" + s.miss + " wrong tr" + (s.miss > 1 ? "ies" : "y") + " first)" : "");
+    }
+    board.addEventListener("click", function (e) {
+      var b = e.target.closest(".g-card"); if (!b || b.disabled) return;
+      if (!sel || sel.dataset.side === b.dataset.side) {
+        if (sel) sel.classList.remove("picked");
+        sel = (sel === b) ? null : b; if (sel) sel.classList.add("picked");
+        return;
+      }
+      var a = sel; sel = null; a.classList.remove("picked");
+      var li = a.dataset.side === "l" ? a : b, ri = a.dataset.side === "r" ? a : b, i = li.dataset.i;
+      var s = st[i] || (st[i] = { miss: 0 });
+      if (li.dataset.i === ri.dataset.i) {
+        s.done = true; save(); lock(i, false); if (!s.miss) streak.hit(li); bar.update(marksOf(st, src.length));
+      } else {
+        s.miss++; save(); streak.miss();
+        [li, ri].forEach(function (x) { x.classList.add("bad"); flash(x, "shake"); setTimeout(function () { x.classList.remove("bad"); }, 700); });
+      }
+    });
+    src.forEach(function (li, i) { if (st[i] && st[i].done) lock(i, true); });
+    bar.update(marksOf(st, src.length), true);
   });
 
   // ---------- Sorting with instant marking ----------
