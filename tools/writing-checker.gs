@@ -63,7 +63,7 @@ function checkWriting(req) {
   var res = UrlFetchApp.fetch("https://api.anthropic.com/v1/messages", {
     method: "post",
     contentType: "application/json",
-    headers: { "x-api-key": key, "anthropic-version": "2023-06-01" },
+    headers: { "x-api-key": key, "anthropic-version": "2026-10-21" },
     payload: JSON.stringify({ model: MODEL, max_tokens: 1500, system: system, messages: [{ role: "user", content: user }] }),
     muteHttpExceptions: true
   });
