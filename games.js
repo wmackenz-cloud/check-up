@@ -15,7 +15,8 @@
 (function () {
   // The Writing checker's Web app URL (from Deploy > New deployment in Google Apps Script). Empty = not switched on yet.
   var CHECK_URL = "";
-  var KEY = "game-" + location.pathname;
+  // Progress is saved per lesson (the page address plus the lesson's name), so two lessons can never share it.
+  var KEY = "game-" + location.pathname + "#" + (document.body.dataset.item || document.title);
   var state = {};
   try { state = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) {}
   function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
@@ -23,6 +24,7 @@
   function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
   function btn(text, cls) { var b = el("button", cls || null, text); b.type = "button"; return b; }
   function flash(n, cls) { n.classList.remove(cls); void n.offsetWidth; n.classList.add(cls); setTimeout(function () { n.classList.remove(cls); }, 700); }
+  function fresh(g, kind) { var st = state[g]; if (!st || st.kind !== kind) { st = state[g] = { kind: kind }; } return st; }
   function again(g) { return function () { delete state[g]; save(); location.reload(); }; }
 
   // ---------- Streak: right first time, several in a row ----------
@@ -105,7 +107,7 @@
   // ---------- Tap the right word (with an optional clock) ----------
   document.querySelectorAll(".g-pick").forEach(function (list) {
     var g = list.dataset.g, items = Array.prototype.slice.call(list.children);
-    var st = state[g] || (state[g] = {});
+    var st = fresh(g, "pick");
     var bar = scoreBar(list, items.length, g);
     var clock = null, t0 = 0, tick = null, bestKey = g + "-best";
     if (list.hasAttribute("data-timed")) {
@@ -161,7 +163,7 @@
   function bare(w) { return w.replace(/^[^\w']+|[^\w']+$/g, "").toLowerCase(); }
   document.querySelectorAll(".g-spot").forEach(function (list) {
     var g = list.dataset.g, items = Array.prototype.slice.call(list.children), allowOk = list.hasAttribute("data-allow-ok");
-    var st = state[g] || (state[g] = {});
+    var st = fresh(g, "spot");
     var bar = scoreBar(list, items.length, g);
     items.forEach(function (li, i) {
       var sent = li.querySelector(".sent"), input = li.querySelector("input.blank");
@@ -242,7 +244,7 @@
   }
   document.querySelectorAll(".g-type").forEach(function (list) {
     var g = list.dataset.g, items = Array.prototype.slice.call(list.children);
-    var st = state[g] || (state[g] = {});
+    var st = fresh(g, "type");
     var bar = scoreBar(list, items.length, g);
     items.forEach(function (li, i) {
       var ins = Array.prototype.slice.call(li.querySelectorAll("input.blank[data-ok]"));
@@ -296,7 +298,7 @@
         solve(false); msg.textContent = "Read the answer, then try it again later.";
         bar.update(marksOf(st, items.length));
       });
-      if (s.done) solve(true);
+      if (s.done && s.vals && s.vals.length === ins.length) solve(true); else if (s.done) { s.done = false; }
     });
     bar.update(marksOf(st, items.length), true);
   });
