@@ -45,6 +45,21 @@ li.done .opts button:not(.ok):not(.bad) { opacity: .35; }
 .sorter.g-sort .chip.ok { cursor: default; }
 .sorter.g-sort .sort-acts { margin-top: 8px; }
 
+/* Check my writing */
+.g-write-acts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 12px 0 4px; position: relative; }
+.g-write-msg { margin: 0; font-size: .95rem; }
+.g-write-msg strong { color: var(--ok); }
+.g-fb { display: flex; flex-direction: column; gap: 2px; margin: 6px 0 4px; padding: 8px 12px; border-radius: 10px; border-left: 4px solid var(--warn);
+  background: var(--warn-soft); font-size: .95rem; line-height: 1.45; }
+.g-fb.correct { border-left-color: var(--ok); background: var(--ok-soft); }
+.g-fb.wrong, .g-fb.off-task { border-left-color: var(--bad); background: color-mix(in srgb, var(--bad) 10%, var(--sheet)); }
+.g-fb-tag { font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; color: var(--warn); }
+.g-fb.correct .g-fb-tag { color: var(--ok); }
+.g-fb.wrong .g-fb-tag, .g-fb.off-task .g-fb-tag { color: var(--bad); }
+.g-fb-lab { font-weight: 700; }
+.g-fb-fix em { font-style: normal; font-weight: 700; color: var(--ink); }
+.g-fb[hidden] { display: none !important; }
+
 /* Movement */
 .pop { animation: g-pop .45s ease-out; }
 .shake { animation: g-shake .45s ease-in-out; }
