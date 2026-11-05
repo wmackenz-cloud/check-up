@@ -12,6 +12,7 @@
  */
 
 var MODEL = "claude-haiku-5-5";
+var EFFORT_NOTE = "low effort = faster answers; short sentences don't need deep thinking";
 var DAILY_LIMIT = 300;      // most checks per day for all students together (protects your API bill)
 var MAX_SENTENCES = 6;
 var MAX_CHARS = 400;        // per sentence
@@ -64,7 +65,7 @@ function checkWriting(req) {
     method: "post",
     contentType: "application/json",
     headers: { "x-api-key": key, "anthropic-version": "2026-10-21" },
-    payload: JSON.stringify({ model: MODEL, max_tokens: 1500, system: system, messages: [{ role: "user", content: user }] }),
+    payload: JSON.stringify({ model: MODEL, max_tokens: 1500, output_config: { effort: "low" }, system: system, messages: [{ role: "user", content: user }] }),
     muteHttpExceptions: true
   });
   if (res.getResponseCode() !== 200) {
