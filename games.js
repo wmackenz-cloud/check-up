@@ -14,7 +14,7 @@
 // Every answer lands in an <input class="blank"> so "Send my answers to Bill" still sends what the student did.
 (function () {
   // The Writing checker's Web app URL (from Deploy > New deployment in Google Apps Script). Empty = not switched on yet.
-  var CHECK_URL = "";
+  var CHECK_URL = "https://script.google.com/macros/s/AKfycbwcHoLZKBVnHnWlq9iPzGgDbsP8z0MSFQUpdjWA8TcBrGlcPz98puFF9nqJN2Qbyqu-/exec";
   // Progress is saved per lesson (the page address plus the lesson's name), so two lessons can never share it.
   var KEY = "game-" + location.pathname + "#" + (document.body.dataset.item || document.title);
   var state = {};
