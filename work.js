@@ -24,6 +24,9 @@
   if (!fields().length && !main.querySelector(".sorter")) return;
 
   function questionText(f) {
+    // Game questions (games.js) carry their question text, since the buttons would get in the way.
+    const qh = f.closest("[data-q]");
+    if (qh) return qh.dataset.q.slice(0, 300);
     const host = f.closest("li, td, p") || f.parentNode;
     const tr = f.closest("tr");
     const node = (tr || host).cloneNode(true);

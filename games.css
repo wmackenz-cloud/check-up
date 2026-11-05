@@ -1,0 +1,70 @@
+/* Lesson games (games.js). Uses the colours from traps.css. */
+:root { --warn: #b7791f; --warn-soft: #fbf0d9; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --warn: #f0c060; --warn-soft: #3a2f17; } }
+:root[data-theme="dark"] { --warn: #f0c060; --warn-soft: #3a2f17; }
+
+/* Tap the right word */
+.g-pick > li, .g-spot > li { margin: 10px 0; line-height: 2.1; }
+.gap { display: inline-block; min-width: 4.5em; border-bottom: 2px solid var(--blank-line); background: var(--blank); text-align: center;
+  padding: 0 6px; line-height: 1.5; border-radius: 4px 4px 0 0; font-weight: 700; vertical-align: baseline; }
+.gap.solved { color: var(--ok); border-bottom-color: var(--ok); background: var(--ok-soft); }
+.opts { display: inline-flex; flex-wrap: wrap; gap: 6px; margin-left: 8px; vertical-align: middle; }
+.opts button, .g-word { font: inherit; font-size: .95rem; font-weight: 700; border-radius: 999px; padding: 3px 14px; cursor: pointer;
+  background: var(--sheet); color: var(--accent); border: 2px solid var(--accent); touch-action: manipulation; line-height: 1.5; }
+.opts button:hover:not(:disabled) { background: var(--accent-soft); }
+.opts button.ok { background: var(--ok); border-color: var(--ok); color: var(--sheet); opacity: 1; }
+.opts button.bad { border-color: var(--bad); color: var(--bad); text-decoration: line-through; opacity: .75; }
+.opts button:disabled { cursor: default; }
+li.done .opts button:not(.ok):not(.bad) { opacity: .35; }
+
+/* Find the mistake */
+.sent { display: inline; }
+.g-word { font-weight: 400; font-size: 1.02rem; color: var(--ink); border: 1px solid transparent; background: transparent; padding: 1px 3px; border-radius: 6px; margin: 0 -4px; position: relative; }
+.g-word:hover:not(:disabled) { background: var(--accent-soft); border-color: var(--rule); }
+.g-word:disabled { cursor: default; color: var(--ink); }
+.g-word.nope { color: var(--bad); border-color: var(--bad); background: color-mix(in srgb, var(--bad) 12%, var(--sheet)); }
+.g-word.found { color: var(--bad); text-decoration: line-through; text-decoration-thickness: 2px; border-color: var(--bad); }
+.g-word.fixed { color: var(--ok); font-weight: 700; background: var(--ok-soft); border-color: var(--ok); }
+.g-hint { display: block; font-size: .85rem; color: var(--ink-soft); line-height: 1.4; }
+.g-spot .opts { margin-left: 0; }
+.g-spot li.done .g-hint { display: none; }
+
+/* Score bar */
+.g-bar { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 10px 0 4px; padding: 10px 12px;
+  border: 1px solid var(--rule); border-radius: 12px; background: var(--paper); }
+.g-dots { display: flex; flex-wrap: wrap; gap: 5px; }
+.g-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--blank-line); background: var(--sheet); transition: background .25s, border-color .25s, transform .25s; }
+.g-dot.first { background: var(--ok); border-color: var(--ok); transform: scale(1.1); }
+.g-dot.later { background: var(--warn); border-color: var(--warn); }
+.g-txt { margin: 0; font-size: .95rem; }
+.g-bar [hidden], .opts[hidden] { display: none !important; }
+.g-bar.perfect { border-color: var(--ok); background: var(--ok-soft); }
+.g-bar.perfect .g-txt strong { color: var(--ok); }
+
+/* Sorter: words that are right lock in place */
+.sorter.g-sort .chip.ok { cursor: default; }
+.sorter.g-sort .sort-acts { margin-top: 8px; }
+
+/* Movement */
+.pop { animation: g-pop .45s ease-out; }
+.shake { animation: g-shake .45s ease-in-out; }
+@keyframes g-pop { 0% { transform: scale(1); } 40% { transform: scale(1.25); } 100% { transform: scale(1); } }
+@keyframes g-shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(6px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(4px); } }
+.g-perfect { position: absolute; left: 50%; top: -12px; transform: translate(-50%, -100%); z-index: 20; pointer-events: none;
+  font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; color: var(--ok); background: var(--sheet);
+  border: 3px solid var(--ok); border-radius: 999px; padding: 6px 22px; box-shadow: 0 8px 24px rgba(0,0,0,.15); white-space: nowrap;
+  animation: g-badge 2.6s ease-out forwards; }
+.g-star { color: #e0a526; margin-right: 8px; display: inline-block; animation: g-spin 1s ease-out; }
+@keyframes g-badge { 0% { opacity: 0; transform: translate(-50%, -60%) scale(.4); } 15% { opacity: 1; transform: translate(-50%, -100%) scale(1.15); }
+  25% { transform: translate(-50%, -100%) scale(1); } 80% { opacity: 1; } 100% { opacity: 0; transform: translate(-50%, -130%) scale(1); } }
+@keyframes g-spin { from { transform: rotate(-180deg) scale(.3); } to { transform: rotate(0) scale(1); } }
+.g-confetti { position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 50; }
+@media (prefers-reduced-motion: reduce) { .pop, .shake, .g-star { animation: none; } .g-perfect { animation: g-fade 2.2s forwards; } }
+@keyframes g-fade { 0%, 80% { opacity: 1; } 100% { opacity: 0; } }
+
+/* Paper copy: show plain gaps and hide the buttons */
+@media print {
+  .game-ui, .g-bar, .opts { display: none !important; }
+  .gap { color: transparent !important; background: none !important; min-width: 7em; border-bottom: 1px solid #555; }
+  .g-word { border: none !important; background: none !important; color: #000 !important; text-decoration: none !important; padding: 0; margin: 0; }
+}
