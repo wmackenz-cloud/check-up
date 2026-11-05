@@ -1,13 +1,17 @@
 // Lesson games: instant feedback for exercises, and a celebration for a perfect score.
-// Three kinds, each inside an exercise:
-//   <ol class="g-pick" data-g="name">  each <li data-a="1" data-form="done" data-q="...">  with a <span class="gap"></span>
-//                                      and a <span class="opts"><button>make</button>...</span>: tap the right word.
-//   <ol class="g-spot" data-g="name">  each <li data-bad="did" data-fix="made" data-opts="made,did,took" data-q="...">
-//                                      with <span class="sent">sentence</span>: tap the wrong word, then pick the fix.
+// Kinds of game (each inside an exercise):
+//   <ol class="g-pick" data-g="name" [data-timed]>  each <li data-a="1" data-form="done" data-q="..."> with a <span class="gap"></span>
+//         and <span class="opts"><button>make</button>...</span>: tap the right word. data-timed adds a beat-the-clock timer.
+//   <ol class="g-spot" data-g="name" [data-allow-ok]>  each <li data-bad="have met" data-fix="met" data-opts="met,have met" data-q="...">
+//         with <span class="sent">sentence</span>: tap the wrong word(s), then pick the fix. data-bad="" = the sentence is correct,
+//         and data-allow-ok on the list adds a "No mistake" button.
+//   <ol class="g-type" data-g="name">  each <li data-q="..."> with <input class="blank" data-ok="went|have gone">: type, then Check.
+//         A Hint shows the first word; after two tries, Show answer appears.
 //   <div class="sorter g-sort" data-k="name">  the usual sorter, but each word is marked the moment it lands.
-//   <div class="g-write" data-task="..." data-focus="...">  free writing (input.blank boxes) with a "Check my writing"
-//                                      button: Claude checks each sentence through Bill's Writing checker (tools/writing-checker.gs).
-// Every <li> holds a hidden <input class="blank"> so "Send my answers to Bill" still sends what the student did.
+//   <div class="g-write" data-task="..." data-focus="...">  free writing with "Check my writing": Claude checks each sentence
+//         through Bill's Writing checker (tools/writing-checker.gs).
+// Across the page: a streak counter ("3 in a row!") and a star for each perfect exercise; all stars = "Lesson mastered!".
+// Every answer lands in an <input class="blank"> so "Send my answers to Bill" still sends what the student did.
 (function () {
   // The Writing checker's Web app URL (from Deploy > New deployment in Google Apps Script). Empty = not switched on yet.
   var CHECK_URL = "";
@@ -16,45 +20,115 @@
   try { state = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) {}
   function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
   var calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-
   function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  function btn(text, cls) { var b = el("button", cls || null, text); b.type = "button"; return b; }
   function flash(n, cls) { n.classList.remove(cls); void n.offsetWidth; n.classList.add(cls); setTimeout(function () { n.classList.remove(cls); }, 700); }
+  function again(g) { return function () { delete state[g]; save(); location.reload(); }; }
+
+  // ---------- Streak: right first time, several in a row ----------
+  var streak = { n: 0,
+    hit: function (near) {
+      this.n++;
+      if (this.n >= 3 && (this.n === 3 || this.n === 5 || this.n % 5 === 0)) {
+        var t = el("span", "g-streak", this.n + " in a row!"); t.setAttribute("aria-hidden", "true");
+        (near.closest("li, .sorter") || near).append(t); setTimeout(function () { t.remove(); }, 1600);
+      }
+    },
+    miss: function () { this.n = 0; }
+  };
+
+  // ---------- Stars: one per exercise, gold when it is perfect ----------
+  var stars = { list: [], pill: null,
+    add: function (id, label) { this.list.push({ id: id, label: label, v: "" }); },
+    set: function (id, v, quiet) {
+      var s = this.list.filter(function (x) { return x.id === id; })[0]; if (!s) return;
+      var was = s.v; s.v = v; this.draw();
+      if (v === "gold" && was !== "gold" && !quiet && this.list.every(function (x) { return x.v === "gold"; })) {
+        setTimeout(function () { celebrate(stars.pill, "Lesson mastered!", true); }, 900);
+      }
+    },
+    draw: function () {
+      if (!this.list.length) return;
+      if (!this.pill) {
+        this.pill = el("div", "g-stars game-ui");
+        this.pill.setAttribute("role", "status");
+        document.body.append(this.pill);
+      }
+      var gold = this.list.filter(function (x) { return x.v === "gold"; }).length;
+      this.pill.innerHTML = "";
+      this.list.forEach(function (x) {
+        var s = el("span", "g-s " + x.v, "★"); s.title = x.label + (x.v === "gold" ? ": perfect" : x.v ? ": done" : ""); stars.pill.append(s);
+      });
+      this.pill.append(el("span", "g-s-txt", gold + " of " + this.list.length + " perfect"));
+      this.pill.classList.toggle("all", gold === this.list.length);
+      this.pill.setAttribute("aria-label", gold + " of " + this.list.length + " exercises perfect");
+    }
+  };
+  function labelFor(node) {
+    var h = node.previousElementSibling;
+    while (h && !/^H2$/.test(h.tagName)) h = h.previousElementSibling;
+    return h ? h.textContent.replace(/:.*/, "").trim() : "Exercise";
+  }
 
   // ---------- The score bar under each game: one dot per question ----------
-  function scoreBar(host, total, onAgain) {
+  function scoreBar(host, total, g) {
+    var id = g; stars.add(id, labelFor(host));
     var bar = el("div", "g-bar game-ui");
     var dots = el("div", "g-dots"); dots.setAttribute("aria-hidden", "true");
     for (var i = 0; i < total; i++) dots.append(el("span", "g-dot"));
     var txt = el("p", "g-txt"); txt.setAttribute("aria-live", "polite");
-    var again = el("button", "ghost g-again", "Try again for a perfect score"); again.type = "button"; again.hidden = true;
-    again.addEventListener("click", onAgain);
-    bar.append(dots, txt, again);
+    var tryAgain = btn("Try again for a perfect score", "ghost g-again"); tryAgain.hidden = true;
+    tryAgain.addEventListener("click", again(g));
+    bar.append(dots, txt, tryAgain);
     host.after(bar);
-    return {
+    return { el: bar,
       update: function (marks, quiet) { // marks: array of "", "first", "later"
         var done = 0, first = 0;
         marks.forEach(function (m, i) { dots.children[i].className = "g-dot" + (m ? " " + m : ""); if (m) done++; if (m === "first") first++; });
-        again.hidden = true;
-        if (done < total) { txt.textContent = done ? done + " of " + total + " done, " + first + " right first time." : "Score: right first time = a green dot."; return; }
+        tryAgain.hidden = true;
+        if (done < total) { txt.textContent = done ? done + " of " + total + " done, " + first + " right first time." : "Score: right first time = a green dot."; return false; }
         if (first === total) {
           txt.innerHTML = "<strong>Perfect!</strong> " + total + " out of " + total + " right first time.";
+          bar.classList.add("perfect"); stars.set(id, "gold", quiet);
           if (!quiet) celebrate(bar);
-          bar.classList.add("perfect");
         } else {
-          bar.classList.remove("perfect");
+          bar.classList.remove("perfect"); stars.set(id, "done", quiet);
           txt.innerHTML = "<strong>All done!</strong> " + first + " of " + total + " right first time.";
-          again.hidden = false;
+          tryAgain.hidden = false;
         }
+        return true;
       }
     };
   }
+  function marksOf(st, n) { var m = []; for (var i = 0; i < n; i++) { var s = st[i]; m.push(s && s.done ? (s.miss ? "later" : "first") : ""); } return m; }
 
-  // ---------- Tap the right word ----------
+  // ---------- Tap the right word (with an optional clock) ----------
   document.querySelectorAll(".g-pick").forEach(function (list) {
     var g = list.dataset.g, items = Array.prototype.slice.call(list.children);
     var st = state[g] || (state[g] = {});
-    var bar = scoreBar(list, items.length, function () { delete state[g]; save(); location.reload(); });
-    function marks() { return items.map(function (li, i) { var s = st[i]; return s && s.done ? (s.miss ? "later" : "first") : ""; }); }
+    var bar = scoreBar(list, items.length, g);
+    var clock = null, t0 = 0, tick = null, bestKey = g + "-best";
+    if (list.hasAttribute("data-timed")) {
+      clock = el("p", "g-clock");
+      bar.el.prepend(clock);
+      var best = state[bestKey];
+      clock.innerHTML = "<span class=\"g-time\">0.0 s</span>" + (best ? " <span class=\"g-best\">Best: " + best.toFixed(1) + " s</span>" : " <span class=\"g-best\">The clock starts on your first tap.</span>");
+    }
+    function startClock() {
+      if (!clock || t0 || marksOf(st, items.length).some(Boolean)) return;
+      t0 = performance.now();
+      tick = setInterval(function () { clock.querySelector(".g-time").textContent = ((performance.now() - t0) / 1000).toFixed(1) + " s"; }, 100);
+    }
+    function stopClock(perfect) {
+      if (!clock || !t0) return;
+      clearInterval(tick); var secs = (performance.now() - t0) / 1000; t0 = 0;
+      var best = state[bestKey], note;
+      if (perfect && (!best || secs < best)) { state[bestKey] = secs; save(); note = best ? "New best time!" : "Your first best time!"; }
+      else if (perfect) note = "Best: " + best.toFixed(1) + " s. Can you beat it?";
+      else note = "Get them all right first time to set a best time.";
+      clock.innerHTML = "<span class=\"g-time\">" + secs.toFixed(1) + " s</span> <span class=\"g-best\">" + note + "</span>";
+      if (perfect && note.indexOf("best") > -1) flash(clock, "pop");
+    }
     items.forEach(function (li, i) {
       var gap = li.querySelector(".gap"), opts = li.querySelectorAll(".opts button"), input = li.querySelector("input.blank");
       var s = st[i] || { miss: 0, tried: [] };
@@ -69,67 +143,162 @@
         if (s.tried.indexOf(b.textContent) > -1) { b.disabled = true; b.classList.add("bad"); }
         b.addEventListener("click", function () {
           if (li.classList.contains("done")) return;
-          if (String(j) === li.dataset.a) { s.done = true; st[i] = s; save(); solve(false); bar.update(marks()); }
-          else { s.miss++; s.tried.push(b.textContent); st[i] = s; save(); b.classList.add("bad"); b.disabled = true; flash(b, "shake"); flash(gap, "shake"); }
+          startClock();
+          if (String(j) === li.dataset.a) {
+            s.done = true; st[i] = s; save(); solve(false);
+            if (!s.miss) streak.hit(gap);
+            var m = marksOf(st, items.length);
+            if (bar.update(m)) stopClock(m.every(function (x) { return x === "first"; }));
+          } else { s.miss++; s.tried.push(b.textContent); st[i] = s; save(); streak.miss(); b.classList.add("bad"); b.disabled = true; flash(b, "shake"); flash(gap, "shake"); }
         });
       });
       if (s.done) solve(true);
     });
-    bar.update(marks(), true);
+    bar.update(marksOf(st, items.length), true);
   });
 
   // ---------- Find the mistake, then fix it ----------
+  function bare(w) { return w.replace(/^[^\w']+|[^\w']+$/g, "").toLowerCase(); }
   document.querySelectorAll(".g-spot").forEach(function (list) {
-    var g = list.dataset.g, items = Array.prototype.slice.call(list.children);
+    var g = list.dataset.g, items = Array.prototype.slice.call(list.children), allowOk = list.hasAttribute("data-allow-ok");
     var st = state[g] || (state[g] = {});
-    var bar = scoreBar(list, items.length, function () { delete state[g]; save(); location.reload(); });
-    function marks() { return items.map(function (li, i) { var s = st[i]; return s && s.done ? (s.miss ? "later" : "first") : ""; }); }
+    var bar = scoreBar(list, items.length, g);
     items.forEach(function (li, i) {
       var sent = li.querySelector(".sent"), input = li.querySelector("input.blank");
       var s = st[i] || { miss: 0, found: false };
-      var words = sent.textContent.trim().split(/\s+/), badAt = -1, tokens = [];
+      var original = sent.textContent.trim(), words = original.split(/\s+/), tokens = [];
       sent.textContent = "";
       words.forEach(function (w, j) {
-        var bare = w.replace(/[.,?!]+$/, ""), tail = w.slice(bare.length);
-        var t = el("button", "g-word", bare); t.type = "button";
-        if (badAt < 0 && bare.toLowerCase() === li.dataset.bad.toLowerCase()) badAt = j;
-        tokens.push(t);
-        sent.append(t); if (tail) sent.append(tail); if (j < words.length - 1) sent.append(" ");
+        var m = w.match(/^(.*?)([.,?!]*)$/), t = btn(m[1], "g-word");
+        tokens.push(t); sent.append(t); if (m[2]) sent.append(m[2]); if (j < words.length - 1) sent.append(" ");
       });
+      // Which words are wrong (one word, or a few in a row).
+      var badWords = (li.dataset.bad || "").trim() ? li.dataset.bad.trim().toLowerCase().split(/\s+/) : [], badAt = [];
+      for (var j = 0; badWords.length && j + badWords.length <= tokens.length; j++) {
+        if (badWords.every(function (w, k) { return bare(tokens[j + k].textContent) === w; })) { for (var k = 0; k < badWords.length; k++) badAt.push(j + k); break; }
+      }
+      var isOk = !badWords.length;
+      var hint = el("span", "g-hint game-ui", isOk || allowOk ? "Tap the mistake, or tap No mistake." : "Tap the wrong word.");
+      var row = el("span", "g-row game-ui"), okBtn = null;
+      if (allowOk) { okBtn = btn("No mistake ✓", "g-okbtn"); row.append(okBtn); }
       var opts = el("span", "opts game-ui"); opts.hidden = true;
-      var hint = el("span", "g-hint game-ui", "Tap the wrong word.");
-      li.dataset.opts.split(",").forEach(function (o) {
-        var b = el("button", null, o); b.type = "button";
+      (li.dataset.opts || "").split(",").filter(Boolean).forEach(function (o) {
+        var b = btn(o);
         b.addEventListener("click", function () {
           if (li.classList.contains("done")) return;
-          if (o === li.dataset.fix) { s.done = true; st[i] = s; save(); solve(false); bar.update(marks()); }
-          else { s.miss++; st[i] = s; save(); b.classList.add("bad"); b.disabled = true; flash(b, "shake"); }
+          if (o === li.dataset.fix) { s.done = true; st[i] = s; save(); solve(false); if (!s.miss) streak.hit(sent); bar.update(marksOf(st, items.length)); }
+          else { s.miss++; st[i] = s; save(); streak.miss(); b.classList.add("bad"); b.disabled = true; flash(b, "shake"); }
         });
         opts.append(b);
       });
-      sent.after(hint, opts);
+      row.append(opts);
+      sent.after(hint, row);
       function found() {
-        var t = tokens[badAt]; t.classList.add("found"); hint.textContent = "Good. Now choose the right word:"; opts.hidden = false; li.classList.add("found");
+        badAt.forEach(function (j) { tokens[j].classList.add("found"); });
+        hint.textContent = "Good. Now choose the right words:"; opts.hidden = false; if (okBtn) okBtn.hidden = true; li.classList.add("found");
       }
       function solve(quietly) {
+        if (isOk) {
+          okBtn.classList.add("ok"); okBtn.disabled = true; li.classList.add("done", "found"); hint.textContent = "";
+          tokens.forEach(function (x) { x.disabled = true; });
+          input.value = "Correct, no mistake" + (s.miss ? " (" + s.miss + " wrong tr" + (s.miss > 1 ? "ies" : "y") + " first)" : "");
+          if (!quietly) flash(okBtn, "pop");
+          return;
+        }
         if (!li.classList.contains("found")) found();
-        var t = tokens[badAt]; t.textContent = li.dataset.fix; t.classList.remove("found"); t.classList.add("fixed");
+        var first = tokens[badAt[0]];
+        badAt.forEach(function (j, n) { var t = tokens[j]; t.classList.remove("found"); if (n) t.hidden = true; });
+        first.textContent = li.dataset.fix; first.classList.add("fixed");
         opts.querySelectorAll("button").forEach(function (b) { b.disabled = true; if (b.textContent === li.dataset.fix) b.classList.add("ok"); });
         hint.textContent = ""; li.classList.add("done");
         tokens.forEach(function (x) { x.disabled = true; });
-        input.value = sent.textContent.replace(/\s+/g, " ").trim() + (s.miss ? " (" + s.miss + " wrong tr" + (s.miss > 1 ? "ies" : "y") + " first)" : "");
-        if (!quietly) flash(t, "pop");
+        var shown = sent.cloneNode(true); shown.querySelectorAll("[hidden]").forEach(function (x) { x.remove(); });
+        input.value = shown.textContent.replace(/\s+/g, " ").trim() + (s.miss ? " (" + s.miss + " wrong tr" + (s.miss > 1 ? "ies" : "y") + " first)" : "");
+        if (!quietly) flash(first, "pop");
       }
+      function wrong(n) { s.miss++; st[i] = s; save(); streak.miss(); n.classList.add("nope"); flash(n, "shake"); setTimeout(function () { n.classList.remove("nope"); }, 700); }
       tokens.forEach(function (t, j) {
         t.addEventListener("click", function () {
           if (li.classList.contains("found")) return;
-          if (j === badAt) { s.found = true; st[i] = s; save(); found(); flash(t, "pop"); }
-          else { s.miss++; st[i] = s; save(); t.classList.add("nope"); flash(t, "shake"); setTimeout(function () { t.classList.remove("nope"); }, 700); }
+          if (badAt.indexOf(j) > -1) { s.found = true; st[i] = s; save(); found(); badAt.forEach(function (k) { flash(tokens[k], "pop"); }); }
+          else wrong(t);
         });
+      });
+      if (okBtn) okBtn.addEventListener("click", function () {
+        if (li.classList.contains("done") || li.classList.contains("found")) return;
+        if (isOk) { s.done = true; st[i] = s; save(); solve(false); if (!s.miss) streak.hit(sent); bar.update(marksOf(st, items.length)); }
+        else { wrong(okBtn); }
       });
       if (s.done) solve(true); else if (s.found) found();
     });
-    bar.update(marks(), true);
+    bar.update(marksOf(st, items.length), true);
+  });
+
+  // ---------- Type the answer, then check ----------
+  function norm(t) {
+    return " " + String(t || "").toLowerCase().replace(/[‘’]/g, "'")
+      .replace(/\bcan't\b/g, "can not").replace(/\bwon't\b/g, "will not").replace(/n't\b/g, " not").replace(/'ve\b/g, " have")
+      .replace(/'re\b/g, " are").replace(/'m\b/g, " am").replace(/[.,!?;:"]/g, " ").replace(/\s+/g, " ").trim() + " ";
+  }
+  document.querySelectorAll(".g-type").forEach(function (list) {
+    var g = list.dataset.g, items = Array.prototype.slice.call(list.children);
+    var st = state[g] || (state[g] = {});
+    var bar = scoreBar(list, items.length, g);
+    items.forEach(function (li, i) {
+      var ins = Array.prototype.slice.call(li.querySelectorAll("input.blank[data-ok]"));
+      var s = st[i] || { miss: 0 };
+      var acts = el("span", "g-type-acts game-ui");
+      var check = btn("Check", "g-check"), hint = btn("Hint", "ghost g-hintbtn"), show = btn("Show answer", "ghost g-showbtn");
+      var msg = el("span", "g-type-msg"); msg.setAttribute("aria-live", "polite");
+      show.hidden = s.miss < 2;
+      acts.append(check, hint, show, msg);
+      li.append(acts);
+      function answers(f) { return f.dataset.ok.split("|"); }
+      // Make each box wide enough for its longest answer.
+      ins.forEach(function (f) { var n = Math.max.apply(null, answers(f).map(function (a) { return a.length; })); f.style.width = Math.max(6, n + 3) + "ch"; f.style.maxWidth = "100%"; });
+      function right(f) { var v = norm(f.value); return answers(f).some(function (a) { return norm(a) === v; }); }
+      function solve(quietly) {
+        li.classList.add("done");
+        ins.forEach(function (f, k) { if (s.vals) f.value = s.vals[k]; f.readOnly = true; f.classList.remove("bad"); f.classList.add("ok"); });
+        acts.querySelectorAll("button").forEach(function (b) { b.hidden = true; });
+        msg.textContent = s.miss ? "" : "✓ Right first time!";
+        if (!quietly) ins.forEach(function (f) { flash(f, "pop"); });
+      }
+      function doCheck() {
+        if (li.classList.contains("done")) return;
+        if (ins.some(function (f) { return !f.value.trim(); })) { msg.textContent = "Fill in the gap first."; return; }
+        if (ins.every(right)) {
+          s.done = true; s.vals = ins.map(function (f) { return f.value; }); st[i] = s; save(); solve(false);
+          if (!s.miss) streak.hit(ins[0]); else msg.textContent = "✓ Got it!";
+          bar.update(marksOf(st, items.length));
+        } else {
+          s.miss++; st[i] = s; save(); streak.miss();
+          ins.forEach(function (f) { if (!right(f)) { f.classList.add("bad"); flash(f, "shake"); } });
+          msg.textContent = s.miss === 1 ? "Not quite. Try again, or tap Hint." : "Not yet. Look at the rule again, or tap Show answer.";
+          show.hidden = s.miss < 2;
+        }
+      }
+      check.addEventListener("click", doCheck);
+      ins.forEach(function (f) {
+        f.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); doCheck(); } });
+        f.addEventListener("input", function () { f.classList.remove("bad"); });
+      });
+      hint.addEventListener("click", function () {
+        var f = ins.filter(function (x) { return !right(x); })[0] || ins[0];
+        var first = answers(f)[0].split(" ")[0];
+        f.value = first + (answers(f)[0].indexOf(" ") > -1 ? " " : ""); f.focus(); f.classList.remove("bad");
+        if (!s.hint) { s.hint = true; s.miss++; st[i] = s; save(); streak.miss(); }
+        msg.textContent = "The answer starts with “" + first + "”.";
+      });
+      show.addEventListener("click", function () {
+        ins.forEach(function (f) { f.value = answers(f)[0]; f.dispatchEvent(new Event("input", { bubbles: true })); });
+        s.done = true; s.vals = ins.map(function (f) { return f.value; }); s.miss = Math.max(1, s.miss); st[i] = s; save();
+        solve(false); msg.textContent = "Read the answer, then try it again later.";
+        bar.update(marksOf(st, items.length));
+      });
+      if (s.done) solve(true);
+    });
+    bar.update(marksOf(st, items.length), true);
   });
 
   // ---------- Sorting with instant marking ----------
@@ -137,15 +306,12 @@
     var g = "sort-" + box.dataset.k, sel = null;
     var st = state[g] || (state[g] = {});
     var chips = Array.prototype.slice.call(box.querySelectorAll(".chip")), bank = box.querySelector(".bank");
-    var bar = scoreBar(box, chips.length, function () { delete state[g]; save(); location.reload(); });
+    var bar = scoreBar(box, chips.length, g);
     function info(c) { return st[c.dataset.i] || (st[c.dataset.i] = { miss: 0, done: false }); }
     function marks() { return chips.map(function (c) { var s = st[c.dataset.i]; return s && s.done ? (s.miss ? "later" : "first") : ""; }); }
     function colDrop(col) { return box.querySelector('.col .drop[data-col="' + col + '"]'); }
-    chips.forEach(function (c) {
-      var s = st[c.dataset.i];
-      if (s && s.done) { colDrop(c.dataset.a).appendChild(c); lock(c); }
-    });
     function lock(c) { c.classList.add("ok"); c.draggable = false; c.setAttribute("aria-disabled", "true"); }
+    chips.forEach(function (c) { var s = st[c.dataset.i]; if (s && s.done) { colDrop(c.dataset.a).appendChild(c); lock(c); } });
     function select(c) {
       if (sel) sel.classList.remove("picked");
       sel = (sel === c || !c || c.classList.contains("ok")) ? null : c;
@@ -159,9 +325,9 @@
       drop.appendChild(c);
       var s = info(c);
       if (drop.dataset.col === c.dataset.a) {
-        s.done = true; save(); lock(c); flash(c, "pop"); bar.update(marks());
+        s.done = true; save(); lock(c); flash(c, "pop"); if (!s.miss) streak.hit(c); bar.update(marks());
       } else {
-        s.miss++; save(); c.classList.add("bad"); flash(c, "shake");
+        s.miss++; save(); streak.miss(); c.classList.add("bad"); flash(c, "shake");
         setTimeout(function () { c.classList.remove("bad"); bank.appendChild(c); }, 750);
       }
     }
@@ -178,11 +344,10 @@
     box.addEventListener("dragover", function (e) { if (e.target.closest(".drop, .col")) e.preventDefault(); });
     box.addEventListener("drop", function (e) {
       e.preventDefault();
-      var c = box.querySelector('.chip[data-i="' + e.dataTransfer.getData("text/plain") + '"]');
-      place(c, dropAt(e.target));
+      place(box.querySelector('.chip[data-i="' + e.dataTransfer.getData("text/plain") + '"]'), dropAt(e.target));
     });
     var reset = box.querySelector(".sort-reset");
-    if (reset) reset.addEventListener("click", function () { delete state[g]; save(); location.reload(); });
+    if (reset) reset.addEventListener("click", again(g));
     bar.update(marks(), true);
   });
 
@@ -192,12 +357,12 @@
     var inputs = Array.prototype.filter.call(box.querySelectorAll("input.blank, textarea.blank"), function (f) { return f.type !== "hidden"; });
     var record = box.querySelector("input.g-record");
     var g = "write-" + (box.dataset.g || "w"), st = state[g];
+    if (CHECK_URL) stars.add(g, labelFor(box));
     var acts = el("div", "g-write-acts game-ui");
-    var btn = el("button", null, "Check my writing"); btn.type = "button";
+    var go = btn("Check my writing");
     var msg = el("p", "g-write-msg"); msg.setAttribute("aria-live", "polite");
-    acts.append(btn, msg); box.append(acts);
+    acts.append(go, msg); box.append(acts);
     var boxes = inputs.map(function (f) { var fb = el("div", "g-fb game-ui"); fb.hidden = true; f.after(fb); return fb; });
-
     function show(results, texts, quiet) {
       var good = 0, done = 0;
       results.forEach(function (r, i) {
@@ -213,20 +378,19 @@
       var all = inputs.length;
       if (done === all && good === all) {
         msg.innerHTML = "<strong>Perfect!</strong> All " + all + " sentences are correct.";
+        stars.set(g, "gold", quiet);
         if (!quiet) celebrate(acts);
       } else if (done < all) msg.textContent = good + " correct so far. Write all " + all + " sentences, then check again.";
-      else msg.textContent = good + " of " + all + " correct. Change the sentences that need it, then check again.";
+      else { msg.textContent = good + " of " + all + " correct. Change the sentences that need it, then check again."; stars.set(g, "done", quiet); }
       if (record) record.value = results.map(function (r, i) { return (i + 1) + ". " + texts[i] + " → " + (LABEL[r.status] || r.status) + (r.corrected ? " (" + r.corrected + ")" : ""); }).join(" | ");
     }
-    // Show the last check again, if the sentences haven't changed since.
     if (st && st.texts && st.texts.join("\n") === inputs.map(function (f) { return f.value.trim(); }).join("\n")) show(st.results, st.texts, true);
     inputs.forEach(function (f, i) { f.addEventListener("input", function () { boxes[i].hidden = true; }); });
-
-    btn.addEventListener("click", function () {
+    go.addEventListener("click", function () {
       var texts = inputs.map(function (f) { return f.value.trim(); });
       if (!texts.some(Boolean)) { msg.textContent = "Write your sentences first."; return; }
       if (!CHECK_URL) { msg.textContent = "The writing check isn't switched on yet. Send your answers to Bill instead."; return; }
-      btn.disabled = true; btn.textContent = "Checking…"; msg.textContent = "";
+      go.disabled = true; go.textContent = "Checking…"; msg.textContent = "";
       var ctrl = window.AbortController ? new AbortController() : null, timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 30000);
       fetch(CHECK_URL, { method: "POST", body: JSON.stringify({ action: "checkWriting", args: [{
         lesson: (document.querySelector("h1") || {}).textContent || "", task: box.dataset.task || "", focus: box.dataset.focus || "", answers: texts }] }),
@@ -241,31 +405,37 @@
           var t = e && e.message || "";
           msg.textContent = /busy day|Write something/.test(t) ? t : "Sorry, the check didn't work. Check your internet and try again in a minute.";
         })
-        .then(function () { clearTimeout(timer); btn.disabled = false; btn.textContent = "Check my writing"; });
+        .then(function () { clearTimeout(timer); go.disabled = false; go.textContent = "Check my writing"; });
     });
   });
 
+  stars.draw();
+
   // ---------- The celebration ----------
-  function celebrate(near) {
-    var badge = el("div", "g-perfect", "Perfect!");
+  function celebrate(near, text, big) {
+    var badge = el("div", "g-perfect" + (big ? " big" : ""), text || "Perfect!");
     badge.setAttribute("aria-hidden", "true");
-    var star = el("span", "g-star", "★"); badge.prepend(star);
-    near.append(badge);
-    setTimeout(function () { badge.remove(); }, calm ? 2200 : 2600);
+    badge.prepend(el("span", "g-star", "★"));
+    (big ? document.body : near).append(badge);
+    setTimeout(function () { badge.remove(); }, big ? 3600 : (calm ? 2200 : 2600));
     if (calm) return;
     var cv = el("canvas", "g-confetti"); document.body.append(cv);
     var ctx = cv.getContext("2d"), dpr = window.devicePixelRatio || 1;
     var W = innerWidth, H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.scale(dpr, dpr);
-    var r = near.getBoundingClientRect(), ox = r.left + r.width / 2, oy = Math.min(Math.max(r.top, 60), H - 60);
     var colors = ["#1f5f73", "#2e7a50", "#e0a526", "#d65a3a", "#7fc0d1", "#9b6bd1"], bits = [];
-    for (var i = 0; i < 140; i++) {
-      var a = Math.random() * Math.PI * 2, v = 4 + Math.random() * 9;
-      bits.push({ x: ox, y: oy, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 6, w: 6 + Math.random() * 6, h: 4 + Math.random() * 6,
-        rot: Math.random() * 6, vr: (Math.random() - .5) * .4, c: colors[i % colors.length] });
-    }
-    var t0 = performance.now();
+    var origins = big ? [[W * .2, H * .45], [W * .5, H * .35], [W * .8, H * .45]] : (function () {
+      var r = near.getBoundingClientRect(); return [[r.left + r.width / 2, Math.min(Math.max(r.top, 60), H - 60)]];
+    })();
+    origins.forEach(function (o) {
+      for (var i = 0; i < 140; i++) {
+        var a = Math.random() * Math.PI * 2, v = 4 + Math.random() * (big ? 12 : 9);
+        bits.push({ x: o[0], y: o[1], vx: Math.cos(a) * v, vy: Math.sin(a) * v - 6, w: 6 + Math.random() * 6, h: 4 + Math.random() * 6,
+          rot: Math.random() * 6, vr: (Math.random() - .5) * .4, c: colors[i % colors.length] });
+      }
+    });
+    var t0 = performance.now(), dur = big ? 3200 : 2400;
     (function frame(t) {
-      var life = (t - t0) / 2400;
+      var life = (t - t0) / dur;
       ctx.clearRect(0, 0, W, H);
       ctx.globalAlpha = Math.max(0, 1 - Math.max(0, life - .6) / .4);
       bits.forEach(function (b) {
