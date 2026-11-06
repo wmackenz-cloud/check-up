@@ -22,6 +22,7 @@
 /* Music bar: play any clip from anywhere in the lesson */
 .musicbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; background: var(--sheet); border-top: 2px solid var(--accent);
   box-shadow: 0 -4px 16px rgba(0,0,0,.12); padding: 8px max(12px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); }
+.musicbar { max-width: none !important; margin: 0 !important; }
 .musicbar-in { max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
 .musicbar-label { font-weight: 700; font-size: .85rem; color: var(--accent); margin-right: 2px; }
 .musicbar-clips { display: flex; flex-wrap: wrap; gap: 6px; }

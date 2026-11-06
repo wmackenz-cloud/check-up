@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vocabulary 11: Describe the Picture</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="../grammar-traps/traps.css?v=1793206303">
+<link rel="stylesheet" href="../games.css?v=1793970000">
+<style>
+.g-pick.photos > li { margin: 18px 0; }
+.photo { margin: 4px 0 8px; display: grid; gap: 2px; justify-items: start; }
+.photo-open { padding: 0; border: none; background: none; cursor: zoom-in; border-radius: 10px; line-height: 0; }
+.photo img { display: block; max-width: 100%; width: auto; max-height: 300px; border-radius: 10px; border: 1px solid var(--rule); }
+.photo figcaption { font-weight: 700; font-size: .85rem; color: var(--accent); }
+.credits { margin-top: 26px; border-top: 1px solid var(--rule); } .credits p { color: var(--ink-soft); }
+.photobar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; background: var(--sheet); border-top: 2px solid var(--accent); box-shadow: 0 -4px 16px rgba(0,0,0,.12);
+  padding: 8px max(12px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); }
+.photobar-in { max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.photobar-label { font-weight: 700; font-size: .85rem; color: var(--accent); }
+.photobar-btns { display: flex; flex-wrap: wrap; gap: 6px; }
+.photobar button { font: inherit; font-weight: 700; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 999px; cursor: pointer; border: 2px solid var(--accent); background: var(--sheet); color: var(--accent); }
+body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
+@media (max-width: 520px) { .photobar button { min-width: 34px; height: 36px; padding: 0 6px; } .g-stars { bottom: 142px !important; } body { padding-bottom: 170px !important; } }
+.photo-link { font: inherit; font-weight: 700; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 999px; padding: 0 8px; cursor: zoom-in; line-height: 1.5; }
+.lightbox { position: fixed; inset: 0; z-index: 60; background: rgba(10,15,18,.92); display: grid; grid-template-rows: auto minmax(0,1fr) auto; gap: 8px;
+  padding: calc(10px + env(safe-area-inset-top, 0px)) 12px calc(12px + env(safe-area-inset-bottom, 0px)); }
+.lightbox[hidden] { display: none !important; }
+.lightbox, .photobar { max-width: none !important; margin: 0 !important; }
+.lb-top { display: flex; justify-content: space-between; align-items: center; color: #fff; font-weight: 700; }
+.lb-img { min-height: 0; display: grid; place-items: center; }
+.lb-img img { max-width: 100%; max-height: calc(100vh - 140px); max-height: calc(100dvh - 140px); object-fit: contain; border-radius: 8px; }
+.lb-nav { display: flex; justify-content: center; gap: 10px; }
+.lightbox button { font: inherit; font-weight: 700; border-radius: 999px; padding: 8px 18px; cursor: pointer; border: 2px solid #fff; background: transparent; color: #fff; }
+@media print { .photobar, .lightbox { display: none !important; } .photo img { max-height: 200px; } .photo-link { border: none; background: none; padding: 0; } }
+</style>
+</head>
+<body class="student" data-item="vocab-11">
+<header class="top">
+  <p class="eyebrow">English vocabulary practice &middot; Describing and comparing photos</p>
+  <h1>Describe the Picture</h1>
+  <p class="namedate">Name: <span class="line"></span> Date: <span class="line"></span></p>
+  <div class="tools">
+    <button type="button" id="print">Print or save as PDF</button>
+    <button type="button" class="ghost" id="clear">Clear my answers</button>
+    <span class="hint">Look, then tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
+  </div>
+</header>
+<main class="sheet">
+<h2>Before you start</h2>
+<div class="rule">
+<p><strong>A good photo makes us feel something. In this lesson you look at eight photos and learn the words to describe them.</strong></p>
+<p>Tap any photo to see it bigger. The photo bar at the bottom of the screen lets you look at any photo again, from anywhere in the lesson.</p>
+<p>In many speaking exams (Aptis, Cambridge, IELTS) you describe and compare photos. This lesson gives you the language to do it well.</p>
+</div>
+<h2>Useful words</h2>
+<table>
+<thead><tr><th>Calm</th><th>Happy</th><th>Sad or empty</th><th>Scary</th><th>Busy</th><th>Amazing</th></tr></thead>
+<tbody>
+<tr><td>peaceful</td><td>joyful</td><td>lonely</td><td>eerie</td><td>stressful</td><td>majestic</td></tr>
+<tr><td>tranquil</td><td>festive</td><td>gloomy</td><td>creepy</td><td>hectic</td><td>stunning</td></tr>
+<tr><td>serene</td><td>lively</td><td>deserted</td><td>sinister</td><td>chaotic</td><td>breathtaking</td></tr>
+<tr><td>cosy</td><td>cheerful</td><td>bleak</td><td>spooky</td><td>crowded</td><td>magical</td></tr>
+</tbody>
+</table>
+<h2 id="ex1" class="ex">Exercise 1: Look and choose</h2>
+<p>Look at each photo. Then tap the word that describes it best.</p>
+<ol class="g-pick photos" data-g="ex1">
+<li data-a="0" data-form="peaceful" data-q="Photo A looks ___."><figure class="photo"><button type="button" class="photo-open" data-photo="A" aria-label="Show photo A bigger"><img src="photos/photo-a.jpg" alt="A misty lake at dawn with reeds and a small pine tree" loading="lazy"></button><figcaption>Photo A</figcaption></figure>Photo A looks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-1">. <span class="opts game-ui"><button>peaceful</button><button>chaotic</button><button>exciting</button></span></li>
+<li data-a="0" data-form="joyful" data-q="Photo B looks ___."><figure class="photo"><button type="button" class="photo-open" data-photo="B" aria-label="Show photo B bigger"><img src="photos/photo-b.jpg" alt="Crowds of graduates cheering under falling confetti" loading="lazy"></button><figcaption>Photo B</figcaption></figure>Photo B looks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-2">. <span class="opts game-ui"><button>joyful</button><button>lonely</button><button>gloomy</button></span></li>
+<li data-a="1" data-form="lonely" data-q="Photo C looks ___."><figure class="photo"><button type="button" class="photo-open" data-photo="C" aria-label="Show photo C bigger"><img src="photos/photo-c.jpg" alt="An empty park bench among autumn leaves" loading="lazy"></button><figcaption>Photo C</figcaption></figure>Photo C looks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-3">. <span class="opts game-ui"><button>crowded</button><button>lonely</button><button>noisy</button></span></li>
+<li data-a="2" data-form="eerie" data-q="Photo D looks ___."><figure class="photo"><button type="button" class="photo-open" data-photo="D" aria-label="Show photo D bigger"><img src="photos/photo-d.jpg" alt="Ruined, abandoned brick buildings under a grey sky" loading="lazy"></button><figcaption>Photo D</figcaption></figure>Photo D looks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-4">. <span class="opts game-ui"><button>cosy</button><button>cheerful</button><button>eerie</button></span></li>
+<li data-a="1" data-form="gloomy" data-q="Photo E looks ___."><figure class="photo"><button type="button" class="photo-open" data-photo="E" aria-label="Show photo E bigger"><img src="photos/photo-e.jpg" alt="A person with an umbrella crossing a wet city street in the rain" loading="lazy"></button><figcaption>Photo E</figcaption></figure>Photo E looks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-5">. <span class="opts game-ui"><button>sunny</button><button>gloomy</button><button>joyful</button></span></li>
+<li data-a="1" data-form="cosy" data-q="Photo F looks ___."><figure class="photo"><button type="button" class="photo-open" data-photo="F" aria-label="Show photo F bigger"><img src="photos/photo-f.jpg" alt="A living room with a stone fireplace and a fire burning" loading="lazy"></button><figcaption>Photo F</figcaption></figure>Photo F looks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-6">. <span class="opts game-ui"><button>frightening</button><button>cosy</button><button>stressful</button></span></li>
+<li data-a="2" data-form="stressful" data-q="Photo G looks ___."><figure class="photo"><button type="button" class="photo-open" data-photo="G" aria-label="Show photo G bigger"><img src="photos/photo-g.jpg" alt="A busy city road full of cars in a traffic jam" loading="lazy"></button><figcaption>Photo G</figcaption></figure>Photo G looks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-7">. <span class="opts game-ui"><button>relaxing</button><button>peaceful</button><button>stressful</button></span></li>
+<li data-a="1" data-form="majestic" data-q="Photo H looks ___."><figure class="photo"><button type="button" class="photo-open" data-photo="H" aria-label="Show photo H bigger"><img src="photos/photo-h.jpg" alt="Green northern lights over a snowy mountain and dark trees" loading="lazy"></button><figcaption>Photo H</figcaption></figure>Photo H looks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-8">. <span class="opts game-ui"><button>boring</button><button>majestic</button><button>ugly</button></span></li>
+</ol>
+
+<h2 id="ex2" class="ex">Exercise 2: Sort the words</h2>
+<p>Put each word in the right group.</p>
+<div class="sorter g-sort" data-k="sort11"><p class="hint sort-how">Tap a word, then tap the group it belongs in. On a computer you can also drag the words. Right answers stay; wrong ones jump back.</p><div class="bank drop" data-col=""><button type="button" class="chip" draggable="true" data-i="10" data-a="3">sinister</button><button type="button" class="chip" draggable="true" data-i="5" data-a="1">cheerful</button><button type="button" class="chip" draggable="true" data-i="0" data-a="0">tranquil</button><button type="button" class="chip" draggable="true" data-i="1" data-a="0">serene</button><button type="button" class="chip" draggable="true" data-i="9" data-a="3">creepy</button><button type="button" class="chip" draggable="true" data-i="4" data-a="1">lively</button><button type="button" class="chip" draggable="true" data-i="6" data-a="2">deserted</button><button type="button" class="chip" draggable="true" data-i="2" data-a="0">still</button><button type="button" class="chip" draggable="true" data-i="3" data-a="1">festive</button><button type="button" class="chip" draggable="true" data-i="12" data-a="4">hectic</button><button type="button" class="chip" draggable="true" data-i="11" data-a="3">spooky</button><button type="button" class="chip" draggable="true" data-i="14" data-a="4">crowded</button><button type="button" class="chip" draggable="true" data-i="8" data-a="2">melancholy</button><button type="button" class="chip" draggable="true" data-i="13" data-a="4">chaotic</button><button type="button" class="chip" draggable="true" data-i="7" data-a="2">bleak</button></div><div class="cols" style="--n:5"><div class="col" data-col="0"><p class="col-h">Calm</p><div class="drop" data-col="0"></div></div><div class="col" data-col="1"><p class="col-h">Happy</p><div class="drop" data-col="1"></div></div><div class="col" data-col="2"><p class="col-h">Sad or empty</p><div class="drop" data-col="2"></div></div><div class="col" data-col="3"><p class="col-h">Scary</p><div class="drop" data-col="3"></div></div><div class="col" data-col="4"><p class="col-h">Busy</p><div class="drop" data-col="4"></div></div></div><div class="sort-acts"><button type="button" class="ghost sort-reset">Start again</button></div></div>
+
+<h2>The rule: looks, looks like, looks as if</h2>
+<div class="rule">
+<p><strong>Three ways to say what a photo seems like. The word after them is the key.</strong></p>
+<p><strong>looks</strong> + adjective: <em>It looks <strong>peaceful</strong>.</em></p>
+<p><strong>looks like</strong> + noun: <em>It looks like <strong>a painting</strong>.</em></p>
+<p><strong>looks as if</strong> + a sentence: <em>It looks as if <strong>it's going to rain</strong>.</em> (<em>looks like</em> + a sentence is also common in speaking.)</p>
+<p><del>It looks like peaceful.</del> <del>It looks a painting.</del></p>
+</div>
+<h2 id="ex3" class="ex">Exercise 3: looks, looks like or looks as if?</h2>
+<p>Tap the right words. Look at what comes next: an adjective, a noun, or a sentence?</p>
+<ol class="g-pick" data-g="ex3">
+<li data-a="0" data-form="looks" data-q="Photo A ___ very peaceful.">Photo A <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-1"> very peaceful. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
+<li data-a="1" data-form="looks like" data-q="The sky in Photo H ___ a painting.">The sky in Photo H <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-2"> a painting. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
+<li data-a="2" data-form="looks as if" data-q="Photo E ___ it has been raining all day.">Photo E <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-3"> it has been raining all day. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
+<li data-a="2" data-form="looks as if" data-q="The man in Photo E ___ he&#x27;s in a hurry.">The man in Photo E <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-4"> he&#x27;s in a hurry. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
+<li data-a="1" data-form="looks like" data-q="Photo D ___ a scene from a horror film.">Photo D <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-5"> a scene from a horror film. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
+<li data-a="0" data-form="looks" data-q="The room in Photo F ___ warm and cosy.">The room in Photo F <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-6"> warm and cosy. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
+<li data-a="1" data-form="looks like" data-q="Photo B ___ a graduation day.">Photo B <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-7"> a graduation day. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
+<li data-a="2" data-form="looks as if" data-q="Photo G ___ everyone is going home from work.">Photo G <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-8"> everyone is going home from work. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
+<li data-a="0" data-form="looks" data-q="The bench in Photo C ___ a little sad.">The bench in Photo C <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-9"> a little sad. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
+<li data-a="1" data-form="looks like" data-q="The lake in Photo A ___ a mirror.">The lake in Photo A <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-10"> a mirror. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
+</ol>
+
+<h2>The rule: guessing with must, might and can't</h2>
+<div class="rule">
+<p><strong>When you describe a photo, you often guess. Show how sure you are.</strong></p>
+<p><strong>must</strong> = I'm sure it's true: <em>They must be cold. There's snow everywhere.</em></p>
+<p><strong>might</strong> = maybe: <em>He might be going to work.</em></p>
+<p><strong>can't</strong> = I'm sure it's not true: <em>It can't be summer. The trees have no leaves.</em></p>
+<p><del>They must to be cold.</del> They must <strong>be</strong> cold.</p>
+</div>
+<h2 id="ex4" class="ex">Exercise 4: must, might or can't?</h2>
+<p>Tap the right word. Use the clue in each sentence.</p>
+<ol class="g-pick" data-g="ex4">
+<li data-a="0" data-form="must" data-q="It ___ be very cold in Photo H. There&#x27;s snow on the mountain.">It <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-1"> be very cold in Photo H. There&#x27;s snow on the mountain. <span class="opts game-ui"><button>must</button><button>might</button><button>can&#x27;t</button></span></li>
+<li data-a="2" data-form="can&#x27;t" data-q="It ___ be summer in Photo C. The leaves are falling.">It <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-2"> be summer in Photo C. The leaves are falling. <span class="opts game-ui"><button>must</button><button>might</button><button>can&#x27;t</button></span></li>
+<li data-a="0" data-form="must" data-q="The people in Photo B ___ be students. They&#x27;re wearing graduation hats.">The people in Photo B <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-3"> be students. They&#x27;re wearing graduation hats. <span class="opts game-ui"><button>must</button><button>might</button><button>can&#x27;t</button></span></li>
+<li data-a="2" data-form="can&#x27;t" data-q="People ___ live in the buildings in Photo D. The windows are all broken.">People <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-4"> live in the buildings in Photo D. The windows are all broken. <span class="opts game-ui"><button>must</button><button>might</button><button>can&#x27;t</button></span></li>
+<li data-a="1" data-form="might" data-q="The man in Photo E ___ be going to work. We can&#x27;t be sure.">The man in Photo E <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-5"> be going to work. We can&#x27;t be sure. <span class="opts game-ui"><button>must</button><button>might</button><button>can&#x27;t</button></span></li>
+<li data-a="2" data-form="can&#x27;t" data-q="The drivers in Photo G ___ be feeling relaxed. They aren&#x27;t moving!">The drivers in Photo G <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-6"> be feeling relaxed. They aren&#x27;t moving! <span class="opts game-ui"><button>must</button><button>might</button><button>can&#x27;t</button></span></li>
+<li data-a="0" data-form="must" data-q="Someone ___ be at home in Photo F. The fire is burning.">Someone <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-7"> be at home in Photo F. The fire is burning. <span class="opts game-ui"><button>must</button><button>might</button><button>can&#x27;t</button></span></li>
+<li data-a="1" data-form="might" data-q="Photo A ___ be early in the morning. It&#x27;s hard to tell.">Photo A <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-8"> be early in the morning. It&#x27;s hard to tell. <span class="opts game-ui"><button>must</button><button>might</button><button>can&#x27;t</button></span></li>
+</ol>
+
+<h2 id="ex5" class="ex">Exercise 5: Match the strong adjectives</h2>
+<p>Tap an ordinary adjective, then tap its strong partner. Remember: <em>very beautiful</em>, but <em>absolutely stunning</em>.</p>
+<div class="g-match" data-g="ex5">
+<ul>
+<li data-l="beautiful" data-r="stunning" data-q="Match: beautiful">beautiful = stunning<input class="blank" type="hidden" data-k="ex5-1"></li>
+<li data-l="crowded" data-r="packed" data-q="Match: crowded">crowded = packed<input class="blank" type="hidden" data-k="ex5-2"></li>
+<li data-l="cold" data-r="freezing" data-q="Match: cold">cold = freezing<input class="blank" type="hidden" data-k="ex5-3"></li>
+<li data-l="scary" data-r="terrifying" data-q="Match: scary">scary = terrifying<input class="blank" type="hidden" data-k="ex5-4"></li>
+<li data-l="big" data-r="enormous" data-q="Match: big">big = enormous<input class="blank" type="hidden" data-k="ex5-5"></li>
+<li data-l="happy" data-r="delighted" data-q="Match: happy">happy = delighted<input class="blank" type="hidden" data-k="ex5-6"></li>
+</ul>
+</div>
+
+<h2 id="ex6" class="ex">Exercise 6: Word order</h2>
+<p>Tap the words in the right order to make a sentence. Tap a word in your sentence to send it back.</p>
+<ol class="g-order" data-g="ex6">
+<li data-answer="It looks as if it&#x27;s going to rain." data-q="Put the words in order: It looks as if it&#x27;s going to rain."><input class="blank" type="hidden" data-k="ex6-1"></li>
+<li data-answer="The street looks absolutely packed." data-q="Put the words in order: The street looks absolutely packed."><input class="blank" type="hidden" data-k="ex6-2"></li>
+<li data-answer="They must be celebrating something." data-q="Put the words in order: They must be celebrating something."><input class="blank" type="hidden" data-k="ex6-3"></li>
+<li data-answer="This photo makes me feel calm." data-q="Put the words in order: This photo makes me feel calm."><input class="blank" type="hidden" data-k="ex6-4"></li>
+<li data-answer="It can&#x27;t be summer in this photo." data-alt="In this photo it can&#x27;t be summer." data-q="Put the words in order: It can&#x27;t be summer in this photo."><input class="blank" type="hidden" data-k="ex6-5"></li>
+<li data-answer="The sky looks like a painting." data-q="Put the words in order: The sky looks like a painting."><input class="blank" type="hidden" data-k="ex6-6"></li>
+</ol>
+
+<h2 id="ex7" class="ex">Exercise 7: Compare the photos</h2>
+<p>Write your answers. Press <strong>Check</strong> after each one to see if your English is right.</p>
+<div class="g-write" data-g="ex7" data-task="Answer each prompt about the photos in the lesson in one to three sentences." data-focus="The student describes and compares photos. Check above all: &#x27;looks + adjective&#x27; (looks peaceful), &#x27;looks like + noun&#x27; (looks like a painting), &#x27;looks as if + clause&#x27; (looks as if it&#x27;s going to rain), never &#x27;looks like peaceful&#x27;; must / might / can&#x27;t + infinitive for guessing (they must be cold, it can&#x27;t be summer), not &#x27;must to be&#x27; or &#x27;can&#x27;t to be&#x27;; very with ordinary adjectives and absolutely with strong ones (absolutely stunning, never very stunning); comparing words (but, while, whereas, more… than). Also check general grammar. Any honest opinion is fine.">
+<ol>
+<li>Compare Photo A and Photo G. How are they different? (Photo A looks… but Photo G…)<br><textarea class="blank area" rows="2" aria-label="Compare Photo A and Photo G. How are they different? (Photo A looks… but Photo G…)" data-k="ex7-1"></textarea></li>
+<li>Which photo would you most like to be in? Why?<br><textarea class="blank area" rows="2" aria-label="Which photo would you most like to be in? Why?" data-k="ex7-2"></textarea></li>
+<li>Choose a photo. Guess what is happening, or what happened just before. (They must… / He might… / It can&#x27;t…)<br><textarea class="blank area" rows="2" aria-label="Choose a photo. Guess what is happening, or what happened just before. (They must… / He might… / It can&#x27;t…)" data-k="ex7-3"></textarea></li>
+</ol>
+<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="ex7-check"></p>
+</div>
+
+<h2 id="ex8" class="ex">Exercise 8: Speaking</h2>
+<ul>
+<li><strong>Guess the photo:</strong> describe a photo to your teacher or a friend without saying its letter. Can they guess which one it is?</li>
+<li><strong>Compare:</strong> choose two photos and compare them. <em>Photo C looks lonely, whereas Photo B looks absolutely joyful.</em></li>
+<li><strong>Imagine:</strong> what can you hear, smell and feel in your favourite photo?</li>
+<li><strong>Your photo:</strong> show a photo from your phone and describe how it makes you feel.</li>
+</ul>
+<details class="answers">
+  <summary>Check your answers</summary>
+  <div class="answers-body">
+<p><strong>Exercise 1:</strong> A peaceful, B joyful, C lonely, D eerie, E gloomy, F cosy, G stressful, H majestic.</p>
+<p><strong>Exercise 2:</strong> Calm: tranquil, serene, still. Happy: festive, lively, cheerful. Sad or empty: deserted, bleak, melancholy. Scary: creepy, sinister, spooky. Busy: hectic, chaotic, crowded.</p>
+<p><strong>Exercise 3:</strong> 1 looks, 2 looks like, 3 looks as if, 4 looks as if, 5 looks like, 6 looks, 7 looks like, 8 looks as if, 9 looks, 10 looks like.</p>
+<p><strong>Exercise 4:</strong> 1 must, 2 can't, 3 must, 4 can't, 5 might, 6 can't, 7 must, 8 might.</p>
+<p><strong>Exercise 5:</strong> beautiful = stunning; crowded = packed; cold = freezing; scary = terrifying; big = enormous; happy = delighted.</p>
+<p><strong>Exercise 6:</strong> 1 It looks as if it's going to rain. 2 The street looks absolutely packed. 3 They must be celebrating something. 4 This photo makes me feel calm. 5 It can't be summer in this photo. 6 The sky looks like a painting.</p>
+<p><strong>Exercise 7:</strong> Your own answers. Check: looks + adjective, looks like + noun, looks as if + sentence; must / might / can't + verb (no "to").</p>
+  </div>
+</details>
+<section class="credits">
+<h2>The photos</h2>
+<p class="small">Photos from Unsplash (unsplash.com), used under the Unsplash License. Photo E shows the Gooderham Building in Toronto.</p>
+</section>
+</main>
+<footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
+<script>
+(function () {
+  var key = "traps-" + location.pathname;
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || "{}") || {}; } catch (e) {}
+  var fields = document.querySelectorAll(".blank");
+  fields.forEach(function (f) {
+    if (saved[f.dataset.k]) f.value = saved[f.dataset.k];
+    f.addEventListener("input", function () {
+      saved[f.dataset.k] = f.value;
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
+    });
+  });
+  var clear = document.getElementById("clear");
+  if (clear) clear.addEventListener("click", function () {
+    if (!confirm("Clear all your answers on this page?")) return;
+    fields.forEach(function (f) { f.value = ""; });
+    saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
+    location.reload();
+  });
+  var pr = document.getElementById("print");
+  if (pr) pr.addEventListener("click", function () { window.print(); });
+  // Print the answer key on its own last page, even when it's closed on screen.
+  var ans = document.querySelector("details.answers"), wasOpen = false;
+  window.addEventListener("beforeprint", function () { if (ans) { wasOpen = ans.open; ans.open = true; } });
+  window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
+})();
+</script>
+<script src="../games.js?v=1793970000"></script>
+<script src="../api.js?v=1792889681"></script>
+<script src="../work.js?v=1793900000"></script>
+<div class="photobar" role="region" aria-label="Photos">
+  <div class="photobar-in"><span class="photobar-label">See a photo:</span><span class="photobar-btns"></span></div>
+</div>
+<div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo">
+  <div class="lb-top"><span class="lb-title"></span><button type="button" class="lb-close">Close &times;</button></div>
+  <div class="lb-img"><img alt=""></div>
+  <div class="lb-nav"><button type="button" class="lb-prev">&larr; Previous</button><button type="button" class="lb-next">Next &rarr;</button></div>
+</div>
+<script>
+// Photo bar, tappable "Photo A" names and a full-screen viewer, so any photo is one tap away.
+(function () {
+  var photos = {}, letters = [];
+  document.querySelectorAll("figure.photo img").forEach(function (img) {
+    var L = img.closest(".photo-open").dataset.photo; photos[L] = img; letters.push(L);
+  });
+  letters.sort();
+  var box = document.querySelector(".lightbox"), big = box.querySelector("img"), title = box.querySelector(".lb-title"), cur = null, back = null;
+  function open(L) {
+    cur = L; back = document.activeElement;
+    big.src = photos[L].currentSrc || photos[L].src; big.alt = photos[L].alt; title.textContent = "Photo " + L;
+    box.hidden = false; box.querySelector(".lb-close").focus();
+  }
+  function close() { box.hidden = true; if (back && back.focus) back.focus(); }
+  function step(d) { var i = (letters.indexOf(cur) + d + letters.length) % letters.length; open(letters[i]); }
+  box.querySelector(".lb-close").addEventListener("click", close);
+  box.querySelector(".lb-prev").addEventListener("click", function () { step(-1); });
+  box.querySelector(".lb-next").addEventListener("click", function () { step(1); });
+  box.addEventListener("click", function (e) { if (e.target === box || e.target.classList.contains("lb-img")) close(); });
+  document.addEventListener("keydown", function (e) {
+    if (box.hidden) return;
+    if (e.key === "Escape") close(); else if (e.key === "ArrowRight") step(1); else if (e.key === "ArrowLeft") step(-1);
+  });
+  document.querySelectorAll(".photo-open").forEach(function (b) { b.addEventListener("click", function () { open(b.dataset.photo); }); });
+  var bar = document.querySelector(".photobar-btns");
+  letters.forEach(function (L) {
+    var b = document.createElement("button"); b.type = "button"; b.textContent = L; b.setAttribute("aria-label", "Show photo " + L);
+    b.addEventListener("click", function () { open(L); }); bar.append(b);
+  });
+  var walker = document.createTreeWalker(document.querySelector("main"), NodeFilter.SHOW_TEXT, { acceptNode: function (n) {
+    if (!/Photo [A-H]\b/.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+    if (n.parentElement.closest("figure.photo, details.answers, .credits, button, .g-order, input, textarea, .rule")) return NodeFilter.FILTER_REJECT;
+    return NodeFilter.FILTER_ACCEPT; } });
+  var nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(function (n) {
+    var frag = document.createDocumentFragment();
+    n.nodeValue.split(/(Photo [A-H]\b)/).forEach(function (t) {
+      var m = t.match(/^Photo ([A-H])$/);
+      if (m && photos[m[1]]) { var b = document.createElement("button"); b.type = "button"; b.className = "photo-link"; b.textContent = t; b.setAttribute("aria-label", "Show " + t);
+        b.addEventListener("click", function () { open(m[1]); }); frag.append(b); }
+      else if (t) frag.append(document.createTextNode(t));
+    });
+    n.parentNode.replaceChild(frag, n);
+  });
+})();
+</script>
+</body>
+</html>
