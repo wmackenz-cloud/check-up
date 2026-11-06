@@ -1,0 +1,67 @@
+/* Check-up games (checkup-games.js). Uses the colours of vocab.html and grammar.html; amber matches games.css. */
+:root { --warn: #b7791f; --warn-soft: #fbf0d9; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --warn: #f0c060; --warn-soft: #3a2f17; } }
+:root[data-theme="dark"] { --warn: #f0c060; --warn-soft: #3a2f17; }
+
+/* Dots: one per question. Green = right, red = wrong, amber = "not sure" (or right on a later try in practice). */
+.cg-dots { display: flex; flex-wrap: wrap; gap: 5px; }
+.cg-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--rule); background: var(--sheet); transition: background .25s, border-color .25s, transform .25s; }
+.cg-dot.ok { background: var(--ok); border-color: var(--ok); }
+.cg-dot.bad { background: var(--start); border-color: var(--start); }
+.cg-dot.unsure, .cg-dot.later { background: var(--warn); border-color: var(--warn); }
+.cg-dot.now { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+@media (max-width: 520px) { .cg-dots { gap: 4px; } .cg-dot { width: 12px; height: 12px; } }
+.cg-key { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .82rem; color: var(--ink-soft); margin: 0; }
+.cg-key span { display: inline-flex; align-items: center; gap: 5px; }
+.cg-key .cg-dot { width: 11px; height: 11px; }
+
+/* Feedback under a question */
+.cg-fb { display: grid; gap: 2px; padding: 10px 14px; border-radius: 10px; border-left: 5px solid var(--ok); background: var(--ok-soft); color: var(--ink); }
+.cg-fb.bad { border-left-color: var(--start); background: var(--start-soft); }
+.cg-fb.unsure { border-left-color: var(--warn); background: var(--warn-soft); }
+.cg-fb-tag { font-weight: 700; }
+.cg-fb .cg-icon { display: inline-block; font-weight: 700; margin-right: 6px; color: var(--ok); }
+.cg-fb.bad .cg-icon { color: var(--start); }
+.cg-fb.unsure .cg-icon { color: var(--warn); }
+.cg-fb strong { font-weight: 700; }
+.cg-fb:focus { outline: none; }
+.cg-fb:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+/* Streak badge */
+.cg-host { position: relative; }
+.cg-streak { position: absolute; right: 6px; top: -10px; transform-origin: right center; z-index: 15; pointer-events: none; font-weight: 700; font-size: .9rem; white-space: nowrap;
+  color: #fff; background: #d65a3a; border-radius: 999px; padding: 3px 12px; box-shadow: 0 4px 12px rgba(0,0,0,.18); animation: cg-streak 1.6s ease-out forwards; }
+@keyframes cg-streak { 0% { opacity: 0; transform: translateY(8px) scale(.6); } 15% { opacity: 1; transform: translateY(-4px) scale(1.1); }
+  25% { transform: translateY(-4px) scale(1); } 80% { opacity: 1; } 100% { opacity: 0; transform: translateY(-20px); } }
+
+/* Celebration (same look as games.css) */
+.cg-perfect { position: absolute; left: 50%; top: -12px; transform: translate(-50%, -100%); z-index: 20; pointer-events: none;
+  font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; color: var(--ok); background: var(--sheet);
+  border: 3px solid var(--ok); border-radius: 999px; padding: 6px 22px; box-shadow: 0 8px 24px rgba(0,0,0,.15); white-space: nowrap;
+  animation: cg-badge 2.6s ease-out forwards; }
+.cg-perfect.big { position: fixed; left: 50%; top: 40%; font-size: 2.4rem; padding: 12px 34px; border-color: #e0a526; animation: cg-badge-big 3.6s ease-out forwards; }
+.cg-star { color: #e0a526; margin-right: 8px; display: inline-block; animation: cg-spin 1s ease-out; }
+@keyframes cg-badge { 0% { opacity: 0; transform: translate(-50%, -60%) scale(.4); } 15% { opacity: 1; transform: translate(-50%, -100%) scale(1.15); }
+  25% { transform: translate(-50%, -100%) scale(1); } 80% { opacity: 1; } 100% { opacity: 0; transform: translate(-50%, -130%) scale(1); } }
+@keyframes cg-badge-big { 0% { opacity: 0; transform: translate(-50%, -50%) scale(.3); } 12% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+  20% { transform: translate(-50%, -50%) scale(1); } 85% { opacity: 1; } 100% { opacity: 0; transform: translate(-50%, -70%); } }
+@keyframes cg-spin { from { transform: rotate(-180deg) scale(.3); } to { transform: rotate(0) scale(1); } }
+.cg-confetti { position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 50; }
+
+/* Movement */
+.pop { animation: cg-pop .45s ease-out; }
+.shake { animation: cg-shake .45s ease-in-out; }
+@keyframes cg-pop { 0% { transform: scale(1); } 40% { transform: scale(1.06); } 100% { transform: scale(1); } }
+@keyframes cg-shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(6px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(4px); } }
+@keyframes cg-fade { 0%, 80% { opacity: 1; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .pop, .shake, .cg-star, .cg-streak { animation: none; }
+  .cg-perfect { animation: cg-fade 2.2s forwards; }
+  .cg-perfect.big { transform: translate(-50%, -50%); animation: cg-fade 3.6s forwards; }
+  .cg-dot { transition: none; }
+}
+.cg-sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* Short celebrations must never make a phone page scroll sideways. */
+html, body { overflow-x: clip; }
+@media print { .cg-dots, .cg-key, .cg-streak, .cg-perfect, .cg-confetti { display: none !important; } }

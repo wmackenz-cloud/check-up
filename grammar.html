@@ -7,6 +7,8 @@
 <meta name="description" content="Free, friendly English check-ups for B1/B2 learners preparing for Aptis and Cambridge exams.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script src="api.js"></script>
+<script src="checkup-games.js"></script>
+<link rel="stylesheet" href="checkup-games.css">
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,13 +89,22 @@ button:disabled { opacity: .45; cursor: not-allowed; }
 .prompt .gap { display: inline-block; min-width: 3.2em; border-bottom: 2px solid var(--ink-soft); }
 .options { display: grid; gap: 8px; }
 .option {
-  display: flex; gap: 12px; align-items: center; padding: 12px 14px; border: 1px solid var(--rule);
-  border-radius: 8px; cursor: pointer; background: var(--paper);
+  display: flex; gap: 12px; align-items: center; width: 100%; text-align: left; padding: 12px 14px; border: 1px solid var(--rule);
+  border-radius: 8px; cursor: pointer; background: var(--paper); color: var(--ink); font-weight: 400; line-height: 1.45; touch-action: manipulation;
 }
-.option:hover { border-color: var(--accent); }
-.option input { accent-color: var(--accent); width: 18px; height: 18px; margin: 0; flex: none; }
-.option.chosen { border-color: var(--accent); background: var(--accent-soft); }
+.option:hover:not(:disabled) { border-color: var(--accent); }
+.option .mark { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--ink-soft); flex: none; display: grid; place-items: center; font-size: .8rem; font-weight: 700; line-height: 1; }
 .option.unsure { border-style: dashed; color: var(--ink-soft); }
+/* After the answer: green = right, red = wrong, amber = "I'm not sure" */
+.option:disabled { cursor: default; opacity: 1; }
+.option.dim { opacity: .55; }
+.option.right, .option.wrong, .option.picked-unsure { border-width: 2px; padding: 11px 13px; color: var(--ink); }
+.option.right { border-color: var(--ok); border-style: solid; background: var(--ok-soft); font-weight: 700; }
+.option.right .mark { background: var(--ok); border-color: var(--ok); color: var(--sheet); }
+.option.wrong { border-color: var(--start); background: var(--start-soft); }
+.option.wrong .mark { background: var(--start); border-color: var(--start); color: var(--sheet); }
+.option.picked-unsure { border-color: var(--warn); background: var(--warn-soft); }
+.option.picked-unsure .mark { background: var(--warn); border-color: var(--warn); color: var(--sheet); }
 
 /* Results */
 .hello { display: grid; gap: 8px; }
@@ -142,6 +153,10 @@ textarea {
 .pq-why { font-size: .95rem; padding: 8px 10px; border-radius: 8px; background: var(--start-soft); }
 .pq-why.ok { background: var(--ok-soft); }
 .tally { font-weight: 700; color: var(--accent); }
+.pq-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 12px; background: var(--paper); }
+.pq-bar.perfect { border-color: var(--ok); background: var(--ok-soft); }
+.pq-bar.perfect .tally { color: var(--ok); }
+.pq-bar button { font-size: .9rem; padding: 6px 14px; border-radius: 999px; }
 .home-link { display: inline-block; margin-bottom: 10px; color: var(--accent); font-weight: 700; text-decoration: none; }
 .home-link:hover { text-decoration: underline; }
 .sent-note { font-weight: 700; color: var(--ink-soft); }
@@ -166,7 +181,8 @@ textarea {
       <li>33 short questions, about 17 minutes.</li>
       <li>If you don't know an answer, choose <strong>"I'm not sure"</strong>. That's helpful, and much better than guessing.</li>
       <li>Please don't use a dictionary or translator. We want to see what you know today.</li>
-      <li>You can go back and change your answers. If you close the page, your answers are saved.</li>
+      <li>After each answer, you'll see straight away if you were right. Your first answer is the one that counts, so take your time.</li>
+      <li>You can go back to look at earlier questions. If you close the page, your answers are saved.</li>
     </ul>
     <label class="field" for="student-name">Your first name
       <input type="text" id="student-name" autocomplete="given-name" placeholder="e.g. Maria">
@@ -178,13 +194,15 @@ textarea {
 
   <!-- Question screen -->
   <section class="sheet" id="quiz" hidden>
-    <div class="progress">
+    <div class="progress cg-host" id="qprogress">
       <p class="eyebrow qnum" id="qcount">Question 1 of 33</p>
-      <div class="bar"><span id="qbar"></span></div>
+      <div id="qdots" role="img"></div>
+      <p class="cg-key" aria-hidden="true"><span><span class="cg-dot ok"></span>right</span><span><span class="cg-dot bad"></span>wrong</span><span><span class="cg-dot unsure"></span>not sure</span><span><span class="cg-dot"></span>still to come</span></p>
     </div>
     <p class="cheer" id="cheer" hidden></p>
     <p class="prompt" id="qprompt"></p>
-    <div class="options" id="qoptions" role="radiogroup" aria-labelledby="qprompt"></div>
+    <div class="options" id="qoptions" role="group" aria-labelledby="qprompt"></div>
+    <div aria-live="polite"><div class="cg-fb" id="qfeedback" hidden></div></div>
     <div class="btn-row">
       <button type="button" class="ghost" id="back">Back</button>
       <button type="button" id="next" disabled>Next</button>
@@ -192,7 +210,7 @@ textarea {
   </section>
 
   <!-- Results -->
-  <section class="sheet" id="results" hidden>
+  <section class="sheet cg-host" id="results" hidden>
     <div class="hello">
       <p class="eyebrow">Your results</p>
       <h2 id="hello-title">Well done!</h2>
@@ -512,7 +530,6 @@ function show(screen) {
 function renderQuestion() {
   const i = state.index, item = QUESTIONS[i];
   $("qcount").textContent = `Question ${i + 1} of ${QUESTIONS.length}`;
-  $("qbar").style.width = `${(i / QUESTIONS.length) * 100}%`;
   const cheer = CHEERS[i];
   $("cheer").hidden = !cheer;
   $("cheer").textContent = cheer || "";
@@ -526,24 +543,77 @@ function renderQuestion() {
   box.textContent = "";
   const choices = item.o.map((text, k) => ({ text, value: k })).concat([{ text: "I'm not sure", value: UNSURE }]);
   choices.forEach(({ text, value }) => {
-    const id = `q${i}-o${value}`;
-    const lab = el("label", "option" + (value === UNSURE ? " unsure" : "") + (state.answers[i] === value ? " chosen" : ""));
-    lab.htmlFor = id;
-    const inp = document.createElement("input");
-    inp.type = "radio"; inp.name = `q${i}`; inp.id = id; inp.value = value;
-    inp.checked = state.answers[i] === value;
-    inp.addEventListener("change", () => {
+    const b = el("button", "option" + (value === UNSURE ? " unsure" : ""));
+    b.type = "button"; b.dataset.value = value;
+    const mk = el("span", "mark"); mk.setAttribute("aria-hidden", "true");
+    b.append(mk, el("span", null, text), el("span", "cg-sr"));
+    // The first answer is the one that counts: once a question is answered, it is locked.
+    b.addEventListener("click", () => {
+      if (state.answers[i] !== null) return;
       state.answers[i] = value; save();
-      box.querySelectorAll(".option").forEach((o) => o.classList.remove("chosen"));
-      lab.classList.add("chosen");
+      showFeedback(i, true); drawDots();
       $("next").disabled = false;
+      $("next").focus({ preventScroll: true });
+      $("next").scrollIntoView({ block: "nearest", behavior: CheckupGame.calm ? "auto" : "smooth" });
     });
-    lab.append(inp, el("span", null, text));
-    box.append(lab);
+    box.append(b);
   });
+  $("qfeedback").hidden = true; $("qfeedback").textContent = "";
+  if (state.answers[i] !== null) showFeedback(i, false);
+  drawDots();
   $("back").disabled = i === 0;
   $("next").disabled = state.answers[i] === null;
   $("next").textContent = i === QUESTIONS.length - 1 ? "See my results" : "Next";
+}
+
+// Instant feedback and dots. They only show the answers already saved; scoring is unchanged (see score()).
+const qdots = CheckupGame.dots(QUESTIONS.length);
+$("qdots").append(qdots.el);
+const PRAISE = ["Correct!", "That's right!", "Well done!", "Yes, that's it!"];
+function markOf(k) { const a = state.answers[k]; return a === null ? "" : a === QUESTIONS[k].a ? "ok" : a === UNSURE ? "unsure" : "bad"; }
+function drawDots() {
+  let done = 0, right = 0;
+  QUESTIONS.forEach((_, k) => { const m = markOf(k); qdots.set(k, m); if (m) done++; if (m === "ok") right++; });
+  qdots.now(state.index);
+  $("qdots").setAttribute("aria-label", `${done} of ${QUESTIONS.length} answered, ${right} right`);
+}
+function runOf(i) { let n = 0; for (let k = i; k >= 0 && state.answers[k] === QUESTIONS[k].a; k--) n++; return n; }
+function answerLine(item) {
+  const p = el("p"), ans = item.o[item.a];
+  if (ans === "(no word)") {
+    const s = item.q.replace(/___ ?/, "");
+    p.append(s.charAt(0).toUpperCase() + s.slice(1) + " ", el("strong", null, "(no word in the gap)"));
+  } else if (item.q.includes("___")) {
+    item.q.split("___").forEach((part, k, arr) => { p.append(part); if (k < arr.length - 1) p.append(el("strong", null, ans)); });
+  } else p.append(el("strong", null, ans));
+  return p;
+}
+function showFeedback(i, fresh) {
+  const item = QUESTIONS[i], ans = state.answers[i], ok = ans === item.a, fb = $("qfeedback");
+  let chosen = null;
+  $("qoptions").querySelectorAll(".option").forEach((b) => {
+    const v = Number(b.dataset.value), mk = b.querySelector(".mark"), sr = b.querySelector(".cg-sr");
+    b.disabled = true;
+    if (v === item.a) { b.classList.add("right"); mk.textContent = "\u2713"; sr.textContent = v === ans ? " (your answer: right)" : " (the right answer)"; }
+    else if (v === ans) { b.classList.add(v === UNSURE ? "picked-unsure" : "wrong"); mk.textContent = v === UNSURE ? "?" : "\u2717"; sr.textContent = " (your answer)"; }
+    else b.classList.add("dim");
+    if (v === ans) chosen = b;
+  });
+  fb.textContent = ""; fb.className = "cg-fb" + (ok ? "" : ans === UNSURE ? " unsure" : " bad");
+  const tag = el("p", "cg-fb-tag"), icon = el("span", "cg-icon", ok ? "\u2713" : ans === UNSURE ? "?" : "\u2717");
+  icon.setAttribute("aria-hidden", "true");
+  tag.append(icon, ok ? PRAISE[i % PRAISE.length] : ans === UNSURE ? "Thanks for being honest. Here's the answer:" : "Not quite. The right answer is:");
+  fb.append(tag);
+  if (!ok) fb.append(answerLine(item));
+  fb.hidden = false;
+  if (!fresh) return;
+  CheckupGame.flash(chosen, ok ? "pop" : "shake");
+  CheckupGame.flash(fb, ok ? "pop" : "shake");
+  if (ok) {
+    const n = runOf(i);
+    CheckupGame.streak($("qprogress"), n);
+    if (n >= 3 && (n === 3 || n === 5 || n % 5 === 0)) tag.append(el("span", "cg-sr", ` ${n} in a row!`));
+  }
 }
 
 function score() {
@@ -587,48 +657,68 @@ function fixBlock(m) {
 }
 function labelled(label, body) { const d = el("div"); d.append(el("span", "label", label), body); return d; }
 
-// A short self-check practice sheet: tap an answer, see right or wrong and why.
+// A short self-check practice sheet: tap an answer, see right or wrong and why. It's practice, so a wrong answer can be tried again.
+// Nothing here is scored for Bill or sent.
 function practiceBlock(trap, count) {
   const items = PRACTICE[trap].slice(0, count);
   const wrap = el("div", "practice");
+  const bar = el("div", "pq-bar cg-host");
+  const dots = CheckupGame.dots(items.length);
   const tally = el("p", "tally"); tally.setAttribute("aria-live", "polite");
-  let done = 0, right = 0;
+  const again = el("button", "ghost", "Try again for a perfect score"); again.type = "button"; again.hidden = true;
+  again.addEventListener("click", () => {
+    const fresh = practiceBlock(trap, count); wrap.replaceWith(fresh);
+    const b = fresh.querySelector(".pq-opt"); if (b) b.focus();
+  });
+  let done = 0, first = 0, run = 0;
   const update = () => {
-    if (done < items.length) { tally.textContent = `${done} of ${items.length} answered`; return; }
-    const msg = right === items.length ? "Perfect! You've got this." :
-      right >= items.length - 2 ? "Great work. Read the explanations for the ones you missed." :
+    if (done < items.length) { tally.textContent = done ? `${done} of ${items.length} done, ${first} right first time.` : "Green dot = right first time."; return; }
+    const perfect = first === items.length;
+    const msg = perfect ? "Perfect! You've got this." :
+      first >= items.length - 2 ? "Great work. Read the explanations for the ones that took more than one try." :
       "Good effort. Read the explanations, then try the worksheet with your teacher.";
-    tally.textContent = `${right} out of ${items.length} correct. ${msg}`;
+    tally.textContent = `${first} out of ${items.length} right first time. ${msg}`;
+    bar.classList.toggle("perfect", perfect);
+    again.hidden = perfect;
+    if (perfect) CheckupGame.celebrate(bar, "Perfect!");
   };
   items.forEach((it, n) => {
-    const box = el("div", "pq");
+    const box = el("div", "pq cg-host");
     const p = el("p", "pq-q");
     p.append(el("span", "pq-n", `${n + 1}.`));
     it.q.split("___").forEach((part, k, arr) => { p.append(part); if (k < arr.length - 1) p.append(el("span", "gap")); });
     const opts = el("div", "pq-opts");
     const why = el("p", "pq-why"); why.hidden = true;
+    const live = el("div"); live.setAttribute("aria-live", "polite"); live.append(why);
+    let misses = 0;
     it.o.forEach((text, k) => {
       const b = el("button", "pq-opt", text); b.type = "button";
       b.addEventListener("click", () => {
-        opts.querySelectorAll("button").forEach((x, j) => {
-          x.disabled = true;
-          if (j === it.a) x.classList.add("right");
-        });
-        if (k !== it.a) b.classList.add("wrong");
-        const ok = k === it.a;
-        done++; if (ok) right++;
-        why.textContent = (ok ? "Correct! " : "Not quite. ") + it.why;
-        why.classList.toggle("ok", ok);
-        why.hidden = false;
+        if (k !== it.a) {
+          misses++; run = 0;
+          b.disabled = true; b.classList.add("wrong"); CheckupGame.flash(b, "shake");
+          why.textContent = "\u2717 Not quite. Have another go.";
+          why.classList.remove("ok"); why.hidden = false;
+          const next = opts.querySelector("button:not(:disabled)"); if (next) next.focus();
+          return;
+        }
+        opts.querySelectorAll("button").forEach((x) => { x.disabled = true; });
+        b.classList.add("right"); CheckupGame.flash(b, "pop");
+        done++;
+        if (!misses) { first++; run++; CheckupGame.streak(box, run); }
+        dots.set(n, misses ? "later" : "ok");
+        why.textContent = (misses ? "\u2713 That's it! " : "\u2713 Correct! ") + it.why;
+        why.classList.add("ok"); why.hidden = false;
         update();
       });
       opts.append(b);
     });
-    box.append(p, opts, why);
+    box.append(p, opts, live);
     wrap.append(box);
   });
   update();
-  wrap.append(tally);
+  bar.append(dots.el, tally, again);
+  wrap.append(bar);
   return wrap;
 }
 
@@ -668,7 +758,7 @@ function renderResults() {
     box.append(labelled("Your worksheet", el("p", null, info.worksheet)));
     card.append(box);
     const prac = el("div", "practice-sheet");
-    prac.append(el("h3", null, "Practise now"), el("p", "muted", "Eight quick questions on this area. Tap an answer to see if you're right, and why. There's no score for your teacher here; this is just for you."));
+    prac.append(el("h3", null, "Practise now"), el("p", "muted", "Eight quick questions on this area. Tap an answer to see if you're right, and why. If it's wrong, have another go. There's no score for your teacher here; this is just for you."));
     prac.append(practiceBlock(t, 8));
     card.append(prac);
   }
@@ -759,7 +849,12 @@ $("begin").addEventListener("click", () => {
 });
 $("next").addEventListener("click", () => {
   if (state.index < QUESTIONS.length - 1) { state.index++; save(); renderQuestion(); }
-  else { renderResults(); show("results"); }
+  else {
+    renderResults(); show("results");
+    // Finished: confetti and "Well done!", or a bigger "Perfect!" for every answer right.
+    const perfect = score().total === QUESTIONS.length;
+    setTimeout(() => CheckupGame.celebrate($("results"), perfect ? "Perfect!" : "Well done!", perfect), 150);
+  }
 });
 $("back").addEventListener("click", () => { if (state.index > 0) { state.index--; save(); renderQuestion(); } });
 $("copy").addEventListener("click", async () => {
