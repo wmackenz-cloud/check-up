@@ -19,6 +19,24 @@
 .credits { margin-top: 26px; border-top: 1px solid var(--rule); }
 .credits p { color: var(--ink-soft); }
 @media print { .clip audio { display: none; } }
+/* Music bar: play any clip from anywhere in the lesson */
+.musicbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; background: var(--sheet); border-top: 2px solid var(--accent);
+  box-shadow: 0 -4px 16px rgba(0,0,0,.12); padding: 8px max(12px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); }
+.musicbar-in { max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.musicbar-label { font-weight: 700; font-size: .85rem; color: var(--accent); margin-right: 2px; }
+.musicbar-clips { display: flex; flex-wrap: wrap; gap: 6px; }
+.musicbar button { font: inherit; font-weight: 700; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 999px; cursor: pointer;
+  border: 2px solid var(--accent); background: var(--sheet); color: var(--accent); }
+.musicbar button.playing { background: var(--accent); color: var(--sheet); }
+.musicbar .mb-stop[disabled] { opacity: .4; cursor: default; }
+.musicbar-now { font-size: .85rem; color: var(--ink-soft); flex: 1 1 140px; min-width: 0; }
+body { padding-bottom: 96px !important; }
+.g-stars { bottom: 84px !important; }
+@media (max-width: 520px) { .musicbar button { min-width: 36px; height: 36px; padding: 0 8px; } .g-stars { bottom: 142px !important; } body { padding-bottom: 170px !important; } }
+.clip-link { font: inherit; font-weight: 700; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 999px; padding: 0 8px; cursor: pointer; line-height: 1.5; }
+.clip-link::before { content: "\25B6\FE0E  "; font-size: .75em; }
+.clip-link.playing { background: var(--accent); color: var(--sheet); }
+@media print { .musicbar { display: none; } .clip-link { border: none; background: none; padding: 0; } .clip-link::before { content: none; } }
 </style>
 </head>
 <body class="student" data-item="vocab-10">
@@ -80,9 +98,9 @@
 <h2 id="ex3" class="ex">Exercise 3: -ing or -ed?</h2>
 <p>Tap the right word. Ask yourself: is it the music, or the person?</p>
 <ol class="g-pick" data-g="ex3">
-<li data-a="0" data-form="relaxing" data-q="Clip A is very ___ Listen to it after a long day.">Clip A is very <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-1"> Listen to it after a long day. <span class="opts game-ui"><button>relaxing</button><button>relaxed</button></span></li>
+<li data-a="0" data-form="relaxing" data-q="Clip A is very ___. Listen to it after a long day.">Clip A is very <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-1">. Listen to it after a long day. <span class="opts game-ui"><button>relaxing</button><button>relaxed</button></span></li>
 <li data-a="1" data-form="relaxed" data-q="When I listen to Clip A, I feel ___">When I listen to Clip A, I feel <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-2">  <span class="opts game-ui"><button>relaxing</button><button>relaxed</button></span></li>
-<li data-a="0" data-form="frightening" data-q="The start of Clip C is a little ___ Something is hiding.">The start of Clip C is a little <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-3"> Something is hiding. <span class="opts game-ui"><button>frightening</button><button>frightened</button></span></li>
+<li data-a="0" data-form="frightening" data-q="The start of Clip C is a little ___. Something is hiding.">The start of Clip C is a little <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-3">. Something is hiding. <span class="opts game-ui"><button>frightening</button><button>frightened</button></span></li>
 <li data-a="0" data-form="exciting" data-q="The ending of Clip G is really ___">The ending of Clip G is really <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-4">  <span class="opts game-ui"><button>exciting</button><button>excited</button></span></li>
 <li data-a="1" data-form="excited" data-q="I always get ___ when the music gets faster.">I always get <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-5"> when the music gets faster. <span class="opts game-ui"><button>exciting</button><button>excited</button></span></li>
 <li data-a="0" data-form="depressing" data-q="Clip D is so slow and sad. I find it ___">Clip D is so slow and sad. I find it <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-6">  <span class="opts game-ui"><button>depressing</button><button>depressed</button></span></li>
@@ -206,5 +224,70 @@
 <script src="../games.js?v=1793970000"></script>
 <script src="../api.js?v=1792889681"></script>
 <script src="../work.js?v=1793900000"></script>
+<div class="musicbar" role="region" aria-label="Music player">
+  <div class="musicbar-in">
+    <span class="musicbar-label">Play a clip:</span>
+    <span class="musicbar-clips"></span>
+    <button type="button" class="mb-stop" disabled aria-label="Stop the music">&#9632; Stop</button>
+    <span class="musicbar-now" aria-live="polite">Tap a letter to listen.</span>
+  </div>
+</div>
+<script>
+// Music bar and tappable "Clip A" names: any clip can be played from anywhere in the lesson.
+(function () {
+  var bar = document.querySelector(".musicbar"), clipsBox = bar.querySelector(".musicbar-clips"), stop = bar.querySelector(".mb-stop"), now = bar.querySelector(".musicbar-now");
+  var players = {};
+  document.querySelectorAll("figure.clip").forEach(function (f) {
+    var letter = f.querySelector("figcaption").textContent.trim().slice(-1);
+    players[letter] = f.querySelector("audio");
+  });
+  var letters = Object.keys(players).sort(), buttons = {};
+  letters.forEach(function (L) {
+    var b = document.createElement("button"); b.type = "button"; b.textContent = L; b.setAttribute("aria-label", "Play clip " + L);
+    b.addEventListener("click", function () { toggle(L); }); clipsBox.append(b); buttons[L] = b;
+  });
+  function current() { for (var L in players) if (!players[L].paused) return L; return null; }
+  function toggle(L) {
+    var a = players[L];
+    if (!a.paused) { a.pause(); return; }
+    letters.forEach(function (K) { if (K !== L) players[K].pause(); });
+    a.currentTime = 0; a.play();
+  }
+  function refresh() {
+    var L = current();
+    letters.forEach(function (K) { buttons[K].classList.toggle("playing", K === L); });
+    document.querySelectorAll(".clip-link").forEach(function (c) { c.classList.toggle("playing", c.dataset.clip === L); });
+    stop.disabled = !L;
+    now.textContent = L ? "Playing clip " + L + ". Tap it again to stop." : "Tap a letter to listen.";
+  }
+  letters.forEach(function (L) {
+    var a = players[L];
+    a.addEventListener("play", function () { letters.forEach(function (K) { if (K !== L) players[K].pause(); }); refresh(); });
+    a.addEventListener("pause", refresh); a.addEventListener("ended", refresh);
+  });
+  stop.addEventListener("click", function () { letters.forEach(function (K) { players[K].pause(); }); });
+  // Turn "Clip A" in the exercises (not in the players themselves) into play buttons.
+  var walker = document.createTreeWalker(document.querySelector("main"), NodeFilter.SHOW_TEXT, {
+    acceptNode: function (n) {
+      if (!/Clip [A-G]\b/.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+      if (n.parentElement.closest("figure.clip, details.answers, .credits, button, .g-order, input, textarea")) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  var nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(function (n) {
+    var frag = document.createDocumentFragment(), parts = n.nodeValue.split(/(Clip [A-G]\b)/);
+    parts.forEach(function (t) {
+      var m = t.match(/^Clip ([A-G])$/);
+      if (m && players[m[1]]) {
+        var b = document.createElement("button"); b.type = "button"; b.className = "clip-link game-ui-keep"; b.dataset.clip = m[1]; b.textContent = t;
+        b.setAttribute("aria-label", "Play " + t);
+        b.addEventListener("click", function () { toggle(m[1]); }); frag.append(b);
+      } else if (t) frag.append(document.createTextNode(t));
+    });
+    n.parentNode.replaceChild(frag, n);
+  });
+})();
+</script>
 </body>
 </html>
