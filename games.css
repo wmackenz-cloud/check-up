@@ -165,6 +165,16 @@ li.done .g-line { background: var(--ok-soft); border-bottom-color: var(--ok); }
 .g-build li.done .build-bank, .g-build li.done .g-redo { display: none !important; }
 @media print { .build-bank, .g-build .g-order-acts { display: none !important; } }
 
+/* Why? explanations */
+.g-whybtn { font: inherit; font-size: .82rem; font-weight: 700; border-radius: 999px; padding: 2px 12px; cursor: pointer; line-height: 1.5;
+  background: var(--sheet); color: var(--warn); border: 2px solid var(--warn); vertical-align: middle; }
+.g-whybtn.open { background: var(--warn-soft); }
+li.done .opts .g-whybtn, li.done .g-whybtn { opacity: 1 !important; }
+.g-why { margin: 6px 0 4px; padding: 8px 12px; border-left: 4px solid var(--warn); background: var(--warn-soft); border-radius: 0 10px 10px 0; font-size: .95rem; line-height: 1.5; color: var(--ink); }
+.g-why-lab { color: var(--warn); }
+.g-why[hidden] { display: none !important; }
+@media print { .g-whybtn { display: none; } .g-why { display: none !important; } }
+
 /* Movement */
 .pop { animation: g-pop .45s ease-out; }
 .shake { animation: g-shake .45s ease-in-out; }

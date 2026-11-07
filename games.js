@@ -17,6 +17,7 @@
 //   <div class="g-write" data-task="..." data-focus="...">  free writing with "Check my writing": Claude checks each sentence
 //         through Bill's Writing checker (tools/writing-checker.gs).
 // Across the page: a streak counter ("3 in a row!") and a star for each perfect exercise; all stars = "Lesson mastered!".
+// Any item (li, chip, or matching li) may carry data-why="explanation": a Why? button shows it, and it opens after a wrong answer.
 // Every answer lands in an <input class="blank"> so "Send my answers to Bill" still sends what the student did.
 (function () {
   // The Writing checker's Web app URL (from Deploy > New deployment in Google Apps Script). Empty = not switched on yet.
@@ -114,6 +115,29 @@
   }
   function marksOf(st, n) { var m = []; for (var i = 0; i < n; i++) { var s = st[i]; m.push(s && s.done ? (s.miss ? "later" : "first") : ""); } return m; }
 
+  // ---------- "Why?": an explanation for each question (data-why on the item) ----------
+  // It opens by itself after a wrong answer. Opening it before answering is allowed, but then the item
+  // no longer counts as right first time.
+  function whyFor(li, s, keep, place) {
+    var text = li.dataset.why; if (!text) return { show: function () {} };
+    var b = btn("Why?", "g-whybtn game-ui"); b.setAttribute("aria-expanded", "false");
+    var box = el("div", "g-why game-ui"); box.hidden = true; box.setAttribute("aria-live", "polite");
+    box.append(el("strong", "g-why-lab", "Why? "), document.createTextNode(text));
+    place(b, box);
+    function show() { box.hidden = false; b.setAttribute("aria-expanded", "true"); b.classList.add("open"); }
+    b.addEventListener("click", function () {
+      if (!box.hidden) { box.hidden = true; b.setAttribute("aria-expanded", "false"); b.classList.remove("open"); return; }
+      if (!li.classList.contains("done") && !s.peeked) { s.peeked = true; s.miss = (s.miss || 0) + 1; keep(); streak.miss(); }
+      show();
+    });
+    return { show: show };
+  }
+  // For boards (matching, sorting): one explanation panel under the board.
+  function whyPanel(after) {
+    var box = el("div", "g-why game-ui"); box.hidden = true; box.setAttribute("aria-live", "polite"); after.after(box);
+    return function (label, text) { if (!text) return; box.innerHTML = ""; box.append(el("strong", "g-why-lab", (label ? "About \u201c" + label + "\u201d: " : "Why? ")), document.createTextNode(text)); box.hidden = false; };
+  }
+
   // ---------- "Your turn": after a right answer, write your own sentence with the word (lists with data-own) ----------
   // Claude checks it through the Writing checker. Optional: it never changes the score or the dots.
   var OWN_LABEL = { correct: "Correct", almost: "Almost", wrong: "Let's fix this", "off-task": "Check the task" };
@@ -177,6 +201,8 @@
         if (!quietly) flash(gap, "pop");
         if (list.hasAttribute("data-own")) ownSentence(list, li, s, quietly);
       }
+      var optsBox = li.querySelector(".opts");
+      var why = whyFor(li, s, function () { st[i] = s; save(); }, function (b, box) { optsBox.append(b); optsBox.after(box); });
       opts.forEach(function (b, j) {
         b.type = "button";
         if (s.tried.indexOf(b.textContent) > -1) { b.disabled = true; b.classList.add("bad"); }
@@ -186,7 +212,7 @@
             s.done = true; st[i] = s; save(); solve(false);
             if (!s.miss) streak.hit(gap);
             bar.update(marksOf(st, items.length));
-          } else { s.miss++; s.tried.push(b.textContent); st[i] = s; save(); streak.miss(); b.classList.add("bad"); b.disabled = true; flash(b, "shake"); flash(gap, "shake"); }
+          } else { s.miss++; s.tried.push(b.textContent); st[i] = s; save(); streak.miss(); b.classList.add("bad"); b.disabled = true; flash(b, "shake"); flash(gap, "shake"); why.show(); }
         });
       });
       if (s.done) solve(true);
@@ -224,12 +250,13 @@
         b.addEventListener("click", function () {
           if (li.classList.contains("done")) return;
           if (o === li.dataset.fix) { s.done = true; st[i] = s; save(); solve(false); if (!s.miss) streak.hit(sent); bar.update(marksOf(st, items.length)); }
-          else { s.miss++; st[i] = s; save(); streak.miss(); b.classList.add("bad"); b.disabled = true; flash(b, "shake"); }
+          else { s.miss++; st[i] = s; save(); streak.miss(); b.classList.add("bad"); b.disabled = true; flash(b, "shake"); if (why) why.show(); }
         });
         opts.append(b);
       });
       row.append(opts);
       sent.after(hint, row);
+      var why = whyFor(li, s, function () { st[i] = s; save(); }, function (b, box) { row.append(b); row.after(box); });
       function found() {
         badAt.forEach(function (j) { tokens[j].classList.add("found"); });
         hint.textContent = "Good. Now choose the right words:"; opts.hidden = false; if (okBtn) okBtn.hidden = true; li.classList.add("found");
@@ -256,7 +283,7 @@
         input.value = shown.textContent.replace(/\s+/g, " ").trim() + (s.miss ? " (" + s.miss + " wrong tr" + (s.miss > 1 ? "ies" : "y") + " first)" : "");
         if (!quietly) flash(first, "pop");
       }
-      function wrong(n) { s.miss++; st[i] = s; save(); streak.miss(); n.classList.add("nope"); flash(n, "shake"); setTimeout(function () { n.classList.remove("nope"); }, 700); }
+      function wrong(n) { s.miss++; st[i] = s; save(); streak.miss(); n.classList.add("nope"); flash(n, "shake"); setTimeout(function () { n.classList.remove("nope"); }, 700); why.show(); }
       tokens.forEach(function (t, j) {
         t.addEventListener("click", function () {
           if (li.classList.contains("found")) return;
@@ -293,6 +320,7 @@
       show.hidden = s.miss < 2;
       acts.append(check, hint, show, msg);
       li.append(acts);
+      var why = whyFor(li, s, function () { st[i] = s; save(); }, function (b, box) { acts.insertBefore(b, msg); acts.after(box); });
       function answers(f) { return f.dataset.ok.split("|"); }
       // Make each box wide enough for its longest answer.
       ins.forEach(function (f) { var n = Math.max.apply(null, answers(f).map(function (a) { return a.length; })); f.style.width = Math.max(6, n + 3) + "ch"; f.style.maxWidth = "100%"; });
@@ -315,6 +343,7 @@
           s.miss++; st[i] = s; save(); streak.miss();
           ins.forEach(function (f) { if (!right(f)) { f.classList.add("bad"); flash(f, "shake"); } });
           msg.textContent = s.miss === 1 ? "Not quite. Try again, or tap Hint." : "Not yet. Look at the rule again, or tap Show answer.";
+          why.show();
           show.hidden = s.miss < 2;
         }
       }
@@ -370,6 +399,7 @@
       row.append(redo, msg);
       box.append(line, bank, row);
       li.append(box);
+      var why = whyFor(li, s, function () { st[i] = s; save(); }, function (b, wbox) { row.insertBefore(b, msg); box.append(wbox); });
       var chips = shuffled(shown.map(function (w, k) { return { w: w, k: k }; }), seedOf(answer));
       if (chips.map(function (c) { return c.k; }).join() === shown.map(function (w, k) { return k; }).join()) chips.reverse();
       chips = chips.map(function (c) { var b = btn(c.w, "g-chip"); b.dataset.w = c.w; bank.append(b); return b; });
@@ -395,6 +425,7 @@
         placed.forEach(function (c, k) { c.classList.add(c.dataset.w.toLowerCase() === words[k].toLowerCase() ? "ok" : "bad"); });
         flash(line, "shake");
         msg.textContent = "Not quite. The green words are in the right place.";
+        why.show();
         setTimeout(function () { placed.forEach(function (c) { if (c.classList.contains("bad")) { c.classList.remove("bad"); bank.append(c); } c.classList.remove("ok"); }); }, 1100);
       }
       bank.addEventListener("click", function (e) { var c = e.target.closest(".g-chip"); if (!c || li.classList.contains("done")) return; line.insertBefore(c, endMark); msg.textContent = ""; check(); });
@@ -413,6 +444,7 @@
     board.append(left, right);
     box.append(board);
     var bar = scoreBar(board, src.length, g);
+    var whyShow = whyPanel(board);
     var sel = null, colors = 0;
     var L = src.map(function (li, i) { var b = btn(li.dataset.l, "g-card"); b.dataset.i = i; b.dataset.side = "l"; left.append(b); return b; });
     var R = shuffled(src.map(function (li, i) { return i; }), seedOf(src.map(function (li) { return li.dataset.r; }).join())).map(function (i) {
@@ -444,7 +476,7 @@
       if (li.dataset.i === ri.dataset.i) {
         s.done = true; save(); lock(i, false); if (!s.miss) streak.hit(li); bar.update(marksOf(st, src.length));
       } else {
-        s.miss++; save(); streak.miss();
+        s.miss++; save(); streak.miss(); whyShow(src[i].dataset.l, src[i].dataset.why);
         [li, ri].forEach(function (x) { x.classList.add("bad"); flash(x, "shake"); setTimeout(function () { x.classList.remove("bad"); }, 700); });
       }
     });
@@ -473,6 +505,7 @@
       msg.setAttribute("aria-live", "polite");
       var acts = el("div", "g-order-acts game-ui"); acts.append(redo, msg);
       li.append(bank, acts);
+      var why = whyFor(li, s, function () { st[i] = s; save(); }, function (b, box) { acts.insertBefore(b, msg); acts.after(box); });
       words.forEach(function (o) { var b = btn(o.w, "g-chip"); b.dataset.t = o.t; bank.append(b); });
       function text() {
         var c = li.cloneNode(true); c.querySelectorAll(".game-ui, input").forEach(function (x) { x.remove(); });
@@ -490,6 +523,7 @@
         var sl = slots.filter(function (x) { return !x.textContent; })[0]; if (!sl) return;
         if (b.dataset.t !== sl.dataset.type) {
           s.miss++; st[i] = s; save(); streak.miss(); b.classList.add("bad"); flash(b, "shake"); flash(sl, "shake");
+          why.show();
           msg.textContent = "“" + b.textContent + "” is " + (KIND[b.dataset.t] || "another kind of word") + ". This gap needs " + (KIND[sl.dataset.type] || "a different word") + (sl.dataset.for ? " to describe “" + sl.dataset.for + "”." : ".");
           setTimeout(function () { b.classList.remove("bad"); }, 700);
           return;
@@ -514,6 +548,7 @@
     var st = state[g] || (state[g] = {});
     var chips = Array.prototype.slice.call(box.querySelectorAll(".chip")), bank = box.querySelector(".bank");
     var bar = scoreBar(box, chips.length, g);
+    var whyShow = whyPanel(box);
     function info(c) { return st[c.dataset.i] || (st[c.dataset.i] = { miss: 0, done: false }); }
     function marks() { return chips.map(function (c) { var s = st[c.dataset.i]; return s && s.done ? (s.miss ? "later" : "first") : ""; }); }
     function colDrop(col) { return box.querySelector('.col .drop[data-col="' + col + '"]'); }
@@ -534,7 +569,7 @@
       if (drop.dataset.col === c.dataset.a) {
         s.done = true; save(); lock(c); flash(c, "pop"); if (!s.miss) streak.hit(c); bar.update(marks());
       } else {
-        s.miss++; save(); streak.miss(); c.classList.add("bad"); flash(c, "shake");
+        s.miss++; save(); streak.miss(); c.classList.add("bad"); flash(c, "shake"); whyShow(c.textContent.trim(), c.dataset.why);
         setTimeout(function () { c.classList.remove("bad"); bank.appendChild(c); }, 750);
       }
     }
