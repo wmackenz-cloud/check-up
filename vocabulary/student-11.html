@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <link rel="stylesheet" href="../grammar-traps/traps.css?v=1793206303">
-<link rel="stylesheet" href="../games.css?v=1793970000">
+<link rel="stylesheet" href="../games.css?v=1794000000">
 <style>
 .g-pick.photos > li { margin: 18px 0; }
 .photo { margin: 4px 0 8px; display: grid; gap: 2px; justify-items: start; }
@@ -69,7 +69,7 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
 </table>
 <h2 id="ex1" class="ex">Exercise 1: Look and choose</h2>
 <p>Look at each photo. Then tap the word that describes it best.</p>
-<ol class="g-pick photos" data-g="ex1">
+<ol class="g-pick photos" data-g="ex1" data-own="A mood adjective describing a place, picture or feeling. Check it is used correctly as an adjective with the right meaning.">
 <li data-a="0" data-form="peaceful" data-q="Photo A looks ___."><figure class="photo"><button type="button" class="photo-open" data-photo="A" aria-label="Show photo A bigger"><img src="photos/photo-a.jpg" alt="A misty lake at dawn with reeds and a small pine tree" loading="lazy"></button><figcaption>Photo A</figcaption></figure>Photo A looks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-1">. <span class="opts game-ui"><button>peaceful</button><button>chaotic</button><button>exciting</button></span></li>
 <li data-a="0" data-form="joyful" data-q="Photo B looks ___."><figure class="photo"><button type="button" class="photo-open" data-photo="B" aria-label="Show photo B bigger"><img src="photos/photo-b.jpg" alt="Crowds of graduates cheering under falling confetti" loading="lazy"></button><figcaption>Photo B</figcaption></figure>Photo B looks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-2">. <span class="opts game-ui"><button>joyful</button><button>lonely</button><button>gloomy</button></span></li>
 <li data-a="1" data-form="lonely" data-q="Photo C looks ___."><figure class="photo"><button type="button" class="photo-open" data-photo="C" aria-label="Show photo C bigger"><img src="photos/photo-c.jpg" alt="An empty park bench among autumn leaves" loading="lazy"></button><figcaption>Photo C</figcaption></figure>Photo C looks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-3">. <span class="opts game-ui"><button>crowded</button><button>lonely</button><button>noisy</button></span></li>
@@ -94,7 +94,7 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
 </div>
 <h2 id="ex3" class="ex">Exercise 3: looks, looks like or looks as if?</h2>
 <p>Tap the right words. Look at what comes next: an adjective, a noun, or a sentence?</p>
-<ol class="g-pick" data-g="ex3">
+<ol class="g-pick" data-g="ex3" data-own="looks + adjective (looks calm); looks like + noun (looks like a painting); looks as if + clause (looks as if it&#x27;s going to rain). Check the student uses the same pattern correctly.">
 <li data-a="0" data-form="looks" data-q="Photo A ___ very peaceful.">Photo A <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-1"> very peaceful. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
 <li data-a="1" data-form="looks like" data-q="The sky in Photo H ___ a painting.">The sky in Photo H <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-2"> a painting. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
 <li data-a="2" data-form="looks as if" data-q="Photo E ___ it has been raining all day.">Photo E <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-3"> it has been raining all day. <span class="opts game-ui"><button>looks</button><button>looks like</button><button>looks as if</button></span></li>
@@ -117,7 +117,7 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
 </div>
 <h2 id="ex4" class="ex">Exercise 4: must, might or can't?</h2>
 <p>Tap the right word. Use the clue in each sentence.</p>
-<ol class="g-pick" data-g="ex4">
+<ol class="g-pick" data-g="ex4" data-own="must = sure it&#x27;s true, might = maybe, can&#x27;t = sure it&#x27;s not true; followed by the bare infinitive (must be, not must to be). Check the meaning fits and the grammar is right.">
 <li data-a="0" data-form="must" data-q="It ___ be very cold in Photo H. There&#x27;s snow on the mountain.">It <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-1"> be very cold in Photo H. There&#x27;s snow on the mountain. <span class="opts game-ui"><button>must</button><button>might</button><button>can&#x27;t</button></span></li>
 <li data-a="2" data-form="can&#x27;t" data-q="It ___ be summer in Photo C. The leaves are falling.">It <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-2"> be summer in Photo C. The leaves are falling. <span class="opts game-ui"><button>must</button><button>might</button><button>can&#x27;t</button></span></li>
 <li data-a="0" data-form="must" data-q="The people in Photo B ___ be students. They&#x27;re wearing graduation hats.">The people in Photo B <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex4-3"> be students. They&#x27;re wearing graduation hats. <span class="opts game-ui"><button>must</button><button>might</button><button>can&#x27;t</button></span></li>
@@ -217,7 +217,7 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
   window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
 })();
 </script>
-<script src="../games.js?v=1793970000"></script>
+<script src="../games.js?v=1794000000"></script>
 <script src="../api.js?v=1792889681"></script>
 <script src="../work.js?v=1793900000"></script>
 <div class="photobar" role="region" aria-label="Photos">

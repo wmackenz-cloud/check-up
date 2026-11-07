@@ -112,6 +112,54 @@
   }
   function marksOf(st, n) { var m = []; for (var i = 0; i < n; i++) { var s = st[i]; m.push(s && s.done ? (s.miss ? "later" : "first") : ""); } return m; }
 
+  // ---------- "Your turn": after a right answer, write your own sentence with the word (lists with data-own) ----------
+  // Claude checks it through the Writing checker. Optional: it never changes the score or the dots.
+  var OWN_LABEL = { correct: "Correct", almost: "Almost", wrong: "Let's fix this", "off-task": "Check the task" };
+  function ownSentence(list, li, s, quietly) {
+    if (li.querySelector(".g-own")) return;
+    var word = (li.dataset.own || li.dataset.form || "").replace(/[,.!?]+$/, "");
+    var example = (function () { var c = li.cloneNode(true); c.querySelectorAll(".opts, figure, input, .g-own, .g-streak").forEach(function (x) { x.remove(); }); return c.textContent.replace(/\s+/g, " ").trim(); })();
+    var box = el("div", "g-own game-ui"); box.dataset.q = "Your own sentence with \u201c" + word + "\u201d";
+    var lab = el("label", "g-own-lab"); lab.append("\u270E Your turn: write your own sentence with ", el("strong", null, word));
+    var f = document.createElement("textarea"); f.className = "blank g-own-in"; f.rows = 1; f.setAttribute("aria-label", "Your own sentence with " + word);
+    var go = btn("Check", "g-check g-wcheck"), fb = el("div", "g-fb"); fb.hidden = true; fb.setAttribute("aria-live", "polite");
+    var rec = document.createElement("input"); rec.type = "hidden"; rec.className = "blank";
+    var recWrap = el("span"); recWrap.hidden = true; recWrap.dataset.q = "Claude's check of the sentence with \u201c" + word + "\u201d"; recWrap.append(rec);
+    var row = el("div", "g-own-row"); row.append(f, go);
+    box.append(lab, row, fb, recWrap); li.append(box);
+    if (s.own) { f.value = s.own.text; if (s.own.result) show(s.own.result); }
+    f.addEventListener("input", function () { f.style.height = "auto"; f.style.height = f.scrollHeight + "px"; if (s.own) { s.own.text = f.value; save(); } else { s.own = { text: f.value }; save(); } fb.hidden = true; });
+    f.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); go.click(); } });
+    function show(r) {
+      fb.innerHTML = ""; fb.className = "g-fb " + r.status; fb.hidden = false;
+      fb.append(el("strong", "g-fb-tag", (r.status === "correct" ? "\u2713 " : "") + (OWN_LABEL[r.status] || "Check")));
+      if (r.corrected && r.corrected !== f.value.trim()) { var c = el("span", "g-fb-fix"); c.append(el("span", "g-fb-lab", "Better: "), el("em", null, r.corrected)); fb.append(c); }
+      if (r.note) fb.append(el("span", "g-fb-note", r.note));
+      rec.value = (OWN_LABEL[r.status] || r.status) + (r.corrected ? " (" + r.corrected + ")" : "") + (r.note ? " \u2013 " + r.note : "");
+    }
+    function note(t) { fb.className = "g-fb info"; fb.innerHTML = ""; fb.append(el("span", "g-fb-note", t)); fb.hidden = false; }
+    go.addEventListener("click", function () {
+      var text = f.value.trim();
+      if (!text) { note("Write your sentence first."); return; }
+      if (!CHECK_URL) { note("The writing check isn't switched on yet. Bill will see your sentence when you send your answers."); return; }
+      go.disabled = true; go.textContent = "Checking\u2026";
+      var ctrl = window.AbortController ? new AbortController() : null, timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 30000);
+      fetch(CHECK_URL, { method: "POST", body: JSON.stringify({ action: "checkWriting", args: [{
+        lesson: (document.querySelector("h1") || {}).textContent || "",
+        task: "Write one new sentence of your own that uses \u201c" + word + "\u201d correctly, with the same meaning and grammar as in the exercise sentence: \u201c" + example + "\u201d. Mark it off-task if it does not use \u201c" + word + "\u201d, or if it just copies the exercise sentence.",
+        focus: list.dataset.own || "Check that the word is used correctly (form, meaning and position) and that the whole sentence is grammatical and natural.",
+        answers: [text] }] }), signal: ctrl ? ctrl.signal : undefined })
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          if (!j.ok) throw new Error(j.error || "failed");
+          var r = j.data.results[0]; s.own = { text: text, result: r }; save(); show(r); flash(fb, "pop");
+          if (r.status === "correct") streak.hit(box);
+        })
+        .catch(function (e) { var t = e && e.message || ""; note(/busy day/.test(t) ? t : "Sorry, the check didn't work. Check your internet and try again in a minute."); })
+        .then(function () { clearTimeout(timer); go.disabled = false; go.textContent = "Check"; });
+    });
+  }
+
   // ---------- Tap the right word ----------
   document.querySelectorAll(".g-pick").forEach(function (list) {
     var g = list.dataset.g, items = Array.prototype.slice.call(list.children);
@@ -125,6 +173,7 @@
         opts.forEach(function (b, j) { b.disabled = true; if (String(j) === li.dataset.a) b.classList.add("ok"); });
         input.value = li.dataset.form + (s.tried.length ? " (tried first: " + s.tried.join(", ") + ")" : "");
         if (!quietly) flash(gap, "pop");
+        if (list.hasAttribute("data-own")) ownSentence(list, li, s, quietly);
       }
       opts.forEach(function (b, j) {
         b.type = "button";

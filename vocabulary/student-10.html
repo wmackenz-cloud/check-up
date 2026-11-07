@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <link rel="stylesheet" href="../grammar-traps/traps.css?v=1793206303">
-<link rel="stylesheet" href="../games.css?v=1793970000">
+<link rel="stylesheet" href="../games.css?v=1794000000">
 <style>
 .clip { margin: 4px 0 6px; display: grid; gap: 2px; }
 .clip figcaption { font-weight: 700; font-size: .85rem; color: var(--accent); }
@@ -70,7 +70,7 @@ body { padding-bottom: 96px !important; }
 <p>To talk about music, use <strong>sound</strong> + adjective: <em>It <strong>sounds</strong> calm.</em> <em>The violins <strong>sound</strong> cheerful.</em> <del>It sounds like calm.</del></p>
 <h2 id="ex1" class="ex">Exercise 1: Listen and choose</h2>
 <p>Play each clip. Then tap the word that describes it best.</p>
-<ol class="g-pick listen" data-g="ex1">
+<ol class="g-pick listen" data-g="ex1" data-own="A mood adjective describing music or a feeling. Check it is used as an adjective (e.g. after be, sound, look, feel, or before a noun), with the right meaning, and &#x27;sounds + adjective&#x27; not &#x27;sounds like + adjective&#x27;.">
 <li data-a="0" data-form="calm" data-q="Clip A sounds ___."><figure class="clip"><figcaption>Clip A</figcaption><audio controls preload="none" src="audio/music-a.mp3"></audio></figure>Clip A sounds <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-1">. <span class="opts game-ui"><button>calm</button><button>angry</button><button>noisy</button></span></li>
 <li data-a="1" data-form="cheerful" data-q="Clip B sounds ___."><figure class="clip"><figcaption>Clip B</figcaption><audio controls preload="none" src="audio/music-b.mp3"></audio></figure>Clip B sounds <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-2">. <span class="opts game-ui"><button>gloomy</button><button>cheerful</button><button>frightening</button></span></li>
 <li data-a="2" data-form="mysterious" data-q="Clip C sounds ___."><figure class="clip"><figcaption>Clip C</figcaption><audio controls preload="none" src="audio/music-c.mp3"></audio></figure>Clip C sounds <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-3">. <span class="opts game-ui"><button>relaxing</button><button>romantic</button><button>mysterious</button></span></li>
@@ -98,7 +98,7 @@ body { padding-bottom: 96px !important; }
 
 <h2 id="ex3" class="ex">Exercise 3: -ing or -ed?</h2>
 <p>Tap the right word. Ask yourself: is it the music, or the person?</p>
-<ol class="g-pick" data-g="ex3">
+<ol class="g-pick" data-g="ex3" data-own="-ing adjectives describe the thing that causes the feeling (relaxing music); -ed adjectives describe how a person feels (I feel relaxed). Check the student uses the same form correctly.">
 <li data-a="0" data-form="relaxing" data-q="Clip A is very ___. Listen to it after a long day.">Clip A is very <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-1">. Listen to it after a long day. <span class="opts game-ui"><button>relaxing</button><button>relaxed</button></span></li>
 <li data-a="1" data-form="relaxed" data-q="When I listen to Clip A, I feel ___">When I listen to Clip A, I feel <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-2">  <span class="opts game-ui"><button>relaxing</button><button>relaxed</button></span></li>
 <li data-a="0" data-form="frightening" data-q="The start of Clip C is a little ___. Something is hiding.">The start of Clip C is a little <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-3">. Something is hiding. <span class="opts game-ui"><button>frightening</button><button>frightened</button></span></li>
@@ -133,7 +133,7 @@ body { padding-bottom: 96px !important; }
 
 <h2 id="ex5" class="ex">Exercise 5: very or absolutely?</h2>
 <p>Tap <strong>very</strong> or <strong>absolutely</strong>.</p>
-<ol class="g-pick" data-g="ex5">
+<ol class="g-pick" data-g="ex5" data-own="very goes with ordinary adjectives (very calm); absolutely goes with strong/extreme adjectives (absolutely amazing). Check the student pairs the word with a suitable adjective.">
 <li data-a="0" data-form="very" data-q="Clip E is ___ beautiful. I love it.">Clip E is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-1"> beautiful. I love it. <span class="opts game-ui"><button>very</button><button>absolutely</button></span></li>
 <li data-a="1" data-form="absolutely" data-q="The ending of Clip G is ___ amazing!">The ending of Clip G is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-2"> amazing! <span class="opts game-ui"><button>very</button><button>absolutely</button></span></li>
 <li data-a="1" data-form="absolutely" data-q="Clip F was ___ deafening on my headphones.">Clip F was <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5-3"> deafening on my headphones. <span class="opts game-ui"><button>very</button><button>absolutely</button></span></li>
@@ -222,7 +222,7 @@ body { padding-bottom: 96px !important; }
   window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
 })();
 </script>
-<script src="../games.js?v=1793970000"></script>
+<script src="../games.js?v=1794000000"></script>
 <script src="../api.js?v=1792889681"></script>
 <script src="../work.js?v=1793900000"></script>
 <div class="musicbar" role="region" aria-label="Music player">

@@ -141,6 +141,17 @@ li.done .g-line { background: var(--ok-soft); border-bottom-color: var(--ok); }
 @media (max-width: 520px) { .g-board { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 8px; } .g-card { padding: 8px 9px; font-size: .9rem; } }
 @media print { .g-order-box, .g-board { display: none !important; } .g-match > ul { display: block; } }
 
+/* Your turn: own sentence after a right answer */
+.g-own { box-sizing: border-box; width: 100%; max-width: 100%; min-width: 0; grid-template-columns: minmax(0, 1fr); margin: 8px 0 4px; padding: 8px 10px; border: 1px dashed var(--accent); border-radius: 10px; background: color-mix(in srgb, var(--accent-soft) 50%, var(--sheet)); display: grid; gap: 6px; line-height: 1.45; }
+.g-own-lab { font-size: .9rem; color: var(--ink-soft); }
+.g-own-lab strong { color: var(--accent); }
+.g-own-row { display: flex; gap: 8px; align-items: flex-start; }
+.g-own-in { flex: 1 1 0; width: 100%; max-width: none; min-width: 0; box-sizing: border-box; margin: 0; resize: none; overflow: hidden; border: 1px solid var(--blank-line); border-radius: 8px; padding: 6px 8px; line-height: 1.45; }
+.g-own .g-wcheck { margin-left: 0; flex: none; }
+.g-own .g-fb { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.g-own-row { min-width: 0; }
+@media print { .g-own { display: none; } }
+
 /* Movement */
 .pop { animation: g-pop .45s ease-out; }
 .shake { animation: g-shake .45s ease-in-out; }
