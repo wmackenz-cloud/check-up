@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vocabulary 12: How Is It Played?</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="../grammar-traps/traps.css?v=1793206303">
+<link rel="stylesheet" href="../games.css?v=1793970000">
+<style>
+.clip { margin: 4px 0 6px; display: grid; gap: 2px; }
+.clip figcaption { font-weight: 700; font-size: .85rem; color: var(--accent); }
+.clip audio { width: 100%; max-width: 420px; height: 40px; }
+.g-pick.listen > li { margin: 16px 0; }
+.credits { margin-top: 26px; border-top: 1px solid var(--rule); }
+.credits p { color: var(--ink-soft); }
+@media print { .clip audio { display: none; } }
+/* Music bar: play any clip from anywhere in the lesson */
+.musicbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; background: var(--sheet); border-top: 2px solid var(--accent);
+  box-shadow: 0 -4px 16px rgba(0,0,0,.12); padding: 8px max(12px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); }
+.musicbar { max-width: none !important; margin: 0 !important; }
+.musicbar-in { max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.musicbar-label { font-weight: 700; font-size: .85rem; color: var(--accent); margin-right: 2px; }
+.musicbar-clips { display: flex; flex-wrap: wrap; gap: 6px; }
+.musicbar button { font: inherit; font-weight: 700; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 999px; cursor: pointer;
+  border: 2px solid var(--accent); background: var(--sheet); color: var(--accent); }
+.musicbar button.playing { background: var(--accent); color: var(--sheet); }
+.musicbar .mb-stop[disabled] { opacity: .4; cursor: default; }
+.musicbar-now { font-size: .85rem; color: var(--ink-soft); flex: 1 1 140px; min-width: 0; }
+body { padding-bottom: 96px !important; }
+.g-stars { bottom: 84px !important; }
+@media (max-width: 520px) { .musicbar button { min-width: 36px; height: 36px; padding: 0 8px; } .g-stars { bottom: 142px !important; } body { padding-bottom: 170px !important; } }
+.clip-link { font: inherit; font-weight: 700; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 999px; padding: 0 8px; cursor: pointer; line-height: 1.5; }
+.clip-link::before { content: "\25B6\FE0E  "; font-size: .75em; }
+.clip-link.playing { background: var(--accent); color: var(--sheet); }
+@media print { .musicbar { display: none; } .clip-link { border: none; background: none; padding: 0; } .clip-link::before { content: none; } }
+</style>
+</head>
+<body class="student" data-item="vocab-12">
+<header class="top">
+  <p class="eyebrow">English vocabulary practice &middot; Adverbs</p>
+  <h1>How Is It Played?</h1>
+  <p class="namedate">Name: <span class="line"></span> Date: <span class="line"></span></p>
+  <div class="tools">
+    <button type="button" id="print">Print or save as PDF</button>
+    <button type="button" class="ghost" id="clear">Clear my answers</button>
+    <span class="hint">Listen, then tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
+  </div>
+</header>
+<main class="sheet">
+<h2>Before you start</h2>
+<div class="rule">
+<p><strong>In Describe the Music you learned adjectives: what the music <em>is like</em>. Now you learn adverbs: <em>how</em> it is played.</strong></p>
+<p><em>The music is <strong>soft</strong>.</em> (adjective) &rarr; <em>The piano plays <strong>softly</strong>.</em> (adverb)</p>
+<p>You will hear the same seven clips. Use the music bar at the bottom of the screen to play any clip at any time.</p>
+</div>
+<h2>The rule: making adverbs</h2>
+<table>
+<thead><tr><th>Adjective</th><th>Adverb</th><th>How to make it</th></tr></thead>
+<tbody>
+<tr><td>soft, quiet, slow</td><td>softly, quietly, slowly</td><td>add -ly</td></tr>
+<tr><td>gentle, terrible</td><td>gently, terribly</td><td>-le becomes -ly</td></tr>
+<tr><td>happy, angry, noisy</td><td>happily, angrily, noisily</td><td>-y becomes -ily</td></tr>
+<tr><td>dramatic, energetic</td><td>dramatically, energetically</td><td>-ic becomes -ically</td></tr>
+<tr><td>good, fast, hard, late</td><td>well, fast, hard, late</td><td>irregular: learn these!</td></tr>
+</tbody>
+</table>
+<h2 id="ex1" class="ex">Exercise 1: Listen and choose</h2>
+<p>Play each clip. Then tap the adverb that describes <em>how</em> it is played.</p>
+<ol class="g-pick listen" data-g="ex1">
+<li data-a="0" data-form="softly" data-q="In Clip A, the piano plays ___."><figure class="clip"><figcaption>Clip A</figcaption><audio controls preload="none" src="audio/music-a.mp3"></audio></figure>In Clip A, the piano plays <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-1">. <span class="opts game-ui"><button>softly</button><button>loudly</button><button>angrily</button></span></li>
+<li data-a="1" data-form="cheerfully" data-q="In Clip B, the violins play ___."><figure class="clip"><figcaption>Clip B</figcaption><audio controls preload="none" src="audio/music-b.mp3"></audio></figure>In Clip B, the violins play <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-2">. <span class="opts game-ui"><button>sadly</button><button>cheerfully</button><button>sleepily</button></span></li>
+<li data-a="2" data-form="quietly" data-q="In Clip C, the orchestra creeps along ___."><figure class="clip"><figcaption>Clip C</figcaption><audio controls preload="none" src="audio/music-c.mp3"></audio></figure>In Clip C, the orchestra creeps along <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-3">. <span class="opts game-ui"><button>noisily</button><button>happily</button><button>quietly</button></span></li>
+<li data-a="0" data-form="slowly" data-q="In Clip D, the piano plays ___."><figure class="clip"><figcaption>Clip D</figcaption><audio controls preload="none" src="audio/music-d.mp3"></audio></figure>In Clip D, the piano plays <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-4">. <span class="opts game-ui"><button>slowly</button><button>quickly</button><button>cheerfully</button></span></li>
+<li data-a="1" data-form="gently" data-q="In Clip E, the piano plays ___."><figure class="clip"><figcaption>Clip E</figcaption><audio controls preload="none" src="audio/music-e.mp3"></audio></figure>In Clip E, the piano plays <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-5">. <span class="opts game-ui"><button>aggressively</button><button>gently</button><button>angrily</button></span></li>
+<li data-a="2" data-form="powerfully" data-q="In Clip F, the orchestra plays ___."><figure class="clip"><figcaption>Clip F</figcaption><audio controls preload="none" src="audio/music-f.mp3"></audio></figure>In Clip F, the orchestra plays <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-6">. <span class="opts game-ui"><button>sleepily</button><button>softly</button><button>powerfully</button></span></li>
+<li data-a="0" data-form="wildly" data-q="At the end of Clip G, the orchestra plays ___."><figure class="clip"><figcaption>Clip G</figcaption><audio controls preload="none" src="audio/music-g.mp3"></audio></figure>At the end of Clip G, the orchestra plays <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-7">. <span class="opts game-ui"><button>wildly</button><button>calmly</button><button>lazily</button></span></li>
+</ol>
+
+<h2>The rule: adjective or adverb?</h2>
+<div class="rule">
+<p><strong>An adjective describes a thing or a person. An adverb describes an action (a verb).</strong></p>
+<p><em>She is a <strong>careful</strong> driver.</em> &rarr; <em>She drives <strong>carefully</strong>.</em></p>
+<p><strong>Watch out:</strong> after <strong>be, look, sound, feel, seem</strong> we use an adjective: <em>The music <strong>sounds</strong> beautiful.</em> <del>sounds beautifully</del></p>
+<p>Adverbs can also make adjectives stronger: <em><strong>incredibly</strong> loud, <strong>really</strong> quiet</em>.</p>
+</div>
+<h2 id="ex2" class="ex">Exercise 2: Adjective or adverb?</h2>
+<p>Tap the right word. Ask yourself: does it describe a thing, or an action?</p>
+<ol class="g-pick" data-g="ex2">
+<li data-a="0" data-form="soft" data-q="Clip A is very ___">Clip A is very <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-1">  <span class="opts game-ui"><button>soft</button><button>softly</button></span></li>
+<li data-a="1" data-form="softly" data-q="In Clip A, the piano plays very ___">In Clip A, the piano plays very <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-2">  <span class="opts game-ui"><button>soft</button><button>softly</button></span></li>
+<li data-a="0" data-form="happy" data-q="The violins in Clip B sound ___">The violins in Clip B sound <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-3">  <span class="opts game-ui"><button>happy</button><button>happily</button></span></li>
+<li data-a="1" data-form="happily" data-q="The children in the park are playing ___">The children in the park are playing <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-4">  <span class="opts game-ui"><button>happy</button><button>happily</button></span></li>
+<li data-a="0" data-form="good" data-q="She&#x27;s a ___ singer.">She&#x27;s a <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-5"> singer. <span class="opts game-ui"><button>good</button><button>well</button></span></li>
+<li data-a="1" data-form="well" data-q="She sings really ___">She sings really <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-6">  <span class="opts game-ui"><button>good</button><button>well</button></span></li>
+<li data-a="1" data-form="carefully" data-q="Drive ___. The roads are icy.">Drive <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-7">. The roads are icy. <span class="opts game-ui"><button>careful</button><button>carefully</button></span></li>
+<li data-a="0" data-form="careful" data-q="Be ___! The roads are icy.">Be <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-8">! The roads are icy. <span class="opts game-ui"><button>careful</button><button>carefully</button></span></li>
+<li data-a="1" data-form="incredibly" data-q="The ending of Clip G is ___ loud.">The ending of Clip G is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-9"> loud. <span class="opts game-ui"><button>incredible</button><button>incredibly</button></span></li>
+<li data-a="1" data-form="quickly" data-q="He spoke very ___ but I understood him.">He spoke very <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-10"> but I understood him. <span class="opts game-ui"><button>quick</button><button>quickly</button></span></li>
+</ol>
+
+<h2>The rule: tricky adverbs</h2>
+<ul>
+<li><strong>good &rarr; well:</strong> <em>She's a good singer. She sings well.</em></li>
+<li><strong>fast &rarr; fast:</strong> <em>a fast car, he drives fast</em> <del>fastly</del></li>
+<li><strong>hard &rarr; hard:</strong> <em>He works hard.</em> But <strong>hardly</strong> means "almost not": <em>I can hardly hear it.</em></li>
+<li><strong>late &rarr; late:</strong> <em>The train arrived late.</em> But <strong>lately</strong> means "recently": <em>I've been busy lately.</em></li>
+</ul>
+<h2 id="ex3" class="ex">Exercise 3: Find the mistake</h2>
+<p>Some sentences have a mistake: tap the wrong word, then choose the right word. Some sentences are correct: tap <strong>No mistake</strong>.</p>
+<ol class="g-spot" data-g="ex3" data-allow-ok>
+<li data-bad="hardly" data-fix="hard" data-opts="hard,hardly" data-q="He works very hardly."><span class="sent">He works very hardly.</span><input class="blank" type="hidden" data-k="ex3-1"></li>
+<li data-bad="" data-fix="" data-opts="" data-q="I can hardly hear Clip A. It&#x27;s so quiet."><span class="sent">I can hardly hear Clip A. It&#x27;s so quiet.</span><input class="blank" type="hidden" data-k="ex3-2"></li>
+<li data-bad="good" data-fix="well" data-opts="well,good" data-q="She plays the piano very good."><span class="sent">She plays the piano very good.</span><input class="blank" type="hidden" data-k="ex3-3"></li>
+<li data-bad="fastly" data-fix="fast" data-opts="fast,fastly" data-q="The violins play really fastly."><span class="sent">The violins play really fastly.</span><input class="blank" type="hidden" data-k="ex3-4"></li>
+<li data-bad="" data-fix="" data-opts="" data-q="I haven&#x27;t listened to much music lately."><span class="sent">I haven&#x27;t listened to much music lately.</span><input class="blank" type="hidden" data-k="ex3-5"></li>
+<li data-bad="lately" data-fix="late" data-opts="late,lately" data-q="The concert started lately because of the snow."><span class="sent">The concert started lately because of the snow.</span><input class="blank" type="hidden" data-k="ex3-6"></li>
+<li data-bad="beautiful" data-fix="beautifully" data-opts="beautifully,beautiful" data-q="The orchestra played beautiful."><span class="sent">The orchestra played beautiful.</span><input class="blank" type="hidden" data-k="ex3-7"></li>
+<li data-bad="" data-fix="" data-opts="" data-q="I did well in my music exam."><span class="sent">I did well in my music exam.</span><input class="blank" type="hidden" data-k="ex3-8"></li>
+</ol>
+
+<h2>The rule: where does the adverb go?</h2>
+<div class="rule">
+<p><strong>How often</strong> (always, usually, often, sometimes, never): before the main verb, but after <em>be</em>. <em>She <strong>always</strong> plays. He is <strong>never</strong> late.</em></p>
+<p><strong>How</strong> (quietly, well, carefully): usually at the end, after the object. <em>She plays the piano <strong>quietly</strong>.</em> <del>She plays quietly the piano.</del></p>
+</div>
+<h2 id="ex4" class="ex">Exercise 4: Word order</h2>
+<p>Tap the words in the right order to make a sentence. Tap a word in your sentence to send it back.</p>
+<ol class="g-order" data-g="ex4">
+<li data-answer="She always plays the piano quietly." data-q="Put the words in order: She always plays the piano quietly."><input class="blank" type="hidden" data-k="ex4-1"></li>
+<li data-answer="I have never heard this piece before." data-q="Put the words in order: I have never heard this piece before."><input class="blank" type="hidden" data-k="ex4-2"></li>
+<li data-answer="The orchestra played the ending very loudly." data-q="Put the words in order: The orchestra played the ending very loudly."><input class="blank" type="hidden" data-k="ex4-3"></li>
+<li data-answer="We often listen to music in the car." data-alt="In the car we often listen to music." data-q="Put the words in order: We often listen to music in the car."><input class="blank" type="hidden" data-k="ex4-4"></li>
+<li data-answer="He carefully opened the old piano." data-alt="He opened the old piano carefully." data-q="Put the words in order: He carefully opened the old piano."><input class="blank" type="hidden" data-k="ex4-5"></li>
+<li data-answer="They don&#x27;t usually go to concerts." data-q="Put the words in order: They don&#x27;t usually go to concerts."><input class="blank" type="hidden" data-k="ex4-6"></li>
+</ol>
+
+<h2>The rule: comment adverbs</h2>
+<div class="rule">
+<p><strong>Some adverbs come at the start of a sentence and show how you feel about the whole thing. Put a comma after them.</strong></p>
+<p><em><strong>Unfortunately,</strong> it rained all day. <strong>Luckily,</strong> we had umbrellas.</em></p>
+</div>
+<h2 id="ex5" class="ex">Exercise 5: Comment adverbs</h2>
+<p>Part 1: tap an adverb, then tap what it means.</p>
+<div class="g-match" data-g="ex5">
+<ul>
+<li data-l="Unfortunately," data-r="This is bad news." data-q="Match: Unfortunately,">Unfortunately, = This is bad news.<input class="blank" type="hidden" data-k="ex5-1"></li>
+<li data-l="Luckily," data-r="This is good news, and it happened by chance." data-q="Match: Luckily,">Luckily, = This is good news, and it happened by chance.<input class="blank" type="hidden" data-k="ex5-2"></li>
+<li data-l="Surprisingly," data-r="I didn&#x27;t expect this." data-q="Match: Surprisingly,">Surprisingly, = I didn&#x27;t expect this.<input class="blank" type="hidden" data-k="ex5-3"></li>
+<li data-l="Hopefully," data-r="I hope this will happen." data-q="Match: Hopefully,">Hopefully, = I hope this will happen.<input class="blank" type="hidden" data-k="ex5-4"></li>
+<li data-l="Personally," data-r="This is my own opinion." data-q="Match: Personally,">Personally, = This is my own opinion.<input class="blank" type="hidden" data-k="ex5-5"></li>
+<li data-l="Obviously," data-r="Everyone can see or knows this." data-q="Match: Obviously,">Obviously, = Everyone can see or knows this.<input class="blank" type="hidden" data-k="ex5-6"></li>
+</ul>
+</div>
+
+<p>Part 2: a night at a concert. Tap the best adverb for each sentence.</p>
+<ol class="g-pick" data-g="ex5b">
+<li data-a="0" data-form="Unfortunately," data-q="___ the concert started an hour late because of the snow."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5b-1"> the concert started an hour late because of the snow. <span class="opts game-ui"><button>Unfortunately,</button><button>Hopefully,</button><button>Personally,</button></span></li>
+<li data-a="1" data-form="Luckily," data-q="___ we found two free seats at the front."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5b-2"> we found two free seats at the front. <span class="opts game-ui"><button>Hopefully,</button><button>Luckily,</button><button>Obviously,</button></span></li>
+<li data-a="0" data-form="Surprisingly," data-q="___ the pianist was only twelve years old!"><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5b-3"> the pianist was only twelve years old! <span class="opts game-ui"><button>Surprisingly,</button><button>Hopefully,</button><button>Personally,</button></span></li>
+<li data-a="1" data-form="Personally," data-q="___ I preferred the first half of the concert."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5b-4"> I preferred the first half of the concert. <span class="opts game-ui"><button>Luckily,</button><button>Personally,</button><button>Unfortunately,</button></span></li>
+<li data-a="0" data-form="Hopefully," data-q="___ they will come back and play here next year."><span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex5b-5"> they will come back and play here next year. <span class="opts game-ui"><button>Hopefully,</button><button>Luckily,</button><button>Surprisingly,</button></span></li>
+</ol>
+
+<h2 id="ex6" class="ex">Exercise 6: About you</h2>
+<p>Write your answers. Press <strong>Check</strong> after each one to see if your adverbs are right.</p>
+<div class="g-write" data-g="ex6" data-task="Answer each prompt in one to three sentences, using adverbs." data-focus="The student writes about how they do things. Check adverbs above all: adverbs of manner for verbs (drives carefully, sings well, not &#x27;drives careful&#x27; or &#x27;sings good&#x27;); adjectives after be, look, sound, feel, seem (the music sounds beautiful); irregular adverbs (hard, fast, late, well; &#x27;hardly&#x27; means almost not; &#x27;lately&#x27; means recently; never &#x27;fastly&#x27;); word order: frequency adverbs before the main verb and after be (I often cook, I am always late), manner adverbs not between the verb and its object (I play the piano badly, not &#x27;I play badly the piano&#x27;); comment adverbs at the start with a comma (Luckily, …). Also check general grammar.">
+<ol>
+<li>How do you do these three things: drive, sing, cook? (I drive carefully…)<br><textarea class="blank area" rows="2" aria-label="How do you do these three things: drive, sing, cook? (I drive carefully…)" data-k="ex6-1"></textarea></li>
+<li>Write about something you often do, something you sometimes do and something you never do.<br><textarea class="blank area" rows="2" aria-label="Write about something you often do, something you sometimes do and something you never do." data-k="ex6-2"></textarea></li>
+<li>Write about a concert, party or trip. Use Luckily or Unfortunately.<br><textarea class="blank area" rows="2" aria-label="Write about a concert, party or trip. Use Luckily or Unfortunately." data-k="ex6-3"></textarea></li>
+</ol>
+<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="ex6-check"></p>
+</div>
+
+<h2 id="ex7" class="ex">Exercise 7: Speaking game: In the manner of the word</h2>
+<p>Play this with your teacher or a friend.</p>
+<ol>
+<li>One person secretly chooses an adverb: <em>nervously, angrily, happily, slowly, sleepily, proudly, carefully, lazily</em>.</li>
+<li>The others give them a task to act out: <em>Eat your breakfast. Open a present. Answer the phone. Walk to the door.</em></li>
+<li>They act it out in the manner of the adverb. Everyone guesses: <em>"Are you eating angrily?"</em></li>
+<li>Take turns. Then talk: how do <em>you</em> usually do these things?</li>
+</ol>
+<details class="answers">
+  <summary>Check your answers</summary>
+  <div class="answers-body">
+<p><strong>Exercise 1:</strong> A softly, B cheerfully, C quietly, D slowly, E gently, F powerfully, G wildly.</p>
+<p><strong>Exercise 2:</strong> 1 soft, 2 softly, 3 happy (after sound), 4 happily, 5 good, 6 well, 7 carefully, 8 careful (after be), 9 incredibly, 10 quickly.</p>
+<p><strong>Exercise 3:</strong> 1 He works very hard. 2 Correct. 3 She plays the piano very well. 4 The violins play really fast. 5 Correct. 6 The concert started late because of the snow. 7 The orchestra played beautifully. 8 Correct.</p>
+<p><strong>Exercise 4:</strong> 1 She always plays the piano quietly. 2 I have never heard this piece before. 3 The orchestra played the ending very loudly. 4 We often listen to music in the car. 5 He carefully opened the old piano. (or He opened the old piano carefully.) 6 They don't usually go to concerts.</p>
+<p><strong>Exercise 5:</strong> Part 1: Unfortunately = bad news; Luckily = good news, by chance; Surprisingly = I didn't expect this; Hopefully = I hope this will happen; Personally = my own opinion; Obviously = everyone can see or knows this. Part 2: 1 Unfortunately, 2 Luckily, 3 Surprisingly, 4 Personally, 5 Hopefully.</p>
+<p><strong>Exercise 6:</strong> Your own answers. Check: adverbs for actions (drive carefully), adjectives after be, look, sound, feel; often / never before the main verb.</p>
+  </div>
+</details>
+<section class="credits">
+<h2>The music</h2>
+<p class="small">The same seven clips as in Describe the Music: free recordings from Wikimedia Commons (CC0 or public domain). Clip A Satie, Clip B Vivaldi, Clips C and G Grieg, Clip D Chopin, Clip E Debussy, Clip F Beethoven.</p>
+</section>
+</main>
+<footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
+<script>
+(function () {
+  var key = "traps-" + location.pathname;
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || "{}") || {}; } catch (e) {}
+  var fields = document.querySelectorAll(".blank");
+  fields.forEach(function (f) {
+    if (saved[f.dataset.k]) f.value = saved[f.dataset.k];
+    f.addEventListener("input", function () {
+      saved[f.dataset.k] = f.value;
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
+    });
+  });
+  var clear = document.getElementById("clear");
+  if (clear) clear.addEventListener("click", function () {
+    if (!confirm("Clear all your answers on this page?")) return;
+    fields.forEach(function (f) { f.value = ""; });
+    saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
+    location.reload();
+  });
+  var pr = document.getElementById("print");
+  if (pr) pr.addEventListener("click", function () { window.print(); });
+  // Print the answer key on its own last page, even when it's closed on screen.
+  var ans = document.querySelector("details.answers"), wasOpen = false;
+  window.addEventListener("beforeprint", function () { if (ans) { wasOpen = ans.open; ans.open = true; } });
+  window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
+})();
+</script>
+<script src="../games.js?v=1793970000"></script>
+<script src="../api.js?v=1792889681"></script>
+<script src="../work.js?v=1793900000"></script>
+<div class="musicbar" role="region" aria-label="Music player">
+  <div class="musicbar-in">
+    <span class="musicbar-label">Play a clip:</span>
+    <span class="musicbar-clips"></span>
+    <button type="button" class="mb-stop" disabled aria-label="Stop the music">&#9632; Stop</button>
+    <span class="musicbar-now" aria-live="polite">Tap a letter to listen.</span>
+  </div>
+</div>
+<script>
+// Music bar and tappable "Clip A" names: any clip can be played from anywhere in the lesson.
+(function () {
+  var bar = document.querySelector(".musicbar"), clipsBox = bar.querySelector(".musicbar-clips"), stop = bar.querySelector(".mb-stop"), now = bar.querySelector(".musicbar-now");
+  var players = {};
+  document.querySelectorAll("figure.clip").forEach(function (f) {
+    var letter = f.querySelector("figcaption").textContent.trim().slice(-1);
+    players[letter] = f.querySelector("audio");
+  });
+  var letters = Object.keys(players).sort(), buttons = {};
+  letters.forEach(function (L) {
+    var b = document.createElement("button"); b.type = "button"; b.textContent = L; b.setAttribute("aria-label", "Play clip " + L);
+    b.addEventListener("click", function () { toggle(L); }); clipsBox.append(b); buttons[L] = b;
+  });
+  function current() { for (var L in players) if (!players[L].paused) return L; return null; }
+  function toggle(L) {
+    var a = players[L];
+    if (!a.paused) { a.pause(); return; }
+    letters.forEach(function (K) { if (K !== L) players[K].pause(); });
+    a.currentTime = 0; a.play();
+  }
+  function refresh() {
+    var L = current();
+    letters.forEach(function (K) { buttons[K].classList.toggle("playing", K === L); });
+    document.querySelectorAll(".clip-link").forEach(function (c) { c.classList.toggle("playing", c.dataset.clip === L); });
+    stop.disabled = !L;
+    now.textContent = L ? "Playing clip " + L + ". Tap it again to stop." : "Tap a letter to listen.";
+  }
+  letters.forEach(function (L) {
+    var a = players[L];
+    a.addEventListener("play", function () { letters.forEach(function (K) { if (K !== L) players[K].pause(); }); refresh(); });
+    a.addEventListener("pause", refresh); a.addEventListener("ended", refresh);
+  });
+  stop.addEventListener("click", function () { letters.forEach(function (K) { players[K].pause(); }); });
+  // Turn "Clip A" in the exercises (not in the players themselves) into play buttons.
+  var walker = document.createTreeWalker(document.querySelector("main"), NodeFilter.SHOW_TEXT, {
+    acceptNode: function (n) {
+      if (!/Clip [A-G]\b/.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+      if (n.parentElement.closest("figure.clip, details.answers, .credits, button, .g-order, input, textarea")) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  var nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(function (n) {
+    var frag = document.createDocumentFragment(), parts = n.nodeValue.split(/(Clip [A-G]\b)/);
+    parts.forEach(function (t) {
+      var m = t.match(/^Clip ([A-G])$/);
+      if (m && players[m[1]]) {
+        var b = document.createElement("button"); b.type = "button"; b.className = "clip-link game-ui-keep"; b.dataset.clip = m[1]; b.textContent = t;
+        b.setAttribute("aria-label", "Play " + t);
+        b.addEventListener("click", function () { toggle(m[1]); }); frag.append(b);
+      } else if (t) frag.append(document.createTextNode(t));
+    });
+    n.parentNode.replaceChild(frag, n);
+  });
+})();
+</script>
+</body>
+</html>
