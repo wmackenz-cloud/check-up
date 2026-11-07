@@ -11,6 +11,8 @@
 //         with a hidden <input class="blank">: tap the words to build the sentence. Right words stay; wrong ones go back.
 //   <div class="g-match" data-g="name"><ul><li data-l="take a break" data-r="stop working for a while">...</ul></div>
 //         (each li holds a hidden <input class="blank">): tap a card, then its partner.
+//   <ol class="g-build" data-g="name">  story builder: each <li> has <span class="slot" data-type="adj|adv"> gaps and a hidden
+//         <span class="bank-words">word:adj word:adv</span> list; any word of the right kind fits; the wrong kind bounces with a hint.
 //   <div class="sorter g-sort" data-k="name">  the usual sorter, but each word is marked the moment it lands.
 //   <div class="g-write" data-task="..." data-focus="...">  free writing with "Check my writing": Claude checks each sentence
 //         through Bill's Writing checker (tools/writing-checker.gs).
@@ -448,6 +450,62 @@
     });
     src.forEach(function (li, i) { if (st[i] && st[i].done) lock(i, true); });
     bar.update(marksOf(st, src.length), true);
+  });
+
+  // ---------- Story builder: fill typed slots from a word bank ----------
+  // <ol class="g-build" data-g="name"><li data-q="..."> The <span class="slot" data-type="adj" data-for="rain"></span> rain fell
+  //   <span class="slot" data-type="adv" data-for="fell"></span> ... <span class="bank-words" hidden>misty:adj quickly:adv ...</span>
+  //   <input class="blank" type="hidden"></li></ol>
+  // A word goes into the next empty slot. The wrong kind of word bounces back with a hint; any word of the right kind is fine.
+  var KIND = { adj: "an adjective", adv: "an adverb", noun: "a noun", verb: "a verb" };
+  document.querySelectorAll(".g-build").forEach(function (list) {
+    var g = list.dataset.g, items = Array.prototype.slice.call(list.children);
+    var st = fresh(g, "build");
+    var bar = scoreBar(list, items.length, g);
+    items.forEach(function (li, i) {
+      var s = st[i] || { miss: 0 }, input = li.querySelector("input.blank");
+      var slots = Array.prototype.slice.call(li.querySelectorAll(".slot"));
+      var src = li.querySelector(".bank-words");
+      var words = src.textContent.trim().split(/\s+/).map(function (t) { var p = t.split(":"); return { w: p[0].replace(/_/g, " "), t: p[1] }; });
+      src.remove();
+      slots.forEach(function (sl) { sl.classList.add("game-ui-slot"); sl.setAttribute("aria-label", "Gap for " + (KIND[sl.dataset.type] || "a word")); });
+      var bank = el("div", "g-bank build-bank game-ui"), msg = el("span", "g-type-msg"), redo = btn("Start again", "ghost g-redo");
+      msg.setAttribute("aria-live", "polite");
+      var acts = el("div", "g-order-acts game-ui"); acts.append(redo, msg);
+      li.append(bank, acts);
+      words.forEach(function (o) { var b = btn(o.w, "g-chip"); b.dataset.t = o.t; bank.append(b); });
+      function text() {
+        var c = li.cloneNode(true); c.querySelectorAll(".game-ui, input").forEach(function (x) { x.remove(); });
+        c.querySelectorAll(".slot").forEach(function (sl) { sl.replaceWith(document.createTextNode(sl.textContent || "___")); });
+        return c.textContent.replace(/\s+/g, " ").trim();
+      }
+      function solve(quietly) {
+        li.classList.add("done"); bank.hidden = true; redo.hidden = true;
+        slots.forEach(function (sl) { sl.classList.add("ok"); });
+        msg.textContent = s.miss ? "✓ Great sentence!" : "✓ Right first time!";
+        input.value = text() + (s.miss ? " (" + s.miss + " wrong tr" + (s.miss > 1 ? "ies" : "y") + " first)" : "");
+        if (!quietly) slots.forEach(function (sl) { flash(sl, "pop"); });
+      }
+      function fill(b) {
+        var sl = slots.filter(function (x) { return !x.textContent; })[0]; if (!sl) return;
+        if (b.dataset.t !== sl.dataset.type) {
+          s.miss++; st[i] = s; save(); streak.miss(); b.classList.add("bad"); flash(b, "shake"); flash(sl, "shake");
+          msg.textContent = "“" + b.textContent + "” is " + (KIND[b.dataset.t] || "another kind of word") + ". This gap needs " + (KIND[sl.dataset.type] || "a different word") + (sl.dataset.for ? " to describe “" + sl.dataset.for + "”." : ".");
+          setTimeout(function () { b.classList.remove("bad"); }, 700);
+          return;
+        }
+        sl.textContent = b.textContent; sl.classList.add("filled"); b.hidden = true; sl._chip = b; msg.textContent = "";
+        if (slots.every(function (x) { return x.textContent; })) {
+          s.done = true; s.fill = slots.map(function (x) { return x.textContent; }); st[i] = s; save(); solve(false);
+          if (!s.miss) streak.hit(li); bar.update(marksOf(st, items.length));
+        }
+      }
+      bank.addEventListener("click", function (e) { var b = e.target.closest(".g-chip"); if (b && !li.classList.contains("done")) fill(b); });
+      slots.forEach(function (sl) { sl.addEventListener("click", function () { if (li.classList.contains("done") || !sl._chip) return; sl._chip.hidden = false; sl._chip = null; sl.textContent = ""; sl.classList.remove("filled"); }); });
+      redo.addEventListener("click", function () { slots.forEach(function (sl) { if (sl._chip) { sl._chip.hidden = false; sl._chip = null; } sl.textContent = ""; sl.classList.remove("filled"); }); msg.textContent = ""; });
+      if (s.done && s.fill) { slots.forEach(function (sl, k) { sl.textContent = s.fill[k] || ""; }); solve(true); }
+    });
+    bar.update(marksOf(st, items.length), true);
   });
 
   // ---------- Sorting with instant marking ----------

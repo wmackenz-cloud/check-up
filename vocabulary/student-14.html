@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vocabulary 14: Tell a Richer Story</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="../grammar-traps/traps.css?v=1793206303">
+<link rel="stylesheet" href="../games.css?v=1794100000">
+<style>
+.g-pick.photos > li { margin: 18px 0; }
+.photo { margin: 4px 0 8px; display: grid; gap: 2px; justify-items: start; }
+.photo-open { padding: 0; border: none; background: none; cursor: zoom-in; border-radius: 10px; line-height: 0; }
+.photo img { display: block; max-width: 100%; width: auto; max-height: 300px; border-radius: 10px; border: 1px solid var(--rule); }
+.photo figcaption { font-weight: 700; font-size: .85rem; color: var(--accent); }
+.credits { margin-top: 26px; border-top: 1px solid var(--rule); } .credits p { color: var(--ink-soft); }
+.photobar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; background: var(--sheet); border-top: 2px solid var(--accent); box-shadow: 0 -4px 16px rgba(0,0,0,.12);
+  padding: 8px max(12px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); }
+.photobar-in { max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.photobar-label { font-weight: 700; font-size: .85rem; color: var(--accent); }
+.photobar-btns { display: flex; flex-wrap: wrap; gap: 6px; }
+.photobar button { font: inherit; font-weight: 700; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 999px; cursor: pointer; border: 2px solid var(--accent); background: var(--sheet); color: var(--accent); }
+body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
+@media (max-width: 520px) { .photobar button { min-width: 34px; height: 36px; padding: 0 6px; } .g-stars { bottom: 142px !important; } body { padding-bottom: 170px !important; } }
+.photo-link { font: inherit; font-weight: 700; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 999px; padding: 0 8px; cursor: zoom-in; line-height: 1.5; }
+.lightbox { position: fixed; inset: 0; z-index: 60; background: rgba(10,15,18,.92); display: grid; grid-template-rows: auto minmax(0,1fr) auto; gap: 8px;
+  padding: calc(10px + env(safe-area-inset-top, 0px)) 12px calc(12px + env(safe-area-inset-bottom, 0px)); }
+.lightbox[hidden] { display: none !important; }
+.lightbox, .photobar { max-width: none !important; margin: 0 !important; }
+.lb-top { display: flex; justify-content: space-between; align-items: center; color: #fff; font-weight: 700; }
+.lb-img { min-height: 0; display: grid; place-items: center; }
+.lb-img img { max-width: 100%; max-height: calc(100vh - 140px); max-height: calc(100dvh - 140px); object-fit: contain; border-radius: 8px; }
+.lb-nav { display: flex; justify-content: center; gap: 10px; }
+.lightbox button { font: inherit; font-weight: 700; border-radius: 999px; padding: 8px 18px; cursor: pointer; border: 2px solid #fff; background: transparent; color: #fff; }
+@media print { .photobar, .lightbox { display: none !important; } .photo img { max-height: 200px; } .photo-link { border: none; background: none; padding: 0; } }
+</style>
+<style>
+.gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 12px 0; }
+.gallery .photo { margin: 0; justify-items: stretch; }
+.gallery .photo img { width: 100%; height: 90px; max-height: none; object-fit: cover; }
+@media (max-width: 520px) { .gallery .photo img { height: 64px; } }
+.frame-photo { font-weight: 700; color: var(--accent); font-size: .9rem; }
+.meter { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; font-size: .85rem; color: var(--ink-soft); margin-top: 4px; line-height: 1.4; }
+.meter .m-stars { color: #e0a526; letter-spacing: 1px; font-size: 1rem; }
+.meter .m-count strong { color: var(--accent); }
+.meter .m-boring { color: var(--bad); font-weight: 700; }
+.dice-btn { font: inherit; font-weight: 700; border-radius: 999px; padding: 4px 14px; margin: 2px 0 6px; }
+.dice-prompt { font-weight: 700; color: var(--accent); }
+.dice-prompt .dp { display: inline-block; background: var(--accent-soft); border-radius: 999px; padding: 0 10px; margin: 2px 2px; }
+.dice-roll { animation: g-shake .45s ease-in-out; }
+.story-photo select { font: inherit; padding: 4px 8px; border-radius: 8px; border: 1px solid var(--blank-line); background: var(--sheet); color: var(--ink); }
+.story-total { font-weight: 700; color: var(--accent); }
+@media print { .meter, .dice-btn { display: none; } }
+</style>
+</head>
+<body class="student" data-item="vocab-14">
+<header class="top">
+  <p class="eyebrow">English vocabulary practice &middot; Adjectives and adverbs in stories</p>
+  <h1>Tell a Richer Story</h1>
+  <p class="namedate">Name: <span class="line"></span> Date: <span class="line"></span></p>
+  <div class="tools">
+    <button type="button" id="print">Print or save as PDF</button>
+    <button type="button" class="ghost" id="clear">Clear my answers</button>
+    <span class="hint">Tap, build and write your story. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
+  </div>
+</header>
+<main class="sheet">
+<h2>Before you start</h2>
+<div class="rule">
+<p><strong>A plain sentence tells us what happened. A rich sentence lets us see it, hear it and feel it.</strong></p>
+<p>Plain: <em>Maya walked to the car.</em></p>
+<p>Rich: <em>Maya walked <strong>briskly</strong> through the <strong>cold, grey</strong> rain to her <strong>old</strong> car.</em></p>
+<p>Today you help tell the story of Maya's long day, from a rainy morning in Toronto to a cosy night by the fire. Tap any photo to see it bigger.</p>
+</div>
+<div class="gallery"><figure class="photo"><button type="button" class="photo-open" data-photo="A" aria-label="Show photo A bigger"><img src="photos/photo-a.jpg" alt="A misty lake at dawn" loading="lazy"></button><figcaption>Photo A</figcaption></figure><figure class="photo"><button type="button" class="photo-open" data-photo="B" aria-label="Show photo B bigger"><img src="photos/photo-b.jpg" alt="Graduates cheering under confetti" loading="lazy"></button><figcaption>Photo B</figcaption></figure><figure class="photo"><button type="button" class="photo-open" data-photo="C" aria-label="Show photo C bigger"><img src="photos/photo-c.jpg" alt="An empty park bench in autumn" loading="lazy"></button><figcaption>Photo C</figcaption></figure><figure class="photo"><button type="button" class="photo-open" data-photo="D" aria-label="Show photo D bigger"><img src="photos/photo-d.jpg" alt="Abandoned brick buildings" loading="lazy"></button><figcaption>Photo D</figcaption></figure><figure class="photo"><button type="button" class="photo-open" data-photo="E" aria-label="Show photo E bigger"><img src="photos/photo-e.jpg" alt="A person with an umbrella on a rainy Toronto street" loading="lazy"></button><figcaption>Photo E</figcaption></figure><figure class="photo"><button type="button" class="photo-open" data-photo="F" aria-label="Show photo F bigger"><img src="photos/photo-f.jpg" alt="A cosy room with a fire" loading="lazy"></button><figcaption>Photo F</figcaption></figure><figure class="photo"><button type="button" class="photo-open" data-photo="G" aria-label="Show photo G bigger"><img src="photos/photo-g.jpg" alt="A city road in a traffic jam" loading="lazy"></button><figcaption>Photo G</figcaption></figure><figure class="photo"><button type="button" class="photo-open" data-photo="H" aria-label="Show photo H bigger"><img src="photos/photo-h.jpg" alt="Northern lights over a snowy mountain" loading="lazy"></button><figcaption>Photo H</figcaption></figure></div>
+<h2>Three ways to make a sentence richer</h2>
+<ul>
+<li><strong>Add an adjective</strong> before a noun: <em>the rain &rarr; the <strong>icy</strong> rain</em></li>
+<li><strong>Add an adverb</strong> after a verb: <em>she walked &rarr; she walked <strong>briskly</strong></em></li>
+<li><strong>Swap a boring word</strong> for a precise one: <em>nice &rarr; breathtaking, bad &rarr; awful, very big &rarr; enormous</em></li>
+</ul>
+<h2 id="ex1" class="ex">Exercise 1: Upgrade it</h2>
+<p>Tap the word that makes the sentence <strong>richer</strong> and is <strong>correct</strong>. Then try your own sentence in the "Your turn" box.</p>
+<ol class="g-pick" data-g="ex1" data-own="A rich, vivid descriptive word (adjective or adverb) used correctly in a story sentence. Check the word is in the right role and position, and that the sentence is grammatical and natural.">
+<li data-a="1" data-form="grey, drizzly" data-q="It was a ___ morning in Toronto. (Photo E)">It was a <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-1"> morning in Toronto. (Photo E) <span class="opts game-ui"><button>nice</button><button>grey, drizzly</button><button>greyly</button></span></li>
+<li data-a="0" data-form="briskly" data-q="Maya walked ___ through the rain to her car.">Maya walked <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-2"> through the rain to her car. <span class="opts game-ui"><button>briskly</button><button>good</button><button>quick</button></span></li>
+<li data-a="1" data-form="absolutely awful" data-q="The traffic was ___ (Photo G)">The traffic was <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-3"> (Photo G) <span class="opts game-ui"><button>bad</button><button>absolutely awful</button><button>awfully</button></span></li>
+<li data-a="1" data-form="painfully slowly" data-q="The cars moved ___ along the wet road.">The cars moved <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-4"> along the wet road. <span class="opts game-ui"><button>slow</button><button>painfully slowly</button><button>slowness</button></span></li>
+<li data-a="0" data-form="eerie" data-q="At noon she photographed an ___ old factory. (Photo D)">At noon she photographed an <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-5"> old factory. (Photo D) <span class="opts game-ui"><button>eerie</button><button>eerily</button><button>good</button></span></li>
+<li data-a="1" data-form="thoughtfully" data-q="Later she sat ___ on a lonely bench in the park. (Photo C)">Later she sat <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-6"> on a lonely bench in the park. (Photo C) <span class="opts game-ui"><button>quiet</button><button>thoughtfully</button><button>nice</button></span></li>
+<li data-a="1" data-form="breathtaking" data-q="That night, the ___ northern lights danced across the sky. (Photo H)">That night, the <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-7"> northern lights danced across the sky. (Photo H) <span class="opts game-ui"><button>nice</button><button>breathtaking</button><button>breathtakingly</button></span></li>
+<li data-a="1" data-form="contentedly" data-q="Finally, she relaxed ___ by the crackling fire. (Photo F)">Finally, she relaxed <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-8"> by the crackling fire. (Photo F) <span class="opts game-ui"><button>happy</button><button>contentedly</button><button>content</button></span></li>
+</ol>
+
+<h2 id="ex2" class="ex">Exercise 2: Story builder</h2>
+<p>Build each sentence of Maya's story. Tap a word to put it in the next gap. Tap a word in a gap to take it out. Many answers are right, so make it your story!</p>
+<ol class="g-build" data-g="ex2">
+<li data-q="Story builder: The ___ rain fell ___ on the ___ streets."><span class="frame-photo">Photo E:</span> The <span class="slot" data-type="adj" data-for="rain"></span> rain fell <span class="slot" data-type="adv" data-for="fell"></span> on the <span class="slot" data-type="adj" data-for="streets"></span> streets.<span class="bank-words" hidden>icy:adj steadily:adv empty:adj heavily:adv shiny:adj gently:adv</span><input class="blank" type="hidden" data-k="ex2-1"></li>
+<li data-q="Story builder: Maya ___ opened her ___ umbrella and walked ___ to the car."><span class="frame-photo">Photo E:</span> Maya <span class="slot" data-type="adv" data-for="opened"></span> opened her <span class="slot" data-type="adj" data-for="umbrella"></span> umbrella and walked <span class="slot" data-type="adv" data-for="walked"></span> to the car.<span class="bank-words" hidden>quickly:adv black:adj carefully:adv old:adj slowly:adv broken:adj</span><input class="blank" type="hidden" data-k="ex2-2"></li>
+<li data-q="Story builder: The ___ cars moved ___ through the ___ city."><span class="frame-photo">Photo G:</span> The <span class="slot" data-type="adj" data-for="cars"></span> cars moved <span class="slot" data-type="adv" data-for="moved"></span> through the <span class="slot" data-type="adj" data-for="city"></span> city.<span class="bank-words" hidden>endless:adj painfully:adv noisy:adj slowly:adv crowded:adj impatiently:adv</span><input class="blank" type="hidden" data-k="ex2-3"></li>
+<li data-q="Story builder: Inside the ___ factory, the wind whistled ___ through the ___ windows."><span class="frame-photo">Photo D:</span> Inside the <span class="slot" data-type="adj" data-for="factory"></span> factory, the wind whistled <span class="slot" data-type="adv" data-for="whistled"></span> through the <span class="slot" data-type="adj" data-for="windows"></span> windows.<span class="bank-words" hidden>abandoned:adj eerily:adv broken:adj softly:adv dark:adj loudly:adv</span><input class="blank" type="hidden" data-k="ex2-4"></li>
+<li data-q="Story builder: That night, ___ green lights danced ___ above the ___ mountains."><span class="frame-photo">Photo H:</span> That night, <span class="slot" data-type="adj" data-for="lights"></span> green lights danced <span class="slot" data-type="adv" data-for="danced"></span> above the <span class="slot" data-type="adj" data-for="mountains"></span> mountains.<span class="bank-words" hidden>magical:adj gracefully:adv snowy:adj silently:adv bright:adj slowly:adv</span><input class="blank" type="hidden" data-k="ex2-5"></li>
+<li data-q="Story builder: Maya sat ___ by the ___ fire and smiled ___."><span class="frame-photo">Photo F:</span> Maya sat <span class="slot" data-type="adv" data-for="sat"></span> by the <span class="slot" data-type="adj" data-for="fire"></span> fire and smiled <span class="slot" data-type="adv" data-for="smiled"></span>.<span class="bank-words" hidden>comfortably:adv warm:adj happily:adv crackling:adj peacefully:adv cosy:adj</span><input class="blank" type="hidden" data-k="ex2-6"></li>
+</ol>
+
+<h2 id="ex3" class="ex">Exercise 3: Boring-word detector</h2>
+<p>Make each plain sentence richer. The meter counts your adjectives and adverbs as you type, and warns you about boring words. Then press <strong>Check</strong>.</p>
+<div class="g-write" data-g="ex3" data-task="Rewrite each plain sentence so it is richer: keep the meaning, replace boring words, and add at least one adjective and one adverb." data-focus="The student rewrites a plain story sentence to make it richer. Mark correct only if it keeps the same basic meaning, is grammatical and natural, and adds at least one adjective AND one adverb, or replaces boring words (good, nice, bad, big, very) with more precise ones. If it is correct but still plain, mark almost and suggest one richer word. Check adjective/adverb forms and positions.">
+<ol>
+<li>Plain: <em>The weather was bad.</em><br><textarea class="blank area metered" rows="2" aria-label="Richer version of: The weather was bad." data-k="ex3-1"></textarea></li>
+<li>Plain: <em>Maya walked to the car.</em><br><textarea class="blank area metered" rows="2" aria-label="Richer version of: Maya walked to the car." data-k="ex3-2"></textarea></li>
+<li>Plain: <em>The factory was very old and big.</em><br><textarea class="blank area metered" rows="2" aria-label="Richer version of: The factory was very old and big." data-k="ex3-3"></textarea></li>
+<li>Plain: <em>The lights in the sky were nice.</em><br><textarea class="blank area metered" rows="2" aria-label="Richer version of: The lights in the sky were nice." data-k="ex3-4"></textarea></li>
+</ol>
+<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="ex3-check"></p>
+</div>
+
+<h2 id="ex4" class="ex">Exercise 4: Roll the dice</h2>
+<p>Roll the dice to get a photo, an adjective and an adverb. Write the next sentence of the story using both words. Don't like your words? Roll again!</p>
+<div class="g-write" data-g="ex4" data-task="Roll the dice, then write the next sentence of the story about the photo, using the adjective and the adverb shown." data-focus="The student must write the next sentence of a story about the given photo, using BOTH the given adjective and the given adverb, each in the right role (adjective describing a noun or after be/look/feel; adverb describing a verb). Mark off-task if either word is missing or if the sentence has nothing to do with the photo. Also check grammar and word order.">
+<ol>
+<li class="dice-li"><button type="button" class="dice-btn game-ui">&#9856; Roll the dice</button> <span class="dice-prompt">Tap Roll the dice to get your words.</span><br><textarea class="blank area metered" rows="2" aria-label="Your dice sentence 1" data-k="ex4-1"></textarea></li>
+<li class="dice-li"><button type="button" class="dice-btn game-ui">&#9856; Roll the dice</button> <span class="dice-prompt">Tap Roll the dice to get your words.</span><br><textarea class="blank area metered" rows="2" aria-label="Your dice sentence 2" data-k="ex4-2"></textarea></li>
+<li class="dice-li"><button type="button" class="dice-btn game-ui">&#9856; Roll the dice</button> <span class="dice-prompt">Tap Roll the dice to get your words.</span><br><textarea class="blank area metered" rows="2" aria-label="Your dice sentence 3" data-k="ex4-3"></textarea></li>
+</ol>
+<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="ex4-check"></p>
+</div>
+
+<h2 id="ex5" class="ex">Exercise 5: Match the halves</h2>
+<p>Tap the start of a sentence, then tap its ending.</p>
+<div class="g-match" data-g="ex5">
+<ul>
+<li data-l="The rain fell" data-r="steadily on the empty streets." data-q="Match: The rain fell">The rain fell steadily on the empty streets.<input class="blank" type="hidden" data-k="ex5-1"></li>
+<li data-l="The old factory looked" data-r="eerie in the grey light." data-q="Match: The old factory looked">The old factory looked eerie in the grey light.<input class="blank" type="hidden" data-k="ex5-2"></li>
+<li data-l="The impatient drivers sounded" data-r="their horns angrily." data-q="Match: The impatient drivers sounded">The impatient drivers sounded their horns angrily.<input class="blank" type="hidden" data-k="ex5-3"></li>
+<li data-l="The northern lights moved" data-r="gracefully across the sky." data-q="Match: The northern lights moved">The northern lights moved gracefully across the sky.<input class="blank" type="hidden" data-k="ex5-4"></li>
+<li data-l="By evening, Maya felt" data-r="absolutely exhausted." data-q="Match: By evening, Maya felt">By evening, Maya felt absolutely exhausted.<input class="blank" type="hidden" data-k="ex5-5"></li>
+<li data-l="The fire crackled" data-r="warmly in the cosy cabin." data-q="Match: The fire crackled">The fire crackled warmly in the cosy cabin.<input class="blank" type="hidden" data-k="ex5-6"></li>
+</ul>
+</div>
+
+<h2 id="ex6" class="ex">Exercise 6: Your story</h2>
+<p>Choose a photo and write a short story about it, one sentence at a time. Try to use at least <strong>three adjectives and two adverbs</strong>. Press <strong>Check</strong> after each sentence.</p>
+<p class="story-photo">My photo: <select class="story-pick" aria-label="Choose your photo"><option value="">choose a photo</option><option>Photo A</option><option>Photo B</option><option>Photo C</option><option>Photo D</option><option>Photo E</option><option>Photo F</option><option>Photo G</option><option>Photo H</option></select></p>
+<div class="g-write" data-g="ex6" data-task="Write a short story (five sentences) about the chosen photo, one sentence at a time. The whole story should use at least three adjectives and two adverbs." data-focus="This is one sentence of a five-sentence story about one of the lesson&#x27;s photos (a rainy city street, a traffic jam, an abandoned factory, an empty park bench, a misty lake, a celebration with confetti, northern lights, a cosy room with a fire). Check that the sentence is grammatical, natural and fits a story, and that adjectives and adverbs are correct in form, role and position. Praise vivid word choices; if the sentence has no adjective or adverb, mark almost and suggest one.">
+<ol>
+<li>Sentence 1<br><textarea class="blank area metered story" rows="2" aria-label="Story sentence 1" data-k="ex6-1"></textarea></li>
+<li>Sentence 2<br><textarea class="blank area metered story" rows="2" aria-label="Story sentence 2" data-k="ex6-2"></textarea></li>
+<li>Sentence 3<br><textarea class="blank area metered story" rows="2" aria-label="Story sentence 3" data-k="ex6-3"></textarea></li>
+<li>Sentence 4<br><textarea class="blank area metered story" rows="2" aria-label="Story sentence 4" data-k="ex6-4"></textarea></li>
+<li>Sentence 5<br><textarea class="blank area metered story" rows="2" aria-label="Story sentence 5" data-k="ex6-5"></textarea></li>
+</ol>
+<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="ex6-check"></p>
+</div>
+<p class="story-total" aria-live="polite"></p>
+
+<h2 id="ex7" class="ex">Exercise 7: Speaking</h2>
+<ul>
+<li><strong>Add a word:</strong> one person says a plain sentence: <em>The cat sat.</em> The next adds an adjective: <em>The fat cat sat.</em> The next adds an adverb: <em>The fat cat sat lazily.</em> Keep going! How long can you make it?</li>
+<li><strong>Fortunately, unfortunately:</strong> tell a story together. Each person adds one sentence starting with <em>Fortunately</em> or <em>Unfortunately</em>, with at least one adjective or adverb. <em>Unfortunately, it was raining heavily. Fortunately, Maya had a huge umbrella…</em></li>
+<li><strong>Tell Maya's story</strong> in your own words, looking only at the photos.</li>
+</ul>
+<details class="answers">
+  <summary>Check your answers</summary>
+  <div class="answers-body">
+<p><strong>Exercise 1:</strong> 1 grey, drizzly, 2 briskly, 3 absolutely awful, 4 painfully slowly, 5 eerie, 6 thoughtfully, 7 breathtaking, 8 contentedly.</p>
+<p><strong>Exercise 2:</strong> Many answers are possible. Adjectives go before the nouns; adverbs describe the verbs. For example: The icy rain fell steadily on the empty streets.</p>
+<p><strong>Exercise 3:</strong> Your own answers. For example: The weather was absolutely miserable, and it rained heavily all day.</p>
+<p><strong>Exercise 4:</strong> Your own answers.</p>
+<p><strong>Exercise 5:</strong> The rain fell steadily on the empty streets. The old factory looked eerie in the grey light. The impatient drivers sounded their horns angrily. The northern lights moved gracefully across the sky. By evening, Maya felt absolutely exhausted. The fire crackled warmly in the cosy cabin.</p>
+<p><strong>Exercise 6:</strong> Your own story.</p>
+  </div>
+</details>
+<section class="credits">
+<h2>The photos</h2>
+<p class="small">Photos from Unsplash (unsplash.com), used under the Unsplash License. Photo E shows the Gooderham Building in Toronto.</p>
+</section>
+</main>
+<footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
+<script>
+(function () {
+  var key = "traps-" + location.pathname;
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || "{}") || {}; } catch (e) {}
+  var fields = document.querySelectorAll(".blank");
+  fields.forEach(function (f) {
+    if (saved[f.dataset.k]) f.value = saved[f.dataset.k];
+    f.addEventListener("input", function () {
+      saved[f.dataset.k] = f.value;
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
+    });
+  });
+  var clear = document.getElementById("clear");
+  if (clear) clear.addEventListener("click", function () {
+    if (!confirm("Clear all your answers on this page?")) return;
+    fields.forEach(function (f) { f.value = ""; });
+    saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
+    location.reload();
+  });
+  var pr = document.getElementById("print");
+  if (pr) pr.addEventListener("click", function () { window.print(); });
+  // Print the answer key on its own last page, even when it's closed on screen.
+  var ans = document.querySelector("details.answers"), wasOpen = false;
+  window.addEventListener("beforeprint", function () { if (ans) { wasOpen = ans.open; ans.open = true; } });
+  window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
+})();
+</script>
+<script src="../games.js?v=1793970000"></script>
+<script src="../api.js?v=1792889681"></script>
+<script src="../work.js?v=1793900000"></script>
+<div class="photobar" role="region" aria-label="Photos">
+  <div class="photobar-in"><span class="photobar-label">See a photo:</span><span class="photobar-btns"></span></div>
+</div>
+<div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo">
+  <div class="lb-top"><span class="lb-title"></span><button type="button" class="lb-close">Close &times;</button></div>
+  <div class="lb-img"><img alt=""></div>
+  <div class="lb-nav"><button type="button" class="lb-prev">&larr; Previous</button><button type="button" class="lb-next">Next &rarr;</button></div>
+</div>
+<script>
+// Photo bar, tappable "Photo A" names and a full-screen viewer, so any photo is one tap away.
+(function () {
+  var photos = {}, letters = [];
+  document.querySelectorAll("figure.photo img").forEach(function (img) {
+    var L = img.closest(".photo-open").dataset.photo; photos[L] = img; letters.push(L);
+  });
+  letters.sort();
+  var box = document.querySelector(".lightbox"), big = box.querySelector("img"), title = box.querySelector(".lb-title"), cur = null, back = null;
+  function open(L) {
+    cur = L; back = document.activeElement;
+    big.src = photos[L].currentSrc || photos[L].src; big.alt = photos[L].alt; title.textContent = "Photo " + L;
+    box.hidden = false; box.querySelector(".lb-close").focus();
+  }
+  function close() { box.hidden = true; if (back && back.focus) back.focus(); }
+  function step(d) { var i = (letters.indexOf(cur) + d + letters.length) % letters.length; open(letters[i]); }
+  box.querySelector(".lb-close").addEventListener("click", close);
+  box.querySelector(".lb-prev").addEventListener("click", function () { step(-1); });
+  box.querySelector(".lb-next").addEventListener("click", function () { step(1); });
+  box.addEventListener("click", function (e) { if (e.target === box || e.target.classList.contains("lb-img")) close(); });
+  document.addEventListener("keydown", function (e) {
+    if (box.hidden) return;
+    if (e.key === "Escape") close(); else if (e.key === "ArrowRight") step(1); else if (e.key === "ArrowLeft") step(-1);
+  });
+  document.querySelectorAll(".photo-open").forEach(function (b) { b.addEventListener("click", function () { open(b.dataset.photo); }); });
+  var bar = document.querySelector(".photobar-btns");
+  letters.forEach(function (L) {
+    var b = document.createElement("button"); b.type = "button"; b.textContent = L; b.setAttribute("aria-label", "Show photo " + L);
+    b.addEventListener("click", function () { open(L); }); bar.append(b);
+  });
+  var walker = document.createTreeWalker(document.querySelector("main"), NodeFilter.SHOW_TEXT, { acceptNode: function (n) {
+    if (!/Photo [A-H]\b/.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+    if (n.parentElement.closest("figure.photo, details.answers, .credits, button, .g-order, input, textarea, .rule")) return NodeFilter.FILTER_REJECT;
+    return NodeFilter.FILTER_ACCEPT; } });
+  var nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(function (n) {
+    var frag = document.createDocumentFragment();
+    n.nodeValue.split(/(Photo [A-H]\b)/).forEach(function (t) {
+      var m = t.match(/^Photo ([A-H])$/);
+      if (m && photos[m[1]]) { var b = document.createElement("button"); b.type = "button"; b.className = "photo-link"; b.textContent = t; b.setAttribute("aria-label", "Show " + t);
+        b.addEventListener("click", function () { open(m[1]); }); frag.append(b); }
+      else if (t) frag.append(document.createTextNode(t));
+    });
+    n.parentNode.replaceChild(frag, n);
+  });
+})();
+</script>
+<script>
+// Richness meter, boring-word warnings and the dice for Tell a Richer Story.
+(function () {
+  var ADJ = ("absolute angry awful bare beautiful big bitter black bleak blue bright brilliant broken busy calm careful cheerful chaotic chilly clean clear cloudy cold colourful colorful comfortable cosy cozy crackling creepy crowded curious damp dangerous dark deep delighted deserted dim drizzly dreamy dry dull dusty eager early eerie elegant empty endless enormous excited exciting exhausted faint famous fast fierce filthy fine foggy fragile fresh friendly frightened frightening frozen funny furious gentle gigantic gloomy glorious golden gorgeous graceful grateful great green grey gray grim happy hard harsh heavy hectic helpful hidden high hopeful horrible hot huge hungry icy impatient incredible lively lonely long loud lovely lucky magical majestic massive melancholy merry mighty misty miserable modern muddy mysterious narrow nervous new noisy old orange packed painful pale patient peaceful perfect pink playful pleasant polite powerful precious pretty proud quick quiet rainy rapid red relaxed relaxing rich rough rusty sad safe scared scary serene shady sharp shiny short shy silent silly silver simple sleepy slow small smooth snowy soft soggy sparkling spooky stormy strange stressful strong stunning sudden sunny sweet tall tense terrible terrifying thick thin thoughtful tiny tired tranquil tremendous ugly unusual vast violent vivid warm weak wet white wide wild windy wise wonderful worried yellow young breathtaking busy dramatic drowsy enchanting freezing frosty gleaming glowing howling joyful mournful roaring shimmering soaring tearful twinkling whispering abandoned ancient bustling exhausting impressive peculiar thrilling").split(" ");
+  var IRREG_ADV = ["well", "fast", "hard", "late", "early", "soon", "often", "always", "never", "sometimes", "almost", "too", "quite", "rather", "together", "outside", "inside", "away", "everywhere", "suddenly"];
+  var NOT_ADV = ["friendly", "lovely", "lonely", "silly", "ugly", "only", "family", "early", "holy", "jolly", "lively", "elderly", "costly", "likely", "daily", "weekly", "monthly", "deadly", "curly", "chilly", "hilly", "sly", "fly", "july", "italy", "reply", "supply", "apply", "rely", "lily", "belly", "jelly", "bully", "ally"];
+  var BORING = ["good", "nice", "bad", "big", "small", "very", "thing", "things", "stuff", "ok", "okay", "lots"];
+  var adjSet = {}; ADJ.forEach(function (w) { adjSet[w] = 1; });
+  function analyse(t) {
+    var words = (t.toLowerCase().match(/[a-z']+/g) || []);
+    var adj = [], adv = [], bor = [];
+    words.forEach(function (w) {
+      if (BORING.indexOf(w) > -1) { if (bor.indexOf(w) < 0) bor.push(w); return; }
+      if (adjSet[w]) { adj.push(w); return; }
+      if ((/ly$/.test(w) && w.length > 4 && NOT_ADV.indexOf(w) < 0) || IRREG_ADV.indexOf(w) > -1) adv.push(w);
+    });
+    return { adj: adj, adv: adv, bor: bor };
+  }
+  function stars(n) { var s = ""; for (var i = 0; i < 3; i++) s += i < n ? "★" : "☆"; return s; }
+  function render(m, r) {
+    var score = Math.min(3, Math.min(r.adj.length, 2) + Math.min(r.adv.length, 1) - (r.bor.length ? 1 : 0));
+    m.innerHTML = "";
+    var c = document.createElement("span"); c.className = "m-count";
+    c.innerHTML = "Adjectives: <strong>" + r.adj.length + "</strong>" + (r.adj.length ? " (" + r.adj.join(", ") + ")" : "") + " &middot; Adverbs: <strong>" + r.adv.length + "</strong>" + (r.adv.length ? " (" + r.adv.join(", ") + ")" : "");
+    var s = document.createElement("span"); s.className = "m-stars"; s.textContent = stars(Math.max(0, score)); s.setAttribute("aria-label", "Richness " + Math.max(0, score) + " of 3");
+    m.append(s, c);
+    if (r.bor.length) { var b = document.createElement("span"); b.className = "m-boring"; b.textContent = "Try a richer word than: " + r.bor.join(", "); m.append(b); }
+  }
+  document.querySelectorAll("textarea.metered").forEach(function (t) {
+    var m = document.createElement("div"); m.className = "meter game-ui"; m.setAttribute("aria-live", "polite");
+    var after = t.nextElementSibling && t.nextElementSibling.classList.contains("g-wcheck") ? t.nextElementSibling : t;
+    after.after(m);
+    function up() { render(m, analyse(t.value)); total(); }
+    t.addEventListener("input", up); up();
+  });
+  var totalBox = document.querySelector(".story-total");
+  function total() {
+    if (!totalBox) return;
+    var a = 0, d = 0;
+    document.querySelectorAll("textarea.story").forEach(function (t) { var r = analyse(t.value); a += r.adj.length; d += r.adv.length; });
+    var goal = a >= 3 && d >= 2;
+    totalBox.textContent = "Your story so far: " + a + " adjective" + (a === 1 ? "" : "s") + " and " + d + " adverb" + (d === 1 ? "" : "s") + (goal ? ". Goal reached: three adjectives and two adverbs!" : ". Goal: three adjectives and two adverbs.");
+    if (goal && !totalBox.dataset.done && window.lessonGames && a + d > 0) { totalBox.dataset.done = "1"; window.lessonGames.celebrate(totalBox, "Rich story!"); }
+  }
+  total();
+  // The chosen photo for "Your story" goes into each sentence's prompt, so Claude knows which photo it is.
+  var pickSel = document.querySelector(".story-pick");
+  var KEYP = "story-photo-" + location.pathname;
+  try { if (pickSel) pickSel.value = localStorage.getItem(KEYP) || ""; } catch (e) {}
+  function setStoryPhoto() {
+    var v = pickSel.value;
+    document.querySelectorAll("textarea.story").forEach(function (t, i) {
+      var li = t.closest("li"); var first = li.firstChild;
+      if (first && first.nodeType === 3) first.nodeValue = "Sentence " + (i + 1) + (v ? " (story about " + v + ")" : "");
+    });
+    try { localStorage.setItem(KEYP, v); } catch (e) {}
+  }
+  if (pickSel) { pickSel.addEventListener("change", setStoryPhoto); setStoryPhoto(); }
+  // The dice.
+  var PH = { A: "a misty lake", B: "a celebration with confetti", C: "an empty park bench", D: "an abandoned factory", E: "a rainy city street", F: "a cosy room with a fire", G: "a traffic jam", H: "northern lights" };
+  var DADJ = ["gloomy", "chaotic", "eerie", "lonely", "breathtaking", "cosy", "peaceful", "joyful", "deserted", "enormous", "freezing", "crowded", "mysterious", "exhausted", "noisy"];
+  var DADV = ["impatiently", "slowly", "nervously", "quietly", "silently", "happily", "carefully", "suddenly", "wildly", "gently", "proudly", "sadly", "loudly", "anxiously", "calmly"];
+  var KEYD = "dice-" + location.pathname, rolls = {};
+  try { rolls = JSON.parse(localStorage.getItem(KEYD) || "{}") || {}; } catch (e) {}
+  document.querySelectorAll(".dice-li").forEach(function (li, i) {
+    var b = li.querySelector(".dice-btn"), p = li.querySelector(".dice-prompt");
+    function show(r) {
+      p.innerHTML = "";
+      [["Photo " + r.p, ""], [r.adj, "adjective: "], [r.adv, "adverb: "]].forEach(function (x) { var s = document.createElement("span"); s.className = "dp"; s.textContent = x[1] + x[0]; p.append(s, " "); });
+      p.setAttribute("data-words", "Photo " + r.p + " (" + PH[r.p] + "), adjective: " + r.adj + ", adverb: " + r.adv);
+      var hid = li.querySelector(".dice-text"); if (!hid) { hid = document.createElement("span"); hid.className = "dice-text"; hid.hidden = true; p.after(hid); }
+      hid.textContent = " Photo " + r.p + " (" + PH[r.p] + "). Use the adjective “" + r.adj + "” and the adverb “" + r.adv + "”.";
+    }
+    function roll() {
+      var keys = Object.keys(PH);
+      var r = { p: keys[Math.floor(Math.random() * keys.length)], adj: DADJ[Math.floor(Math.random() * DADJ.length)], adv: DADV[Math.floor(Math.random() * DADV.length)] };
+      rolls[i] = r; try { localStorage.setItem(KEYD, JSON.stringify(rolls)); } catch (e) {}
+      show(r); p.classList.remove("dice-roll"); void p.offsetWidth; p.classList.add("dice-roll");
+    }
+    b.addEventListener("click", roll);
+    if (rolls[i]) show(rolls[i]); else roll();
+  });
+})();
+</script>
+</body>
+</html>
