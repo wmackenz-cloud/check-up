@@ -10,13 +10,12 @@
     { label: "Results", href: "https://claude.ai/artifact/WzojtAyiYfuXcTMs7TyGwQ" }
   ];
   var RES = [
-    { label: "Grammar Traps", note: "11 worksheets with teacher notes", href: "grammar-traps/index.html", match: "grammar-traps/" },
-    { label: "Grammar", note: "Core grammar lessons", href: "grammar/index.html", match: "grammar/" },
+    { label: "Grammar", note: "A or An? and the 11 Grammar Traps", href: "grammar/index.html", match: "grammar" },
     { label: "BBC videos", note: "6 Minute English with your vocabulary notes", href: "bbc/index.html", match: "bbc/" },
-    { label: "Vocabulary", note: "9 worksheets, one per Check-Up area", href: "vocabulary/index.html", match: "vocabulary/" },
+    { label: "Vocabulary", note: "17 worksheets, incl. music and photo lessons", href: "vocabulary/index.html", match: "vocabulary/" },
     { label: "STANAG / JFLT", note: "Placement check, speaking interview, military vocabulary", href: "stanag/index.html", match: "stanag/" },
     { label: "Pronunciation", note: "Lessons and drills for Vietnamese speakers", href: "pronunciation/teacher-f42702.html", match: "pronunciation/" },
-    { label: "Speaking Confidence", note: "7-lesson series in Google Drive", href: "https://drive.google.com/drive/folders/1IH6FfV2yImOwFIoIR-C-zsapwcYrFUGO" },
+    { label: "Speaking Confidence", note: "7 lessons for students who freeze", href: "speaking/index.html", match: "speaking/" },
     null,
     { label: "Teacher Library", note: "Everything in one place", href: "library.html" }
   ];
