@@ -166,14 +166,17 @@ li.done .g-line { background: var(--ok-soft); border-bottom-color: var(--ok); }
 @media print { .build-bank, .g-build .g-order-acts { display: none !important; } }
 
 /* Why? explanations */
-.g-whybtn { font: inherit; font-size: .82rem; font-weight: 700; border-radius: 999px; padding: 2px 12px; cursor: pointer; line-height: 1.5;
-  background: var(--sheet); color: var(--warn); border: 2px solid var(--warn); vertical-align: middle; }
-.g-whybtn.open { background: var(--warn-soft); }
+.g-whybtn { font: inherit; font-size: .85rem; font-weight: 600; background: none; border: 0; padding: 2px 6px; cursor: pointer;
+  color: var(--ink-soft); text-decoration: underline dotted; text-underline-offset: 3px; vertical-align: middle; }
+.g-whybtn:hover, .g-whybtn.open { color: var(--warn); }
+button.g-whybtn.g-whybtn { background: none !important; border: 0 !important; box-shadow: none !important; min-width: 0; padding: 2px 6px; }
+li:not(.done) .g-whybtn { display: none !important; }
 li.done .opts .g-whybtn, li.done .g-whybtn { opacity: 1 !important; }
-.g-why { margin: 6px 0 4px; padding: 8px 12px; border-left: 4px solid var(--warn); background: var(--warn-soft); border-radius: 0 10px 10px 0; font-size: .95rem; line-height: 1.5; color: var(--ink); }
+.g-tip { margin: 2px 0 8px; font-size: .88rem; color: var(--ink-soft); font-style: italic; }
+.g-why { margin: 4px 0 6px; padding: 6px 12px; border-left: 4px solid var(--warn); background: var(--warn-soft); border-radius: 0 10px 10px 0; font-size: .95rem; line-height: 1.5; color: var(--ink); }
 .g-why-lab { color: var(--warn); }
 .g-why[hidden] { display: none !important; }
-@media print { .g-whybtn { display: none; } .g-why { display: none !important; } }
+@media print { .g-whybtn, .g-tip { display: none; } .g-why { display: none !important; } }
 
 /* Movement */
 .pop { animation: g-pop .45s ease-out; }

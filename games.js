@@ -116,13 +116,13 @@
   function marksOf(st, n) { var m = []; for (var i = 0; i < n; i++) { var s = st[i]; m.push(s && s.done ? (s.miss ? "later" : "first") : ""); } return m; }
 
   // ---------- "Why?": an explanation for each question (data-why on the item) ----------
-  // It opens by itself after a wrong answer. Opening it before answering is allowed, but then the item
-  // no longer counts as right first time.
+  // It opens by itself after a wrong answer. A quiet "why?" link appears only once the item is answered,
+  // so unanswered questions stay clean. One tip line per exercise tells students to guess if unsure.
   function whyFor(li, s, keep, place) {
     var text = li.dataset.why; if (!text) return { show: function () {} };
-    var b = btn("Why?", "g-whybtn game-ui"); b.setAttribute("aria-expanded", "false");
+    var b = btn("why?", "g-whybtn game-ui"); b.setAttribute("aria-expanded", "false");
     var box = el("div", "g-why game-ui"); box.hidden = true; box.setAttribute("aria-live", "polite");
-    box.append(el("strong", "g-why-lab", "Why? "), document.createTextNode(text));
+    box.append(document.createTextNode(text));
     place(b, box);
     function show() { box.hidden = false; b.setAttribute("aria-expanded", "true"); b.classList.add("open"); }
     b.addEventListener("click", function () {
@@ -135,7 +135,7 @@
   // For boards (matching, sorting): one explanation panel under the board.
   function whyPanel(after) {
     var box = el("div", "g-why game-ui"); box.hidden = true; box.setAttribute("aria-live", "polite"); after.after(box);
-    return function (label, text) { if (!text) return; box.innerHTML = ""; box.append(el("strong", "g-why-lab", (label ? "About \u201c" + label + "\u201d: " : "Why? ")), document.createTextNode(text)); box.hidden = false; };
+    return function (label, text) { if (!text) return; box.innerHTML = ""; box.append(el("strong", "g-why-lab", (label ? "\u201c" + label + "\u201d: " : "")), document.createTextNode(text)); box.hidden = false; };
   }
 
   // ---------- "Your turn": after a right answer, write your own sentence with the word (lists with data-own) ----------
@@ -699,5 +699,12 @@
       if (life < 1) requestAnimationFrame(frame); else cv.remove();
     })(t0);
   }
+  // One quiet tip per exercise that has explanations (not one button per question).
+  document.querySelectorAll(".g-pick, .g-spot, .g-type, .g-order, .g-build, .g-match, .sorter").forEach(function (g) {
+    if (!g.querySelector("[data-why]")) return;
+    var prev = g.previousElementSibling;
+    if (prev && prev.classList.contains("g-tip")) return;
+    g.before(el("p", "g-tip game-ui", "Not sure? Have a guess. If it\u2019s wrong, you\u2019ll see why."));
+  });
   window.lessonGames = { celebrate: celebrate, reset: function () { try { localStorage.removeItem(KEY); } catch (e) {} } };
 })();
