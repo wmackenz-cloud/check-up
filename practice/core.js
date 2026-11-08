@@ -5,7 +5,7 @@
   var i;
   for (i = 1; i <= 11; i++) IDS.push("gt-" + i);
   IDS.push("aa");
-  for (i = 1; i <= 17; i++) IDS.push("v-" + i);
+  for (i = 1; i <= 18; i++) IDS.push("v-" + i);
   for (i = 1; i <= 4; i++) IDS.push("sv-" + i);
   for (i = 1; i <= 7; i++) IDS.push("sp-" + i);
 

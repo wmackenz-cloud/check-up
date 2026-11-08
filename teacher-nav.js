@@ -12,7 +12,7 @@
   var RES = [
     { label: "Grammar", note: "A or An? and the 11 Grammar Traps", href: "grammar/index.html", match: "grammar" },
     { label: "BBC videos", note: "6 Minute English with your vocabulary notes", href: "bbc/index.html", match: "bbc/" },
-    { label: "Vocabulary", note: "17 worksheets, incl. music and photo lessons", href: "vocabulary/index.html", match: "vocabulary/" },
+    { label: "Vocabulary", note: "18 worksheets, incl. music and photo lessons", href: "vocabulary/index.html", match: "vocabulary/" },
     { label: "STANAG / JFLT", note: "Placement check, speaking interview, military vocabulary", href: "stanag/index.html", match: "stanag/" },
     { label: "Pronunciation", note: "Lessons and drills for Vietnamese speakers", href: "pronunciation/teacher-f42702.html", match: "pronunciation/" },
     { label: "Speaking Confidence", note: "7 lessons for students who freeze", href: "speaking/index.html", match: "speaking/" },
