@@ -51,6 +51,12 @@
     .panel.maker, .lesson-meta .btn, .jump { display: none !important; }
     .bank-lesson { border: none; padding: 0; break-before: auto; }
   }
+  details.bank-lesson { border: 1px solid var(--rule, #dbe2e0); border-radius: 10px; margin: 6px 0; padding: 0 14px; background: var(--sheet, #fff); }
+  details.bank-lesson > summary { cursor: pointer; padding: 10px 0; font-weight: 700; }
+  details.bank-lesson > summary .lid { color: var(--accent); margin-right: 8px; }
+  details.bank-lesson > summary .cnt { font-weight: 400; color: var(--ink-soft); }
+  details.bank-lesson[open] { padding-bottom: 10px; }
+  @media print { details.bank-lesson { break-inside: avoid; } #toggle-all { display: none; } }
 </style>
 </head>
 <body class="library">
@@ -62,26 +68,14 @@
   <p class="hint">This page is for you. <strong>Try it</strong> opens a practice with just that lesson. Use <strong>Make a practice link</strong> to send a student their own set.</p>
 </header>
 <main>
-<section class="panel" id="summary"><h2>In the bank</h2><p class="stats" id="stats">Loading&hellip;</p><ul class="jump" id="jump"></ul></section>
+<section class="panel" id="summary"><h2>In the bank</h2><p class="stats" id="stats">Loading&hellip;</p><ul class="jump" id="jump" hidden></ul></section>
 
-<section class="panel maker" id="maker">
+<section class="panel" id="maker-note">
   <h2>Make a practice link</h2>
-  <p class="hint">Tick the lessons the student has done. Tick <strong>Focus</strong> for the ones to lean on (about half the questions). The same link always gives the same questions; a new date gives a new set.</p>
-  <div class="mk-grid">
-    <label>Student code <input id="mk-code" autocomplete="off" spellcheck="false" placeholder="e.g. anna-k"></label>
-    <label>Name <input id="mk-name" autocomplete="off" placeholder="e.g. Anna"></label>
-    <label>Number of questions <select id="mk-n"><option>5</option><option>8</option><option selected>10</option><option>12</option><option>15</option><option>20</option></select></label>
-    <label>Date <input id="mk-d" type="date"></label>
-  </div>
-  <div class="mk-lessons"><table><thead><tr><th>Lesson</th><th>Done</th><th>Focus</th></tr></thead><tbody id="mk-rows"></tbody></table></div>
-  <div class="mk-out">
-    <input id="mk-link" readonly aria-label="Practice link" placeholder="Tick at least one lesson">
-    <button type="button" id="mk-copy">Copy link</button>
-    <a class="btn ghost" id="mk-open" href="#" target="_blank" rel="noopener">Open</a>
-  </div>
-  <p id="mk-msg" aria-live="polite"></p>
+  <p>Practice links are made in <a href="https://claude.ai/artifact/QFsUBGJkqCArmVdZji3y4X" target="_blank" rel="noopener">My Students</a> (the <strong>Practice link</strong> button at the top). It knows your students and their last worksheet, so it fills everything in for you. Student names stay private there, not on this website.</p>
 </section>
 
+<p><button type="button" class="ghost" id="toggle-all">Open all</button></p>
 <div id="lessons"></div>
 </main>
 <footer class="foot"><p>Question files: practice/bank/&lt;lesson id&gt;.js (see practice/SCHEMA.md).</p></footer>
@@ -114,8 +108,8 @@
     P.IDS.forEach(function (id) {
       var g = P.groupFor(id);
       if (g !== group) { group = g; host.append(el("h2", "group-h", g)); }
-      var L = P.lessons[id], sec = el("section", "bank-lesson"); sec.id = "l-" + id;
-      var h = el("h3"); h.append(el("span", "lid", id), document.createTextNode(L ? L.title : "No questions yet"));
+      var L = P.lessons[id], sec = el("details", "bank-lesson"); sec.id = "l-" + id;
+      var h = el("summary"); h.append(el("span", "lid", id), document.createTextNode(L ? L.title : "No questions yet"), el("span", "cnt", L ? " (" + L.items.length + ")" : ""));
       sec.append(h);
       var meta = el("div", "lesson-meta");
       if (L) {
@@ -138,19 +132,11 @@
       host.append(sec);
     });
 
-    // ---------- Make a practice link ----------
-    var rows = document.getElementById("mk-rows");
-    have.forEach(function (id) {
-      var tr = el("tr"), td = el("td");
-      td.append(el("strong", null, id + " "), document.createTextNode(P.lessons[id].title));
-      var done = el("input"); done.type = "checkbox"; done.dataset.l = id; done.setAttribute("aria-label", "Done: " + id);
-      var foc = el("input"); foc.type = "checkbox"; foc.dataset.f = id; foc.setAttribute("aria-label", "Focus: " + id);
-      foc.addEventListener("change", function () { if (foc.checked) done.checked = true; build(); });
-      done.addEventListener("change", function () { if (!done.checked) foc.checked = false; build(); });
-      var c1 = el("td", "c"), c2 = el("td", "c"); c1.append(done); c2.append(foc);
-      tr.append(td, c1, c2); rows.append(tr);
-    });
-    if (!have.length) { var tr = el("tr"), td = el("td", "hint", "No lessons in the bank yet."); td.colSpan = 3; tr.append(td); rows.append(tr); }
+    function openHash() { var t = location.hash && document.getElementById(location.hash.slice(1)); if (t && t.tagName === "DETAILS") { t.open = true; t.scrollIntoView(); } }
+    window.addEventListener("hashchange", openHash); openHash();
+    var tog = document.getElementById("toggle-all");
+    if (tog) tog.addEventListener("click", function () { var all = document.querySelectorAll("details.bank-lesson"), open = tog.dataset.open !== "1";
+      all.forEach(function (d) { d.open = open; }); tog.dataset.open = open ? "1" : "0"; tog.textContent = open ? "Close all" : "Open all"; });
   });
 
   function itemRow(it, lessonId) {
@@ -194,35 +180,6 @@
     return li;
   }
 
-  var codeIn = document.getElementById("mk-code"), nameIn = document.getElementById("mk-name"), nIn = document.getElementById("mk-n"), dIn = document.getElementById("mk-d");
-  var out = document.getElementById("mk-link"), open = document.getElementById("mk-open"), msg = document.getElementById("mk-msg");
-  dIn.value = today();
-  function build() {
-    var l = Array.prototype.map.call(document.querySelectorAll("#mk-rows input[data-l]:checked"), function (x) { return x.dataset.l; });
-    var f = Array.prototype.map.call(document.querySelectorAll("#mk-rows input[data-f]:checked"), function (x) { return x.dataset.f; });
-    var code = codeIn.value.toLowerCase().replace(/[^a-z0-9-]/g, "").slice(0, 40);
-    msg.className = ""; msg.textContent = "";
-    if (!l.length) { out.value = ""; open.removeAttribute("href"); return ""; }
-    var parts = [];
-    if (code) parts.push("student=" + encodeURIComponent(code));
-    if (nameIn.value.trim()) parts.push("who=" + encodeURIComponent(nameIn.value.trim()));
-    parts.push("l=" + l.join(","));
-    if (f.length) parts.push("focus=" + f.join(","));
-    parts.push("n=" + nIn.value);
-    parts.push("d=" + (dIn.value || today()));
-    out.value = tryBase + "?" + parts.join("&");
-    open.href = out.value;
-    return out.value;
-  }
-  [codeIn, nameIn, nIn, dIn].forEach(function (x) { x.addEventListener("input", build); x.addEventListener("change", build); });
-  document.getElementById("mk-copy").addEventListener("click", function () {
-    var url = build();
-    if (!url) { msg.className = "bad"; msg.textContent = "Tick at least one lesson first."; return; }
-    if (!codeIn.value.trim()) { msg.className = "bad"; msg.textContent = "Tip: add a student code so the results go to the right student. "; }
-    function done() { msg.textContent += "Copied. Paste it into your message to the student."; }
-    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, function () { out.select(); prompt("Copy this link:", url); });
-    else { out.select(); prompt("Copy this link:", url); }
-  });
 })();
 </script>
 </body>
