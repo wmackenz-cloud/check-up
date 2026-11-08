@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lesson Pathways</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="grammar-traps/traps.css?v=1793206303">
+<style>.group-h { max-width: 820px; margin: 28px auto 10px; font-family: var(--font-display); font-size: 1.2rem; color: var(--accent); }</style>
+<style>
+.group-h { max-width: 820px; margin: 28px auto 10px; font-family: var(--font-display); font-size: 1.2rem; color: var(--accent); }
+.route { max-width: 820px; margin: 0 auto 18px; background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; padding: 14px 16px; }
+.route h2 { margin: 0 0 2px; font-size: 1.15rem; color: var(--accent); }
+.route .note { margin: 0 0 10px; color: var(--ink-soft); font-size: .92rem; }
+.steps { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 4px; align-items: center; }
+.steps li { display: flex; align-items: center; gap: 4px; margin: 0; }
+.steps li + li::before { content: "\2192"; color: var(--ink-soft); margin-right: 2px; }
+.steps button { font: inherit; font-size: .9rem; border: 1px solid var(--accent); background: var(--paper); color: var(--ink); border-radius: 999px; padding: 4px 10px; cursor: pointer; text-align: left; }
+.steps button b { color: var(--accent); margin-right: 4px; }
+.steps button[aria-pressed="true"] { background: var(--accent); color: var(--sheet); }
+.steps button[aria-pressed="true"] b { color: var(--sheet); }
+.next-box { max-width: 820px; margin: 0 auto 18px; border: 2px solid var(--accent); border-radius: 12px; padding: 14px 16px; background: var(--sheet); }
+.next-box h2 { margin: 0 0 8px; font-size: 1.1rem; }
+.next-box ol { margin: 0; padding-left: 1.3em; display: grid; gap: 8px; }
+.next-box .why { display: block; color: var(--ink-soft); font-size: .92rem; }
+.pick-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+.pick-row select { font: inherit; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--rule); max-width: 100%; }
+@media print { .next-box { display: none; } }
+</style>
+</head>
+<body class="library">
+<script src="teacher-nav.js?v=1794400000"></script>
+<header class="top">
+  <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="library.html">Teacher library</a></li><li><span aria-current="page">Lesson pathways</span></li></ol></nav>
+  <h1>Lesson Pathways</h1>
+  <p class="lead">Five routes through your lessons. Each route goes in a sensible order, and every lesson also suggests a "bridge" to another route when it fits. Not sure what's next? Pick the last worksheet a student did.</p>
+</header>
+<main>
+<section class="next-box" aria-live="polite">
+  <h2>What's next after&hellip;</h2>
+  <div class="pick-row"><select id="pick" aria-label="Last worksheet"></select></div>
+  <ol id="next"></ol>
+</section>
+<div id="routes"></div>
+</main>
+<script src="pathway.js?v=1794400000"></script>
+<script>
+(function () {
+  var P = window.PATHWAY, pick = document.getElementById("pick"), next = document.getElementById("next"), host = document.getElementById("routes");
+  function el(t, c, x) { var n = document.createElement(t); if (c) n.className = c; if (x != null) n.textContent = x; return n; }
+  var btns = {};
+  P.tracks.forEach(function (tr) {
+    var sec = el("section", "route"); sec.append(el("h2", null, tr.name), el("p", "note", tr.note));
+    var og = document.createElement("optgroup"); og.label = tr.name;
+    var ol = el("ol", "steps");
+    tr.order.forEach(function (id, i) {
+      var L = P.lessons[id], li = el("li"), b = el("button"); b.type = "button";
+      b.append(el("b", null, String(i + 1)), document.createTextNode(L.t)); b.setAttribute("aria-pressed", "false");
+      b.addEventListener("click", function () { pick.value = id; show(); document.querySelector(".next-box").scrollIntoView({ behavior: "smooth" }); });
+      (btns[id] = btns[id] || []).push(b); li.append(b); ol.append(li);
+      var o = el("option", null, L.t); o.value = id; og.append(o);
+    });
+    pick.append(og); sec.append(ol); host.append(sec);
+  });
+  function show() {
+    var id = pick.value; next.innerHTML = "";
+    Object.keys(btns).forEach(function (k) { btns[k].forEach(function (b) { b.setAttribute("aria-pressed", String(k === id)); }); });
+    P.suggest(id, [id], 4).forEach(function (s) {
+      var li = el("li"), a = el("a", null, s.title); a.href = s.page; a.target = "_blank"; a.rel = "noopener";
+      li.append(a, el("span", "why", s.why)); next.append(li);
+    });
+    try { history.replaceState(null, "", "#" + id); } catch (e) {}
+  }
+  pick.addEventListener("change", show);
+  var h = location.hash.slice(1); if (P.lessons[h]) pick.value = h; else pick.value = "v-5";
+  show();
+})();
+</script>
+</body>
+</html>
