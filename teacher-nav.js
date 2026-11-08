@@ -16,6 +16,7 @@
     { label: "STANAG / JFLT", note: "Placement check, speaking interview, military vocabulary", href: "stanag/index.html", match: "stanag/" },
     { label: "Pronunciation", note: "Lessons and drills for Vietnamese speakers", href: "pronunciation/teacher-f42702.html", match: "pronunciation/" },
     { label: "Speaking Confidence", note: "7 lessons for students who freeze", href: "speaking/index.html", match: "speaking/" },
+    { label: "Practice bank", note: "Review questions and make a practice link", href: "practice/teacher.html", match: "practice/" },
     null,
     { label: "Teacher Library", note: "Everything in one place", href: "library.html" }
   ];

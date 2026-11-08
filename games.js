@@ -53,7 +53,7 @@
       var s = this.list.filter(function (x) { return x.id === id; })[0]; if (!s) return;
       var was = s.v; s.v = v; this.draw();
       if (v === "gold" && was !== "gold" && !quiet && this.list.every(function (x) { return x.v === "gold"; })) {
-        setTimeout(function () { celebrate(stars.pill, "Lesson mastered!", true); }, 900);
+        setTimeout(function () { celebrate(stars.pill, document.body.dataset.mastered || "Lesson mastered!", true); }, 900);
       }
     },
     draw: function () {
