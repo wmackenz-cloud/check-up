@@ -5,13 +5,15 @@ window.PATHWAY = {
     { id: "grammar", name: "Grammar accuracy", note: "The core grammar route, from nouns and articles to tenses and complex sentences.",
       order: ["aa", "gt-4", "gt-3", "gt-2", "gt-1", "gt-5", "gt-11", "gt-7", "gt-6", "gt-8", "gt-9", "gt-10"] },
     { id: "words", name: "Choosing the right word", note: "Collocations, confusing words, prepositions and register.",
-      order: ["v-1", "v-2", "v-15", "v-3", "v-5", "v-18", "v-4", "v-8", "v-16", "v-17", "v-6", "v-7"] },
+      order: ["v-1", "v-2", "v-15", "v-3", "v-5", "v-18", "v-19", "v-4", "v-8", "v-16", "v-17", "v-6", "v-7"] },
     { id: "describe", name: "Describing things well", note: "Adjectives and adverbs, from so/too/very to richer stories.",
       order: ["v-9", "v-10", "v-11", "v-12", "v-13", "v-14"] },
     { id: "speaking", name: "Speaking confidence", note: "For students who freeze. Runs alongside any other route.",
       order: ["sp-1", "sp-2", "sp-3", "sp-4", "sp-5", "sp-6", "sp-7"] },
     { id: "stanag", name: "STANAG / military", note: "For military students; links into the grammar route.",
-      order: ["sv-1", "sv-2", "sv-3", "sv-4"] }
+      order: ["sv-1", "sv-2", "sv-3", "sv-4"] },
+    { id: "engineering", name: "Engineering English", note: "For mechanical and structural engineers; links into the grammar route.",
+      order: ["en-1", "en-2", "en-3", "en-4", "en-5"] }
   ],
   lessons: {
     "aa":    { t: "A or An?", p: "grammar/a-or-an.html", next: [["gt-4", "Countable or uncountable decides a/an or some: the natural next step."], ["gt-3", "Then the other article choices: the, or no article."]] },
@@ -36,7 +38,8 @@ window.PATHWAY = {
     "v-8":  { t: "Word Meaning and Synonyms", p: "vocabulary/student-8.html", next: [["v-16", "Say It Twice: use synonyms in speech, not just know them."], ["v-6", "Formal and informal versions of the same idea."]] },
     "v-16": { t: "Say It Twice", p: "vocabulary/student-16.html", next: [["v-17", "Fixed pairs: more natural, ready-made phrases."], ["sp-5", "PREP ends by saying your point again in new words."]] },
     "v-17": { t: "Fixed Pairs", p: "vocabulary/student-17.html", next: [["v-6", "Formal and informal words: knowing which phrase fits where."], ["v-7", "Linking words to join ideas."]] },
-    "v-18": { t: "Prepositional Phrases", p: "vocabulary/student-18.html", next: [["gt-5", "Verb + preposition + -ing (insist on paying): gerund or infinitive."], ["v-4", "Word formation: more word families."], ["v-6", "Formal and informal words: knowing which phrase fits where."]] },
+    "v-18": { t: "Prepositional Phrases 1: Fixed Phrases", p: "vocabulary/student-18.html", next: [["v-19", "Part 2: nouns and verbs with prepositions (a reason for, depend on)."], ["v-15", "Tricky Twins: more look-alike words."]] },
+    "v-19": { t: "Prepositional Phrases 2: Nouns and Verbs", p: "vocabulary/student-19.html", next: [["gt-5", "Verb + preposition + -ing (insist on paying): gerund or infinitive."], ["v-4", "Word formation: more word families."], ["v-6", "Formal and informal words: knowing which phrase fits where."]] },
     "v-6":  { t: "Formal and Informal Words", p: "vocabulary/student-6.html", next: [["v-7", "Linking words, for clear formal and spoken English."], ["gt-8", "The passive, common in formal English."]] },
     "v-7":  { t: "Linking Words", p: "vocabulary/student-7.html", next: [["sp-4", "Use because and for example to give opinions: A.R.E."], ["sp-5", "PREP: a full opinion with a strong ending."]] },
 
@@ -58,7 +61,12 @@ window.PATHWAY = {
     "sv-1": { t: "Ranks, Units and Chain of Command", p: "stanag/student-vocab-1.html", next: [["sv-2", "Daily duties and life on base."], ["gt-3", "Articles, which the STANAG sheets practise in Exercise 7."]] },
     "sv-2": { t: "Daily Duties and Life on Base", p: "stanag/student-vocab-2.html", next: [["sv-3", "Training and exercises."], ["gt-2", "Routines vs this week: present simple or continuous."]] },
     "sv-3": { t: "Training and Exercises", p: "stanag/student-vocab-3.html", next: [["sv-4", "Operations and peacekeeping missions."], ["gt-1", "Reporting on past exercises: present perfect or past simple."]] },
-    "sv-4": { t: "Operations and Peacekeeping Missions", p: "stanag/student-vocab-4.html", next: [["gt-8", "The passive in full (What was done?)."], ["v-6", "Formal and everyday words for reports."]] }
+    "sv-4": { t: "Operations and Peacekeeping Missions", p: "stanag/student-vocab-4.html", next: [["gt-8", "The passive in full (What was done?)."], ["v-6", "Formal and everyday words for reports."]] },
+    "en-1": { t: "What Is It and What Does It Do?", p: "engineering/student-1.html", next: [["en-2", "Materials and properties."], ["v-18", "Fixed phrases with prepositions (in charge of, out of order)."]] },
+    "en-2": { t: "Materials and Properties", p: "engineering/student-2.html", next: [["en-3", "Measurements, numbers and data."], ["v-4", "Word formation: strength, strong, strengthen."]] },
+    "en-3": { t: "Measurements, Numbers and Data", p: "engineering/student-3.html", next: [["en-4", "Processes, procedures and safety."], ["v-19", "A rise in, a fall in, an effect on: nouns with prepositions."]] },
+    "en-4": { t: "Processes, Procedures and Safety", p: "engineering/student-4.html", next: [["en-5", "Problems and solutions."], ["gt-8", "The passive in full."]] },
+    "en-5": { t: "Problems and Solutions", p: "engineering/student-5.html", next: [["gt-7", "Must, might and can't for diagnosing problems."], ["sp-5", "PREP: recommend a solution clearly in a meeting."]] }
   }
 };
 // Suggest next worksheets: last = the student's last worksheet id, done = ids they have had.

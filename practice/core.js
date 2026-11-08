@@ -5,9 +5,10 @@
   var i;
   for (i = 1; i <= 11; i++) IDS.push("gt-" + i);
   IDS.push("aa");
-  for (i = 1; i <= 18; i++) IDS.push("v-" + i);
+  for (i = 1; i <= 19; i++) IDS.push("v-" + i);
   for (i = 1; i <= 4; i++) IDS.push("sv-" + i);
   for (i = 1; i <= 7; i++) IDS.push("sp-" + i);
+  for (i = 1; i <= 5; i++) IDS.push("en-" + i);
 
   // The worksheet each lesson reviews (used when a bank file doesn't say, or isn't there yet).
   function pageFor(id) {
@@ -17,6 +18,7 @@
     if (m[1] === "v") return "vocabulary/student-" + m[2] + ".html";
     if (m[1] === "sv") return "stanag/student-vocab-" + m[2] + ".html";
     if (m[1] === "sp") return "speaking/student-" + m[2] + ".html";
+    if (m[1] === "en") return "engineering/student-" + m[2] + ".html";
     return "";
   }
   function groupFor(id) {
@@ -24,6 +26,7 @@
     if (/^v-/.test(id)) return "Vocabulary";
     if (/^sv-/.test(id)) return "STANAG vocabulary";
     if (/^sp-/.test(id)) return "Speaking Confidence";
+    if (/^en-/.test(id)) return "Engineering English";
     return "";
   }
 

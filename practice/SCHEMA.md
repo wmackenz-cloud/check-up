@@ -37,8 +37,8 @@ Rules for writers:
 - `why` on every item: ≤ 200 characters, explains the rule, says the right answer.
 - Only one correct answer per pick; for `type`, list every acceptable answer.
 
-Lesson ids: `gt-1`…`gt-11` (grammar-traps/student-N), `aa` (grammar/a-or-an), `v-1`…`v-18` (vocabulary/student-N),
-`sv-1`…`sv-4` (stanag/student-vocab-N), `sp-1`…`sp-7` (speaking/student-N).
+Lesson ids: `gt-1`…`gt-11` (grammar-traps/student-N), `aa` (grammar/a-or-an), `v-1`…`v-19` (vocabulary/student-N),
+`sv-1`…`sv-4` (stanag/student-vocab-N), `sp-1`…`sp-7` (speaking/student-N), `en-1`…`en-5` (engineering/student-N).
 
 ## Practice link (built by My Students)
 
