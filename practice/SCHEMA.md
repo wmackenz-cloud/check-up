@@ -38,7 +38,7 @@ Rules for writers:
 - Only one correct answer per pick; for `type`, list every acceptable answer.
 
 Lesson ids: `gt-1`…`gt-11` (grammar-traps/student-N), `aa` (grammar/a-or-an), `v-1`…`v-19` (vocabulary/student-N),
-`sv-1`…`sv-4` (stanag/student-vocab-N), `sp-1`…`sp-7` (speaking/student-N), `en-1`…`en-5` (engineering/student-N).
+`sv-1`…`sv-4` (stanag/student-vocab-N), `sp-1`…`sp-7` (speaking/student-N), `en-1`…`en-5` (engineering/student-N), `bu-1`…`bu-5` (business/student-N).
 
 ## Practice link (built by My Students)
 

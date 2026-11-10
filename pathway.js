@@ -13,7 +13,9 @@ window.PATHWAY = {
     { id: "stanag", name: "STANAG / military", note: "For military students; links into the grammar route.",
       order: ["sv-1", "sv-2", "sv-3", "sv-4"] },
     { id: "engineering", name: "Engineering English", note: "For mechanical and structural engineers; links into the grammar route.",
-      order: ["en-1", "en-2", "en-3", "en-4", "en-5"] }
+      order: ["en-1", "en-2", "en-3", "en-4", "en-5"] },
+    { id: "business", name: "Business English", note: "For adult professionals in any workplace; links into the grammar, words and speaking routes.",
+      order: ["bu-1", "bu-2", "bu-3", "bu-4", "bu-5"] }
   ],
   lessons: {
     "aa":    { t: "A or An?", p: "grammar/a-or-an.html", next: [["gt-4", "Countable or uncountable decides a/an or some: the natural next step."], ["gt-3", "Then the other article choices: the, or no article."]] },
@@ -66,7 +68,12 @@ window.PATHWAY = {
     "en-2": { t: "Materials and Properties", p: "engineering/student-2.html", next: [["en-3", "Measurements, numbers and data."], ["v-4", "Word formation: strength, strong, strengthen."]] },
     "en-3": { t: "Measurements, Numbers and Data", p: "engineering/student-3.html", next: [["en-4", "Processes, procedures and safety."], ["v-19", "A rise in, a fall in, an effect on: nouns with prepositions."]] },
     "en-4": { t: "Processes, Procedures and Safety", p: "engineering/student-4.html", next: [["en-5", "Problems and solutions."], ["gt-8", "The passive in full."]] },
-    "en-5": { t: "Problems and Solutions", p: "engineering/student-5.html", next: [["gt-7", "Must, might and can't for diagnosing problems."], ["sp-5", "PREP: recommend a solution clearly in a meeting."]] }
+    "en-5": { t: "Problems and Solutions", p: "engineering/student-5.html", next: [["gt-7", "Must, might and can't for diagnosing problems."], ["sp-5", "PREP: recommend a solution clearly in a meeting."]] },
+    "bu-1": { t: "Your Company and Your Job", p: "business/student-1.html", next: [["bu-2", "Meetings: agendas, minutes and polite disagreement."], ["gt-2", "Routines vs current projects: present simple or continuous."], ["gt-1", "I have worked here since ...: present perfect or past simple."]] },
+    "bu-2": { t: "Meetings", p: "business/student-2.html", next: [["bu-3", "Emails and phone calls."], ["sp-4", "Give your opinion with a reason and an example (A.R.E.)."], ["v-1", "Make, do or take: reach a decision, make a point."]] },
+    "bu-3": { t: "Emails and Phone Calls", p: "business/student-3.html", next: [["bu-4", "Numbers, sales and trends."], ["v-6", "Formal and informal words for emails."], ["v-3", "More phrasal verbs."]] },
+    "bu-4": { t: "Numbers, Sales and Trends", p: "business/student-4.html", next: [["bu-5", "Negotiating and making decisions."], ["v-19", "A rise in, an increase of: nouns with prepositions."], ["gt-8", "The passive for reports (Sales were affected by ...)."]] },
+    "bu-5": { t: "Negotiating and Making Decisions", p: "business/student-5.html", next: [["gt-6", "Conditionals in full: If you order ..., we can ..."], ["v-1", "Make, do or take: more collocations."], ["sp-5", "PREP: make your case clearly."]] }
   }
 };
 // Suggest next worksheets: last = the student's last worksheet id, done = ids they have had.
