@@ -37,7 +37,7 @@
 (function () {
   var Q = new URLSearchParams(location.search), code = (Q.get("student") || "").toLowerCase().replace(/[^a-z0-9-]/g, "").slice(0, 40), who = (Q.get("who") || "").trim().slice(0, 60);
   if (!code) { document.getElementById("noname").hidden = false; return; }
-  if (who) document.getElementById("hello").textContent = who.split(/\s+/)[0] + "'s Homework Library";
+  if (who) { var f = document.createElement("p"); f.className = "eyebrow"; f.textContent = "For " + who; document.getElementById("hello").after(f); }
   document.querySelectorAll("a[data-p]").forEach(function (a) {
     a.href = a.dataset.p + "?student=" + encodeURIComponent(code) + (who ? "&who=" + encodeURIComponent(who) : "");
   });
