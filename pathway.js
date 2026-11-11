@@ -16,6 +16,10 @@ window.PATHWAY = {
       order: ["en-1", "en-2", "en-3", "en-4", "en-5"] },
     { id: "business", name: "Business English", note: "For adult professionals in any workplace; links into the grammar, words and speaking routes.",
       order: ["bu-1", "bu-2", "bu-3", "bu-4", "bu-5"] },
+    { id: "pron-vi", lang: "vi", name: "Pronunciation: Vietnamese speakers", note: "Endings first, with linking to bring them back, then th, s and sh, then rhythm. Finish by repeating the Reading Check and comparing the two recordings.",
+      order: ["pron-1", "pron-2", "pron-d1", "pron-5", "pron-d4", "pron-3", "pron-d2", "pron-d3", "pron-4", "pron-d5", "pron-6"] },
+    { id: "pron-zh", lang: "zh", name: "Pronunciation: Chinese speakers", note: "Endings and voicing first, then the sounds most specific to Chinese speakers (v and w, z, th), then linking and rhythm. Finish by repeating the Reading Check and comparing the two recordings.",
+      order: ["pron-1", "pron-2", "pron-d1", "pron-3", "pron-d3", "pron-d2", "pron-5", "pron-d4", "pron-4", "pron-d5", "pron-6"] },
     { id: "educators", name: "English for Educators", note: "For students who work as teachers, with US and UK school terms; links into the grammar and speaking routes.",
       order: ["ed-1", "ed-2", "ed-3", "ed-4", "ed-5", "ed-6"] }
   ],
@@ -85,21 +89,48 @@ window.PATHWAY = {
     "ed-3": { t: "The Classroom and the School Day", p: "educators/student-3.html", next: [["ed-4", "Curriculum, planning and teaching."], ["gt-2", "Routines: present simple or continuous."]] },
     "ed-4": { t: "Curriculum, Planning and Teaching", p: "educators/student-4.html", next: [["ed-5", "Assessment, grading and reports."], ["sp-4", "Give opinions about teaching with A.R.E."]] },
     "ed-5": { t: "Assessment, Grading and Reports", p: "educators/student-5.html", next: [["ed-6", "Parents, colleagues and job interviews."], ["gt-8", "The passive for reports: Work is marked by ..."]] },
-    "ed-6": { t: "Parents, Colleagues and Job Interviews", p: "educators/student-6.html", next: [["sp-6", "STAR stories for interview answers."], ["v-6", "Formal and informal words for emails to parents."]] }
+    "ed-6": { t: "Parents, Colleagues and Job Interviews", p: "educators/student-6.html", next: [["sp-6", "STAR stories for interview answers."], ["v-6", "Formal and informal words for emails to parents."]] },
+    "pron-1":  { t: "Reading Check", p: "pronunciation/lesson-1-c7805b.html", next: [["pron-2", "Endings are the biggest problem for most Vietnamese and Chinese speakers: start there."]] },
+    "pron-2":  { t: "Finish the Word", p: "pronunciation/lesson-2-d96f38.html", next: [["pron-d1", "The daily drill for endings: the back-chaining ladders fix clusters."]],
+      nextBy: { zh: [["pron-d1", "The daily drill for endings and voicing: bag or back, rib or rip."]] } },
+    "pron-d1": { t: "Drill: Word Endings", p: "pronunciation/drill-1-e8e545.html", next: [["pron-5", "Vietnamese speakers: linking brings dropped endings back (worked in = work-tin)."], ["pron-3", "Chinese speakers: close sounds next, v and w, b and p, ship and sheep."]],
+      nextBy: { vi: [["pron-5", "Linking brings dropped endings back: worked in = work-tin."]], zh: [["pron-3", "Close sounds next: v and w, b and p, ship and sheep."]] } },
+    "pron-5":  { t: "Join the Words", p: "pronunciation/lesson-5-9fe8eb.html", next: [["pron-d4", "The daily drill for joining words."]],
+      nextBy: { zh: [["pron-d4", "The daily drill for joining words: it also stops the extra vowel after endings."]] } },
+    "pron-d4": { t: "Drill: Joining Words", p: "pronunciation/drill-4-cdf51b.html", next: [["pron-3", "Vietnamese speakers: sounds next, th, then s and sh."], ["pron-4", "Chinese speakers: rhythm next, stress as longer and louder, not just higher."]],
+      nextBy: { vi: [["pron-3", "Sounds next: th, then s and sh."]], zh: [["pron-4", "Rhythm next: stress as longer and louder, not just higher."]] } },
+    "pron-3":  { t: "Which One Did I Say?", p: "pronunciation/lesson-3-954d49.html", next: [["pron-d2", "Vietnamese speakers: th first, the most common sound problem after endings."], ["pron-d3", "Chinese speakers: z, and v and w first, the problems most specific to them."]],
+      nextBy: { vi: [["pron-d2", "th first: the most common sound problem after endings."]], zh: [["pron-d3", "z, and v and w first: the problems most specific to Chinese speakers."]] } },
+    "pron-d2": { t: "Drill: The th Sound", p: "pronunciation/drill-2-9c8f0d.html", next: [["pron-d3", "Vietnamese speakers: s, sh and z (Northern speakers often merge s and sh)."], ["pron-5", "Chinese speakers: join the words, which also stops the extra vowel after endings."]],
+      nextBy: { vi: [["pron-d3", "s, sh and z: Northern speakers often merge s and sh, and drop final s."]], zh: [["pron-5", "Join the words: linking also stops the extra vowel after endings."]] } },
+    "pron-d3": { t: "Drill: s, sh and z", p: "pronunciation/drill-3-ec8ed1.html", next: [["pron-4", "Vietnamese speakers: rhythm and stress."], ["pron-d2", "Chinese speakers: th next."]],
+      nextBy: { vi: [["pron-4", "Rhythm and stress: English is stress-timed, Vietnamese is not."]], zh: [["pron-d2", "th next: think, not sink; this, not zis."]] } },
+    "pron-4":  { t: "Tap the Rhythm", p: "pronunciation/lesson-4-f1d8f2.html", next: [["pron-d5", "The daily drill for rhythm, weak forms and word stress."]] },
+    "pron-d5": { t: "Drill: Rhythm and Stress", p: "pronunciation/drill-5-adcb1a.html", next: [["pron-6", "Bring it all together with shadowing."]] },
+    "pron-6":  { t: "Shadow and Speak", p: "pronunciation/lesson-6-fedffe.html", next: [["sp-3", "Thinking time: keep the new sounds when speaking freely."], ["sp-7", "Real-world rehearsal: role-plays to use it all."]] }
   }
 };
-// Suggest next worksheets: last = the student's last worksheet id, done = ids they have had.
-window.PATHWAY.suggest = function (last, done, max) {
+// Suggest next worksheets: last = the student's last worksheet id, done = ids they have had,
+// lang = the student's first-language route ("vi", "zh") when a lesson has one (optional).
+window.PATHWAY.suggest = function (last, done, max, lang) {
   var P = window.PATHWAY, have = {}, out = [], seen = {};
   (done || []).forEach(function (d) { have[d] = 1; });
   max = max || 3;
   function add(id, why) { if (!id || have[id] || seen[id] || !P.lessons[id]) return; seen[id] = 1; out.push({ id: id, title: P.lessons[id].t, page: P.lessons[id].p, why: why }); }
   var L = P.lessons[last];
-  if (L) L.next.forEach(function (n) { add(n[0], n[1]); });
-  // Then the next lesson not yet done on the same route.
+  if (L) ((lang && L.nextBy && L.nextBy[lang]) || L.next).forEach(function (n) { add(n[0], n[1]); });
+  // Then the next lesson not yet done on the same route (only the student's own language route, when known).
   P.tracks.forEach(function (tr) {
+    if (lang && tr.lang && tr.lang !== lang) return;
     var i = tr.order.indexOf(last); if (i < 0) return;
     for (var j = i + 1; j < tr.order.length; j++) if (!have[tr.order[j]]) { add(tr.order[j], "Next on the " + tr.name + " route."); break; }
   });
   return out.slice(0, max);
+};
+// The language route for a student, from their first language, languages or country: "vi", "zh" or "".
+window.PATHWAY.langOf = function (text) {
+  var t = String(text || "").toLowerCase();
+  if (/vietnam/.test(t)) return "vi";
+  if (/chin|mandarin|cantonese|taiwan|hong kong|putonghua/.test(t)) return "zh";
+  return "";
 };

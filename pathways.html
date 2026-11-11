@@ -37,7 +37,7 @@
 <header class="top">
   <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="library.html">Teacher library</a></li><li><span aria-current="page">Lesson pathways</span></li></ol></nav>
   <h1>Lesson Pathways</h1>
-  <p class="lead">Eight routes through your lessons. Each route goes in a sensible order, and every lesson also suggests a "bridge" to another route when it fits. Not sure what's next? Pick the last worksheet a student did.</p>
+  <p class="lead">Ten routes through your lessons, including a pronunciation route for Vietnamese speakers and one for Chinese speakers. Each route goes in a sensible order, and every lesson also suggests a "bridge" to another route when it fits. Not sure what's next? Pick the last worksheet a student did.</p>
 </header>
 <main>
 <section class="next-box" aria-live="polite">
@@ -47,7 +47,7 @@
 </section>
 <div id="routes"></div>
 </main>
-<script src="pathway.js?v=1794800000"></script>
+<script src="pathway.js?v=1795000000"></script>
 <script>
 (function () {
   var P = window.PATHWAY, pick = document.getElementById("pick"), next = document.getElementById("next"), host = document.getElementById("routes");
@@ -58,25 +58,25 @@
     var og = document.createElement("optgroup"); og.label = tr.name;
     var ol = el("ol", "steps");
     tr.order.forEach(function (id, i) {
-      var L = P.lessons[id], li = el("li"), b = el("button"); b.type = "button";
+      var L = P.lessons[id], key = tr.lang ? id + "|" + tr.lang : id, li = el("li"), b = el("button"); b.type = "button";
       b.append(el("b", null, String(i + 1)), document.createTextNode(L.t)); b.setAttribute("aria-pressed", "false");
-      b.addEventListener("click", function () { pick.value = id; show(); document.querySelector(".next-box").scrollIntoView({ behavior: "smooth" }); });
-      (btns[id] = btns[id] || []).push(b); li.append(b); ol.append(li);
-      var o = el("option", null, L.t); o.value = id; og.append(o);
+      b.addEventListener("click", function () { pick.value = key; show(); document.querySelector(".next-box").scrollIntoView({ behavior: "smooth" }); });
+      (btns[key] = btns[key] || []).push(b); li.append(b); ol.append(li);
+      var o = el("option", null, L.t); o.value = key; og.append(o);
     });
     pick.append(og); sec.append(ol); host.append(sec);
   });
   function show() {
-    var id = pick.value; next.innerHTML = "";
-    Object.keys(btns).forEach(function (k) { btns[k].forEach(function (b) { b.setAttribute("aria-pressed", String(k === id)); }); });
-    P.suggest(id, [id], 4).forEach(function (s) {
+    var key = pick.value, id = key.split("|")[0], lang = key.split("|")[1] || ""; next.innerHTML = "";
+    Object.keys(btns).forEach(function (k) { btns[k].forEach(function (b) { b.setAttribute("aria-pressed", String(k === key)); }); });
+    P.suggest(id, [id], 4, lang).forEach(function (s) {
       var li = el("li"), a = el("a", null, s.title); a.href = s.page; a.target = "_blank"; a.rel = "noopener";
       li.append(a, el("span", "why", s.why)); next.append(li);
     });
-    try { history.replaceState(null, "", "#" + id); } catch (e) {}
+    try { history.replaceState(null, "", "#" + key.replace("|", "-")); } catch (e) {}
   }
   pick.addEventListener("change", show);
-  var h = location.hash.slice(1); if (P.lessons[h]) pick.value = h; else pick.value = "v-5";
+  var h = location.hash.slice(1).replace(/-(vi|zh)$/, "|$1"); if (P.lessons[h.split("|")[0]] && pick.querySelector('option[value="' + h + '"]')) pick.value = h; else pick.value = "v-5";
   show();
 })();
 </script>
