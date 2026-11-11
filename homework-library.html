@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>My Homework Library</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="grammar-traps/traps.css?v=1793206303">
+</head>
+<body class="library">
+<header class="top">
+  <p class="eyebrow">Bill's English lessons</p>
+  <h1 id="hello">My Homework Library</h1>
+  <p class="lead">Extra practice you can do any time, as often as you like. Bill will also tell you which one to do after each lesson. Your answers and recordings go to Bill, so keep using this link: it has your name in it.</p>
+</header>
+<main>
+<h2>Pronunciation homework</h2>
+<ol class="lessons">
+<li class="lesson"><span class="num">1</span><div class="info"><strong>Finish Every Word</strong><div class="hint">The last sound of every word: -ed, -s, and bag or back.</div></div><div class="acts"><a class="btn" data-p="pronunciation/homework-1-10a11c.html" href="pronunciation/homework-1-10a11c.html">Open</a></div></li>
+<li class="lesson"><span class="num">2</span><div class="info"><strong>The th Sound</strong><div class="hint">think, not tink or sink; this, not dis or zis.</div></div><div class="acts"><a class="btn" data-p="pronunciation/homework-2-216b64.html" href="pronunciation/homework-2-216b64.html">Open</a></div></li>
+<li class="lesson"><span class="num">3</span><div class="info"><strong>s, sh, z, v and w</strong><div class="hint">see or she, price or prize, vest or west.</div></div><div class="acts"><a class="btn" data-p="pronunciation/homework-3-27e8f2.html" href="pronunciation/homework-3-27e8f2.html">Open</a></div></li>
+<li class="lesson"><span class="num">4</span><div class="info"><strong>Joining Words</strong><div class="hint">Join words smoothly: look at = loo-kat, go out = go-wout.</div></div><div class="acts"><a class="btn" data-p="pronunciation/homework-4-6d3a48.html" href="pronunciation/homework-4-6d3a48.html">Open</a></div></li>
+<li class="lesson"><span class="num">5</span><div class="info"><strong>Rhythm and Stress</strong><div class="hint">The strong syllable, and short little words: a cup of tea.</div></div><div class="acts"><a class="btn" data-p="pronunciation/homework-5-bee921.html" href="pronunciation/homework-5-bee921.html">Open</a></div></li>
+</ol>
+<h2>Your recordings</h2>
+<ol class="lessons">
+<li class="lesson"><span class="num">&#9654;</span><div class="info"><strong>My recordings</strong><div class="hint">Listen to everything you have recorded, with the dates, so you can hear your progress.</div></div><div class="acts"><a class="btn ghost" data-p="pronunciation/" href="pronunciation/">Open</a></div></li>
+</ol>
+<p class="hint" id="noname" hidden>This link doesn't have your name in it. Please use the link Bill sent you, so your answers and recordings go to the right place.</p>
+</main>
+<footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
+<script>
+(function () {
+  var Q = new URLSearchParams(location.search), code = (Q.get("student") || "").toLowerCase().replace(/[^a-z0-9-]/g, "").slice(0, 40), who = (Q.get("who") || "").trim().slice(0, 60);
+  if (!code) { document.getElementById("noname").hidden = false; return; }
+  if (who) document.getElementById("hello").textContent = who.split(/\s+/)[0] + "'s Homework Library";
+  document.querySelectorAll("a[data-p]").forEach(function (a) {
+    a.href = a.dataset.p + "?student=" + encodeURIComponent(code) + (who ? "&who=" + encodeURIComponent(who) : "");
+  });
+})();
+</script>
+</body>
+</html>
