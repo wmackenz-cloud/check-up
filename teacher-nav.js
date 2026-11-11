@@ -15,7 +15,7 @@
     { label: "Vocabulary", note: "19 worksheets, incl. music and photo lessons", href: "vocabulary/index.html", match: "vocabulary/" },
     { label: "STANAG / JFLT", note: "Placement checks and the speaking interview", href: "stanag/index.html", match: "stanag/index" },
     { label: "English for Work", note: "Business, Educators, Engineering and Military English", href: "work/index.html", match: ["work/", "business/", "educators/", "engineering/", "military/", "stanag/student-vocab", "stanag/teacher-vocab"] },
-    { label: "Pronunciation", note: "Lessons and drills for Vietnamese speakers", href: "pronunciation/teacher-f42702.html", match: "pronunciation/" },
+    { label: "Pronunciation", note: "Lessons and drills for Vietnamese and Chinese speakers", href: "pronunciation/teacher-f42702.html", match: "pronunciation/" },
     { label: "Speaking Confidence", note: "7 lessons for students who freeze", href: "speaking/index.html", match: "speaking/" },
     { label: "Practice bank", note: "Review questions and make a practice link", href: "practice/teacher.html", match: "practice/" },
     { label: "Lesson pathways", note: "What to teach next, lesson by lesson", href: "pathways.html" },
