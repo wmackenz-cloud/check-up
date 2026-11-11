@@ -6,10 +6,11 @@
   for (i = 1; i <= 11; i++) IDS.push("gt-" + i);
   IDS.push("aa");
   for (i = 1; i <= 19; i++) IDS.push("v-" + i);
-  for (i = 1; i <= 4; i++) IDS.push("sv-" + i);
+  for (i = 1; i <= 8; i++) IDS.push("sv-" + i);
   for (i = 1; i <= 7; i++) IDS.push("sp-" + i);
   for (i = 1; i <= 5; i++) IDS.push("en-" + i);
   for (i = 1; i <= 5; i++) IDS.push("bu-" + i);
+  for (i = 1; i <= 6; i++) IDS.push("ed-" + i);
 
   // The worksheet each lesson reviews (used when a bank file doesn't say, or isn't there yet).
   function pageFor(id) {
@@ -21,15 +22,17 @@
     if (m[1] === "sp") return "speaking/student-" + m[2] + ".html";
     if (m[1] === "en") return "engineering/student-" + m[2] + ".html";
     if (m[1] === "bu") return "business/student-" + m[2] + ".html";
+    if (m[1] === "ed") return "educators/student-" + m[2] + ".html";
     return "";
   }
   function groupFor(id) {
     if (id === "aa" || /^gt-/.test(id)) return "Grammar";
     if (/^v-/.test(id)) return "Vocabulary";
-    if (/^sv-/.test(id)) return "STANAG vocabulary";
+    if (/^sv-/.test(id)) return "Military English";
     if (/^sp-/.test(id)) return "Speaking Confidence";
     if (/^en-/.test(id)) return "Engineering English";
     if (/^bu-/.test(id)) return "Business English";
+    if (/^ed-/.test(id)) return "English for Educators";
     return "";
   }
 

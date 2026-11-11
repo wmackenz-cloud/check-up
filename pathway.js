@@ -10,12 +10,14 @@ window.PATHWAY = {
       order: ["v-9", "v-10", "v-11", "v-12", "v-13", "v-14"] },
     { id: "speaking", name: "Speaking confidence", note: "For students who freeze. Runs alongside any other route.",
       order: ["sp-1", "sp-2", "sp-3", "sp-4", "sp-5", "sp-6", "sp-7"] },
-    { id: "stanag", name: "STANAG / military", note: "For military students; links into the grammar route.",
-      order: ["sv-1", "sv-2", "sv-3", "sv-4"] },
+    { id: "stanag", name: "Military English", note: "For military, police and Guardia Civil students; links into the grammar route.",
+      order: ["sv-1", "sv-2", "sv-3", "sv-4", "sv-5", "sv-6", "sv-7", "sv-8"] },
     { id: "engineering", name: "Engineering English", note: "For mechanical and structural engineers; links into the grammar route.",
       order: ["en-1", "en-2", "en-3", "en-4", "en-5"] },
     { id: "business", name: "Business English", note: "For adult professionals in any workplace; links into the grammar, words and speaking routes.",
-      order: ["bu-1", "bu-2", "bu-3", "bu-4", "bu-5"] }
+      order: ["bu-1", "bu-2", "bu-3", "bu-4", "bu-5"] },
+    { id: "educators", name: "English for Educators", note: "For students who work as teachers, with US and UK school terms; links into the grammar and speaking routes.",
+      order: ["ed-1", "ed-2", "ed-3", "ed-4", "ed-5", "ed-6"] }
   ],
   lessons: {
     "aa":    { t: "A or An?", p: "grammar/a-or-an.html", next: [["gt-4", "Countable or uncountable decides a/an or some: the natural next step."], ["gt-3", "Then the other article choices: the, or no article."]] },
@@ -63,7 +65,11 @@ window.PATHWAY = {
     "sv-1": { t: "Ranks, Units and Chain of Command", p: "stanag/student-vocab-1.html", next: [["sv-2", "Daily duties and life on base."], ["gt-3", "Articles, which the STANAG sheets practise in Exercise 7."]] },
     "sv-2": { t: "Daily Duties and Life on Base", p: "stanag/student-vocab-2.html", next: [["sv-3", "Training and exercises."], ["gt-2", "Routines vs this week: present simple or continuous."]] },
     "sv-3": { t: "Training and Exercises", p: "stanag/student-vocab-3.html", next: [["sv-4", "Operations and peacekeeping missions."], ["gt-1", "Reporting on past exercises: present perfect or past simple."]] },
-    "sv-4": { t: "Operations and Peacekeeping Missions", p: "stanag/student-vocab-4.html", next: [["gt-8", "The passive in full (What was done?)."], ["v-6", "Formal and everyday words for reports."]] },
+    "sv-4": { t: "Operations and Peacekeeping Missions", p: "stanag/student-vocab-4.html", next: [["sv-5", "Radio and communications."], ["gt-8", "The passive in full (What was done?)."], ["v-6", "Formal and everyday words for reports."]] },
+    "sv-5": { t: "Radio and Communications", p: "stanag/student-vocab-5.html", next: [["sv-6", "Orders and briefings: giving and confirming instructions."], ["sp-2", "Rescue phrases: asking someone to repeat or explain, off the radio too."]] },
+    "sv-6": { t: "Orders and Briefings", p: "stanag/student-vocab-6.html", next: [["sv-7", "Maps, terrain and logistics."], ["gt-10", "Reported speech for passing on orders: The major told us to be ready by 0600."]] },
+    "sv-7": { t: "Maps, Terrain and Logistics", p: "stanag/student-vocab-7.html", next: [["sv-8", "Police and Guardia Civil: checkpoints, traffic and borders."], ["gt-4", "Countable or uncountable: fuel, equipment, ammunition."]] },
+    "sv-8": { t: "Police and Guardia Civil", p: "stanag/student-vocab-8.html", next: [["gt-8", "The passive for reports: He was arrested; the cigarettes were kept as evidence."], ["sp-7", "Real-world rehearsal: role-plays with the public."]] },
     "en-1": { t: "What Is It and What Does It Do?", p: "engineering/student-1.html", next: [["en-2", "Materials and properties."], ["v-18", "Fixed phrases with prepositions (in charge of, out of order)."]] },
     "en-2": { t: "Materials and Properties", p: "engineering/student-2.html", next: [["en-3", "Measurements, numbers and data."], ["v-4", "Word formation: strength, strong, strengthen."]] },
     "en-3": { t: "Measurements, Numbers and Data", p: "engineering/student-3.html", next: [["en-4", "Processes, procedures and safety."], ["v-19", "A rise in, a fall in, an effect on: nouns with prepositions."]] },
@@ -73,7 +79,13 @@ window.PATHWAY = {
     "bu-2": { t: "Meetings", p: "business/student-2.html", next: [["bu-3", "Emails and phone calls."], ["sp-4", "Give your opinion with a reason and an example (A.R.E.)."], ["v-1", "Make, do or take: reach a decision, make a point."]] },
     "bu-3": { t: "Emails and Phone Calls", p: "business/student-3.html", next: [["bu-4", "Numbers, sales and trends."], ["v-6", "Formal and informal words for emails."], ["v-3", "More phrasal verbs."]] },
     "bu-4": { t: "Numbers, Sales and Trends", p: "business/student-4.html", next: [["bu-5", "Negotiating and making decisions."], ["v-19", "A rise in, an increase of: nouns with prepositions."], ["gt-8", "The passive for reports (Sales were affected by ...)."]] },
-    "bu-5": { t: "Negotiating and Making Decisions", p: "business/student-5.html", next: [["gt-6", "Conditionals in full: If you order ..., we can ..."], ["v-1", "Make, do or take: more collocations."], ["sp-5", "PREP: make your case clearly."]] }
+    "bu-5": { t: "Negotiating and Making Decisions", p: "business/student-5.html", next: [["gt-6", "Conditionals in full: If you order ..., we can ..."], ["v-1", "Make, do or take: more collocations."], ["sp-5", "PREP: make your case clearly."]] },
+    "ed-1": { t: "School Types and Stages", p: "educators/student-1.html", next: [["ed-2", "People and roles in a school."], ["gt-3", "Articles with schools: go to school, at a primary school."]] },
+    "ed-2": { t: "People and Roles in a School", p: "educators/student-2.html", next: [["ed-3", "The classroom and the school day."], ["bu-1", "Responsible for, in charge of, report to: the job phrases in full."]] },
+    "ed-3": { t: "The Classroom and the School Day", p: "educators/student-3.html", next: [["ed-4", "Curriculum, planning and teaching."], ["gt-2", "Routines: present simple or continuous."]] },
+    "ed-4": { t: "Curriculum, Planning and Teaching", p: "educators/student-4.html", next: [["ed-5", "Assessment, grading and reports."], ["sp-4", "Give opinions about teaching with A.R.E."]] },
+    "ed-5": { t: "Assessment, Grading and Reports", p: "educators/student-5.html", next: [["ed-6", "Parents, colleagues and job interviews."], ["gt-8", "The passive for reports: Work is marked by ..."]] },
+    "ed-6": { t: "Parents, Colleagues and Job Interviews", p: "educators/student-6.html", next: [["sp-6", "STAR stories for interview answers."], ["v-6", "Formal and informal words for emails to parents."]] }
   }
 };
 // Suggest next worksheets: last = the student's last worksheet id, done = ids they have had.

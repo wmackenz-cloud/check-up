@@ -13,9 +13,8 @@
     { label: "Grammar", note: "A or An? and the 11 Grammar Traps", href: "grammar/index.html", match: "grammar" },
     { label: "BBC videos", note: "6 Minute English with your vocabulary notes", href: "bbc/index.html", match: "bbc/" },
     { label: "Vocabulary", note: "19 worksheets, incl. music and photo lessons", href: "vocabulary/index.html", match: "vocabulary/" },
-    { label: "STANAG / JFLT", note: "Placement check, speaking interview, military vocabulary", href: "stanag/index.html", match: "stanag/" },
-    { label: "Engineering English", note: "5 lessons for mechanical and structural engineers", href: "engineering/index.html", match: "engineering/" },
-    { label: "Business English", note: "5 lessons for the workplace: meetings, emails, numbers, negotiating", href: "business/index.html", match: "business/" },
+    { label: "STANAG / JFLT", note: "Placement checks and the speaking interview", href: "stanag/index.html", match: "stanag/index" },
+    { label: "English for Work", note: "Business, Educators, Engineering and Military English", href: "work/index.html", match: ["work/", "business/", "educators/", "engineering/", "military/", "stanag/student-vocab", "stanag/teacher-vocab"] },
     { label: "Pronunciation", note: "Lessons and drills for Vietnamese speakers", href: "pronunciation/teacher-f42702.html", match: "pronunciation/" },
     { label: "Speaking Confidence", note: "7 lessons for students who freeze", href: "speaking/index.html", match: "speaking/" },
     { label: "Practice bank", note: "Review questions and make a practice link", href: "practice/teacher.html", match: "practice/" },
@@ -31,7 +30,7 @@
     a.appendChild(document.createTextNode(it.label));
     return a;
   }
-  var isOn = function (it) { return it && (it.match ? here.indexOf(root + it.match) === 0 : here === urlOf(it.href)); };
+  var isOn = function (it) { return it && (it.match ? [].concat(it.match).some(function (m) { return here.indexOf(root + m) === 0; }) : here === urlOf(it.href)); };
 
   var nav = document.createElement("nav"); nav.className = "tnav"; nav.setAttribute("aria-label", "Teacher menu");
   var ul = document.createElement("ul");
