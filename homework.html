@@ -78,7 +78,8 @@
   document.getElementById("title").textContent = who ? who + "'s homework" : "My homework";
   if (hw.d) {
     const d = new Date(hw.d + "T12:00:00");
-    if (!isNaN(d)) document.getElementById("sub").textContent = "To finish before your lesson on " + d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) + ".";
+    // No due date shown (Bill, Nov 2026): the date only pulls in the lesson goal below.
+    if (false)     if (!isNaN(d)) document.getElementById("sub").textContent = "To finish before your lesson on " + d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) + ".";
   }
   // The lesson goal Bill wrote in the lesson plan: "By the end of the lesson you will know and understand how to ..."
   if (hw.g) {
