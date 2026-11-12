@@ -161,3 +161,16 @@ body > .tnav { max-width: none; margin: -28px -16px 22px; position: sticky; top:
 .tnav-panel hr { border: none; border-top: 1px solid var(--rule); margin: 4px 6px; }
 @media print { .tnav { display: none !important; } }
 body > .lessons { margin-left: auto; margin-right: auto; }
+
+/* Lesson aims and common mistakes: the first thing a student reads on every lesson page. */
+.aims { border: 2px solid var(--accent); background: var(--accent-soft); border-radius: 12px; padding: 6px 18px 14px; margin: 0 0 18px; }
+.aims > h2, .mistakes > h2 { margin-top: 12px; }
+.aims .why { font-size: 1.05rem; }
+.aims-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 6px 20px; }
+.aims-grid h3 { margin: 8px 0 4px; font-size: .95rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); font-family: inherit; }
+.aims-grid ul { margin: 0; padding-left: 1.2em; }
+.mistakes { border: 2px solid var(--bad); border-radius: 12px; padding: 6px 18px 12px; margin: 0 0 22px; background: var(--sheet); }
+.mistakes > h2 { color: var(--bad); }
+.mistakes ul { padding-left: 1.2em; }
+.mistakes li { margin: 6px 0; }
+@media print { .aims, .mistakes { break-inside: avoid; } }
