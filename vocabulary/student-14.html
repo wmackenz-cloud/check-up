@@ -44,17 +44,6 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
 .gallery .photo img { width: 100%; height: 90px; max-height: none; object-fit: cover; }
 @media (max-width: 520px) { .gallery .photo img { height: 64px; } }
 .frame-photo { font-weight: 700; color: var(--accent); font-size: .9rem; }
-.meter { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; font-size: .85rem; color: var(--ink-soft); margin-top: 4px; line-height: 1.4; }
-.meter .m-stars { color: #e0a526; letter-spacing: 1px; font-size: 1rem; }
-.meter .m-count strong { color: var(--accent); }
-.meter .m-boring { color: var(--bad); font-weight: 700; }
-.dice-btn { font: inherit; font-weight: 700; border-radius: 999px; padding: 4px 14px; margin: 2px 0 6px; }
-.dice-prompt { font-weight: 700; color: var(--accent); }
-.dice-prompt .dp { display: inline-block; background: var(--accent-soft); border-radius: 999px; padding: 0 10px; margin: 2px 2px; }
-.dice-roll { animation: g-shake .45s ease-in-out; }
-.story-photo select { font: inherit; padding: 4px 8px; border-radius: 8px; border: 1px solid var(--blank-line); background: var(--sheet); color: var(--ink); }
-.story-total { font-weight: 700; color: var(--accent); }
-@media print { .meter, .dice-btn { display: none; } }
 </style>
 </head>
 <body class="student" data-item="vocab-14">
@@ -65,7 +54,7 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
   <div class="tools">
     <button type="button" id="print">Print or save as PDF</button>
     <button type="button" class="ghost" id="clear">Clear my answers</button>
-    <span class="hint">Tap, build and write your story. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
+    <span class="hint">Tap and build your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
   </div>
 </header>
 <main class="sheet">
@@ -75,7 +64,7 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
 <div class="aims-grid">
 <div><h3>You will know</h3><ul><li>three ways to make a sentence richer: add an adjective, add an adverb, swap a boring word</li><li>precise words to use instead of <em>nice</em>, <em>bad</em> and <em>very big</em></li></ul></div>
 <div><h3>You will understand</h3><ul><li>where adjectives go (before the noun) and where adverbs go (after the verb)</li><li>why a precise word is better than <em>very</em> + a plain word</li></ul></div>
-<div><h3>You will be able to</h3><ul><li>make a plain sentence richer</li><li>write and tell a short story about a photo</li></ul></div>
+<div><h3>You will be able to</h3><ul><li>make a plain sentence richer</li><li>tell a short story about a photo</li></ul></div>
 </div>
 </section>
 <section class="mistakes" aria-labelledby="mis-h">
@@ -104,8 +93,8 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
 <li><strong>Swap a boring word</strong> for a precise one: <em>nice &rarr; breathtaking, bad &rarr; awful, very big &rarr; enormous</em></li>
 </ul>
 <h2 id="ex1" class="ex">Exercise 1: Upgrade it</h2>
-<p>Tap the word that makes the sentence <strong>richer</strong> and is <strong>correct</strong>. Then try your own sentence in the "Your turn" box.</p>
-<ol class="g-pick" data-g="ex1" data-own="A rich, vivid descriptive word (adjective or adverb) used correctly in a story sentence. Check the word is in the right role and position, and that the sentence is grammatical and natural.">
+<p>Tap the word that makes the sentence <strong>richer</strong> and is <strong>correct</strong>.</p>
+<ol class="g-pick" data-g="ex1">
 <li data-why="We need an adjective before the noun morning. Grey, drizzly is richer than nice. Greyly is an adverb, so it can&#x27;t describe a noun." data-a="1" data-form="grey, drizzly" data-q="It was a ___ morning in Toronto. (Photo E)">It was a <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-1"> morning in Toronto. (Photo E) <span class="opts game-ui"><button>nice</button><button>grey, drizzly</button><button>greyly</button></span></li>
 <li data-why="Walked is an action, so we need an adverb: briskly (quickly, with energy). Good and quick are adjectives." data-a="0" data-form="briskly" data-q="Maya walked ___ through the rain to her car.">Maya walked <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-2"> through the rain to her car. <span class="opts game-ui"><button>briskly</button><button>good</button><button>quick</button></span></li>
 <li data-why="After was we need an adjective. Absolutely awful is richer and stronger than bad. Awfully is an adverb." data-a="1" data-form="absolutely awful" data-q="The traffic was ___ (Photo G)">The traffic was <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex1-3"> (Photo G) <span class="opts game-ui"><button>bad</button><button>absolutely awful</button><button>awfully</button></span></li>
@@ -127,30 +116,7 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
 <li data-why="The gaps after the verbs sat and smiled need adverbs (how she did it). The gap before the noun fire needs an adjective." data-q="Story builder: Maya sat ___ by the ___ fire and smiled ___."><span class="frame-photo">Photo F:</span> Maya sat <span class="slot" data-type="adv" data-for="sat"></span> by the <span class="slot" data-type="adj" data-for="fire"></span> fire and smiled <span class="slot" data-type="adv" data-for="smiled"></span>.<span class="bank-words" hidden>comfortably:adv warm:adj happily:adv crackling:adj peacefully:adv cosy:adj</span><input class="blank" type="hidden" data-k="ex2-6"></li>
 </ol>
 
-<h2 id="ex3" class="ex">Exercise 3: Boring-word detector</h2>
-<p>Make each plain sentence richer. The meter counts your adjectives and adverbs as you type, and warns you about boring words. Then press <strong>Check</strong>.</p>
-<div class="g-write" data-g="ex3" data-task="Rewrite each plain sentence so it is richer: keep the meaning, replace boring words, and add at least one adjective and one adverb." data-focus="The student rewrites a plain story sentence to make it richer. Mark correct only if it keeps the same basic meaning, is grammatical and natural, and adds at least one adjective AND one adverb, or replaces boring words (good, nice, bad, big, very) with more precise ones. If it is correct but still plain, mark almost and suggest one richer word. Check adjective/adverb forms and positions.">
-<ol>
-<li>Plain: <em>The weather was bad.</em><br><textarea class="blank area metered" rows="2" aria-label="Richer version of: The weather was bad." data-k="ex3-1"></textarea></li>
-<li>Plain: <em>Maya walked to the car.</em><br><textarea class="blank area metered" rows="2" aria-label="Richer version of: Maya walked to the car." data-k="ex3-2"></textarea></li>
-<li>Plain: <em>The factory was very old and big.</em><br><textarea class="blank area metered" rows="2" aria-label="Richer version of: The factory was very old and big." data-k="ex3-3"></textarea></li>
-<li>Plain: <em>The lights in the sky were nice.</em><br><textarea class="blank area metered" rows="2" aria-label="Richer version of: The lights in the sky were nice." data-k="ex3-4"></textarea></li>
-</ol>
-<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="ex3-check"></p>
-</div>
-
-<h2 id="ex4" class="ex">Exercise 4: Roll the dice</h2>
-<p>Roll the dice to get a photo, an adjective and an adverb. Write the next sentence of the story using both words. Don't like your words? Roll again!</p>
-<div class="g-write" data-g="ex4" data-task="Roll the dice, then write the next sentence of the story about the photo, using the adjective and the adverb shown." data-focus="The student must write the next sentence of a story about the given photo, using BOTH the given adjective and the given adverb, each in the right role (adjective describing a noun or after be/look/feel; adverb describing a verb). Mark off-task if either word is missing or if the sentence has nothing to do with the photo. Also check grammar and word order.">
-<ol>
-<li class="dice-li"><button type="button" class="dice-btn game-ui">&#9856; Roll the dice</button> <span class="dice-prompt">Tap Roll the dice to get your words.</span><br><textarea class="blank area metered" rows="2" aria-label="Your dice sentence 1" data-k="ex4-1"></textarea></li>
-<li class="dice-li"><button type="button" class="dice-btn game-ui">&#9856; Roll the dice</button> <span class="dice-prompt">Tap Roll the dice to get your words.</span><br><textarea class="blank area metered" rows="2" aria-label="Your dice sentence 2" data-k="ex4-2"></textarea></li>
-<li class="dice-li"><button type="button" class="dice-btn game-ui">&#9856; Roll the dice</button> <span class="dice-prompt">Tap Roll the dice to get your words.</span><br><textarea class="blank area metered" rows="2" aria-label="Your dice sentence 3" data-k="ex4-3"></textarea></li>
-</ol>
-<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="ex4-check"></p>
-</div>
-
-<h2 id="ex5" class="ex">Exercise 5: Match the halves</h2>
+<h2 id="ex3" class="ex">Exercise 3: Match the halves</h2>
 <p>Tap the start of a sentence, then tap its ending.</p>
 <div class="g-match" data-g="ex5">
 <ul>
@@ -163,22 +129,7 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
 </ul>
 </div>
 
-<h2 id="ex6" class="ex">Exercise 6: Your story</h2>
-<p>Choose a photo and write a short story about it, one sentence at a time. Try to use at least <strong>three adjectives and two adverbs</strong>. Press <strong>Check</strong> after each sentence.</p>
-<p class="story-photo">My photo: <select class="story-pick" aria-label="Choose your photo"><option value="">choose a photo</option><option>Photo A</option><option>Photo B</option><option>Photo C</option><option>Photo D</option><option>Photo E</option><option>Photo F</option><option>Photo G</option><option>Photo H</option></select></p>
-<div class="g-write" data-g="ex6" data-task="Write a short story (five sentences) about the chosen photo, one sentence at a time. The whole story should use at least three adjectives and two adverbs." data-focus="This is one sentence of a five-sentence story about one of the lesson&#x27;s photos (a rainy city street, a traffic jam, an abandoned factory, an empty park bench, a misty lake, a celebration with confetti, northern lights, a cosy room with a fire). Check that the sentence is grammatical, natural and fits a story, and that adjectives and adverbs are correct in form, role and position. Praise vivid word choices; if the sentence has no adjective or adverb, mark almost and suggest one.">
-<ol>
-<li>Sentence 1<br><textarea class="blank area metered story" rows="2" aria-label="Story sentence 1" data-k="ex6-1"></textarea></li>
-<li>Sentence 2<br><textarea class="blank area metered story" rows="2" aria-label="Story sentence 2" data-k="ex6-2"></textarea></li>
-<li>Sentence 3<br><textarea class="blank area metered story" rows="2" aria-label="Story sentence 3" data-k="ex6-3"></textarea></li>
-<li>Sentence 4<br><textarea class="blank area metered story" rows="2" aria-label="Story sentence 4" data-k="ex6-4"></textarea></li>
-<li>Sentence 5<br><textarea class="blank area metered story" rows="2" aria-label="Story sentence 5" data-k="ex6-5"></textarea></li>
-</ol>
-<p hidden data-q="Writing check feedback"><input class="blank g-record" type="hidden" data-k="ex6-check"></p>
-</div>
-<p class="story-total" aria-live="polite"></p>
-
-<h2 id="ex7" class="ex">Exercise 7: Speaking</h2>
+<h2 id="ex4" class="ex">Exercise 4: Speaking</h2>
 <ul>
 <li><strong>Add a word:</strong> one person says a plain sentence: <em>The cat sat.</em> The next adds an adjective: <em>The fat cat sat.</em> The next adds an adverb: <em>The fat cat sat lazily.</em> Keep going! How long can you make it?</li>
 <li><strong>Fortunately, unfortunately:</strong> tell a story together. Each person adds one sentence starting with <em>Fortunately</em> or <em>Unfortunately</em>, with at least one adjective or adverb. <em>Unfortunately, it was raining heavily. Fortunately, Maya had a huge umbrella…</em></li>
@@ -189,10 +140,7 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
   <div class="answers-body">
 <p><strong>Exercise 1:</strong> 1 grey, drizzly, 2 briskly, 3 absolutely awful, 4 painfully slowly, 5 eerie, 6 thoughtfully, 7 breathtaking, 8 contentedly.</p>
 <p><strong>Exercise 2:</strong> Many answers are possible. Adjectives go before the nouns; adverbs describe the verbs. For example: The icy rain fell steadily on the empty streets.</p>
-<p><strong>Exercise 3:</strong> Your own answers. For example: The weather was absolutely miserable, and it rained heavily all day.</p>
-<p><strong>Exercise 4:</strong> Your own answers.</p>
-<p><strong>Exercise 5:</strong> The rain fell steadily on the empty streets. The old factory looked eerie in the grey light. The impatient drivers sounded their horns angrily. The northern lights moved gracefully across the sky. By evening, Maya felt absolutely exhausted. The fire crackled warmly in the cosy cabin.</p>
-<p><strong>Exercise 6:</strong> Your own story.</p>
+<p><strong>Exercise 3:</strong> The rain fell steadily on the empty streets. The old factory looked eerie in the grey light. The impatient drivers sounded their horns angrily. The northern lights moved gracefully across the sky. By evening, Maya felt absolutely exhausted. The fire crackled warmly in the cosy cabin.</p>
   </div>
 </details>
 <section class="credits">
@@ -285,90 +233,6 @@ body { padding-bottom: 96px !important; } .g-stars { bottom: 84px !important; }
       else if (t) frag.append(document.createTextNode(t));
     });
     n.parentNode.replaceChild(frag, n);
-  });
-})();
-</script>
-<script>
-// Richness meter, boring-word warnings and the dice for Tell a Richer Story.
-(function () {
-  var ADJ = ("absolute angry awful bare beautiful big bitter black bleak blue bright brilliant broken busy calm careful cheerful chaotic chilly clean clear cloudy cold colourful colorful comfortable cosy cozy crackling creepy crowded curious damp dangerous dark deep delighted deserted dim drizzly dreamy dry dull dusty eager early eerie elegant empty endless enormous excited exciting exhausted faint famous fast fierce filthy fine foggy fragile fresh friendly frightened frightening frozen funny furious gentle gigantic gloomy glorious golden gorgeous graceful grateful great green grey gray grim happy hard harsh heavy hectic helpful hidden high hopeful horrible hot huge hungry icy impatient incredible lively lonely long loud lovely lucky magical majestic massive melancholy merry mighty misty miserable modern muddy mysterious narrow nervous new noisy old orange packed painful pale patient peaceful perfect pink playful pleasant polite powerful precious pretty proud quick quiet rainy rapid red relaxed relaxing rich rough rusty sad safe scared scary serene shady sharp shiny short shy silent silly silver simple sleepy slow small smooth snowy soft soggy sparkling spooky stormy strange stressful strong stunning sudden sunny sweet tall tense terrible terrifying thick thin thoughtful tiny tired tranquil tremendous ugly unusual vast violent vivid warm weak wet white wide wild windy wise wonderful worried yellow young breathtaking busy dramatic drowsy enchanting freezing frosty gleaming glowing howling joyful mournful roaring shimmering soaring tearful twinkling whispering abandoned ancient bustling exhausting impressive peculiar thrilling").split(" ");
-  var IRREG_ADV = ["well", "fast", "hard", "late", "early", "soon", "often", "always", "never", "sometimes", "almost", "too", "quite", "rather", "together", "outside", "inside", "away", "everywhere", "suddenly"];
-  var NOT_ADV = ["friendly", "lovely", "lonely", "silly", "ugly", "only", "family", "early", "holy", "jolly", "lively", "elderly", "costly", "likely", "daily", "weekly", "monthly", "deadly", "curly", "chilly", "hilly", "sly", "fly", "july", "italy", "reply", "supply", "apply", "rely", "lily", "belly", "jelly", "bully", "ally"];
-  var BORING = ["good", "nice", "bad", "big", "small", "very", "thing", "things", "stuff", "ok", "okay", "lots"];
-  var adjSet = {}; ADJ.forEach(function (w) { adjSet[w] = 1; });
-  function analyse(t) {
-    var words = (t.toLowerCase().match(/[a-z']+/g) || []);
-    var adj = [], adv = [], bor = [];
-    words.forEach(function (w) {
-      if (BORING.indexOf(w) > -1) { if (bor.indexOf(w) < 0) bor.push(w); return; }
-      if (adjSet[w]) { adj.push(w); return; }
-      if ((/ly$/.test(w) && w.length > 4 && NOT_ADV.indexOf(w) < 0) || IRREG_ADV.indexOf(w) > -1) adv.push(w);
-    });
-    return { adj: adj, adv: adv, bor: bor };
-  }
-  function stars(n) { var s = ""; for (var i = 0; i < 3; i++) s += i < n ? "★" : "☆"; return s; }
-  function render(m, r) {
-    var score = Math.min(3, Math.min(r.adj.length, 2) + Math.min(r.adv.length, 1) - (r.bor.length ? 1 : 0));
-    m.innerHTML = "";
-    var c = document.createElement("span"); c.className = "m-count";
-    c.innerHTML = "Adjectives: <strong>" + r.adj.length + "</strong>" + (r.adj.length ? " (" + r.adj.join(", ") + ")" : "") + " &middot; Adverbs: <strong>" + r.adv.length + "</strong>" + (r.adv.length ? " (" + r.adv.join(", ") + ")" : "");
-    var s = document.createElement("span"); s.className = "m-stars"; s.textContent = stars(Math.max(0, score)); s.setAttribute("aria-label", "Richness " + Math.max(0, score) + " of 3");
-    m.append(s, c);
-    if (r.bor.length) { var b = document.createElement("span"); b.className = "m-boring"; b.textContent = "Try a richer word than: " + r.bor.join(", "); m.append(b); }
-  }
-  document.querySelectorAll("textarea.metered").forEach(function (t) {
-    var m = document.createElement("div"); m.className = "meter game-ui"; m.setAttribute("aria-live", "polite");
-    var after = t.nextElementSibling && t.nextElementSibling.classList.contains("g-wcheck") ? t.nextElementSibling : t;
-    after.after(m);
-    function up() { render(m, analyse(t.value)); total(); }
-    t.addEventListener("input", up); up();
-  });
-  var totalBox = document.querySelector(".story-total");
-  function total() {
-    if (!totalBox) return;
-    var a = 0, d = 0;
-    document.querySelectorAll("textarea.story").forEach(function (t) { var r = analyse(t.value); a += r.adj.length; d += r.adv.length; });
-    var goal = a >= 3 && d >= 2;
-    totalBox.textContent = "Your story so far: " + a + " adjective" + (a === 1 ? "" : "s") + " and " + d + " adverb" + (d === 1 ? "" : "s") + (goal ? ". Goal reached: three adjectives and two adverbs!" : ". Goal: three adjectives and two adverbs.");
-    if (goal && !totalBox.dataset.done && window.lessonGames && a + d > 0) { totalBox.dataset.done = "1"; window.lessonGames.celebrate(totalBox, "Rich story!"); }
-  }
-  total();
-  // The chosen photo for "Your story" goes into each sentence's prompt, so Claude knows which photo it is.
-  var pickSel = document.querySelector(".story-pick");
-  var KEYP = "story-photo-" + location.pathname;
-  try { if (pickSel) pickSel.value = localStorage.getItem(KEYP) || ""; } catch (e) {}
-  function setStoryPhoto() {
-    var v = pickSel.value;
-    document.querySelectorAll("textarea.story").forEach(function (t, i) {
-      var li = t.closest("li"); var first = li.firstChild;
-      if (first && first.nodeType === 3) first.nodeValue = "Sentence " + (i + 1) + (v ? " (story about " + v + ")" : "");
-    });
-    try { localStorage.setItem(KEYP, v); } catch (e) {}
-  }
-  if (pickSel) { pickSel.addEventListener("change", setStoryPhoto); setStoryPhoto(); }
-  // The dice.
-  var PH = { A: "a misty lake", B: "a celebration with confetti", C: "an empty park bench", D: "an abandoned factory", E: "a rainy city street", F: "a cosy room with a fire", G: "a traffic jam", H: "northern lights" };
-  var DADJ = ["gloomy", "chaotic", "eerie", "lonely", "breathtaking", "cosy", "peaceful", "joyful", "deserted", "enormous", "freezing", "crowded", "mysterious", "exhausted", "noisy"];
-  var DADV = ["impatiently", "slowly", "nervously", "quietly", "silently", "happily", "carefully", "suddenly", "wildly", "gently", "proudly", "sadly", "loudly", "anxiously", "calmly"];
-  var KEYD = "dice-" + location.pathname, rolls = {};
-  try { rolls = JSON.parse(localStorage.getItem(KEYD) || "{}") || {}; } catch (e) {}
-  document.querySelectorAll(".dice-li").forEach(function (li, i) {
-    var b = li.querySelector(".dice-btn"), p = li.querySelector(".dice-prompt");
-    function show(r) {
-      p.innerHTML = "";
-      [["Photo " + r.p, ""], [r.adj, "adjective: "], [r.adv, "adverb: "]].forEach(function (x) { var s = document.createElement("span"); s.className = "dp"; s.textContent = x[1] + x[0]; p.append(s, " "); });
-      p.setAttribute("data-words", "Photo " + r.p + " (" + PH[r.p] + "), adjective: " + r.adj + ", adverb: " + r.adv);
-      var hid = li.querySelector(".dice-text"); if (!hid) { hid = document.createElement("span"); hid.className = "dice-text"; hid.hidden = true; p.after(hid); }
-      hid.textContent = " Photo " + r.p + " (" + PH[r.p] + "). Use the adjective “" + r.adj + "” and the adverb “" + r.adv + "”.";
-    }
-    function roll() {
-      var keys = Object.keys(PH);
-      var r = { p: keys[Math.floor(Math.random() * keys.length)], adj: DADJ[Math.floor(Math.random() * DADJ.length)], adv: DADV[Math.floor(Math.random() * DADV.length)] };
-      rolls[i] = r; try { localStorage.setItem(KEYD, JSON.stringify(rolls)); } catch (e) {}
-      show(r); p.classList.remove("dice-roll"); void p.offsetWidth; p.classList.add("dice-roll");
-    }
-    b.addEventListener("click", roll);
-    if (rolls[i]) show(rolls[i]); else roll();
   });
 })();
 </script>

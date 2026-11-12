@@ -148,7 +148,6 @@ def page(ep):
             bits.append(f'<p><strong>Opposite:</strong> {E(w["opposite"])}</p>')
         if w["usage"]:
             bits.append("<p><strong>How to use it:</strong></p><ul>" + "".join(f"<li><em>{E(u)}</em></li>" for u in w["usage"]) + "</ul>")
-        bits.append(f'<p class="mine">My sentence: <input class="blank long" type="text" aria-label="My sentence with {E(w["term"])}" autocomplete="off" data-k="w{k}"></p>')
         cards.append('<section class="word">' + "".join(bits) + "</section>")
     when = f' &middot; {E(ep["date"])}' if ep.get("date") else ""
     return f'''<!doctype html>
@@ -175,7 +174,7 @@ def page(ep):
 <h2>1. Watch</h2>
 {video}
 <h2>2. The vocabulary</h2>
-<p>Read each word, its meaning and the examples. Then write your own sentence and say it out loud.</p>
+<p>Read each word, its meaning and the examples. Then make your own sentence with each word and say it out loud.</p>
 {"".join(cards)}
 </main>
 <footer class="foot"><p>From Bill's English lessons. Video and vocabulary from <a href="{E(ep["bbcUrl"])}" target="_blank" rel="noopener">BBC Learning English</a>.</p></footer>
