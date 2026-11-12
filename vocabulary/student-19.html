@@ -178,6 +178,37 @@ h2.mix { margin-top: 36px; padding-top: 14px; border-top: 2px solid var(--line, 
 <li data-why="Make something for someone: you do it to please them. I made a cake for my brother." data-bad="to" data-fix="for" data-opts="for,with,at" data-q="I made a cake to my brother for his birthday."><span class="sent">I made a cake to my brother for his birthday.</span><input class="blank" type="hidden" data-k="ex2b-8"></li>
 <li data-why="Say never takes the person straight after it. Use tell + person: He told me that... (or: He said that the meeting was cancelled.)" data-bad="said me" data-fix="told me" data-opts="told me,said to me that,say me" data-q="He said me that the meeting was cancelled."><span class="sent">He said me that the meeting was cancelled.</span><input class="blank" type="hidden" data-k="ex2b-9"></li>
 </ol>
+<h2 id="ex2c" class="ex">Exercise 2C: Move the pieces</h2>
+<p>Slide the thing, the person and the little word (<em>to</em> or <em>for</em>) into different places. Tap a piece, then tap where you want it (or drag it). The sentence tells you at once if it makes sense. Some sentences have two correct orders: find both. Pieces you don't need go to the bottom row.</p>
+<ol class="obj-game" data-g="ex2c">
+<li data-start="Can you explain" data-end="?" data-pieces="me|the rules|to" data-first="me|the rules" data-ok="the rules to me" data-bad="{&quot;me the rules&quot;: &quot;Explain never takes the person straight after it. Explain + WHAT? The rules. So: the rules to me.&quot;, &quot;to me the rules&quot;: &quot;Put the thing first: explain the rules to me.&quot;, &quot;the rules me&quot;: &quot;The person needs to after explain: the rules to me.&quot;, &quot;the rules&quot;: &quot;Who is it for? Add the person with to.&quot;}" data-q="Move the pieces: Can you explain ..."><input class="blank" type="hidden" data-k="ex2c-1"></li>
+<li data-start="She sent" data-end="." data-pieces="me|the file|to" data-first="the file|me" data-ok="me the file|the file to me" data-bad="{&quot;the file me&quot;: &quot;After the thing, the person needs to: the file to me.&quot;, &quot;to me the file&quot;: &quot;Never to + person before the thing. Say: me the file, or the file to me.&quot;}" data-q="Move the pieces: She sent ..."><input class="blank" type="hidden" data-k="ex2c-2"></li>
+<li data-start="I bought" data-end="." data-pieces="my mother|a present|for" data-first="for|my mother|a present" data-ok="my mother a present|a present for my mother" data-bad="{&quot;for my mother a present&quot;: &quot;Put the thing first: a present for my mother. Or no for: my mother a present.&quot;, &quot;a present my mother&quot;: &quot;After the thing, the person needs for: a present for my mother.&quot;}" data-q="Move the pieces: I bought ..."><input class="blank" type="hidden" data-k="ex2c-3"></li>
+<li data-start="He described" data-end="." data-pieces="his manager|the problem|to" data-first="his manager|the problem" data-ok="the problem to his manager" data-bad="{&quot;his manager the problem&quot;: &quot;Describe never takes the person straight after it. Describe + WHAT? The problem.&quot;, &quot;to his manager the problem&quot;: &quot;Put the thing first: the problem to his manager.&quot;, &quot;the problem his manager&quot;: &quot;The person needs to: the problem to his manager.&quot;}" data-q="Move the pieces: He described ..."><input class="blank" type="hidden" data-k="ex2c-4"></li>
+<li data-start="Please give" data-end="." data-pieces="her|it|to" data-first="her|it" data-ok="it to her" data-bad="{&quot;her it&quot;: &quot;With it, put the thing first: give it to her.&quot;, &quot;to her it&quot;: &quot;Put it first: give it to her.&quot;, &quot;it her&quot;: &quot;The person needs to: give it to her.&quot;}" data-q="Move the pieces: Please give ..."><input class="blank" type="hidden" data-k="ex2c-5"></li>
+<li data-start="Can you tell" data-end="?" data-pieces="me|the truth|to" data-first="the truth|to|me" data-ok="me the truth" data-bad="{&quot;the truth to me&quot;: &quot;Tell is different: the person comes first, with no to. Tell me the truth.&quot;, &quot;to me the truth&quot;: &quot;Tell takes the person first, with no to: tell me the truth.&quot;}" data-q="Move the pieces: Can you tell ..."><input class="blank" type="hidden" data-k="ex2c-6"></li>
+</ol>
+<style>
+.obj-game { display: grid; gap: 14px; padding-left: 1.4em; }
+.obj-game > li { border: 1px solid var(--rule); border-radius: 12px; padding: 10px 12px; background: var(--sheet); }
+.obj-game > li.done { border-color: var(--ok); }
+.og-row { line-height: 2.8; }
+.og-tray { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+.og-line { display: inline; }
+.og-row .og-chip, .og-row .og-slot { vertical-align: middle; margin: 2px 0; }
+.og-row .og-fixed { margin-right: 4px; }
+.og-fixed { font-weight: 700; }
+.og-traylab { font-size: .82rem; color: var(--ink-soft); margin-top: 8px; }
+.og-tray { min-height: 40px; border: 2px dashed var(--rule); border-radius: 10px; padding: 4px 6px; }
+.og-chip { font: inherit; font-weight: 700; border: 2px solid var(--accent); background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 6px 14px; cursor: grab; }
+.og-chip.held { background: var(--accent); color: var(--sheet); }
+.og-slot { width: 10px; min-height: 34px; padding: 0; border: none; background: transparent; border-radius: 6px; cursor: pointer; }
+li.holding .og-slot { width: 26px; background: var(--accent-soft); border: 2px dashed var(--accent); }
+.og-slot.over { background: var(--accent); }
+.og-verdict { margin: 8px 0 0; font-weight: 700; }
+.og-verdict.good { color: var(--ok); } .og-verdict.bad { color: var(--bad); }
+.og-count { margin: 2px 0 0; font-size: .9rem; color: var(--ink-soft); }
+</style>
 <h2 class="mix">All the groups together</h2>
 <p>Now you know both groups. These exercises mix nouns and verbs.</p>
 
@@ -213,6 +244,7 @@ h2.mix { margin-top: 36px; padding-top: 14px; border-top: 2px solid var(--line, 
 <p><strong>Exercise 1:</strong> 1 in, 2 to, 3 to, 4 between, 5 for, 6 on, 7 of, 8 for, 9 of (a rise <em>of</em> 6% <em>in</em> rents).</p>
 <p><strong>Exercise 2:</strong> 1 depends <strong>on</strong>, 2 We discussed the new schedule, 3 apologised <strong>to</strong> my neighbour, 4 Correct, 5 deals <strong>with</strong>, 6 focus <strong>on</strong>, 7 approved <strong>of</strong>, 8 consists <strong>of</strong>, 9 an increase <strong>in</strong> house prices.</p>
 <p><strong>Exercise 2B:</strong> Part A: 1 the report, 2 the new rules, 3 a bike, 4 how this machine works. Part B: 1 describe the hotel to me, 2 recommended a good dentist to me, 3 Correct, 4 a cake <strong>for</strong> my brother, 5 He <strong>told me</strong> that the meeting was cancelled.</p>
+<p><strong>Exercise 2C:</strong> 1 Can you explain the rules to me? 2 She sent me the file. / She sent the file to me. 3 I bought my mother a present. / I bought a present for my mother. 4 He described the problem to his manager. 5 Please give it to her. 6 Can you tell me the truth? (to is not needed)</p>
 <p><strong>Exercise 3:</strong> 1 in, 2 for, 3 on, 4 to, 5 with, 6 on, 7 for, 8 of, 9 on.</p>
 <p><strong>Exercise 4:</strong> 1 We need to focus on the main problem first. (Or: First we need to focus on the main problem.) 2 There has been a big rise in house prices. 3 I'd like to apologise to you for the delay. 4 The course consists of five lessons and an exam. 5 What is the difference between these two phones? 6 Who deals with complaints in your office?</p>
   </div>
@@ -248,6 +280,7 @@ h2.mix { margin-top: 36px; padding-top: 14px; border-top: 2px solid var(--line, 
   window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
 })();
 </script>
+<script src="../objects-game.js?v=1795200000"></script>
 <script src="../games.js?v=1794400000"></script>
 <script src="../api.js?v=1792889681"></script>
 <script src="../work.js?v=1793900000"></script>
