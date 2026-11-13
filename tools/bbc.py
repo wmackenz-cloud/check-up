@@ -19,6 +19,8 @@ DIR = ROOT / "bbc"
 DATA = DIR / "episodes.json"
 SITE = "https://wmackenz-cloud.github.io/check-up/"
 ST_V = "1793206303"
+TRAPS_V = "1795100000"
+NAV_V = "1794900000"
 API_V = "1792889681"
 
 
@@ -161,7 +163,7 @@ def page(ep):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
-<link rel="stylesheet" href="../grammar-traps/traps.css?v={ST_V}">
+<link rel="stylesheet" href="../grammar-traps/traps.css?v={TRAPS_V}">
 <link rel="stylesheet" href="bbc.css?v={ST_V}">
 </head>
 <body class="student" data-item="bbc-{E(ep["slug"])}">
@@ -221,10 +223,10 @@ def index(eps):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
-<link rel="stylesheet" href="../grammar-traps/traps.css?v={ST_V}">
+<link rel="stylesheet" href="../grammar-traps/traps.css?v={TRAPS_V}">
 </head>
 <body class="library">
-<script src="../teacher-nav.js?v={ST_V}"></script>
+<script src="../teacher-nav.js?v={NAV_V}"></script>
 <header class="top">
   <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../library.html">Teacher library</a></li><li><span aria-current="page">BBC videos</span></li></ol></nav>
   <h1>BBC Video Lessons</h1>
