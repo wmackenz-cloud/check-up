@@ -1,0 +1,665 @@
+{
+ "n": 3,
+ "title": "Present Perfect",
+ "tagline": "experience and news: have / has + past participle",
+ "why": "The present perfect connects the past to now. You need it to talk about your experience, give news, and say how long something has lasted, for example in a job interview.",
+ "know": [
+  "the form <em>have / has + past participle</em>, with irregular verbs: <em>go &rarr; gone</em>, <em>see &rarr; seen</em>, <em>write &rarr; written</em>",
+  "the time words <em>ever, never, just, already, yet, for, since</em>"
+ ],
+ "understand": [
+  "why a finished time (<em>yesterday, in 2019, two days ago</em>) needs the past simple",
+  "the difference between <em>for</em> (a length of time) and <em>since</em> (a starting point)"
+ ],
+ "able": [
+  "talk about your life experience: <em>I've never tried skiing.</em>",
+  "give news: <em>I've just found a new job.</em>",
+  "say how long: <em>I've known her for ten years.</em>"
+ ],
+ "mistakes": [
+  [
+   "I have seen him yesterday.",
+   "I <strong>saw</strong> him yesterday."
+  ],
+  [
+   "I'm living here since 2020.",
+   "I<strong>'ve lived</strong> here since 2020."
+  ],
+  [
+   "She has went home.",
+   "She has <strong>gone</strong> home."
+  ],
+  [
+   "Are you ever been to Mexico?",
+   "<strong>Have</strong> you ever been to Mexico?"
+  ],
+  [
+   "I have finished already my work.",
+   "I have <strong>already finished</strong> my work."
+  ]
+ ],
+ "use": [
+  "life experience, with no time given: <em>I've travelled to Peru twice.</em>",
+  "news with a result now: <em>I've lost my wallet, so I can't pay.</em>",
+  "a situation from the past to now: <em>We've lived in Mississauga for six years.</em>",
+  "a time that isn't finished: <em>I've had three coffees today.</em>"
+ ],
+ "form": [
+  [
+   "Positive",
+   "<em>I<strong>'ve finished</strong>.</em> <em>She<strong>'s finished</strong>.</em> (<em>'s</em> = has)"
+  ],
+  [
+   "Negative",
+   "<em>I <strong>haven't finished</strong>.</em> <em>He <strong>hasn't called</strong>.</em>"
+  ],
+  [
+   "Question",
+   "<em><strong>Have</strong> you <strong>finished</strong>?</em> <em><strong>Has</strong> she <strong>called</strong>?</em> <em>How long <strong>have</strong> you <strong>lived</strong> here?</em>"
+  ],
+  [
+   "Short answers",
+   "<em>Yes, I <strong>have</strong>.</em> <em>No, I <strong>haven't</strong>.</em> <em>Yes, he <strong>has</strong>.</em> <em>No, he <strong>hasn't</strong>.</em>"
+  ]
+ ],
+ "signals": "<em>ever</em>, <em>never</em>, <em>just</em>, <em>already</em>, <em>yet</em>, <em>so far</em>, <em>recently</em>, <em>today</em>, <em>this week</em>, <em>for</em> + a length of time, <em>since</em> + a starting point. Past simple instead: <em>yesterday</em>, <em>last year</em>, <em>ago</em>, <em>in 2018</em>, <em>When...?</em>",
+ "tip": "<strong>No finished time with the present perfect.</strong> If you say <em>when</em> (yesterday, last week, two years ago), use the past simple: <em>I've been to Halifax</em>, but <em>I went to Halifax in 2019</em>.",
+ "ws": {
+  "pick": [
+   {
+    "q": "___ been to Vancouver?",
+    "opts": [
+     "Have you ever",
+     "Did you ever",
+     "Are you ever"
+    ],
+    "a": 0,
+    "why": "For life experience, use have + ever + past participle: Have you ever been to Vancouver?"
+   },
+   {
+    "q": "We ___ to Niagara Falls last summer.",
+    "opts": [
+     "went",
+     "have gone",
+     "have been"
+    ],
+    "a": 0,
+    "why": "Last summer is a finished time, so use the past simple: We went."
+   },
+   {
+    "q": "She ___ for this company since 2015.",
+    "opts": [
+     "has worked",
+     "works",
+     "worked"
+    ],
+    "a": 0,
+    "why": "Since 2015 = from then until now, so use the present perfect: has worked."
+   },
+   {
+    "q": "I've known my best friend ___ twenty years.",
+    "opts": [
+     "for",
+     "since",
+     "from"
+    ],
+    "a": 0,
+    "why": "Twenty years is a length of time, so use for."
+   },
+   {
+    "q": "They haven't replied to my message ___.",
+    "opts": [
+     "yet",
+     "already",
+     "ago"
+    ],
+    "a": 0,
+    "why": "Yet goes at the end of negatives and questions: They haven't replied yet."
+   },
+   {
+    "q": "My son ___ his driving test. He's so happy!",
+    "opts": [
+     "has just passed",
+     "has passed just",
+     "just has passed"
+    ],
+    "a": 0,
+    "why": "Just goes between has and the past participle: has just passed."
+   },
+   {
+    "q": "When ___ to Canada?",
+    "opts": [
+     "did you come",
+     "have you come",
+     "you have come"
+    ],
+    "a": 0,
+    "why": "When asks about a finished time, so use the past simple: When did you come?"
+   },
+   {
+    "q": "He ___ a horse. He's afraid of them.",
+    "opts": [
+     "has never ridden",
+     "has never rode",
+     "never has ridden"
+    ],
+    "a": 0,
+    "why": "Never goes after has, and the past participle of ride is ridden."
+   }
+  ],
+  "type": [
+   {
+    "q": "I ___ (already / send) the invoice to the client.",
+    "a": [
+     "have already sent",
+     "'ve already sent"
+    ],
+    "why": "Already goes between have and the past participle: I have already sent."
+   },
+   {
+    "q": "My parents ___ (never / fly) in a plane.",
+    "a": [
+     "have never flown",
+     "'ve never flown"
+    ],
+    "why": "Life experience: have + never + past participle. fly, flew, flown."
+   },
+   {
+    "q": "She ___ (not / finish) her report yet.",
+    "a": [
+     "hasn't finished",
+     "has not finished"
+    ],
+    "why": "Yet = up to now, so use the present perfect: She hasn't finished."
+   },
+   {
+    "q": "We ___ (live) in Ottawa since 2018.",
+    "a": [
+     "have lived",
+     "'ve lived",
+     "have been living",
+     "'ve been living"
+    ],
+    "why": "Since 2018 = from then until now: We have lived (or have been living) here."
+   },
+   {
+    "q": "I ___ (see) that film last weekend.",
+    "a": [
+     "saw"
+    ],
+    "why": "Last weekend is a finished time, so use the past simple: I saw."
+   },
+   {
+    "q": "How long ___ (you / know) your manager?",
+    "a": [
+     "have you known"
+    ],
+    "why": "How long + to now: have you known. Know is a state verb, so no -ing."
+   },
+   {
+    "q": "He ___ (just / break) his arm, so he's going to the hospital.",
+    "a": [
+     "has just broken",
+     "'s just broken"
+    ],
+    "why": "Recent news with a result now: has just broken. break, broke, broken."
+   },
+   {
+    "q": "I ___ (write) three emails so far this morning.",
+    "a": [
+     "have written",
+     "'ve written"
+    ],
+    "why": "So far = up to now: I have written. write, wrote, written."
+   }
+  ],
+  "spot": [
+   {
+    "q": "I have met my wife in 2010.",
+    "bad": "have met",
+    "fix": "met",
+    "opts": [
+     "met",
+     "had met"
+    ],
+    "why": "In 2010 is a finished time, so use the past simple: I met my wife in 2010."
+   },
+   {
+    "q": "We have been married since twelve years.",
+    "bad": "since",
+    "fix": "for",
+    "opts": [
+     "for",
+     "from"
+    ],
+    "why": "Twelve years is a length of time, so use for: We have been married for twelve years."
+   },
+   {
+    "q": "He has wrote a book about his life.",
+    "bad": "has wrote",
+    "fix": "has written",
+    "opts": [
+     "has written",
+     "have written"
+    ],
+    "why": "Use the past participle after has: write, wrote, written. He has written."
+   },
+   {
+    "q": "I'm working here since March.",
+    "bad": "I'm working",
+    "fix": "I've worked",
+    "opts": [
+     "I've worked",
+     "I work"
+    ],
+    "why": "Since March = from then until now: I've worked here since March."
+   },
+   {
+    "q": "Has she called you two days ago?",
+    "bad": "Has she called",
+    "fix": "Did she call",
+    "opts": [
+     "Did she call",
+     "Does she call"
+    ],
+    "why": "Two days ago is a finished time, so use the past simple: Did she call you?"
+   }
+  ],
+  "order": [
+   {
+    "a": "Have you ever been to the Rocky Mountains?",
+    "alt": [],
+    "why": "Have + you + ever + past participle: Have you ever been to the Rocky Mountains?"
+   },
+   {
+    "a": "I haven't spoken to my brother since Christmas.",
+    "alt": [
+     "Since Christmas I haven't spoken to my brother."
+    ],
+    "why": "Haven't + past participle, with since + a starting point."
+   },
+   {
+    "a": "She has already booked the hotel for our trip.",
+    "alt": [],
+    "why": "Already goes between has and the past participle: has already booked."
+   },
+   {
+    "a": "How long have you had this car?",
+    "alt": [],
+    "why": "How long + have + you + past participle. Have (own) is a state verb."
+   }
+  ]
+ },
+ "hw": {
+  "pick": [
+   {
+    "q": "We ___ two meetings so far today.",
+    "opts": [
+     "have had",
+     "had",
+     "have"
+    ],
+    "a": 0,
+    "why": "So far today = up to now, so use the present perfect: have had."
+   },
+   {
+    "q": "My sister ___ to Mexico. She's coming back on Friday.",
+    "opts": [
+     "has gone",
+     "has been"
+    ],
+    "a": 0,
+    "why": "Has gone = she is there now. Has been = she went and came back."
+   },
+   {
+    "q": "They ___ each other since high school.",
+    "opts": [
+     "have known",
+     "know",
+     "knew"
+    ],
+    "a": 0,
+    "why": "Since high school = from then until now: have known."
+   },
+   {
+    "q": "___ you finished the dishes yet?",
+    "opts": [
+     "Have",
+     "Has",
+     "Are"
+    ],
+    "a": 0,
+    "why": "With you, the present perfect uses have: Have you finished yet?"
+   },
+   {
+    "q": "He moved to Toronto three years ___.",
+    "opts": [
+     "ago",
+     "since",
+     "for"
+    ],
+    "a": 0,
+    "why": "Ago goes with the past simple to say when: three years ago."
+   },
+   {
+    "q": "I ___ to the gym since my operation.",
+    "opts": [
+     "haven't been",
+     "didn't go",
+     "don't go"
+    ],
+    "a": 0,
+    "why": "Since my operation = from then until now: I haven't been."
+   }
+  ],
+  "type": [
+   {
+    "q": "We ___ (not / decide) where to go on holiday yet.",
+    "a": [
+     "haven't decided",
+     "have not decided"
+    ],
+    "why": "Yet = up to now: We haven't decided."
+   },
+   {
+    "q": "My daughter ___ (just / start) a new job.",
+    "a": [
+     "has just started",
+     "'s just started"
+    ],
+    "why": "Recent news: has just started. Just goes before the past participle."
+   },
+   {
+    "q": "I ___ (lose) my wallet last night.",
+    "a": [
+     "lost"
+    ],
+    "why": "Last night is a finished time, so use the past simple: I lost."
+   },
+   {
+    "q": "How many countries ___ (you / visit)?",
+    "a": [
+     "have you visited"
+    ],
+    "why": "Life experience to now: How many countries have you visited?"
+   },
+   {
+    "q": "He ___ (be) a nurse for fifteen years. He loves it.",
+    "a": [
+     "has been",
+     "'s been"
+    ],
+    "why": "For fifteen years, and he still is: has been."
+   },
+   {
+    "q": "They ___ (buy) their house in 2016.",
+    "a": [
+     "bought"
+    ],
+    "why": "In 2016 is a finished time, so use the past simple: bought."
+   },
+   {
+    "q": "She ___ (never / drive) in snow before.",
+    "a": [
+     "has never driven",
+     "'s never driven"
+    ],
+    "why": "Experience: has + never + past participle. drive, drove, driven."
+   },
+   {
+    "q": "I ___ (already / pay) the bill, so we can go.",
+    "a": [
+     "have already paid",
+     "'ve already paid"
+    ],
+    "why": "A result now (we can go): have already paid. pay, paid, paid."
+   }
+  ],
+  "spot": [
+   {
+    "q": "I have visited my aunt last Sunday.",
+    "bad": "have visited",
+    "fix": "visited",
+    "opts": [
+     "visited",
+     "visit"
+    ],
+    "why": "Last Sunday is a finished time, so use the past simple: I visited my aunt."
+   },
+   {
+    "q": "He has finish his lunch.",
+    "bad": "has finish",
+    "fix": "has finished",
+    "opts": [
+     "has finished",
+     "have finished"
+    ],
+    "why": "Has needs the past participle: He has finished his lunch."
+   },
+   {
+    "q": "My parents has lived here for years.",
+    "bad": "has",
+    "fix": "have",
+    "opts": [
+     "have",
+     "are"
+    ],
+    "why": "My parents = they, so use have: My parents have lived here for years."
+   },
+   {
+    "q": "I didn't see her for a long time. I miss her.",
+    "bad": "didn't see",
+    "fix": "haven't seen",
+    "opts": [
+     "haven't seen",
+     "don't see"
+    ],
+    "why": "The time continues to now (I miss her): I haven't seen her for a long time."
+   }
+  ],
+  "order": [
+   {
+    "a": "Have you finished the report yet?",
+    "alt": [],
+    "why": "Have + you + past participle, with yet at the end."
+   },
+   {
+    "a": "We have just come back from Florida.",
+    "alt": [],
+    "why": "Just goes between have and the past participle: have just come."
+   },
+   {
+    "a": "I have never tried Korean food.",
+    "alt": [],
+    "why": "Never goes between have and the past participle: have never tried."
+   }
+  ]
+ },
+ "bank": [
+  {
+   "type": "pick",
+   "q": "Have you ___ the new manager yet?",
+   "opts": [
+    "met",
+    "meet",
+    "meeting"
+   ],
+   "a": "met",
+   "why": "After have, use the past participle: Have you met the new manager yet?"
+  },
+  {
+   "type": "pick",
+   "q": "I ___ my grandmother last week.",
+   "opts": [
+    "visited",
+    "have visited",
+    "visit"
+   ],
+   "a": "visited",
+   "why": "Last week is a finished time, so use the past simple: I visited."
+  },
+  {
+   "type": "pick",
+   "q": "He has worked here ___ January.",
+   "opts": [
+    "since",
+    "for",
+    "from"
+   ],
+   "a": "since",
+   "why": "January is a starting point, so use since."
+  },
+  {
+   "type": "pick",
+   "q": "Have you ___ to Newfoundland?",
+   "opts": [
+    "ever been",
+    "ever went",
+    "been ever"
+   ],
+   "a": "ever been",
+   "why": "Ever goes before the past participle been: Have you ever been to Newfoundland?"
+  },
+  {
+   "type": "pick",
+   "q": "I ___ ten kilometres today and it's only noon.",
+   "opts": [
+    "have walked",
+    "walk",
+    "am walk"
+   ],
+   "a": "have walked",
+   "why": "Today isn't finished yet, so use the present perfect: I have walked."
+  },
+  {
+   "type": "pick",
+   "q": "They got married ten years ___.",
+   "opts": [
+    "ago",
+    "for",
+    "since"
+   ],
+   "a": "ago",
+   "why": "Ago goes with the past simple to say when: ten years ago."
+  },
+  {
+   "type": "pick",
+   "q": "We ___ very little snow so far this winter.",
+   "opts": [
+    "have had",
+    "had",
+    "have"
+   ],
+   "a": "have had",
+   "why": "So far = up to now, so use the present perfect: have had."
+  },
+  {
+   "type": "pick",
+   "q": "What time ___ home last night?",
+   "opts": [
+    "did you get",
+    "have you got",
+    "have you gotten"
+   ],
+   "a": "did you get",
+   "why": "Last night and What time? ask about a finished time: past simple. What time did you get home?"
+  },
+  {
+   "type": "type",
+   "q": "My brother ___ (work) in that restaurant for six months now.",
+   "a": [
+    "has worked",
+    "'s worked",
+    "has been working",
+    "'s been working"
+   ],
+   "why": "For six months now = until now: has worked (or has been working)."
+  },
+  {
+   "type": "type",
+   "q": "I ___ (not / see) that film yet. Is it good?",
+   "a": [
+    "haven't seen",
+    "have not seen"
+   ],
+   "why": "Yet = up to now: I haven't seen it. see, saw, seen."
+  },
+  {
+   "type": "type",
+   "q": "How many times ___ (you / be) to Quebec City?",
+   "a": [
+    "have you been"
+   ],
+   "why": "Experience up to now: How many times have you been?"
+  },
+  {
+   "type": "type",
+   "q": "Sorry, he isn't here. He ___ (just / leave).",
+   "a": [
+    "has just left",
+    "'s just left"
+   ],
+   "why": "Recent news with a result (he isn't here): has just left. leave, left, left."
+  },
+  {
+   "type": "type",
+   "q": "We ___ (move) to this street when I was a child.",
+   "a": [
+    "moved"
+   ],
+   "why": "When I was a child is a finished time, so use the past simple: moved."
+  },
+  {
+   "type": "spot",
+   "q": "She has gone to the dentist yesterday.",
+   "bad": "has gone",
+   "fix": "went",
+   "opts": [
+    "went",
+    "goes"
+   ],
+   "why": "Yesterday is a finished time, so use the past simple: She went to the dentist yesterday."
+  },
+  {
+   "type": "spot",
+   "q": "I have knew him for many years.",
+   "bad": "have knew",
+   "fix": "have known",
+   "opts": [
+    "have known",
+    "have know"
+   ],
+   "why": "Have needs the past participle: know, knew, known. I have known him for many years."
+  },
+  {
+   "type": "spot",
+   "q": "Have you ever missed a flight?",
+   "bad": "",
+   "why": "Correct! Life experience: Have you ever + past participle."
+  },
+  {
+   "type": "spot",
+   "q": "We've lived in this apartment since 2021.",
+   "bad": "",
+   "why": "Correct! Since 2021 = from then until now, so we've lived is right."
+  },
+  {
+   "type": "order",
+   "a": "Has your sister found a new apartment yet?",
+   "alt": [],
+   "why": "Has + your sister + past participle, with yet at the end."
+  },
+  {
+   "type": "order",
+   "a": "I have already told you the answer.",
+   "alt": [],
+   "why": "Already goes between have and the past participle: have already told."
+  },
+  {
+   "type": "order",
+   "a": "How long have you worked at the hospital?",
+   "alt": [],
+   "why": "How long + have + you + past participle: How long have you worked there?"
+  }
+ ]
+}

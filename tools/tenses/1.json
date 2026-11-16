@@ -1,0 +1,668 @@
+{
+ "n": 1,
+ "title": "Present Simple",
+ "tagline": "habits, facts and routines: I work, she works",
+ "why": "We use the present simple to talk about our lives: jobs, routines, likes and facts. It is the tense you use most when you meet people, so small mistakes like <em>he work</em> are easy to hear.",
+ "know": [
+  "the endings for <em>he, she, it</em>: <em>works, watches, studies, has</em>",
+  "the helpers <em>do</em> and <em>does</em> for questions and negatives",
+  "frequency words: <em>always, usually, often, sometimes, never</em>"
+ ],
+ "understand": [
+  "why we add <em>-s</em> only after <em>he, she, it</em> (one person or thing)",
+  "why the <em>-s</em> moves to <em>does</em>: <em>Does she work?</em> not <em>Does she works?</em>"
+ ],
+ "able": [
+  "describe your daily routine and your job",
+  "ask and answer questions like <em>Where do you live?</em> and <em>What does your partner do?</em>",
+  "talk about timetables: <em>The train leaves at 8:15.</em>"
+ ],
+ "mistakes": [
+  [
+   "He work in a bank.",
+   "He <strong>works</strong> in a bank."
+  ],
+  [
+   "Does she works on Saturdays?",
+   "Does she <strong>work</strong> on Saturdays?"
+  ],
+  [
+   "She don't like coffee.",
+   "She <strong>doesn't</strong> like coffee."
+  ],
+  [
+   "Where you live?",
+   "Where <strong>do you</strong> live?"
+  ],
+  [
+   "I go always to bed late.",
+   "I <strong>always go</strong> to bed late."
+  ]
+ ],
+ "use": [
+  "habits and routines: <em>I walk the dog every morning.</em>",
+  "facts that are always true: <em>Water freezes at 0 degrees.</em>",
+  "jobs and long-term situations: <em>My sister works for the city.</em>",
+  "timetables: <em>The bus leaves at 7:40.</em>"
+ ],
+ "form": [
+  [
+   "Positive",
+   "I / you / we / they <em>work</em>. He / she / it <em>work<strong>s</strong></em>."
+  ],
+  [
+   "Negative",
+   "I <em><strong>don't</strong> work</em>. She <em><strong>doesn't</strong> work</em>. (not <em>doesn't works</em>)"
+  ],
+  [
+   "Question",
+   "<em><strong>Do</strong> you work?</em> <em><strong>Does</strong> he work?</em> <em>Where <strong>does</strong> she work?</em>"
+  ],
+  [
+   "Short answers",
+   "<em>Yes, I <strong>do</strong>.</em> <em>No, I <strong>don't</strong>.</em> <em>Yes, she <strong>does</strong>.</em> <em>No, she <strong>doesn't</strong>.</em>"
+  ],
+  [
+   "Spelling",
+   "<em>watch &rarr; watches</em>, <em>go &rarr; goes</em>, <em>study &rarr; studies</em>, <em>play &rarr; plays</em>, <em>have &rarr; has</em>"
+  ]
+ ],
+ "signals": "<em>always</em>, <em>usually</em>, <em>often</em>, <em>sometimes</em>, <em>rarely</em>, <em>never</em>, <em>every day</em>, <em>on Mondays</em>, <em>once a week</em>, <em>twice a year</em>, <em>in the morning</em>",
+ "tip": "Only <strong>one -s</strong> in a sentence: <em>She works</em>, but <em>Does she work?</em> and <em>She doesn't work</em>. Frequency words go <strong>before</strong> the main verb but <strong>after</strong> <em>be</em>: <em>I often cook. I'm often late.</em>",
+ "ws": {
+  "pick": [
+   {
+    "q": "My brother ___ in a hospital in Hamilton.",
+    "opts": [
+     "works",
+     "work",
+     "is work"
+    ],
+    "a": 0,
+    "why": "My brother = he, so add -s: works. 'Is work' mixes two tenses."
+   },
+   {
+    "q": "___ your parents live near you?",
+    "opts": [
+     "Do",
+     "Does",
+     "Are"
+    ],
+    "a": 0,
+    "why": "Your parents = they, so use Do: Do your parents live near you?"
+   },
+   {
+    "q": "She ___ meat. She's a vegetarian.",
+    "opts": [
+     "doesn't eat",
+     "don't eat",
+     "doesn't eats"
+    ],
+    "a": 0,
+    "why": "With she, use doesn't + the base verb: doesn't eat. No -s after doesn't."
+   },
+   {
+    "q": "The museum ___ at 10 a.m. on Sundays.",
+    "opts": [
+     "opens",
+     "open",
+     "opening"
+    ],
+    "a": 0,
+    "why": "Timetables use the present simple. The museum = it, so opens."
+   },
+   {
+    "q": "How often ___ to the gym?",
+    "opts": [
+     "do you go",
+     "you go",
+     "are you go"
+    ],
+    "a": 0,
+    "why": "Questions need do or does before the subject: How often do you go?"
+   },
+   {
+    "q": "My daughter ___ her homework after dinner.",
+    "opts": [
+     "usually does",
+     "does usually",
+     "usually do"
+    ],
+    "a": 0,
+    "why": "Frequency words go before the main verb, and my daughter = she, so: usually does."
+   },
+   {
+    "q": "The sun always ___ in the west.",
+    "opts": [
+     "sets",
+     "set",
+     "is set"
+    ],
+    "a": 0,
+    "why": "A fact that is always true uses the present simple. The sun = it, so sets."
+   },
+   {
+    "q": "What ___ your husband do?",
+    "opts": [
+     "does",
+     "do",
+     "is"
+    ],
+    "a": 0,
+    "why": "Your husband = he, so use does. The main verb do stays without -s."
+   }
+  ],
+  "type": [
+   {
+    "q": "My neighbour ___ (wash) his car every Sunday.",
+    "a": [
+     "washes"
+    ],
+    "why": "Verbs ending in -sh, -ch, -ss, -x or -o add -es: washes."
+   },
+   {
+    "q": "She ___ (study) English three evenings a week.",
+    "a": [
+     "studies"
+    ],
+    "why": "Consonant + y: change the y to -ies. study becomes studies."
+   },
+   {
+    "q": "We ___ (not / have) a car. We take the subway.",
+    "a": [
+     "don't have",
+     "do not have"
+    ],
+    "why": "With we, use don't + the base verb: don't have."
+   },
+   {
+    "q": "Where ___ (your sister / work)?",
+    "a": [
+     "does your sister work"
+    ],
+    "why": "Your sister = she, so: does your sister work? The -s goes on does, not on work."
+   },
+   {
+    "q": "He ___ (not / like) cold weather, so he goes to Florida every winter.",
+    "a": [
+     "doesn't like",
+     "does not like"
+    ],
+    "why": "With he, use doesn't + the base verb: doesn't like (not doesn't likes)."
+   },
+   {
+    "q": "The train to Ottawa ___ (leave) at 6:45 every morning.",
+    "a": [
+     "leaves"
+    ],
+    "why": "Timetables use the present simple. The train = it, so leaves."
+   },
+   {
+    "q": "My son ___ (play) hockey on Saturdays.",
+    "a": [
+     "plays"
+    ],
+    "why": "Vowel + y just adds -s: plays (not plaies)."
+   },
+   {
+    "q": "Excuse me, ___ (you / speak) French?",
+    "a": [
+     "do you speak"
+    ],
+    "why": "A question with you: do + you + base verb. Do you speak French?"
+   }
+  ],
+  "spot": [
+   {
+    "q": "My father drive to work every day.",
+    "bad": "drive",
+    "fix": "drives",
+    "opts": [
+     "drives",
+     "driving"
+    ],
+    "why": "My father = he, so add -s: My father drives to work every day."
+   },
+   {
+    "q": "Does your boss speaks Spanish?",
+    "bad": "speaks",
+    "fix": "speak",
+    "opts": [
+     "speak",
+     "speaking"
+    ],
+    "why": "After does, use the base verb with no -s: Does your boss speak Spanish?"
+   },
+   {
+    "q": "They doesn't eat breakfast.",
+    "bad": "doesn't",
+    "fix": "don't",
+    "opts": [
+     "don't",
+     "isn't"
+    ],
+    "why": "They takes don't, not doesn't: They don't eat breakfast."
+   },
+   {
+    "q": "I am walk to work every day.",
+    "bad": "am walk",
+    "fix": "walk",
+    "opts": [
+     "walk",
+     "walks"
+    ],
+    "why": "A daily habit uses the present simple, with no am: I walk to work every day."
+   },
+   {
+    "q": "She watchs the news every night.",
+    "bad": "watchs",
+    "fix": "watches",
+    "opts": [
+     "watches",
+     "watch"
+    ],
+    "why": "Verbs ending in -ch add -es: She watches the news every night."
+   }
+  ],
+  "order": [
+   {
+    "a": "How often do you visit your parents?",
+    "alt": [],
+    "why": "Question word + do + subject + base verb: How often do you visit your parents?"
+   },
+   {
+    "a": "My sister never drinks coffee in the evening.",
+    "alt": [
+     "In the evening my sister never drinks coffee."
+    ],
+    "why": "Never goes before the main verb, and my sister = she, so drinks."
+   },
+   {
+    "a": "What time does the store close on Sundays?",
+    "alt": [],
+    "why": "What time + does + the store + base verb close. No -s on close after does."
+   },
+   {
+    "a": "He doesn't usually work on weekends.",
+    "alt": [
+     "He usually doesn't work on weekends.",
+     "Usually he doesn't work on weekends."
+    ],
+    "why": "Doesn't + base verb work. Usually can go before or after doesn't."
+   }
+  ]
+ },
+ "hw": {
+  "pick": [
+   {
+    "q": "My kids ___ to school by bus.",
+    "opts": [
+     "go",
+     "goes",
+     "going"
+    ],
+    "a": 0,
+    "why": "My kids = they, so no -s: go."
+   },
+   {
+    "q": "___ this train go to Montreal?",
+    "opts": [
+     "Does",
+     "Do",
+     "Is"
+    ],
+    "a": 0,
+    "why": "This train = it, so use Does + base verb: Does this train go to Montreal?"
+   },
+   {
+    "q": "I ___ late for work.",
+    "opts": [
+     "am never",
+     "never am",
+     "never"
+    ],
+    "a": 0,
+    "why": "Frequency words go after be: I am never late. 'I never late' has no verb."
+   },
+   {
+    "q": "Our office ___ at 5:30.",
+    "opts": [
+     "closes",
+     "close",
+     "closing"
+    ],
+    "a": 0,
+    "why": "Our office = it, so add -es: closes."
+   },
+   {
+    "q": "He ___ to the radio in the car.",
+    "opts": [
+     "always listens",
+     "always listen",
+     "listens always"
+    ],
+    "a": 0,
+    "why": "Always goes before the main verb, and he needs -s: always listens."
+   },
+   {
+    "q": "Why ___ English?",
+    "opts": [
+     "do you study",
+     "you study",
+     "does you study"
+    ],
+    "a": 0,
+    "why": "Questions need do before the subject, and you takes do: Why do you study English?"
+   }
+  ],
+  "type": [
+   {
+    "q": "My mother ___ (fix) everything in the house.",
+    "a": [
+     "fixes"
+    ],
+    "why": "Verbs ending in -x add -es: fixes."
+   },
+   {
+    "q": "He ___ (fly) to Calgary twice a month for work.",
+    "a": [
+     "flies"
+    ],
+    "why": "Consonant + y: change the y to -ies. fly becomes flies."
+   },
+   {
+    "q": "I ___ (not / understand) this email. Can you help me?",
+    "a": [
+     "don't understand",
+     "do not understand"
+    ],
+    "why": "With I, use don't + the base verb: I don't understand."
+   },
+   {
+    "q": "What time ___ (the bank / open)?",
+    "a": [
+     "does the bank open"
+    ],
+    "why": "The bank = it, so use does + base verb: What time does the bank open?"
+   },
+   {
+    "q": "My wife ___ (go) swimming every Tuesday.",
+    "a": [
+     "goes"
+    ],
+    "why": "Go adds -es after he, she, it: goes."
+   },
+   {
+    "q": "It ___ (not / snow) much in Vancouver.",
+    "a": [
+     "doesn't snow",
+     "does not snow"
+    ],
+    "why": "With it, use doesn't + the base verb: It doesn't snow much."
+   },
+   {
+    "q": "How much ___ (a coffee / cost) here?",
+    "a": [
+     "does a coffee cost"
+    ],
+    "why": "A coffee = it, so use does + base verb: How much does a coffee cost?"
+   },
+   {
+    "q": "Our teacher ___ (have) two cats.",
+    "a": [
+     "has"
+    ],
+    "why": "Have is irregular: he, she, it has. Our teacher has two cats."
+   }
+  ],
+  "spot": [
+   {
+    "q": "Where does she lives?",
+    "bad": "lives",
+    "fix": "live",
+    "opts": [
+     "live",
+     "living"
+    ],
+    "why": "After does, use the base verb with no -s: Where does she live?"
+   },
+   {
+    "q": "My boss don't answer emails on Fridays.",
+    "bad": "don't",
+    "fix": "doesn't",
+    "opts": [
+     "doesn't",
+     "isn't"
+    ],
+    "why": "My boss = he or she, so use doesn't: My boss doesn't answer emails on Fridays."
+   },
+   {
+    "q": "I drink always tea in the morning.",
+    "bad": "drink always",
+    "fix": "always drink",
+    "opts": [
+     "always drink",
+     "am always drink"
+    ],
+    "why": "Always goes before the main verb: I always drink tea in the morning."
+   },
+   {
+    "q": "He trys to call his mother every day.",
+    "bad": "trys",
+    "fix": "tries",
+    "opts": [
+     "tries",
+     "try"
+    ],
+    "why": "Consonant + y: change the y to -ies. He tries to call his mother."
+   }
+  ],
+  "order": [
+   {
+    "a": "Where does your brother live now?",
+    "alt": [],
+    "why": "Where + does + your brother + base verb live. No -s on live after does."
+   },
+   {
+    "a": "We sometimes eat dinner in front of the TV.",
+    "alt": [
+     "Sometimes we eat dinner in front of the TV.",
+     "We eat dinner in front of the TV sometimes."
+    ],
+    "why": "Sometimes can go before the main verb or at the start: We sometimes eat dinner..."
+   },
+   {
+    "a": "The movie starts at eight tonight.",
+    "alt": [
+     "Tonight the movie starts at eight.",
+     "The movie starts tonight at eight."
+    ],
+    "why": "A schedule uses the present simple. The movie = it, so starts."
+   }
+  ]
+ },
+ "bank": [
+  {
+   "type": "pick",
+   "q": "My uncle ___ a small restaurant in Montreal.",
+   "opts": [
+    "owns",
+    "own",
+    "is owning"
+   ],
+   "a": "owns",
+   "why": "My uncle = he, so owns. Own is a state verb, so we don't say is owning."
+  },
+  {
+   "type": "pick",
+   "q": "___ you like spicy food?",
+   "opts": [
+    "Do",
+    "Does",
+    "Are"
+   ],
+   "a": "Do",
+   "why": "With you, use Do + base verb: Do you like spicy food?"
+  },
+  {
+   "type": "pick",
+   "q": "The children ___ TV on school nights.",
+   "opts": [
+    "don't watch",
+    "doesn't watch",
+    "don't watches"
+   ],
+   "a": "don't watch",
+   "why": "The children = they, so don't + base verb: don't watch."
+  },
+  {
+   "type": "pick",
+   "q": "She ___ the dishes after every meal.",
+   "opts": [
+    "washes",
+    "washs",
+    "wash"
+   ],
+   "a": "washes",
+   "why": "She needs -s, and verbs ending in -sh add -es: washes."
+  },
+  {
+   "type": "pick",
+   "q": "How ___ to work?",
+   "opts": [
+    "does he get",
+    "he gets",
+    "does he gets"
+   ],
+   "a": "does he get",
+   "why": "Questions need does before he, then the base verb: How does he get to work?"
+  },
+  {
+   "type": "pick",
+   "q": "The last ferry ___ at midnight.",
+   "opts": [
+    "leaves",
+    "leave",
+    "leaving"
+   ],
+   "a": "leaves",
+   "why": "A timetable uses the present simple. The ferry = it, so leaves."
+  },
+  {
+   "type": "pick",
+   "q": "My grandparents ___ for a walk after lunch.",
+   "opts": [
+    "often go",
+    "go often",
+    "often goes"
+   ],
+   "a": "often go",
+   "why": "Often goes before the main verb, and grandparents = they, so go with no -s."
+  },
+  {
+   "type": "pick",
+   "q": "Ice ___ when it gets warm.",
+   "opts": [
+    "melts",
+    "melt",
+    "is melt"
+   ],
+   "a": "melts",
+   "why": "A fact that is always true uses the present simple. Ice = it, so melts."
+  },
+  {
+   "type": "type",
+   "q": "My cousin ___ (teach) piano to children.",
+   "a": [
+    "teaches"
+   ],
+   "why": "Verbs ending in -ch add -es after he or she: teaches."
+  },
+  {
+   "type": "type",
+   "q": "We ___ (not / work) on holidays.",
+   "a": [
+    "don't work",
+    "do not work"
+   ],
+   "why": "With we, use don't + the base verb: We don't work on holidays."
+  },
+  {
+   "type": "type",
+   "q": "What sports ___ (your daughter / play)?",
+   "a": [
+    "does your daughter play"
+   ],
+   "why": "Your daughter = she, so use does + base verb: What sports does your daughter play?"
+  },
+  {
+   "type": "type",
+   "q": "The baby ___ (cry) when she is hungry.",
+   "a": [
+    "cries"
+   ],
+   "why": "Consonant + y: change the y to -ies. The baby cries."
+  },
+  {
+   "type": "type",
+   "q": "He ___ (not / drink) alcohol.",
+   "a": [
+    "doesn't drink",
+    "does not drink"
+   ],
+   "why": "With he, use doesn't + the base verb: He doesn't drink alcohol."
+  },
+  {
+   "type": "spot",
+   "q": "Do she work from home?",
+   "bad": "Do",
+   "fix": "Does",
+   "opts": [
+    "Does",
+    "Is"
+   ],
+   "why": "She takes does: Does she work from home?"
+  },
+  {
+   "type": "spot",
+   "q": "My son go to bed at nine.",
+   "bad": "go",
+   "fix": "goes",
+   "opts": [
+    "goes",
+    "going"
+   ],
+   "why": "My son = he, so add -es: My son goes to bed at nine."
+  },
+  {
+   "type": "spot",
+   "q": "The library closes early on Fridays.",
+   "bad": "",
+   "why": "Correct! The library = it, so closes."
+  },
+  {
+   "type": "spot",
+   "q": "I don't know what this word means.",
+   "bad": "",
+   "why": "Correct! This word = it, so means takes -s. There is no do or does before it."
+  },
+  {
+   "type": "order",
+   "a": "What do you usually do on Saturday mornings?",
+   "alt": [],
+   "why": "What + do + you + usually + base verb do. Usually goes before the main verb."
+  },
+  {
+   "type": "order",
+   "a": "My husband doesn't cook very often.",
+   "alt": [],
+   "why": "Doesn't + base verb cook. Very often goes at the end."
+  },
+  {
+   "type": "order",
+   "a": "Does this store accept credit cards?",
+   "alt": [],
+   "why": "Does + this store + base verb accept. No -s on accept after does."
+  }
+ ]
+}

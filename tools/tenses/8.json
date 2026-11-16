@@ -1,0 +1,128 @@
+{
+  "n": 8,
+  "title": "Past Perfect Continuous",
+  "tagline": "how long something had been happening",
+  "why": "This tense explains a past situation: how long something had been going on, or why someone looked tired, wet or upset. It makes your stories clearer and more natural.",
+  "know": [
+    "the form: <em>had been</em> + verb<em>-ing</em> (<em>had been waiting</em>, <em>had been working</em>)",
+    "the time words <em>for</em>, <em>since</em>, <em>all day</em>, <em>how long</em>",
+    "state verbs that use the past perfect simple instead: <em>had known</em>, <em>had had</em>, <em>had been</em>"
+  ],
+  "understand": [
+    "the difference between <em>I had been painting</em> (the activity, maybe not finished) and <em>I had painted two rooms</em> (the result, finished)",
+    "how this tense explains a past result: <em>Her eyes were red because she had been crying.</em>"
+  ],
+  "able": [
+    "say how long something had been happening before another past moment",
+    "give the reason for a past situation you could see or feel",
+    "ask <em>How long had you been ... ?</em> correctly"
+  ],
+  "mistakes": [
+    ["I had been knowing him for years.", "I <strong>had known</strong> him for years."],
+    ["When I met her, she was living in Toronto for five years.", "When I met her, she <strong>had been living</strong> in Toronto for five years."],
+    ["She was tired because she has been working all day.", "She was tired because she <strong>had been working</strong> all day."],
+    ["I had been write emails all morning.", "I had been <strong>writing</strong> emails all morning."],
+    ["How long you had been living there?", "How long <strong>had you been</strong> living there?"]
+  ],
+  "use": [
+    "how long an activity went on before a past moment: <em>I <strong>had been driving</strong> for six hours when I stopped.</em>",
+    "the reason for a past result: <em>The grass was wet because it <strong>had been raining</strong>.</em>",
+    "with <em>for</em> and <em>since</em> in a past story: <em>They <strong>had been dating</strong> since 2019 when they got engaged.</em>"
+  ],
+  "form": [
+    ["Positive", "<em>I / she / they <strong>had been working</strong>.</em> Short form: <em>I<strong>'d been</strong> working.</em>"],
+    ["Negative", "<em>He <strong>hadn't been sleeping</strong> well.</em> <em>We <strong>had not been listening</strong>.</em>"],
+    ["Question", "<em><strong>Had</strong> you <strong>been waiting</strong> long?</em> <em>How long <strong>had</strong> she <strong>been living</strong> there?</em>"],
+    ["Short answers", "<em>Yes, I <strong>had</strong>.</em> <em>No, she <strong>hadn't</strong>.</em>"]
+  ],
+  "signals": "<em>for two hours</em>, <em>since Monday</em>, <em>all day</em>, <em>all morning</em>, <em>how long</em>, <em>when</em>, <em>before</em>, <em>by the time</em>, <em>because</em>",
+  "tip": "Ask yourself: <strong>how long</strong> or <strong>how many</strong>? <em>How long</em> is about the activity, so use <em>had been</em> + -ing: <em>I had been reading for an hour.</em> <em>How many</em> is about the result, so use <em>had</em> + past participle: <em>I had read fifty pages.</em>",
+  "ws": {
+    "pick": [
+      {"q": "We ___ for forty minutes when the waiter finally came.", "opts": ["had been waiting", "have been waiting", "are waiting"], "a": 0, "why": "How long before a past moment ('when the waiter came'): had been waiting."},
+      {"q": "His clothes were dirty because he ___ in the garden.", "opts": ["had been working", "has been working", "works"], "a": 0, "why": "His dirty clothes were a past result of an activity, so we use had been working."},
+      {"q": "She ___ three cups of coffee by ten o'clock.", "opts": ["had drunk", "had been drinking", "has drunk"], "a": 0, "why": "'Three cups' is a number, a finished result, so we use the past perfect simple: had drunk."},
+      {"q": "I ___ him since high school, so I trusted him.", "opts": ["had known", "had been knowing", "have been knowing"], "a": 0, "why": "Know is a state verb, so we don't use -ing: had known."},
+      {"q": "How long ___ you been studying English before you came here?", "opts": ["had", "have", "did"], "a": 0, "why": "'Before you came here' is a past moment, so we use How long had you been + -ing?"},
+      {"q": "The roads were flooded. It ___ for days.", "opts": ["had been raining", "has been raining", "is raining"], "a": 0, "why": "The flood was a past result of a long activity: had been raining."},
+      {"q": "They had been ___ for an hour when the car broke down.", "opts": ["driving", "drive", "drove"], "a": 0, "why": "After had been we use the -ing form: had been driving."},
+      {"q": "My legs were sore because I ___ all afternoon.", "opts": ["had been standing", "had been stood", "have stood"], "a": 0, "why": "Had been + -ing for a long activity before a past result: had been standing."}
+    ],
+    "type": [
+      {"q": "I ___ (wait) for over an hour when she finally called.", "a": ["had been waiting", "'d been waiting", "had waited", "'d waited"], "why": "How long before a past moment: had been + -ing. I had been waiting. (Had waited is also possible.)"},
+      {"q": "Her eyes were red. She ___ (cry).", "a": ["had been crying", "'d been crying"], "why": "Red eyes were a past result of an activity: had been crying."},
+      {"q": "We ___ (not / sleep) well for weeks, so we bought a new bed.", "a": ["hadn't been sleeping", "had not been sleeping", "hadn't slept", "had not slept"], "why": "Negative past perfect continuous: hadn't been + -ing. (Hadn't slept is also possible.)"},
+      {"q": "How long ___ (you / live) in Mississauga before you moved?", "a": ["had you been living", "had you lived"], "why": "How long before a past moment: had you been living (or had you lived, with live)."},
+      {"q": "He was out of breath because he ___ (run).", "a": ["had been running", "'d been running"], "why": "Out of breath is the result of an activity just before: had been running."},
+      {"q": "By lunchtime she ___ (answer) forty emails.", "a": ["had answered", "'d answered"], "why": "'Forty emails' is a number, a finished result, so we use the past perfect simple: had answered."},
+      {"q": "They ___ (save) money for years before they bought the cottage.", "a": ["had been saving", "'d been saving", "had saved", "'d saved"], "why": "A long activity before a past moment: had been saving. (Had saved is also possible.)"},
+      {"q": "The kitchen smelled great. My son ___ (bake) all morning.", "a": ["had been baking", "'d been baking"], "why": "The smell was a past result of a long activity: had been baking."}
+    ],
+    "spot": [
+      {"q": "I had been knowing about the problem for weeks.", "bad": "had been knowing", "fix": "had known", "opts": ["had known", "have been knowing", "was knowing"], "why": "Know is a state verb, so we don't use -ing: I had known."},
+      {"q": "He was tired because he has been driving all night.", "bad": "has been driving", "fix": "had been driving", "opts": ["had been driving", "is driving", "have been driving"], "why": "The story is in the past (was tired), so we need had, not has: had been driving."},
+      {"q": "We had been play cards for hours when the power came back.", "bad": "play", "fix": "playing", "opts": ["playing", "played", "plays"], "why": "After had been we use the -ing form: had been playing."},
+      {"q": "She had been reading five books by the end of the holiday.", "bad": "had been reading", "fix": "had read", "opts": ["had read", "has read", "was reading"], "why": "'Five books' is a number, a finished result, so we use the past perfect simple: had read."},
+      {"q": "How long you had been working there when you quit?", "bad": "you had been", "fix": "had you been", "opts": ["had you been", "you have been", "did you been"], "why": "In questions, had goes before the subject: How long had you been working?"}
+    ],
+    "order": [
+      {"a": "How long had you been waiting for me?", "alt": [], "why": "How long + had + subject + been + -ing."},
+      {"a": "She had been working there for ten years.", "alt": ["For ten years she had been working there."], "why": "Subject + had been + -ing + place + for + time."},
+      {"a": "It had been snowing all night long.", "alt": ["All night long it had been snowing."], "why": "It + had been + -ing + time. Used for weather before a past moment."},
+      {"a": "They hadn't been talking to each other for weeks.", "alt": ["For weeks they hadn't been talking to each other."], "why": "Negative past perfect continuous: subject + hadn't been + -ing."}
+    ]
+  },
+  "hw": {
+    "pick": [
+      {"q": "I ___ for the bus for twenty minutes when it started to rain.", "opts": ["had been waiting", "have been waiting", "am waiting"], "a": 0, "why": "How long before a past moment ('when it started to rain'): had been waiting."},
+      {"q": "Her hands were covered in paint. She ___ the fence.", "opts": ["had been painting", "has been painting", "paints"], "a": 0, "why": "Paint on her hands was a past result of an activity: had been painting."},
+      {"q": "By the end of the day we ___ six rooms.", "opts": ["had cleaned", "had been cleaning", "have cleaned"], "a": 0, "why": "'Six rooms' is a number, a finished result, so we use had cleaned."},
+      {"q": "They ___ that car for fifteen years before it finally died.", "opts": ["had had", "had been having", "have had"], "a": 0, "why": "Have for owning is a state verb, so we don't use -ing: had had."},
+      {"q": "When I saw you, you looked so nervous. ___ you been drinking coffee all day?", "opts": ["Had", "Have", "Were"], "a": 0, "why": "'You looked' is past, so we ask with Had you been + -ing?"},
+      {"q": "He had been ___ English for two years before the interview.", "opts": ["learning", "learn", "learned"], "a": 0, "why": "After had been we use the -ing form: had been learning."}
+    ],
+    "type": [
+      {"q": "We ___ (walk) for three hours when we finally saw the lake.", "a": ["had been walking", "'d been walking", "had walked", "'d walked"], "why": "How long before a past moment: had been + -ing. We had been walking. (Had walked is also possible.)"},
+      {"q": "The floor was wet because the dog ___ (play) in the pool.", "a": ["had been playing", "'d been playing"], "why": "The wet floor was a past result of an activity: had been playing."},
+      {"q": "I ___ (not / feel) well for days, so I finally saw a doctor.", "a": ["hadn't been feeling", "had not been feeling", "hadn't felt", "had not felt"], "why": "Negative past perfect continuous for a period before a past moment: hadn't been feeling (hadn't felt is also possible)."},
+      {"q": "How long ___ (she / work) at the hospital when she retired?", "a": ["had she been working", "had she worked"], "why": "How long before a past moment: had she been working (had she worked is also fine)."},
+      {"q": "My throat was sore because I ___ (shout) at the game.", "a": ["had been shouting", "'d been shouting"], "why": "A sore throat was the past result of a long activity: had been shouting."},
+      {"q": "By the time he retired, he ___ (teach) over a thousand students.", "a": ["had taught", "'d taught"], "why": "'Over a thousand students' is a number, a result, so we use had taught. Teach, taught, taught."},
+      {"q": "She ___ (try) to call you all morning before she gave up.", "a": ["had been trying", "'d been trying", "had tried", "'d tried"], "why": "A repeated activity over a period before a past moment: had been trying (had tried is also possible)."},
+      {"q": "The children were excited. They ___ (look) forward to the trip for weeks.", "a": ["had been looking", "'d been looking"], "why": "An activity over weeks up to a past moment: had been looking forward."}
+    ],
+    "spot": [
+      {"q": "She had been owning the shop for twenty years.", "bad": "had been owning", "fix": "had owned", "opts": ["had owned", "has been owning", "was owning"], "why": "Own is a state verb, so we don't use -ing: she had owned."},
+      {"q": "I was sweaty because I have been jogging.", "bad": "have been jogging", "fix": "had been jogging", "opts": ["had been jogging", "am jogging", "has been jogging"], "why": "The story is in the past (was sweaty), so we need had been jogging."},
+      {"q": "They had been wrote the report for days before the deadline.", "bad": "wrote", "fix": "writing", "opts": ["writing", "write", "written"], "why": "After had been we use the -ing form: had been writing."},
+      {"q": "He had been eating four slices of pizza before dinner.", "bad": "had been eating", "fix": "had eaten", "opts": ["had eaten", "has eaten", "was eating"], "why": "'Four slices' is a number, a finished result, so we use had eaten."}
+    ],
+    "order": [
+      {"a": "How long had they been living in Ottawa?", "alt": [], "why": "How long + had + subject + been + -ing + place."},
+      {"a": "I had been feeling sick since Monday.", "alt": ["Since Monday I had been feeling sick."], "why": "Subject + had been + -ing + since + starting point."},
+      {"a": "We hadn't been waiting very long.", "alt": [], "why": "Negative past perfect continuous: subject + hadn't been + -ing."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "She ___ at the company for a year when she got a promotion.", "opts": ["had been working", "has been working", "is working"], "a": "had been working", "why": "How long before a past moment ('when she got a promotion'): had been working."},
+    {"type": "pick", "q": "He was sunburned because he ___ on the beach all day.", "opts": ["had been lying", "has been lying", "lies"], "a": "had been lying", "why": "The sunburn was a past result of a long activity: had been lying."},
+    {"type": "pick", "q": "By the end of the race she ___ ten kilometres.", "opts": ["had run", "had been running", "has run"], "a": "had run", "why": "'Ten kilometres' is a number, a finished result: had run."},
+    {"type": "pick", "q": "When they got married, they ___ each other since childhood.", "opts": ["had known", "had been knowing", "were knowing"], "a": "had known", "why": "Know is a state verb, so we don't use -ing: had known."},
+    {"type": "pick", "q": "How long ___ he been playing guitar before he joined the band?", "opts": ["had", "has", "did"], "a": "had", "why": "'Before he joined' is a past moment: How long had he been + -ing?"},
+    {"type": "pick", "q": "The baby was finally asleep. She ___ for an hour.", "opts": ["had been crying", "has been crying", "is crying"], "a": "had been crying", "why": "An activity that went on before a past moment: had been crying."},
+    {"type": "pick", "q": "I had been ___ about changing jobs for months.", "opts": ["thinking", "think", "thought"], "a": "thinking", "why": "After had been we use the -ing form: had been thinking."},
+    {"type": "pick", "q": "They were tired because they ___ boxes all day.", "opts": ["had been carrying", "had been carried", "have carried"], "a": "had been carrying", "why": "Tiredness was a past result of a long activity: had been carrying."},
+    {"type": "type", "q": "I ___ (study) for hours when my friend invited me out.", "a": ["had been studying", "'d been studying", "had studied", "'d studied"], "why": "How long before a past moment: had been studying (had studied is also possible)."},
+    {"type": "type", "q": "His shirt was wet because he ___ (sweat) in the sun.", "a": ["had been sweating", "'d been sweating"], "why": "A wet shirt was a past result of an activity: had been sweating."},
+    {"type": "type", "q": "We ___ (not / plan) to move, but then the job offer came.", "a": ["hadn't been planning", "had not been planning", "hadn't planned", "had not planned"], "why": "Negative past perfect continuous before a past moment: hadn't been planning (hadn't planned is also possible)."},
+    {"type": "type", "q": "By noon the team ___ (fix) twelve computers.", "a": ["had fixed", "'d fixed"], "why": "'Twelve computers' is a number, a finished result, so we use had fixed."},
+    {"type": "type", "q": "How long ___ (they / travel) when they reached Winnipeg?", "a": ["had they been travelling", "had they been traveling"], "why": "How long before a past moment: had they been travelling (one or two l is fine)."},
+    {"type": "spot", "q": "I had been believing his story until I saw the photos.", "bad": "had been believing", "fix": "had believed", "opts": ["had believed", "have been believing", "was believing"], "why": "Believe is a state verb, so we don't use -ing: had believed."},
+    {"type": "spot", "q": "She was angry because she has been waiting for an hour.", "bad": "has been waiting", "fix": "had been waiting", "opts": ["had been waiting", "is waiting", "have been waiting"], "why": "The story is in the past (was angry), so we need had been waiting."},
+    {"type": "spot", "q": "The streets were white because it had been snowing all night.", "bad": "", "why": "This sentence is correct: the white streets were the result of a long activity, had been snowing."},
+    {"type": "spot", "q": "We had been living in Calgary for two years when our son was born.", "bad": "", "why": "This sentence is correct: had been living shows how long before a past moment."},
+    {"type": "order", "a": "How long had she been learning French?", "alt": [], "why": "How long + had + subject + been + -ing."},
+    {"type": "order", "a": "He had been working too hard for months.", "alt": ["For months he had been working too hard."], "why": "Subject + had been + -ing + for + time."},
+    {"type": "order", "a": "We hadn't been expecting so many guests.", "alt": [], "why": "Negative past perfect continuous: subject + hadn't been + -ing."}
+  ]
+}

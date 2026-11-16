@@ -1,0 +1,128 @@
+{
+  "n": 11,
+  "title": "Present Continuous for Future Plans",
+  "tagline": "arrangements: am / is / are + -ing + a future time",
+  "why": "When something is already arranged, like an appointment, a booking or a meeting with friends, English speakers usually use the <strong>present continuous</strong>. It is the most natural way to talk about your calendar.",
+  "know": [
+    "the form <em>am / is / are</em> + <em>-ing</em> with a future time word",
+    "the difference between an <strong>arrangement</strong>, a <strong>plan</strong> and a <strong>quick decision</strong>"
+  ],
+  "understand": [
+    "why <em>I'm meeting Sam at six</em> talks about the future even though it looks like the present",
+    "that timetables (trains, films, classes) use the present simple: <em>The train leaves at 8.</em>"
+  ],
+  "able": [
+    "talk about your appointments and weekend plans",
+    "ask <em>What are you doing on Saturday?</em> and answer naturally",
+    "choose between present continuous, <em>going to</em> and <em>will</em>"
+  ],
+  "mistakes": [
+    ["I see the doctor tomorrow at 10.", "I<strong>'m seeing</strong> the doctor tomorrow at 10."],
+    ["What do you do on Saturday evening?", "What <strong>are you doing</strong> on Saturday evening?"],
+    ["We flying to Calgary next Tuesday.", "We<strong>'re flying</strong> to Calgary next Tuesday."],
+    ["I will have lunch with a client at one. It's booked.", "I<strong>'m having</strong> lunch with a client at one. It's booked."],
+    ["A: Can you come tomorrow? B: Sorry, I work late.", "A: Can you come tomorrow? B: Sorry, I<strong>'m working</strong> late."]
+  ],
+  "use": [
+    "<strong>Arrangements</strong>: plans with a time, a place or other people, often booked: <em>I'm having lunch with Sara on Thursday.</em>",
+    "Always with a <strong>future time</strong>, so the listener knows it is not now: <em>We're flying to Montreal next Friday.</em>",
+    "<strong>Timetables</strong> use the present simple: <em>The bus leaves at 8:05.</em> <em>The film starts at 7.</em>",
+    "Compare: <em>I'm seeing the dentist at 3.</em> (arranged) / <em>I'm going to get fit.</em> (intention) / <em>I'll call you back.</em> (decided now)"
+  ],
+  "form": [
+    ["Positive", "<em>I'm meeting Tom at six.</em> <em>She's flying home on Sunday.</em> <em>They're coming tonight.</em>"],
+    ["Negative", "<em>We aren't coming to the party on Saturday.</em> <em>I'm not working tomorrow.</em>"],
+    ["Question", "<em>What are you doing tonight?</em> <em>Are you working on Sunday?</em>"],
+    ["Short answers", "<em>Yes, I am.</em> / <em>No, we aren't.</em>"]
+  ],
+  "signals": "<em>tonight</em>, <em>tomorrow</em>, <em>at 3 o'clock</em>, <em>on Friday</em>, <em>next week</em>, <em>this weekend</em>; words like <em>booked</em>, <em>appointment</em>, <em>tickets</em>, <em>in my calendar</em>",
+  "tip": "If it is in your <strong>calendar</strong> (a time, a place, other people), use the present continuous. If it is just an idea in your head, use <em>going to</em>. If you decide now, use <em>will</em>.",
+  "ws": {
+    "pick": [
+      {"q": "I ___ the dentist at 3 o'clock tomorrow. It's in my calendar.", "opts": ["am seeing", "see"], "a": 0, "why": "An appointment with a time is an arrangement, so use the present continuous: I'm seeing the dentist."},
+      {"q": "What ___ this weekend? Do you want to go for a hike?", "opts": ["are you doing", "do you do"], "a": 0, "why": "To ask about someone's plans, use the present continuous: What are you doing this weekend?"},
+      {"q": "We ___ to Montreal on Friday. The tickets are booked.", "opts": ["are flying", "flying", "flies"], "a": 0, "why": "A booked trip is an arrangement: we are flying. Don't forget are."},
+      {"q": "Sorry, I can't come on Saturday. I ___ my sister move house.", "opts": ["am helping", "help"], "a": 0, "why": "This is already arranged with your sister, so use the present continuous: I'm helping."},
+      {"q": "Hurry up! The film ___ at 7:30.", "opts": ["starts", "start"], "a": 0, "why": "Timetables use the present simple, with -s for it: The film starts at 7:30."},
+      {"q": "One day I ___ open my own restaurant. It's my dream.", "opts": ["am going to", "am"], "a": 0, "why": "A dream with no fixed date is an intention, so use going to: I'm going to open a restaurant."},
+      {"q": "A: Are you free on Thursday evening? B: No, I ___ dinner with my in-laws.", "opts": ["am having", "will have"], "a": 0, "why": "B already has an arrangement, so use the present continuous: I'm having dinner with them."},
+      {"q": "A: My car's at the garage. B: No problem. I ___ you to work tomorrow.", "opts": ["will drive", "am driving"], "a": 0, "why": "B offers at that moment, so use will. Nothing was arranged before."}
+    ],
+    "type": [
+      {"q": "I ___ (meet) my accountant at 10 tomorrow. It's all booked.", "a": ["am meeting", "'m meeting", "am going to meet", "'m going to meet"], "why": "A booked meeting is an arrangement: I'm meeting my accountant. (Going to is also OK.)"},
+      {"q": "What ___ (you / do) on Saturday night? Any plans?", "a": ["are you doing", "are you going to do"], "why": "Asking about plans: What are you doing on Saturday night?"},
+      {"q": "We ___ (not / come) to the party on Friday. We're away that weekend.", "a": ["are not coming", "aren't coming", "'re not coming", "are not going to come", "aren't going to come", "'re not going to come"], "why": "A negative arrangement: We aren't coming to the party."},
+      {"q": "My parents ___ (stay) with us next week. I've made up the spare bed.", "a": ["are staying", "'re staying", "are going to stay", "'re going to stay"], "why": "This visit is arranged: My parents are staying with us next week."},
+      {"q": "___ (you / work) on Monday? It's a holiday.", "a": ["Are you working", "Are you going to work"], "why": "Asking about someone's arrangements: Are you working on Monday?"},
+      {"q": "She ___ (have) a party for her 40th on Saturday. Everyone's invited.", "a": ["is having", "'s having", "is going to have", "'s going to have"], "why": "The guests are invited, so it is arranged: She's having a party on Saturday."},
+      {"q": "I ___ (play) tennis with Mark at 6 tomorrow.", "a": ["am playing", "'m playing", "am going to play", "'m going to play"], "why": "A time and another person make it an arrangement: I'm playing tennis with Mark."},
+      {"q": "They ___ (get) married in June. They've already booked the hall.", "a": ["are getting", "'re getting", "are going to get", "'re going to get"], "why": "The hall is booked, so it is arranged: They're getting married in June."}
+    ],
+    "spot": [
+      {"q": "Tomorrow I go to the dentist at 3.", "bad": "I go", "fix": "I'm going", "opts": ["I'm going", "I will going"], "why": "A personal appointment uses the present continuous, not the present simple: I'm going to the dentist."},
+      {"q": "What do you do tonight? Do you want to see a film?", "bad": "do you do", "fix": "are you doing", "opts": ["are you doing", "you doing"], "why": "For plans, ask with the present continuous: What are you doing tonight?"},
+      {"q": "We will have dinner with my boss on Friday. She booked the table.", "bad": "will have", "fix": "are having", "opts": ["are having", "have"], "why": "The table is booked, so it is an arrangement: We're having dinner with my boss."},
+      {"q": "I'm sorry, I can't come. I working late tonight.", "bad": "I working", "fix": "I'm working", "opts": ["I'm working", "I work"], "why": "Don't forget am: I'm (I am) working late tonight."},
+      {"q": "Are you come to the meeting tomorrow?", "bad": "Are you come", "fix": "Are you coming", "opts": ["Are you coming", "Do you coming"], "why": "Present continuous questions need -ing: Are you coming to the meeting?"}
+    ],
+    "order": [
+      {"a": "I am meeting my friends at the mall tonight.", "alt": ["I am meeting my friends tonight at the mall.", "Tonight I am meeting my friends at the mall."], "why": "Subject + am + -ing + who + where + when: I am meeting my friends at the mall tonight."},
+      {"a": "What time are you leaving tomorrow morning?", "alt": [], "why": "Question word + are + you + -ing + time: What time are you leaving?"},
+      {"a": "We are not going away this weekend.", "alt": ["This weekend we are not going away."], "why": "Negative: are + not + -ing. We are not going away this weekend."},
+      {"a": "Is your brother coming to dinner on Sunday?", "alt": [], "why": "Question: Is + subject + -ing + the rest: Is your brother coming to dinner?"}
+    ]
+  },
+  "hw": {
+    "pick": [
+      {"q": "I ___ my mother for lunch on Sunday. We booked a table for noon.", "opts": ["am meeting", "meet"], "a": 0, "why": "The table is booked, so it is an arrangement: I'm meeting my mother."},
+      {"q": "Are you ___ to the wedding next month?", "opts": ["going", "go", "goes"], "a": 0, "why": "The present continuous needs -ing: Are you going to the wedding?"},
+      {"q": "Our flight ___ at 6:45 tomorrow morning, so we need to get up early.", "opts": ["leaves", "leave", "leaving"], "a": 0, "why": "A timetable uses the present simple, with -s for it: Our flight leaves at 6:45."},
+      {"q": "A: The fridge is empty. B: Okay, I ___ some food tonight.", "opts": ["will order", "am ordering"], "a": 0, "why": "B decides at that moment, so use will: I'll order some food."},
+      {"q": "He ___ his new job on Monday. He signed the contract yesterday.", "opts": ["is starting", "start", "starting"], "a": 0, "why": "This is arranged (the contract is signed): He is starting his new job on Monday."},
+      {"q": "We ___ working tomorrow. It's Canada Day.", "opts": ["aren't", "don't", "won't"], "a": 0, "why": "Negative present continuous: are + not + -ing. We aren't working tomorrow."}
+    ],
+    "type": [
+      {"q": "I ___ (see) the optometrist at 2:30 on Thursday.", "a": ["am seeing", "'m seeing", "am going to see", "'m going to see"], "why": "An appointment with a time: I'm seeing the optometrist on Thursday."},
+      {"q": "Where ___ (you / go) on holiday this summer? Have you booked anything?", "a": ["are you going", "are you going to go"], "why": "Asking about booked plans: Where are you going this summer?"},
+      {"q": "My daughter ___ (not / come) home for Christmas this year.", "a": ["is not coming", "isn't coming", "'s not coming", "is not going to come", "isn't going to come", "'s not going to come"], "why": "A negative arrangement: My daughter isn't coming home."},
+      {"q": "We ___ (drive) to Quebec City on Saturday morning.", "a": ["are driving", "'re driving", "are going to drive", "'re going to drive"], "why": "A trip with a day and time: We're driving to Quebec City on Saturday."},
+      {"q": "___ (they / bring) the kids to the barbecue tomorrow?", "a": ["Are they bringing", "Are they going to bring"], "why": "Asking about arrangements: Are they bringing the kids?"},
+      {"q": "I ___ (have) my hair cut at 4 tomorrow.", "a": ["am having", "'m having", "am going to have", "'m going to have"], "why": "A booked appointment: I'm having my hair cut at 4."},
+      {"q": "He ___ (fly) to London next Tuesday. His company booked the ticket.", "a": ["is flying", "'s flying", "is going to fly", "'s going to fly"], "why": "The ticket is booked, so it is arranged: He's flying to London."},
+      {"q": "Who ___ (you / take) to the party on Friday?", "a": ["are you taking", "are you going to take"], "why": "Asking about plans with other people: Who are you taking to the party?"}
+    ],
+    "spot": [
+      {"q": "She is visit her grandparents next weekend.", "bad": "is visit", "fix": "is visiting", "opts": ["is visiting", "visiting"], "why": "The present continuous needs be + -ing: She is visiting her grandparents."},
+      {"q": "We meet the new neighbours for coffee tomorrow at ten.", "bad": "We meet", "fix": "We're meeting", "opts": ["We're meeting", "We will meeting"], "why": "An arrangement with a time and other people: We're meeting the neighbours."},
+      {"q": "Do you come to my party on Friday?", "bad": "Do you come", "fix": "Are you coming", "opts": ["Are you coming", "You coming"], "why": "To ask about someone's plans, use the present continuous: Are you coming to my party?"},
+      {"q": "I'm going to the dentist at nine tomorrow, so I'm late for work.", "bad": "I'm late", "fix": "I'll be late", "opts": ["I'll be late", "I late"], "why": "The first part is right. The result is a future prediction, so use will: I'll be late for work."}
+    ],
+    "order": [
+      {"a": "We are having a barbecue on Saturday afternoon.", "alt": ["On Saturday afternoon we are having a barbecue."], "why": "Subject + are + -ing + time: We are having a barbecue on Saturday afternoon."},
+      {"a": "Are you coming to the office tomorrow?", "alt": [], "why": "Question: Are + you + -ing + place + time."},
+      {"a": "She is not working next Monday.", "alt": ["Next Monday she is not working."], "why": "Negative: is + not + -ing + time. She is not working next Monday."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "I ___ my sister up at the airport at 5 tomorrow.", "opts": ["am picking", "pick", "picking"], "a": "am picking", "why": "A plan with a time and a place: I'm picking my sister up at 5."},
+    {"type": "pick", "q": "A: What ___ tonight? B: Nothing much. Just relaxing at home.", "opts": ["are you doing", "do you do"], "a": "are you doing", "why": "Asking about plans for tonight: What are you doing tonight?"},
+    {"type": "pick", "q": "The last bus ___ at midnight, so don't be late.", "opts": ["leaves", "leave", "leaving"], "a": "leaves", "why": "A bus timetable uses the present simple: The last bus leaves at midnight."},
+    {"type": "pick", "q": "My cousins ___ to visit us next week. They booked their flights yesterday.", "opts": ["are coming", "come", "comes"], "a": "are coming", "why": "The flights are booked, so it is arranged: My cousins are coming."},
+    {"type": "pick", "q": "A: I'm thirsty. B: Sit down. I ___ you a glass of water.", "opts": ["will get", "am getting"], "a": "will get", "why": "B offers at that moment, so use will: I'll get you some water."},
+    {"type": "pick", "q": "One day we ___ travel around the world.", "opts": ["are going to", "are"], "a": "are going to", "why": "A dream with no date is an intention, so use going to + base verb."},
+    {"type": "pick", "q": "I ___ working this Saturday, so I can come to your party.", "opts": ["am not", "don't", "not"], "a": "am not", "why": "Negative present continuous: am + not + -ing. I'm not working this Saturday."},
+    {"type": "pick", "q": "___ Raj and Priya coming to the wedding?", "opts": ["Are", "Do", "Will"], "a": "Are", "why": "Present continuous questions start with be: Are Raj and Priya coming?"},
+    {"type": "type", "q": "We ___ (have) friends over for dinner on Friday.", "a": ["are having", "'re having", "are going to have", "'re going to have"], "why": "Guests on a set day is an arrangement: We're having friends over."},
+    {"type": "type", "q": "___ (you / go) to the hockey game on Saturday? I have a spare ticket.", "a": ["Are you going", "Are you going to go"], "why": "Asking about someone's plans: Are you going to the game?"},
+    {"type": "type", "q": "I ___ (not / work) tomorrow. I took the day off.", "a": ["am not working", "'m not working", "am not going to work", "'m not going to work"], "why": "The day off is arranged: I'm not working tomorrow."},
+    {"type": "type", "q": "She ___ (move) to Winnipeg next month. The truck is booked.", "a": ["is moving", "'s moving", "is going to move", "'s going to move"], "why": "The truck is booked, so it is arranged: She's moving next month."},
+    {"type": "type", "q": "I ___ (take) my car to the garage at eight tomorrow.", "a": ["am taking", "'m taking", "am going to take", "'m going to take"], "why": "An appointment with a time: I'm taking my car to the garage."},
+    {"type": "spot", "q": "My husband and I go to a concert on Saturday night.", "bad": "My husband and I go", "fix": "My husband and I are going", "opts": ["My husband and I are going", "My husband and I going"], "why": "A one-time event that is arranged uses the present continuous: we are going to a concert."},
+    {"type": "spot", "q": "I'm meeting the landlord at four to sign the lease.", "bad": "", "why": "This sentence is correct. A meeting with a time is an arrangement, so the present continuous is right."},
+    {"type": "spot", "q": "She is fly to Halifax on Monday.", "bad": "is fly", "fix": "is flying", "opts": ["is flying", "is flies"], "why": "The present continuous needs be + -ing: She is flying to Halifax."},
+    {"type": "spot", "q": "The train leaves at 7:10 tomorrow morning.", "bad": "", "why": "This sentence is correct. Timetables use the present simple, even for the future."},
+    {"type": "order", "a": "I am having dinner with my parents tonight.", "alt": ["Tonight I am having dinner with my parents."], "why": "Subject + am + -ing + who + when: I am having dinner with my parents tonight."},
+    {"type": "order", "a": "When are you flying back to Toronto?", "alt": [], "why": "Question word + are + you + -ing: When are you flying back?"},
+    {"type": "order", "a": "We are not going to the cottage this weekend.", "alt": ["This weekend we are not going to the cottage."], "why": "Negative: are + not + -ing + place + time."}
+  ]
+}

@@ -1,0 +1,675 @@
+{
+ "n": 4,
+ "title": "Present Perfect Continuous",
+ "tagline": "how long, and why: have / has been + -ing",
+ "why": "We use the present perfect continuous to say how long an activity has been going on, and to explain what we can see now: <em>Your eyes are red. Have you been crying?</em>",
+ "know": [
+  "the form <em>have / has been + -ing</em>",
+  "<em>for</em> + a length of time, <em>since</em> + a starting point, and the question <em>How long...?</em>",
+  "state verbs that stay in the present perfect simple: <em>know, have (own), be, want</em>"
+ ],
+ "understand": [
+  "the difference between the activity (<em>I've been painting</em>) and the result (<em>I've painted two rooms</em>)",
+  "why we say <em>I've known her for years</em>, not <em>I've been knowing her</em>"
+ ],
+ "able": [
+  "say how long you have been doing something: <em>I've been learning English for two years.</em>",
+  "explain a result you can see: <em>I'm hot because I've been running.</em>",
+  "ask <em>How long have you been...?</em>"
+ ],
+ "mistakes": [
+  [
+   "I am learning English for three years.",
+   "I <strong>have been learning</strong> English for three years."
+  ],
+  [
+   "I have been knowing him since school.",
+   "I <strong>have known</strong> him since school."
+  ],
+  [
+   "She has been work here since May.",
+   "She has been <strong>working</strong> here since May."
+  ],
+  [
+   "How long you have been waiting?",
+   "How long <strong>have you</strong> been waiting?"
+  ],
+  [
+   "I've been reading three books this month.",
+   "I<strong>'ve read</strong> three books this month."
+  ]
+ ],
+ "use": [
+  "how long an activity has continued up to now: <em>We've been waiting for forty minutes.</em>",
+  "a recent activity with a result you can see: <em>The ground is wet. It's been raining.</em>",
+  "repeated actions up to now: <em>He's been calling me all morning.</em>"
+ ],
+ "form": [
+  [
+   "Positive",
+   "<em>I<strong>'ve been working</strong>.</em> <em>She<strong>'s been working</strong>.</em> (<em>'s</em> = has)"
+  ],
+  [
+   "Negative",
+   "<em>I <strong>haven't been sleeping</strong> well.</em> <em>He <strong>hasn't been working</strong> long.</em>"
+  ],
+  [
+   "Question",
+   "<em><strong>Have</strong> you <strong>been waiting</strong> long?</em> <em>How long <strong>has</strong> she <strong>been living</strong> here?</em>"
+  ],
+  [
+   "Short answers",
+   "<em>Yes, I <strong>have</strong>.</em> <em>No, I <strong>haven't</strong>.</em> <em>Yes, she <strong>has</strong>.</em> <em>No, she <strong>hasn't</strong>.</em>"
+  ]
+ ],
+ "signals": "<em>for</em> (two hours, ages, a long time), <em>since</em> (9 o'clock, Monday, 2019), <em>How long...?</em>, <em>all day</em>, <em>all morning</em>, <em>lately</em>, <em>recently</em>",
+ "tip": "<strong>Activity or result?</strong> Use the continuous for the activity and how long: <em>I've been cooking all afternoon.</em> Use the simple for the result or how many: <em>I've cooked three dishes.</em> State verbs always use the simple: <em>I've had this car for years.</em>",
+ "ws": {
+  "pick": [
+   {
+    "q": "I ___ since 7 a.m. and I need a break.",
+    "opts": [
+     "have been working",
+     "am working",
+     "work"
+    ],
+    "a": 0,
+    "why": "Since 7 a.m. until now: have been working. Don't use the present with since."
+   },
+   {
+    "q": "We ___ for the bus for twenty minutes.",
+    "opts": [
+     "have been waiting",
+     "are waiting",
+     "wait"
+    ],
+    "a": 0,
+    "why": "For twenty minutes until now: have been waiting."
+   },
+   {
+    "q": "I ___ my neighbour for ten years.",
+    "opts": [
+     "have known",
+     "have been knowing",
+     "am knowing"
+    ],
+    "a": 0,
+    "why": "Know is a state verb, so use the present perfect simple: I have known."
+   },
+   {
+    "q": "Your hands are dirty. What ___?",
+    "opts": [
+     "have you been doing",
+     "have you been do",
+     "you have been doing"
+    ],
+    "a": 0,
+    "why": "A result you can see: What have you been doing? Use been + -ing, with have before you."
+   },
+   {
+    "q": "She ___ three cakes so far.",
+    "opts": [
+     "has made",
+     "has been making"
+    ],
+    "a": 0,
+    "why": "How many = the result, so use the simple: She has made three cakes."
+   },
+   {
+    "q": "It ___ since Tuesday. The streets are flooded.",
+    "opts": [
+     "has been raining",
+     "is raining",
+     "rains"
+    ],
+    "a": 0,
+    "why": "Since Tuesday until now, with a result you can see: has been raining."
+   },
+   {
+    "q": "How long ___ Spanish?",
+    "opts": [
+     "have you been learning",
+     "are you learning",
+     "do you learn"
+    ],
+    "a": 0,
+    "why": "How long + until now: How long have you been learning Spanish?"
+   },
+   {
+    "q": "He ___ that old truck since 2005.",
+    "opts": [
+     "has had",
+     "has been having"
+    ],
+    "a": 0,
+    "why": "Have meaning own is a state verb, so use the simple: He has had that truck since 2005."
+   }
+  ],
+  "type": [
+   {
+    "q": "She ___ (study) for her exam since eight o'clock this morning.",
+    "a": [
+     "has been studying",
+     "'s been studying"
+    ],
+    "why": "Since eight o'clock until now: has been studying."
+   },
+   {
+    "q": "How long ___ (you / wait) for the doctor?",
+    "a": [
+     "have you been waiting"
+    ],
+    "why": "How long + until now: How long have you been waiting?"
+   },
+   {
+    "q": "They ___ (not / sleep) well since the baby was born.",
+    "a": [
+     "haven't been sleeping",
+     "have not been sleeping",
+     "haven't slept",
+     "have not slept"
+    ],
+    "why": "Since the baby was born until now: haven't been sleeping (or haven't slept) well."
+   },
+   {
+    "q": "I ___ (know) Ahmed since we were at school together.",
+    "a": [
+     "have known",
+     "'ve known"
+    ],
+    "why": "Know is a state verb, so no -ing: I have known Ahmed."
+   },
+   {
+    "q": "It ___ (snow) for three hours. The roads are terrible.",
+    "a": [
+     "has been snowing",
+     "'s been snowing"
+    ],
+    "why": "For three hours until now, with a result: has been snowing."
+   },
+   {
+    "q": "He ___ (drive) for six hours, so he needs a rest.",
+    "a": [
+     "has been driving",
+     "'s been driving"
+    ],
+    "why": "An activity until now with a result (he's tired): has been driving."
+   },
+   {
+    "q": "We ___ (paint) the living room all weekend. Look at our clothes!",
+    "a": [
+     "have been painting",
+     "'ve been painting"
+    ],
+    "why": "A long activity with a result you can see: have been painting."
+   },
+   {
+    "q": "My phone ___ (ring) all morning. Everyone wants something.",
+    "a": [
+     "has been ringing",
+     "'s been ringing"
+    ],
+    "why": "A repeated action until now: has been ringing."
+   }
+  ],
+  "spot": [
+   {
+    "q": "I am waiting here since ten o'clock.",
+    "bad": "am waiting",
+    "fix": "have been waiting",
+    "opts": [
+     "have been waiting",
+     "was waiting"
+    ],
+    "why": "Since ten o'clock until now: I have been waiting here since ten o'clock."
+   },
+   {
+    "q": "She has been knowing about the problem for weeks.",
+    "bad": "has been knowing",
+    "fix": "has known",
+    "opts": [
+     "has known",
+     "is knowing"
+    ],
+    "why": "Know is a state verb, so no -ing: She has known about the problem for weeks."
+   },
+   {
+    "q": "We have been live in Toronto for five years.",
+    "bad": "have been live",
+    "fix": "have been living",
+    "opts": [
+     "have been living",
+     "are living"
+    ],
+    "why": "After been, use the -ing form: We have been living in Toronto for five years."
+   },
+   {
+    "q": "How long are you working at the bank?",
+    "bad": "are you working",
+    "fix": "have you been working",
+    "opts": [
+     "have you been working",
+     "do you work"
+    ],
+    "why": "How long until now needs the present perfect: How long have you been working at the bank?"
+   },
+   {
+    "q": "I have been drinking four cups of coffee today.",
+    "bad": "have been drinking",
+    "fix": "have drunk",
+    "opts": [
+     "have drunk",
+     "am drinking"
+    ],
+    "why": "How many = the result, so use the simple: I have drunk four cups of coffee today."
+   }
+  ],
+  "order": [
+   {
+    "a": "How long have you been learning English?",
+    "alt": [],
+    "why": "How long + have + you + been + -ing."
+   },
+   {
+    "a": "It has been raining since early this morning.",
+    "alt": [
+     "Since early this morning it has been raining."
+    ],
+    "why": "Has been + -ing, with since + a starting point."
+   },
+   {
+    "a": "She has been working from home since March.",
+    "alt": [
+     "Since March she has been working from home."
+    ],
+    "why": "Has been + -ing for an activity from March until now."
+   },
+   {
+    "a": "They have been looking for a new apartment.",
+    "alt": [],
+    "why": "Have been + -ing for an activity that is still going on."
+   }
+  ]
+ },
+ "hw": {
+  "pick": [
+   {
+    "q": "The kitchen smells great. ___ cooking?",
+    "opts": [
+     "Have you been",
+     "Are you been",
+     "Did you been"
+    ],
+    "a": 0,
+    "why": "A result you can notice: Have you been cooking? Been goes with have."
+   },
+   {
+    "q": "He ___ at the computer for five hours. His eyes hurt.",
+    "opts": [
+     "has been sitting",
+     "is sitting",
+     "sits"
+    ],
+    "a": 0,
+    "why": "For five hours until now: has been sitting."
+   },
+   {
+    "q": "I ___ this jacket for twenty years!",
+    "opts": [
+     "have had",
+     "have been having"
+    ],
+    "a": 0,
+    "why": "Have meaning own is a state verb, so use the simple: I have had this jacket."
+   },
+   {
+    "q": "She has been teaching ___ 2012.",
+    "opts": [
+     "since",
+     "for",
+     "from"
+    ],
+    "a": 0,
+    "why": "2012 is a starting point, so use since."
+   },
+   {
+    "q": "We have been talking ___ an hour.",
+    "opts": [
+     "for",
+     "since",
+     "during"
+    ],
+    "a": 0,
+    "why": "An hour is a length of time, so use for."
+   },
+   {
+    "q": "I ___ two chapters of my book today.",
+    "opts": [
+     "have read",
+     "have been reading"
+    ],
+    "a": 0,
+    "why": "How many = the result, so use the simple: I have read two chapters."
+   }
+  ],
+  "type": [
+   {
+    "q": "My son ___ (play) video games since lunch!",
+    "a": [
+     "has been playing",
+     "'s been playing"
+    ],
+    "why": "Since lunch until now: has been playing."
+   },
+   {
+    "q": "I ___ (not / feel) well lately.",
+    "a": [
+     "haven't been feeling",
+     "have not been feeling",
+     "haven't felt",
+     "have not felt"
+    ],
+    "why": "Lately = up to now: I haven't been feeling well (or haven't felt well)."
+   },
+   {
+    "q": "How long ___ (she / live) in Vancouver?",
+    "a": [
+     "has she been living",
+     "has she lived"
+    ],
+    "why": "How long + until now: has she been living (or has she lived)?"
+   },
+   {
+    "q": "We ___ (try) to call you all day. Where were you?",
+    "a": [
+     "have been trying",
+     "'ve been trying"
+    ],
+    "why": "A repeated activity all day until now: have been trying."
+   },
+   {
+    "q": "He ___ (be) my doctor for ten years.",
+    "a": [
+     "has been",
+     "'s been"
+    ],
+    "why": "Be is a state verb, so use the simple: He has been my doctor for ten years."
+   },
+   {
+    "q": "You're out of breath. ___ (you / run)?",
+    "a": [
+     "Have you been running"
+    ],
+    "why": "A result you can see: Have you been running?"
+   },
+   {
+    "q": "The neighbours ___ (argue) for hours. I can hear them through the wall.",
+    "a": [
+     "have been arguing",
+     "'ve been arguing"
+    ],
+    "why": "For hours until now: have been arguing."
+   },
+   {
+    "q": "I ___ (wait) for this parcel for two weeks.",
+    "a": [
+     "have been waiting",
+     "'ve been waiting"
+    ],
+    "why": "For two weeks until now: have been waiting."
+   }
+  ],
+  "spot": [
+   {
+    "q": "I have been loving this city since my first visit.",
+    "bad": "have been loving",
+    "fix": "have loved",
+    "opts": [
+     "have loved",
+     "am loving"
+    ],
+    "why": "Love is a state verb, so use the simple: I have loved this city since my first visit."
+   },
+   {
+    "q": "He has been fix the car all morning.",
+    "bad": "has been fix",
+    "fix": "has been fixing",
+    "opts": [
+     "has been fixing",
+     "is fixing"
+    ],
+    "why": "After been, use the -ing form: He has been fixing the car all morning."
+   },
+   {
+    "q": "We are knowing each other since university.",
+    "bad": "are knowing",
+    "fix": "have known",
+    "opts": [
+     "have known",
+     "have been knowing"
+    ],
+    "why": "Know is a state verb, and since needs the present perfect: We have known each other."
+   },
+   {
+    "q": "She has been working here since two years.",
+    "bad": "since",
+    "fix": "for",
+    "opts": [
+     "for",
+     "from"
+    ],
+    "why": "Two years is a length of time, so use for: She has been working here for two years."
+   }
+  ],
+  "order": [
+   {
+    "a": "What have you been doing all day?",
+    "alt": [],
+    "why": "What + have + you + been + -ing."
+   },
+   {
+    "a": "My brother has been travelling around Europe since June.",
+    "alt": [
+     "Since June my brother has been travelling around Europe."
+    ],
+    "why": "Has been + -ing for an activity from June until now."
+   },
+   {
+    "a": "We haven't been sleeping well this week.",
+    "alt": [
+     "This week we haven't been sleeping well."
+    ],
+    "why": "Haven't + been + -ing: We haven't been sleeping well."
+   }
+  ]
+ },
+ "bank": [
+  {
+   "type": "pick",
+   "q": "I ___ for a new job since January.",
+   "opts": [
+    "have been looking",
+    "am looking",
+    "look"
+   ],
+   "a": "have been looking",
+   "why": "Since January until now: have been looking."
+  },
+  {
+   "type": "pick",
+   "q": "The grass is wet. It ___.",
+   "opts": [
+    "has been raining",
+    "rains",
+    "raining"
+   ],
+   "a": "has been raining",
+   "why": "A result you can see now: It has been raining."
+  },
+  {
+   "type": "pick",
+   "q": "She ___ that bag since she was a student.",
+   "opts": [
+    "has had",
+    "has been having"
+   ],
+   "a": "has had",
+   "why": "Have meaning own is a state verb, so use the simple: She has had that bag."
+  },
+  {
+   "type": "pick",
+   "q": "How long ___ for this company?",
+   "opts": [
+    "have you been working",
+    "are you working",
+    "you have been working"
+   ],
+   "a": "have you been working",
+   "why": "How long until now: How long have you been working? Have comes before you."
+  },
+  {
+   "type": "pick",
+   "q": "We have been driving ___ five hours.",
+   "opts": [
+    "for",
+    "since",
+    "ago"
+   ],
+   "a": "for",
+   "why": "Five hours is a length of time, so use for."
+  },
+  {
+   "type": "pick",
+   "q": "He ___ three emails to the landlord, but he hasn't had an answer.",
+   "opts": [
+    "has written",
+    "has been writing"
+   ],
+   "a": "has written",
+   "why": "How many = the result, so use the simple: He has written three emails."
+  },
+  {
+   "type": "pick",
+   "q": "They ___ about the trip since breakfast.",
+   "opts": [
+    "have been talking",
+    "are talking",
+    "talk"
+   ],
+   "a": "have been talking",
+   "why": "Since breakfast until now: have been talking."
+  },
+  {
+   "type": "pick",
+   "q": "I've been ___ here since 9:30.",
+   "opts": [
+    "sitting",
+    "siting",
+    "sit"
+   ],
+   "a": "sitting",
+   "why": "After been, use -ing. Sit doubles the t: sitting."
+  },
+  {
+   "type": "type",
+   "q": "My husband ___ (fix) the sink for two hours, and it still leaks.",
+   "a": [
+    "has been fixing",
+    "'s been fixing"
+   ],
+   "why": "For two hours until now, still not finished: has been fixing."
+  },
+  {
+   "type": "type",
+   "q": "How long ___ (you / study) English?",
+   "a": [
+    "have you been studying",
+    "have you studied"
+   ],
+   "why": "How long until now: have you been studying (or have you studied)?"
+  },
+  {
+   "type": "type",
+   "q": "I ___ (want) to visit Japan since I was a child.",
+   "a": [
+    "have wanted",
+    "'ve wanted"
+   ],
+   "why": "Want is a state verb, so no -ing: I have wanted to visit Japan."
+  },
+  {
+   "type": "type",
+   "q": "The kids are dirty. They ___ (play) in the mud.",
+   "a": [
+    "have been playing",
+    "'ve been playing"
+   ],
+   "why": "A result you can see: They have been playing in the mud."
+  },
+  {
+   "type": "type",
+   "q": "She ___ (not / work) here for very long.",
+   "a": [
+    "hasn't been working",
+    "has not been working",
+    "hasn't worked",
+    "has not worked"
+   ],
+   "why": "For until now: She hasn't been working (or hasn't worked) here for long."
+  },
+  {
+   "type": "spot",
+   "q": "I am living in this house since 1998.",
+   "bad": "am living",
+   "fix": "have been living",
+   "opts": [
+    "have been living",
+    "was living"
+   ],
+   "why": "Since 1998 until now needs the present perfect: I have been living in this house."
+  },
+  {
+   "type": "spot",
+   "q": "He has been owning this restaurant for ten years.",
+   "bad": "has been owning",
+   "fix": "has owned",
+   "opts": [
+    "has owned",
+    "owns"
+   ],
+   "why": "Own is a state verb, so no -ing: He has owned this restaurant for ten years."
+  },
+  {
+   "type": "spot",
+   "q": "We've been waiting for the plumber since eight o'clock.",
+   "bad": "",
+   "why": "Correct! Since eight o'clock until now: we've been waiting."
+  },
+  {
+   "type": "spot",
+   "q": "I've had a headache since lunch.",
+   "bad": "",
+   "why": "Correct! Have a headache is a state, so we use the simple: I've had."
+  },
+  {
+   "type": "order",
+   "a": "Have you been waiting for a long time?",
+   "alt": [],
+   "why": "Have + you + been + -ing: Have you been waiting for a long time?"
+  },
+  {
+   "type": "order",
+   "a": "He has been coughing all night.",
+   "alt": [],
+   "why": "Has been + -ing for a repeated action until now."
+  },
+  {
+   "type": "order",
+   "a": "I haven't been going to the gym lately.",
+   "alt": [
+    "Lately I haven't been going to the gym."
+   ],
+   "why": "Haven't + been + -ing. Lately can go at the end or the start."
+  }
+ ]
+}

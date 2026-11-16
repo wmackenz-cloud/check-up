@@ -1,0 +1,129 @@
+{
+  "n": 5,
+  "title": "Past Simple",
+  "tagline": "finished actions at a finished time",
+  "why": "We use the past simple to tell stories, talk about last weekend and describe our work history. It is the tense you use most when you talk about your life.",
+  "know": [
+    "the spelling rules for regular verbs: <em>worked</em>, <em>lived</em>, <em>stopped</em>, <em>studied</em>",
+    "common irregular verbs: <em>go/went</em>, <em>buy/bought</em>, <em>take/took</em>, <em>see/saw</em>",
+    "past time words: <em>yesterday</em>, <em>last week</em>, <em>in 2019</em>, <em>two days ago</em>"
+  ],
+  "understand": [
+    "why we say <em>I didn't go</em>, not <em>I didn't went</em>: <em>did</em> already shows the past",
+    "why a finished time (<em>yesterday</em>, <em>last year</em>) needs the past simple, not the present perfect"
+  ],
+  "able": [
+    "talk about your weekend, your last holiday or your last job",
+    "ask questions like <em>Where did you go?</em> and <em>What did you buy?</em>",
+    "make negative sentences with <em>didn't</em> + base verb"
+  ],
+  "mistakes": [
+    ["I didn't went to work yesterday.", "I didn't <strong>go</strong> to work yesterday."],
+    ["Did you saw the game last night?", "Did you <strong>see</strong> the game last night?"],
+    ["I have visited Montreal last summer.", "I <strong>visited</strong> Montreal last summer."],
+    ["She buyed a new coat on Saturday.", "She <strong>bought</strong> a new coat on Saturday."],
+    ["Where you went on holiday?", "Where <strong>did you go</strong> on holiday?"]
+  ],
+  "use": [
+    "a finished action at a finished time: <em>I called my sister yesterday.</em>",
+    "a list of actions in a story, one after another: <em>I got up, had a shower and left.</em>",
+    "a past habit or state that is now finished: <em>We lived in Ottawa for six years.</em>"
+  ],
+  "form": [
+    ["Positive", "<em>I <strong>worked</strong> late.</em> <em>She <strong>went</strong> home.</em> (regular verbs add <strong>-ed</strong>; irregular verbs change)"],
+    ["Negative", "<em>I <strong>didn't work</strong> late.</em> <em>She <strong>didn't go</strong> home.</em> (didn't + base verb)"],
+    ["Question", "<em><strong>Did</strong> you <strong>work</strong> late?</em> <em>Where <strong>did</strong> she <strong>go</strong>?</em>"],
+    ["Short answers", "<em>Yes, I <strong>did</strong>.</em> <em>No, she <strong>didn't</strong>.</em>"],
+    ["Spelling", "<em>live &rarr; lived</em>, <em>stop &rarr; stopped</em>, <em>study &rarr; studied</em>, <em>play &rarr; played</em>"]
+  ],
+  "signals": "<em>yesterday</em>, <em>last night / week / year</em>, <em>two days ago</em>, <em>in 2015</em>, <em>on Monday</em>, <em>when I was a child</em>, <em>then</em>, <em>after that</em>",
+  "tip": "Use the past form only once. In questions and negatives, <strong>did</strong> carries the past, so the main verb goes back to the base form: <em>She went</em> but <em>Did she <strong>go</strong>?</em> and <em>She didn't <strong>go</strong>.</em>",
+  "ws": {
+    "pick": [
+      {"q": "We ___ dinner at a Thai restaurant last Friday.", "opts": ["had", "have had", "have"], "a": 0, "why": "'Last Friday' is a finished time, so we use the past simple: had."},
+      {"q": "I didn't ___ the email until this morning.", "opts": ["saw", "see", "seen"], "a": 1, "why": "After didn't we use the base verb: didn't see."},
+      {"q": "___ you remember to lock the door when you left?", "opts": ["Did", "Do", "Were"], "a": 0, "why": "This is a question about a past action, so we use Did + base verb: Did you remember?"},
+      {"q": "My parents ___ to Canada in 1998.", "opts": ["have moved", "moved", "move"], "a": 1, "why": "'In 1998' is a finished time, so we use the past simple: moved."},
+      {"q": "Yesterday she ___ the bus because she got up late.", "opts": ["missed", "misses", "has missed"], "a": 0, "why": "'Yesterday' is a finished time, so we use the past simple: missed."},
+      {"q": "How much ___ your new phone cost?", "opts": ["did", "was", "is"], "a": 0, "why": "Past questions with a main verb use did: How much did it cost?"},
+      {"q": "They ___ very tired after the long drive.", "opts": ["was", "were", "did"], "a": 1, "why": "With they, the past of be is were: They were tired."},
+      {"q": "Two years ago I ___ in a bank downtown.", "opts": ["have worked", "work", "worked"], "a": 2, "why": "'Two years ago' is a finished time, so we use the past simple: worked."}
+    ],
+    "type": [
+      {"q": "I ___ (buy) some bread on the way home last night.", "a": ["bought"], "why": "Buy is irregular. The past simple is bought."},
+      {"q": "We ___ (not / watch) the news yesterday.", "a": ["didn't watch", "did not watch"], "why": "Negative past simple: didn't + base verb. We didn't watch."},
+      {"q": "He ___ (stop) the car at the red light and waited.", "a": ["stopped"], "why": "Stop ends in one vowel + one consonant, so we double the p: stopped."},
+      {"q": "Where ___ (you / park) this morning?", "a": ["did you park"], "why": "Past question: did + subject + base verb. Where did you park?"},
+      {"q": "My daughter ___ (study) nursing at college from 2018 to 2021.", "a": ["studied"], "why": "Study ends in consonant + y, so y changes to i: studied."},
+      {"q": "I ___ (take) my mother to the doctor on Tuesday.", "a": ["took"], "why": "Take is irregular. The past simple is took."},
+      {"q": "The meeting ___ (not / start) on time last week.", "a": ["didn't start", "did not start"], "why": "Negative past simple: didn't + base verb. It didn't start."},
+      {"q": "Last winter we ___ (go) skiing in Quebec.", "a": ["went"], "why": "Go is irregular. The past simple is went."}
+    ],
+    "spot": [
+      {"q": "I didn't went to the party on Saturday.", "bad": "went", "fix": "go", "opts": ["go", "gone", "going"], "why": "After didn't we use the base verb: I didn't go."},
+      {"q": "Did you found your keys yesterday?", "bad": "found", "fix": "find", "opts": ["find", "finded", "founded"], "why": "After Did we use the base verb: Did you find?"},
+      {"q": "I have met my wife in 2005.", "bad": "have met", "fix": "met", "opts": ["met", "meet", "have meet"], "why": "'In 2005' is a finished time, so we use the past simple: I met my wife in 2005."},
+      {"q": "The children plaied outside all afternoon.", "bad": "plaied", "fix": "played", "opts": ["played", "playd", "plaid"], "why": "Play ends in vowel + y, so we just add -ed: played."},
+      {"q": "When you arrived at the hotel?", "bad": "When you arrived", "fix": "When did you arrive", "opts": ["When did you arrive", "When did you arrived", "When arrived you"], "why": "Past questions need did + base verb: When did you arrive?"}
+    ],
+    "order": [
+      {"a": "What did you do last weekend?", "alt": [], "why": "Question word + did + subject + base verb: What did you do?"},
+      {"a": "I didn't sleep well last night.", "alt": ["Last night I didn't sleep well."], "why": "Negative past simple: subject + didn't + base verb + time."},
+      {"a": "We left the office at six o'clock.", "alt": ["At six o'clock we left the office."], "why": "Subject + past verb + object + time. Left is the past of leave."},
+      {"a": "Did your brother call you yesterday?", "alt": [], "why": "Past question: Did + subject + base verb: Did your brother call?"}
+    ]
+  },
+  "hw": {
+    "pick": [
+      {"q": "I ___ my keys at work yesterday.", "opts": ["forgot", "forget", "have forgotten"], "a": 0, "why": "'Yesterday' is a finished time, so we use the past simple: forgot."},
+      {"q": "We didn't ___ enough time to visit the museum.", "opts": ["had", "have", "having"], "a": 1, "why": "After didn't we use the base verb: didn't have."},
+      {"q": "What time ___ the train leave?", "opts": ["did", "was", "had"], "a": 0, "why": "A past question with a main verb uses did: What time did the train leave?"},
+      {"q": "The weather ___ terrible on our holiday.", "opts": ["were", "was", "did"], "a": 1, "why": "With a singular subject (the weather), the past of be is was."},
+      {"q": "He ___ his job three months ago.", "opts": ["has lost", "lost", "loses"], "a": 1, "why": "'Three months ago' is a finished time, so we use the past simple: lost."},
+      {"q": "___ you enjoy the concert last night?", "opts": ["Have", "Did", "Do"], "a": 1, "why": "'Last night' is past, so the question uses Did + base verb: Did you enjoy?"}
+    ],
+    "type": [
+      {"q": "Last week she ___ (write) a long letter to her grandmother.", "a": ["wrote"], "why": "Write is irregular. The past simple is wrote."},
+      {"q": "I ___ (not / understand) the question at first.", "a": ["didn't understand", "did not understand"], "why": "Negative past simple: didn't + base verb. I didn't understand."},
+      {"q": "We ___ (plan) last year's trip very carefully.", "a": ["planned"], "why": "Plan ends in one vowel + one consonant, so we double the n: planned."},
+      {"q": "What ___ (the doctor / say) about your back yesterday?", "a": ["did the doctor say"], "why": "Past question: did + subject + base verb. What did the doctor say?"},
+      {"q": "On Saturday they ___ (try) the new cafe on Queen Street.", "a": ["tried"], "why": "Try ends in consonant + y, so y changes to i: tried."},
+      {"q": "I ___ (lose) my wallet on the subway last month.", "a": ["lost"], "why": "Lose is irregular. The past simple is lost."},
+      {"q": "My son ___ (not / eat) his vegetables at dinner last night.", "a": ["didn't eat", "did not eat"], "why": "Negative past simple: didn't + base verb. He didn't eat."},
+      {"q": "Yesterday we ___ (arrive) at the airport two hours early.", "a": ["arrived"], "why": "Arrive ends in e, so we just add -d: arrived."}
+    ],
+    "spot": [
+      {"q": "My husband didn't liked the film.", "bad": "liked", "fix": "like", "opts": ["like", "likes", "liking"], "why": "After didn't we use the base verb: didn't like."},
+      {"q": "Did she told you about the party?", "bad": "told", "fix": "tell", "opts": ["tell", "tells", "telled"], "why": "After Did we use the base verb: Did she tell you?"},
+      {"q": "I have seen him at the supermarket yesterday.", "bad": "have seen", "fix": "saw", "opts": ["saw", "see", "have saw"], "why": "'Yesterday' is a finished time, so we use the past simple: I saw him."},
+      {"q": "We catched the last bus home.", "bad": "catched", "fix": "caught", "opts": ["caught", "catch", "cought"], "why": "Catch is irregular. The past simple is caught."}
+    ],
+    "order": [
+      {"a": "Where did you buy that jacket?", "alt": [], "why": "Question word + did + subject + base verb: Where did you buy?"},
+      {"a": "She didn't answer her phone this morning.", "alt": ["This morning she didn't answer her phone."], "why": "Negative past simple: subject + didn't + base verb."},
+      {"a": "We spent two weeks in Halifax last summer.", "alt": ["Last summer we spent two weeks in Halifax."], "why": "Subject + past verb + object + place + time. Spent is the past of spend."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "I ___ to the dentist last Thursday.", "opts": ["went", "have gone", "go"], "a": "went", "why": "'Last Thursday' is a finished time, so we use the past simple: went."},
+    {"type": "pick", "q": "She didn't ___ the answer.", "opts": ["knew", "know", "known"], "a": "know", "why": "After didn't we use the base verb: didn't know."},
+    {"type": "pick", "q": "___ they win the game on Sunday?", "opts": ["Did", "Do", "Have"], "a": "Did", "why": "'On Sunday' is past here, so we ask with Did + base verb: Did they win?"},
+    {"type": "pick", "q": "Yesterday we ___ at home all day because of the snow.", "opts": ["stayed", "stay", "have stayed"], "a": "stayed", "why": "'Yesterday' is a finished time, so we use the past simple: stayed."},
+    {"type": "pick", "q": "The shop ___ closed when we got there.", "opts": ["were", "was", "did"], "a": "was", "why": "With a singular subject (the shop), the past of be is was."},
+    {"type": "pick", "q": "Who ___ you the flowers?", "opts": ["did give", "gave", "did gave"], "a": "gave", "why": "When who is the subject, we don't use did: Who gave you the flowers?"},
+    {"type": "pick", "q": "I ___ my first car when I was twenty.", "opts": ["have bought", "bought", "buy"], "a": "bought", "why": "'When I was twenty' is a finished time, so we use the past simple: bought."},
+    {"type": "pick", "q": "Why ___ you leave so early?", "opts": ["did", "were", "have"], "a": "did", "why": "A past question with a main verb uses did: Why did you leave?"},
+    {"type": "type", "q": "He ___ (drive) to Kingston last Friday.", "a": ["drove"], "why": "Drive is irregular. The past simple is drove."},
+    {"type": "type", "q": "I ___ (not / feel) well yesterday, so I stayed home.", "a": ["didn't feel", "did not feel"], "why": "Negative past simple: didn't + base verb. I didn't feel well."},
+    {"type": "type", "q": "The baby ___ (cry) all night, so we didn't sleep.", "a": ["cried"], "why": "Cry ends in consonant + y, so y changes to i: cried."},
+    {"type": "type", "q": "How ___ (you / get) here today?", "a": ["did you get"], "why": "Past question: did + subject + base verb. How did you get here?"},
+    {"type": "type", "q": "We ___ (shop) for groceries after work yesterday.", "a": ["shopped"], "why": "Shop ends in one vowel + one consonant, so we double the p: shopped."},
+    {"type": "spot", "q": "They didn't came to the meeting.", "bad": "came", "fix": "come", "opts": ["come", "comed", "coming"], "why": "After didn't we use the base verb: didn't come."},
+    {"type": "spot", "q": "Did you spoke to the manager?", "bad": "spoke", "fix": "speak", "opts": ["speak", "spoken", "speaked"], "why": "After Did we use the base verb: Did you speak?"},
+    {"type": "spot", "q": "I met an old friend downtown on Saturday.", "bad": "", "why": "This sentence is correct. Met is the past of meet, and 'on Saturday' is a finished time."},
+    {"type": "spot", "q": "We didn't have time for lunch yesterday.", "bad": "", "why": "This sentence is correct: didn't + base verb (have) for a finished time."},
+    {"type": "order", "a": "What time did you get up today?", "alt": [], "why": "Question word + did + subject + base verb: What time did you get up?"},
+    {"type": "order", "a": "I didn't hear the alarm this morning.", "alt": ["This morning I didn't hear the alarm."], "why": "Negative past simple: subject + didn't + base verb."},
+    {"type": "order", "a": "We moved to Toronto five years ago.", "alt": ["Five years ago we moved to Toronto."], "why": "Subject + past verb + place + time. Ago comes after the time period."}
+  ]
+}

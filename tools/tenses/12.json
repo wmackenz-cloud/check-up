@@ -1,0 +1,127 @@
+{
+  "n": 12,
+  "title": "Future Continuous",
+  "tagline": "in progress at a future time: will be + -ing",
+  "why": "Use it to say what you will be in the middle of at a time in the future, and to ask polite questions about people's plans. It sounds natural and friendly in everyday English.",
+  "know": [
+    "the form <em>will be</em> + verb-<em>ing</em>: <em>I'll be working</em>",
+    "time phrases like <em>at 8 pm tomorrow</em>, <em>this time next week</em> and <em>when you arrive</em>"
+  ],
+  "understand": [
+    "the difference between an action <em>in progress</em> at a future time and a single future action",
+    "why <em>Will you be using the car?</em> sounds softer and more polite than <em>Will you use the car?</em>"
+  ],
+  "able": [
+    "say what you will be doing at a certain time tomorrow or next week",
+    "ask politely about someone's plans before you ask a favour"
+  ],
+  "mistakes": [
+    ["This time tomorrow I will working.", "This time tomorrow I will <strong>be working</strong>."],
+    ["Will you using the car tonight?", "Will you <strong>be using</strong> the car tonight?"],
+    ["At 9 pm I will be watch the game.", "At 9 pm I will be <strong>watching</strong> the game."],
+    ["Next week I will to be travelling.", "Next week I <strong>will be travelling</strong>."],
+    ["Soon I will be knowing the answer.", "Soon I <strong>will know</strong> the answer."]
+  ],
+  "use": [
+    "An action in progress at a time in the future: <em>At 10 am tomorrow, I'll be sitting in a meeting.</em>",
+    "An action that will be in progress when something else happens: <em>When you land, I'll be waiting at the gate.</em>",
+    "Polite questions about plans: <em>Will you be using the printer this afternoon?</em>",
+    "Things that will happen anyway, as part of a plan or routine: <em>I'll be passing the bank, so I can drop it off.</em>"
+  ],
+  "form": [
+    ["Positive", "I <strong>will be working</strong>. / She<strong>'ll be travelling</strong>."],
+    ["Negative", "We <strong>won't be staying</strong> long. / He <strong>will not be coming</strong>."],
+    ["Question", "<strong>Will</strong> you <strong>be using</strong> the car? / What <strong>will</strong> you <strong>be doing</strong> at 6?"],
+    ["Short answers", "Yes, I will. / No, I won't."]
+  ],
+  "signals": "<em>at 8 pm tomorrow</em>, <em>this time next week</em>, <em>at noon on Friday</em>, <em>when you arrive</em>, <em>all day tomorrow</em>, <em>in two hours</em>, <em>still</em>",
+  "tip": "Think of a photo taken in the future: <em>When you arrive, I'll be eating</em> (I'm in the middle of it). Compare <em>When you arrive, I'll eat</em> (I start then). State verbs like <em>know</em>, <em>want</em> and <em>own</em> don't take <em>-ing</em>.",
+  "ws": {
+    "pick": [
+      {"q": "Please don't phone me at 8 pm tomorrow. I ___ my son's hockey game.", "opts": ["will be watching", "was watching", "will watching"], "a": 0, "why": "8 pm tomorrow is a future time and the game will be in progress: will be + -ing. The answer is will be watching."},
+      {"q": "This time next week, we ___ on a beach in Cuba.", "opts": ["will be lying", "were lying", "will lying"], "a": 0, "why": "This time next week is in the future, so use will be + -ing: will be lying. Don't forget be."},
+      {"q": "___ you be using the meeting room after lunch? I need it for a call.", "opts": ["Will", "Are", "Do"], "a": 0, "why": "A polite question about plans: Will + subject + be + -ing. The answer is Will."},
+      {"q": "When your plane lands, I ___ for you at the arrivals exit.", "opts": ["will be waiting", "waited", "will be wait"], "a": 0, "why": "The waiting will already be in progress when the plane lands: will be waiting. After be, use the -ing form."},
+      {"q": "I can't join the 3 o'clock call. I ___ a client in Mississauga then.", "opts": ["will be visiting", "visited", "will been visiting"], "a": 0, "why": "At 3 o'clock the visit will be in progress: will be visiting. After will, use be, not been."},
+      {"q": "Don't worry about the noise tonight. We ___ the drill after 6 pm.", "opts": ["won't be using", "will not using", "don't be using"], "a": 0, "why": "The negative is won't (will not) + be + -ing: won't be using."},
+      {"q": "At midnight on December 31, thousands of people ___ in Nathan Phillips Square.", "opts": ["will be celebrating", "celebrated", "will be celebrate"], "a": 0, "why": "At midnight the party will be in progress: will be celebrating. After be, add -ing."},
+      {"q": "Don't ask me now. I ___ the answer tomorrow morning.", "opts": ["will know", "will be knowing"], "a": 0, "why": "Know is a state verb, so we don't use it with -ing. The answer is will know."}
+    ],
+    "type": [
+      {"q": "This time tomorrow, I ___ (fly) to Calgary.", "a": ["will be flying", "'ll be flying"], "why": "This time tomorrow + an action in progress: will be flying (or I'll be flying)."},
+      {"q": "When you get home at midnight, the children ___ (sleep).", "a": ["will be sleeping"], "why": "They will already be asleep when you arrive, so the action is in progress: will be sleeping."},
+      {"q": "Don't call at 7. We ___ (have) dinner then.", "a": ["will be having", "'ll be having"], "why": "At 7 dinner will be in progress: will be having (or we'll be having)."},
+      {"q": "Don't worry, I ___ (not / sleep) when you call at 11 pm. I always stay up late.", "a": ["will not be sleeping", "won't be sleeping"], "why": "Negative future continuous: won't be sleeping (or will not be sleeping)."},
+      {"q": "What do you think you ___ (do) at this time next year?", "a": ["will be doing", "'ll be doing"], "why": "At this time next year asks about an action in progress then: will be doing (or you'll be doing)."},
+      {"q": "When the guests arrive at 7, I ___ (still / cook).", "a": ["will still be cooking", "'ll still be cooking"], "why": "Still goes after will: will still be cooking. The cooking will be in progress when the guests arrive."},
+      {"q": "At this time next Saturday, my sister ___ (walk) down the aisle.", "a": ["will be walking"], "why": "At this time next Saturday + action in progress: will be walking."},
+      {"q": "At 3 pm tomorrow, I ___ (sit) in a job interview, so I can't pick up the kids.", "a": ["will be sitting", "'ll be sitting"], "why": "At 3 pm tomorrow the interview will be in progress: will be sitting (or I'll be sitting)."}
+    ],
+    "spot": [
+      {"q": "This time tomorrow I will be fly over the Atlantic.", "bad": "will be fly", "fix": "will be flying", "opts": ["will be flying", "will flying"], "why": "After will be, use the -ing form: will be flying."},
+      {"q": "Will you using the car on Saturday morning?", "bad": "Will you using", "fix": "Will you be using", "opts": ["Will you be using", "Are you be using"], "why": "The question needs be: Will you be using the car?"},
+      {"q": "At 9 pm tonight, we will watching the hockey final.", "bad": "will watching", "fix": "will be watching", "opts": ["will be watching", "will be watch"], "why": "Don't forget be: will be watching."},
+      {"q": "Next Monday at 10, she is be presenting her report to the board.", "bad": "is be presenting", "fix": "will be presenting", "opts": ["will be presenting", "was presenting"], "why": "Future continuous uses will, not is: will be presenting."},
+      {"q": "This time next year, I will be knowing much more English.", "bad": "will be knowing", "fix": "will know", "opts": ["will know", "will be know"], "why": "Know is a state verb, so no -ing: will know."}
+    ],
+    "order": [
+      {"a": "Will you be using the car tonight?", "alt": [], "why": "Question: Will + you + be + -ing: Will you be using the car tonight?"},
+      {"a": "I will be working from home tomorrow.", "alt": ["Tomorrow I will be working from home."], "why": "Subject + will be + -ing: I will be working from home tomorrow."},
+      {"a": "What will you be doing at this time next week?", "alt": [], "why": "Wh- question: What + will + you + be doing + time phrase."},
+      {"a": "They will be waiting for us at the airport.", "alt": ["They will be waiting at the airport for us."], "why": "Subject + will be waiting + for us + place."}
+    ]
+  },
+  "hw": {
+    "pick": [
+      {"q": "At 6 am tomorrow, I ___ to work on the 401.", "opts": ["will be driving", "drove", "will be drive"], "a": 0, "why": "At 6 am tomorrow the drive will be in progress: will be driving."},
+      {"q": "___ you be going to the grocery store later? We're out of milk.", "opts": ["Will", "Do", "Are"], "a": 0, "why": "A polite question about plans: Will you be going...? The answer is Will."},
+      {"q": "Sorry, I can't help you move on Sunday. I ___ a double shift at the hospital.", "opts": ["will be working", "worked", "will be work"], "a": 0, "why": "On Sunday the shift will be in progress: will be working."},
+      {"q": "Don't come at 2. The cleaners ___ the floors then.", "opts": ["will be washing", "washed", "will washing"], "a": 0, "why": "At 2 the washing will be in progress: will be washing. Don't forget be."},
+      {"q": "We ___ any visitors next week because my wife is having surgery.", "opts": ["won't be having", "didn't have", "won't having"], "a": 0, "why": "Next week is future: won't be having. The negative is won't + be + -ing."},
+      {"q": "I'm sure you ___ the new apartment once you move in.", "opts": ["will love", "will be loving"], "a": 0, "why": "Love is a state verb, so we don't use -ing: will love."}
+    ],
+    "type": [
+      {"q": "At 7:30 tomorrow morning, I ___ (stand) at the bus stop in the snow.", "a": ["will be standing", "'ll be standing"], "why": "At 7:30 tomorrow the action will be in progress: will be standing (or I'll be standing)."},
+      {"q": "When you wake up tomorrow, your father ___ (drive) to Ottawa.", "a": ["will be driving"], "why": "He will already be on the road when you wake up: will be driving."},
+      {"q": "I ___ (not / use) my laptop this evening, so you can borrow it.", "a": ["will not be using", "won't be using", "will not use", "won't use"], "why": "Talking about plans: won't be using (or will not be using). Won't use is also possible."},
+      {"q": "Don't wait for me at 6. I ___ (still / work) on the budget.", "a": ["will still be working", "'ll still be working"], "why": "Still goes after will: will still be working."},
+      {"q": "This time on Friday, we ___ (camp) in Algonquin Park.", "a": ["will be camping", "'ll be camping"], "why": "This time on Friday + action in progress: will be camping (or we'll be camping)."},
+      {"q": "The kids ___ (play) outside when you get here, so ring the bell loudly.", "a": ["will be playing"], "why": "The playing will be in progress when you arrive: will be playing."},
+      {"q": "At noon tomorrow, Ahmed ___ (write) his final exam.", "a": ["will be writing"], "why": "At noon tomorrow the exam will be in progress: will be writing."},
+      {"q": "From 9 to 5 on Monday, the technicians ___ (repair) the elevator, so please use the stairs.", "a": ["will be repairing"], "why": "The work will be in progress all day Monday: will be repairing."}
+    ],
+    "spot": [
+      {"q": "At 4 pm I will be meet my new boss.", "bad": "will be meet", "fix": "will be meeting", "opts": ["will be meeting", "will meeting"], "why": "After will be, use -ing: will be meeting."},
+      {"q": "Are you be staying with your cousins in Halifax?", "bad": "Are you be staying", "fix": "Will you be staying", "opts": ["Will you be staying", "Do you be staying"], "why": "The question starts with Will: Will you be staying?"},
+      {"q": "Tomorrow at this time, I will to be sitting on a train.", "bad": "will to be sitting", "fix": "will be sitting", "opts": ["will be sitting", "will sitting"], "why": "No to after will: will be sitting."},
+      {"q": "Soon we will be owning our own house.", "bad": "will be owning", "fix": "will own", "opts": ["will own", "will be own"], "why": "Own is a state verb, so no -ing: will own."}
+    ],
+    "order": [
+      {"a": "We will be staying with friends in Montreal.", "alt": ["We will be staying in Montreal with friends."], "why": "Subject + will be staying + with friends + place."},
+      {"a": "Will you be going to the party on Friday?", "alt": [], "why": "Question: Will + you + be going + place + time."},
+      {"a": "She will be studying all weekend for her exam.", "alt": ["She will be studying for her exam all weekend."], "why": "Subject + will be studying + time + purpose."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "Don't visit at 10 am tomorrow. I ___ yoga at the community centre.", "opts": ["will be doing", "did", "will be do"], "a": "will be doing", "why": "At 10 am tomorrow the class will be in progress: will be doing."},
+    {"type": "pick", "q": "___ you be using your ladder this weekend? I want to clean my gutters.", "opts": ["Will", "Are", "Did"], "a": "Will", "why": "A polite question about plans: Will you be using...?"},
+    {"type": "pick", "q": "Tomorrow at 5 pm, my husband ___ the kids up from school.", "opts": ["will be picking", "picked", "will picking"], "a": "will be picking", "why": "At 5 pm tomorrow the action will be in progress: will be picking."},
+    {"type": "pick", "q": "Next Monday at this time, I ___ my first shift at the new job.", "opts": ["will be working", "worked", "will be work"], "a": "will be working", "why": "Next Monday at this time the shift will be in progress: will be working."},
+    {"type": "pick", "q": "Sorry, I ___ my phone during the funeral tomorrow. I'll call you back after.", "opts": ["won't be checking", "didn't check", "won't checking"], "a": "won't be checking", "why": "Negative future continuous: won't be checking. Don't forget be."},
+    {"type": "pick", "q": "When the movie starts at 9, we ___ popcorn in the lobby.", "opts": ["will still be buying", "still bought", "will still buying"], "a": "will still be buying", "why": "The buying will be in progress when the movie starts: will still be buying."},
+    {"type": "pick", "q": "Next year Jun ___ a car of his own.", "opts": ["will have", "will be having"], "a": "will have", "why": "Have meaning own is a state verb, so no -ing: will have."},
+    {"type": "pick", "q": "At 11 tonight, most of the city ___ .", "opts": ["will be sleeping", "slept", "will sleeping"], "a": "will be sleeping", "why": "At 11 tonight the sleeping will be in progress: will be sleeping."},
+    {"type": "type", "q": "This time tomorrow, we ___ (drive) through the Rockies.", "a": ["will be driving", "'ll be driving"], "why": "This time tomorrow + in progress: will be driving (or we'll be driving)."},
+    {"type": "type", "q": "At noon tomorrow I ___ (not / sit) at my desk. I'll be at lunch.", "a": ["will not be sitting", "won't be sitting"], "why": "Negative future continuous: won't be sitting (or will not be sitting)."},
+    {"type": "type", "q": "At 10 tomorrow night, I ___ (still / pack) for my trip.", "a": ["will still be packing", "'ll still be packing"], "why": "Still goes after will: will still be packing."},
+    {"type": "type", "q": "At this time next month, my parents ___ (enjoy) the sun in Florida.", "a": ["will be enjoying"], "why": "At this time next month + in progress: will be enjoying."},
+    {"type": "type", "q": "When you come out of the doctor's office, I ___ (sit) in the car outside.", "a": ["will be sitting", "'ll be sitting"], "why": "The sitting will already be in progress when you come out: will be sitting."},
+    {"type": "spot", "q": "Will you be coming to the barbecue on Sunday?", "bad": "", "why": "This sentence is correct. Will you be coming...? is a polite question about plans."},
+    {"type": "spot", "q": "At 7 tomorrow evening, I will be cook for twelve people.", "bad": "will be cook", "fix": "will be cooking", "opts": ["will be cooking", "will cooking"], "why": "After will be, use -ing: will be cooking."},
+    {"type": "spot", "q": "When you call at noon, I will be teaching a class.", "bad": "", "why": "This sentence is correct. The class will be in progress when you call: will be teaching."},
+    {"type": "spot", "q": "Don't call at 9. We will watching the news then.", "bad": "will watching", "fix": "will be watching", "opts": ["will be watching", "will be watch"], "why": "Don't forget be: will be watching."},
+    {"type": "order", "a": "Will you be working late tonight?", "alt": [], "why": "Question: Will + you + be working + late + tonight."},
+    {"type": "order", "a": "I will be thinking of you on your big day.", "alt": ["On your big day I will be thinking of you."], "why": "Subject + will be thinking + of you + time."},
+    {"type": "order", "a": "Our flight will be landing at noon tomorrow.", "alt": ["Our flight will be landing tomorrow at noon."], "why": "Subject + will be landing + time."}
+  ]
+}

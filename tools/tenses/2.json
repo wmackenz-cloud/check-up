@@ -1,0 +1,675 @@
+{
+ "n": 2,
+ "title": "Present Continuous",
+ "tagline": "now and around now: am / is / are + -ing",
+ "why": "We use the present continuous for what is happening right now or for a short time around now. It helps you describe what you see, explain why you're busy, and talk about changes.",
+ "know": [
+  "the form <em>am / is / are + -ing</em>",
+  "the <em>-ing</em> spelling rules: <em>make &rarr; making</em>, <em>sit &rarr; sitting</em>, <em>lie &rarr; lying</em>",
+  "common state verbs that don't usually take <em>-ing</em>: <em>know, want, need, believe, own</em>"
+ ],
+ "understand": [
+  "the difference between a habit (<em>I work</em>) and something happening now (<em>I'm working</em>)",
+  "why we say <em>I know</em>, not <em>I'm knowing</em>"
+ ],
+ "able": [
+  "say what you and other people are doing at the moment",
+  "describe temporary situations: <em>I'm working nights this month.</em>",
+  "talk about changes: <em>More people are working from home.</em>"
+ ],
+ "mistakes": [
+  [
+   "I working now.",
+   "I <strong>am working</strong> now."
+  ],
+  [
+   "She is wear a red coat.",
+   "She is <strong>wearing</strong> a red coat."
+  ],
+  [
+   "I am knowing her very well.",
+   "I <strong>know</strong> her very well."
+  ],
+  [
+   "Look! It snows.",
+   "Look! It<strong>'s snowing</strong>."
+  ],
+  [
+   "What you are doing?",
+   "What <strong>are you</strong> doing?"
+  ]
+ ],
+ "use": [
+  "actions happening now: <em>Shh! The kids are sleeping.</em>",
+  "temporary situations around now: <em>I'm working nights this month.</em>",
+  "changing trends: <em>The city is getting busier.</em>"
+ ],
+ "form": [
+  [
+   "Positive",
+   "<em>I<strong>'m working</strong>.</em> <em>She<strong>'s working</strong>.</em> <em>They<strong>'re working</strong>.</em>"
+  ],
+  [
+   "Negative",
+   "<em>I<strong>'m not working</strong>.</em> <em>He <strong>isn't working</strong>.</em> <em>We <strong>aren't working</strong>.</em>"
+  ],
+  [
+   "Question",
+   "<em><strong>Are</strong> you <strong>working</strong>?</em> <em>What <strong>is</strong> she <strong>doing</strong>?</em>"
+  ],
+  [
+   "Short answers",
+   "<em>Yes, I <strong>am</strong>.</em> <em>No, I<strong>'m not</strong>.</em> <em>Yes, she <strong>is</strong>.</em> <em>No, she <strong>isn't</strong>.</em>"
+  ],
+  [
+   "Spelling",
+   "<em>take &rarr; taking</em>, <em>swim &rarr; swimming</em>, <em>die &rarr; dying</em>, <em>study &rarr; studying</em>"
+  ]
+ ],
+ "signals": "<em>now</em>, <em>right now</em>, <em>at the moment</em>, <em>today</em>, <em>this week</em>, <em>this month</em>, <em>these days</em>, <em>currently</em>, <em>still</em>, <em>Look!</em>, <em>Listen!</em>",
+ "tip": "Ask: <strong>is it happening now, or is it a habit?</strong> <em>I drive to work</em> (every day), but <em>I'm taking the train this week</em> (my car is at the garage). State verbs like <em>know, want, believe</em> stay simple, even now.",
+ "ws": {
+  "pick": [
+   {
+    "q": "Please be quiet. I ___ on the phone.",
+    "opts": [
+     "am talking",
+     "talk",
+     "talking"
+    ],
+    "a": 0,
+    "why": "It is happening now: am + -ing. 'I talking' has no am."
+   },
+   {
+    "q": "Look out the window! It ___ again.",
+    "opts": [
+     "is raining",
+     "rains",
+     "raining"
+    ],
+    "a": 0,
+    "why": "Look! tells us it is happening now: It is raining."
+   },
+   {
+    "q": "I ___ what you mean.",
+    "opts": [
+     "understand",
+     "am understanding"
+    ],
+    "a": 0,
+    "why": "Understand is a state verb, so we don't use -ing: I understand what you mean."
+   },
+   {
+    "q": "We ___ our kitchen this month, so we're eating out a lot.",
+    "opts": [
+     "are painting",
+     "paint",
+     "painting"
+    ],
+    "a": 0,
+    "why": "A temporary situation around now: are painting. 'We painting' has no are."
+   },
+   {
+    "q": "___ you waiting for the 504 streetcar?",
+    "opts": [
+     "Are",
+     "Do",
+     "Is"
+    ],
+    "a": 0,
+    "why": "Present continuous questions start with am, is or are. With you, use Are."
+   },
+   {
+    "q": "He ___ a new phone. His old one is broken.",
+    "opts": [
+     "needs",
+     "is needing"
+    ],
+    "a": 0,
+    "why": "Need is a state verb, so we don't use -ing: He needs a new phone."
+   },
+   {
+    "q": "Our neighbourhood ___ more expensive these days.",
+    "opts": [
+     "is becoming",
+     "becoming",
+     "become"
+    ],
+    "a": 0,
+    "why": "A change happening around now: is becoming. These days is a clue."
+   },
+   {
+    "q": "Why ___ at me like that?",
+    "opts": [
+     "are you looking",
+     "do you looking",
+     "you are looking"
+    ],
+    "a": 0,
+    "why": "Questions: question word + are + you + -ing. Why are you looking at me?"
+   }
+  ],
+  "type": [
+   {
+    "q": "Turn the music down. The baby ___ (try) to sleep.",
+    "a": [
+     "is trying",
+     "'s trying"
+    ],
+    "why": "Happening now: is + -ing. Try keeps the y: trying."
+   },
+   {
+    "q": "The kids ___ (swim) in the lake right now.",
+    "a": [
+     "are swimming",
+     "'re swimming"
+    ],
+    "why": "One vowel + one consonant at the end: double it. swim becomes swimming."
+   },
+   {
+    "q": "I ___ (not / work) this week. I'm on vacation.",
+    "a": [
+     "am not working",
+     "'m not working"
+    ],
+    "why": "A temporary situation: I am not working this week."
+   },
+   {
+    "q": "What ___ (you / cook)? It smells great.",
+    "a": [
+     "are you cooking"
+    ],
+    "why": "A question about now: What are you cooking?"
+   },
+   {
+    "q": "She ___ (sit) in the waiting room at the moment.",
+    "a": [
+     "is sitting",
+     "'s sitting"
+    ],
+    "why": "At the moment = now. Sit doubles the t: sitting."
+   },
+   {
+    "q": "My son ___ (study) for his driving test these days.",
+    "a": [
+     "is studying",
+     "'s studying"
+    ],
+    "why": "A temporary activity around now. Keep the y before -ing: studying."
+   },
+   {
+    "q": "We ___ (stay) at my sister's place this week.",
+    "a": [
+     "are staying",
+     "'re staying"
+    ],
+    "why": "This week = a temporary situation: We are staying."
+   },
+   {
+    "q": "He ___ (make) dinner, so he can't come to the phone.",
+    "a": [
+     "is making",
+     "'s making"
+    ],
+    "why": "Happening now. Drop the final e: make becomes making."
+   }
+  ],
+  "spot": [
+   {
+    "q": "I am wanting a glass of water.",
+    "bad": "am wanting",
+    "fix": "want",
+    "opts": [
+     "want",
+     "wanting"
+    ],
+    "why": "Want is a state verb, so we don't use -ing: I want a glass of water."
+   },
+   {
+    "q": "Listen! Someone knock at the door.",
+    "bad": "knock",
+    "fix": "is knocking",
+    "opts": [
+     "is knocking",
+     "knocks"
+    ],
+    "why": "Listen! means it is happening now: Someone is knocking at the door."
+   },
+   {
+    "q": "They are siting near the window.",
+    "bad": "siting",
+    "fix": "sitting",
+    "opts": [
+     "sitting",
+     "sit"
+    ],
+    "why": "Sit ends in one vowel + one consonant, so double the t: sitting."
+   },
+   {
+    "q": "Where you are going?",
+    "bad": "you are",
+    "fix": "are you",
+    "opts": [
+     "are you",
+     "you"
+    ],
+    "why": "In questions, are comes before the subject: Where are you going?"
+   },
+   {
+    "q": "She not working today.",
+    "bad": "not working",
+    "fix": "isn't working",
+    "opts": [
+     "isn't working",
+     "doesn't working"
+    ],
+    "why": "The negative needs is: She isn't working today."
+   }
+  ],
+  "order": [
+   {
+    "a": "What are you reading at the moment?",
+    "alt": [],
+    "why": "Question word + are + you + -ing: What are you reading?"
+   },
+   {
+    "a": "My brother isn't working this week.",
+    "alt": [
+     "This week my brother isn't working."
+    ],
+    "why": "Isn't + -ing for a temporary situation: My brother isn't working this week."
+   },
+   {
+    "a": "More people are cycling to work these days.",
+    "alt": [
+     "These days more people are cycling to work."
+    ],
+    "why": "A trend around now: are cycling. These days can go at the start or the end."
+   },
+   {
+    "a": "Are you still looking for a new job?",
+    "alt": [],
+    "why": "Are + you + still + -ing. Still goes before the -ing verb."
+   }
+  ]
+ },
+ "hw": {
+  "pick": [
+   {
+    "q": "Turn off the stove! The water ___.",
+    "opts": [
+     "is boiling",
+     "boils",
+     "boiling"
+    ],
+    "a": 0,
+    "why": "It is happening now, so use is + -ing: The water is boiling."
+   },
+   {
+    "q": "I ___ you. You're always honest.",
+    "opts": [
+     "believe",
+     "am believing"
+    ],
+    "a": 0,
+    "why": "Believe is a state verb, so we don't use -ing: I believe you."
+   },
+   {
+    "q": "They ___ in the garden right now.",
+    "opts": [
+     "are working",
+     "work",
+     "works"
+    ],
+    "a": 0,
+    "why": "Right now = present continuous: They are working."
+   },
+   {
+    "q": "___ she still talking on the phone?",
+    "opts": [
+     "Is",
+     "Does",
+     "Are"
+    ],
+    "a": 0,
+    "why": "She takes is: Is she still talking on the phone?"
+   },
+   {
+    "q": "The weather ___ warmer this week.",
+    "opts": [
+     "is getting",
+     "get",
+     "getting"
+    ],
+    "a": 0,
+    "why": "A change around now: is getting. 'The weather getting' has no is."
+   },
+   {
+    "q": "This bag ___ to me.",
+    "opts": [
+     "belongs",
+     "is belonging"
+    ],
+    "a": 0,
+    "why": "Belong is a state verb, so we don't use -ing: This bag belongs to me."
+   }
+  ],
+  "type": [
+   {
+    "q": "Quick, look outside! The sun ___ (shine).",
+    "a": [
+     "is shining",
+     "'s shining"
+    ],
+    "why": "Look! = now. Drop the final e: shine becomes shining."
+   },
+   {
+    "q": "I ___ (wait) for you outside the station.",
+    "a": [
+     "am waiting",
+     "'m waiting"
+    ],
+    "why": "Happening now: I am waiting."
+   },
+   {
+    "q": "Why ___ (the baby / cry)?",
+    "a": [
+     "is the baby crying"
+    ],
+    "why": "Question: why + is + the baby + -ing. Why is the baby crying?"
+   },
+   {
+    "q": "We ___ (not / watch) this show. You can turn it off.",
+    "a": [
+     "aren't watching",
+     "are not watching",
+     "'re not watching"
+    ],
+    "why": "Not happening now: We aren't watching this show."
+   },
+   {
+    "q": "He ___ (run) in the park right now.",
+    "a": [
+     "is running",
+     "'s running"
+    ],
+    "why": "Run ends in one vowel + one consonant, so double the n: running."
+   },
+   {
+    "q": "These days my English ___ (improve) because I practise every day.",
+    "a": [
+     "is improving",
+     "'s improving"
+    ],
+    "why": "These days = a change happening around now. Drop the final e: improving."
+   },
+   {
+    "q": "Who ___ (you / talk) to?",
+    "a": [
+     "are you talking"
+    ],
+    "why": "Question about now: Who are you talking to?"
+   },
+   {
+    "q": "The dog ___ (lie) on the sofa again!",
+    "a": [
+     "is lying",
+     "'s lying"
+    ],
+    "why": "Verbs ending in -ie change to -ying: lie becomes lying."
+   }
+  ],
+  "spot": [
+   {
+    "q": "Look! The bus come.",
+    "bad": "come",
+    "fix": "is coming",
+    "opts": [
+     "is coming",
+     "comes"
+    ],
+    "why": "Look! means it is happening now: The bus is coming."
+   },
+   {
+    "q": "I am not believing his story.",
+    "bad": "am not believing",
+    "fix": "don't believe",
+    "opts": [
+     "don't believe",
+     "not believe"
+    ],
+    "why": "Believe is a state verb, so use the present simple: I don't believe his story."
+   },
+   {
+    "q": "She is writeing an email to her manager.",
+    "bad": "writeing",
+    "fix": "writing",
+    "opts": [
+     "writing",
+     "writes"
+    ],
+    "why": "Drop the final e before -ing: write becomes writing."
+   },
+   {
+    "q": "Is he work from home today?",
+    "bad": "work",
+    "fix": "working",
+    "opts": [
+     "working",
+     "works"
+    ],
+    "why": "After is, use the -ing form: Is he working from home today?"
+   }
+  ],
+  "order": [
+   {
+    "a": "Why are you wearing your winter boots?",
+    "alt": [],
+    "why": "Why + are + you + -ing: Why are you wearing your winter boots?"
+   },
+   {
+    "a": "The children are playing video games upstairs.",
+    "alt": [],
+    "why": "Are + -ing for an action now: The children are playing video games."
+   },
+   {
+    "a": "She is taking an online course this month.",
+    "alt": [
+     "This month she is taking an online course."
+    ],
+    "why": "A temporary situation: is taking. This month can go at the start or end."
+   }
+  ]
+ },
+ "bank": [
+  {
+   "type": "pick",
+   "q": "Can you answer the door? I ___ a shower.",
+   "opts": [
+    "am having",
+    "have",
+    "having"
+   ],
+   "a": "am having",
+   "why": "It is happening now. Have can take -ing when it is an action: I am having a shower."
+  },
+  {
+   "type": "pick",
+   "q": "I ___ two brothers and a sister.",
+   "opts": [
+    "have",
+    "am having"
+   ],
+   "a": "have",
+   "why": "Have meaning own or family is a state verb, so no -ing: I have two brothers."
+  },
+  {
+   "type": "pick",
+   "q": "Hurry up! Everyone ___ for us.",
+   "opts": [
+    "is waiting",
+    "are waiting",
+    "waits"
+   ],
+   "a": "is waiting",
+   "why": "Everyone is singular, so use is: Everyone is waiting for us."
+  },
+  {
+   "type": "pick",
+   "q": "What ___ right now?",
+   "opts": [
+    "is she doing",
+    "does she do",
+    "she is doing"
+   ],
+   "a": "is she doing",
+   "why": "Right now = present continuous. Question order: What is she doing?"
+  },
+  {
+   "type": "pick",
+   "q": "These days, my daughter ___ to learn Korean.",
+   "opts": [
+    "is trying",
+    "try",
+    "trying"
+   ],
+   "a": "is trying",
+   "why": "These days = a temporary activity around now: is trying."
+  },
+  {
+   "type": "pick",
+   "q": "He ___ the answer to this question.",
+   "opts": [
+    "knows",
+    "is knowing"
+   ],
+   "a": "knows",
+   "why": "Know is a state verb, so we don't use -ing: He knows the answer."
+  },
+  {
+   "type": "pick",
+   "q": "I can't come out. I ___ for an exam.",
+   "opts": [
+    "am studying",
+    "study",
+    "studying"
+   ],
+   "a": "am studying",
+   "why": "Something happening around now: I am studying for an exam."
+  },
+  {
+   "type": "pick",
+   "q": "Look at those clouds! The sky ___ dark.",
+   "opts": [
+    "is getting",
+    "gets",
+    "getting"
+   ],
+   "a": "is getting",
+   "why": "Look! = a change happening now: The sky is getting dark."
+  },
+  {
+   "type": "type",
+   "q": "Sorry about the mess. We ___ (plan) a trip to Quebec City at the moment.",
+   "a": [
+    "are planning",
+    "'re planning"
+   ],
+   "why": "At the moment = now. Plan ends in one vowel + one consonant, so double the n: planning."
+  },
+  {
+   "type": "type",
+   "q": "I ___ (not / sleep) well these days.",
+   "a": [
+    "am not sleeping",
+    "'m not sleeping"
+   ],
+   "why": "These days = a temporary situation: I am not sleeping well."
+  },
+  {
+   "type": "type",
+   "q": "Where ___ (they / go)? The office is the other way.",
+   "a": [
+    "are they going"
+   ],
+   "why": "A question about now: Where are they going?"
+  },
+  {
+   "type": "type",
+   "q": "My colleague ___ (use) my computer, so I can't check my email.",
+   "a": [
+    "is using",
+    "'s using"
+   ],
+   "why": "Happening now. Drop the final e: use becomes using."
+  },
+  {
+   "type": "type",
+   "q": "Please be quiet. We ___ (record) a video.",
+   "a": [
+    "are recording",
+    "'re recording"
+   ],
+   "why": "Happening now: We are recording a video."
+  },
+  {
+   "type": "spot",
+   "q": "I am needing some help with this form.",
+   "bad": "am needing",
+   "fix": "need",
+   "opts": [
+    "need",
+    "needing"
+   ],
+   "why": "Need is a state verb, so no -ing: I need some help with this form."
+  },
+  {
+   "type": "spot",
+   "q": "They is playing cards in the kitchen.",
+   "bad": "is",
+   "fix": "are",
+   "opts": [
+    "are",
+    "be"
+   ],
+   "why": "They takes are: They are playing cards in the kitchen."
+  },
+  {
+   "type": "spot",
+   "q": "My sister is working in Halifax this year.",
+   "bad": "",
+   "why": "Correct! This year = a temporary situation, so is working is right."
+  },
+  {
+   "type": "spot",
+   "q": "He is liveing with his parents for now.",
+   "bad": "liveing",
+   "fix": "living",
+   "opts": [
+    "living",
+    "lives"
+   ],
+   "why": "Drop the final e before -ing: live becomes living."
+  },
+  {
+   "type": "order",
+   "a": "What is your daughter studying at university?",
+   "alt": [],
+   "why": "What + is + your daughter + -ing: What is your daughter studying?"
+  },
+  {
+   "type": "order",
+   "a": "I am not using the car today.",
+   "alt": [
+    "Today I am not using the car."
+   ],
+   "why": "Am + not + -ing: I am not using the car today."
+  },
+  {
+   "type": "order",
+   "a": "Is it still snowing in Toronto?",
+   "alt": [],
+   "why": "Is + it + still + -ing. Still goes before the -ing verb."
+  }
+ ]
+}

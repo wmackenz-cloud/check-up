@@ -1,0 +1,126 @@
+{
+  "n": 14,
+  "title": "Future Perfect Continuous",
+  "tagline": "how long by a future time: will have been + -ing",
+  "why": "Use it to say how long something will have been going on when we reach a future time. It is perfect for anniversaries, careers, long trips and long waits.",
+  "know": [
+    "the form <em>will have been</em> + verb-<em>ing</em>: <em>I'll have been working</em>",
+    "the time words <em>for</em> + a length of time and <em>by</em> + a date or time"
+  ],
+  "understand": [
+    "that we stand at a future point and look back at how long an action will have continued",
+    "the difference between <em>how long</em> (future perfect continuous) and <em>how many</em> (future perfect)"
+  ],
+  "able": [
+    "say how long you will have been living, working or studying somewhere by a future date",
+    "talk about long waits and long trips: <em>We'll have been driving for ten hours.</em>"
+  ],
+  "mistakes": [
+    ["By June I will have been work here for ten years.", "By June I will have been <strong>working</strong> here for ten years."],
+    ["By next month I will be living here for a year.", "By next month I <strong>will have been living</strong> here for a year."],
+    ["By May I will have been knowing her for ten years.", "By May I <strong>will have known</strong> her for ten years."],
+    ["By the time she will retire, she will have been nursing for 40 years.", "By the time she <strong>retires</strong>, she will have been nursing for 40 years."],
+    ["By 5 pm I will have been writing three reports.", "By 5 pm I <strong>will have written</strong> three reports."]
+  ],
+  "use": [
+    "How long an action will have continued up to a future time: <em>By June, I'll have been working here for ten years.</em>",
+    "How long, up to a future event: <em>When she retires, she'll have been teaching for 35 years.</em>",
+    "To explain a future result: <em>He'll be tired when he arrives. He'll have been driving all day.</em>"
+  ],
+  "form": [
+    ["Positive", "I <strong>will have been working</strong>. / They<strong>'ll have been waiting</strong>."],
+    ["Negative", "She <strong>won't have been living</strong> here long."],
+    ["Question", "How long <strong>will</strong> you <strong>have been studying</strong> by June?"],
+    ["Short answers", "Yes, I will. / No, I won't."]
+  ],
+  "signals": "<em>for</em> + a length of time (<em>for ten years</em>, <em>for six hours</em>), <em>by</em> + a date (<em>by next June</em>, <em>by 2030</em>), <em>by the time</em> + present simple, <em>when</em>, <em>all day</em>, <em>how long</em>",
+  "tip": "How long? Use <em>will have been + -ing</em>: <em>I'll have been writing for three hours.</em> How many? Use the future perfect: <em>I'll have written three reports.</em> State verbs like <em>know</em> use the future perfect too.",
+  "ws": {
+    "pick": [
+      {"q": "By next June, I ___ in Canada for ten years.", "opts": ["will have been living", "have been living", "will be living"], "a": 0, "why": "By next June + for ten years (how long): will have been living."},
+      {"q": "By the time the plane ___, we will have been flying for fourteen hours.", "opts": ["lands", "will land", "landed"], "a": 0, "why": "After by the time, use the present simple: lands, not will land."},
+      {"q": "By 6 pm, the kids ___ video games for five hours straight.", "opts": ["will have been playing", "will have been play", "have been playing"], "a": 0, "why": "By 6 pm + for five hours: will have been playing. After been, add -ing."},
+      {"q": "By May, I ___ my neighbour for twenty years.", "opts": ["will have known", "will have been knowing"], "a": 0, "why": "Know is a state verb, so no -ing. Use the future perfect: will have known."},
+      {"q": "By the end of today, I ___ four reports.", "opts": ["will have written", "will have been writing"], "a": 0, "why": "Four reports is how many, not how long, so use the future perfect: will have written."},
+      {"q": "By the time he retires, Mr. Singh ___ buses in Toronto for thirty years.", "opts": ["will have been driving", "has been driving", "will be driving"], "a": 0, "why": "Looking back from a future point + for thirty years: will have been driving."},
+      {"q": "By September, we ___ English together for two years.", "opts": ["will have been studying", "will be studying", "studied"], "a": 0, "why": "By September + for two years (how long up to then): will have been studying."},
+      {"q": "At 3 o'clock tomorrow, the road crew ___ for exactly eight hours.", "opts": ["will have been working", "will have been work", "had been working"], "a": 0, "why": "At a future time + for eight hours: will have been working. After been, add -ing."}
+    ],
+    "type": [
+      {"q": "By the time the snowplow comes, it ___ (snow) for two days.", "a": ["will have been snowing", "'ll have been snowing"], "why": "How long up to a future moment: will have been snowing."},
+      {"q": "By the time we ___ (reach) Winnipeg, we will have been driving for nine hours.", "a": ["reach"], "why": "After by the time, use the present simple: reach, not will reach."},
+      {"q": "By midnight, the volunteers ___ (cook) for twelve hours.", "a": ["will have been cooking"], "why": "By midnight + for twelve hours: will have been cooking."},
+      {"q": "When the guests arrive at 7, Grandma ___ (bake) since early morning.", "a": ["will have been baking"], "why": "How long up to 7 pm: will have been baking."},
+      {"q": "By the end of the concert, the band ___ (play) for three hours without a break.", "a": ["will have been playing", "will have played"], "why": "By the end + for three hours: will have been playing (will have played is also possible)."},
+      {"q": "By the time the ambulance arrives, the man ___ (lie) on the ice for an hour.", "a": ["will have been lying"], "why": "How long up to a future moment: will have been lying. Lie becomes lying."},
+      {"q": "By 3 pm, the patients ___ (sit) in the waiting room for five hours.", "a": ["will have been sitting"], "why": "By 3 pm + for five hours: will have been sitting."},
+      {"q": "Don't worry, she ___ (not / wait) long when you arrive.", "a": ["will not have been waiting", "won't have been waiting", "will not have waited", "won't have waited"], "why": "Negative: won't have been waiting (won't have waited is also possible)."}
+    ],
+    "spot": [
+      {"q": "By next year, I will have been teach here for a decade.", "bad": "will have been teach", "fix": "will have been teaching", "opts": ["will have been teaching", "will have been taught"], "why": "After will have been, use -ing: will have been teaching."},
+      {"q": "By Friday, we will have been renovating the kitchen since six weeks.", "bad": "since six weeks", "fix": "for six weeks", "opts": ["for six weeks", "during six weeks"], "why": "Use for with a length of time: for six weeks. Since goes with a starting point."},
+      {"q": "By the time Mom will get home, the soup will have been simmering for hours.", "bad": "will get", "fix": "gets", "opts": ["gets", "got"], "why": "After by the time, use the present simple: gets."},
+      {"q": "By August, I will be living in Halifax for five years.", "bad": "will be living", "fix": "will have been living", "opts": ["will have been living", "am living"], "why": "How long up to a future time: will have been living."},
+      {"q": "By tonight, I will have been reading three chapters.", "bad": "will have been reading", "fix": "will have read", "opts": ["will have read", "will be reading"], "why": "Three chapters is how many, so use the future perfect: will have read."}
+    ],
+    "order": [
+      {"a": "By June I will have been working here for ten years.", "alt": ["I will have been working here for ten years by June."], "why": "By June + subject + will have been working + place + for ten years."},
+      {"a": "How long will you have been living in Canada?", "alt": [], "why": "Question: How long + will + you + have been living + place."},
+      {"a": "They will have been driving all day by then.", "alt": ["By then they will have been driving all day."], "why": "Subject + will have been driving + all day + by then."},
+      {"a": "She won't have been waiting for very long.", "alt": [], "why": "Negative: won't have been waiting + for very long."}
+    ]
+  },
+  "hw": {
+    "pick": [
+      {"q": "By the end of this year, my father ___ taxis for twenty-five years.", "opts": ["will have been driving", "drives", "will be driving"], "a": 0, "why": "By the end of this year + for 25 years: will have been driving."},
+      {"q": "By the time the rain ___, it will have been raining for three days.", "opts": ["stops", "will stop", "stopped"], "a": 0, "why": "After by the time, use the present simple: stops."},
+      {"q": "By next week, I ___ this cough for a month!", "opts": ["will have had", "will have been having"], "a": 0, "why": "Have (a cough) is a state here, so no -ing: will have had."},
+      {"q": "By noon, the movers ___ forty boxes into the truck.", "opts": ["will have carried", "will have been carrying"], "a": 0, "why": "Forty boxes is how many, so use the future perfect: will have carried."},
+      {"q": "By 2030, my brother ___ as a firefighter for twenty years.", "opts": ["will have been working", "has been working", "will be working"], "a": 0, "why": "By 2030 + for twenty years: will have been working."},
+      {"q": "When we finally board, we ___ at the gate for four hours.", "opts": ["will have been waiting", "will have been wait", "are waiting"], "a": 0, "why": "How long up to a future moment: will have been waiting. After been, add -ing."}
+    ],
+    "type": [
+      {"q": "By 9 pm, the baby ___ (cry) for an hour if nobody picks her up.", "a": ["will have been crying"], "why": "By 9 pm + for an hour: will have been crying."},
+      {"q": "By the time I ___ (finish) this degree, I will have been studying for six years.", "a": ["finish"], "why": "After by the time, use the present simple: finish."},
+      {"q": "By December, our neighbours ___ (renovate) their house for a whole year.", "a": ["will have been renovating"], "why": "By December + for a whole year: will have been renovating."},
+      {"q": "By the time you land, it ___ (rain) in Vancouver for a week.", "a": ["will have been raining", "'ll have been raining"], "why": "How long up to a future moment: will have been raining."},
+      {"q": "By 5 pm, the workers ___ (dig) the new basement for ten hours.", "a": ["will have been digging"], "why": "By 5 pm + for ten hours: will have been digging. Dig becomes digging."},
+      {"q": "By next Christmas, my uncle ___ (fix) cars in his garage for fifty years.", "a": ["will have been fixing", "will have fixed"], "why": "By next Christmas + for fifty years: will have been fixing (will have fixed is also possible)."},
+      {"q": "When the soup is ready, it ___ (boil) for three hours.", "a": ["will have been boiling", "'ll have been boiling"], "why": "How long up to a future moment: will have been boiling."},
+      {"q": "We ___ (not / live) here long when the baby arrives.", "a": ["will not have been living", "won't have been living", "will not have lived", "won't have lived"], "why": "Negative: won't have been living (won't have lived is also possible)."}
+    ],
+    "spot": [
+      {"q": "By June, I will has been working at the bank for a year.", "bad": "will has been working", "fix": "will have been working", "opts": ["will have been working", "will had been working"], "why": "After will, always use have: will have been working."},
+      {"q": "By the time the bus will come, we will have been standing in the cold for an hour.", "bad": "will come", "fix": "comes", "opts": ["comes", "came"], "why": "After by the time, use the present simple: comes."},
+      {"q": "By the end of the day, she will have been answering 200 emails.", "bad": "will have been answering", "fix": "will have answered", "opts": ["will have answered", "answered"], "why": "200 emails is how many, so use the future perfect: will have answered."},
+      {"q": "By next October, I will have been knowing my best friend for thirty years.", "bad": "will have been knowing", "fix": "will have known", "opts": ["will have known", "will know"], "why": "Know is a state verb, so no -ing: will have known."}
+    ],
+    "order": [
+      {"a": "By March we will have been living here for five years.", "alt": ["We will have been living here for five years by March."], "why": "By March + subject + will have been living + here + for five years."},
+      {"a": "How long will you have been working there by then?", "alt": [], "why": "Question: How long + will + you + have been working + there + by then."},
+      {"a": "He will have been sleeping for twelve hours.", "alt": [], "why": "Subject + will have been sleeping + for twelve hours."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "By next summer, my wife ___ yoga for ten years.", "opts": ["will have been teaching", "has been teaching", "will be teaching"], "a": "will have been teaching", "why": "By next summer + for ten years: will have been teaching."},
+    {"type": "pick", "q": "By the time we ___ Quebec City, we will have been cycling for a week.", "opts": ["reach", "will reach", "reached"], "a": "reach", "why": "After by the time, use the present simple: reach."},
+    {"type": "pick", "q": "By Friday, I ___ my new boss for exactly one month.", "opts": ["will have known", "will have been knowing"], "a": "will have known", "why": "Know is a state verb, so no -ing: will have known."},
+    {"type": "pick", "q": "By the end of the night, the band ___ twenty songs.", "opts": ["will have played", "will have been playing"], "a": "will have played", "why": "Twenty songs is how many, so use the future perfect: will have played."},
+    {"type": "pick", "q": "By 2028, the bakery ___ bread on this street for a century.", "opts": ["will have been making", "has been making", "will be making"], "a": "will have been making", "why": "By 2028 + for a century: will have been making."},
+    {"type": "pick", "q": "When you call at noon, I ___ in the garden for four hours.", "opts": ["will have been working", "will have been work", "have been working"], "a": "will have been working", "why": "How long up to noon: will have been working. After been, add -ing."},
+    {"type": "pick", "q": "___ you have been living in Edmonton for a year by Christmas?", "opts": ["Will", "Have", "Do"], "a": "Will", "why": "Question: Will + subject + have been + -ing. The answer is Will."},
+    {"type": "pick", "q": "By midnight, the snow ___ for twenty hours without stopping.", "opts": ["will have been falling", "will have been fall", "has been falling"], "a": "will have been falling", "why": "By midnight + for twenty hours: will have been falling."},
+    {"type": "type", "q": "By the time the movie ends, we ___ (sit) in this theatre for three hours.", "a": ["will have been sitting", "'ll have been sitting"], "why": "How long up to a future moment: will have been sitting (or we'll have been sitting)."},
+    {"type": "type", "q": "By next April, Rosa ___ (volunteer) at the food bank for two years.", "a": ["will have been volunteering", "will have volunteered"], "why": "By next April + for two years: will have been volunteering (will have volunteered is also possible)."},
+    {"type": "type", "q": "By the time the plumber ___ (arrive), the water will have been leaking for six hours.", "a": ["arrives"], "why": "After by the time, use the present simple: arrives."},
+    {"type": "type", "q": "By the end of the shift, the nurses ___ (stand) for twelve hours.", "a": ["will have been standing"], "why": "By the end of the shift + for twelve hours: will have been standing."},
+    {"type": "type", "q": "By 10 am, the bread dough ___ (rise) for two hours.", "a": ["will have been rising"], "why": "By 10 am + for two hours: will have been rising."},
+    {"type": "spot", "q": "By the time the race ends, the runners will have been running for over four hours.", "bad": "", "why": "This sentence is correct: by the time + present simple (ends), then will have been running for + time."},
+    {"type": "spot", "q": "By next week, he will have been training since three months.", "bad": "since three months", "fix": "for three months", "opts": ["for three months", "during three months"], "why": "Use for with a length of time: for three months."},
+    {"type": "spot", "q": "By next month, my parents will be running their shop for twenty years.", "bad": "will be running", "fix": "will have been running", "opts": ["will have been running", "are running"], "why": "How long up to a future time: will have been running their shop for twenty years."},
+    {"type": "spot", "q": "When the guests arrive, I will have been cooking all afternoon.", "bad": "", "why": "This sentence is correct: will have been cooking shows how long up to a future moment."},
+    {"type": "order", "a": "By then we will have been waiting for two hours.", "alt": ["We will have been waiting for two hours by then."], "why": "By then + subject + will have been waiting + for two hours."},
+    {"type": "order", "a": "How long will she have been teaching by June?", "alt": [], "why": "Question: How long + will + she + have been teaching + by June."},
+    {"type": "order", "a": "The engine will have been running all night.", "alt": [], "why": "Subject + will have been running + all night."}
+  ]
+}

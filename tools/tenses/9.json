@@ -1,0 +1,128 @@
+{
+  "n": 9,
+  "title": "Future with Will",
+  "tagline": "decisions, offers and promises: will + base verb",
+  "why": "We use <strong>will</strong> every day to offer help, make promises and decide things on the spot. Getting it right makes you sound friendly and natural.",
+  "know": [
+    "the form <em>will</em> + base verb, and the negative <em>won't</em> (will not)",
+    "words that often go with will: <em>I think</em>, <em>I don't think</em>, <em>I'm sure</em>, <em>probably</em>, <em>I promise</em>"
+  ],
+  "understand": [
+    "that <em>will</em> is often for a decision you make <strong>now</strong>, while you are speaking",
+    "why we never put <em>to</em>, <em>-s</em> or <em>-ing</em> after will"
+  ],
+  "able": [
+    "offer help and make promises",
+    "make a quick decision, for example when you order food",
+    "ask polite questions with <em>Will you...?</em>"
+  ],
+  "mistakes": [
+    ["I will to phone you tonight.", "I <strong>will phone</strong> you tonight."],
+    ["Will you to join us for lunch?", "Will you <strong>join</strong> us for lunch?"],
+    ["He wills be here soon.", "He <strong>will be</strong> here soon."],
+    ["I don't will forget your birthday.", "I <strong>won't forget</strong> your birthday."],
+    ["A: This suitcase is so heavy! B: I'm going to help you.", "A: This suitcase is so heavy! B: <strong>I'll help</strong> you."]
+  ],
+  "use": [
+    "<strong>Instant decisions</strong>, made while you speak: <em>The phone's ringing. I'll get it.</em>",
+    "<strong>Offers and promises</strong>: <em>I'll carry that for you.</em> <em>I won't tell anyone.</em>",
+    "<strong>Predictions from opinion</strong>, often with <em>I think</em> or <em>probably</em>: <em>I think it'll be a good party.</em>",
+    "<strong>Requests</strong>: <em>Will you close the door, please?</em>"
+  ],
+  "form": [
+    ["Positive", "I / you / he / she / we / they <em>will work</em> (short form: <em>I'll</em>, <em>she'll</em>, <em>we'll</em>)"],
+    ["Negative", "<em>I won't work</em> = I will not work"],
+    ["Question", "<em>Will you help me?</em> <em>What will you do?</em>"],
+    ["Short answers", "<em>Yes, I will.</em> / <em>No, I won't.</em>"]
+  ],
+  "signals": "<em>I think</em>, <em>I don't think</em>, <em>I'm sure</em>, <em>probably</em>, <em>maybe</em>, <em>I promise</em>, <em>I hope</em>; reactions like <em>Oh!</em>, <em>Wait</em>, <em>Don't worry</em>",
+  "tip": "Decided <strong>now</strong>, while speaking? Use <em>will</em>: <em>I'll have the soup.</em> Decided <strong>before</strong>? Use <em>going to</em>. And say <em>I don't think he'll come</em>, not <em>I think he won't come</em>.",
+  "ws": {
+    "pick": [
+      {"q": "The phone's ringing. Stay there, I ___ get it.", "opts": ["will", "am going to"], "a": 0, "why": "You decide at the moment of speaking, so use will: I'll get it."},
+      {"q": "I promise I ___ you back on Friday.", "opts": ["will pay", "pay", "will to pay"], "a": 0, "why": "A promise uses will + base verb: I will pay. There is no 'to' after will."},
+      {"q": "___ you open the window, please? It's very hot in here.", "opts": ["Will", "Do", "Are"], "a": 0, "why": "To ask someone to do something, use Will you + base verb: Will you open the window?"},
+      {"q": "Don't worry. I ___ tell anyone your secret.", "opts": ["won't", "don't will", "willn't"], "a": 0, "why": "The negative of will is won't (will not). I won't tell anyone is a promise."},
+      {"q": "I think the Blue Jays ___ the game tonight.", "opts": ["will win", "will wins"], "a": 0, "why": "After will, use the base verb with no -s: will win. This is a prediction from opinion (I think)."},
+      {"q": "I'm not sure, but I ___ be home late tonight.", "opts": ["will probably", "am probably", "probably will to"], "a": 0, "why": "Probably usually goes after will: I will probably be late. Never 'am be' or 'will to'."},
+      {"q": "My sister ___ like this restaurant. She hates fish.", "opts": ["won't", "doesn't will", "will not to"], "a": 0, "why": "Negative prediction: won't + base verb. She won't like it."},
+      {"q": "A: I can't open this jar. B: Give it to me. I ___ try.", "opts": ["will", "am going to"], "a": 0, "why": "B offers to help at that moment, so use will: I'll try."}
+    ],
+    "type": [
+      {"q": "Sit down and relax. I ___ (make) you a cup of tea.", "a": ["will make", "'ll make"], "why": "An offer made now: will + base verb. I'll make you a cup of tea."},
+      {"q": "Oh no, I forgot to email the landlord! I ___ (do) it right now.", "a": ["will do", "'ll do"], "why": "You decide now, as you speak: I'll do it right now."},
+      {"q": "A: Can you call me tonight? B: Sure, I ___ (call) you after dinner.", "a": ["will call", "'ll call"], "why": "Agreeing to a request is a promise: I'll call you after dinner."},
+      {"q": "Thanks for the loan. I promise I ___ (not / forget) to pay you back.", "a": ["won't forget", "will not forget"], "why": "A promise in the negative: won't + base verb. I won't forget."},
+      {"q": "A: This shirt comes in red or blue. B: Hmm. I ___ (take) the blue one.", "a": ["will take", "'ll take"], "why": "A quick decision in a shop: I'll take the blue one."},
+      {"q": "A: It's dark in here. B: Wait, I ___ (turn) on the light.", "a": ["will turn", "'ll turn"], "why": "B decides at that moment, so use will: I'll turn on the light."},
+      {"q": "Those plates look heavy. I ___ (carry) some for you.", "a": ["will carry", "'ll carry"], "why": "An offer of help made now: I'll carry some for you."},
+      {"q": "A: Coffee or tea? B: I ___ (have) a coffee, please.", "a": ["will have", "'ll have"], "why": "When you order or choose on the spot, use will: I'll have a coffee."}
+    ],
+    "spot": [
+      {"q": "I will to send you the report this afternoon.", "bad": "will to send", "fix": "will send", "opts": ["will send", "will sending"], "why": "After will, use the base verb with no 'to': I will send you the report."},
+      {"q": "Will you to come to my birthday party on Saturday?", "bad": "Will you to come", "fix": "Will you come", "opts": ["Will you come", "Do you will come"], "why": "Questions: Will + subject + base verb. Will you come? No 'to'."},
+      {"q": "Don't worry, I don't will be late.", "bad": "don't will be", "fix": "won't be", "opts": ["won't be", "will not to be"], "why": "The negative of will is won't, not don't will: I won't be late."},
+      {"q": "That box looks heavy. I'm going to help you with it.", "bad": "I'm going to help", "fix": "I'll help", "opts": ["I'll help", "I help"], "why": "An offer you decide on now uses will: I'll help you with it."},
+      {"q": "I think it will rains this afternoon.", "bad": "will rains", "fix": "will rain", "opts": ["will rain", "will raining"], "why": "After will, use the base verb with no -s: it will rain."}
+    ],
+    "order": [
+      {"a": "I will call you when I get home.", "alt": ["When I get home I will call you."], "why": "Subject + will + base verb, then the time clause: I will call you when I get home."},
+      {"a": "Will you help me with my homework?", "alt": [], "why": "Questions start with Will, then the subject and the base verb: Will you help me?"},
+      {"a": "I don't think she will come tonight.", "alt": [], "why": "We say I don't think + will for a negative opinion about the future."},
+      {"a": "We will probably arrive at about six.", "alt": ["We probably will arrive at about six."], "why": "Probably usually goes after will: We will probably arrive."}
+    ]
+  },
+  "hw": {
+    "pick": [
+      {"q": "A: I've got a terrible headache. B: Sit down. I ___ get you some water.", "opts": ["will", "am going to"], "a": 0, "why": "B decides to help at that moment, so use will: I'll get you some water."},
+      {"q": "___ you be at the meeting tomorrow morning?", "opts": ["Will", "Do", "Are"], "a": 0, "why": "Will you + base verb: Will you be at the meeting? 'Do you be' and 'Are you be' are not English."},
+      {"q": "Thank you so much for your help. I ___ forget it.", "opts": ["will never", "will not never", "never will to"], "a": 0, "why": "Use will never + base verb. Only one negative word: I will never forget it."},
+      {"q": "I'm sure the bus ___ soon.", "opts": ["will come", "will comes", "will coming"], "a": 0, "why": "After will, always the base verb: the bus will come."},
+      {"q": "It's very late. I think I ___ a taxi home.", "opts": ["will take", "take", "taking"], "a": 0, "why": "A decision made now with I think: I think I'll take a taxi."},
+      {"q": "My boss ___ be happy about this mistake.", "opts": ["won't", "doesn't will", "isn't will"], "a": 0, "why": "The negative of will is won't + base verb: My boss won't be happy."}
+    ],
+    "type": [
+      {"q": "A: I need a ride to the airport. B: No problem. I ___ (drive) you.", "a": ["will drive", "'ll drive"], "why": "An offer made at that moment: I'll drive you."},
+      {"q": "A: So, the fish for you? B: Wait, I've changed my mind. I ___ (try) the chicken.", "a": ["will try", "'ll try"], "why": "A choice made on the spot uses will: I'll try the chicken."},
+      {"q": "I promise I ___ (not / tell) your mother.", "a": ["won't tell", "will not tell"], "why": "A negative promise: won't + base verb. I won't tell your mother."},
+      {"q": "A: This window is stuck. B: Let me see. I ___ (open) it for you.", "a": ["will open", "'ll open"], "why": "An offer of help made now: I'll open it for you."},
+      {"q": "A: We're out of printer paper. B: Really? I ___ (order) some now.", "a": ["will order", "'ll order"], "why": "B learns the news and decides now, so use will: I'll order some."},
+      {"q": "If you're cold, I ___ (lend) you my jacket.", "a": ["will lend", "'ll lend"], "why": "An offer with if: will + base verb. I'll lend you my jacket."},
+      {"q": "A: My computer just crashed! B: Calm down. I ___ (have) a look at it.", "a": ["will have", "'ll have"], "why": "An instant offer of help: I'll have a look at it."},
+      {"q": "A: I can't find my keys anywhere. B: I ___ (help) you look for them.", "a": ["will help", "'ll help"], "why": "An offer made at that moment: I'll help you look."}
+    ],
+    "spot": [
+      {"q": "She will calls you back after lunch.", "bad": "will calls", "fix": "will call", "opts": ["will call", "will calling"], "why": "After will, use the base verb with no -s, even with she: she will call."},
+      {"q": "I'm sorry. I promise I not will do it again.", "bad": "not will do", "fix": "won't do", "opts": ["won't do", "don't will do"], "why": "The negative is won't (will not), and not comes after will: I won't do it again."},
+      {"q": "A: There's no sugar. B: Oh, I go to the store and get some.", "bad": "I go", "fix": "I'll go", "opts": ["I'll go", "I going"], "why": "B decides now, so use will, not the present simple: I'll go to the store."},
+      {"q": "When will you to finish the report?", "bad": "will you to finish", "fix": "will you finish", "opts": ["will you finish", "you will finish"], "why": "Question word + will + subject + base verb: When will you finish? No 'to'."}
+    ],
+    "order": [
+      {"a": "I will text you after the meeting.", "alt": ["After the meeting I will text you."], "why": "Subject + will + base verb + the rest: I will text you after the meeting."},
+      {"a": "Will they be at the party tonight?", "alt": [], "why": "Will comes first in a question, then the subject and the base verb."},
+      {"a": "I'm sure you will enjoy the film.", "alt": [], "why": "I'm sure + will for a prediction from opinion: you will enjoy the film."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "A: The baby's crying. B: Okay, I ___ go and see.", "opts": ["will", "am going to"], "a": "will", "why": "B decides at that moment, so use will: I'll go and see."},
+    {"type": "pick", "q": "I hope you ___ better soon.", "opts": ["will feel", "feel to", "will feeling"], "a": "will feel", "why": "Will + base verb: I hope you will feel better soon."},
+    {"type": "pick", "q": "___ it be cold in Ottawa next week?", "opts": ["Will", "Does", "Is"], "a": "Will", "why": "A question about the future with be: Will it be cold?"},
+    {"type": "pick", "q": "I'm really sorry. I ___ do it again.", "opts": ["won't", "don't", "am not"], "a": "won't", "why": "A promise about the future: won't + base verb. I won't do it again."},
+    {"type": "pick", "q": "We ___ probably need more chairs for the party.", "opts": ["will", "are", "do"], "a": "will", "why": "A prediction with probably: will probably + base verb."},
+    {"type": "pick", "q": "Don't touch that pan. You ___ burn your hand!", "opts": ["will", "are"], "a": "will", "why": "A warning about the future: will + base verb. You will burn your hand."},
+    {"type": "pick", "q": "The new manager ___ start until March.", "opts": ["won't", "will not to", "doesn't will"], "a": "won't", "why": "Negative future: won't + base verb, with no 'to'. The new manager won't start until March."},
+    {"type": "pick", "q": "A: It's so hot in this car. B: I ___ turn on the air conditioning.", "opts": ["will", "am going to"], "a": "will", "why": "B reacts and decides now, so use will: I'll turn it on."},
+    {"type": "type", "q": "A: I left my wallet at home. B: Don't worry. I ___ (pay) for lunch today.", "a": ["will pay", "'ll pay"], "why": "An offer made on the spot: I'll pay for lunch."},
+    {"type": "type", "q": "Wait for me here. I promise I ___ (not / be) long.", "a": ["won't be", "will not be"], "why": "A promise in the negative: I won't be long."},
+    {"type": "type", "q": "A: Someone's at the door. B: I ___ (get) it.", "a": ["will get", "'ll get"], "why": "A decision made at that moment: I'll get it."},
+    {"type": "type", "q": "A: This soup needs salt. B: Here, I ___ (pass) it to you.", "a": ["will pass", "'ll pass"], "why": "An offer of help made now: I'll pass it to you."},
+    {"type": "type", "q": "___ (you / marry) me?", "a": ["Will you marry"], "why": "A big request about the future: Will you marry me?"},
+    {"type": "spot", "q": "I will to bring the salad to the picnic.", "bad": "will to bring", "fix": "will bring", "opts": ["will bring", "will brings"], "why": "No 'to' after will: I will bring the salad."},
+    {"type": "spot", "q": "I don't think it will snow this weekend.", "bad": "", "why": "This sentence is correct. I don't think + will is the natural way to say a negative opinion."},
+    {"type": "spot", "q": "Will you can help me tomorrow?", "bad": "Will you can help", "fix": "Will you help", "opts": ["Will you help", "Will you to help"], "why": "Never put will and can together. Say Will you help me? (or Can you help me?)."},
+    {"type": "spot", "q": "That bag looks heavy. I'll carry it for you.", "bad": "", "why": "This sentence is correct. An offer made on the spot uses will: I'll carry it."},
+    {"type": "order", "a": "I will see you at the station tomorrow.", "alt": ["I will see you tomorrow at the station.", "Tomorrow I will see you at the station."], "why": "Subject + will + base verb + place + time: I will see you at the station tomorrow."},
+    {"type": "order", "a": "What time will you be home tonight?", "alt": [], "why": "Question word + will + subject + base verb: What time will you be home?"},
+    {"type": "order", "a": "I think it will be a busy day.", "alt": [], "why": "I think + will for a prediction from opinion: it will be a busy day."}
+  ]
+}

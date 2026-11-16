@@ -1,0 +1,129 @@
+{
+  "n": 6,
+  "title": "Past Continuous",
+  "tagline": "an action in progress at a past time",
+  "why": "The past continuous sets the scene in a story: what was happening when something else happened. Without it, your stories sound like a list of facts.",
+  "know": [
+    "the form: <em>was / were</em> + verb<em>-ing</em>",
+    "the linking words <em>when</em> and <em>while</em>",
+    "state verbs that don't take <em>-ing</em>: <em>know</em>, <em>want</em>, <em>believe</em>, <em>own</em>"
+  ],
+  "understand": [
+    "the difference between a longer background action (<em>I was cooking</em>) and a short action that interrupts it (<em>the phone rang</em>)",
+    "why <em>What were you doing at 8?</em> and <em>What did you do at 8?</em> mean different things"
+  ],
+  "able": [
+    "describe the background to a story: the weather, what people were doing",
+    "tell what you were doing when something happened",
+    "ask <em>What were you doing?</em> correctly"
+  ],
+  "mistakes": [
+    ["I was knowing the answer.", "I <strong>knew</strong> the answer."],
+    ["We was watching TV when you called.", "We <strong>were</strong> watching TV when you called."],
+    ["When the phone rang, I cooked dinner.", "When the phone rang, I <strong>was cooking</strong> dinner."],
+    ["While I was walking home, I was seeing an accident.", "While I was walking home, I <strong>saw</strong> an accident."],
+    ["What you were doing at nine o'clock?", "What <strong>were you</strong> doing at nine o'clock?"]
+  ],
+  "use": [
+    "an action in progress at a past time: <em>At 7 p.m. I was driving home.</em>",
+    "a longer action interrupted by a short one (past simple): <em>I was cooking when the power went out.</em>",
+    "the background to a story: <em>It was raining and people were hurrying to work.</em>",
+    "two actions happening at the same time: <em>While I was working, the kids were playing.</em>"
+  ],
+  "form": [
+    ["Positive", "<em>I / he / she / it <strong>was working</strong>.</em> <em>You / we / they <strong>were working</strong>.</em>"],
+    ["Negative", "<em>I <strong>wasn't sleeping</strong>.</em> <em>They <strong>weren't listening</strong>.</em>"],
+    ["Question", "<em><strong>Were</strong> you <strong>sleeping</strong>?</em> <em>What <strong>was</strong> she <strong>doing</strong>?</em>"],
+    ["Short answers", "<em>Yes, I <strong>was</strong>.</em> <em>No, they <strong>weren't</strong>.</em>"]
+  ],
+  "signals": "<em>when</em>, <em>while</em>, <em>as</em>, <em>at 8 o'clock last night</em>, <em>at that moment</em>, <em>all day yesterday</em>",
+  "tip": "Think of a film: the <strong>past continuous</strong> is the long scene in the background (<em>I was walking</em>), and the <strong>past simple</strong> is the short event that happens in it (<em>I saw a fox</em>). Use <em>while</em> with the long action and <em>when</em> usually with the short one.",
+  "ws": {
+    "pick": [
+      {"q": "I ___ a shower when the doorbell rang.", "opts": ["was having", "had", "am having"], "a": 0, "why": "The shower was the longer action in progress when the bell interrupted it: was having."},
+      {"q": "At ten o'clock last night we ___ a movie.", "opts": ["were watching", "was watching", "are watching"], "a": 0, "why": "An action in progress at a past time uses the past continuous. With we, use were: were watching."},
+      {"q": "While she was driving to work, she ___ a deer on the road.", "opts": ["saw", "was seeing", "sees"], "a": 0, "why": "Seeing the deer is a short action that happened during the drive, so we use the past simple: saw."},
+      {"q": "It ___ heavily when we left the restaurant.", "opts": ["was snowing", "snows", "were snowing"], "a": 0, "why": "The snow is the background in progress, so we use was snowing (it takes was)."},
+      {"q": "They ___ to the radio, so they didn't hear us knock.", "opts": ["were listening", "was listening", "are listening"], "a": 0, "why": "They were in the middle of listening when we knocked: were listening (they takes were)."},
+      {"q": "What ___ you doing when the lights went out?", "opts": ["were", "did", "was"], "a": 0, "why": "Past continuous question: were + you + -ing. What were you doing?"},
+      {"q": "I ___ the answer, so I put up my hand.", "opts": ["knew", "was knowing", "were knowing"], "a": 0, "why": "Know is a state verb and doesn't usually take -ing: I knew."},
+      {"q": "He cut his finger while he ___ vegetables.", "opts": ["was chopping", "were chopping", "chops"], "a": 0, "why": "After while we use the longer action in progress. He takes was: was chopping."}
+    ],
+    "type": [
+      {"q": "When I called him, he ___ (sleep).", "a": ["was sleeping"], "why": "He was in the middle of sleeping when I called: was sleeping."},
+      {"q": "We ___ (not / pay) attention, so we missed our stop.", "a": ["weren't paying", "were not paying"], "why": "Negative past continuous with we: weren't + -ing. We weren't paying attention."},
+      {"q": "The sun ___ (shine) and the birds were singing.", "a": ["was shining"], "why": "This is the background of a scene, so we use the past continuous: was shining."},
+      {"q": "___ (you / work) late last night when I texted?", "a": ["Were you working"], "why": "Past continuous question: Were + you + -ing. Were you working?"},
+      {"q": "At midnight my neighbours ___ (have) a loud party, so I couldn't sleep.", "a": ["were having"], "why": "The party was in progress at that time. Neighbours is plural: were having."},
+      {"q": "I ___ (not / feel) well, so I stayed home.", "a": ["wasn't feeling", "was not feeling", "didn't feel", "did not feel"], "why": "Both are fine here: I wasn't feeling well (in progress) or I didn't feel well."},
+      {"q": "While the kids ___ (play) outside, it suddenly started to rain.", "a": ["were playing"], "why": "After while we use the longer action in progress: were playing."},
+      {"q": "She ___ (wait) for the bus when it started to rain.", "a": ["was waiting"], "why": "She was in the middle of waiting when the rain started: was waiting."}
+    ],
+    "spot": [
+      {"q": "I was knowing his name but I forgot it.", "bad": "was knowing", "fix": "knew", "opts": ["knew", "was know", "were knowing"], "why": "Know is a state verb, so we don't use -ing: I knew his name."},
+      {"q": "We was talking about you this morning.", "bad": "was", "fix": "were", "opts": ["were", "are", "did"], "why": "With we, the past continuous uses were: We were talking."},
+      {"q": "When the alarm went off, I slept deeply.", "bad": "slept", "fix": "was sleeping", "opts": ["was sleeping", "were sleeping", "am sleeping"], "why": "Sleeping was in progress when the alarm interrupted it: I was sleeping."},
+      {"q": "While I was shopping, I was meeting my old teacher.", "bad": "was meeting", "fix": "met", "opts": ["met", "were meeting", "meet"], "why": "Meeting someone is a short event during the shopping, so we use the past simple: I met."},
+      {"q": "What you were doing at midnight?", "bad": "you were", "fix": "were you", "opts": ["were you", "you was", "did you"], "why": "In questions, were goes before the subject: What were you doing?"}
+    ],
+    "order": [
+      {"a": "What were you doing at six o'clock?", "alt": [], "why": "Question word + were + subject + -ing: What were you doing?"},
+      {"a": "I was making coffee when she arrived.", "alt": ["When she arrived I was making coffee."], "why": "Long action (was making) + when + short action (arrived)."},
+      {"a": "They weren't wearing their seat belts.", "alt": [], "why": "Negative past continuous: subject + weren't + -ing."},
+      {"a": "He fell asleep while he was reading.", "alt": ["While he was reading he fell asleep."], "why": "Short action (fell asleep) + while + longer action (was reading)."}
+    ]
+  },
+  "hw": {
+    "pick": [
+      {"q": "I ___ dinner when my sister called, so I didn't answer.", "opts": ["was making", "made", "make"], "a": 0, "why": "Making dinner was in progress when the call came: was making."},
+      {"q": "At noon yesterday they ___ lunch in the park.", "opts": ["was eating", "were eating", "eat"], "a": 1, "why": "An action in progress at a past time. With they, use were: were eating."},
+      {"q": "While we were jogging, it suddenly ___ to rain.", "opts": ["started", "was starting", "starts"], "a": 0, "why": "'Suddenly' shows a short event, so we use the past simple: started."},
+      {"q": "She ___ a red dress at the wedding.", "opts": ["was wearing", "were wearing", "is wearing"], "a": 0, "why": "We describe what someone was wearing at a past event with was + -ing (she takes was)."},
+      {"q": "___ it raining when you left the house?", "opts": ["Was", "Were", "Did"], "a": 0, "why": "Past continuous question with it: Was it raining?"},
+      {"q": "He ___ that car for ten years before he sold it.", "opts": ["owned", "was owning", "were owning"], "a": 0, "why": "Own is a state verb and doesn't usually take -ing: he owned."}
+    ],
+    "type": [
+      {"q": "When the boss came in, everyone ___ (work) hard.", "a": ["was working"], "why": "Everyone takes a singular verb: everyone was working."},
+      {"q": "I ___ (not / listen), so can you say that again?", "a": ["wasn't listening", "was not listening"], "why": "Negative past continuous with I: wasn't + -ing."},
+      {"q": "The children ___ (laugh) at the clown when the lights went out.", "a": ["were laughing"], "why": "Laughing was in progress when the lights went out. Children is plural: were laughing."},
+      {"q": "Why ___ (you / cry) when I saw you yesterday?", "a": ["were you crying"], "why": "Past continuous question: Why + were + you + -ing."},
+      {"q": "My husband ___ (fix) the sink when he hurt his back.", "a": ["was fixing"], "why": "Fixing the sink was the longer action that was interrupted: was fixing."},
+      {"q": "We ___ (drive) through the mountains when the car broke down.", "a": ["were driving"], "why": "Driving was in progress when the car broke down: were driving."},
+      {"q": "While I ___ (wait) at the doctor's, my phone rang.", "a": ["was waiting"], "why": "After while we use the longer action in progress: was waiting."},
+      {"q": "The students ___ (not / talk) when the teacher came back.", "a": ["weren't talking", "were not talking"], "why": "Negative past continuous with a plural subject: weren't + -ing."}
+    ],
+    "spot": [
+      {"q": "She were cooking when I got home.", "bad": "were", "fix": "was", "opts": ["was", "is", "did"], "why": "With she, the past continuous uses was: She was cooking."},
+      {"q": "I was wanting to call you but I was too busy.", "bad": "was wanting", "fix": "wanted", "opts": ["wanted", "were wanting", "want"], "why": "Want is a state verb, so we don't use -ing: I wanted to call you."},
+      {"q": "The phone rang while I had a bath.", "bad": "had", "fix": "was having", "opts": ["was having", "have", "were having"], "why": "After while we need the longer action in progress: while I was having a bath."},
+      {"q": "While we were watching the game, our team was scoring a goal.", "bad": "was scoring", "fix": "scored", "opts": ["scored", "were scoring", "scores"], "why": "A goal is a short event during the longer action, so we use the past simple: our team scored."}
+    ],
+    "order": [
+      {"a": "Were you sleeping when I phoned?", "alt": [], "why": "Past continuous question: Were + subject + -ing + when + past simple."},
+      {"a": "It was getting dark when we got home.", "alt": ["When we got home it was getting dark."], "why": "Background (was getting dark) + when + short action (got home)."},
+      {"a": "I wasn't looking at the screen.", "alt": [], "why": "Negative past continuous: subject + wasn't + -ing."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "I ___ along the lake when I saw the fireworks.", "opts": ["was walking", "am walking", "were walking"], "a": "was walking", "why": "Walking was in progress when I saw the fireworks: was walking (I takes was)."},
+    {"type": "pick", "q": "At 3 p.m. yesterday we ___ in a meeting.", "opts": ["were sitting", "was sitting", "are sitting"], "a": "were sitting", "why": "An action in progress at a past time: were sitting."},
+    {"type": "pick", "q": "While he was cleaning the garage, he ___ an old photo.", "opts": ["found", "was finding", "finds"], "a": "found", "why": "Finding the photo is a short event during the cleaning, so we use the past simple: found."},
+    {"type": "pick", "q": "What ___ she doing when you arrived?", "opts": ["was", "were", "did"], "a": "was", "why": "Past continuous question with she: What was she doing?"},
+    {"type": "pick", "q": "I ___ you were in Vancouver last week.", "opts": ["didn't know", "wasn't knowing", "weren't knowing"], "a": "didn't know", "why": "Know is a state verb and doesn't take -ing: I didn't know."},
+    {"type": "pick", "q": "The kids ___ TV, so they didn't hear the phone.", "opts": ["were watching", "was watching", "watch"], "a": "were watching", "why": "The kids were in the middle of watching TV. Kids is plural: were watching."},
+    {"type": "pick", "q": "When I heard the news, I ___ my mother right away.", "opts": ["called", "was calling", "were calling"], "a": "called", "why": "First I heard the news, then I called. Two short actions in order both use the past simple: called."},
+    {"type": "pick", "q": "She ___ on the phone all through dinner.", "opts": ["was talking", "were talking", "is talking"], "a": "was talking", "why": "An action in progress over a past period with she: was talking."},
+    {"type": "type", "q": "I ___ (read) in bed when I heard a strange noise.", "a": ["was reading"], "why": "Reading was in progress when I heard the noise: was reading."},
+    {"type": "type", "q": "They ___ (not / wear) coats when I saw them, and it was freezing!", "a": ["weren't wearing", "were not wearing"], "why": "Negative past continuous with they: weren't + -ing."},
+    {"type": "type", "q": "___ (he / drive) too fast when the police stopped him?", "a": ["Was he driving"], "why": "Past continuous question: Was + he + -ing."},
+    {"type": "type", "q": "While we ___ (have) lunch, a bird flew into the window.", "a": ["were having"], "why": "After while we use the longer action in progress: were having."},
+    {"type": "type", "q": "The wind ___ (blow) and the rain was falling hard.", "a": ["was blowing"], "why": "Background to a scene uses the past continuous: was blowing."},
+    {"type": "spot", "q": "They was waiting outside for an hour.", "bad": "was", "fix": "were", "opts": ["were", "are", "did"], "why": "With they, the past continuous uses were: They were waiting."},
+    {"type": "spot", "q": "I was believing every word he said.", "bad": "was believing", "fix": "believed", "opts": ["believed", "were believing", "believe"], "why": "Believe is a state verb, so we don't use -ing: I believed."},
+    {"type": "spot", "q": "We were having breakfast when the power went out.", "bad": "", "why": "This sentence is correct: the longer action (were having) was interrupted by a short one (went out)."},
+    {"type": "spot", "q": "When I saw her, she talked on her phone.", "bad": "talked", "fix": "was talking", "opts": ["was talking", "were talking", "talks"], "why": "She was in the middle of a phone call when I saw her: she was talking."},
+    {"type": "order", "a": "What were they talking about yesterday?", "alt": [], "why": "Question word + were + subject + -ing + about."},
+    {"type": "order", "a": "I was driving home when it happened.", "alt": ["When it happened I was driving home."], "why": "Long action (was driving) + when + short action (happened)."},
+    {"type": "order", "a": "She wasn't feeling well that morning.", "alt": ["That morning she wasn't feeling well."], "why": "Negative past continuous: subject + wasn't + -ing."}
+  ]
+}

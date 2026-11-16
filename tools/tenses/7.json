@@ -1,0 +1,129 @@
+{
+  "n": 7,
+  "title": "Past Perfect",
+  "tagline": "the earlier past: had + past participle",
+  "why": "When you tell a story, the past perfect shows which thing happened first. It helps the listener follow the order of events without confusion.",
+  "know": [
+    "the form: <em>had</em> + past participle (<em>had left</em>, <em>had seen</em>, <em>had finished</em>)",
+    "the signal words <em>by the time</em>, <em>already</em>, <em>before</em>, <em>after</em>, <em>never ... before</em>",
+    "common past participles: <em>gone</em>, <em>eaten</em>, <em>forgotten</em>, <em>taken</em>, <em>written</em>"
+  ],
+  "understand": [
+    "the difference between <em>When I arrived, she left</em> (she left after I came) and <em>When I arrived, she had left</em> (she left before I came)",
+    "why we often don't need the past perfect when <em>before</em> or <em>after</em> already makes the order clear"
+  ],
+  "able": [
+    "tell a story with two past times and make the order clear",
+    "explain a past situation: <em>I was hungry because I hadn't eaten.</em>",
+    "talk about first experiences: <em>I had never seen snow before I came to Canada.</em>"
+  ],
+  "mistakes": [
+    ["When I arrived, she already left.", "When I arrived, she <strong>had already left</strong>."],
+    ["By the time we got to the station, the train left.", "By the time we got to the station, the train <strong>had left</strong>."],
+    ["I had went there before.", "I had <strong>gone</strong> there before."],
+    ["I was nervous because I never flew before.", "I was nervous because I <strong>had never flown</strong> before."],
+    ["Did you had finished when he called?", "<strong>Had you finished</strong> when he called?"]
+  ],
+  "use": [
+    "the earlier of two past actions: <em>When we got to the cinema, the film <strong>had</strong> already <strong>started</strong>.</em>",
+    "with <em>by the time</em>: <em>By the time the ambulance came, he <strong>had stopped</strong> breathing.</em>",
+    "to explain a reason in the past: <em>She was upset because she <strong>had lost</strong> her ring.</em>",
+    "experience up to a past moment: <em>I <strong>had</strong> never <strong>eaten</strong> sushi before that night.</em>"
+  ],
+  "form": [
+    ["Positive", "<em>I / you / he / she / we / they <strong>had finished</strong>.</em> Short form: <em>I<strong>'d</strong> finished.</em>"],
+    ["Negative", "<em>She <strong>hadn't eaten</strong>.</em> <em>We <strong>had not seen</strong> it.</em>"],
+    ["Question", "<em><strong>Had</strong> you <strong>met</strong> him before?</em> <em>Where <strong>had</strong> they <strong>gone</strong>?</em>"],
+    ["Short answers", "<em>Yes, I <strong>had</strong>.</em> <em>No, they <strong>hadn't</strong>.</em>"]
+  ],
+  "signals": "<em>by the time</em>, <em>already</em>, <em>just</em>, <em>never ... before</em>, <em>before</em>, <em>after</em>, <em>when</em>, <em>until</em>, <em>because</em>",
+  "tip": "Draw a time line. The <strong>past simple</strong> is your main story point; the <strong>past perfect</strong> goes one step further back. <em>When I got home, my wife <strong>cooked</strong> dinner</em> (after I came). <em>When I got home, my wife <strong>had cooked</strong> dinner</em> (it was ready).",
+  "ws": {
+    "pick": [
+      {"q": "When we got to the party, most of the guests ___ home.", "opts": ["had gone", "have gone", "go"], "a": 0, "why": "The guests went home before we arrived, so we use the earlier past: had gone."},
+      {"q": "By the time I found my glasses, the show ___.", "opts": ["had ended", "has ended", "ends"], "a": 0, "why": "By the time + past simple usually needs the past perfect for the earlier action: had ended."},
+      {"q": "I didn't recognize him because he ___ a beard.", "opts": ["had grown", "has grown", "grows"], "a": 0, "why": "He grew the beard before I saw him. The earlier past is had grown."},
+      {"q": "She ___ never driven in snow before that winter.", "opts": ["had", "has", "was"], "a": 0, "why": "Experience up to a past moment ('before that winter') uses had + past participle."},
+      {"q": "They were hungry because they ___ breakfast.", "opts": ["hadn't had", "haven't had", "don't have"], "a": 0, "why": "The reason happened earlier than 'were hungry', so we use the past perfect: hadn't had."},
+      {"q": "___ you ever been to Europe before that trip?", "opts": ["Had", "Have", "Did"], "a": 0, "why": "'Before that trip' points to a time before a past moment, so we ask with Had + past participle."},
+      {"q": "I called the store, but it ___ already closed.", "opts": ["had", "has", "have"], "a": 0, "why": "The store closed before I called, so we use had + past participle: had already closed."},
+      {"q": "After he ___ the report, he sent it to his manager.", "opts": ["had written", "has written", "had wrote"], "a": 0, "why": "Had + past participle. Write, wrote, written, so: had written."}
+    ],
+    "type": [
+      {"q": "When I checked my phone, I saw that my sister ___ (call) three times.", "a": ["had called", "'d called"], "why": "The calls came before I checked, so we use the past perfect: had called."},
+      {"q": "When we got to the restaurant, we realized we ___ (not / book) a table.", "a": ["hadn't booked", "had not booked"], "why": "Not booking happened before we got there. Negative past perfect: hadn't booked."},
+      {"q": "By the time the firefighters arrived, the fire ___ (spread) to the garage.", "a": ["had spread", "'d spread"], "why": "By the time + past simple: the earlier action uses had + past participle: had spread."},
+      {"q": "I was nervous because I ___ (never / speak) in public before.", "a": ["had never spoken", "'d never spoken"], "why": "Experience before a past moment: had never + past participle. Speak, spoke, spoken."},
+      {"q": "___ (you / finish) your homework when your friends came over?", "a": ["Had you finished"], "why": "Past perfect question: Had + subject + past participle."},
+      {"q": "He reached for his wallet and realized he ___ (leave) it at home.", "a": ["had left", "'d left"], "why": "Leaving the wallet at home happened before he realized it: had left."},
+      {"q": "The house was quiet. Everyone ___ (go) to bed.", "a": ["had gone", "'d gone"], "why": "They went to bed before this moment. Go, went, gone: had gone."},
+      {"q": "She didn't understand the joke because she ___ (not / see) the film before.", "a": ["hadn't seen", "had not seen"], "why": "Negative past perfect: hadn't + past participle. See, saw, seen."}
+    ],
+    "spot": [
+      {"q": "When I got to the office, the meeting already started.", "bad": "already started", "fix": "had already started", "opts": ["had already started", "has already started", "already starts"], "why": "The meeting started before I arrived, so we need the past perfect: had already started."},
+      {"q": "I had forgot my password, so I couldn't log in.", "bad": "forgot", "fix": "forgotten", "opts": ["forgotten", "forget", "forgetted"], "why": "After had we use the past participle. Forget, forgot, forgotten: had forgotten."},
+      {"q": "By the time we reached the beach, the sun went down.", "bad": "went down", "fix": "had gone down", "opts": ["had gone down", "has gone down", "had went down"], "why": "With by the time, the earlier action uses the past perfect: had gone down."},
+      {"q": "Did you had eaten before you came?", "bad": "Did you had eaten", "fix": "Had you eaten", "opts": ["Had you eaten", "Did you eaten", "Have you ate"], "why": "Past perfect questions start with Had, not Did: Had you eaten?"},
+      {"q": "He was tired because he didn't sleep for two days.", "bad": "didn't sleep", "fix": "hadn't slept", "opts": ["hadn't slept", "doesn't sleep", "hasn't slept"], "why": "Two days up to a past moment uses the past perfect: hadn't slept."}
+    ],
+    "order": [
+      {"a": "Had you met her before the wedding?", "alt": [], "why": "Past perfect question: Had + subject + past participle + time."},
+      {"a": "The bus had already left when we arrived.", "alt": ["When we arrived the bus had already left."], "why": "Earlier action (had already left) + when + later action (arrived)."},
+      {"a": "I had never seen the ocean before.", "alt": [], "why": "Subject + had never + past participle + before."},
+      {"a": "She hadn't told anyone about the baby.", "alt": [], "why": "Negative past perfect: subject + hadn't + past participle."}
+    ]
+  },
+  "hw": {
+    "pick": [
+      {"q": "When I opened the fridge, I saw that someone ___ my yogurt.", "opts": ["had eaten", "has eaten", "eats"], "a": 0, "why": "Someone ate it before I opened the fridge: had eaten."},
+      {"q": "By the time the police came, the thief ___.", "opts": ["had escaped", "has escaped", "escapes"], "a": 0, "why": "By the time + past simple: the earlier action uses the past perfect: had escaped."},
+      {"q": "We ___ never tried poutine before we moved to Quebec.", "opts": ["had", "have", "did"], "a": 0, "why": "Experience before a past moment uses had + past participle: had never tried."},
+      {"q": "I was late because I ___ the wrong bus.", "opts": ["had taken", "had took", "have taken"], "a": 0, "why": "Had + past participle. Take, took, taken: had taken."},
+      {"q": "The kitchen was a mess. The kids ___ cookies.", "opts": ["had made", "have made", "make"], "a": 0, "why": "They made the cookies before this past moment, so we use had made."},
+      {"q": "___ she left by the time you got there?", "opts": ["Had", "Has", "Did"], "a": 0, "why": "By the time + past simple: the question uses Had + past participle."}
+    ],
+    "type": [
+      {"q": "When we got to the gate, the plane ___ (already / take off).", "a": ["had already taken off", "'d already taken off"], "why": "The plane took off before we arrived: had already taken off."},
+      {"q": "I ___ (not / understand) the instructions, so I asked again.", "a": ["hadn't understood", "had not understood", "didn't understand", "did not understand"], "why": "Both work: hadn't understood (earlier past) or didn't understand. The past perfect shows the order."},
+      {"q": "That evening she realized that her boyfriend ___ (forget) her birthday.", "a": ["had forgotten", "'d forgotten"], "why": "Forgetting happened before she realized it. Forget, forgot, forgotten: had forgotten."},
+      {"q": "By the time I woke up, my husband ___ (make) breakfast.", "a": ["had made", "'d made"], "why": "By the time + past simple: the earlier action uses had + past participle: had made."},
+      {"q": "___ (they / leave) by the time you got to the office?", "a": ["Had they left"], "why": "By the time + past simple: the question uses Had + subject + past participle. Leave, left, left."},
+      {"q": "It was my first time in a canoe. I ___ (never / paddle) before.", "a": ["had never paddled", "'d never paddled"], "why": "Experience up to a past moment: had never + past participle."},
+      {"q": "When I looked outside, I saw that it ___ (rain) in the night.", "a": ["had rained", "'d rained"], "why": "The rain came before I looked outside: had rained."},
+      {"q": "We ___ (not / finish) the project when the deadline came.", "a": ["hadn't finished", "had not finished"], "why": "Negative past perfect up to a past moment: hadn't finished."}
+    ],
+    "spot": [
+      {"q": "When my parents arrived, I already cleaned the house.", "bad": "already cleaned", "fix": "had already cleaned", "opts": ["had already cleaned", "have already cleaned", "already clean"], "why": "I cleaned before my parents arrived, so we need the past perfect: had already cleaned."},
+      {"q": "She had wrote three emails before lunch.", "bad": "wrote", "fix": "written", "opts": ["written", "write", "writed"], "why": "After had we use the past participle. Write, wrote, written: had written."},
+      {"q": "I didn't know the way because I never was there before.", "bad": "never was", "fix": "had never been", "opts": ["had never been", "have never been", "never am"], "why": "Experience before a past moment: had never been."},
+      {"q": "By the time the guests arrived, we have finished cooking.", "bad": "have finished", "fix": "had finished", "opts": ["had finished", "has finished", "finish"], "why": "In a past story, by the time needs had, not have: we had finished."}
+    ],
+    "order": [
+      {"a": "Had they eaten before the movie started?", "alt": [], "why": "Past perfect question: Had + subject + past participle + before + past simple."},
+      {"a": "I realized that I had lost my phone.", "alt": [], "why": "Past simple (realized) + that + past perfect (had lost) for the earlier action."},
+      {"a": "We hadn't seen each other for years.", "alt": ["For years we hadn't seen each other."], "why": "Negative past perfect: subject + hadn't + past participle + time."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "When we reached the store, it ___ out of milk.", "opts": ["had run", "has run", "had ran"], "a": "had run", "why": "Had + past participle. Run, ran, run: had run."},
+    {"type": "pick", "q": "By the time the doctor saw me, I ___ for three hours.", "opts": ["had waited", "have waited", "wait"], "a": "had waited", "why": "By the time + past simple: the earlier time uses the past perfect: had waited."},
+    {"type": "pick", "q": "He ___ never played hockey before he came to Canada.", "opts": ["had", "has", "was"], "a": "had", "why": "Experience before a past moment uses had + past participle: had never played."},
+    {"type": "pick", "q": "I couldn't get in because I ___ my key.", "opts": ["had lost", "have lost", "lose"], "a": "had lost", "why": "Losing the key happened before I tried to get in: had lost."},
+    {"type": "pick", "q": "___ you heard the news before I told you?", "opts": ["Had", "Have", "Did"], "a": "Had", "why": "'Before I told you' is a past moment, so the question uses Had + past participle."},
+    {"type": "pick", "q": "When I saw the bill, I knew I ___ too much.", "opts": ["had spent", "have spent", "spend"], "a": "had spent", "why": "The spending came before I saw the bill: had spent."},
+    {"type": "pick", "q": "The roads were icy because it ___ below zero all night.", "opts": ["had been", "has been", "is"], "a": "had been", "why": "The cold night came before the icy roads in the past: had been."},
+    {"type": "pick", "q": "She was sad because her cat ___.", "opts": ["had died", "has died", "dies"], "a": "had died", "why": "The cat died before she was sad, so we use the earlier past: had died."},
+    {"type": "type", "q": "When I got to the bank, it ___ (close).", "a": ["had closed", "'d closed"], "why": "The bank closed before I arrived: had closed."},
+    {"type": "type", "q": "I felt terrible at work because I ___ (not / sleep) for two nights.", "a": ["hadn't slept", "had not slept"], "why": "Two nights up to a past moment uses the past perfect: hadn't slept."},
+    {"type": "type", "q": "By the time we found a seat, the speaker ___ (begin).", "a": ["had begun", "'d begun"], "why": "Begin, began, begun. By the time + past simple needs had begun."},
+    {"type": "type", "q": "___ (he / ever / ride) a horse before that day?", "a": ["Had he ever ridden"], "why": "Past perfect question: Had + subject + ever + past participle. Ride, rode, ridden."},
+    {"type": "type", "q": "When I got home, I saw that my wife ___ (plant) new flowers.", "a": ["had planted", "'d planted"], "why": "She planted them before I got home: had planted."},
+    {"type": "spot", "q": "When the taxi came, we already said goodbye.", "bad": "already said", "fix": "had already said", "opts": ["had already said", "have already said", "already say"], "why": "We said goodbye before the taxi came: had already said."},
+    {"type": "spot", "q": "I had took the medicine before I went to bed.", "bad": "took", "fix": "taken", "opts": ["taken", "take", "tooked"], "why": "After had we use the past participle: had taken."},
+    {"type": "spot", "q": "By the time I got home, the kids had gone to sleep.", "bad": "", "why": "This sentence is correct: by the time + past simple, with the earlier action in the past perfect (had gone)."},
+    {"type": "spot", "q": "She told me she had never seen a moose before.", "bad": "", "why": "This sentence is correct: had never seen shows experience before the past moment of telling."},
+    {"type": "order", "a": "Had you already eaten when they arrived?", "alt": [], "why": "Past perfect question: Had + subject + already + past participle + when + past simple."},
+    {"type": "order", "a": "They had sold the house before we called.", "alt": ["Before we called they had sold the house."], "why": "Earlier action (had sold) + before + later action (called)."},
+    {"type": "order", "a": "I hadn't heard that song in years.", "alt": [], "why": "Negative past perfect: subject + hadn't + past participle + time."}
+  ]
+}

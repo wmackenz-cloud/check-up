@@ -1,0 +1,127 @@
+{
+  "n": 10,
+  "title": "Future with Going To",
+  "tagline": "plans and evidence: be going to + base verb",
+  "why": "We use <strong>going to</strong> for plans we have already made and for things we can see coming. It is one of the most common ways to talk about the future in English.",
+  "know": [
+    "the form <em>am / is / are going to</em> + base verb",
+    "phrases that often go with it: <em>Look!</em>, <em>Be careful!</em>, <em>I've decided</em>, <em>one day</em>"
+  ],
+  "understand": [
+    "the difference between a plan made <strong>before</strong> you speak (going to) and a decision made <strong>now</strong> (will)",
+    "why we use going to when we can <strong>see</strong> that something is about to happen"
+  ],
+  "able": [
+    "talk about your plans for the weekend, the year or your life",
+    "make predictions from what you can see now",
+    "ask <em>What are you going to do?</em> correctly"
+  ],
+  "mistakes": [
+    ["I going to visit my parents on the weekend.", "I <strong>am going to</strong> visit my parents on the weekend."],
+    ["She's going to looks for a new apartment.", "She's going to <strong>look</strong> for a new apartment."],
+    ["Look at those clouds! It will rain.", "Look at those clouds! It<strong>'s going to</strong> rain."],
+    ["Do you going to take the course?", "<strong>Are you</strong> going to take the course?"],
+    ["I've bought running shoes because I will start jogging.", "I've bought running shoes because I<strong>'m going to</strong> start jogging."]
+  ],
+  "use": [
+    "<strong>Plans and intentions</strong> you decided before speaking: <em>I'm going to look for a new job this year.</em>",
+    "<strong>Predictions from evidence</strong> you can see now: <em>Look at that sky! It's going to rain.</em>",
+    "<strong>Going to or will?</strong> <em>A: We need eggs. B: I know. I'm going to buy some later.</em> (already planned) / <em>B: Oh! I'll buy some.</em> (decided now)"
+  ],
+  "form": [
+    ["Positive", "<em>I am going to</em> / <em>he, she, it is going to</em> / <em>you, we, they are going to</em> + base verb"],
+    ["Negative", "<em>I'm not going to stay.</em> <em>She isn't going to come.</em> <em>They aren't going to wait.</em>"],
+    ["Question", "<em>Are you going to call him?</em> <em>What is she going to do?</em>"],
+    ["Short answers", "<em>Yes, I am.</em> / <em>No, she isn't.</em>"]
+  ],
+  "signals": "<em>tonight</em>, <em>this weekend</em>, <em>next month</em>, <em>one day</em>, <em>I've decided</em>, <em>I've already...</em>; evidence words: <em>Look!</em>, <em>Watch out!</em>, <em>Be careful!</em>, <em>Hurry up!</em>",
+  "tip": "Ask yourself: did I decide <strong>before</strong> speaking? Use <em>going to</em>. Am I deciding <strong>now</strong>? Use <em>will</em>. Can I <strong>see</strong> it coming? Use <em>going to</em>.",
+  "ws": {
+    "pick": [
+      {"q": "Look at those dark clouds! It ___ rain.", "opts": ["is going to", "will"], "a": 0, "why": "You can see the evidence now (dark clouds), so use going to: It's going to rain."},
+      {"q": "I've saved enough money. I ___ buy a new laptop next month.", "opts": ["am going to", "will"], "a": 0, "why": "This plan was made before speaking (the money is saved), so use going to."},
+      {"q": "She ___ going to start a new job on Monday.", "opts": ["is", "are", "does"], "a": 0, "why": "With she, use is: She is going to start."},
+      {"q": "I hear you bought a bike. Are you going to ___ your car now?", "opts": ["sell", "sells", "selling"], "a": 0, "why": "After going to, always use the base verb: going to sell."},
+      {"q": "A: Why are you wearing your running shoes? B: I ___ go for a run.", "opts": ["am going to", "will"], "a": 0, "why": "B decided before (the shoes are already on), so use going to."},
+      {"q": "Watch out! You ___ hit that car!", "opts": ["are going to", "go to"], "a": 0, "why": "You can see it about to happen, so use are going to + base verb."},
+      {"q": "We ___ going to stay in a hotel. It's too expensive.", "opts": ["aren't", "don't", "won't"], "a": 0, "why": "The negative uses be + not: We aren't going to stay."},
+      {"q": "A: Oh no, I spilled my coffee! B: Don't worry. I ___ get a cloth.", "opts": ["will", "am going to"], "a": 0, "why": "B decides at that moment, so here we use will, not going to: I'll get a cloth."}
+    ],
+    "type": [
+      {"q": "Look at the sky! It ___ (snow) soon.", "a": ["is going to snow", "'s going to snow"], "why": "Evidence now (the sky), so use going to: It's going to snow."},
+      {"q": "It's my New Year's resolution. I ___ (stop) eating junk food.", "a": ["am going to stop", "'m going to stop"], "why": "A resolution is an intention decided before, so use going to: I'm going to stop."},
+      {"q": "He's bought some paint because he ___ (paint) the bedroom.", "a": ["is going to paint", "'s going to paint"], "why": "The plan came first (he bought paint), so use going to: he's going to paint."},
+      {"q": "We've decided to wait. We ___ (not / buy) a house this year.", "a": ["are not going to buy", "aren't going to buy", "'re not going to buy"], "why": "A decision made before speaking, negative: We aren't going to buy."},
+      {"q": "You talked about it all week. ___ (you / apply) for that manager job?", "a": ["Are you going to apply"], "why": "Asking about someone's plan: Are you going to apply?"},
+      {"q": "Watch out! That ladder ___ (fall)!", "a": ["is going to fall", "'s going to fall"], "why": "You can see it about to happen, so use going to: It's going to fall."},
+      {"q": "I feel terrible. I think I ___ (be) sick.", "a": ["am going to be", "'m going to be"], "why": "Evidence from how you feel now: I'm going to be sick."},
+      {"q": "My son ___ (study) engineering after high school. He decided last year.", "a": ["is going to study", "'s going to study"], "why": "He decided last year, so this is a plan: He's going to study engineering."}
+    ],
+    "spot": [
+      {"q": "I going to call the bank this afternoon.", "bad": "I going to", "fix": "I'm going to", "opts": ["I'm going to", "I will going to"], "why": "Don't forget be: I'm (I am) going to call the bank."},
+      {"q": "They are going to sells their old car.", "bad": "sells", "fix": "sell", "opts": ["sell", "selling"], "why": "After going to, use the base verb with no -s: going to sell."},
+      {"q": "Look at that man on the ladder! He will fall!", "bad": "will fall", "fix": "is going to fall", "opts": ["is going to fall", "falls"], "why": "We can see the danger now, so use going to: He's going to fall!"},
+      {"q": "Do you going to watch the game tonight?", "bad": "Do you going", "fix": "Are you going", "opts": ["Are you going", "Will you going"], "why": "Going to questions use be, not do: Are you going to watch?"},
+      {"q": "I bought flour and eggs because I will bake a cake.", "bad": "will bake", "fix": "am going to bake", "opts": ["am going to bake", "bake"], "why": "The plan came before (you bought the flour), so use going to: I'm going to bake a cake."}
+    ],
+    "order": [
+      {"a": "I am going to look for a new job.", "alt": [], "why": "Subject + am going to + base verb: I am going to look for a new job."},
+      {"a": "Are you going to watch the hockey game?", "alt": [], "why": "Questions: Are + subject + going to + base verb."},
+      {"a": "It is going to be a cold winter.", "alt": [], "why": "A prediction: It is going to be + adjective + noun."},
+      {"a": "We are not going to eat out tonight.", "alt": ["Tonight we are not going to eat out."], "why": "Negative: are + not + going to + base verb. We are not going to eat out."}
+    ]
+  },
+  "hw": {
+    "pick": [
+      {"q": "The traffic is terrible. We ___ be late for the meeting.", "opts": ["are going to", "will to"], "a": 0, "why": "We can see it now (the traffic), so use going to. 'Will to' is never correct."},
+      {"q": "A: Why did you buy a guitar? B: I ___ learn to play it.", "opts": ["am going to", "will"], "a": 0, "why": "B bought the guitar because of a plan made before, so use going to."},
+      {"q": "My parents ___ going to retire next year.", "opts": ["are", "is", "will"], "a": 0, "why": "With they (my parents), use are: They are going to retire."},
+      {"q": "Is she going to ___ a party for her birthday?", "opts": ["have", "has", "having"], "a": 0, "why": "After going to, always the base verb: going to have."},
+      {"q": "A: I don't understand this form. B: Give it to me. I ___ help you.", "opts": ["will", "am going to"], "a": 0, "why": "B decides at that moment, so use will: I'll help you."},
+      {"q": "The kids are exhausted. They ___ going to stay up late tonight.", "opts": ["aren't", "don't", "won't"], "a": 0, "why": "The negative of going to uses be + not: They aren't going to stay up."}
+    ],
+    "type": [
+      {"q": "Look at that car! It ___ (crash) into the wall!", "a": ["is going to crash", "'s going to crash"], "why": "You can see it about to happen: It's going to crash."},
+      {"q": "I've decided. I ___ (sell) my motorbike.", "a": ["am going to sell", "'m going to sell"], "why": "I've decided shows a plan made before: I'm going to sell it."},
+      {"q": "She has decided. She ___ (not / take) the job. The pay is too low.", "a": ["is not going to take", "isn't going to take", "'s not going to take"], "why": "A decision made before speaking, negative: She isn't going to take the job."},
+      {"q": "You've moved all that old furniture into the garage. What ___ (you / do) with it?", "a": ["are you going to do"], "why": "Asking about a plan: What are you going to do with it?"},
+      {"q": "He's far ahead of the other runners. He ___ (win) the race.", "a": ["is going to win", "'s going to win"], "why": "Evidence now (he's far ahead): He's going to win."},
+      {"q": "We ___ (paint) the kitchen yellow. We chose the colour last week.", "a": ["are going to paint", "'re going to paint"], "why": "The plan was made last week, so use going to: We're going to paint."},
+      {"q": "Hurry up! We ___ (miss) the bus!", "a": ["are going to miss", "'re going to miss"], "why": "You can see it coming (you're late): We're going to miss the bus."},
+      {"q": "My brother ___ (become) a nurse. He has always wanted to help people.", "a": ["is going to become", "'s going to become"], "why": "A life plan or intention: He's going to become a nurse."}
+    ],
+    "spot": [
+      {"q": "We is going to have a barbecue on Sunday.", "bad": "We is", "fix": "We are", "opts": ["We are", "We am"], "why": "With we, use are: We are going to have a barbecue."},
+      {"q": "He's going to buying a new phone.", "bad": "going to buying", "fix": "going to buy", "opts": ["going to buy", "go to buy"], "why": "After going to, use the base verb, not -ing: going to buy."},
+      {"q": "Be careful! You will drop those eggs!", "bad": "will drop", "fix": "are going to drop", "opts": ["are going to drop", "drop"], "why": "You can see it about to happen, so use going to: You're going to drop them!"},
+      {"q": "What you are going to do this weekend?", "bad": "What you are going", "fix": "What are you going", "opts": ["What are you going", "What you going"], "why": "In questions, be comes before the subject: What are you going to do?"}
+    ],
+    "order": [
+      {"a": "She is going to call you back later.", "alt": [], "why": "Subject + is going to + base verb: She is going to call you back later."},
+      {"a": "What are you going to do next summer?", "alt": [], "why": "Question word + are + you + going to + base verb."},
+      {"a": "I think it is going to rain.", "alt": [], "why": "A prediction: I think it is going to rain."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "The ice is very thin. Someone ___ fall through it.", "opts": ["is going to", "will to"], "a": "is going to", "why": "Evidence now (thin ice), so use going to. 'Will to' is never correct."},
+    {"type": "pick", "q": "A: Is that a new tent? B: Yes, we ___ go camping in August.", "opts": ["are going to", "will"], "a": "are going to", "why": "They bought the tent for a plan made before, so use going to."},
+    {"type": "pick", "q": "A: There's someone at the door. B: Stay there. I ___ open it.", "opts": ["will", "am going to"], "a": "will", "why": "B decides at that moment, so use will: I'll open it."},
+    {"type": "pick", "q": "I ___ going to eat that. It smells bad.", "opts": ["am not", "don't", "won't"], "a": "am not", "why": "The negative uses be + not: I am not going to eat that."},
+    {"type": "pick", "q": "When ___ they going to finish the new subway line?", "opts": ["are", "do", "will"], "a": "are", "why": "Going to questions use be: When are they going to finish?"},
+    {"type": "pick", "q": "He's going to ___ his grandmother on Sunday.", "opts": ["visit", "visits", "visiting"], "a": "visit", "why": "After going to, use the base verb: going to visit."},
+    {"type": "pick", "q": "My phone battery is at one percent. It ___ die any second.", "opts": ["is going to", "will to"], "a": "is going to", "why": "You can see it coming (1% battery): It's going to die."},
+    {"type": "pick", "q": "We've decided. We ___ rent an apartment downtown.", "opts": ["are going to", "will"], "a": "are going to", "why": "We've decided shows a plan made before speaking, so use going to."},
+    {"type": "type", "q": "Look at that dog! It ___ (jump) into the lake.", "a": ["is going to jump", "'s going to jump"], "why": "You can see it about to happen: It's going to jump."},
+    {"type": "type", "q": "I've made up my mind. I ___ (not / call) him again.", "a": ["am not going to call", "'m not going to call"], "why": "A decision made before, negative: I'm not going to call him."},
+    {"type": "type", "q": "She was thinking about the job in Calgary last week. ___ (she / take) it?", "a": ["Is she going to take"], "why": "Asking about someone's plan: Is she going to take it?"},
+    {"type": "type", "q": "They ___ (open) a bakery one day. It's their dream.", "a": ["are going to open", "'re going to open"], "why": "A dream or intention: They're going to open a bakery one day."},
+    {"type": "type", "q": "The other team is winning 5 to 0 with two minutes left. Our team ___ (lose).", "a": ["is going to lose", "'s going to lose"], "why": "The score is the evidence: Our team is going to lose."},
+    {"type": "spot", "q": "I'm going to cleaning the garage this weekend.", "bad": "going to cleaning", "fix": "going to clean", "opts": ["going to clean", "going clean"], "why": "After going to, use the base verb: going to clean."},
+    {"type": "spot", "q": "Look at the time! We're going to be late.", "bad": "", "why": "This sentence is correct. The time on the clock is the evidence, so going to is right."},
+    {"type": "spot", "q": "She going to start yoga classes in January.", "bad": "She going", "fix": "She's going", "opts": ["She's going", "She will going"], "why": "Don't forget be: She's (she is) going to start."},
+    {"type": "spot", "q": "A: The printer's not working. B: I'll take a look at it.", "bad": "", "why": "This sentence is correct. B decides at that moment, so will is right."},
+    {"type": "order", "a": "They are going to get married next spring.", "alt": ["Next spring they are going to get married."], "why": "Subject + are going to + base verb + time: They are going to get married next spring."},
+    {"type": "order", "a": "Is it going to rain this afternoon?", "alt": [], "why": "Question: Is + it + going to + base verb?"},
+    {"type": "order", "a": "I am not going to buy that dress.", "alt": [], "why": "Negative: am + not + going to + base verb."}
+  ]
+}

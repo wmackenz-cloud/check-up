@@ -1,0 +1,126 @@
+{
+  "n": 13,
+  "title": "Future Perfect",
+  "tagline": "finished before a future time: will have + past participle",
+  "why": "Use it to say that something will be finished before a time in the future. It helps you talk about deadlines, goals and plans at work and at home.",
+  "know": [
+    "the form <em>will have</em> + past participle: <em>I'll have finished</em>",
+    "the time words <em>by</em>, <em>by the time</em>, <em>before</em> and <em>by then</em>"
+  ],
+  "understand": [
+    "that we stand at a point in the future and look back at something already complete",
+    "why we use the present simple after <em>by the time</em>: <em>by the time you <strong>arrive</strong></em>, not <em>will arrive</em>"
+  ],
+  "able": [
+    "talk about deadlines: <em>I'll have sent it by Friday.</em>",
+    "say what you will have done by the end of the year"
+  ],
+  "mistakes": [
+    ["By the time you will arrive, we will have eaten.", "By the time you <strong>arrive</strong>, we will have eaten."],
+    ["I will have finish the report by Friday.", "I will have <strong>finished</strong> the report by Friday."],
+    ["She will has left by 6.", "She will <strong>have</strong> left by 6."],
+    ["By next year I have saved enough money.", "By next year I <strong>will have saved</strong> enough money."],
+    ["They will had moved by June.", "They will <strong>have</strong> moved by June."]
+  ],
+  "use": [
+    "Something finished before a future time: <em>By Friday, I'll have sent all the invoices.</em>",
+    "Something finished before another future event: <em>By the time you get here, the movie will have started.</em>",
+    "Goals and totals up to a future point: <em>By December, we'll have paid off the car.</em>"
+  ],
+  "form": [
+    ["Positive", "I <strong>will have finished</strong>. / She<strong>'ll have left</strong>."],
+    ["Negative", "We <strong>won't have finished</strong> by 5. / He <strong>will not have arrived</strong>."],
+    ["Question", "<strong>Will</strong> you <strong>have finished</strong> by Monday?"],
+    ["Short answers", "Yes, I will. / No, I won't."]
+  ],
+  "signals": "<em>by Friday</em>, <em>by 2030</em>, <em>by then</em>, <em>by the time</em> + present simple, <em>before</em>, <em>by the end of</em>, <em>already</em>, <em>not ... yet</em>",
+  "tip": "Future continuous is in the middle: <em>At 8, I'll be eating.</em> Future perfect is finished: <em>By 8, I'll have eaten.</em> After <em>by the time</em>, use the present simple, not <em>will</em>.",
+  "ws": {
+    "pick": [
+      {"q": "By the time you get home, I ___ dinner.", "opts": ["will have made", "have made", "made"], "a": 0, "why": "Dinner will be finished before a future moment (you get home): will have made."},
+      {"q": "By the time the guests ___, we will have cleaned the house.", "opts": ["arrive", "will arrive", "arrived"], "a": 0, "why": "After by the time, use the present simple for the future: arrive, not will arrive."},
+      {"q": "By 2030, the city ___ a new subway line.", "opts": ["will have built", "has built", "will have build"], "a": 0, "why": "By + a future year: will have + past participle. The answer is will have built."},
+      {"q": "Call me after 6. I ___ the report by then.", "opts": ["will have finished", "will have finish", "had finished"], "a": 0, "why": "By then (6 pm) the report will be done: will have finished. Use the past participle."},
+      {"q": "Hurry! By the time we get to the theatre, the play ___ .", "opts": ["will have started", "has started", "will has started"], "a": 0, "why": "The play will start before we arrive: will have started. Always will have, never will has."},
+      {"q": "I'm sorry, I ___ the email by noon. Can I send it tonight?", "opts": ["won't have written", "didn't write", "won't have wrote"], "a": 0, "why": "Negative: won't have + past participle. Written is the participle, not wrote."},
+      {"q": "___ you have finished the painting by Saturday?", "opts": ["Will", "Have", "Do"], "a": 0, "why": "Question: Will + subject + have + past participle. The answer is Will."},
+      {"q": "By the end of this month, Lina ___ three new clients.", "opts": ["will have signed", "signed", "will be signing"], "a": 0, "why": "By the end of the month the signing will be complete (three clients): will have signed."}
+    ],
+    "type": [
+      {"q": "By Friday, I ___ (send) all the invoices.", "a": ["will have sent", "'ll have sent"], "why": "By Friday + finished: will have sent (or I'll have sent)."},
+      {"q": "By the time you ___ (wake) up, I'll have left for work.", "a": ["wake"], "why": "After by the time, use the present simple: wake, not will wake."},
+      {"q": "The bus ___ (leave) by the time we get to the stop.", "a": ["will have left"], "why": "The bus will leave before we arrive: will have left."},
+      {"q": "By the time you arrive, they ___ (not / start) the speeches yet.", "a": ["will not have started", "won't have started"], "why": "Negative future perfect: won't have started (or will not have started)."},
+      {"q": "By next June, we ___ (pay) off our car loan.", "a": ["will have paid", "'ll have paid"], "why": "By next June + finished: will have paid (or we'll have paid)."},
+      {"q": "By the end of the day, the volunteers ___ (plant) two hundred trees.", "a": ["will have planted"], "why": "A total finished by a future time: will have planted."},
+      {"q": "When you get to the party, Sam ___ (already / go) home.", "a": ["will already have gone", "will have already gone"], "why": "Sam leaves before you arrive: will already have gone (or will have already gone)."},
+      {"q": "By 2028, my daughter ___ (graduate) from university.", "a": ["will have graduated"], "why": "By + a future year: will have graduated."}
+    ],
+    "spot": [
+      {"q": "By the time the taxi will come, I'll have packed my bags.", "bad": "will come", "fix": "comes", "opts": ["comes", "came"], "why": "After by the time, use the present simple: comes."},
+      {"q": "I will have fix your bike by Saturday.", "bad": "will have fix", "fix": "will have fixed", "opts": ["will have fixed", "will had fixed"], "why": "After will have, use the past participle: will have fixed."},
+      {"q": "By next summer, she has saved enough for a trip to Italy.", "bad": "has saved", "fix": "will have saved", "opts": ["will have saved", "saved"], "why": "By next summer is in the future: will have saved."},
+      {"q": "Don't worry. The plumber will has gone by the time you get home.", "bad": "will has gone", "fix": "will have gone", "opts": ["will have gone", "will have went"], "why": "After will, always use have: will have gone."},
+      {"q": "By December, we will have drove across the whole country.", "bad": "will have drove", "fix": "will have driven", "opts": ["will have driven", "will have drive"], "why": "Use the past participle: drive, drove, driven. The answer is will have driven."}
+    ],
+    "order": [
+      {"a": "I will have finished the report by Friday.", "alt": ["By Friday I will have finished the report."], "why": "Subject + will have finished + object + by Friday."},
+      {"a": "Will you have left by the time I arrive?", "alt": [], "why": "Question: Will + you + have left + by the time + present simple."},
+      {"a": "The film will have started before we get there.", "alt": ["Before we get there the film will have started."], "why": "Subject + will have started + before + present simple."},
+      {"a": "We won't have paid off the house by then.", "alt": ["By then we won't have paid off the house.", "We won't have paid the house off by then.", "By then we won't have paid the house off."], "why": "Negative: won't have paid off + object + by then."}
+    ]
+  },
+  "hw": {
+    "pick": [
+      {"q": "By the time the movie ___, the kids will have fallen asleep.", "opts": ["ends", "will end", "ended"], "a": 0, "why": "After by the time, use the present simple: ends."},
+      {"q": "By next weekend, the workers ___ the new fence.", "opts": ["will have built", "have built", "will have builded"], "a": 0, "why": "By next weekend + finished: will have built. Build, built, built."},
+      {"q": "Sorry, the store ___ by the time we get there. It closes at 9.", "opts": ["will have closed", "closed", "has closed"], "a": 0, "why": "The store closes before we arrive: will have closed."},
+      {"q": "By the end of the course, you ___ more than 500 new words.", "opts": ["will have learned", "learned", "will have learn"], "a": 0, "why": "By the end of the course + a total: will have learned."},
+      {"q": "___ the paint have dried by tomorrow morning?", "opts": ["Will", "Has", "Does"], "a": 0, "why": "Question: Will + subject + have + past participle. The answer is Will."},
+      {"q": "I can't meet at 5. I ___ work by then.", "opts": ["won't have finished", "didn't finish", "won't have finish"], "a": 0, "why": "Negative future perfect: won't have finished. Use the past participle."}
+    ],
+    "type": [
+      {"q": "By 10 pm, the kids ___ (go) to bed.", "a": ["will have gone"], "why": "By 10 pm + finished: will have gone. Go, went, gone."},
+      {"q": "By the time I ___ (get) to the station, the train will have left.", "a": ["get"], "why": "After by the time, use the present simple: get."},
+      {"q": "By the end of the year, we ___ (move) into our new house.", "a": ["will have moved", "'ll have moved"], "why": "By the end of the year + finished: will have moved (or we'll have moved)."},
+      {"q": "I ___ (not / read) the whole book by our next class, sorry.", "a": ["will not have read", "won't have read"], "why": "Negative: won't have read (or will not have read)."},
+      {"q": "By Sunday night, my parents ___ (drive) more than 3,000 km.", "a": ["will have driven"], "why": "A total by a future time: will have driven."},
+      {"q": "When you check your email tomorrow, I ___ (already / send) the file.", "a": ["will already have sent", "will have already sent", "'ll already have sent", "'ll have already sent"], "why": "The sending happens before you check: will already have sent."},
+      {"q": "By the time she ___ (retire), she will have taught for thirty years.", "a": ["retires"], "why": "After by the time, use the present simple: retires."},
+      {"q": "By next month, the company ___ (hire) twenty new nurses.", "a": ["will have hired"], "why": "By next month + a total: will have hired."}
+    ],
+    "spot": [
+      {"q": "By the time we will land, it will be dark.", "bad": "will land", "fix": "land", "opts": ["land", "landed"], "why": "After by the time, use the present simple: land."},
+      {"q": "By noon, I will have wrote all the cards.", "bad": "will have wrote", "fix": "will have written", "opts": ["will have written", "will have write"], "why": "Use the past participle: write, wrote, written."},
+      {"q": "By next Tuesday, the doctor has seen all the test results.", "bad": "has seen", "fix": "will have seen", "opts": ["will have seen", "saw"], "why": "By next Tuesday is in the future: will have seen."},
+      {"q": "My brother will had finished college by then.", "bad": "will had finished", "fix": "will have finished", "opts": ["will have finished", "will has finished"], "why": "After will, always use have: will have finished."}
+    ],
+    "order": [
+      {"a": "They will have arrived home by midnight.", "alt": ["By midnight they will have arrived home."], "why": "Subject + will have arrived + home + by midnight."},
+      {"a": "Will the bus have left before we get there?", "alt": [], "why": "Question: Will + the bus + have left + before + present simple."},
+      {"a": "By then I will have saved enough money.", "alt": ["I will have saved enough money by then."], "why": "By then + subject + will have saved + object."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "By the time the doctor ___ me, I will have waited for two hours.", "opts": ["sees", "will see", "saw"], "a": "sees", "why": "After by the time, use the present simple: sees."},
+    {"type": "pick", "q": "By Monday, the shop ___ my new glasses.", "opts": ["will have made", "has made", "will has made"], "a": "will have made", "why": "By Monday + finished: will have made."},
+    {"type": "pick", "q": "Don't call at 11. I ___ to bed by then.", "opts": ["will have gone", "have gone", "will have go"], "a": "will have gone", "why": "By then (11) + finished: will have gone."},
+    {"type": "pick", "q": "By the end of the trip, we ___ six countries.", "opts": ["will have visited", "visited", "will have visit"], "a": "will have visited", "why": "A total by a future time: will have visited."},
+    {"type": "pick", "q": "___ they have repaired the bridge by the summer?", "opts": ["Will", "Have", "Did"], "a": "Will", "why": "Question: Will + subject + have + past participle."},
+    {"type": "pick", "q": "I ___ the dishes before you get home, I promise.", "opts": ["will have done", "have done", "did"], "a": "will have done", "why": "Finished before a future moment: will have done."},
+    {"type": "pick", "q": "By the time the snow stops, the city ___ every main road.", "opts": ["will have cleared", "cleared", "has cleared"], "a": "will have cleared", "why": "Finished before a future moment: will have cleared."},
+    {"type": "pick", "q": "Come at 9, not 8. By 9 I ___ dinner, so we can talk.", "opts": ["will have finished", "am finishing", "finished"], "a": "will have finished", "why": "At 9 dinner will be over, so we can talk: will have finished."},
+    {"type": "type", "q": "By the time you ___ (read) this letter, I'll have left the country.", "a": ["read"], "why": "After by the time, use the present simple: read."},
+    {"type": "type", "q": "By Friday afternoon, the team ___ (test) the new software.", "a": ["will have tested"], "why": "By Friday afternoon + finished: will have tested."},
+    {"type": "type", "q": "By her next birthday, my grandmother ___ (knit) a sweater for every grandchild.", "a": ["will have knitted", "will have knit"], "why": "By her next birthday + finished: will have knitted."},
+    {"type": "type", "q": "We ___ (not / sell) our old house by the time the new one is ready.", "a": ["will not have sold", "won't have sold"], "why": "Negative: won't have sold (or will not have sold)."},
+    {"type": "type", "q": "By the time you finish your coffee, I ___ (fix) the printer.", "a": ["will have fixed", "'ll have fixed"], "why": "Finished before a future moment: will have fixed (or I'll have fixed)."},
+    {"type": "spot", "q": "By the time you get this message, I will have landed in Lima.", "bad": "", "why": "This sentence is correct: by the time + present simple (get), then will have landed."},
+    {"type": "spot", "q": "By the end of the week, I will have spend all my money.", "bad": "will have spend", "fix": "will have spent", "opts": ["will have spent", "will have spended"], "why": "Use the past participle: spend, spent, spent."},
+    {"type": "spot", "q": "By the time he will finish university, he will have learned three languages.", "bad": "will finish", "fix": "finishes", "opts": ["finishes", "finished"], "why": "After by the time, use the present simple: finishes."},
+    {"type": "spot", "q": "The kids will have eaten all the cookies by tomorrow.", "bad": "", "why": "This sentence is correct: will have eaten + by tomorrow."},
+    {"type": "order", "a": "We will have finished painting by Sunday.", "alt": ["By Sunday we will have finished painting."], "why": "Subject + will have finished + painting + by Sunday."},
+    {"type": "order", "a": "Will you have finished your homework by dinner?", "alt": [], "why": "Question: Will + you + have finished + object + by dinner."},
+    {"type": "order", "a": "She won't have left the office before seven.", "alt": ["Before seven she won't have left the office."], "why": "Negative: won't have left + place + before seven."}
+  ]
+}
