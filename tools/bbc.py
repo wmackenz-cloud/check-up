@@ -44,6 +44,8 @@ def clean(t):
     return t.strip(" ,;-–")
 
 
+# A label typed in lower case or with a stray full stop at the start of a line ("synonym. - omit").
+LINE_LABEL = re.compile(r"(?im)^(\s*)(usage|synonyms?|opposites?)\.?(?=\s*[-:–])")
 LABEL = re.compile(r"(Usage|Synonyms?|Opposites?(?: is| are)?)\s*[-:–]?\s*")
 
 
@@ -68,7 +70,7 @@ def parse(md):
         body.append(line)
     text = "\n".join(body)
     spans = [(s.start(), s.end(), s.group(1)) for s in re.finditer(r"\*\*(.+?)\*\*", text, re.S)]
-    spans = [s for s in spans if clean(s[2])]
+    spans = [s for s in spans if clean(s[2]) and not LINE_LABEL.match(clean(s[2]))]
     words = []
     for i, (a, b, inner) in enumerate(spans):
         end = spans[i + 1][0] if i + 1 < len(spans) else len(text)
@@ -79,6 +81,7 @@ def parse(md):
 
 def word(term, chunk):
     chunk = chunk.replace("*", "")
+    chunk = LINE_LABEL.sub(lambda m: m.group(1) + m.group(2).capitalize(), chunk)
     parts = LABEL.split(chunk)
     head, rest = parts[0], parts[1:]
     w = {"term": term, "meaning": "", "synonyms": [], "usage": [], "opposite": ""}
