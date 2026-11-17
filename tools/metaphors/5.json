@@ -51,7 +51,7 @@
     {"e": "keep your cards close to your chest", "meaning": "keep your plans or intentions secret", "example": "The CEO is <strong>keeping her cards close to her chest</strong> about the merger.",
      "tone": "neutral",
      "bend": "Shortened: <strong>play it close to the chest</strong>. North Americans often say <strong>close to the vest</strong>. Pronouns change.",
-     "note": "British and Canadian speakers mostly say <em>chest</em>; Americans often say <em>vest</em>. Both are understood. Don't use <em>heart</em>."},
+     "note": "British speakers say <em>chest</em>; in North America both <em>chest</em> and <em>vest</em> (more American) are common. Both are understood. Don't use <em>heart</em>."},
     {"e": "call someone's bluff", "meaning": "challenge someone to prove a threat or claim you think is empty", "example": "When the supplier threatened to cancel, we <strong>called their bluff</strong> and they quietly backed down.",
      "tone": "neutral",
      "bend": "Possessive changes: <strong>call his bluff</strong>, <strong>call Ottawa's bluff</strong>. Passive works: <strong>his bluff was called</strong>.",
@@ -75,8 +75,8 @@
   ],
   "culture": [
     {"kind": "Music", "work": "The Gambler", "by": "Kenny Rogers (written by Don Schlitz)", "year": "1978",
-     "how": "On a night train, a weary old card player gives the young narrator advice about his game. The advice about knowing when to stay in, when to fold and when to walk away is really advice about <strong>life's choices</strong>, so the whole song works as an extended gambling metaphor.",
-     "ask": "Which decision in your life would have benefited from the gambler's advice about when to walk away?",
+     "how": "On a night train, a weary old card player gives the young narrator advice about his game. His tips on when to keep playing, when to quit a hand and when to leave the table altogether are really advice about <strong>life's choices</strong>, so the whole song works as an extended gambling metaphor.",
+     "ask": "Which decision in your life would have benefited from the old gambler's advice about knowing when to quit?",
      "find": "Kenny Rogers The Gambler"},
     {"kind": "Music", "work": "Poker Face", "by": "Lady Gaga", "year": "2008",
      "how": "The song borrows the poker term for an unreadable expression and applies it to flirting and relationships: the singer hides her true feelings the way a player hides a strong or weak hand. It shows how a technical card-table term moves easily into everyday talk about <strong>feelings</strong>.",
@@ -111,7 +111,7 @@
       "items": [
         {"w": "up the ante", "c": 0, "why": "Upping the ante makes the risk or demand bigger."},
         {"w": "go all in", "c": 0, "why": "In poker, going all in means betting every chip you have."},
-        {"w": "roll the dice", "c": 0, "why": "Rolling the dice means deciding to take a real risk."},
+        {"w": "double down", "c": 0, "why": "In blackjack you double your bet; at work you increase your commitment to a risky plan."},
         {"w": "bet the farm", "c": 0, "why": "Betting the farm means risking everything you own; it is mostly North American."},
         {"w": "hedge your bets", "c": 1, "why": "Hedging spreads your risk so you can't lose everything."},
         {"w": "keep your cards close to your chest", "c": 1, "why": "This is about hiding information, not raising risk."},
@@ -123,7 +123,7 @@
       ]},
     "pick": [
       {"q": "The union first asked for a 2 percent raise, but after the record profits were announced it ___ and demanded 5.", "opts": ["hedged its bets", "upped the ante", "hit the jackpot"], "a": 1, "why": "The union increased its demand, so it upped the ante. Hedging means playing safe; a jackpot is luck."},
-      {"q": "If you ___ at the interview, you could leave with a much better salary.", "opts": ["play your cards right", "call their bluff", "keep a poker face"], "a": 0, "why": "Play your cards right = act cleverly to gain an advantage. Calling a bluff needs a threat to challenge."},
+      {"q": "If you ___ at the interview, you could leave with a much better salary.", "opts": ["play your cards right", "call their bluff", "hedge your bets"], "a": 0, "why": "Play your cards right = act cleverly to gain an advantage. Calling a bluff needs a threat; hedging means playing safe."},
       {"q": "The minister is ___ about the budget; not even her own caucus knows what's in it.", "opts": ["hitting the jackpot", "upping the ante", "keeping her cards close to her chest"], "a": 2, "why": "Nobody knows her plans, so she is keeping her cards close to her chest (keeping them secret)."},
       {"q": "The seller claimed he had three other offers, so we ___ and walked away. He phoned back within an hour.", "opts": ["upped the ante", "called his bluff", "hedged our bets"], "a": 1, "why": "We suspected the other offers were invented and challenged him: we called his bluff. Upping the ante would mean offering more."},
       {"q": "Unsure which school will accept him, Daniel is ___ by applying to five.", "opts": ["hedging his bets", "calling their bluff", "hitting the jackpot"], "a": 0, "why": "Applying to several schools spreads the risk: he is hedging his bets."},
@@ -139,23 +139,23 @@
       {"q": "When the landlord threatened to evict us, we caught his bluff and he backed down.", "bad": "caught his bluff", "fix": "called his bluff", "opts": ["called his bluff", "played his bluff"], "why": "In poker you call a bet. Call someone's bluff is fixed."}
     ],
     "type": [
-      {"q": "Before the leadership vote, the senator kept her cards close to her ___.", "a": ["chest", "vest"], "why": "Close to her chest (British/Canadian) or close to her vest (more American) both mean keeping plans secret."},
+      {"q": "Before the leadership vote, the senator kept her cards close to her ___.", "a": ["chest", "vest"], "why": "Close to her chest (used everywhere) or close to her vest (mainly North American) both mean keeping plans secret."},
       {"q": "Rival bidders keep ___ the ante, and the price of the painting has doubled.", "a": ["upping", "raising"], "why": "Upping or raising the ante = making the stakes higher."},
       {"q": "The odds are ___ against small grain farmers this year.", "a": ["stacked"], "why": "The odds are stacked against = success is unlikely and conditions are unfair."},
       {"q": "I didn't believe his threat to resign, so I called his ___.", "a": ["bluff"], "why": "Call someone's bluff = challenge a threat you think is empty."},
-      {"q": "Investors are ___ their bets by buying both gold and tech shares.", "a": ["hedging"], "why": "Hedging their bets = spreading the risk across options."},
+      {"q": "Investors are ___ their bets by buying both gold and tech shares.", "a": ["hedging", "spreading"], "why": "Hedging (or spreading) their bets = reducing risk across several options."},
       {"q": "Play your ___ right and you could be running this department within two years.", "a": ["cards"], "why": "Play your cards right = act cleverly to win an advantage."}
     ],
     "bend": [
       {"q": "Which version sounds natural for an election campaign? ___", "opts": ["Both parties upped the anti before the debate.", "Both parties have upped the ante ahead of the debate.", "Both parties have upped their antes to the debate."], "a": 1, "why": "Up the ante takes normal tenses but keeps the ante, spelled with an e. Anti is a prefix meaning against."},
       {"q": "Which version sounds natural for an economics report? ___", "opts": ["Most analysts are hedging their bets on the rate decision.", "Most analysts are hedging their bet on the rate decision.", "Most analysts are making hedged bets of the rate decision."], "a": 0, "why": "Hedge your bets stays plural and can take on + topic."},
-      {"q": "Which version sounds natural for a job interview story? ___", "opts": ["She kept a face of poker the whole time.", "She kept a poker's face the whole time.", "She kept a straight poker face the whole time."], "a": 2, "why": "Poker face works like a compound noun and can take an adjective. A poker's face and a face of poker are not used."},
-      {"q": "Which version sounds natural for a sports report? ___", "opts": ["The odds were heavily stacked against the underdogs.", "The odds were stacked heavily for the underdogs.", "The odds stacked the underdogs against."], "a": 0, "why": "An adverb like heavily fits before stacked. The idiom always uses against, not for."}
+      {"q": "Which version sounds natural for a job interview story? ___", "opts": ["She kept a face of poker the whole time.", "She kept a poker's face the whole time.", "She kept a perfect poker face the whole time."], "a": 2, "why": "Poker face works like a compound noun and can take an adjective like perfect. A poker's face and a face of poker are not used."},
+      {"q": "Which version sounds natural for a sports report? ___", "opts": ["The odds were heavily stacked against the underdogs.", "The odds were stacked heavily for the underdogs.", "The odds stacked the underdogs against."], "a": 0, "why": "An adverb like heavily fits before stacked. The pattern is stacked against; for is not used (the positive form is stacked in someone's favour)."}
     ],
     "talk": [
       "Tell Bill about a time you <strong>called someone's bluff</strong>, or someone called yours. What happened?",
       "Role-play: you are negotiating a salary. Use <strong>play your cards right</strong>, <strong>keep my cards close to my chest</strong> and <strong>up the ante</strong>.",
-      "Kenny Rogers' gambler gives advice on when to stay and when to walk away. When is it wise to walk away from a job, a deal or an argument?",
+      "Kenny Rogers' gambler gives advice on when to keep playing and when to leave the table. When is it wise to quit a job, a deal or an argument?",
       "Are you someone who <strong>hedges your bets</strong> or someone who <strong>rolls the dice</strong>? Give two examples from your life.",
       "Think of a news story where <strong>the stakes are high</strong> right now. Explain it using at least three gambling metaphors."
     ]
@@ -186,7 +186,7 @@
     "type": [
       {"q": "Some voters are hedging their ___ until the final debate.", "a": ["bets"], "why": "Hedge your bets is always plural."},
       {"q": "The coach has an ace up her ___ for the playoffs.", "a": ["sleeve"], "why": "An ace up your sleeve = a secret advantage."},
-      {"q": "Opening a restaurant during a recession is a real ___.", "a": ["gamble"], "why": "A gamble = a risky decision."},
+      {"q": "Opening a restaurant during a recession is a real ___: you could win big or lose everything.", "a": ["gamble", "risk"], "why": "A gamble (or a risk) = a decision that could go either way."},
       {"q": "With the championship on the line, the ___ couldn't be higher.", "a": ["stakes"], "why": "The stakes are high = there is a lot to win or lose."},
       {"q": "The striker called the goalkeeper's ___ and shot straight down the middle.", "a": ["bluff"], "why": "He tested whether the goalkeeper's movement was a trick: he called his bluff."},
       {"q": "Toronto is the odds-on ___ to host the summit.", "a": ["favourite", "favorite"], "why": "Odds-on favourite = the most likely winner. Canadian spelling is favourite."}

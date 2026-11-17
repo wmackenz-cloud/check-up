@@ -25,8 +25,8 @@
   ],
   "bigidea": [
     "Idioms are fixed, but not frozen. Natives bend them for effect: headline writers love puns, such as <em>grate expectations</em> for a story about a cheese shop, and comedians extend a familiar image until it becomes absurd. The trick works only because everyone knows the original.",
-    "Accidental bending is different. A <strong>mixed metaphor</strong> joins two images that clash (<em>we'll burn that bridge when we come to it</em>). A <strong>malapropism</strong> swaps in a similar-sounding wrong word (<em>a mute point</em>). Some speakers turn this into a style: the baseball player Yogi Berra became famous for odd but memorable sayings such as <em>it ain't over till it's over</em>.",
-    "Finally, many metaphors are <strong>dead</strong>: nobody notices that a <em>deadline</em> or the <em>foot</em> of a mountain is figurative. Writers can revive a dead metaphor by taking it literally. George Orwell warned against the half-dead ones in between: worn-out images that people use to avoid thinking."
+    "Accidental bending is different. A <strong>mixed metaphor</strong> joins two images that clash (<em>we'll burn that bridge when we come to it</em>). A <strong>malapropism</strong> swaps in a similar-sounding wrong word (<em>a mute point</em>). Some speakers turn this into a style: the baseball player Yogi Berra became famous for odd but memorable sayings, now nicknamed <em>Yogi-isms</em>.",
+    "Finally, many metaphors are <strong>dead</strong>: nobody notices that a <em>deadline</em> or the <em>foot</em> of a mountain is figurative. Writers can revive a dead metaphor by taking it literally. George Orwell warned against what he called <em>dying</em> metaphors in between: worn-out images that people use to avoid thinking."
   ],
   "hidden": [
     "We're coming up to the <strong>deadline</strong>.",
@@ -39,7 +39,7 @@
   ],
   "expressions": [
     {"e": "for all intents and purposes", "meaning": "in every practical sense; virtually", "example": "<strong>For all intents and purposes</strong>, the election was over by nine o'clock.", "tone": "formal",
-     "bend": "Fixed: don't change it. Commonly misheard as <em>for all intensive purposes</em>.",
+     "bend": "Fixed: don't change it, but British English often says <em>to all intents and purposes</em>. Commonly misheard as <em>for all intensive purposes</em>.",
      "note": "Slightly formal and wordy. In concise writing, <em>effectively</em> or <em>in practice</em> is often better."},
     {"e": "nip it in the bud", "meaning": "stop something at an early stage", "example": "If a new hire is rude to customers, <strong>nip it in the bud</strong> on day one.", "tone": "neutral",
      "bend": "The object can change (<em>nip the problem in the bud</em>); <em>nip</em> and <em>bud</em> are fixed.",
@@ -65,7 +65,7 @@
   ],
   "culture": [
     {"kind": "Essay", "work": "Politics and the English Language", "by": "George Orwell", "year": "1946",
-     "how": "Orwell argued that tired, ready-made phrases let writers avoid thinking. His first rule says, in effect: if a metaphor or simile is one you're used to seeing in print, don't use it; find a fresh image or speak plainly. He also noticed that people mangle dying metaphors because they no longer picture them.",
+     "how": "Orwell argued that tired, ready-made phrases let writers avoid thinking. His first rule tells writers to drop any figure of speech they have met many times in print and to find a fresh image or speak plainly instead. He also noticed that people mangle dying metaphors because they no longer picture them.",
      "ask": "Is Orwell's rule realistic for everyday business writing? Which cliches would you ban first?",
      "find": "George Orwell Politics and the English Language"},
     {"kind": "Literature", "work": "The Rivals", "by": "Richard Brinsley Sheridan", "year": "1775",
@@ -134,7 +134,7 @@
     "type": [
       {"q": "We'll cross that ___ when we come to it; let's focus on today.", "a": ["bridge"], "why": "Cross that bridge when we come to it: deal with a problem when it actually arrives."},
       {"q": "That's the way the cookie ___, I'm afraid; we lost the contract.", "a": ["crumbles"], "why": "That's the way the cookie crumbles: that's life, accept it."},
-      {"q": "The detectives slowly ___ in on the gang's leader.", "a": ["homed", "zeroed"], "why": "Home in on (or zero in on): focus on a target."},
+      {"q": "The detectives slowly ___ in on the gang's leader.", "a": ["homed", "zeroed", "closed", "moved"], "why": "Home in on (or zero, close in on): focus on a target. Honed in on is common in North America but disputed."},
       {"q": "Honestly, I couldn't care ___ about celebrity gossip.", "a": ["less"], "why": "I couldn't care less: I don't care at all."},
       {"q": "Whether the stadium should have been built is a ___ point; it opened last year.", "a": ["moot"], "why": "A moot point: no longer worth discussing."},
       {"q": "City inspectors want to nip the rat problem in the ___ before winter.", "a": ["bud"], "why": "Nip it in the bud: stop it early."}
@@ -146,7 +146,7 @@
       {"q": "Which sentence suits a formal quarterly report? ___", "opts": ["Sales fell sharply in the third quarter.", "Sales went south big time, and it's a whole new ball game.", "Sales fell off a cliff and hit rock bottom in the basement."], "a": 0, "why": "In formal reports, plain language beats stacked idioms and mixed images."}
     ],
     "talk": [
-      "Orwell would ban any metaphor you're used to seeing in print. Pick three cliches from your workplace or the news and replace each with a fresh image or plain words.",
+      "Orwell would ban any metaphor that you have met many times in print. Pick three cliches from your workplace or the news and replace each with a fresh image or plain words.",
       "Alanis Morissette's <em>Ironic</em> is famous for situations that aren't strictly ironic. Describe one truly ironic situation from your life or the news.",
       "Which English idioms did you mishear or misunderstand when you first learned them? What did you think they meant?",
       "Role-play: Bill is your editor. Defend a mixed metaphor in your article as deliberate humour, or agree to fix it and explain how.",
@@ -178,11 +178,11 @@
     ],
     "type": [
       {"q": "The premier told her caucus to ___ the line on the trade deal.", "a": ["toe"], "why": "Toe the line: follow official policy."},
-      {"q": "Our grandson has free ___ of the garden in summer.", "a": ["rein"], "why": "Free rein: complete freedom."},
+      {"q": "We give our grandson free ___ to explore the garden all summer.", "a": ["rein"], "why": "Free rein: complete freedom."},
       {"q": "Rising rents are a case in ___: housing is the issue of this election.", "a": ["point"], "why": "A case in point: an example that proves the claim."},
       {"q": "For all intents and ___, the old factory is a museum now.", "a": ["purposes"], "why": "For all intents and purposes: in every practical sense."},
       {"q": "The vet quickly homed ___ on the cause of the dog's limp.", "a": ["in"], "why": "Home in on: focus on a target."},
-      {"q": "The scandal is a ___ point; the senator has already resigned.", "a": ["moot"], "why": "A moot point: no longer relevant."}
+      {"q": "Whether the senator should resign is now a ___ point; she quit this morning.", "a": ["moot"], "why": "A moot point: no longer relevant."}
     ]
   },
   "bank": [
@@ -198,13 +198,13 @@
     {"type": "type", "q": "Don't worry about the next stage yet; we'll ___ that bridge when we come to it.", "a": ["cross"], "why": "Cross that bridge when we come to it: deal with it later."},
     {"type": "type", "q": "Mrs Malaprop gave her name to the ___, a comic misuse of a similar-sounding word.", "a": ["malapropism"], "why": "A malapropism: named after Sheridan's character in The Rivals (1775)."},
     {"type": "type", "q": "Saying <em>we'll burn that bridge when we come to it</em> produces a ___ metaphor.", "a": ["mixed"], "why": "A mixed metaphor combines two clashing idioms."},
-    {"type": "type", "q": "Orwell advised writers to avoid stale ___ and find fresh images instead.", "a": ["metaphors", "cliches", "clichés", "phrases"], "why": "Orwell's first rule warns against figures of speech you are used to seeing in print."},
+    {"type": "type", "q": "Orwell advised writers to avoid stale ___ and find fresh images instead.", "a": ["metaphors", "cliches", "clichés", "phrases", "images", "expressions", "idioms", "similes"], "why": "Orwell's first rule warns against figures of speech you are used to seeing in print."},
     {"type": "spot", "q": "The new director has free rein to restructure the department.", "bad": "", "why": "Correct: free rein, spelled like a horse's reins."},
-    {"type": "spot", "q": "My nephew could care less about hockey, which shocks his Canadian grandparents.", "bad": "could care less", "fix": "couldn't care less", "opts": ["couldn't care less", "could care more"], "why": "Could care less is common in the US but widely criticised; the logical form is couldn't care less."},
+    {"type": "spot", "q": "My nephew could care less about hockey, which shocks his Canadian grandparents.", "bad": "could care less", "fix": "couldn't care less", "opts": ["couldn't care less", "could care more"], "why": "Could care less is common informal US speech with the same meaning, but many see it as illogical. In careful or Canadian/British usage, say couldn't care less."},
     {"type": "spot", "q": "Analysts are homing in on the cause of the market crash.", "bad": "", "why": "Correct: home in on means focus on a target. Hone means sharpen."},
     {"type": "spot", "q": "Rising crime is a case and point for more police funding, the mayor argued.", "bad": "a case and point", "fix": "a case in point", "opts": ["a case in point", "a case at point"], "why": "The phrase is a case in point: an example that supports the claim."},
-    {"type": "order", "a": "For all intents and purposes the deal is done.", "alt": [], "why": "For all intents and purposes + main clause. A comma after purposes is optional in writing."},
-    {"type": "order", "a": "We will cross that bridge when we come to it.", "alt": [], "why": "Cross that bridge + when we come to it."},
-    {"type": "order", "a": "The new manager gave us free rein on the project.", "alt": [], "why": "Give someone free rein on something."}
+    {"type": "order", "a": "For all intents and purposes the deal is done.", "alt": ["The deal is done for all intents and purposes."], "why": "For all intents and purposes + main clause. A comma after purposes is optional in writing."},
+    {"type": "order", "a": "Let's cross that bridge when we come to it.", "alt": ["When we come to it let's cross that bridge."], "why": "Cross that bridge + when we come to it."},
+    {"type": "order", "a": "The new manager gave us free rein on the project.", "alt": ["On the project the new manager gave us free rein."], "why": "Give someone free rein on something."}
   ]
 }

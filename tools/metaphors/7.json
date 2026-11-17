@@ -18,7 +18,7 @@
     "Discuss a song, poem or story that treats time as something to save, lose or fight."
   ],
   "mistakes": [
-    ["I passed two hours in the airport to kill the time.", "I <strong>killed time</strong> at the airport for two hours. Kill time has no article, and spent fits better than passed."],
+    ["I passed two hours in the airport to kill the time.", "I <strong>killed time</strong> at the airport for two hours. Kill time has no article, and the idiom replaces passed two hours."],
     ["I'm pressing for time today.", "I'm <strong>pressed</strong> for time today. It is passive: the time pressure is on you."],
     ["It's worth of your while to visit.", "It's <strong>worth your while</strong> to visit. Worth takes no of."],
     ["We need to recover the lost time.", "We need to <strong>make up for lost time</strong>. This is the fixed, natural form."],
@@ -115,7 +115,7 @@
         {"w": "budget your time", "c": 0, "why": "Budgeting means planning carefully how to use it."},
         {"w": "waste time", "c": 1, "why": "Wasting time means using it for nothing useful."},
         {"w": "fritter away the day", "c": 1, "why": "To fritter away is to waste in small, pointless amounts."},
-        {"w": "squander an opportunity", "c": 1, "why": "Squander is a strong, formal word for wasting something valuable."},
+        {"w": "squander the morning", "c": 1, "why": "Squander is a strong word for wasting something valuable, here a whole morning."},
         {"w": "pressed for time", "c": 2, "why": "Pressed for time = having very little of it."},
         {"w": "run out of time", "c": 2, "why": "The supply of time is used up."},
         {"w": "against the clock", "c": 2, "why": "Racing a deadline means time is short."},
@@ -132,7 +132,7 @@
       {"q": "My father-in-law hates long phone calls. His motto is ___.", "opts": ["kill time", "time is money", "buy time"], "a": 1, "why": "A motto that says don't waste time is time is money."}
     ],
     "spot": [
-      {"q": "We were waiting for the ferry, so we killed the time in a café.", "bad": "killed the time", "fix": "killed time", "opts": ["killed time", "spent the time"], "why": "Kill time takes no article."},
+      {"q": "We were waiting for the ferry, so we killed the time in a café.", "bad": "killed the time", "fix": "killed time", "opts": ["killed time", "killed a time"], "why": "Kill time takes no article."},
       {"q": "I'm pressing for time, so I'll keep this brief.", "bad": "pressing for time", "fix": "pressed for time", "opts": ["pressed for time", "pressured with time"], "why": "The idiom is passive: I'm pressed for time."},
       {"q": "It isn't worth of your while to drive across town for that sale.", "bad": "worth of your while", "fix": "worth your while", "opts": ["worth your while", "worth your time while"], "why": "Worth takes a direct object, with no of."},
       {"q": "The government's plan is only a way to purchase time until the election.", "bad": "purchase time", "fix": "buy time", "opts": ["buy time", "rent time"], "why": "The idiom is fixed as buy time; purchase sounds odd and overly formal."},
@@ -141,9 +141,9 @@
     "type": [
       {"q": "The old printer is living on ___ time; it jams every day.", "a": ["borrowed"], "why": "On borrowed time = lasting longer than expected, but not for long."},
       {"q": "The negotiators are racing against the ___ to avoid a strike.", "a": ["clock"], "why": "Against the clock = trying to beat a deadline."},
-      {"q": "If you ___ your time well, you can finish the thesis by April.", "a": ["budget", "manage", "plan"], "why": "Budget your time = plan how to use it, like money."},
-      {"q": "That detour ___ us almost two hours.", "a": ["cost"], "why": "Cost us two hours = made us lose two hours, like money."},
-      {"q": "Don't ___ your time on people who never reply.", "a": ["waste"], "why": "Waste time = use it on something pointless."},
+      {"q": "If you ___ your time well, you can finish the thesis by April.", "a": ["budget", "manage", "plan", "use", "organize", "organise", "spend", "schedule"], "why": "Budget your time = plan how to use it, like money."},
+      {"q": "That detour ___ us almost two hours.", "a": ["cost", "took"], "why": "Cost us two hours = made us lose two hours, like money."},
+      {"q": "Don't ___ your time on people who never reply.", "a": ["waste", "spend", "squander"], "why": "Waste time = use it on something pointless."},
       {"q": "I've ___ a lot of time in learning Mandarin, and it's finally paying off.", "a": ["invested", "put"], "why": "Invest time = spend it expecting a future return."}
     ],
     "bend": [
@@ -178,17 +178,17 @@
       {"q": "After her long illness, she went back to school to ___.", "opts": ["kill time", "make up for lost time", "buy time"], "a": 1, "why": "Catching up on what she missed: make up for lost time."}
     ],
     "spot": [
-      {"q": "Our team lost too much time on the first question and never finished.", "bad": "lost", "fix": "spent", "opts": ["spent", "invested"], "why": "We spend (too much) time on a task. Lose time is used for delays."},
+      {"q": "Our team passed too much time on the first question and never finished.", "bad": "passed", "fix": "spent", "opts": ["spent", "made"], "why": "We spend (too much) time on a task. Pass time means fill time while waiting, not use it on a task."},
       {"q": "The striker is living in borrowed time at this club.", "bad": "in borrowed time", "fix": "on borrowed time", "opts": ["on borrowed time", "at borrowed time"], "why": "The preposition is fixed: on borrowed time."},
       {"q": "The new software economizes us an hour every morning.", "bad": "economizes", "fix": "saves", "opts": ["saves", "spends"], "why": "Save takes a person + time: it saves us an hour. Economize doesn't work this way."},
       {"q": "The crew worked contra the clock to finish the stage.", "bad": "contra", "fix": "against", "opts": ["against", "versus"], "why": "The idiom is against the clock."}
     ],
     "type": [
       {"q": "We ___ out of time before we could visit the museum.", "a": ["ran"], "why": "Run out of time = have no time left."},
-      {"q": "I ___ the whole Sunday reading in the garden.", "a": ["spent"], "why": "Spend time = use time on an activity."},
-      {"q": "If we take the express lane, we'll ___ at least twenty minutes.", "a": ["save"], "why": "Save time = need less time."},
+      {"q": "I ___ the whole Sunday reading in the garden.", "a": ["spent", "passed"], "why": "Spend time = use time on an activity."},
+      {"q": "If we take the express lane, we'll ___ at least twenty minutes.", "a": ["save", "gain"], "why": "Save time = need less time."},
       {"q": "Hurry up, ___ is money!", "a": ["time"], "why": "Time is money = Franklin's famous maxim."},
-      {"q": "The new rail link will save commuters a lot of ___.", "a": ["time"], "why": "Save someone time = make something quicker for them."},
+      {"q": "The new rail link will save commuters an hour of travel ___ a day.", "a": ["time"], "why": "Save someone time = make something quicker for them."},
       {"q": "It might be worth your ___ to call the bank before you travel.", "a": ["while"], "why": "Worth your while = worth the time or effort."}
     ]
   },
@@ -197,21 +197,21 @@
     {"type": "pick", "q": "With the factory losing money every month, the night shift is ___.", "opts": ["worth its while", "on borrowed time", "making up for lost time"], "a": "on borrowed time", "why": "Likely to end soon: on borrowed time."},
     {"type": "pick", "q": "Can you send me the summary? I'm too ___ to read the whole report.", "opts": ["pressed for time", "against the clock", "on borrowed time"], "a": "pressed for time", "why": "Having very little time: pressed for time."},
     {"type": "pick", "q": "The free workshop is short, but it's well ___ if you're starting a business.", "opts": ["worth your while", "killing time", "on borrowed time"], "a": "worth your while", "why": "Worth the time and effort: worth your while."},
-    {"type": "pick", "q": "The team had a terrible first half but scored three goals to ___.", "opts": ["kill time", "make up for lost time", "buy time"], "a": "make up for lost time", "why": "Catching up quickly after a slow start is making up for lost time."},
+    {"type": "pick", "q": "My grandmother only got a smartphone at 85, and now she texts all day as if to ___.", "opts": ["buy time", "make up for lost time", "save time"], "a": "make up for lost time", "why": "Doing a lot of something you missed out on earlier is making up for lost time."},
     {"type": "pick", "q": "I got to the dentist early and ___ reading old magazines.", "opts": ["killed time", "bought time", "saved time"], "a": "killed time", "why": "Passing time while waiting: killed time."},
     {"type": "pick", "q": "Students sat the exam ___, with only ninety minutes for six essays.", "opts": ["against the clock", "on borrowed time", "worth their while"], "a": "against the clock", "why": "Working under a tight time limit is working against the clock."},
     {"type": "pick", "q": "She charges by the minute, because for her, ___.", "opts": ["time is money", "time is running", "time is borrowed"], "a": "time is money", "why": "Charging for every minute shows time is money."},
     {"type": "type", "q": "Online banking ___ me hours every month.", "a": ["saves"], "why": "Save someone time = make things quicker."},
-    {"type": "type", "q": "The renovation ___ us three weekends and a lot of patience.", "a": ["cost"], "why": "Cost us three weekends = took that time, like a price."},
+    {"type": "type", "q": "The renovation ___ us three weekends and a lot of patience.", "a": ["cost", "took"], "why": "Cost us three weekends = took that time, like a price."},
     {"type": "type", "q": "Time is ___ out for a deal on the new hospital.", "a": ["running"], "why": "Time is running out = the deadline is close."},
     {"type": "type", "q": "We had an hour to ___ before the show, so we went for a walk.", "a": ["kill"], "why": "An hour to kill = time to pass while waiting."},
-    {"type": "type", "q": "Parents of young children are always short of ___.", "a": ["time"], "why": "Short of time = pressed for time."},
+    {"type": "type", "q": "With three kids and two jobs, she never has a free minute; she's always short of ___.", "a": ["time"], "why": "Short of time = pressed for time."},
     {"type": "spot", "q": "The mayor's speech was a way to win time before the vote.", "bad": "win time", "fix": "buy time", "opts": ["buy time", "kill time"], "why": "The idiom is buy time: you pay with an action, such as a delay, to get more time."},
     {"type": "spot", "q": "Retirees often say they refuse to lose time on bad films.", "bad": "lose time", "fix": "waste time", "opts": ["waste time", "kill the time"], "why": "Pointless use of time is wasting time."},
     {"type": "spot", "q": "I'm a little pressed for time, so let's meet tomorrow.", "bad": "", "why": "Correct! Pressed for time = having little time. A polite way to postpone."},
     {"type": "spot", "q": "We spent the afternoon making up for lost time.", "bad": "", "why": "Correct! Make up for lost time = catch up after a delay."},
-    {"type": "order", "a": "The extra funding will only buy them some time.", "alt": [], "why": "Will only + buy + them + some time."},
-    {"type": "order", "a": "We ran out of time before the last question.", "alt": [], "why": "Run out of time + before + event."},
+    {"type": "order", "a": "The extra funding will only buy them some time.", "alt": ["Only the extra funding will buy them some time."], "why": "Will only + buy + them + some time."},
+    {"type": "order", "a": "We ran out of time before the last question.", "alt": ["Before the last question we ran out of time."], "why": "Run out of time + before + event."},
     {"type": "order", "a": "My old laptop is living on borrowed time.", "alt": [], "why": "Subject + is living on borrowed time."}
   ]
 }

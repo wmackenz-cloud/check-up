@@ -174,7 +174,7 @@
       {"q": "My brother has always been the black goat of the family.", "bad": "the black goat", "fix": "the black sheep", "opts": ["the black sheep", "the dark sheep"], "why": "The idiom is the black sheep of the family."},
       {"q": "Grandma let the cat out of the box about the engagement.", "bad": "out of the box", "fix": "out of the bag", "opts": ["out of the bag", "out of the sack"], "why": "Let the cat out of the bag: the container is fixed."},
       {"q": "As a city kid on the farm, I felt like a fish out of the sea.", "bad": "out of the sea", "fix": "out of water", "opts": ["out of water", "out of the river"], "why": "The fixed phrase is a fish out of water."},
-      {"q": "The detective in the series is a lonely wolf who trusts no one.", "bad": "a lonely wolf", "fix": "a lone wolf", "opts": ["a lone wolf", "an alone wolf"], "why": "Lone means on your own by choice; lonely means sad about being alone. The idiom is a lone wolf."}
+      {"q": "The detective in the series is a lonely wolf who trusts no one.", "bad": "a lonely wolf", "fix": "a lone wolf", "opts": ["a lone wolf", "an alone wolf"], "why": "Lone simply means alone; lonely means sad about being alone. The idiom is a lone wolf."}
     ],
     "type": [
       {"q": "Everyone avoided the ___ in the room: the company was running out of money.", "a": ["elephant"], "why": "The elephant in the room: a big problem nobody mentions."},

@@ -19,7 +19,7 @@ PRACTICE.add("am-9", {
     {"id": "am-9-15", "type": "spot", "q": "The town hall meeting was a hot debate that lasted past midnight.", "bad": "a hot debate", "fix": "a heated debate", "opts": ["a heated debate", "a warm debate"], "why": "The collocation is a heated debate, not a hot one."},
     {"id": "am-9-16", "type": "spot", "q": "The hotel staff gave us a warm welcome even though we arrived at three in the morning.", "bad": "", "why": "Correct: a warm welcome is the natural phrase for a friendly greeting."},
     {"id": "am-9-17", "type": "spot", "q": "My grandmother has always been a ray of sunlight for the whole family.", "bad": "a ray of sunlight", "fix": "a ray of sunshine", "opts": ["a ray of sunshine", "a ray of sun"], "why": "The idiom for a person who brings happiness is a ray of sunshine."},
-    {"id": "am-9-18", "type": "order", "a": "She got cold feet the night before the wedding.", "alt": [], "why": "Get cold feet + time phrase: the night before the wedding."},
+    {"id": "am-9-18", "type": "order", "a": "She got cold feet the night before the wedding.", "alt": ["The night before the wedding she got cold feet."], "why": "Get cold feet + time phrase: the night before the wedding."},
     {"id": "am-9-19", "type": "order", "a": "The new tax got a frosty reception from voters.", "alt": [], "why": "Get a frosty reception from someone: be received coldly."},
     {"id": "am-9-20", "type": "order", "a": "Can I take a rain check on dinner tonight?", "alt": [], "why": "Take a rain check on + the invitation: a casual way to postpone."}
   ]

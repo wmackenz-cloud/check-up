@@ -74,7 +74,7 @@
      "ask": "Can you think of a public figure or company whose criticism looked like sour grapes?",
      "find": "Aesop The Fox and the Grapes sour grapes"},
     {"kind": "Poetry", "work": "Harlem", "by": "Langston Hughes", "year": "1951",
-     "how": "Hughes asks what happens to a dream that is put off for too long, and imagines it spoiling like food: drying up like a raisin in the sun, festering, going rotten. The dream is food that has been left uneaten. The poem gave Lorraine Hansberry the title of her 1959 play <em>A Raisin in the Sun</em>.",
+     "how": "Hughes asks what happens to a dream that is put off for too long, and imagines it spoiling like food left out: shrivelling, festering, going rotten. The dream is food that has been left uneaten. His image of a dried-up raisin gave Lorraine Hansberry the title of her 1959 play <em>A Raisin in the Sun</em>.",
      "ask": "What happens to a dream or plan that is postponed for years? Is food a good metaphor for it?",
      "find": "Langston Hughes Harlem dream deferred"},
     {"kind": "Music", "work": "Food for Thought", "by": "UB40", "year": "1980",
@@ -100,14 +100,14 @@
         {"w": "chew it over", "c": 0, "why": "You think about it slowly and carefully."},
         {"w": "digest a report", "c": 0, "why": "You take time to understand it fully."},
         {"w": "food for thought", "c": 0, "why": "Something that gives you plenty to think about."},
-        {"w": "devour a novel", "c": 0, "why": "You read it eagerly and fast."},
+        {"w": "ruminate on", "c": 0, "why": "Like a cow slowly chewing its cud, you turn the idea over and over."},
         {"w": "half-baked", "c": 1, "why": "The idea was taken out of the oven too soon."},
         {"w": "raw data", "c": 1, "why": "Information that hasn't been processed yet."},
         {"w": "a rehash", "c": 1, "why": "Old ideas reheated and served again."},
         {"w": "sugar-coat", "c": 2, "why": "You present bad news as sweeter than it is."},
         {"w": "spoon-feed", "c": 2, "why": "You give information in tiny, easy portions."},
         {"w": "serve up", "c": 2, "why": "You present or offer something, often to an audience."},
-        {"w": "regurgitate", "c": 2, "why": "You repeat facts without understanding or adding anything."}
+        {"w": "dish out advice", "c": 2, "why": "You hand out advice or criticism to others like portions of food."}
       ]
     },
     "pick": [
@@ -131,7 +131,7 @@
       {"q": "The report is full of ___ for thought about rural health care.", "a": ["food"], "why": "Food for thought: something worth thinking about."},
       {"q": "Honestly, the whole marketing strategy seems half-___ to me.", "a": ["baked"], "why": "Half-baked: not properly thought out."},
       {"q": "Losing the final in overtime was a bitter pill to ___.", "a": ["swallow"], "why": "A bitter pill to swallow: something painful you must accept."},
-      {"q": "Take a few days to ___ it over before you sign the contract.", "a": ["chew"], "why": "Chew it over: think carefully before deciding."},
+      {"q": "Take a few days to ___ it over before you sign the contract.", "a": ["chew", "mull", "think"], "why": "Chew it over: think carefully before deciding. Mull it over and think it over also fit."},
       {"q": "Good teachers don't ___-feed their students; they make them think.", "a": ["spoon"], "why": "Spoon-feed: make learning so easy that no thinking is needed."},
       {"q": "Her criticism of the winning design was just sour ___.", "a": ["grapes"], "why": "Sour grapes: criticising what you couldn't have. From Aesop."}
     ],
@@ -191,9 +191,9 @@
     {"type": "pick", "q": "I'd love to help with the fundraiser, but I ___ until June.", "opts": ["have a lot on my plate", "bring a lot to the table", "am half-baked"], "a": "have a lot on my plate", "why": "Too busy = have a lot on my plate."},
     {"type": "pick", "q": "Each volunteer ___, whether it's cooking, driving or just a friendly face.", "opts": ["brings something to the table", "has a lot on their plate", "sugar-coats something"], "a": "brings something to the table", "why": "Contributing something useful = bring something to the table."},
     {"type": "type", "q": "The minister's ___-baked reforms were withdrawn after a month.", "a": ["half"], "why": "Half-baked: not properly thought out."},
-    {"type": "type", "q": "You'll need time to ___ all this information; it's a lot.", "a": ["digest", "process"], "why": "Digest information: take time to understand it."},
+    {"type": "type", "q": "You'll need time to ___ all this information; it's a lot.", "a": ["digest", "process", "absorb"], "why": "Digest information: take time to understand it."},
     {"type": "type", "q": "Calling the prize meaningless after losing it is just sour ___.", "a": ["grapes"], "why": "Sour grapes: pretending you didn't want it."},
-    {"type": "type", "q": "Don't just ___ the lecture notes; tell me what you think.", "a": ["regurgitate", "repeat"], "why": "Regurgitate: repeat without understanding."},
+    {"type": "type", "q": "Don't just ___ the lecture notes back to me; tell me what you think.", "a": ["regurgitate", "repeat", "parrot", "recite"], "why": "Regurgitate: repeat without understanding."},
     {"type": "type", "q": "That essay on housing gave me a lot of food for ___.", "a": ["thought"], "why": "Food for thought: something worth thinking about."},
     {"type": "spot", "q": "With exams and a part-time job, my daughter has a lot in her plate.", "bad": "a lot in her plate", "fix": "a lot on her plate", "opts": ["a lot on her plate", "a lot of her plate"], "why": "On, not in: a lot on your plate."},
     {"type": "spot", "q": "I'll chew it out and let you know tomorrow.", "bad": "chew it out", "fix": "chew it over", "opts": ["chew it over", "chew it up"], "why": "Chew it over = think about it. Chew someone out means scold them."},
@@ -201,6 +201,6 @@
     {"type": "spot", "q": "His story about being kidnapped by aliens was hard to swallow.", "bad": "", "why": "Correct! Hard to swallow = difficult to believe."},
     {"type": "order", "a": "The lecture gave everyone plenty of food for thought.", "alt": [], "why": "Give someone plenty of food for thought. No article."},
     {"type": "order", "a": "Please do not sugar-coat the results for the board.", "alt": [], "why": "Do not + sugar-coat + the thing being softened."},
-    {"type": "order", "a": "She has far too much on her plate this year.", "alt": [], "why": "Have far too much on your plate: too many responsibilities."}
+    {"type": "order", "a": "She has far too much on her plate this year.", "alt": ["This year she has far too much on her plate."], "why": "Have far too much on your plate: too many responsibilities."}
   ]
 }

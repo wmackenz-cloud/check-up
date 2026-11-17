@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Making Your Own: Fresh Similes</title>
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="../../grammar-traps/traps.css?v=1795100000">
+<link rel="stylesheet" href="../../games.css?v=1794300000">
+<style>
+/* Advanced English: metaphor units */
+.big-idea { border: 2px solid var(--accent); background: var(--accent-soft); border-radius: 12px; padding: 14px 18px; margin: 14px 0; }
+.big-idea p { margin: 6px 0; }
+.hidden-list { columns: 2 260px; margin: 6px 0 0; padding-left: 1.2em; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 12px; margin: 12px 0; }
+.xcard { border: 1px solid var(--rule); border-radius: 12px; background: var(--sheet); padding: 0; }
+.xcard > summary { list-style: none; cursor: pointer; padding: 12px 14px; display: grid; gap: 4px; }
+.xcard > summary::-webkit-details-marker { display: none; }
+.xcard > summary .xe { font-family: var(--font-display); font-weight: 700; font-size: 1.12rem; color: var(--accent); }
+.xcard > summary .xtap { font-size: .85rem; color: var(--ink-soft); }
+.xcard[open] { border-color: var(--accent); }
+.xcard[open] .xtap { display: none; }
+.xbody { padding: 0 14px 12px; display: grid; gap: 6px; font-size: .97rem; }
+.xbody p { margin: 0; }
+.tone { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; border-radius: 999px; padding: 1px 9px; background: var(--accent-soft); color: var(--accent); }
+.tone.casual, .tone.humorous { background: var(--ok-soft); color: var(--ok); }
+.tone.dismissive { background: #fbece4; color: var(--bad); }
+.tone.formal { background: var(--sheet); border: 1px solid var(--accent); }
+.ccard { border: 1px solid var(--rule); border-left: 5px solid var(--accent); border-radius: 10px; background: var(--sheet); padding: 12px 14px; display: grid; gap: 6px; }
+.ccard .kind { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+.ccard h3 { font-size: 1.08rem; }
+.ccard .by { color: var(--ink-soft); font-size: .92rem; margin: 0; }
+.ccard p { margin: 0; }
+.ccard .ask { font-style: italic; }
+.ccard .find { justify-self: start; font-size: .9rem; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 700; }
+.ccard.k-music { border-left-color: #8a5a00; } .ccard.k-poetry { border-left-color: var(--ok); }
+.guess-note { color: var(--ink-soft); font-size: .92rem; margin: 4px 0 0; }
+.talk ol { display: grid; gap: 8px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tone.dismissive { background: #3a2620; } }
+</style>
+</head>
+<body class="student" data-item="simile-6">
+<header class="top">
+  <p class="eyebrow">Advanced English &middot; Similes &middot; patterns, extended and epic similes, and new life for old clichés</p>
+  <h1>Making Your Own: Fresh Similes</h1>
+  <p class="namedate">Name: <span class="line"></span> Date: <span class="line"></span></p>
+  <div class="tools">
+    <button type="button" id="print">Print or save as PDF</button>
+    <button type="button" class="ghost" id="clear">Clear my answers</button>
+    <span class="hint">Tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
+  </div>
+</header>
+<main class="sheet">
+<section class="aims" aria-labelledby="aims-h">
+<h2 id="aims-h">What this lesson is for</h2>
+<p class="why"><strong>Why this matters:</strong> Advanced speakers don't only recognise similes; they make them. Knowing the grammar patterns behind similes lets you create fresh, precise comparisons for stories, presentations and writing, and avoid the tired ones.</p>
+<div class="aims-grid">
+<div><h3>You will know</h3><ul><li>the main simile patterns: <strong>as ... as</strong>, <strong>like + noun</strong>, <strong>as if / as though</strong>, <strong>the way + clause</strong> and <strong>more ... than</strong></li><li>what extended and epic (Homeric) similes are and where they come from</li></ul></div>
+<div><h3>You will understand</h3><ul><li>the difference between a simile, which compares openly, and a metaphor, which says one thing <em>is</em> another</li><li>why a fresh simile is specific and surprising, while a cliché is predictable</li></ul></div>
+<div><h3>You will be able to</h3><ul><li>build your own similes with five different grammar patterns</li><li>develop a simple comparison into an extended simile in speech or writing</li><li>refresh a cliché by twisting, extending or contradicting it</li></ul></div>
+</div>
+</section>
+<section class="mistakes" aria-labelledby="mis-h">
+<h2 id="mis-h">Common mistakes to watch for</h2>
+<ul>
+<li><del>The office was as quiet like a library.</del> As quiet <strong>as</strong> a library. The <em>as ... as</em> frame needs the second <em>as</em>.</li>
+<li><del>She sang as a bird at the wedding.</del> She sang <strong>like</strong> a bird. <em>As a bird</em> means in the role of a bird.</li>
+<li><del>He looked at me like I was a ghost, in his report to the board.</del> In formal writing, prefer <strong>as if I were</strong> a ghost. <em>Like</em> + clause is fine in casual speech.</li>
+<li><del>The hall was more quiet as a church.</del> The hall was <strong>quieter than</strong> a church. Comparatives take <em>than</em>.</li>
+<li><del>Just as the river carves the valley, also patience shapes a career.</del> Just as ..., <strong>so</strong> patience shapes a career. The epic pattern is <em>just as ... so ...</em>.</li>
+</ul>
+</section>
+<h2>The big idea</h2>
+<div class="big-idea">
+<p>A <strong>simile</strong> compares two unlike things openly, with a signal word: <em>like</em>, <em>as</em>, <em>as if</em>, <em>the way</em>, <em>than</em>. A <strong>metaphor</strong> drops the signal and says one thing <em>is</em> another. A simile is a little more modest and more precise: it says <em>in this one way</em>, these two things are alike.</p>
+<p>A simile becomes a <strong>cliché</strong> when the second half is completely predictable: if you say <em>as busy as a ...</em>, everyone thinks <em>bee</em>. A <strong>fresh</strong> simile is concrete, specific and slightly surprising, but instantly clear: <em>as busy as a phone charger at an airport</em>. The test is simple: can the listener picture it, and did they not see it coming?</p>
+<p>Similes can also grow. An <strong>extended simile</strong> develops one comparison over several clauses. An <strong>epic</strong> or <strong>Homeric simile</strong>, named after the Greek poet Homer, turns the comparison into a small scene of its own, often in the pattern <em>just as ..., so ...</em>. You'll hear shorter versions in speeches, sermons and sports commentary.</p>
+<p><strong>You already use it:</strong></p>
+<ul class="hidden-list"><li>The traffic this morning was <strong>like a parking lot</strong>.</li><li>He talks to his car <strong>as if it were a person</strong>.</li><li>She's <strong>as stubborn as a mule</strong>, just like her mother.</li><li>Their new house is <strong>bigger than a hotel</strong>.</li><li>The kids ran off <strong>like a shot</strong> when the bell rang.</li><li>It feels <strong>as though</strong> summer lasted a week.</li></ul>
+</div>
+<h2>The expressions</h2>
+<p>Read each example and guess the meaning first. Then tap the card to check the meaning, the tone, and how native speakers bend it.</p>
+<div class="cards">
+<details class="xcard">
+<summary><span class="xe">as + adjective + as</span><span>After the funeral the house was <strong>as quiet as a held breath</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> compares one quality to something that has a lot of it <span class="tone neutral">neutral</span></p>
+<p><strong>Bend it:</strong> Negative: <em>not as tidy as a hotel</em>. Intensified: <em>just as</em>, <em>twice as</em>. Casual speech drops the first <em>as</em>: <em>quiet as a mouse</em>.</p>
+<p><strong>Note:</strong> The easiest pattern to refresh: keep the adjective, change the noun. Trap: never <em>as ... like</em>.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">like + noun</span><span>The rumour went through the office <strong>like a cold through a daycare</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> compares an action or a thing to a picture <span class="tone casual">casual</span></p>
+<p><strong>Bend it:</strong> After almost any verb: <em>run like</em>, <em>look like</em>, <em>spread like</em>. Add detail to make it fresh: <em>like a cold through a daycare</em> rather than <em>like wildfire</em>.</p>
+<p><strong>Note:</strong> <em>Like</em> + noun compares; <em>as</em> + noun gives a role (<em>she worked as a nurse</em>). This is the most common source of simile errors.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">as if / as though + clause</span><span>He shook my hand <strong>as if he were signing a peace treaty</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> compares with an imagined situation <span class="tone neutral">neutral</span></p>
+<p><strong>Bend it:</strong> Formal: <em>as if he were</em>; everyday: <em>as if he was</em>; casual North American: <em>like he was</em>.</p>
+<p><strong>Note:</strong> <em>As if</em> and <em>as though</em> mean the same. Use the past tense (or <em>were</em>) for something unreal; the present for something possibly true: <em>it looks as if it's going to rain</em>.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">the way + clause</span><span>She carried the folder <strong>the way you'd carry a newborn baby</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> compares how two actions are done <span class="tone neutral">neutral</span></p>
+<p><strong>Bend it:</strong> Often with <em>you</em> or <em>someone</em>: <em>the way you'd</em> ..., <em>the way a cat watches a bird</em>. <em>The way that</em> is possible but heavier.</p>
+<p><strong>Note:</strong> A quiet, elegant pattern favoured by novelists. It compares manner, so it suits actions and gestures better than qualities.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">more ... than</span><span>That budget meeting was <strong>more painful than a root canal</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> compares by saying something goes beyond a familiar extreme <span class="tone humorous">humorous</span></p>
+<p><strong>Bend it:</strong> Comparative adjectives: <em>quieter than a library</em>, <em>colder than a landlord's heart</em>; also <em>less ... than</em>.</p>
+<p><strong>Note:</strong> Only a simile when the things are unlike: <em>taller than his brother</em> is just a comparison. Often humorous exaggeration.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">extended simile</span><span>Starting a business is <strong>like planting an orchard: you dig, you water, you wait for years, and one late frost can take the lot</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> a simile developed over several clauses or sentences <span class="tone neutral">neutral</span></p>
+<p><strong>Bend it:</strong> Usually starts with a short simile, then adds a colon or <em>you ... you ...</em> to develop it. Keep every detail inside the same picture.</p>
+<p><strong>Note:</strong> Powerful in presentations and speeches. Trap: switching to a new image halfway creates a mixed metaphor.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">epic (Homeric) simile</span><span><strong>Just as</strong> a farmer watches the sky all week for hail, <strong>so</strong> the finance minister watched the markets before the budget.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> a long, detailed comparison that becomes a small scene of its own <span class="tone formal">formal</span></p>
+<p><strong>Bend it:</strong> Pattern: <em>just as ..., so ...</em> or <em>like ..., so ...</em>. Can run to several sentences in literature.</p>
+<p><strong>Note:</strong> Named after Homer's <em>Iliad</em> and <em>Odyssey</em>. In modern use it sounds grand, so it suits speeches, eulogies or deliberate humour.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">turning a cliché</span><span>My uncle isn't just stubborn as a mule; he's <strong>as stubborn as a mule with a lawyer</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> refreshing an old simile by twisting, extending or contradicting it <span class="tone humorous">humorous</span></p>
+<p><strong>Bend it:</strong> Extend it (<em>a mule with a lawyer</em>), swap the noun (<em>as busy as a bee in a flower shop</em>), or deny it (<em>far from cool as a cucumber, he was a pickle in a heatwave</em>).</p>
+<p><strong>Note:</strong> Native listeners enjoy the surprise because they know the original. Do it once per conversation; more sounds like showing off.</p>
+</div>
+</details>
+</div>
+<h2>In literature, poetry and music</h2>
+<p>Writers and songwriters use the same big idea. Read about each one, then find it and read or listen together in the lesson.</p>
+<div class="cards">
+<article class="ccard k-literature">
+<span class="kind">Literature</span>
+<h3>The Iliad</h3>
+<p class="by">Homer, c. 8th century BC</p>
+<p>Homer's war epic is full of long similes that pause the battle to show a scene from ordinary life: warriors like lions attacking a flock, armies like waves. In one famous passage, the warrior Glaucus compares the generations of men to the leaves of a tree, which fall and grow again each spring.</p>
+<p class="ask">Glaucus compares human generations to leaves. What image would you use for generations in your family?</p>
+<a class="find" href="https://www.google.com/search?q=Iliad+epic+simile+Glaucus+generations+of+leaves+Book+6" target="_blank" rel="noopener">Find it</a>
+</article>
+<article class="ccard k-poetry">
+<span class="kind">Poetry</span>
+<h3>The Love Song of J. Alfred Prufrock</h3>
+<p class="by">T. S. Eliot, 1915</p>
+<p>Eliot's poem opens with one of the most startling similes in modern poetry: the evening sky is compared not to something beautiful but to a hospital patient lying unconscious on an operating table. Readers expecting a romantic sunset get something cold and clinical instead, and that shock sets the nervous, uneasy mood of the whole poem.</p>
+<p class="ask">Describe a sunset, a city street or a Monday morning with a simile that surprises the listener instead of the one they expect.</p>
+<a class="find" href="https://www.google.com/search?q=T.+S.+Eliot+Prufrock+opening+simile+evening+patient+etherised" target="_blank" rel="noopener">Find it</a>
+</article>
+<article class="ccard k-poetry">
+<span class="kind">Poetry</span>
+<h3>I Wandered Lonely as a Cloud</h3>
+<p class="by">William Wordsworth, 1807</p>
+<p>The title itself is a simile: the speaker compares himself, walking alone, to a single cloud drifting over hills and valleys, until he comes across a crowd of daffodils by a lake. The simile sets the mood of solitude that the flowers then break. Compare Langston Hughes's <em>Harlem</em>, a whole poem built from similes.</p>
+<p class="ask">Make a simile for how you feel when you walk alone somewhere you love.</p>
+<a class="find" href="https://www.google.com/search?q=Wordsworth+I+Wandered+Lonely+as+a+Cloud+daffodils" target="_blank" rel="noopener">Find it</a>
+</article>
+<article class="ccard k-music">
+<span class="kind">Music</span>
+<h3>Like a Prayer</h3>
+<p class="by">Madonna, 1989</p>
+<p>The title simile compares the feeling of hearing someone's voice, and of being close to them, to the experience of prayer. By borrowing religious language for love, Madonna made an ordinary pop comparison feel bold, and the song and its video caused a major controversy when they came out.</p>
+<p class="ask">What would you compare a powerful experience, like falling in love or hearing great news, to? Try a fresh image from an unexpected area of life.</p>
+<a class="find" href="https://www.youtube.com/results?search_query=Madonna+Like+a+Prayer+1989" target="_blank" rel="noopener">Listen to it</a>
+</article>
+</div>
+<h2 id="ex1" class="ex">Exercise 1: Match the expression to its meaning</h2>
+<p>Tap an expression, then tap its meaning.</p>
+<div class="g-match" data-g="ex1m">
+<ul>
+<li data-why="As quiet as a held breath: one quality, quietness." data-l="as + adjective + as" data-r="compares one quality" data-q="Match: as + adjective + as">as + adjective + as = compares one quality<input class="blank" type="hidden" data-k="ex1m-1"></li>
+<li data-why="The rumour spread like a cold through a daycare." data-l="like + noun" data-r="compares an action or thing to a picture" data-q="Match: like + noun">like + noun = compares an action or thing to a picture<input class="blank" type="hidden" data-k="ex1m-2"></li>
+<li data-why="As if he were signing a treaty: he wasn&#x27;t really." data-l="as if / as though + clause" data-r="compares with an imagined situation" data-q="Match: as if / as though + clause">as if / as though + clause = compares with an imagined situation<input class="blank" type="hidden" data-k="ex1m-3"></li>
+<li data-why="She held it the way you&#x27;d hold a baby: how she held it." data-l="the way + clause" data-r="compares the manner of two actions" data-q="Match: the way + clause">the way + clause = compares the manner of two actions<input class="blank" type="hidden" data-k="ex1m-4"></li>
+<li data-why="More painful than a root canal: comic exaggeration." data-l="more ... than" data-r="goes beyond a familiar extreme" data-q="Match: more ... than">more ... than = goes beyond a familiar extreme<input class="blank" type="hidden" data-k="ex1m-5"></li>
+<li data-why="Starting a business is like planting an orchard: you dig, you water, you wait..." data-l="extended simile" data-r="one comparison developed over several clauses" data-q="Match: extended simile">extended simile = one comparison developed over several clauses<input class="blank" type="hidden" data-k="ex1m-6"></li>
+<li data-why="Named after Homer. Pattern: just as ..., so ..." data-l="epic (Homeric) simile" data-r="a comparison that becomes a small scene" data-q="Match: epic (Homeric) simile">epic (Homeric) simile = a comparison that becomes a small scene<input class="blank" type="hidden" data-k="ex1m-7"></li>
+<li data-why="As stubborn as a mule with a lawyer." data-l="turning a cliché" data-r="twisting an old simile to make it new" data-q="Match: turning a cliché">turning a cliché = twisting an old simile to make it new<input class="blank" type="hidden" data-k="ex1m-8"></li>
+</ul>
+</div>
+<h2 id="ex2" class="ex">Exercise 2: Sort them</h2>
+<p>Sort the examples: is each a <strong>cliché simile</strong>, a <strong>fresh simile</strong>, or <strong>a metaphor</strong> (no comparison word)?</p>
+<div class="sorter g-sort" data-k="sort1"><p class="hint sort-how">Tap an expression, then tap the column it belongs in. On a computer you can also drag. Right answers stay; wrong ones jump back.</p><div class="bank drop" data-col=""><button type="button" class="chip" draggable="true" data-why="Everyone can finish it: a cliché." data-i="0" data-a="0">as busy as a bee</button><button type="button" class="chip" draggable="true" data-why="Completely predictable: a cliché." data-i="1" data-a="0">as cold as ice</button><button type="button" class="chip" draggable="true" data-why="A very common, predictable simile." data-i="2" data-a="0">sleep like a log</button><button type="button" class="chip" draggable="true" data-why="Common cliché for someone pale with fear." data-i="3" data-a="0">as white as a sheet</button><button type="button" class="chip" draggable="true" data-why="Specific, surprising and easy to picture: fresh." data-i="4" data-a="1">as busy as a phone charger at an airport</button><button type="button" class="chip" draggable="true" data-why="A fresh twist: warm, deep, contented sleep." data-i="5" data-a="1">he slept like a cat on a radiator</button><button type="button" class="chip" draggable="true" data-why="Fresh: a forced, unhappy smile." data-i="6" data-a="1">she smiled the way you smile at a parking ticket</button><button type="button" class="chip" draggable="true" data-why="Fresh and very Canadian." data-i="7" data-a="1">as cold as a hockey rink at 6 a.m.</button><button type="button" class="chip" draggable="true" data-why="No like or as: it says time is a thief." data-i="8" data-a="2">time is a thief</button><button type="button" class="chip" draggable="true" data-why="No comparison word: a metaphor." data-i="9" data-a="2">my inbox is a swamp</button><button type="button" class="chip" draggable="true" data-why="A metaphor; the simile would be like daggers." data-i="10" data-a="2">her words were daggers</button></div><div class="cols" style="--n:3"><div class="col" data-col="0"><p class="col-h">Cliché simile</p><div class="drop" data-col="0"></div></div><div class="col" data-col="1"><p class="col-h">Fresh simile</p><div class="drop" data-col="1"></div></div><div class="col" data-col="2"><p class="col-h">Metaphor</p><div class="drop" data-col="2"></div></div></div><div class="sort-acts"><button type="button" class="ghost sort-reset">Start again</button></div></div>
+<h2 id="ex3" class="ex">Exercise 3: Which expression fits?</h2>
+<p>Choose the expression that fits the situation best.</p>
+<ol class="g-pick" data-g="ex3">
+<li data-why="An imagined situation + clause = as if (or as though)." data-a="0" data-form="as if" data-q="My office chair squeaks ___ it&#x27;s in pain.">My office chair squeaks <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-1"> it's in pain. <span class="opts game-ui"><button>as if</button><button>as</button><button>the same</button></span></li>
+<li data-why="Comparing the manner of two actions + clause = the way." data-a="1" data-form="the way" data-q="She read the contract ___ a detective reads a crime scene.">She read the contract <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-2"> a detective reads a crime scene. <span class="opts game-ui"><button>as if</button><button>the way</button><button>more than</button></span></li>
+<li data-why="The comparative pattern: sleepier than." data-a="1" data-form="sleepier" data-q="My teenage son is ___ than a hibernating bear on weekends.">My teenage son is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-3"> than a hibernating bear on weekends. <span class="opts game-ui"><button>as sleepy</button><button>sleepier</button><button>so sleepy</button></span></li>
+<li data-why="Packed like sardines and busy as a beehive are clichés; the Thanksgiving fridge is specific and surprising." data-a="2" data-form="as packed as a fridge after Thanksgiving" data-q="Which simile is the freshest way to describe a crowded subway? It was ___.">Which simile is the freshest way to describe a crowded subway? It was <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-4">. <span class="opts game-ui"><button>packed like sardines</button><button>as busy as a beehive</button><button>as packed as a fridge after Thanksgiving</button></span></li>
+<li data-why="The epic simile pattern: just as ..., so ..." data-a="0" data-form="Just as" data-q="In a eulogy: ___ an old maple shelters the whole yard, so she sheltered all of us.">In a eulogy: <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-5"> an old maple shelters the whole yard, so she sheltered all of us. <span class="opts game-ui"><button>Just as</button><button>As if</button><button>The way that</button></span></li>
+<li data-why="Like + noun compares. As a hawk would mean in the role of a hawk." data-a="1" data-form="like" data-q="The new manager is ___ a hawk; nothing escapes her.">The new manager is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-6"> a hawk; nothing escapes her. <span class="opts game-ui"><button>as</button><button>like</button><button>as if</button></span></li>
+<li data-why="An extended simile develops the comparison. The second is a metaphor; the third isn&#x27;t a simile." data-a="0" data-form="The economy is like a bicycle: stop pedalling and it falls over." data-q="Which is an extended simile? ___">Which is an extended simile? <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-7"> <span class="opts game-ui"><button>The economy is like a bicycle: stop pedalling and it falls over.</button><button>The economy is a rollercoaster.</button><button>The economy is as bad as ever.</button></span></li>
+<li data-why="Twisting the cliché into a surprising picture refreshes it. Repeating it, or garbling it, doesn&#x27;t." data-a="2" data-form="old enough to remember when the hills were delivered" data-q="Which version turns the cliché? He&#x27;s not just as old as the hills; he&#x27;s ___.">Which version turns the cliché? He's not just as old as the hills; he's <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-8">. <span class="opts game-ui"><button>as old as the hills</button><button>old as hills</button><button>old enough to remember when the hills were delivered</button></span></li>
+</ol>
+<h2 id="ex4" class="ex">Exercise 4: Find the mistake</h2>
+<p>Each sentence has one mistake in an expression. Tap the wrong word (or words), then choose the right words.</p>
+<ol class="g-spot" data-g="ex4">
+<li data-why="The frame is as + adjective + as." data-bad="as small like" data-fix="as small as" data-opts="as small as,so small like" data-q="Our new apartment is as small like a shoebox."><span class="sent">Our new apartment is as small like a shoebox.</span><input class="blank" type="hidden" data-k="ex4-1"></li>
+<li data-why="Like compares. As a teenager means when she was a teenager." data-bad="dance as a teenager" data-fix="dance like a teenager" data-opts="dance like a teenager,dance as teenager" data-q="My grandmother can still dance as a teenager at a wedding."><span class="sent">My grandmother can still dance as a teenager at a wedding.</span><input class="blank" type="hidden" data-k="ex4-2"></li>
+<li data-why="Comparatives take than: calmer than a mirror." data-bad="more calm as" data-fix="calmer than" data-opts="calmer than,calm than" data-q="The lake was more calm as a mirror this morning."><span class="sent">The lake was more calm as a mirror this morning.</span><input class="blank" type="hidden" data-k="ex4-3"></li>
+<li data-why="The epic pattern is just as ..., so ..." data-bad="also the voters" data-fix="so the voters" data-opts="so the voters,then the voters" data-q="Just as the tide returns twice a day, also the voters come back to their old party."><span class="sent">Just as the tide returns twice a day, also the voters come back to their old party.</span><input class="blank" type="hidden" data-k="ex4-4"></li>
+<li data-why="The way needs a full clause with a finite verb: the way a dragon guards its gold." data-bad="a dragon guarding its gold" data-fix="a dragon guards its gold" data-opts="a dragon guards its gold,a dragon to guard its gold" data-q="She guarded the recipe the way a dragon guarding its gold."><span class="sent">She guarded the recipe the way a dragon guarding its gold.</span><input class="blank" type="hidden" data-k="ex4-5"></li>
+</ol>
+<h2 id="ex5" class="ex">Exercise 5: Complete the expression</h2>
+<p>Type the missing word, then press <strong>Check</strong> (or Enter).</p>
+<ol class="g-type" data-g="ex5">
+<li data-why="As + adjective + as: the second as is needed." data-q="The house was as silent ___ a closed museum.">The house was as silent <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-1" data-ok="as"> a closed museum.</li>
+<li data-why="As if or as though + clause; like is casual." data-q="He spent money ___ it grew on trees.">He spent money <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-2" data-ok="as if|as though|like"> it grew on trees.</li>
+<li data-why="Like + noun: a fresh simile for very slow traffic." data-q="The traffic moved ___ a glacier with a headache.">The traffic moved <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-3" data-ok="like"> a glacier with a headache.</li>
+<li data-why="The way + clause compares the manner of two actions." data-q="She checked her phone the ___ a gambler checks a slot machine.">She checked her phone the <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-4" data-ok="way"> a gambler checks a slot machine.</li>
+<li data-why="Comparative + than: smaller than." data-q="The motel room was smaller ___ a ferry cabin.">The motel room was smaller <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-5" data-ok="than"> a ferry cabin.</li>
+<li data-why="Epic simile pattern: just as ..., so ..." data-q="Just as a good coach knows when to rest a player, ___ a good leader knows when to step back.">Just as a good coach knows when to rest a player, <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-6" data-ok="so"> a good leader knows when to step back.</li>
+</ol>
+<h2 id="ex6" class="ex">Exercise 6: Bend it</h2>
+<p>Native speakers change tense, add words and play with expressions, but only in some ways. Which version sounds natural?</p>
+<ol class="g-pick" data-g="ex6">
+<li data-why="Formal register: as if + were. Like + clause is casual; as alone doesn&#x27;t introduce an imagined situation." data-a="0" data-form="Investors reacted as if the bank were already insolvent." data-q="In a formal report about an unexpected market crash: ___">In a formal report about an unexpected market crash: <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex6-1"> <span class="opts game-ui"><button>Investors reacted as if the bank were already insolvent.</button><button>Investors reacted like the bank was already insolvent, you know.</button><button>Investors reacted as the bank were already insolvent.</button></span></li>
+<li data-why="Like + noun, extended with a fresh detail: like a leaf in a hairdryer." data-a="0" data-form="He&#x27;s shaking like a leaf in a hairdryer." data-q="Chatting with a friend about a nervous dog: ___">Chatting with a friend about a nervous dog: <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex6-2"> <span class="opts game-ui"><button>He's shaking like a leaf in a hairdryer.</button><button>He's shaking as a leaf.</button><button>He's shaking as like a leaf.</button></span></li>
+<li data-why="The way + full clause creates a precise picture of the manner." data-a="0" data-form="She opened the email the way you&#x27;d lift the lid off a pot you&#x27;d forgotten about." data-q="Writing a short story, you describe a cautious character: ___">Writing a short story, you describe a cautious character: <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex6-3"> <span class="opts game-ui"><button>She opened the email the way you'd lift the lid off a pot you'd forgotten about.</button><button>She opened the email the way of a forgotten pot.</button><button>She opened the email as the way of a pot.</button></span></li>
+<li data-why="Extending the cliché to a whole orchestra makes it fresh and funny. The others are grammar errors." data-a="0" data-form="Bill isn&#x27;t as fit as a fiddle; he&#x27;s as fit as the whole orchestra." data-q="Refreshing a cliché at a retirement party: ___">Refreshing a cliché at a retirement party: <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex6-4"> <span class="opts game-ui"><button>Bill isn't as fit as a fiddle; he's as fit as the whole orchestra.</button><button>Bill is as fit like a fiddle.</button><button>Bill is fit as fiddle.</button></span></li>
+</ol>
+<h2 id="ex7">Exercise 7: Talk about it</h2>
+<div class="rule talk"><ol><li>Wordsworth compared himself to a lonely cloud. Choose a place you love and describe how you feel there with a simile you invent.</li><li>Take three clichés: <strong>as busy as a bee</strong>, <strong>sleep like a log</strong>, <strong>as cold as ice</strong>. Turn each one into a fresh simile about your own city or life.</li><li>Role-play: you are giving a short toast at a friend's retirement. Include one extended simile and one epic simile with <strong>just as ... so ...</strong>.</li><li>Eliot compares an evening sky to a patient on an operating table. Which common simile in English, or in your first language, has become boring, and how could you shock it back to life?</li><li>Do you prefer similes or metaphors when you speak? Change one of your fresh similes into a metaphor. Which version is stronger?</li></ol></div>
+<details class="answers">
+  <summary>Check your answers</summary>
+  <div class="answers-body">
+<p><strong>Exercise 1:</strong> <em>as + adjective + as</em> = compares one quality. <em>like + noun</em> = compares an action or thing to a picture. <em>as if / as though + clause</em> = compares with an imagined situation. <em>the way + clause</em> = compares the manner of two actions. <em>more ... than</em> = goes beyond a familiar extreme. <em>extended simile</em> = one comparison developed over several clauses. <em>epic (Homeric) simile</em> = a comparison that becomes a small scene. <em>turning a cliché</em> = twisting an old simile to make it new.</p>
+<p><strong>Exercise 2:</strong> <strong>Cliché simile:</strong> as busy as a bee, as cold as ice, sleep like a log, as white as a sheet. <strong>Fresh simile:</strong> as busy as a phone charger at an airport, he slept like a cat on a radiator, she smiled the way you smile at a parking ticket, as cold as a hockey rink at 6 a.m.. <strong>Metaphor:</strong> time is a thief, my inbox is a swamp, her words were daggers.</p>
+<p><strong>Exercise 3:</strong> 1 as if 2 the way 3 sleepier 4 as packed as a fridge after Thanksgiving 5 Just as 6 like 7 The economy is like a bicycle: stop pedalling and it falls over. 8 old enough to remember when the hills were delivered</p>
+<p><strong>Exercise 4:</strong> 1 Our new apartment is <strong>as small as</strong> a shoebox. 2 My grandmother can still <strong>dance like a teenager</strong> at a wedding. 3 The lake was <strong>calmer than</strong> a mirror this morning. 4 Just as the tide returns twice a day, <strong>so the voters</strong> come back to their old party. 5 She guarded the recipe the way <strong>a dragon guards its gold</strong>.</p>
+<p><strong>Exercise 5:</strong> 1 as 2 as if 3 like 4 way 5 than 6 so</p>
+<p><strong>Exercise 6:</strong> 1 Investors reacted as if the bank were already insolvent. 2 He's shaking like a leaf in a hairdryer. 3 She opened the email the way you'd lift the lid off a pot you'd forgotten about. 4 Bill isn't as fit as a fiddle; he's as fit as the whole orchestra.</p>
+  </div>
+</details>
+</main>
+<footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
+<script>
+(function () {
+  var key = "traps-" + location.pathname;
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || "{}") || {}; } catch (e) {}
+  var fields = document.querySelectorAll(".blank");
+  fields.forEach(function (f) {
+    if (saved[f.dataset.k]) f.value = saved[f.dataset.k];
+    f.addEventListener("input", function () {
+      saved[f.dataset.k] = f.value;
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
+    });
+  });
+  var clear = document.getElementById("clear");
+  if (clear) clear.addEventListener("click", function () {
+    if (!confirm("Clear all your answers on this page?")) return;
+    fields.forEach(function (f) { f.value = ""; });
+    saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
+    location.reload();
+  });
+  var pr = document.getElementById("print");
+  if (pr) pr.addEventListener("click", function () { window.print(); });
+  // Print the answer key on its own last page, even when it's closed on screen.
+  var ans = document.querySelector("details.answers"), wasOpen = false;
+  window.addEventListener("beforeprint", function () { if (ans) { wasOpen = ans.open; ans.open = true; } });
+  window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
+})();
+</script>
+<script src="../../games.js?v=1794300000"></script>
+<script src="../../api.js?v=1792889681"></script>
+<script src="../../work.js?v=1793900000"></script>
+</body>
+</html>

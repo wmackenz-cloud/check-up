@@ -1,0 +1,206 @@
+{
+  "n": 2,
+  "title": "As ... As: Things and Situations",
+  "tagline": "objects, tasks, health and certainty",
+  "why": "These similes describe objects, tasks and situations with colour: how easy, obvious, old or safe. Several are regional, so knowing who says what helps you sound natural in Canada, the US or Britain.",
+  "know": [
+    "eight common <em>as ... as</em> similes for things and situations",
+    "which similes are British (<em>safe as houses</em>, <em>cheap as chips</em>) and which are used everywhere"
+  ],
+  "understand": [
+    "how some similes have shifted from literal (<em>cold as ice</em>) to abstract (<em>a deal as dead as a doornail</em>)",
+    "why ironic versions like <em>as clear as mud</em> mean the opposite"
+  ],
+  "able": [
+    "describe tasks, objects, evidence and health with natural similes",
+    "use the casual form without the first <em>as</em>, and the <em>about as ... as</em> pattern",
+    "recognise the history behind <em>dead as a doornail</em> in Shakespeare and Dickens"
+  ],
+  "mistakes": [
+    ["Her hands were as cold as snow.", "As cold as <strong>ice</strong>. Snow is understandable but it isn't the fixed simile."],
+    ["Don't worry, the recipe is as easy as cake.", "As easy as <strong>pie</strong>, or <strong>a piece of cake</strong>. Don't mix the two."],
+    ["After a week in bed I feel right like rain.", "I feel <strong>as right as rain</strong> (or <strong>right as rain</strong>). Never <em>like</em> in this simile."],
+    ["Your money is safe like houses in a Canadian bank.", "Safe <strong>as</strong> houses, and it's British. In Canada, <strong>perfectly safe</strong> or <strong>as safe as can be</strong> is more natural."],
+    ["The proof is clear as the day.", "Clear as <strong>day</strong>, with no article. You can also say <strong>as plain as day</strong>."]
+  ],
+  "bigidea": [
+    "With things and situations, <em>as ... as</em> similes mostly work as strong intensifiers. <em>As easy as pie</em> simply means very easy; <em>as old as the hills</em> means extremely old. The image is memorable, but nobody thinks about pies or hills.",
+    "Some of these similes have travelled from the physical to the abstract. A doornail is literally a lump of iron, but a project, a law or a marriage can be <em>as dead as a doornail</em>. <em>Cold as ice</em> describes your hands, but also an unfriendly person.",
+    "Irony is common: <em>as clear as mud</em> means confusing, and <em>about as useful as a chocolate teapot</em> (British) means useless. Listen for the tone of voice: the same frame can praise or mock."
+  ],
+  "hidden": [
+    "Thanks for the instructions. They're <strong>as clear as mud</strong>.",
+    "The lake was <strong>like glass</strong> at six in the morning.",
+    "Turn on the fan; this room is <strong>like an oven</strong>.",
+    "The highway across the prairies is <strong>as straight as an arrow</strong>.",
+    "The house was <strong>as quiet as a tomb</strong> after the guests left.",
+    "Leave the bread out overnight and it'll be <strong>as hard as a rock</strong>.",
+    "The new software runs <strong>like a dream</strong>."
+  ],
+  "expressions": [
+    {"e": "as light as a feather", "meaning": "extremely light in weight", "example": "The new carbon-fibre bike is <strong>as light as a feather</strong>.", "tone": "neutral",
+     "bend": "Often <em>light as a feather</em>. Also <em>feather-light</em> and <em>light as air</em> (for food: <em>the soufflé was light as air</em>).",
+     "note": "Can describe a person being carried, or a feeling of relief. Not <em>as light as a plume</em>."},
+    {"e": "as cold as ice", "meaning": "very cold; also emotionally cold and unfriendly", "example": "The cottage was <strong>as cold as ice</strong> when we arrived in January.", "tone": "neutral",
+     "bend": "<em>Ice-cold</em> as an adjective (<em>an ice-cold drink</em>). For people: <em>she was cold as ice to him</em>.",
+     "note": "Common wrong version: <em>as cold as snow</em>. For drinks, <em>ice-cold</em> is positive; for people, cold as ice is negative."},
+    {"e": "as old as the hills", "meaning": "extremely old; very well known for a long time", "example": "That excuse is <strong>as old as the hills</strong>; teachers have heard it for decades.", "tone": "casual",
+     "bend": "Usually about ideas, jokes, tricks or problems. Also <em>as old as time</em>, which is more poetic.",
+     "note": "Saying a person is <em>as old as the hills</em> is teasing and can offend. For people, use it only about yourself."},
+    {"e": "as clear as day", "meaning": "completely obvious or easy to see", "example": "From the security video it was <strong>as clear as day</strong> who had taken the parcel.", "tone": "neutral",
+     "bend": "Also <em>as plain as day</em>. No article before <em>day</em>. <em>Crystal clear</em> is more about being easy to understand.",
+     "note": "Opposite, ironic: <em>as clear as mud</em>. Don't say <em>clear as the day</em>."},
+    {"e": "as easy as pie", "meaning": "very easy", "example": "Once you know the shortcut, the tax form is <strong>as easy as pie</strong>.", "tone": "casual",
+     "bend": "<em>Easy as pie</em> is most common. Near-synonyms: <em>a piece of cake</em>, <em>easy as ABC</em>, <em>easy peasy</em> (childish or playful).",
+     "note": "Mainly North American but understood everywhere. Don't mix it into <em>as easy as cake</em>."},
+    {"e": "as dead as a doornail", "meaning": "completely dead; also completely finished or failed", "example": "After the vote, the pipeline proposal was <strong>as dead as a doornail</strong>.", "tone": "humorous",
+     "bend": "Used for plans, deals, batteries and phones as well as people and animals. Often <em>dead as a doornail</em>.",
+     "note": "Recorded since the 1300s. For something extinct or out of date, <em>as dead as a dodo</em> is better."},
+    {"e": "as right as rain", "meaning": "perfectly healthy or fine again, especially after illness", "example": "Drink plenty of fluids and you'll be <strong>as right as rain</strong> by Monday.", "tone": "casual",
+     "bend": "Almost always <em>be/feel/look right as rain</em>, often in the future: <em>you'll be right as rain</em>. Fixed: no <em>like</em>.",
+     "note": "Originally British, common in Canada, slightly old-fashioned and reassuring. Said by doctors, parents and grandparents."},
+    {"e": "as safe as houses", "meaning": "very safe or secure, with no risk", "example": "Her parents told her a government bond was <strong>as safe as houses</strong>.", "tone": "casual",
+     "bend": "British; rare in North America. Fixed plural <em>houses</em>. Often ironic since housing crashes.",
+     "note": "Canadians and Americans would say <em>perfectly safe</em>, <em>a safe bet</em> or <em>rock-solid</em>."}
+  ],
+  "culture": [
+    {"kind": "Literature", "work": "A Christmas Carol", "by": "Charles Dickens", "year": "1843",
+     "how": "Dickens opens the story by insisting that Scrooge's partner Marley is <strong>as dead as a doornail</strong>. The narrator then jokes that he can't see why a doornail is especially dead, and would prefer a coffin nail, but won't argue with his ancestors' wisdom.",
+     "ask": "Why do you think Dickens starts a ghost story by insisting so strongly that someone is dead?",
+     "find": "Dickens A Christmas Carol opening Marley dead as a doornail"},
+    {"kind": "Literature", "work": "Henry VI, Part 2", "by": "William Shakespeare", "year": "c. 1591",
+     "how": "The rebel leader Jack Cade, hungry and hiding in a garden, threatens to leave its owner <strong>as dead as a doornail</strong>. Shakespeare didn't invent the simile, which was already centuries old, but he shows how common it was in everyday speech.",
+     "ask": "Which similes in your language are hundreds of years old? Do people still use them?",
+     "find": "Shakespeare Henry VI Part 2 Jack Cade doornail"},
+    {"kind": "Poetry", "work": "The Rime of the Ancient Mariner", "by": "Samuel Taylor Coleridge", "year": "1798",
+     "how": "When the wind dies, the mariner's ship is stuck for days on a flat, motionless ocean. Coleridge compares it to a painted ship on a painted sea: as still and lifeless as a picture. The <em>as ... as</em> frame makes the stillness feel unbearable.",
+     "ask": "Describe a moment in your life when everything seemed to stop, using an <em>as ... as</em> simile.",
+     "find": "Coleridge Rime of the Ancient Mariner painted ship painted ocean"},
+    {"kind": "Music", "work": "Cold as Ice", "by": "Foreigner", "year": "1977",
+     "how": "The title simile is the whole message: the singer accuses someone of being <strong>cold as ice</strong>, emotionally hard and willing to hurt others to get what she wants, and warns that she'll regret it. It shows the simile moving from temperature to personality.",
+     "ask": "Is calling someone cold as ice worse than calling them unfriendly? What does the image add?",
+     "find": "Foreigner Cold as Ice 1977"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "as light as a feather", "r": "extremely light", "why": "A feather weighs almost nothing."},
+      {"l": "as cold as ice", "r": "very cold, or very unfriendly", "why": "Physical or emotional cold. Not as cold as snow."},
+      {"l": "as old as the hills", "r": "very old and familiar", "why": "Often about jokes, excuses and tricks."},
+      {"l": "as clear as day", "r": "completely obvious", "why": "As obvious as daylight. Opposite, ironic: as clear as mud."},
+      {"l": "as easy as pie", "r": "very easy", "why": "Casual. Close to a piece of cake."},
+      {"l": "as dead as a doornail", "r": "completely dead or finished", "why": "Used since the 1300s, by Shakespeare and by Dickens."},
+      {"l": "as right as rain", "r": "healthy or fine again", "why": "Reassuring, a little old-fashioned."},
+      {"l": "as safe as houses", "r": "completely safe", "why": "British. North Americans say perfectly safe or a safe bet."}
+    ],
+    "sort": {
+      "h": "Sort the similes: are they about something <strong>easy or obvious</strong>, something <strong>old, dead or finished</strong>, or a <strong>physical quality</strong>?",
+      "cols": ["Easy or obvious", "Old, dead or finished", "Physical quality"],
+      "items": [
+        {"w": "as easy as pie", "c": 0, "why": "Very easy."},
+        {"w": "as clear as day", "c": 0, "why": "Completely obvious."},
+        {"w": "as plain as the nose on your face", "c": 0, "why": "So obvious that everyone should see it."},
+        {"w": "as easy as ABC", "c": 0, "why": "As easy as learning the alphabet."},
+        {"w": "as old as the hills", "c": 1, "why": "Extremely old."},
+        {"w": "as dead as a doornail", "c": 1, "why": "Completely dead or finished."},
+        {"w": "as dead as a dodo", "c": 1, "why": "Extinct or totally out of date. The dodo bird died out in the 1600s."},
+        {"w": "as old as time", "c": 1, "why": "Poetic: as old as anything can be."},
+        {"w": "as light as a feather", "c": 2, "why": "Weight."},
+        {"w": "as cold as ice", "c": 2, "why": "Temperature."},
+        {"w": "as flat as a pancake", "c": 2, "why": "Shape: completely flat."},
+        {"w": "as dry as a bone", "c": 2, "why": "Completely dry. Also bone-dry."}
+      ]
+    },
+    "pick": [
+      {"q": "My granddaughter carried the suitcase upstairs easily; it was ___.", "opts": ["as light as a feather", "as old as the hills", "as right as rain"], "a": 0, "why": "Very light in weight = as light as a feather."},
+      {"q": "The furnace broke overnight and by morning the kitchen floor was ___.", "opts": ["as easy as pie", "as cold as ice", "as safe as houses"], "a": 1, "why": "Very cold = as cold as ice."},
+      {"q": "Blaming the dog for missing homework? That excuse is ___.", "opts": ["as old as the hills", "as light as a feather", "as clear as mud"], "a": 0, "why": "Very old and familiar = as old as the hills."},
+      {"q": "Once you look at the numbers, it's ___ that the store is losing money.", "opts": ["as dead as a doornail", "as clear as day", "as right as rain"], "a": 1, "why": "Completely obvious = as clear as day."},
+      {"q": "Changing the printer cartridge is ___; I'll show you.", "opts": ["as easy as pie", "as cold as ice", "as safe as houses"], "a": 0, "why": "Very easy = as easy as pie."},
+      {"q": "After the senator retired, the bill she'd championed was ___.", "opts": ["as right as rain", "as dead as a doornail", "as clear as day"], "a": 1, "why": "Completely finished = as dead as a doornail."},
+      {"q": "It's just a sprained wrist. In a couple of weeks you'll be ___.", "opts": ["as right as rain", "as old as the hills", "as dead as a doornail"], "a": 0, "why": "Fine again after injury = as right as rain."},
+      {"q": "In 1990s Britain, many people believed property was ___.", "opts": ["as easy as pie", "as safe as houses", "as cold as ice"], "a": 1, "why": "Completely secure = as safe as houses (British)."}
+    ],
+    "spot": [
+      {"q": "The wind off the lake was as cold as snow this morning.", "bad": "as cold as snow", "fix": "as cold as ice", "opts": ["as cold as ice", "as cold as winter"], "why": "The fixed simile is cold as ice."},
+      {"q": "Assembling this bookshelf is as easy as cake.", "bad": "as easy as cake", "fix": "as easy as pie", "opts": ["as easy as pie", "as easy as a cake"], "why": "As easy as pie, or a piece of cake. Don't blend them."},
+      {"q": "The motive was as clear as the day once we read her emails.", "bad": "as clear as the day", "fix": "as clear as day", "opts": ["as clear as day", "as clear as a day"], "why": "No article: clear as day, plain as day."},
+      {"q": "My phone fell in the lake and now it's as dead as a door.", "bad": "as dead as a door", "fix": "as dead as a doornail", "opts": ["as dead as a doornail", "as dead as a nail"], "why": "The full noun is doornail."},
+      {"q": "Take this medicine and you'll be right like rain in no time.", "bad": "right like rain", "fix": "right as rain", "opts": ["right as rain", "right as the rain"], "why": "Right as rain, with as and no article."}
+    ],
+    "type": [
+      {"q": "The pastry was as light as a ___; you've outdone yourself.", "a": ["feather"], "why": "As light as a feather: very light."},
+      {"q": "Her voice was as cold as ___ when she answered the reporter.", "a": ["ice"], "why": "As cold as ice: unfriendly and hard."},
+      {"q": "That joke is as old as the ___; my grandfather told it.", "a": ["hills"], "why": "As old as the hills: very old. Always plural hills."},
+      {"q": "It was clear as ___ that he hadn't read the report.", "a": ["day"], "why": "Clear as day: completely obvious."},
+      {"q": "The deal's as dead as a ___ now that the buyer has pulled out.", "a": ["doornail"], "why": "As dead as a doornail: completely finished."},
+      {"q": "In London people used to say bricks and mortar were as safe as ___.", "a": ["houses"], "why": "As safe as houses: completely secure. British."}
+    ],
+    "bend": [
+      {"q": "A colleague is giving confusing directions. Which ironic reply sounds natural? ___", "opts": ["Thanks, that's as clear as mud.", "Thanks, that's as clear as day mud.", "Thanks, that's as muddy as clear."], "a": 0, "why": "As clear as mud is the ironic opposite of as clear as day."},
+      {"q": "A Canadian doctor is reassuring a patient. Which version sounds most natural? ___", "opts": ["You'll be right as rain by the weekend.", "You'll be as right like rain by the weekend.", "You'll be right as the rains by the weekend."], "a": 0, "why": "Dropping the first as is natural in speech. The rest is fixed."},
+      {"q": "Which version describes cold drinks naturally? ___", "opts": ["We served ice-cold lemonade.", "We served cold-as-ice-like lemonade.", "We served ice-as-cold lemonade."], "a": 0, "why": "Ice-cold is the adjective form, positive for drinks."},
+      {"q": "Which version uses the ironic about as ... as pattern naturally about a useless gadget? ___", "opts": ["It's about as useful as a chocolate teapot.", "It's about as useful like a chocolate teapot.", "It's about useful as a chocolate teapot."], "a": 0, "why": "About as ... as is often ironic. Chocolate teapot is a British joke image: useless."}
+    ],
+    "talk": [
+      "Dickens begins a ghost story by joking about doornails. Why might a writer use a funny, old simile at a serious moment?",
+      "Coleridge compares a stuck ship to a painting. Describe a time when you felt stuck, using one simile from this lesson and one of your own.",
+      "Role-play: you're a doctor or pharmacist reassuring a nervous patient. Use <strong>right as rain</strong> and <strong>as easy as pie</strong> naturally.",
+      "Which of today's similes would you avoid in a business email, and which would be fine? Explain your choices.",
+      "Is anything really <strong>as safe as houses</strong> today? Talk about housing, savings or jobs in your country."
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "as flat as a pancake", "r": "completely flat", "why": "Used for land, tires and also for flat jokes or events."},
+      {"l": "as hard as nails", "r": "tough and unsentimental", "why": "Usually about people: strong, unemotional, hard to hurt."},
+      {"l": "as cheap as chips", "r": "very cheap", "why": "British. Chips are fries, a cheap snack."},
+      {"l": "as good as new", "r": "repaired to perfect condition", "why": "Often after a repair: the car's as good as new."},
+      {"l": "as plain as the nose on your face", "r": "completely obvious", "why": "Something everyone can see. Close to as clear as day."},
+      {"l": "as clear as mud", "r": "very confusing (ironic)", "why": "The opposite of what the words seem to say."}
+    ],
+    "pick": [
+      {"q": "Saskatchewan is famous for being ___, so you can see storms coming for hours.", "opts": ["as flat as a pancake", "as hard as nails", "as good as new"], "a": 0, "why": "Completely flat = as flat as a pancake."},
+      {"q": "Our old sergeant was ___, but she was always fair.", "opts": ["as cheap as chips", "as hard as nails", "as clear as mud"], "a": 1, "why": "Tough and unsentimental = as hard as nails."},
+      {"q": "In Leeds you can get a full breakfast that's ___.", "opts": ["as cheap as chips", "as good as new", "as flat as a pancake"], "a": 0, "why": "Very cheap = as cheap as chips (British)."},
+      {"q": "The jeweller fixed the clasp, and Grandma's necklace looks ___.", "opts": ["as good as new", "as hard as nails", "as clear as mud"], "a": 0, "why": "Repaired perfectly = as good as new."},
+      {"q": "He's in love with her; it's ___.", "opts": ["as cheap as chips", "as plain as the nose on your face", "as flat as a pancake"], "a": 1, "why": "Completely obvious = as plain as the nose on your face."},
+      {"q": "The government's new rules on rebates are ___; nobody knows who qualifies.", "opts": ["as good as new", "as clear as mud", "as hard as nails"], "a": 1, "why": "Very confusing = as clear as mud (ironic)."}
+    ],
+    "spot": [
+      {"q": "After the soufflé collapsed, it was as flat as a crepe.", "bad": "as flat as a crepe", "fix": "as flat as a pancake", "opts": ["as flat as a pancake", "as flat as a board"], "why": "The fixed simile is flat as a pancake."},
+      {"q": "The mechanic replaced the bumper and now the car is as good as fresh.", "bad": "as good as fresh", "fix": "as good as new", "opts": ["as good as new", "as new as good"], "why": "Repaired perfectly = as good as new."},
+      {"q": "The coach looks friendly, but she's as hard as stones.", "bad": "as hard as stones", "fix": "as hard as nails", "opts": ["as hard as nails", "as hard as a stone heart"], "why": "Tough people are hard as nails."},
+      {"q": "Those sunglasses were as cheap as fries at the market.", "bad": "as cheap as fries", "fix": "as cheap as chips", "opts": ["as cheap as chips", "as cheap as dirt"], "why": "The British simile keeps chips. North Americans would say dirt cheap."}
+    ],
+    "type": [
+      {"q": "The tire was as flat as a ___ by the time we reached the garage.", "a": ["pancake"], "why": "As flat as a pancake: completely flat."},
+      {"q": "My grandmother survived the war and was as hard as ___.", "a": ["nails"], "why": "As hard as nails: tough. Always plural nails."},
+      {"q": "After a new screen, my tablet is as good as ___.", "a": ["new"], "why": "As good as new: in perfect condition again."},
+      {"q": "The answer is as plain as the ___ on your face.", "a": ["nose"], "why": "As plain as the nose on your face: obvious."},
+      {"q": "Your explanation of the new tax rules is as clear as ___.", "a": ["mud"], "why": "As clear as mud: ironic, very confusing."},
+      {"q": "On the British high street, those T-shirts are as cheap as ___.", "a": ["chips"], "why": "As cheap as chips: very cheap. British."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "Wrapped in the duvet, the sleeping baby felt ___.", "opts": ["as light as a feather", "as old as the hills", "as safe as houses"], "a": "as light as a feather", "why": "Very light = as light as a feather."},
+    {"type": "pick", "q": "Wear mitts; the steering wheel will be ___ this morning.", "opts": ["as cold as ice", "as easy as pie", "as right as rain"], "a": "as cold as ice", "why": "Very cold = as cold as ice."},
+    {"type": "pick", "q": "Fighting over the TV remote is a family tradition ___.", "opts": ["as old as the hills", "as light as a feather", "as cold as ice"], "a": "as old as the hills", "why": "Very old = as old as the hills."},
+    {"type": "pick", "q": "From the X-ray it was ___ that the bone was broken.", "opts": ["as clear as day", "as dead as a doornail", "as easy as pie"], "a": "as clear as day", "why": "Obvious = as clear as day."},
+    {"type": "pick", "q": "Booking the train online is ___ once you have an account.", "opts": ["as easy as pie", "as old as the hills", "as cold as ice"], "a": "as easy as pie", "why": "Very easy = as easy as pie."},
+    {"type": "pick", "q": "The car battery was ___ after a week at minus thirty.", "opts": ["as dead as a doornail", "as right as rain", "as clear as day"], "a": "as dead as a doornail", "why": "Completely dead = as dead as a doornail."},
+    {"type": "pick", "q": "A good night's sleep and I was ___ again.", "opts": ["as right as rain", "as safe as houses", "as old as the hills"], "a": "as right as rain", "why": "Well again = as right as rain."},
+    {"type": "pick", "q": "My uncle in Bristol says his pension fund is ___.", "opts": ["as safe as houses", "as light as a feather", "as dead as a doornail"], "a": "as safe as houses", "why": "Completely secure = as safe as houses (British)."},
+    {"type": "type", "q": "The suitcase was light as a ___ on the way there and heavy on the way back.", "a": ["feather"], "why": "Light as a feather: very light."},
+    {"type": "type", "q": "The vaccine plan is dead as a ___ after the funding cuts.", "a": ["doornail"], "why": "Dead as a doornail: completely finished."},
+    {"type": "type", "q": "Don't worry about the stitches. You'll be as right as ___ soon.", "a": ["rain"], "why": "As right as rain: fine again."},
+    {"type": "type", "q": "Making bread with this machine is as easy as ___.", "a": ["pie"], "why": "As easy as pie: very easy."},
+    {"type": "type", "q": "The prairie road was as flat as a ___ for three hundred kilometres.", "a": ["pancake"], "why": "As flat as a pancake: completely flat."},
+    {"type": "spot", "q": "The idea of a four-day week is as old as the mountains.", "bad": "as old as the mountains", "fix": "as old as the hills", "opts": ["as old as the hills", "as old as the rocks"], "why": "The fixed simile is old as the hills."},
+    {"type": "spot", "q": "The instructions were as clear like day.", "bad": "as clear like day", "fix": "as clear as day", "opts": ["as clear as day", "as day as clear"], "why": "As ... as, never as ... like."},
+    {"type": "spot", "q": "Our British guide said the old castle walls were as safe as houses.", "bad": "", "why": "Correct! As safe as houses = completely safe. It sounds British."},
+    {"type": "spot", "q": "His shoulders were tense and his handshake was as cold as ice.", "bad": "", "why": "Correct! Cold as ice can be physical and emotional at once."},
+    {"type": "order", "a": "The old fax machine was as dead as a doornail.", "alt": [], "why": "The frame: as + adjective + as + noun. Here dead means it no longer works."},
+    {"type": "order", "a": "Setting up the new router was easy as pie.", "alt": [], "why": "Casual: the first as is dropped."},
+    {"type": "order", "a": "You will be right as rain in a week.", "alt": [], "why": "Will be + right as rain: a common reassurance."}
+  ]
+}

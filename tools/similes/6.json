@@ -1,0 +1,204 @@
+{
+  "n": 6,
+  "title": "Making Your Own: Fresh Similes",
+  "tagline": "patterns, extended and epic similes, and new life for old clichés",
+  "why": "Advanced speakers don't only recognise similes; they make them. Knowing the grammar patterns behind similes lets you create fresh, precise comparisons for stories, presentations and writing, and avoid the tired ones.",
+  "know": [
+    "the main simile patterns: <strong>as ... as</strong>, <strong>like + noun</strong>, <strong>as if / as though</strong>, <strong>the way + clause</strong> and <strong>more ... than</strong>",
+    "what extended and epic (Homeric) similes are and where they come from"
+  ],
+  "understand": [
+    "the difference between a simile, which compares openly, and a metaphor, which says one thing <em>is</em> another",
+    "why a fresh simile is specific and surprising, while a cliché is predictable"
+  ],
+  "able": [
+    "build your own similes with five different grammar patterns",
+    "develop a simple comparison into an extended simile in speech or writing",
+    "refresh a cliché by twisting, extending or contradicting it"
+  ],
+  "mistakes": [
+    ["The office was as quiet like a library.", "As quiet <strong>as</strong> a library. The <em>as ... as</em> frame needs the second <em>as</em>."],
+    ["She sang as a bird at the wedding.", "She sang <strong>like</strong> a bird. <em>As a bird</em> means in the role of a bird."],
+    ["He looked at me like I was a ghost, in his report to the board.", "In formal writing, prefer <strong>as if I were</strong> a ghost. <em>Like</em> + clause is fine in casual speech."],
+    ["The hall was more quiet as a church.", "The hall was <strong>quieter than</strong> a church. Comparatives take <em>than</em>."],
+    ["Just as the river carves the valley, also patience shapes a career.", "Just as ..., <strong>so</strong> patience shapes a career. The epic pattern is <em>just as ... so ...</em>."]
+  ],
+  "bigidea": [
+    "A <strong>simile</strong> compares two unlike things openly, with a signal word: <em>like</em>, <em>as</em>, <em>as if</em>, <em>the way</em>, <em>than</em>. A <strong>metaphor</strong> drops the signal and says one thing <em>is</em> another. A simile is a little more modest and more precise: it says <em>in this one way</em>, these two things are alike.",
+    "A simile becomes a <strong>cliché</strong> when the second half is completely predictable: if you say <em>as busy as a ...</em>, everyone thinks <em>bee</em>. A <strong>fresh</strong> simile is concrete, specific and slightly surprising, but instantly clear: <em>as busy as a phone charger at an airport</em>. The test is simple: can the listener picture it, and did they not see it coming?",
+    "Similes can also grow. An <strong>extended simile</strong> develops one comparison over several clauses. An <strong>epic</strong> or <strong>Homeric simile</strong>, named after the Greek poet Homer, turns the comparison into a small scene of its own, often in the pattern <em>just as ..., so ...</em>. You'll hear shorter versions in speeches, sermons and sports commentary."
+  ],
+  "hidden": [
+    "The traffic this morning was <strong>like a parking lot</strong>.",
+    "He talks to his car <strong>as if it were a person</strong>.",
+    "She's <strong>as stubborn as a mule</strong>, just like her mother.",
+    "Their new house is <strong>bigger than a hotel</strong>.",
+    "The kids ran off <strong>like a shot</strong> when the bell rang.",
+    "It feels <strong>as though</strong> summer lasted a week."
+  ],
+  "expressions": [
+    {"e": "as + adjective + as", "meaning": "compares one quality to something that has a lot of it", "example": "After the funeral the house was <strong>as quiet as a held breath</strong>.", "tone": "neutral",
+     "bend": "Negative: <em>not as tidy as a hotel</em>. Intensified: <em>just as</em>, <em>twice as</em>. Casual speech drops the first <em>as</em>: <em>quiet as a mouse</em>.",
+     "note": "The easiest pattern to refresh: keep the adjective, change the noun. Trap: never <em>as ... like</em>."},
+    {"e": "like + noun", "meaning": "compares an action or a thing to a picture", "example": "The rumour went through the office <strong>like a cold through a daycare</strong>.", "tone": "casual",
+     "bend": "After almost any verb: <em>run like</em>, <em>look like</em>, <em>spread like</em>. Add detail to make it fresh: <em>like a cold through a daycare</em> rather than <em>like wildfire</em>.",
+     "note": "<em>Like</em> + noun compares; <em>as</em> + noun gives a role (<em>she worked as a nurse</em>). This is the most common source of simile errors."},
+    {"e": "as if / as though + clause", "meaning": "compares with an imagined situation", "example": "He shook my hand <strong>as if he were signing a peace treaty</strong>.", "tone": "neutral",
+     "bend": "Formal: <em>as if he were</em>; everyday: <em>as if he was</em>; casual North American: <em>like he was</em>.",
+     "note": "<em>As if</em> and <em>as though</em> mean the same. Use the past tense (or <em>were</em>) for something unreal; the present for something possibly true: <em>it looks as if it's going to rain</em>."},
+    {"e": "the way + clause", "meaning": "compares how two actions are done", "example": "She carried the folder <strong>the way you'd carry a newborn baby</strong>.", "tone": "neutral",
+     "bend": "Often with <em>you</em> or <em>someone</em>: <em>the way you'd</em> ..., <em>the way a cat watches a bird</em>. <em>The way that</em> is possible but heavier.",
+     "note": "A quiet, elegant pattern favoured by novelists. It compares manner, so it suits actions and gestures better than qualities."},
+    {"e": "more ... than", "meaning": "compares by saying something goes beyond a familiar extreme", "example": "That budget meeting was <strong>more painful than a root canal</strong>.", "tone": "humorous",
+     "bend": "Comparative adjectives: <em>quieter than a library</em>, <em>colder than a landlord's heart</em>; also <em>less ... than</em>.",
+     "note": "Only a simile when the things are unlike: <em>taller than his brother</em> is just a comparison. Often humorous exaggeration."},
+    {"e": "extended simile", "meaning": "a simile developed over several clauses or sentences", "example": "Starting a business is <strong>like planting an orchard: you dig, you water, you wait for years, and one late frost can take the lot</strong>.", "tone": "neutral",
+     "bend": "Usually starts with a short simile, then adds a colon or <em>you ... you ...</em> to develop it. Keep every detail inside the same picture.",
+     "note": "Powerful in presentations and speeches. Trap: switching to a new image halfway creates a mixed metaphor."},
+    {"e": "epic (Homeric) simile", "meaning": "a long, detailed comparison that becomes a small scene of its own", "example": "<strong>Just as</strong> a farmer watches the sky all week for hail, <strong>so</strong> the finance minister watched the markets before the budget.", "tone": "formal",
+     "bend": "Pattern: <em>just as ..., so ...</em> or <em>like ..., so ...</em>. Can run to several sentences in literature.",
+     "note": "Named after Homer's <em>Iliad</em> and <em>Odyssey</em>. In modern use it sounds grand, so it suits speeches, eulogies or deliberate humour."},
+    {"e": "turning a cliché", "meaning": "refreshing an old simile by twisting, extending or contradicting it", "example": "My uncle isn't just stubborn as a mule; he's <strong>as stubborn as a mule with a lawyer</strong>.", "tone": "humorous",
+     "bend": "Extend it (<em>a mule with a lawyer</em>), swap the noun (<em>as busy as a bee in a flower shop</em>), or deny it (<em>far from cool as a cucumber, he was a pickle in a heatwave</em>).",
+     "note": "Native listeners enjoy the surprise because they know the original. Do it once per conversation; more sounds like showing off."}
+  ],
+  "culture": [
+    {"kind": "Literature", "work": "The Iliad", "by": "Homer", "year": "c. 8th century BC",
+     "how": "Homer's war epic is full of long similes that pause the battle to show a scene from ordinary life: warriors like lions attacking a flock, armies like waves. In one famous passage, the warrior Glaucus compares the generations of men to the leaves of a tree, which fall and grow again each spring.",
+     "ask": "Glaucus compares human generations to leaves. What image would you use for generations in your family?",
+     "find": "Iliad epic simile Glaucus generations of leaves Book 6"},
+    {"kind": "Poetry", "work": "The Love Song of J. Alfred Prufrock", "by": "T. S. Eliot", "year": "1915",
+     "how": "Eliot's poem opens with one of the most startling similes in modern poetry: the evening sky is compared not to something beautiful but to a hospital patient lying unconscious on an operating table. Readers expecting a romantic sunset get something cold and clinical instead, and that shock sets the nervous, uneasy mood of the whole poem.",
+     "ask": "Describe a sunset, a city street or a Monday morning with a simile that surprises the listener instead of the one they expect.",
+     "find": "T. S. Eliot Prufrock opening simile evening patient etherised"},
+    {"kind": "Poetry", "work": "I Wandered Lonely as a Cloud", "by": "William Wordsworth", "year": "1807",
+     "how": "The title itself is a simile: the speaker compares himself, walking alone, to a single cloud drifting over hills and valleys, until he comes across a crowd of daffodils by a lake. The simile sets the mood of solitude that the flowers then break. Compare Langston Hughes's <em>Harlem</em>, a whole poem built from similes.",
+     "ask": "Make a simile for how you feel when you walk alone somewhere you love.",
+     "find": "Wordsworth I Wandered Lonely as a Cloud daffodils"},
+    {"kind": "Music", "work": "Like a Prayer", "by": "Madonna", "year": "1989",
+     "how": "The title simile compares the feeling of hearing someone's voice, and of being close to them, to the experience of prayer. By borrowing religious language for love, Madonna made an ordinary pop comparison feel bold, and the song and its video caused a major controversy when they came out.",
+     "ask": "What would you compare a powerful experience, like falling in love or hearing great news, to? Try a fresh image from an unexpected area of life.",
+     "find": "Madonna Like a Prayer 1989"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "as + adjective + as", "r": "compares one quality", "why": "As quiet as a held breath: one quality, quietness."},
+      {"l": "like + noun", "r": "compares an action or thing to a picture", "why": "The rumour spread like a cold through a daycare."},
+      {"l": "as if / as though + clause", "r": "compares with an imagined situation", "why": "As if he were signing a treaty: he wasn't really."},
+      {"l": "the way + clause", "r": "compares the manner of two actions", "why": "She held it the way you'd hold a baby: how she held it."},
+      {"l": "more ... than", "r": "goes beyond a familiar extreme", "why": "More painful than a root canal: comic exaggeration."},
+      {"l": "extended simile", "r": "one comparison developed over several clauses", "why": "Starting a business is like planting an orchard: you dig, you water, you wait..."},
+      {"l": "epic (Homeric) simile", "r": "a comparison that becomes a small scene", "why": "Named after Homer. Pattern: just as ..., so ..."},
+      {"l": "turning a cliché", "r": "twisting an old simile to make it new", "why": "As stubborn as a mule with a lawyer."}
+    ],
+    "sort": {
+      "h": "Sort the examples: is each a <strong>cliché simile</strong>, a <strong>fresh simile</strong>, or <strong>a metaphor</strong> (no comparison word)?",
+      "cols": ["Cliché simile", "Fresh simile", "Metaphor"],
+      "items": [
+        {"w": "as busy as a bee", "c": 0, "why": "Everyone can finish it: a cliché."},
+        {"w": "as cold as ice", "c": 0, "why": "Completely predictable: a cliché."},
+        {"w": "sleep like a log", "c": 0, "why": "A very common, predictable simile."},
+        {"w": "as white as a sheet", "c": 0, "why": "Common cliché for someone pale with fear."},
+        {"w": "as busy as a phone charger at an airport", "c": 1, "why": "Specific, surprising and easy to picture: fresh."},
+        {"w": "he slept like a cat on a radiator", "c": 1, "why": "A fresh twist: warm, deep, contented sleep."},
+        {"w": "she smiled the way you smile at a parking ticket", "c": 1, "why": "Fresh: a forced, unhappy smile."},
+        {"w": "as cold as a hockey rink at 6 a.m.", "c": 1, "why": "Fresh and very Canadian."},
+        {"w": "time is a thief", "c": 2, "why": "No like or as: it says time is a thief."},
+        {"w": "my inbox is a swamp", "c": 2, "why": "No comparison word: a metaphor."},
+        {"w": "her words were daggers", "c": 2, "why": "A metaphor; the simile would be like daggers."}
+      ]
+    },
+    "pick": [
+      {"q": "My office chair squeaks ___ it's in pain.", "opts": ["as if", "as", "the same"], "a": 0, "why": "An imagined situation + clause = as if (or as though)."},
+      {"q": "She read the contract ___ a detective reads a crime scene.", "opts": ["as if", "the way", "more than"], "a": 1, "why": "Comparing the manner of two actions + clause = the way."},
+      {"q": "My teenage son is ___ than a hibernating bear on weekends.", "opts": ["as sleepy", "sleepier", "so sleepy"], "a": 1, "why": "The comparative pattern: sleepier than."},
+      {"q": "Which simile is the freshest way to describe a crowded subway? It was ___.", "opts": ["packed like sardines", "as busy as a beehive", "as packed as a fridge after Thanksgiving"], "a": 2, "why": "Packed like sardines and busy as a beehive are clichés; the Thanksgiving fridge is specific and surprising."},
+      {"q": "In a eulogy: ___ an old maple shelters the whole yard, so she sheltered all of us.", "opts": ["Just as", "As if", "The way that"], "a": 0, "why": "The epic simile pattern: just as ..., so ..."},
+      {"q": "The new manager is ___ a hawk; nothing escapes her.", "opts": ["as", "like", "as if"], "a": 1, "why": "Like + noun compares. As a hawk would mean in the role of a hawk."},
+      {"q": "Which is an extended simile? ___", "opts": ["The economy is like a bicycle: stop pedalling and it falls over.", "The economy is a rollercoaster.", "The economy is as bad as ever."], "a": 0, "why": "An extended simile develops the comparison. The second is a metaphor; the third isn't a simile."},
+      {"q": "Which version turns the cliché? He's not just as old as the hills; he's ___.", "opts": ["as old as the hills", "old as hills", "old enough to remember when the hills were delivered"], "a": 2, "why": "Twisting the cliché into a surprising picture refreshes it. Repeating it, or garbling it, doesn't."}
+    ],
+    "spot": [
+      {"q": "Our new apartment is as small like a shoebox.", "bad": "as small like", "fix": "as small as", "opts": ["as small as", "so small like"], "why": "The frame is as + adjective + as."},
+      {"q": "My grandmother can still dance as a teenager at a wedding.", "bad": "dance as a teenager", "fix": "dance like a teenager", "opts": ["dance like a teenager", "dance as teenager"], "why": "Like compares. As a teenager means when she was a teenager."},
+      {"q": "The lake was more calm as a mirror this morning.", "bad": "more calm as", "fix": "calmer than", "opts": ["calmer than", "calm than"], "why": "Comparatives take than: calmer than a mirror."},
+      {"q": "Just as the tide returns twice a day, also the voters come back to their old party.", "bad": "also the voters", "fix": "so the voters", "opts": ["so the voters", "then the voters"], "why": "The epic pattern is just as ..., so ..."},
+      {"q": "She guarded the recipe the way a dragon guarding its gold.", "bad": "a dragon guarding its gold", "fix": "a dragon guards its gold", "opts": ["a dragon guards its gold", "a dragon to guard its gold"], "why": "The way needs a full clause with a finite verb: the way a dragon guards its gold."}
+    ],
+    "type": [
+      {"q": "The house was as silent ___ a closed museum.", "a": ["as"], "why": "As + adjective + as: the second as is needed."},
+      {"q": "He spent money ___ it grew on trees.", "a": ["as if", "as though", "like"], "why": "As if or as though + clause; like is casual."},
+      {"q": "The traffic moved ___ a glacier with a headache.", "a": ["like"], "why": "Like + noun: a fresh simile for very slow traffic."},
+      {"q": "She checked her phone the ___ a gambler checks a slot machine.", "a": ["way"], "why": "The way + clause compares the manner of two actions."},
+      {"q": "The motel room was smaller ___ a ferry cabin.", "a": ["than"], "why": "Comparative + than: smaller than."},
+      {"q": "Just as a good coach knows when to rest a player, ___ a good leader knows when to step back.", "a": ["so"], "why": "Epic simile pattern: just as ..., so ..."}
+    ],
+    "bend": [
+      {"q": "In a formal report about an unexpected market crash: ___", "opts": ["Investors reacted as if the bank were already insolvent.", "Investors reacted like the bank was already insolvent, you know.", "Investors reacted as the bank were already insolvent."], "a": 0, "why": "Formal register: as if + were. Like + clause is casual; as alone doesn't introduce an imagined situation."},
+      {"q": "Chatting with a friend about a nervous dog: ___", "opts": ["He's shaking like a leaf in a hairdryer.", "He's shaking as a leaf.", "He's shaking as like a leaf."], "a": 0, "why": "Like + noun, extended with a fresh detail: like a leaf in a hairdryer."},
+      {"q": "Writing a short story, you describe a cautious character: ___", "opts": ["She opened the email the way you'd lift the lid off a pot you'd forgotten about.", "She opened the email the way of a forgotten pot.", "She opened the email as the way of a pot."], "a": 0, "why": "The way + full clause creates a precise picture of the manner."},
+      {"q": "Refreshing a cliché at a retirement party: ___", "opts": ["Bill isn't as fit as a fiddle; he's as fit as the whole orchestra.", "Bill is as fit like a fiddle.", "Bill is fit as fiddle."], "a": 0, "why": "Extending the cliché to a whole orchestra makes it fresh and funny. The others are grammar errors."}
+    ],
+    "talk": [
+      "Wordsworth compared himself to a lonely cloud. Choose a place you love and describe how you feel there with a simile you invent.",
+      "Take three clichés: <strong>as busy as a bee</strong>, <strong>sleep like a log</strong>, <strong>as cold as ice</strong>. Turn each one into a fresh simile about your own city or life.",
+      "Role-play: you are giving a short toast at a friend's retirement. Include one extended simile and one epic simile with <strong>just as ... so ...</strong>.",
+      "Eliot compares an evening sky to a patient on an operating table. Which common simile in English, or in your first language, has become boring, and how could you shock it back to life?",
+      "Do you prefer similes or metaphors when you speak? Change one of your fresh similes into a metaphor. Which version is stronger?"
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "simile", "r": "an open comparison using like, as, than or the way", "why": "Her laugh was like a car alarm."},
+      {"l": "metaphor", "r": "says one thing is another", "why": "Her laugh was a car alarm."},
+      {"l": "cliché", "r": "a comparison so familiar it's predictable", "why": "As busy as a bee: everyone knows the ending."},
+      {"l": "fresh simile", "r": "a specific, surprising but clear comparison", "why": "As busy as a phone charger at an airport."},
+      {"l": "mixed metaphor", "r": "two images that clash", "why": "A danger in extended similes: keep to one picture."},
+      {"l": "as dead as a doornail", "r": "completely dead (cliché played with by Dickens)", "why": "The opening of A Christmas Carol questions it."}
+    ],
+    "pick": [
+      {"q": "The printer groaned ___ it were being asked to climb a mountain.", "opts": ["as though", "as", "than"], "a": 0, "why": "An imagined situation + clause = as though (or as if)."},
+      {"q": "He tasted the wine ___ a scientist studies a sample.", "opts": ["the way", "as if", "like as"], "a": 0, "why": "Comparing manner + full clause = the way."},
+      {"q": "Our basement in January is colder ___ a fishing hut on Lake Simcoe.", "opts": ["as", "than", "like"], "a": 1, "why": "Comparative + than."},
+      {"q": "Which is a metaphor, not a simile? ___", "opts": ["My boss is a volcano.", "My boss is like a volcano.", "My boss erupts like a volcano."], "a": 0, "why": "No comparison word: my boss is a volcano."},
+      {"q": "Which simile is freshest for a very tidy desk? It was ___.", "opts": ["as neat as a pin", "as neat as a surgeon's tray", "as neat as can be"], "a": 1, "why": "Neat as a pin is a cliché; a surgeon's tray is specific and vivid."},
+      {"q": "___ the first robin tells us spring has come, so the first resignation told us the company was changing.", "opts": ["Just as", "As if", "More than"], "a": 0, "why": "Epic simile pattern: just as ..., so ..."}
+    ],
+    "spot": [
+      {"q": "Her voice was as smooth like warm honey.", "bad": "as smooth like", "fix": "as smooth as", "opts": ["as smooth as", "smooth like as"], "why": "As + adjective + as: never as ... like."},
+      {"q": "The toddler ate the cake as a vacuum cleaner.", "bad": "as a vacuum cleaner", "fix": "like a vacuum cleaner", "opts": ["like a vacuum cleaner", "the way a vacuum cleaner"], "why": "Like + noun compares; as + noun means in the role of."},
+      {"q": "The city at night was more bright as a stadium.", "bad": "more bright as", "fix": "brighter than", "opts": ["brighter than", "bright than"], "why": "Comparative + than: brighter than."},
+      {"q": "He treated his old car the way a collector treating a painting.", "bad": "a collector treating a painting", "fix": "a collector treats a painting", "opts": ["a collector treats a painting", "of a collector treating a painting"], "why": "The way needs a full clause: the way a collector treats a painting."}
+    ],
+    "type": [
+      {"q": "The bread was as hard ___ a hockey puck.", "a": ["as"], "why": "As + adjective + as: a fresh, Canadian simile."},
+      {"q": "My laptop fan sounds ___ a small plane taking off.", "a": ["like"], "why": "Sound like + noun phrase."},
+      {"q": "They talked about the trip as ___ it had been a military campaign.", "a": ["if", "though"], "why": "As if / as though + clause."},
+      {"q": "He folded the map the ___ a priest folds an altar cloth.", "a": ["way"], "why": "The way + clause compares the manner of two actions: slowly and with great care."},
+      {"q": "The old ferry was slower ___ a canoe paddled by toddlers.", "a": ["than"], "why": "Comparative + than: comic exaggeration."},
+      {"q": "Just as frost brings out the colour of the maples, ___ hardship brings out a person's character.", "a": ["so"], "why": "Epic simile: just as ..., so ..."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "The cat stared at the empty bowl ___ it had been personally insulted.", "opts": ["as if", "as", "than"], "a": "as if", "why": "An imagined situation + clause = as if."},
+    {"type": "pick", "q": "She held the trophy ___ you'd hold a winning lottery ticket.", "opts": ["the way", "as", "more than"], "a": "the way", "why": "Comparing manner + clause = the way."},
+    {"type": "pick", "q": "The ice on the driveway was ___ than a skating rink.", "opts": ["as slippery", "more slippery", "so slippery"], "a": "more slippery", "why": "Comparative + than: more slippery than."},
+    {"type": "pick", "q": "Which is the freshest simile for a long wait? It felt ___.", "opts": ["like forever", "as long as a day without bread", "like a lifetime"], "a": "as long as a day without bread", "why": "Like forever and like a lifetime are clichés; the other is specific and unexpected."},
+    {"type": "pick", "q": "Our son jumped on the trampoline ___ a kernel in a popcorn machine.", "opts": ["as", "like", "as if"], "a": "like", "why": "Like + noun compares two pictures."},
+    {"type": "pick", "q": "Which is a metaphor? ___", "opts": ["The classroom was a zoo.", "The classroom was like a zoo.", "The classroom was louder than a zoo."], "a": "The classroom was a zoo.", "why": "No comparison word: a metaphor. The others are similes."},
+    {"type": "pick", "q": "___ a lighthouse keeps ships off the rocks, so a good editor keeps writers out of trouble.", "opts": ["Just as", "As if", "Like as"], "a": "Just as", "why": "The epic pattern: just as ..., so ..."},
+    {"type": "pick", "q": "Which sentence is an extended simile? ___", "opts": ["A career is like a canoe trip: you plan, you paddle, and sometimes you portage.", "A career is a journey.", "My career is as good as ever."], "a": "A career is like a canoe trip: you plan, you paddle, and sometimes you portage.", "why": "The comparison is developed in several steps, all within one picture."},
+    {"type": "type", "q": "The hotel lobby was as cold ___ a meat locker.", "a": ["as"], "why": "As + adjective + as."},
+    {"type": "type", "q": "He answered the phone as ___ he were expecting bad news.", "a": ["if", "though"], "why": "As if / as though + were: an imagined situation."},
+    {"type": "type", "q": "She ate the soup the ___ you'd eat it in a five-star restaurant.", "a": ["way"], "why": "The way + clause compares manner."},
+    {"type": "type", "q": "The waiting room was quieter ___ a snowy field at midnight.", "a": ["than"], "why": "Comparative + than: a fresh simile."},
+    {"type": "type", "q": "Just as rivers find their way to the sea, ___ gossip finds its way to the staff room.", "a": ["so"], "why": "Epic simile pattern: just as ..., so ..."},
+    {"type": "spot", "q": "The baby slept as peaceful like an old dog by the fire.", "bad": "as peaceful like", "fix": "as peaceful as", "opts": ["as peaceful as", "so peaceful like"], "why": "As + adjective + as."},
+    {"type": "spot", "q": "The house was more empty as a church on Monday.", "bad": "more empty as", "fix": "emptier than", "opts": ["emptier than", "empty than"], "why": "Comparatives take than: emptier than."},
+    {"type": "spot", "q": "He guarded the remote control the way a goalie guards the net.", "bad": "", "why": "Correct! The way + clause: a fresh simile about manner."},
+    {"type": "spot", "q": "The old dog greeted us as if we had been away for a year.", "bad": "", "why": "Correct! As if + past perfect: an imagined situation."},
+    {"type": "order", "a": "She smiled as if nothing had happened", "alt": [], "why": "As if + clause: compares with an imagined situation."},
+    {"type": "order", "a": "The office was quieter than a library on Sunday", "alt": [], "why": "Comparative + than + a fresh, specific picture."},
+    {"type": "order", "a": "He drives the way my grandmother knits", "alt": [], "why": "The way + clause: slowly and carefully, or skilfully, depending on Grandma."}
+  ]
+}

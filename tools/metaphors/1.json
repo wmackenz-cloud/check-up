@@ -47,7 +47,7 @@
      "note": "Don't confuse it with <em>dodge a bullet</em> (escape harm). Learners mix them up because both contain <em>bullet</em>."},
     {"e": "dodge a bullet", "meaning": "narrowly escape something bad", "example": "The firm I almost joined went bankrupt in March. I really <strong>dodged a bullet</strong>.", "tone": "casual",
      "bend": "<em>We dodged a bullet</em>, <em>that was a bullet dodged</em>, <em>dodged a big bullet</em>. Usually past tense, looking back.",
-     "note": "Often said with relief about a lucky escape, even a relationship: <em>you dodged a bullet with him</em>. British speakers also say <em>a narrow escape</em>."},
+     "note": "Often said with relief about a lucky escape, even a relationship: <em>you dodged a bullet with him</em>. A more neutral alternative is <em>a narrow escape</em>."},
     {"e": "close ranks", "meaning": "(of a group) unite to protect one another from criticism", "example": "When the scandal broke, the board <strong>closed ranks</strong> around the CEO.", "tone": "neutral",
      "bend": "<em>Close ranks around</em> or <em>behind</em> someone; any tense. Keep <em>ranks</em> plural and with no article.",
      "note": "In news writing it is often mildly critical: insiders protecting one of their own instead of being open."},
@@ -204,8 +204,8 @@
     {"type": "spot", "q": "I bit the arrow and finally called the tax office.", "bad": "bit the arrow", "fix": "bit the bullet", "opts": ["bit the bullet", "bit the dust"], "why": "Bite the bullet = do something unpleasant. Bite the dust = fail or die."},
     {"type": "spot", "q": "The board shot down every cost-cutting idea we brought to the meeting.", "bad": "", "why": "Correct! Shoot down an idea = reject it quickly."},
     {"type": "spot", "q": "When the coach was criticised, the players closed ranks behind him.", "bad": "", "why": "Correct! Close ranks behind someone = unite to protect them."},
-    {"type": "order", "a": "We finally bit the bullet and sold the cottage.", "alt": [], "why": "Bite the bullet and + verb is a very natural pattern."},
+    {"type": "order", "a": "We finally bit the bullet and sold the cottage.", "alt": ["Finally we bit the bullet and sold the cottage.", "We bit the bullet and finally sold the cottage."], "why": "Bite the bullet and + verb is a very natural pattern."},
     {"type": "order", "a": "Remote work turned out to be a double-edged sword.", "alt": [], "why": "Turned out to be + a double-edged sword. The noun phrase stays together."},
-    {"type": "order", "a": "The two families buried the hatchet after the wedding.", "alt": [], "why": "Subject + buried the hatchet + time phrase."}
+    {"type": "order", "a": "The two families buried the hatchet after the wedding.", "alt": ["After the wedding the two families buried the hatchet."], "why": "Subject + buried the hatchet + time phrase."}
   ]
 }

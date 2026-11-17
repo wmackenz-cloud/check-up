@@ -20,7 +20,7 @@ PRACTICE.add("am-4", {
     {"id": "am-4-16", "type": "spot", "q": "Our old disagreements are all water under the bridge now.", "bad": "", "why": "Correct! Water under the bridge = past problems that no longer matter."},
     {"id": "am-4-17", "type": "spot", "q": "Once we hired a planner, organising the wedding was plain sailing.", "bad": "", "why": "Correct! Plain sailing = easy and without problems."},
     {"id": "am-4-18", "type": "order", "a": "We are just about keeping our heads above water.", "alt": [], "why": "Just about softens it: we are surviving, but only barely."},
-    {"id": "am-4-19", "type": "order", "a": "I felt completely out of my depth at first.", "alt": [], "why": "Feel + completely + out of my depth + time phrase."},
-    {"id": "am-4-20", "type": "order", "a": "Nobody wanted to rock the boat before the election.", "alt": [], "why": "Usually negative: nobody wanted to rock the boat."}
+    {"id": "am-4-19", "type": "order", "a": "I felt completely out of my depth at first.", "alt": ["At first I felt completely out of my depth."], "why": "Feel + completely + out of my depth + time phrase."},
+    {"id": "am-4-20", "type": "order", "a": "Nobody wanted to rock the boat before the election.", "alt": ["Before the election nobody wanted to rock the boat."], "why": "Usually negative: nobody wanted to rock the boat."}
   ]
 });

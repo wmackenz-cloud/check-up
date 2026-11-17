@@ -1,0 +1,207 @@
+{
+  "n": 4,
+  "title": "Like ...: Feelings and Situations",
+  "tagline": "emotions, reactions and everyday predicaments",
+  "why": "Native speakers often describe a feeling or a situation by pointing to a vivid little scene: a deer frozen in the headlights, a bull loose among the teacups. These similes let you say a lot about mood and behaviour in very few words.",
+  "know": [
+    "the frame <strong>like + noun phrase</strong> after verbs such as <em>feel</em>, <em>look</em>, <em>sound</em>, <em>act</em> and <em>it's</em>",
+    "eight common similes for feelings, reactions and frustrating situations"
+  ],
+  "understand": [
+    "why <em>like</em> (not <em>as</em>) introduces these comparisons",
+    "which similes are British, which are North American, and which are shared",
+    "how a <em>like</em> simile differs from a metaphor that makes the same point"
+  ],
+  "able": [
+    "describe your own reactions vividly: delight, panic, relief, restlessness",
+    "complain diplomatically about someone who won't listen or keeps repeating themselves",
+    "recognise when a simile has been shortened into a metaphor or a compound adjective"
+  ],
+  "mistakes": [
+    ["He just stood there like a deer in the lights.", "Like a deer <strong>in the headlights</strong>. The full noun is fixed; British speakers also say <em>like a rabbit in the headlights</em>."],
+    ["My manager repeats himself like a broken disc.", "Like a <strong>broken record</strong>. A literal translation (French <em>disque rayé</em>, Spanish <em>disco rayado</em>) doesn't work in English."],
+    ["Criticism is like water on a duck's back to her.", "Like water <strong>off</strong> a duck's back. The water runs off; the preposition is fixed."],
+    ["He walked into the meeting as a bull in a china shop.", "<strong>Like</strong> a bull in a china shop. <em>As a bull</em> would mean he really is a bull, in that role."],
+    ["I was like a kid in a candy store, like a cat on a hot tin roof and like a deer in the headlights.", "Pick <strong>one</strong> simile. Stacking clichés sounds comic or careless, not vivid."]
+  ],
+  "bigidea": [
+    "The <em>as ... as</em> similes compare one quality (<em>as cold as ice</em>). The <em>like</em> similes in this lesson compare a whole <strong>scene</strong>: a person, an animal or a situation that everyone can picture. When you say a new manager is <strong>like a bull in a china shop</strong>, the listener sees the bull, the fragile plates and the damage, all at once.",
+    "These similes usually follow verbs of perception and behaviour: <em>feel like</em>, <em>look like</em>, <em>sound like</em>, <em>act like</em>, or the frame <em>it's like</em> + a situation (<em>it's like talking to a brick wall</em>). They are mostly casual or humorous, so they suit conversation, emails to colleagues you know, and storytelling more than formal reports.",
+    "Many of them can lose the word <em>like</em> and become metaphors: <em>she's a bull in a china shop</em>, <em>that's a red rag to a bull</em>, <em>a deer-in-the-headlights look</em>. Keeping <em>like</em> sounds slightly softer; dropping it sounds more confident and more judgmental. One trap: the casual quotative <em>she was like, \"No way!\"</em> is not a simile at all."
+  ],
+  "hidden": [
+    "The whole wedding went <strong>like clockwork</strong>.",
+    "After the hike I slept <strong>like a log</strong>.",
+    "The news spread <strong>like wildfire</strong> on social media.",
+    "Her new novel is selling <strong>like hot cakes</strong>.",
+    "A bit of vinegar on the stain worked <strong>like a charm</strong>.",
+    "The jacket fits <strong>like a glove</strong>.",
+    "My teenage son eats <strong>like a horse</strong>."
+  ],
+  "expressions": [
+    {"e": "like a kid in a candy store", "meaning": "delighted and excited, especially by having lots of things to choose from", "example": "Give my dad an afternoon in a hardware store and he's <strong>like a kid in a candy store</strong>.", "tone": "humorous",
+     "bend": "Usually after <em>be</em> or <em>feel</em>: <em>I felt like a kid in a candy store</em>. British version: <em>like a child in a sweet shop</em>.",
+     "note": "Region: <em>candy store</em> is North American, <em>sweet shop</em> British. Almost always used about adults, which is why it's funny. Can also hint at a lack of self-control."},
+    {"e": "like a deer in the headlights", "meaning": "frozen with shock or fear, unable to think or act", "example": "When the reporter asked about the missing funds, the spokesperson looked <strong>like a deer in the headlights</strong>.", "tone": "casual",
+     "bend": "Also <em>like a deer caught in the headlights</em>, and as a compound adjective: <em>a deer-in-the-headlights look</em>.",
+     "note": "Mainly North American. British speakers more often say <em>like a rabbit in the headlights</em>. Not the same as nervous: the key idea is freezing."},
+    {"e": "like a bull in a china shop", "meaning": "clumsy or tactless in a situation that needs care", "example": "He handled the merger talks <strong>like a bull in a china shop</strong> and offended both families.", "tone": "casual",
+     "bend": "Often after <em>act</em>, <em>behave</em>, <em>go in</em>; also as a metaphor: <em>he's a bull in a china shop</em>.",
+     "note": "<em>China</em> here means porcelain dishes, so lower case. It can describe physical clumsiness or, more often at C1 level, social and diplomatic clumsiness."},
+    {"e": "like talking to a brick wall", "meaning": "the other person doesn't listen or respond at all", "example": "I've asked the landlord about the heating five times. It's <strong>like talking to a brick wall</strong>.", "tone": "casual",
+     "bend": "Usually <em>it's like talking to a brick wall</em>; also <em>I might as well be talking to a brick wall</em>.",
+     "note": "Don't confuse with <em>like banging your head against a brick wall</em>, which means making a frustrating effort that achieves nothing."},
+    {"e": "like water off a duck's back", "meaning": "criticism or insults have no effect on someone", "example": "The coach yells a lot, but it's <strong>like water off a duck's back</strong> to the veterans.", "tone": "casual",
+     "bend": "Often <em>it's (just) like water off a duck's back (to him)</em>. Sometimes shortened: <em>water off a duck's back</em>.",
+     "note": "Can be admiring (she's resilient) or critical (he never learns). Ducks' feathers are oily, so water runs off: the preposition is <em>off</em>."},
+    {"e": "like a red rag to a bull", "meaning": "certain to make a particular person very angry", "example": "Mentioning the parking fines at the council meeting was <strong>like a red rag to a bull</strong>.", "tone": "casual",
+     "bend": "Often without <em>like</em>: <em>it's a red rag to a bull</em>. North Americans tend to say <em>like waving a red flag in front of a bull</em>.",
+     "note": "Mainly British. Fun fact: bulls don't react to the colour red; it's the movement of the cape. The idiom doesn't care."},
+    {"e": "like a broken record", "meaning": "saying the same thing again and again, annoyingly", "example": "I know I sound <strong>like a broken record</strong>, but please save your work before you leave.", "tone": "casual",
+     "bend": "Usually <em>sound like a broken record</em>. British speakers also say <em>like a stuck record</em>.",
+     "note": "From vinyl records that skip and repeat. Very common as a polite self-aware apology before repeating a reminder."},
+    {"e": "like a cat on a hot tin roof", "meaning": "nervous, restless and unable to keep still", "example": "Waiting for the biopsy results, she was <strong>like a cat on a hot tin roof</strong> all week.", "tone": "neutral",
+     "bend": "Usually after <em>be</em>; British speakers also say <em>like a cat on hot bricks</em>, the older form.",
+     "note": "Made famous by Tennessee Williams's 1955 play title. Not the same as <em>a deer in the headlights</em>: the cat can't stop moving; the deer can't move."}
+  ],
+  "culture": [
+    {"kind": "Literature", "work": "Cat on a Hot Tin Roof", "by": "Tennessee Williams", "year": "1955",
+     "how": "In this Pulitzer Prize-winning play set on a Mississippi plantation, Maggie describes her own state with the title image: anxious, unwanted by her husband Brick, but refusing to jump off. The simile captures a feeling of nervous endurance rather than panic.",
+     "ask": "When have you felt like a cat on a hot tin roof but decided to stay where you were?",
+     "find": "Tennessee Williams Cat on a Hot Tin Roof Maggie meaning of title"},
+    {"kind": "Literature", "work": "Wuthering Heights", "by": "Emily Brontë", "year": "1847",
+     "how": "Catherine explains her two loves to the housekeeper Nelly with two similes. Her love for the gentle Edgar Linton is like the leaves in a wood, which time will change; her love for Heathcliff is like the permanent rock underneath, not pleasant, but necessary. The contrast says more than any adjective could.",
+     "ask": "Catherine compares love to leaves and to rock. What would you compare a lasting friendship to?",
+     "find": "Wuthering Heights Catherine love foliage rocks speech chapter 9"},
+    {"kind": "Literature", "work": "Romeo and Juliet", "by": "William Shakespeare", "year": "c. 1595",
+     "how": "In the balcony scene, Romeo calls Juliet the sun: that's a metaphor, she <em>is</em> the sun. Juliet, more cautious, uses a simile: she says her love is as deep and limitless as the sea, and the more she gives, the more she has. Compare how bold the metaphor feels next to the simile.",
+     "ask": "Which sounds more convincing to you, the metaphor or the simile? Why?",
+     "find": "Romeo and Juliet balcony scene Juliet bounty as boundless as the sea"},
+    {"kind": "Music", "work": "Bird on the Wire", "by": "Leonard Cohen", "year": "1969",
+     "how": "The Montreal-born songwriter wrote it on the Greek island of Hydra. He compares himself to a bird perched on a wire and to other unsettled figures, and confesses that he has tried, in his own way, to be free. The song works as both an apology and a self-portrait.",
+     "ask": "What image would you choose to describe yourself at a restless time in your life?",
+     "find": "Leonard Cohen Bird on the Wire"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "like a kid in a candy store", "r": "thrilled by lots of choice", "why": "Picture a child surrounded by sweets. British: like a child in a sweet shop."},
+      {"l": "like a deer in the headlights", "r": "frozen with shock", "why": "A deer on a road at night often freezes instead of running."},
+      {"l": "like a bull in a china shop", "r": "clumsy or tactless where care is needed", "why": "A bull among fragile porcelain breaks everything."},
+      {"l": "like talking to a brick wall", "r": "the other person won't listen", "why": "A wall never answers."},
+      {"l": "like water off a duck's back", "r": "criticism has no effect", "why": "Water runs off a duck's oily feathers."},
+      {"l": "like a red rag to a bull", "r": "sure to provoke anger", "why": "The image of a matador waving a cape. Mainly British."},
+      {"l": "like a broken record", "r": "repeating the same thing", "why": "A damaged vinyl record plays the same bit again and again."},
+      {"l": "like a cat on a hot tin roof", "r": "nervous and unable to keep still", "why": "The cat keeps lifting its paws. Made famous by Tennessee Williams."}
+    ],
+    "sort": {
+      "h": "Sort the similes: do they describe <strong>how someone feels</strong>, <strong>how someone behaves</strong>, or <strong>how two things compare</strong>?",
+      "cols": ["How someone feels", "How someone behaves", "How two things compare"],
+      "items": [
+        {"w": "like a weight off my shoulders", "c": 0, "why": "A feeling of relief when a worry disappears."},
+        {"w": "like a kid in a candy store", "c": 0, "why": "A feeling of delight and excitement."},
+        {"w": "feel like a million dollars", "c": 0, "why": "Feel wonderful, healthy and confident."},
+        {"w": "like death warmed up", "c": 0, "why": "Feel or look very ill. North Americans also say death warmed over."},
+        {"w": "like a bull in a china shop", "c": 1, "why": "Behaving clumsily or tactlessly."},
+        {"w": "like a broken record", "c": 1, "why": "Behaving repetitively: saying the same thing again and again."},
+        {"w": "like a dog with a bone", "c": 1, "why": "Behaving persistently: refusing to drop a subject."},
+        {"w": "like a headless chicken", "c": 1, "why": "Rushing around in panic without a plan."},
+        {"w": "like two peas in a pod", "c": 2, "why": "Two people or things that are almost identical."},
+        {"w": "like night and day", "c": 2, "why": "Two things that are completely different."},
+        {"w": "like chalk and cheese", "c": 2, "why": "British: two people who are completely different."},
+        {"w": "like oil and water", "c": 2, "why": "Two people or things that don't mix or get along."}
+      ]
+    },
+    "pick": [
+      {"q": "My aunt spent four hours at the garden centre, wandering around ___.", "opts": ["like a kid in a candy store", "like a broken record", "like a red rag to a bull"], "a": 0, "why": "Delighted by lots of choice = like a kid in a candy store."},
+      {"q": "When the examiner asked his first question, Raj went completely blank and stood there ___.", "opts": ["like a cat on a hot tin roof", "like a deer in the headlights", "like water off a duck's back"], "a": 1, "why": "Frozen and unable to act = like a deer in the headlights. A cat on a hot tin roof can't stop moving."},
+      {"q": "The new director came in ___ and cancelled three popular programmes in her first week.", "opts": ["like a bull in a china shop", "like a kid in a candy store", "like talking to a brick wall"], "a": 0, "why": "Tactless where care was needed = like a bull in a china shop."},
+      {"q": "I've explained the budget limits to him a dozen times. It's ___.", "opts": ["like a weight off my shoulders", "like talking to a brick wall", "like two peas in a pod"], "a": 1, "why": "He doesn't listen or respond = like talking to a brick wall."},
+      {"q": "The online trolls don't bother her at all. Their comments are ___.", "opts": ["like a red rag to a bull", "like water off a duck's back", "like a broken record"], "a": 1, "why": "Criticism with no effect = like water off a duck's back."},
+      {"q": "Don't mention the referee to my brother. After last night's game, it's ___.", "opts": ["like a red rag to a bull", "like water off a duck's back", "like night and day"], "a": 0, "why": "Certain to make him angry = like a red rag to a bull."},
+      {"q": "Sorry to sound ___, but the forms really are due on Friday.", "opts": ["like a deer in the headlights", "like a broken record", "like a dog with a bone"], "a": 1, "why": "Apologising for repeating yourself = sound like a broken record."},
+      {"q": "Before his daughter's wedding speech, my neighbour paced the hall ___.", "opts": ["like a cat on a hot tin roof", "like water off a duck's back", "like a deer in the headlights"], "a": 0, "why": "Nervous and unable to keep still = like a cat on a hot tin roof."}
+    ],
+    "spot": [
+      {"q": "In the interview she looked like a deer in the lights when they asked about her gap year.", "bad": "a deer in the lights", "fix": "a deer in the headlights", "opts": ["a deer in the headlights", "a deer in the spotlight"], "why": "The fixed phrase is like a deer in the headlights: frozen with shock."},
+      {"q": "His insults are like water on a duck's back to me now.", "bad": "water on a duck's back", "fix": "water off a duck's back", "opts": ["water off a duck's back", "water under the bridge"], "why": "The water runs off the duck: like water off a duck's back."},
+      {"q": "My father is like a broken disc about turning off the lights.", "bad": "a broken disc", "fix": "a broken record", "opts": ["a broken record", "a broken clock"], "why": "English uses record, not disc: like a broken record."},
+      {"q": "The intern charged into the client meeting like a cow in a china shop.", "bad": "a cow in a china shop", "fix": "a bull in a china shop", "opts": ["a bull in a china shop", "a bull in a glass house"], "why": "The animal is fixed: like a bull in a china shop."},
+      {"q": "Asking him for a straight answer is like talking to a stone wall.", "bad": "talking to a stone wall", "fix": "talking to a brick wall", "opts": ["talking to a brick wall", "talking to a closed door"], "why": "The usual noun is brick: it's like talking to a brick wall."}
+    ],
+    "type": [
+      {"q": "At the antiques fair, my partner was like a kid in a candy ___.", "a": ["store", "shop"], "why": "Like a kid in a candy store (North American). British: like a child in a sweet shop."},
+      {"q": "The minister froze like a deer in the ___ when the microphone was switched on.", "a": ["headlights", "headlight"], "why": "Like a deer in the headlights: frozen with shock."},
+      {"q": "He's lovely, but in a negotiation he's like a bull in a china ___.", "a": ["shop"], "why": "Like a bull in a china shop: clumsy where care is needed."},
+      {"q": "Telling my teenager to tidy his room is like talking to a brick ___.", "a": ["wall"], "why": "Like talking to a brick wall: no one is listening."},
+      {"q": "Any mention of tax increases is like a red rag to a ___ for him.", "a": ["bull"], "why": "Like a red rag to a bull: sure to provoke anger. Mainly British."},
+      {"q": "Waiting for the adoption call, they were like a cat on a hot tin ___.", "a": ["roof"], "why": "Like a cat on a hot tin roof: nervous and restless. Older British form: on hot bricks."}
+    ],
+    "bend": [
+      {"q": "A team leader apologises before repeating a safety rule. Which version sounds natural? ___", "opts": ["I know I sound like a broken record, but wear your helmets.", "I know I sound as a broken record, but wear your helmets.", "I know I sound like a broken disc, but wear your helmets."], "a": 0, "why": "Sound like + noun phrase. As + noun would mean being a record; disc is a translation error."},
+      {"q": "A British colleague drops the word like. Which version sounds natural? ___", "opts": ["Late invoices are a red rag at a bull for her.", "Late invoices are a red rag to a bull for her.", "Late invoices are red rags to bulls for her."], "a": 1, "why": "Like is often dropped: it's a red rag to a bull. The preposition to and the singular are fixed."},
+      {"q": "A political commentator turns the simile into an adjective. Which version sounds natural? ___", "opts": ["The candidate had a deer-of-the-headlights look.", "The candidate had a headlights-deer look.", "The candidate had a deer-in-the-headlights look."], "a": 2, "why": "The whole phrase becomes a hyphenated adjective: a deer-in-the-headlights look."},
+      {"q": "Someone adds an intensifier while telling a story about a bookshop. Which version sounds natural? ___", "opts": ["I was just like a kid in a candy store.", "I was like just kid in candy store.", "I was as just a kid in a candy store."], "a": 0, "why": "Just or really can go before like; the articles stay: just like a kid in a candy store."}
+    ],
+    "talk": [
+      "In <em>Wuthering Heights</em>, Catherine compares one love to leaves and another to rock. Choose two people or places in your life and compare them with two contrasting similes.",
+      "Tell a story about a time you felt <strong>like a deer in the headlights</strong> and another time you felt <strong>like a cat on a hot tin roof</strong>. What was the difference?",
+      "Role-play: you are a manager. One team member keeps ignoring your instructions. Complain to a trusted colleague using at least three similes from this lesson, then decide what to do.",
+      "Is it a good thing when criticism is <strong>like water off a duck's back</strong> for someone? When is it a strength, and when is it a weakness?",
+      "Romeo uses a metaphor and Juliet uses a simile. Change three similes from this lesson into metaphors. Do they sound stronger, ruder, or just different?"
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "like two peas in a pod", "r": "almost identical", "why": "Peas in the same pod look exactly alike."},
+      {"l": "like a weight off my shoulders", "r": "a great feeling of relief", "why": "Often: it's like a weight has been lifted off my shoulders."},
+      {"l": "like a dog with a bone", "r": "refusing to let a subject drop", "why": "A dog won't give up its bone. Can be admiring or annoyed."},
+      {"l": "like night and day", "r": "completely different", "why": "Often: the difference is like night and day."},
+      {"l": "like a headless chicken", "r": "rushing around in panic", "why": "Usually run around like a headless chicken. North Americans also say like a chicken with its head cut off."},
+      {"l": "like oil and water", "r": "unable to mix or get along", "why": "Oil and water separate however hard you stir."}
+    ],
+    "pick": [
+      {"q": "The twins dress differently now, but at age six they were ___.", "opts": ["like two peas in a pod", "like night and day", "like oil and water"], "a": 0, "why": "Almost identical = like two peas in a pod."},
+      {"q": "When the mortgage was finally approved, it was ___.", "opts": ["like a weight off my shoulders", "like talking to a brick wall", "like a dog with a bone"], "a": 0, "why": "A feeling of relief = like a weight off my shoulders."},
+      {"q": "Once the journalist found the first contradiction in his story, she was ___.", "opts": ["like water off a duck's back", "like a dog with a bone", "like a kid in a candy store"], "a": 1, "why": "Refusing to drop a subject = like a dog with a bone."},
+      {"q": "The old software and the new one? The difference is ___.", "opts": ["like two peas in a pod", "like night and day", "like a broken record"], "a": 1, "why": "Completely different = like night and day."},
+      {"q": "With no plan for the power outage, the staff ran around ___.", "opts": ["like a headless chicken", "like a cat on a hot tin roof", "like a deer in the headlights"], "a": 0, "why": "Rushing around in panic without a plan = like a headless chicken."},
+      {"q": "My two business partners are ___; every meeting ends in an argument.", "opts": ["like two peas in a pod", "like oil and water", "like a weight off my shoulders"], "a": 1, "why": "They don't mix or get along = like oil and water."}
+    ],
+    "spot": [
+      {"q": "The sisters are like two beans in a pod; they even finish each other's sentences.", "bad": "two beans in a pod", "fix": "two peas in a pod", "opts": ["two peas in a pod", "two birds of a feather"], "why": "The fixed noun is peas: like two peas in a pod."},
+      {"q": "Handing in my thesis felt like a weight off my back.", "bad": "a weight off my back", "fix": "a weight off my shoulders", "opts": ["a weight off my shoulders", "a load on my mind"], "why": "The usual phrase is a weight off my shoulders (or off my mind)."},
+      {"q": "Once she has a theory, she's like a cat with a bone and won't drop it.", "bad": "a cat with a bone", "fix": "a dog with a bone", "opts": ["a dog with a bone", "a dog with fleas"], "why": "It's a dog that won't let go: like a dog with a bone."},
+      {"q": "Our old house and the new condo are like day and dark.", "bad": "like day and dark", "fix": "like night and day", "opts": ["like night and day", "like chalk and water"], "why": "The pair is fixed: like night and day (also like day and night)."}
+    ],
+    "type": [
+      {"q": "My son and his best friend are like two peas in a ___.", "a": ["pod"], "why": "Like two peas in a pod: almost identical."},
+      {"q": "When the scan came back clear, it was like a weight off my ___.", "a": ["shoulders", "mind"], "why": "A weight off my shoulders, or a weight off my mind: relief."},
+      {"q": "That lawyer is like a dog with a ___; she never lets a point go.", "a": ["bone"], "why": "Like a dog with a bone: persistent, refusing to drop it."},
+      {"q": "Her cooking before and after culinary school is like night and ___.", "a": ["day"], "why": "Like night and day: completely different."},
+      {"q": "The organisers ran around like headless ___ when the speaker didn't show up.", "a": ["chickens", "chicken"], "why": "Like headless chickens: panicking without a plan."},
+      {"q": "Politics and family dinners mix like oil and ___.", "a": ["water"], "why": "Like oil and water: things that don't mix."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "Put my mother in a fabric shop and she's ___ for hours.", "opts": ["like a kid in a candy store", "like a deer in the headlights", "like oil and water"], "a": "like a kid in a candy store", "why": "Delighted by so much choice = like a kid in a candy store."},
+    {"type": "pick", "q": "Asked to explain the error on live TV, the CEO looked ___.", "opts": ["like a deer in the headlights", "like two peas in a pod", "like a weight off my shoulders"], "a": "like a deer in the headlights", "why": "Frozen with shock = like a deer in the headlights."},
+    {"type": "pick", "q": "He went into the grief support group ___, telling everyone to cheer up.", "opts": ["like a bull in a china shop", "like a dog with a bone", "like water off a duck's back"], "a": "like a bull in a china shop", "why": "Tactless in a sensitive situation = like a bull in a china shop."},
+    {"type": "pick", "q": "Explaining the new password rules to my father is ___.", "opts": ["like talking to a brick wall", "like a red rag to a bull", "like two peas in a pod"], "a": "like talking to a brick wall", "why": "He doesn't listen = like talking to a brick wall."},
+    {"type": "pick", "q": "Bad reviews are ___ to that director; he never reads them.", "opts": ["like water off a duck's back", "like a broken record", "like night and day"], "a": "like water off a duck's back", "why": "No effect on him = like water off a duck's back."},
+    {"type": "pick", "q": "Calling the union leader 'difficult' in public was ___.", "opts": ["like a red rag to a bull", "like a weight off my shoulders", "like a kid in a candy store"], "a": "like a red rag to a bull", "why": "Certain to make him angry = like a red rag to a bull."},
+    {"type": "pick", "q": "Our coach is ___ about stretching before every practice.", "opts": ["like a broken record", "like a deer in the headlights", "like oil and water"], "a": "like a broken record", "why": "Repeating the same message = like a broken record."},
+    {"type": "pick", "q": "The night before the verdict, the defendant's mother was ___.", "opts": ["like a cat on a hot tin roof", "like two peas in a pod", "like water off a duck's back"], "a": "like a cat on a hot tin roof", "why": "Nervous and restless = like a cat on a hot tin roof."},
+    {"type": "type", "q": "My dad and my uncle are like two ___ in a pod.", "a": ["peas"], "why": "Like two peas in a pod: almost identical."},
+    {"type": "type", "q": "I'm sorry to sound like a broken ___, but the deadline is real.", "a": ["record"], "why": "Like a broken record: repeating yourself. British also: a stuck record."},
+    {"type": "type", "q": "Her complaints run off him like water off a duck's ___.", "a": ["back"], "why": "Like water off a duck's back: no effect."},
+    {"type": "type", "q": "Paying off the student loan was like a ___ off my shoulders.", "a": ["weight"], "why": "Like a weight off my shoulders: relief."},
+    {"type": "type", "q": "The before-and-after photos of the kitchen are like night and ___.", "a": ["day"], "why": "Like night and day: completely different."},
+    {"type": "spot", "q": "The new recruit stared at the screen like a deer in the lamps.", "bad": "in the lamps", "fix": "in the headlights", "opts": ["in the headlights", "in the spotlight"], "why": "The fixed phrase is like a deer in the headlights."},
+    {"type": "spot", "q": "Reminding her about the deadline is like a red cloth to a bull.", "bad": "a red cloth to a bull", "fix": "a red rag to a bull", "opts": ["a red rag to a bull", "a red flag to a cow"], "why": "The fixed noun is rag: like a red rag to a bull."},
+    {"type": "spot", "q": "After the audit, the accountant was like a dog with a bone about every receipt.", "bad": "", "why": "Correct! Like a dog with a bone = refusing to let a subject go."},
+    {"type": "spot", "q": "My grandson was like a kid in a candy store at the science museum.", "bad": "", "why": "Correct! Like a kid in a candy store = thrilled by everything around him."},
+    {"type": "order", "a": "It is like talking to a brick wall", "alt": [], "why": "It is like + -ing situation: the classic frame for this complaint."},
+    {"type": "order", "a": "She looked like a deer in the headlights", "alt": [], "why": "Look like + noun phrase describes how someone appears."},
+    {"type": "order", "a": "I know I sound like a broken record", "alt": [], "why": "A polite, self-aware opener before repeating a reminder."}
+  ]
+}

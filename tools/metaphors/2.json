@@ -180,7 +180,7 @@
       {"q": "Let me make one thing crystal ___: no phones at the dinner table.", "a": ["clear"], "why": "Crystal clear: perfectly understandable, often as a firm warning."},
       {"q": "It took a heart attack for him to finally see the ___ about his diet.", "a": ["light"], "why": "See the light: finally understand or accept the truth."},
       {"q": "I had no idea of the answer; it was a shot in the ___.", "a": ["dark"], "why": "A shot in the dark: a pure guess."},
-      {"q": "Try to look at it from a different ___ before you decide.", "a": ["angle", "perspective"], "why": "From a different angle or perspective: another point of view."},
+      {"q": "Try to look at it from a different ___ before you decide.", "a": ["angle", "perspective", "viewpoint", "standpoint"], "why": "From a different angle or perspective: another point of view."},
       {"q": "I can still see the old farmhouse in my mind's ___.", "a": ["eye"], "why": "In my mind's eye: in my memory or imagination."},
       {"q": "I see where you're ___ from, but I can't agree.", "a": ["coming"], "why": "I see where you're coming from: I understand your reasons."}
     ]
@@ -205,6 +205,6 @@
     {"type": "spot", "q": "We don't see eye to eye on politics, but we're still close friends.", "bad": "", "why": "Correct! The negative form is the most natural use."},
     {"type": "order", "a": "The new evidence sheds light on the crash.", "alt": [], "why": "Subject + sheds light on + the thing explained."},
     {"type": "order", "a": "My parents never saw eye to eye about money.", "alt": [], "why": "Never + saw eye to eye + about/on: long-term disagreement."},
-    {"type": "order", "a": "The staff were kept in the dark for weeks.", "alt": [], "why": "Passive keep someone in the dark: were kept in the dark."}
+    {"type": "order", "a": "The staff were kept in the dark for weeks.", "alt": ["For weeks the staff were kept in the dark."], "why": "Passive keep someone in the dark: were kept in the dark."}
   ]
 }

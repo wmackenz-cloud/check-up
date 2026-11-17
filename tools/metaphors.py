@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Build Advanced English > Metaphors from tools/metaphors/<n>.json (see tools/metaphors/SPEC.md).
+"""Build Advanced English (Metaphors and Similes) from tools/<section>/<n>.json (see tools/metaphors/SPEC.md, tools/similes/SPEC.md).
 
 Writes, for each unit n:
-  advanced/metaphors/unit-<n>.html      the unit worksheet (data-item metaphor-<n>)
-  advanced/metaphors/homework-<n>.html  the homework drill (data-item metaphor-h<n>)
-  practice/bank/am-<n>.js               20 review questions for the Practice bank
-and the section pages advanced/index.html (Advanced English) and advanced/metaphors/index.html.
+  advanced/<section>/unit-<n>.html      the unit worksheet (data-item metaphor-<n> / simile-<n>)
+  advanced/<section>/homework-<n>.html  the homework drill (data-item metaphor-h<n> / simile-h<n>)
+  practice/bank/am-<n>.js / as-<n>.js   20 review questions for the Practice bank
+and the section pages advanced/index.html (Advanced English) and advanced/<section>/index.html.
 Run from the repo root: python3 tools/metaphors.py   (add --check to only validate)
 """
 import glob, json, os, re, sys, urllib.parse
@@ -15,7 +15,16 @@ import tenses as TN  # shared pieces: HEAD, TAIL, game lists
 
 ROOT = TN.ROOT
 A, T = TN.A, TN.T
-OUT = os.path.join(ROOT, "advanced", "metaphors")
+SECTIONS = [
+    {"key": "metaphors", "name": "Metaphors", "item": "metaphor", "pid": "am",
+     "lead": ("Twelve units for very advanced (C1/C2) students. Each unit is built on one big image (argument is war, understanding is seeing, time is money...), "
+              "so students learn how metaphors work as a system, not just a list. Each has expression cards, examples from literature, poetry and music, "
+              "seven interactive exercises with an answer key, and a separate homework drill.")},
+    {"key": "similes", "name": "Similes", "item": "simile", "pid": "as",
+     "lead": ("Six units for very advanced (C1/C2) students: fixed similes with as ... as and like, ironic and humorous similes, and how to make fresh similes of your own. "
+              "Each has expression cards, examples from literature, poetry and music, seven interactive exercises with an answer key, and a separate homework drill.")},
+]
+SEC = SECTIONS[0]
 
 # The pages sit two folders down, so the shared files are ../../
 HEAD = TN.HEAD.replace('href="../', 'href="../../')
@@ -158,7 +167,7 @@ def answers(rows):
 
 def unit(d):
     n, ws = d["n"], d["ws"]
-    body = head(d["title"], "metaphor-%d" % n, "Advanced English &middot; Metaphors &middot; " + T(d["tagline"]), d["title"])
+    body = head(d["title"], "%s-%d" % (SEC["item"], n), "Advanced English &middot; %s &middot; " % SEC["name"] + T(d["tagline"]), d["title"])
     body += aims(d) + mistakes(d)
     body += '<h2>The big idea</h2>\n<div class="big-idea">\n%s\n<p><strong>You already use it:</strong></p>\n<ul class="hidden-list">%s</ul>\n</div>\n' % (
         "\n".join("<p>%s</p>" % p for p in d["bigidea"]), lis(d["hidden"]))
@@ -180,7 +189,7 @@ def unit(d):
 
 def homework(d):
     n, hw = d["n"], d["hw"]
-    body = head("Homework: " + d["title"], "metaphor-h%d" % n, "Homework &middot; Advanced English &middot; Metaphors", "Homework: " + d["title"])
+    body = head("Homework: " + d["title"], "%s-h%d" % (SEC["item"], n), "Homework &middot; Advanced English &middot; " + SEC["name"], "Homework: " + d["title"])
     body += '<section class="aims" aria-labelledby="rem-h">\n<h2 id="rem-h">Quick reminder</h2>\n%s\n<ul>%s</ul>\n</section>\n' % (
         "<p>%s</p>" % d["bigidea"][0], "".join("<li><strong>%s</strong>: %s</li>" % (T(x["e"]), T(x["meaning"])) for x in d["expressions"]))
     body += mistakes(d, 3, "Watch out for")
@@ -199,11 +208,11 @@ def bank(d):
     n = d["n"]
     items = []
     for i, x in enumerate(d["bank"]):
-        o = {"id": "am-%d-%02d" % (n, i + 1)}
+        o = {"id": "%s-%d-%02d" % (SEC["pid"], n, i + 1)}
         o.update(x)
         items.append("    " + json.dumps(o, ensure_ascii=False))
-    return 'PRACTICE.add("am-%d", {\n  title: %s,\n  page: "advanced/metaphors/unit-%d.html",\n  items: [\n%s\n  ]\n});\n' % (
-        n, json.dumps("Metaphors: " + d["title"]), n, ",\n".join(items))
+    return 'PRACTICE.add("%s-%d", {\n  title: %s,\n  page: "advanced/%s/unit-%d.html",\n  items: [\n%s\n  ]\n});\n' % (
+        SEC["pid"], n, json.dumps(SEC["name"] + ": " + d["title"]), SEC["key"], n, ",\n".join(items))
 
 def check(d):
     errs = []
@@ -229,9 +238,7 @@ def check(d):
     if "—" in json.dumps(d, ensure_ascii=False): errs.append("em dash")
     return errs
 
-def index_pages(units):
-    nav = '<script src="../teacher-nav.js?v=1794900000"></script>'
-    css = '<link rel="stylesheet" href="../grammar-traps/traps.css?v=1795100000">'
+def index_pages(built):
     page = lambda title, crumbs, lead, main, up="../": ("""<!doctype html>
 <html lang="en">
 <head>
@@ -268,7 +275,7 @@ document.querySelectorAll("[data-copy]").forEach(function (b) {
 </body>
 </html>
 """ % (title, up, up, up, crumbs, title, lead, main))
-    def rows(prefix):
+    def rows(units, prefix):
         return "\n".join("""  <li class="lesson">
     <span class="num">%d</span>
     <div class="info"><strong>%s</strong><div class="hint">%s</div></div>
@@ -279,36 +286,43 @@ document.querySelectorAll("[data-copy]").forEach(function (b) {
       <button type="button" class="ghost" data-copy="%shomework-%d.html">Copy homework link</button>
     </div>
   </li>""" % (d["n"], T(d["title"]), T(d["tagline"]), prefix, d["n"], prefix, d["n"], prefix, d["n"], prefix, d["n"]) for d in units)
-    lead_m = ("Twelve units for very advanced (C1/C2) students. Each unit is built on one big image (argument is war, understanding is seeing, time is money...), "
-              "so students learn how metaphors work as a system, not just a list. Each has expression cards, examples from literature, poetry and music, "
-              "seven interactive exercises with an answer key, and a separate homework drill.")
+    groups = ""
+    for sec, units in built:
+        groups += '<h2 class="group-h" id="%s">%s</h2>\n<p class="hint" style="max-width:820px;margin:0 auto 10px">%s <a href="%s/index.html">Open %s on its own page</a>.</p>\n<ol class="lessons">\n%s\n</ol>\n' % (
+            sec["key"], sec["name"], sec["lead"], sec["key"], sec["name"], rows(units, sec["key"] + "/"))
+        sub = page(sec["name"], '<li><a href="../../library.html">Teacher library</a></li><li><a href="../index.html">Advanced English</a></li><li><span aria-current="page">%s</span></li>' % sec["name"],
+                   sec["lead"], '<ol class="lessons">\n%s\n</ol>' % rows(units, ""), up="../../")
+        open(os.path.join(ROOT, "advanced", sec["key"], "index.html"), "w", encoding="utf-8").write(sub)
     adv = page("Advanced English", '<li><a href="../library.html">Teacher library</a></li><li><span aria-current="page">Advanced English</span></li>',
-               "Lessons for very advanced (C1/C2) students who already speak well and want to sound natural, precise and expressive.",
-               '<h2 class="group-h">Metaphors</h2>\n<p class="hint" style="max-width:820px;margin:0 auto 10px">%s</p>\n<ol class="lessons">\n%s\n</ol>' % (lead_m, rows("metaphors/")))
-    met = page("Metaphors", '<li><a href="../../library.html">Teacher library</a></li><li><a href="../index.html">Advanced English</a></li><li><span aria-current="page">Metaphors</span></li>',
-               lead_m, '<ol class="lessons">\n%s\n</ol>' % rows(""), up="../../")
+               "Lessons for very advanced (C1/C2) students who already speak well and want to sound natural, precise and expressive. "
+               + " &middot; ".join('<a href="#%s">%s</a>' % (sec["key"], sec["name"]) for sec, _ in built), groups)
     open(os.path.join(ROOT, "advanced", "index.html"), "w", encoding="utf-8").write(adv)
-    open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(met)
 
 def main():
+    global SEC
     only_check = "--check" in sys.argv
-    os.makedirs(OUT, exist_ok=True)
-    files = sorted(glob.glob(os.path.join(ROOT, "tools", "metaphors", "*.json")), key=lambda p: int(os.path.basename(p)[:-5]))
-    units, bad = [], False
-    for f in files:
-        d = json.load(open(f, encoding="utf-8"))
-        errs = check(d)
-        if errs:
-            bad = True; print(os.path.basename(f), errs); continue
-        units.append(d)
-        if only_check: continue
-        n = d["n"]
-        open(os.path.join(OUT, "unit-%d.html" % n), "w", encoding="utf-8").write(unit(d))
-        open(os.path.join(OUT, "homework-%d.html" % n), "w", encoding="utf-8").write(homework(d))
-        open(os.path.join(ROOT, "practice", "bank", "am-%d.js" % n), "w", encoding="utf-8").write(bank(d))
+    built, bad, total = [], False, 0
+    for sec in SECTIONS:
+        SEC = sec
+        out = os.path.join(ROOT, "advanced", sec["key"])
+        os.makedirs(out, exist_ok=True)
+        files = sorted(glob.glob(os.path.join(ROOT, "tools", sec["key"], "*.json")), key=lambda p: int(os.path.basename(p)[:-5]))
+        units = []
+        for f in files:
+            d = json.load(open(f, encoding="utf-8"))
+            errs = check(d)
+            if errs:
+                bad = True; print(sec["key"], os.path.basename(f), errs); continue
+            units.append(d)
+            if only_check: continue
+            n = d["n"]
+            open(os.path.join(out, "unit-%d.html" % n), "w", encoding="utf-8").write(unit(d))
+            open(os.path.join(out, "homework-%d.html" % n), "w", encoding="utf-8").write(homework(d))
+            open(os.path.join(ROOT, "practice", "bank", "%s-%d.js" % (sec["pid"], n)), "w", encoding="utf-8").write(bank(d))
+        built.append((sec, units)); total += len(files)
     if not only_check and not bad:
-        index_pages(units)
-    print("built" if not only_check else "checked", len(files), "units", "WITH ERRORS" if bad else "")
+        index_pages(built)
+    print("built" if not only_check else "checked", total, "units", "WITH ERRORS" if bad else "")
 
 if __name__ == "__main__":
     main()

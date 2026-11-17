@@ -126,16 +126,16 @@
       {"q": "Grandad is ___ with a cold, so we've postponed our visit until next weekend.", "opts": ["under the weather", "a storm in a teacup", "breaking the ice"], "a": 0, "why": "Under the weather: mildly ill, perfect for a cold."}
     ],
     "spot": [
-      {"q": "After two years apart, the reunion was awkward until Dad cracked the ice with a terrible joke.", "bad": "cracked the ice", "fix": "broke the ice", "opts": ["broke the ice", "melted the ice"], "why": "The idiom is fixed: break the ice. Cracked and melted are not used."},
+      {"q": "After two years apart, the reunion was awkward until Dad cracked the ice with a terrible joke.", "bad": "cracked the ice", "fix": "broke the ice", "opts": ["broke the ice", "smashed the ice"], "why": "The idiom is fixed: break the ice. Cracked and smashed are not used."},
       {"q": "She had cold toes about moving to Calgary and nearly turned down the job.", "bad": "cold toes", "fix": "cold feet", "opts": ["cold feet", "cold legs"], "why": "Always cold feet: had cold feet or got cold feet about something."},
       {"q": "Honestly, the argument over the seating plan is a storm in a coffee cup; let it go.", "bad": "a storm in a coffee cup", "fix": "a storm in a teacup", "opts": ["a storm in a teacup", "a tempest in a coffee cup"], "why": "British and Canadian English: a storm in a teacup. The container is fixed."},
       {"q": "My colleague stole my lightning by sharing the sales figures before my presentation.", "bad": "stole my lightning", "fix": "stole my thunder", "opts": ["stole my thunder", "stole my storm"], "why": "Steal someone's thunder comes from a theatre sound effect: thunder, never lightning."},
       {"q": "I'm feeling under the climate today, so I'll work from home.", "bad": "under the climate", "fix": "under the weather", "opts": ["under the weather", "below the weather"], "why": "The fixed phrase is under the weather: slightly ill."}
     ],
     "type": [
-      {"q": "Both negotiators kept ___ heads while protesters shouted outside the building.", "a": ["cool", "calm", "level"], "why": "Keep a cool head: stay calm under pressure. Cool means controlled here."},
-      {"q": "The debate on immigration grew so ___ that the moderator called a short break.", "a": ["heated", "stormy"], "why": "A heated debate is angry and emotional; heat stands for anger."},
-      {"q": "Thanks for the invitation; I'll take a rain ___ and call you next week.", "a": ["check", "cheque"], "why": "Take a rain check: decline for now. Rain cheque is a Canadian/British spelling also seen."},
+      {"q": "Both negotiators kept ___ heads while protesters shouted outside the building.", "a": ["cool", "calm", "level", "clear"], "why": "Keep a cool head: stay calm under pressure. Cool means controlled here."},
+      {"q": "The debate on immigration grew so ___ that the moderator called a short break.", "a": ["heated", "stormy", "hot", "tense", "angry", "fierce", "bitter", "hostile"], "why": "A heated debate is angry and emotional; heat stands for anger."},
+      {"q": "Thanks for the invitation; I'll take a rain ___ and call you next week.", "a": ["check", "cheque"], "why": "Take a rain check: decline for now. Rain cheque is a Canadian spelling also seen."},
       {"q": "Don't relax yet; this quiet week is just the calm before the ___.", "a": ["storm"], "why": "The calm before the storm: quiet before a busy or difficult time."},
       {"q": "Lena couldn't decide whether to marry Tom, and her family worried she was getting cold ___.", "a": ["feet"], "why": "Get cold feet: become nervous about a commitment, especially a wedding."},
       {"q": "Our team leader asked everyone to share a holiday photo to break the ___ on the first video call.", "a": ["ice"], "why": "Break the ice: ease tension when people first meet."}
@@ -182,7 +182,7 @@
       {"q": "He gave his ex the cold ___ at the reunion and spoke only to her friends.", "a": ["shoulder"], "why": "Give someone the cold shoulder: deliberately ignore them."},
       {"q": "Mum has been a bit under the ___ since her long flight home.", "a": ["weather"], "why": "Under the weather: slightly unwell."},
       {"q": "I really wanted to announce the news myself, but she stole my ___.", "a": ["thunder"], "why": "Steal someone's thunder: take their moment of attention."},
-      {"q": "Volunteers at the airport gave the arriving families a ___ welcome with signs and flowers.", "a": ["warm", "hearty", "heartfelt"], "why": "A warm welcome: warmth means friendliness."},
+      {"q": "Volunteers at the airport gave the arriving families a ___ welcome with signs and flowers.", "a": ["warm", "hearty", "heartfelt", "friendly", "big", "rousing", "great", "lovely"], "why": "A warm welcome: warmth means friendliness."},
       {"q": "Every group project needs one ___-headed person who stays calm when deadlines slip.", "a": ["cool", "level", "clear"], "why": "Cool-headed, level-headed and clear-headed all mean calm and sensible."}
     ]
   },
@@ -204,7 +204,7 @@
     {"type": "spot", "q": "The town hall meeting was a hot debate that lasted past midnight.", "bad": "a hot debate", "fix": "a heated debate", "opts": ["a heated debate", "a warm debate"], "why": "The collocation is a heated debate, not a hot one."},
     {"type": "spot", "q": "The hotel staff gave us a warm welcome even though we arrived at three in the morning.", "bad": "", "why": "Correct: a warm welcome is the natural phrase for a friendly greeting."},
     {"type": "spot", "q": "My grandmother has always been a ray of sunlight for the whole family.", "bad": "a ray of sunlight", "fix": "a ray of sunshine", "opts": ["a ray of sunshine", "a ray of sun"], "why": "The idiom for a person who brings happiness is a ray of sunshine."},
-    {"type": "order", "a": "She got cold feet the night before the wedding.", "alt": [], "why": "Get cold feet + time phrase: the night before the wedding."},
+    {"type": "order", "a": "She got cold feet the night before the wedding.", "alt": ["The night before the wedding she got cold feet."], "why": "Get cold feet + time phrase: the night before the wedding."},
     {"type": "order", "a": "The new tax got a frosty reception from voters.", "alt": [], "why": "Get a frosty reception from someone: be received coldly."},
     {"type": "order", "a": "Can I take a rain check on dinner tonight?", "alt": [], "why": "Take a rain check on + the invitation: a casual way to postpone."}
   ]

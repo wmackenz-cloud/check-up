@@ -1,0 +1,206 @@
+{
+  "n": 1,
+  "title": "As ... As: Describing People",
+  "tagline": "character, health and mood",
+  "why": "Native speakers use <em>as ... as</em> similes every day to sum up a person in a few vivid words. Knowing the exact animal or object in each one, and where it is used, stops you sounding either textbook or foreign.",
+  "know": [
+    "the frame <strong>as + adjective + as + noun</strong> and the fixed noun in each simile",
+    "eight common similes for character, health and mood"
+  ],
+  "understand": [
+    "why the comparison noun can't be swapped freely, even when another animal seems logical",
+    "which similes are North American, which are British, and which sound old-fashioned or cliched"
+  ],
+  "able": [
+    "describe people's personality, health and mood vividly but naturally",
+    "drop the first <em>as</em> in casual speech and recognise playful variations",
+    "avoid stacking cliches and choose one simile that really fits"
+  ],
+  "mistakes": [
+    ["She stayed as cool like a cucumber during the inspection.", "She stayed as cool <strong>as</strong> a cucumber. The frame is always <em>as ... as</em>, never <em>as ... like</em>."],
+    ["My grandfather is as fit as a violin at ninety.", "As fit as a <strong>fiddle</strong>. The noun is fixed, even though a fiddle and a violin are the same instrument."],
+    ["My boss is as stubborn as a donkey.", "As stubborn as a <strong>mule</strong>. A literal translation (e.g. from German) is understood, but English uses <em>mule</em>."],
+    ["The new intern is as quiet as a mice.", "As quiet as a <strong>mouse</strong>. The noun is singular with <em>a</em>."],
+    ["Our CEO is as sharp as a tack, as busy as a bee and as cool as a cucumber.", "Choose <strong>one</strong> simile. Stacking cliches sounds like a parody or a weak reference letter."]
+  ],
+  "bigidea": [
+    "A simile compares two things openly with <strong>as</strong> or <strong>like</strong>; a metaphor simply says one thing <em>is</em> another. <em>He's as stubborn as a mule</em> is a simile; <em>he's a mule</em> is a metaphor, and it sounds much ruder.",
+    "The <strong>as + adjective + as + noun</strong> frame works as an intensifier: <em>as proud as a peacock</em> just means extremely proud, with a picture attached. Because the picture does the work, the noun is usually fixed by tradition, and changing it sounds odd.",
+    "Many of these similes are old and slightly folksy, so they're best in conversation, stories and light writing. In casual speech the first <em>as</em> often disappears: <em>cool as a cucumber</em>, <em>fit as a fiddle</em>."
+  ],
+  "hidden": [
+    "My aunt has a memory <strong>like an elephant</strong>; she never forgets a birthday.",
+    "He hardly touched his dinner. He <strong>eats like a bird</strong>.",
+    "When they called his name he went <strong>as red as a beetroot</strong>.",
+    "She was <strong>shaking like a leaf</strong> before her driving test.",
+    "You <strong>look like a million bucks</strong> in that suit.",
+    "Our coach has <strong>eyes like a hawk</strong>; nothing gets past her.",
+    "Grandpa was <strong>like a kid in a candy store</strong> at the hardware show."
+  ],
+  "expressions": [
+    {"e": "as stubborn as a mule", "meaning": "extremely unwilling to change your mind or behaviour", "example": "Dad is <strong>as stubborn as a mule</strong>; he still won't use a GPS.", "tone": "casual",
+     "bend": "Often shortened: <em>stubborn as a mule</em>. Also <em>mule-headed</em>. Usually critical, but can be affectionate in families.",
+     "note": "Trap: not <em>as stubborn as a donkey</em> or <em>as a goat</em>. Near-synonym <em>pig-headed</em> is ruder."},
+    {"e": "as quiet as a mouse", "meaning": "very quiet, shy or making almost no noise", "example": "The new analyst was <strong>as quiet as a mouse</strong> for her first month.", "tone": "neutral",
+     "bend": "Describes people or how they move: <em>she crept up the stairs as quiet as a mouse</em>. Also <em>mousy</em> (shy and dull, unkind).",
+     "note": "Neutral or kind, unlike <em>mousy</em>. Don't confuse with <em>as poor as a church mouse</em>, which is about money and old-fashioned."},
+    {"e": "as proud as a peacock", "meaning": "very proud, often showing off", "example": "He walked around the wedding <strong>as proud as a peacock</strong> after his speech.", "tone": "humorous",
+     "bend": "Fixed noun. Also the verb <em>to peacock</em> (show off) and <em>preen</em>. Often lightly mocking.",
+     "note": "Can be warm (a proud parent) or critical (vanity). Context and tone of voice decide."},
+    {"e": "as cool as a cucumber", "meaning": "very calm and relaxed, especially under pressure", "example": "The pilot stayed <strong>as cool as a cucumber</strong> during the emergency landing.", "tone": "casual",
+     "bend": "Very often without the first <em>as</em>: <em>cool as a cucumber</em>. Always <em>a cucumber</em>.",
+     "note": "Admiring. About calm, not about being fashionable. Near-synonym: <em>calm, cool and collected</em>."},
+    {"e": "as fit as a fiddle", "meaning": "in very good health, often said of older people", "example": "After the hip replacement, Mum is <strong>as fit as a fiddle</strong> again.", "tone": "casual",
+     "bend": "<em>Fit as a fiddle</em> in casual speech. Usually after <em>be</em>, <em>feel</em> or <em>look</em>.",
+     "note": "A slightly old-fashioned, cheerful phrase. <em>Fit</em> once meant suitable or in good condition, like a well-tuned fiddle."},
+    {"e": "as busy as a bee", "meaning": "very busy, working actively and cheerfully", "example": "With three grandchildren visiting, I've been <strong>as busy as a bee</strong> all week.", "tone": "casual",
+     "bend": "Related noun: <em>a busy bee</em> (<em>she's a real busy bee</em>). Not <em>as busy like a bee</em>.",
+     "note": "Positive: productive and energetic. If you mean stressed and overloaded, <em>swamped</em> or <em>snowed under</em> is better."},
+    {"e": "as sharp as a tack", "meaning": "very intelligent and quick-thinking", "example": "Our MP is <strong>as sharp as a tack</strong>; she remembers every figure.", "tone": "casual",
+     "bend": "Mainly North American. British speakers say <em>as sharp as a knife</em> or <em>as sharp as a razor</em>; <em>razor-sharp</em> works everywhere.",
+     "note": "Often used for older people who are still mentally quick: <em>at 95 he's still sharp as a tack</em>. A tack is a small pin."},
+    {"e": "as happy as a clam", "meaning": "very happy and contented", "example": "Give him a lawn chair and a fishing rod and he's <strong>as happy as a clam</strong>.", "tone": "casual",
+     "bend": "North American. The British and Australian version is <em>as happy as Larry</em>. Also <em>happy as a pig in mud</em> (very informal).",
+     "note": "Originally longer: happy as a clam at high tide, when it's safe from diggers. The short form is what people say now."}
+  ],
+  "culture": [
+    {"kind": "Poetry", "work": "A Red, Red Rose", "by": "Robert Burns", "year": "1794",
+     "how": "Burns opens with two famous <strong>like</strong> similes: his love is compared to a rose newly opened in early summer and to a sweetly played tune. He then promises to love her until the seas dry up. It's the classic example of a simile used for a person.",
+     "ask": "If you had to compare someone you love to a flower or a piece of music, which would you choose and why?",
+     "find": "Robert Burns A Red Red Rose"},
+    {"kind": "Literature", "work": "The Canterbury Tales: General Prologue", "by": "Geoffrey Chaucer", "year": "c. 1387-1400",
+     "how": "Chaucer introduces each pilgrim with quick comparisons. The young Squire is said to be as fresh as the month of May, while the brawny Miller has a beard as red as a sow or a fox. Six hundred years ago, English already described people this way.",
+     "ask": "Describe someone you know in one simile, the way Chaucer does. Is it kind or mocking?",
+     "find": "Chaucer General Prologue Squire Miller description"},
+    {"kind": "Literature", "work": "Alice's Adventures in Wonderland", "by": "Lewis Carroll", "year": "1865",
+     "how": "The Hatter and the March Hare host the famous mad tea party. Carroll didn't invent <strong>as mad as a hatter</strong> or <strong>as mad as a March hare</strong>: the hare simile goes back to the early 1500s, and the Nova Scotian writer Thomas Chandler Haliburton used the hatter one in The Clockmaker in the 1830s. Carroll turned both similes into characters.",
+     "ask": "The hatter link to mercury poisoning is only a theory. Why do you think such origin stories are so popular?",
+     "find": "mad as a hatter origin Haliburton Clockmaker"},
+    {"kind": "Music", "work": "Like a Rolling Stone", "by": "Bob Dylan", "year": "1965",
+     "how": "The title simile drives the song. Dylan addresses a woman who grew up privileged and looked down on others, and who now has no home and no direction. A rolling stone, from the old proverb about gathering no moss, stands for someone with nothing to hold on to.",
+     "ask": "Is Dylan's simile sympathetic, cruel or both? What makes you think so?",
+     "find": "Bob Dylan Like a Rolling Stone 1965"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "as stubborn as a mule", "r": "refusing to change your mind", "why": "Mules are famous for refusing to move when they don't want to."},
+      {"l": "as quiet as a mouse", "r": "very quiet or shy", "why": "A mouse moves around almost silently."},
+      {"l": "as proud as a peacock", "r": "very proud, showing off", "why": "The male peacock displays its tail feathers."},
+      {"l": "as cool as a cucumber", "r": "calm under pressure", "why": "Cucumbers feel cool even on a hot day. About calm, not fashion."},
+      {"l": "as fit as a fiddle", "r": "in excellent health", "why": "Fit once meant in good condition, like a well-tuned fiddle."},
+      {"l": "as busy as a bee", "r": "working hard and actively", "why": "Bees seem to work non-stop. A positive kind of busy."},
+      {"l": "as sharp as a tack", "r": "very intelligent and quick", "why": "North American. British speakers prefer sharp as a knife or razor-sharp."},
+      {"l": "as happy as a clam", "r": "very contented", "why": "North American. In Britain: as happy as Larry."}
+    ],
+    "sort": {
+      "h": "Sort the similes: do they describe <strong>personality</strong>, the <strong>body and health</strong>, or a <strong>mood in the moment</strong>?",
+      "cols": ["Personality", "Body and health", "Mood in the moment"],
+      "items": [
+        {"w": "as stubborn as a mule", "c": 0, "why": "A lasting character trait."},
+        {"w": "as proud as a peacock", "c": 0, "why": "Usually a trait: vanity or pride."},
+        {"w": "as brave as a lion", "c": 0, "why": "Courage as part of someone's character."},
+        {"w": "as sharp as a tack", "c": 0, "why": "Describes a person's mind and intelligence."},
+        {"w": "as fit as a fiddle", "c": 1, "why": "Good physical health."},
+        {"w": "as strong as an ox", "c": 1, "why": "Great physical strength."},
+        {"w": "as sick as a dog", "c": 1, "why": "Very ill, often vomiting."},
+        {"w": "as white as a sheet", "c": 1, "why": "Pale skin, usually from shock or fear."},
+        {"w": "as cool as a cucumber", "c": 2, "why": "Calm in a particular stressful moment."},
+        {"w": "as happy as a clam", "c": 2, "why": "Contented right now, doing something you enjoy."},
+        {"w": "as happy as Larry", "c": 2, "why": "The British version of happy as a clam."},
+        {"w": "as mad as a hornet", "c": 2, "why": "Very angry right now. Mainly North American."}
+      ]
+    },
+    "pick": [
+      {"q": "No matter what the doctor says, Uncle Joe won't stop salting his food. He's ___.", "opts": ["as stubborn as a mule", "as quiet as a mouse", "as fit as a fiddle"], "a": 0, "why": "Refusing to change his behaviour = as stubborn as a mule."},
+      {"q": "During the job interview she answered every hard question ___.", "opts": ["as proud as a peacock", "as cool as a cucumber", "as sick as a dog"], "a": 1, "why": "Calm under pressure = as cool as a cucumber."},
+      {"q": "The kids crept past their sleeping father ___.", "opts": ["as busy as bees", "as quiet as mice", "as sharp as tacks"], "a": 1, "why": "Making almost no noise = as quiet as mice (plural subject)."},
+      {"q": "Ninety-two and still playing tennis twice a week: she's ___.", "opts": ["as fit as a fiddle", "as proud as a peacock", "as cool as a cucumber"], "a": 0, "why": "Excellent health, especially for an older person = as fit as a fiddle."},
+      {"q": "My father-in-law strutted around the arena ___ when his grandson scored.", "opts": ["as quiet as a mouse", "as proud as a peacock", "as stubborn as a mule"], "a": 1, "why": "Showing obvious pride = as proud as a peacock."},
+      {"q": "Between the garden, the church bake sale and the grandchildren, Mum is ___.", "opts": ["as busy as a bee", "as happy as Larry", "as sick as a dog"], "a": 0, "why": "Actively busy with lots of tasks = as busy as a bee."},
+      {"q": "Don't try to fool the auditor. She's ___ and notices everything.", "opts": ["as fit as a fiddle", "as sharp as a tack", "as quiet as a mouse"], "a": 1, "why": "Intelligent and quick = as sharp as a tack."},
+      {"q": "Since he retired to the cottage near Bancroft, Ray's been ___.", "opts": ["as happy as a clam", "as stubborn as a mule", "as sick as a dog"], "a": 0, "why": "Contented with his life = as happy as a clam (North American)."}
+    ],
+    "spot": [
+      {"q": "The surgeon stayed as cool as an ice cube when the power failed.", "bad": "as cool as an ice cube", "fix": "as cool as a cucumber", "opts": ["as cool as a cucumber", "as cold as a cucumber"], "why": "The fixed simile is cool as a cucumber: calm under pressure."},
+      {"q": "After six weeks of physiotherapy, my brother is as fit as a violin.", "bad": "as fit as a violin", "fix": "as fit as a fiddle", "opts": ["as fit as a fiddle", "as fit as a drum"], "why": "Same instrument, but only fiddle works in the simile."},
+      {"q": "The old professor is still as sharp as a nail at eighty-eight.", "bad": "as sharp as a nail", "fix": "as sharp as a tack", "opts": ["as sharp as a tack", "as sharp as a hammer"], "why": "Sharp as a tack (North American) or as sharp as a knife (British). Not a nail."},
+      {"q": "During tax season my accountant is as busy like a bee.", "bad": "as busy like a bee", "fix": "as busy as a bee", "opts": ["as busy as a bee", "busy like the bees"], "why": "The frame is as ... as. Never mix as with like."},
+      {"q": "He's as happy as a fish now that he works from home.", "bad": "as happy as a fish", "fix": "as happy as a clam", "opts": ["as happy as a clam", "as happy as a fiddle"], "why": "North Americans say happy as a clam; the British say happy as Larry."}
+    ],
+    "type": [
+      {"q": "I asked her three times to see a doctor, but she's as stubborn as a ___.", "a": ["mule"], "why": "As stubborn as a mule: refusing to change."},
+      {"q": "The new tenant upstairs is as quiet as a ___; we barely know he's there.", "a": ["mouse"], "why": "As quiet as a mouse: making almost no noise."},
+      {"q": "Look at him in his new uniform, as proud as a ___.", "a": ["peacock"], "why": "As proud as a peacock: showing obvious pride."},
+      {"q": "The goalie was cool as a ___ in the shootout.", "a": ["cucumber"], "why": "Cool as a cucumber: calm under pressure. The first as is often dropped."},
+      {"q": "I had the flu last week, but now I'm as fit as a ___.", "a": ["fiddle"], "why": "As fit as a fiddle: in excellent health."},
+      {"q": "At 97 my grandmother is still sharp as a ___ and beats us all at cribbage.", "a": ["tack"], "why": "Sharp as a tack: mentally quick. North American."}
+    ],
+    "bend": [
+      {"q": "A friend is describing a calm pilot in casual speech. Which version sounds natural? ___", "opts": ["She was cool as a cucumber the whole time.", "She was cool like as a cucumber the whole time.", "She was as cool than a cucumber the whole time."], "a": 0, "why": "Dropping the first as is very natural in casual speech. Like as and than are wrong."},
+      {"q": "A British colleague is describing a retired friend. Which version would she most likely use? ___", "opts": ["He's as happy as a Larry in his garden.", "He's as happy as Larry in his garden.", "He's as happy like Larry in his garden."], "a": 1, "why": "British English: as happy as Larry, with no article."},
+      {"q": "Which version uses the related noun naturally to praise a volunteer? ___", "opts": ["My aunt is a real busy bee.", "My aunt is a real busy as a bee.", "My aunt is a real bee of busy."], "a": 0, "why": "A busy bee is the noun form. A real adds friendly emphasis."},
+      {"q": "Which version sounds natural about a whole team that refuses a new rule? ___", "opts": ["They're as stubborn as mules about it.", "They're as stubborn as a mules about it.", "They're stubborn as mule about it."], "a": 0, "why": "With a plural subject you can say as mules. No a with a plural, and don't drop the article with the singular."}
+    ],
+    "talk": [
+      "Chaucer describes his pilgrims in a word or two. Describe three people in your family with one simile each. Are your similes kind, teasing or critical?",
+      "Burns compares his love to a rose and a melody. Do similes like these sound romantic or cliched to you today? What would a modern love simile be?",
+      "Role-play: you're writing a reference for a former employee. Your tutor says you overused cliches. Rewrite it out loud using at most one simile.",
+      "Which of today's similes exist in your language with a different animal or object? Explain the differences to your tutor.",
+      "Dylan's title compares a person to a rolling stone. Is it better to be a rolling stone or to gather moss? Use at least two similes from this lesson."
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "as good as gold", "r": "very well behaved", "why": "Often said of children or pets."},
+      {"l": "as brave as a lion", "r": "very courageous", "why": "The lion is the traditional symbol of courage."},
+      {"l": "as sick as a dog", "r": "very ill", "why": "Usually with vomiting. British sick as a parrot means disappointed."},
+      {"l": "as mad as a hatter", "r": "completely crazy, eccentric", "why": "Older than Alice in Wonderland. Usually humorous, not for real illness."},
+      {"l": "as strong as an ox", "r": "physically very strong", "why": "Oxen pulled ploughs and heavy carts."},
+      {"l": "as white as a sheet", "r": "very pale from shock or fear", "why": "Like a white bedsheet. Also as white as a ghost."}
+    ],
+    "pick": [
+      {"q": "Thanks for babysitting. Were the twins ___?", "opts": ["as good as gold", "as mad as hatters", "as sick as dogs"], "a": 0, "why": "Well behaved = as good as gold."},
+      {"q": "I ate some bad shrimp at the buffet and was ___ all night.", "opts": ["as strong as an ox", "as sick as a dog", "as brave as a lion"], "a": 1, "why": "Very ill = as sick as a dog."},
+      {"q": "When the police officer knocked on the door, she went ___.", "opts": ["as white as a sheet", "as good as gold", "as happy as a clam"], "a": 0, "why": "Pale from shock or fear = as white as a sheet."},
+      {"q": "My eccentric neighbour keeps forty cats and talks to his tomatoes. He's ___.", "opts": ["as fit as a fiddle", "as mad as a hatter", "as quiet as a mouse"], "a": 1, "why": "Harmlessly eccentric = as mad as a hatter (humorous)."},
+      {"q": "The firefighter who carried three children out of the building was ___.", "opts": ["as brave as a lion", "as proud as a peacock", "as cool as ice"], "a": 0, "why": "Very courageous = as brave as a lion."},
+      {"q": "My son lifted the whole canoe onto the car by himself. He's ___.", "opts": ["as sharp as a tack", "as strong as an ox", "as busy as a bee"], "a": 1, "why": "Physically very strong = as strong as an ox."}
+    ],
+    "spot": [
+      {"q": "The puppy was as good as silver during the long drive.", "bad": "as good as silver", "fix": "as good as gold", "opts": ["as good as gold", "as good as new"], "why": "The fixed simile is as good as gold: very well behaved."},
+      {"q": "The young soldier was as brave as a tiger under fire.", "bad": "as brave as a tiger", "fix": "as brave as a lion", "opts": ["as brave as a lion", "as proud as a lion"], "why": "English uses the lion for courage in this simile."},
+      {"q": "I was as sick as a horse after that boat trip.", "bad": "as sick as a horse", "fix": "as sick as a dog", "opts": ["as sick as a dog", "as sick as a parrot"], "why": "Very ill = sick as a dog. Sick as a parrot is British slang for disappointed."},
+      {"q": "Ever since his promotion he's been as proud like a peacock.", "bad": "as proud like a peacock", "fix": "as proud as a peacock", "opts": ["as proud as a peacock", "as proud as peacocks"], "why": "The frame is as ... as, never as ... like."}
+    ],
+    "type": [
+      {"q": "The children were as good as ___ at the restaurant.", "a": ["gold"], "why": "As good as gold: well behaved."},
+      {"q": "He was as sick as a ___ after the office party.", "a": ["dog"], "why": "As sick as a dog: very ill."},
+      {"q": "You've gone as white as a ___. Do you need to sit down?", "a": ["sheet", "ghost"], "why": "As white as a sheet (or a ghost): pale from shock."},
+      {"q": "My great-uncle collected bottle caps and wore two hats. He was as mad as a ___.", "a": ["hatter"], "why": "As mad as a hatter: harmlessly eccentric."},
+      {"q": "The new defenceman is as strong as an ___.", "a": ["ox"], "why": "As strong as an ox: physically very strong."},
+      {"q": "She was as brave as a ___ when she reported her manager for fraud.", "a": ["lion"], "why": "As brave as a lion: very courageous."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "Once my mother decides something, she's ___ about it.", "opts": ["as stubborn as a mule", "as fit as a fiddle", "as busy as a bee"], "a": "as stubborn as a mule", "why": "Refusing to change = as stubborn as a mule."},
+    {"q": "The witness sat ___ at the back of the courtroom.", "type": "pick", "opts": ["as quiet as a mouse", "as proud as a peacock", "as happy as a clam"], "a": "as quiet as a mouse", "why": "Silent and unnoticed = as quiet as a mouse."},
+    {"type": "pick", "q": "After winning the pie contest, Mr Dunn was ___.", "opts": ["as proud as a peacock", "as quiet as a mouse", "as sick as a dog"], "a": "as proud as a peacock", "why": "Showing obvious pride = as proud as a peacock."},
+    {"type": "pick", "q": "Even with the cameras rolling, the minister answered ___.", "opts": ["as cool as a cucumber", "as stubborn as a mule", "as busy as a bee"], "a": "as cool as a cucumber", "why": "Calm under pressure = as cool as a cucumber."},
+    {"type": "pick", "q": "Thanks to daily walks, my father is ___ at eighty.", "opts": ["as fit as a fiddle", "as mad as a hatter", "as quiet as a mouse"], "a": "as fit as a fiddle", "why": "Excellent health = as fit as a fiddle."},
+    {"type": "pick", "q": "With the move and a new baby, they've been ___.", "opts": ["as busy as bees", "as cool as cucumbers", "as proud as peacocks"], "a": "as busy as bees", "why": "Very busy = as busy as bees (plural subject)."},
+    {"type": "pick", "q": "That lawyer is ___; she found the flaw in seconds.", "opts": ["as sharp as a tack", "as good as gold", "as strong as an ox"], "a": "as sharp as a tack", "why": "Very quick and intelligent = as sharp as a tack."},
+    {"type": "pick", "q": "Give my daughter a pile of books and she's ___ for hours.", "opts": ["as happy as a clam", "as stubborn as a mule", "as white as a sheet"], "a": "as happy as a clam", "why": "Very contented = as happy as a clam."},
+    {"type": "type", "q": "My brother won't apologise. He's as stubborn as a ___.", "a": ["mule"], "why": "As stubborn as a mule: refusing to change."},
+    {"type": "type", "q": "The children were good as ___ at the funeral.", "a": ["gold"], "why": "Good as gold: very well behaved."},
+    {"type": "type", "q": "He strutted around like he owned the place, proud as a ___.", "a": ["peacock"], "why": "Proud as a peacock: showing off."},
+    {"type": "type", "q": "After his heart surgery he's fit as a ___ again.", "a": ["fiddle"], "why": "Fit as a fiddle: in excellent health."},
+    {"type": "type", "q": "The goalie stayed as cool as a ___ through the overtime.", "a": ["cucumber"], "why": "As cool as a cucumber: calm under pressure."},
+    {"type": "spot", "q": "My grandmother is still as sharp as a pin at ninety-five.", "bad": "as sharp as a pin", "fix": "as sharp as a tack", "opts": ["as sharp as a tack", "as sharp as a needle"], "why": "Sharp as a tack (North America) or sharp as a knife (Britain)."},
+    {"type": "spot", "q": "The student was as quiet like a mouse during the exam.", "bad": "as quiet like a mouse", "fix": "as quiet as a mouse", "opts": ["as quiet as a mouse", "quiet like the mouse"], "why": "Always as ... as, not as ... like."},
+    {"type": "spot", "q": "My neighbour is as busy as a bee getting ready for the fall fair.", "bad": "", "why": "Correct! As busy as a bee = very busy, in a positive way."},
+    {"type": "spot", "q": "In Manchester he spends Sundays at the allotment, as happy as Larry.", "bad": "", "why": "Correct! As happy as Larry is the natural British version of happy as a clam."},
+    {"type": "order", "a": "She stayed cool as a cucumber during the interview.", "alt": [], "why": "In casual speech the first as is often dropped."},
+    {"type": "order", "a": "My grandfather is still as sharp as a tack.", "alt": [], "why": "Still emphasises that he hasn't lost his mental speed."},
+    {"type": "order", "a": "The children were as good as gold all afternoon.", "alt": [], "why": "As good as gold = well behaved; the time phrase goes at the end."}
+  ]
+}

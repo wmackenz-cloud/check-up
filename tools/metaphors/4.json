@@ -17,7 +17,7 @@
     "talk about the past and moving on with <em>water under the bridge</em>"
   ],
   "mistakes": [
-    ["After the scandal, the minister is in hot water financially.", "The minister is <strong>in deep water</strong> financially. <em>Hot water</em> means trouble for doing wrong; <em>deep water</em> means serious difficulty."],
+    ["After the business failed, the family was in hot water financially.", "The family was <strong>in deep water</strong> financially. <em>Hot water</em> means trouble for doing wrong; <em>deep water</em> means serious difficulty."],
     ["That argument is water below the bridge.", "That argument is <strong>water under the bridge</strong>. The preposition is fixed."],
     ["I felt out of my deep at the new job.", "I felt <strong>out of my depth</strong>. The noun is <em>depth</em>."],
     ["Let's test the water of the market first.", "Let's <strong>test the waters</strong> first. The idiom is usually plural and takes no <em>of</em>."],
@@ -70,9 +70,9 @@
      "ask": "What area of society has gone through a sea change in your lifetime?",
      "find": "sea change The Tempest Ariel song meaning"},
     {"kind": "Literature", "work": "Julius Caesar", "by": "William Shakespeare", "year": "1599",
-     "how": "Before the final battle, Brutus argues that opportunity in human life works like the tide: catch it at its height and it carries you to success; miss it and you may be stranded in the shallows for the rest of your life. It is the classic picture behind <strong>turn the tide</strong>.",
+     "how": "Before the final battle, Brutus argues that opportunity in human life works like the tide: catch it at its height and it carries you to success; miss it and you may be stranded in the shallows for the rest of your life. It is the most famous literary picture of fortune as a tide, the same image we use in <strong>turn the tide</strong>.",
      "ask": "Have you ever caught, or missed, a high tide in your own life?",
-     "find": "Brutus tide in the affairs of men Julius Caesar"},
+     "find": "Brutus tide speech Julius Caesar Act 4 Scene 3"},
     {"kind": "Poetry", "work": "Not Waving but Drowning", "by": "Stevie Smith", "year": "1957",
      "how": "A man dies in the sea and onlookers had assumed he was just waving and having fun. The poet turns this into a picture of someone who has struggled to keep their head above water all their life while everyone thought they were fine.",
      "ask": "Why do people sometimes hide the fact that they are out of their depth?",
@@ -205,7 +205,7 @@
     {"type": "spot", "q": "Our old disagreements are all water under the bridge now.", "bad": "", "why": "Correct! Water under the bridge = past problems that no longer matter."},
     {"type": "spot", "q": "Once we hired a planner, organising the wedding was plain sailing.", "bad": "", "why": "Correct! Plain sailing = easy and without problems."},
     {"type": "order", "a": "We are just about keeping our heads above water.", "alt": [], "why": "Just about softens it: we are surviving, but only barely."},
-    {"type": "order", "a": "I felt completely out of my depth at first.", "alt": [], "why": "Feel + completely + out of my depth + time phrase."},
-    {"type": "order", "a": "Nobody wanted to rock the boat before the election.", "alt": [], "why": "Usually negative: nobody wanted to rock the boat."}
+    {"type": "order", "a": "I felt completely out of my depth at first.", "alt": ["At first I felt completely out of my depth."], "why": "Feel + completely + out of my depth + time phrase."},
+    {"type": "order", "a": "Nobody wanted to rock the boat before the election.", "alt": ["Before the election nobody wanted to rock the boat."], "why": "Usually negative: nobody wanted to rock the boat."}
   ]
 }

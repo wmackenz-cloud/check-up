@@ -11,9 +11,9 @@ PRACTICE.add("am-3", {
     {"id": "am-3-07", "type": "pick", "q": "I'd love to help with the fundraiser, but I ___ until June.", "opts": ["have a lot on my plate", "bring a lot to the table", "am half-baked"], "a": "have a lot on my plate", "why": "Too busy = have a lot on my plate."},
     {"id": "am-3-08", "type": "pick", "q": "Each volunteer ___, whether it's cooking, driving or just a friendly face.", "opts": ["brings something to the table", "has a lot on their plate", "sugar-coats something"], "a": "brings something to the table", "why": "Contributing something useful = bring something to the table."},
     {"id": "am-3-09", "type": "type", "q": "The minister's ___-baked reforms were withdrawn after a month.", "a": ["half"], "why": "Half-baked: not properly thought out."},
-    {"id": "am-3-10", "type": "type", "q": "You'll need time to ___ all this information; it's a lot.", "a": ["digest", "process"], "why": "Digest information: take time to understand it."},
+    {"id": "am-3-10", "type": "type", "q": "You'll need time to ___ all this information; it's a lot.", "a": ["digest", "process", "absorb"], "why": "Digest information: take time to understand it."},
     {"id": "am-3-11", "type": "type", "q": "Calling the prize meaningless after losing it is just sour ___.", "a": ["grapes"], "why": "Sour grapes: pretending you didn't want it."},
-    {"id": "am-3-12", "type": "type", "q": "Don't just ___ the lecture notes; tell me what you think.", "a": ["regurgitate", "repeat"], "why": "Regurgitate: repeat without understanding."},
+    {"id": "am-3-12", "type": "type", "q": "Don't just ___ the lecture notes back to me; tell me what you think.", "a": ["regurgitate", "repeat", "parrot", "recite"], "why": "Regurgitate: repeat without understanding."},
     {"id": "am-3-13", "type": "type", "q": "That essay on housing gave me a lot of food for ___.", "a": ["thought"], "why": "Food for thought: something worth thinking about."},
     {"id": "am-3-14", "type": "spot", "q": "With exams and a part-time job, my daughter has a lot in her plate.", "bad": "a lot in her plate", "fix": "a lot on her plate", "opts": ["a lot on her plate", "a lot of her plate"], "why": "On, not in: a lot on your plate."},
     {"id": "am-3-15", "type": "spot", "q": "I'll chew it out and let you know tomorrow.", "bad": "chew it out", "fix": "chew it over", "opts": ["chew it over", "chew it up"], "why": "Chew it over = think about it. Chew someone out means scold them."},
@@ -21,6 +21,6 @@ PRACTICE.add("am-3", {
     {"id": "am-3-17", "type": "spot", "q": "His story about being kidnapped by aliens was hard to swallow.", "bad": "", "why": "Correct! Hard to swallow = difficult to believe."},
     {"id": "am-3-18", "type": "order", "a": "The lecture gave everyone plenty of food for thought.", "alt": [], "why": "Give someone plenty of food for thought. No article."},
     {"id": "am-3-19", "type": "order", "a": "Please do not sugar-coat the results for the board.", "alt": [], "why": "Do not + sugar-coat + the thing being softened."},
-    {"id": "am-3-20", "type": "order", "a": "She has far too much on her plate this year.", "alt": [], "why": "Have far too much on your plate: too many responsibilities."}
+    {"id": "am-3-20", "type": "order", "a": "She has far too much on her plate this year.", "alt": ["This year she has far too much on her plate."], "why": "Have far too much on your plate: too many responsibilities."}
   ]
 });

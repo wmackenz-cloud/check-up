@@ -33,7 +33,7 @@
     "The two firms are <strong>neck and neck</strong> in the race for the licence.",
     "Let's <strong>touch base</strong> on Monday about the schedule.",
     "Remote work is <strong>a whole new ball game</strong> for managers.",
-    "Her keynote speech really <strong>hit it out of the park</strong>.",
+    "She really <strong>hit it out of the park</strong> with her keynote speech.",
     "Bringing up his divorce in the debate was <strong>below the belt</strong>.",
     "Changing the deadline without warning? That's just <strong>not cricket</strong>.",
     "The new director is <strong>calling the shots</strong> now."
@@ -44,7 +44,7 @@
      "bend": "Tense changes: <strong>I dropped the ball on that one</strong>. Add the task with <strong>on</strong>: <strong>drop the ball on the renewal</strong>.",
      "note": "A soft way to admit a failure, common in North American offices. 'I dropped the ball' sounds more responsible and less dramatic than 'I failed'."},
     {"e": "a level playing field", "meaning": "a situation where everyone has the same chance", "example": "The new rules are meant to create <strong>a level playing field</strong> for small and large banks.",
-     "tone": "formal",
+     "tone": "neutral",
      "bend": "Common verbs: <strong>create / ensure / provide a level playing field</strong>. Opposite: <strong>an uneven playing field</strong>; verb: <strong>level the playing field</strong>.",
      "note": "Very common in politics, economics and trade. It is a general sports image, used everywhere in the English-speaking world."},
     {"e": "move the goalposts", "meaning": "unfairly change the rules or targets while something is in progress", "example": "Every time we meet the target, head office <strong>moves the goalposts</strong>.",
@@ -90,9 +90,9 @@
      "ask": "In your field, how could a small player compete with much bigger, richer rivals?",
      "find": "Michael Lewis Moneyball"},
     {"kind": "Speech", "work": "Pre-fight boasts", "by": "Muhammad Ali", "year": "1964",
-     "how": "Before fighting Sonny Liston for the heavyweight title, Ali (then Cassius Clay) became famous for rhyming boasts. His best-known slogan, <strong>float like a butterfly</strong>, compared his footwork and punches to insects. It shows that sport talk itself runs on metaphor.",
+     "how": "Before fighting Sonny Liston for the heavyweight title, Ali (then Cassius Clay) became famous for rhyming boasts. His best-known slogan, usually credited to his assistant Drew Bundini Brown, compared his light footwork to a butterfly and his punches to a bee's sting. Sport talk itself runs on metaphor.",
      "ask": "Is confident self-promotion admired or disliked where you grew up? Would Ali's style work in a job interview?",
-     "find": "Muhammad Ali float like a butterfly 1964"}
+     "find": "Muhammad Ali butterfly bee slogan 1964 Liston"}
   ],
   "ws": {
     "match": [
@@ -140,7 +140,7 @@
     "type": [
       {"q": "Sorry, I dropped the ___ on your reference letter. I'll send it tonight.", "a": ["ball"], "why": "Drop the ball = fail to do something you were responsible for."},
       {"q": "The trade deal is meant to level the playing ___ for Canadian exporters.", "a": ["field"], "why": "Level the playing field = make the chances equal."},
-      {"q": "Every time I finish the report, my manager moves the ___.", "a": ["goalposts"], "why": "Move the goalposts = unfairly change the target."},
+      {"q": "Every time I finish the report, my manager moves the ___.", "a": ["goalposts", "goal posts", "goalpost"], "why": "Move the goalposts = unfairly change the target."},
       {"q": "That idea came out of left ___, but it might actually work.", "a": ["field"], "why": "Out of left field = unexpected."},
       {"q": "It's time for the big tech firms to step up to the ___ on privacy.", "a": ["plate"], "why": "Step up to the plate = take responsibility."},
       {"q": "Working from home with three kids is a whole new ball ___.", "a": ["game"], "why": "A whole new ball game = a completely different situation."}
@@ -183,11 +183,11 @@
       {"q": "With two new hires, our department is finally stepping up to the plateau.", "bad": "plateau", "fix": "plate", "opts": ["plate", "pitch"], "why": "Step up to the plate (the batter's home plate). A plateau is flat high ground."}
     ],
     "type": [
-      {"q": "My boss wants a ___ figure for the trip by Friday.", "a": ["ballpark"], "why": "A ballpark figure = a rough estimate."},
+      {"q": "My boss wants a ___ figure for the trip by Friday.", "a": ["ballpark", "ball-park", "rough", "approximate"], "why": "A ballpark figure = a rough estimate. Rough or approximate also works, but ballpark is the idiom."},
       {"q": "The candidates traded blows, and some of them landed below the ___.", "a": ["belt"], "why": "Below the belt = unfair or cruel."},
       {"q": "I'll touch ___ with the supplier this afternoon.", "a": ["base"], "why": "Touch base = make brief contact."},
       {"q": "The ball is in the union's ___ now.", "a": ["court"], "why": "The ball is in your court = it's your turn to act."},
-      {"q": "After losing two major clients, the agency is on the ___.", "a": ["ropes"], "why": "On the ropes = close to defeat."},
+      {"q": "After losing two major clients, the agency is on the ___.", "a": ["ropes", "rocks"], "why": "On the ropes = close to defeat, like a boxer. On the rocks (in serious trouble) also fits."},
       {"q": "Don't throw in the ___ yet; we still have a week.", "a": ["towel"], "why": "Throw in the towel = give up."}
     ]
   },
@@ -195,7 +195,7 @@
     {"type": "pick", "q": "The shipping team ___ and the parts arrived a week late.", "opts": ["dropped the ball", "touched base", "hit it out of the park"], "a": "dropped the ball", "why": "Failing in a responsibility is dropping the ball."},
     {"type": "pick", "q": "International students say high fees mean there's no ___ for them.", "opts": ["ballpark figure", "level playing field", "sticky wicket"], "a": "level playing field", "why": "Equal chances for all: a level playing field."},
     {"type": "pick", "q": "First they asked for two references, now they want five. They keep ___.", "opts": ["moving the goalposts", "stepping up to the plate", "touching base"], "a": "moving the goalposts", "why": "Changing requirements unfairly is moving the goalposts."},
-    {"type": "pick", "q": "I've apologized twice. ___ now.", "opts": ["The ball's in her court", "It's out of left field", "It's below the belt"], "a": "The ball's in her court", "why": "I have done my part; it's her turn to act."},
+    {"type": "pick", "q": "I've apologised twice. ___ now.", "opts": ["The ball's in her court", "It's out of left field", "It's below the belt"], "a": "The ball's in her court", "why": "I have done my part; it's her turn to act."},
     {"type": "pick", "q": "The plumber gave us ___ of about two thousand dollars.", "opts": ["a ballpark figure", "a whole new ball game", "a level playing field"], "a": "a ballpark figure", "why": "A rough estimate is a ballpark figure."},
     {"type": "pick", "q": "The CEO's sudden support for a four-day week came ___.", "opts": ["on the ropes", "out of left field", "below the belt"], "a": "out of left field", "why": "Unexpected: out of left field."},
     {"type": "pick", "q": "When the volunteers quit, local businesses ___ and funded the festival.", "opts": ["threw in the towel", "stepped up to the plate", "moved the goalposts"], "a": "stepped up to the plate", "why": "They took responsibility when it was needed."},
@@ -209,8 +209,8 @@
     {"type": "spot", "q": "The team leader dropped a ball on the safety training.", "bad": "dropped a ball", "fix": "dropped the ball", "opts": ["dropped the ball", "lost a ball"], "why": "The idiom uses the: drop the ball."},
     {"type": "spot", "q": "Can we touch base tomorrow morning about the budget?", "bad": "", "why": "Correct! Touch base = a short check-in, very common in North American offices."},
     {"type": "spot", "q": "The new tax rules are supposed to level the playing field.", "bad": "", "why": "Correct! Level the playing field = make chances equal."},
-    {"type": "order", "a": "The ball is in their court now.", "alt": ["The ball is now in their court."], "why": "The ball is in their court = it's their turn to act."},
+    {"type": "order", "a": "The ball is in their court now.", "alt": ["The ball is now in their court.", "Now the ball is in their court."], "why": "The ball is in their court = it's their turn to act."},
     {"type": "order", "a": "Our team really hit it out of the park.", "alt": [], "why": "Subject + really + hit it out of the park."},
-    {"type": "order", "a": "Please give me a ballpark figure by Friday.", "alt": [], "why": "Give me + a ballpark figure + time phrase."}
+    {"type": "order", "a": "Please give me a ballpark figure by Friday.", "alt": ["Give me a ballpark figure by Friday please."], "why": "Give me + a ballpark figure + time phrase."}
   ]
 }

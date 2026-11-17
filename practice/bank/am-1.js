@@ -19,8 +19,8 @@ PRACTICE.add("am-1", {
     {"id": "am-1-15", "type": "spot", "q": "I bit the arrow and finally called the tax office.", "bad": "bit the arrow", "fix": "bit the bullet", "opts": ["bit the bullet", "bit the dust"], "why": "Bite the bullet = do something unpleasant. Bite the dust = fail or die."},
     {"id": "am-1-16", "type": "spot", "q": "The board shot down every cost-cutting idea we brought to the meeting.", "bad": "", "why": "Correct! Shoot down an idea = reject it quickly."},
     {"id": "am-1-17", "type": "spot", "q": "When the coach was criticised, the players closed ranks behind him.", "bad": "", "why": "Correct! Close ranks behind someone = unite to protect them."},
-    {"id": "am-1-18", "type": "order", "a": "We finally bit the bullet and sold the cottage.", "alt": [], "why": "Bite the bullet and + verb is a very natural pattern."},
+    {"id": "am-1-18", "type": "order", "a": "We finally bit the bullet and sold the cottage.", "alt": ["Finally we bit the bullet and sold the cottage.", "We bit the bullet and finally sold the cottage."], "why": "Bite the bullet and + verb is a very natural pattern."},
     {"id": "am-1-19", "type": "order", "a": "Remote work turned out to be a double-edged sword.", "alt": [], "why": "Turned out to be + a double-edged sword. The noun phrase stays together."},
-    {"id": "am-1-20", "type": "order", "a": "The two families buried the hatchet after the wedding.", "alt": [], "why": "Subject + buried the hatchet + time phrase."}
+    {"id": "am-1-20", "type": "order", "a": "The two families buried the hatchet after the wedding.", "alt": ["After the wedding the two families buried the hatchet."], "why": "Subject + buried the hatchet + time phrase."}
   ]
 });

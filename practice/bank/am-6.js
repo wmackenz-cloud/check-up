@@ -5,7 +5,7 @@ PRACTICE.add("am-6", {
     {"id": "am-6-01", "type": "pick", "q": "The shipping team ___ and the parts arrived a week late.", "opts": ["dropped the ball", "touched base", "hit it out of the park"], "a": "dropped the ball", "why": "Failing in a responsibility is dropping the ball."},
     {"id": "am-6-02", "type": "pick", "q": "International students say high fees mean there's no ___ for them.", "opts": ["ballpark figure", "level playing field", "sticky wicket"], "a": "level playing field", "why": "Equal chances for all: a level playing field."},
     {"id": "am-6-03", "type": "pick", "q": "First they asked for two references, now they want five. They keep ___.", "opts": ["moving the goalposts", "stepping up to the plate", "touching base"], "a": "moving the goalposts", "why": "Changing requirements unfairly is moving the goalposts."},
-    {"id": "am-6-04", "type": "pick", "q": "I've apologized twice. ___ now.", "opts": ["The ball's in her court", "It's out of left field", "It's below the belt"], "a": "The ball's in her court", "why": "I have done my part; it's her turn to act."},
+    {"id": "am-6-04", "type": "pick", "q": "I've apologised twice. ___ now.", "opts": ["The ball's in her court", "It's out of left field", "It's below the belt"], "a": "The ball's in her court", "why": "I have done my part; it's her turn to act."},
     {"id": "am-6-05", "type": "pick", "q": "The plumber gave us ___ of about two thousand dollars.", "opts": ["a ballpark figure", "a whole new ball game", "a level playing field"], "a": "a ballpark figure", "why": "A rough estimate is a ballpark figure."},
     {"id": "am-6-06", "type": "pick", "q": "The CEO's sudden support for a four-day week came ___.", "opts": ["on the ropes", "out of left field", "below the belt"], "a": "out of left field", "why": "Unexpected: out of left field."},
     {"id": "am-6-07", "type": "pick", "q": "When the volunteers quit, local businesses ___ and funded the festival.", "opts": ["threw in the towel", "stepped up to the plate", "moved the goalposts"], "a": "stepped up to the plate", "why": "They took responsibility when it was needed."},
@@ -19,8 +19,8 @@ PRACTICE.add("am-6", {
     {"id": "am-6-15", "type": "spot", "q": "The team leader dropped a ball on the safety training.", "bad": "dropped a ball", "fix": "dropped the ball", "opts": ["dropped the ball", "lost a ball"], "why": "The idiom uses the: drop the ball."},
     {"id": "am-6-16", "type": "spot", "q": "Can we touch base tomorrow morning about the budget?", "bad": "", "why": "Correct! Touch base = a short check-in, very common in North American offices."},
     {"id": "am-6-17", "type": "spot", "q": "The new tax rules are supposed to level the playing field.", "bad": "", "why": "Correct! Level the playing field = make chances equal."},
-    {"id": "am-6-18", "type": "order", "a": "The ball is in their court now.", "alt": ["The ball is now in their court."], "why": "The ball is in their court = it's their turn to act."},
+    {"id": "am-6-18", "type": "order", "a": "The ball is in their court now.", "alt": ["The ball is now in their court.", "Now the ball is in their court."], "why": "The ball is in their court = it's their turn to act."},
     {"id": "am-6-19", "type": "order", "a": "Our team really hit it out of the park.", "alt": [], "why": "Subject + really + hit it out of the park."},
-    {"id": "am-6-20", "type": "order", "a": "Please give me a ballpark figure by Friday.", "alt": [], "why": "Give me + a ballpark figure + time phrase."}
+    {"id": "am-6-20", "type": "order", "a": "Please give me a ballpark figure by Friday.", "alt": ["Give me a ballpark figure by Friday please."], "why": "Give me + a ballpark figure + time phrase."}
   ]
 });

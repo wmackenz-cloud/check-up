@@ -21,6 +21,6 @@ PRACTICE.add("am-2", {
     {"id": "am-2-17", "type": "spot", "q": "We don't see eye to eye on politics, but we're still close friends.", "bad": "", "why": "Correct! The negative form is the most natural use."},
     {"id": "am-2-18", "type": "order", "a": "The new evidence sheds light on the crash.", "alt": [], "why": "Subject + sheds light on + the thing explained."},
     {"id": "am-2-19", "type": "order", "a": "My parents never saw eye to eye about money.", "alt": [], "why": "Never + saw eye to eye + about/on: long-term disagreement."},
-    {"id": "am-2-20", "type": "order", "a": "The staff were kept in the dark for weeks.", "alt": [], "why": "Passive keep someone in the dark: were kept in the dark."}
+    {"id": "am-2-20", "type": "order", "a": "The staff were kept in the dark for weeks.", "alt": ["For weeks the staff were kept in the dark."], "why": "Passive keep someone in the dark: were kept in the dark."}
   ]
 });

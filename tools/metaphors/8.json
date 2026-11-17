@@ -140,11 +140,11 @@
       {"q": "There's finally light at the end of the bridge for the striking teachers.", "bad": "end of the bridge", "fix": "end of the tunnel", "opts": ["end of the tunnel", "end of the road"], "why": "The image is leaving a dark tunnel. End of the road means something is finished."}
     ],
     "type": [
-      {"q": "The peace talks have hit a ___ over the question of borders.", "a": ["roadblock", "snag"], "why": "Hit a roadblock = meet an obstacle that stops progress."},
-      {"q": "We passed an important ___ yesterday: ten thousand subscribers.", "a": ["milestone"], "why": "A milestone = a significant stage reached."},
+      {"q": "The peace talks have hit a ___ over the question of borders.", "a": ["roadblock", "snag", "wall", "obstacle", "barrier"], "why": "Hit a roadblock = meet an obstacle that stops progress."},
+      {"q": "We passed an important ___ yesterday: ten thousand subscribers.", "a": ["milestone", "landmark"], "why": "A milestone = a significant stage reached."},
       {"q": "I was supposed to write my speech, but I got side___ by the news.", "a": ["tracked"], "why": "Get sidetracked = be distracted from your path."},
       {"q": "We spent our honeymoon somewhere off the beaten ___ in Newfoundland.", "a": ["track", "path"], "why": "Off the beaten track = far from popular places."},
-      {"q": "Leaving law school was the right decision, but it was a real ___ in the road.", "a": ["fork", "turning"], "why": "A fork in the road = a point where you must choose."},
+      {"q": "Leaving law school was the right decision, but it was a real ___ in the road.", "a": ["fork", "turning", "turn"], "why": "A fork in the road = a point where you must choose."},
       {"q": "No one knows what the road ___ looks like for local newspapers.", "a": ["ahead"], "why": "The road ahead = the future."}
     ],
     "bend": [
@@ -182,7 +182,7 @@
       {"q": "Graduating from college was an important milepost in her life.", "bad": "milepost", "fix": "milestone", "opts": ["milestone", "landmark stone"], "why": "The idiom is milestone: an important stage."},
       {"q": "We prefer cottages off the beaten road where it's quiet.", "bad": "off the beaten road", "fix": "off the beaten track", "opts": ["off the beaten track", "off the beat road"], "why": "The fixed form is off the beaten track (or path)."},
       {"q": "The coach says the team is finally back in track after a bad start.", "bad": "back in track", "fix": "back on track", "opts": ["back on track", "back at track"], "why": "The preposition is on: back on track."},
-      {"q": "Nobody can predict the road before for the auto industry.", "bad": "road before", "fix": "road ahead", "opts": ["road ahead", "road forward"], "why": "The future is the road ahead."}
+      {"q": "Nobody can predict the road before for the auto industry.", "bad": "road before", "fix": "road ahead", "opts": ["road ahead", "road behind"], "why": "The future is the road ahead."}
     ],
     "type": [
       {"q": "My grandmother went the extra ___ for every neighbour on her street.", "a": ["mile"], "why": "Go the extra mile = make more effort than expected."},
@@ -190,7 +190,7 @@
       {"q": "Women's hockey has come a long ___ since the 1990s.", "a": ["way"], "why": "Come a long way = make a lot of progress."},
       {"q": "After months of rehab, he can see light at the end of the ___.", "a": ["tunnel"], "why": "Light at the end of the tunnel = a hard time is ending."},
       {"q": "If the bank says no, we'll cross that ___ when we come to it.", "a": ["bridge"], "why": "Cross that bridge when we come to it = deal with it only if it happens."},
-      {"q": "The province is at a ___ on energy policy.", "a": ["crossroads"], "why": "At a crossroads = facing an important decision."}
+      {"q": "The province is at a ___ on energy policy: it must choose between nuclear and hydro.", "a": ["crossroads"], "why": "At a crossroads = facing an important decision."}
     ]
   },
   "bank": [
@@ -202,17 +202,17 @@
     {"type": "pick", "q": "What if it rains on the wedding day? We'll ___.", "opts": ["come a long way", "cross that bridge when we come to it", "go the extra mile"], "a": "cross that bridge when we come to it", "why": "Deal with the problem only if it happens."},
     {"type": "pick", "q": "The volunteers ___ and delivered meals during the ice storm.", "opts": ["hit a roadblock", "went the extra mile", "got sidetracked"], "a": "went the extra mile", "why": "More effort than expected: went the extra mile."},
     {"type": "pick", "q": "Wind power has ___ since the first turbines were built.", "opts": ["come a long way", "hit a dead end", "crossed that bridge"], "a": "come a long way", "why": "A lot of progress: come a long way."},
-    {"type": "type", "q": "Turning sixty felt like a real ___ for my father.", "a": ["milestone"], "why": "A milestone = an important stage of life."},
-    {"type": "type", "q": "The merger talks have hit a ___ over job cuts.", "a": ["roadblock", "snag"], "why": "Hit a roadblock = meet an obstacle."},
+    {"type": "type", "q": "Turning sixty felt like a real ___ for my father.", "a": ["milestone", "landmark"], "why": "A milestone = an important stage of life."},
+    {"type": "type", "q": "The merger talks have hit a ___ over job cuts.", "a": ["roadblock", "snag", "wall", "obstacle"], "why": "Hit a roadblock = meet an obstacle."},
     {"type": "type", "q": "Stay focused and don't get ___ by social media.", "a": ["sidetracked", "distracted"], "why": "Get sidetracked = be distracted from your path."},
-    {"type": "type", "q": "Choosing between medicine and music was a ___ in the road for her.", "a": ["fork", "turning"], "why": "A fork in the road = a point of choice."},
+    {"type": "type", "q": "Choosing between medicine and music was a ___ in the road for her.", "a": ["fork", "turning", "turn"], "why": "A fork in the road = a point of choice."},
     {"type": "type", "q": "We found a lovely café off the beaten ___ in Old Montreal.", "a": ["track", "path"], "why": "Off the beaten track = away from tourist areas."},
     {"type": "spot", "q": "I'm afraid this relationship is going anywhere.", "bad": "going anywhere", "fix": "going nowhere", "opts": ["going nowhere", "going everywhere"], "why": "A relationship without progress is going nowhere."},
-    {"type": "spot", "q": "The project is on the right rail now.", "bad": "rail", "fix": "track", "opts": ["track", "road"], "why": "The idiom is on the right track."},
+    {"type": "spot", "q": "The project is on the right rail now.", "bad": "rail", "fix": "track", "opts": ["track", "street"], "why": "The idiom is on the right track."},
     {"type": "spot", "q": "After the strike, the school year is back on track.", "bad": "", "why": "Correct! Back on track = progressing as planned again."},
     {"type": "spot", "q": "The new mayor promised to go the extra mile for seniors.", "bad": "", "why": "Correct! Go the extra mile = make more effort than expected."},
     {"type": "order", "a": "Our little company has come a long way.", "alt": [], "why": "Present perfect: has come a long way."},
-    {"type": "order", "a": "We will cross that bridge when we come to it.", "alt": [], "why": "Fixed idiom: cross that bridge when we come to it."},
-    {"type": "order", "a": "She always goes the extra mile for her students.", "alt": [], "why": "Always goes before the verb: always goes the extra mile."}
+    {"type": "order", "a": "We will cross that bridge when we come to it.", "alt": ["When we come to it we will cross that bridge."], "why": "Fixed idiom: cross that bridge when we come to it."},
+    {"type": "order", "a": "She always goes the extra mile for her students.", "alt": ["For her students she always goes the extra mile."], "why": "Always goes before the verb: always goes the extra mile."}
   ]
 }

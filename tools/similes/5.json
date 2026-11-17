@@ -1,0 +1,205 @@
+{
+  "n": 5,
+  "title": "Ironic and Humorous Similes",
+  "tagline": "saying the opposite, with a straight face",
+  "why": "Ironic similes are everywhere in British and Canadian conversation, and they are easy to misread: <em>as clear as mud</em> means very unclear. Understanding them, and knowing when it's safe to use them, is a mark of real fluency.",
+  "know": [
+    "the ironic frame <strong>(about) as + positive adjective + as + something that lacks that quality</strong>",
+    "eight common ironic and humorous similes, with their British and North American versions"
+  ],
+  "understand": [
+    "how <em>about</em> and a flat, deadpan voice signal that a simile is ironic",
+    "why ironic similes can be funny among friends but risky with strangers or in writing"
+  ],
+  "able": [
+    "recognise irony instantly and respond to it naturally",
+    "use ironic similes to complain, tease or criticise in a light, indirect way",
+    "choose a sincere simile instead when irony could be misunderstood"
+  ],
+  "mistakes": [
+    ["The instructions were as clear as mud, so we finished the job in ten minutes.", "<strong>As clear as mud</strong> means very <strong>unclear</strong>. Read the irony: mud is not clear at all."],
+    ["The meeting was as boring as watching the paint drying.", "About as exciting as <strong>watching paint dry</strong>. The phrase is fixed; it's also usually ironic (<em>exciting</em>), not <em>boring</em>."],
+    ["This printer is as useful like a chocolate teapot.", "As useful <strong>as</strong> a chocolate teapot. The frame is <em>as ... as</em>, never <em>as ... like</em>."],
+    ["We need more paperwork like a fish needs an umbrella.", "Like a fish needs <strong>a bicycle</strong>. The famous version is fixed; changing the noun loses the joke."],
+    ["(to your manager) Your plan is as sharp as a bowling ball.", "Too risky. Use playful insults only about yourself or close friends; at work, say <strong>I'm not sure the plan works yet</strong>."]
+  ],
+  "bigidea": [
+    "A sincere simile chooses something that has a lot of the quality: <em>as clear as crystal</em>. An ironic simile does the opposite. It names a positive quality and then compares it to something that completely lacks it: <em>as clear as mud</em>, <em>as useful as a chocolate teapot</em>. The listener's brain notices the clash and gets the joke: the real meaning is the opposite of the adjective.",
+    "The little word <strong>about</strong> is a strong signal: <em>about as useful as</em>, <em>about as exciting as</em>. It sounds like careful understatement, which is exactly what makes it sarcastic. Native speakers deliver these lines <strong>deadpan</strong>: a flat voice, a straight face, no laugh. The humour comes from pretending to be serious.",
+    "Irony is a strong part of British humour and very common in Canada too, but it travels badly. In writing, in a second language, or with people you don't know, it can sound rude or simply be misunderstood. A good rule: be ironic about things, situations and yourself, not about the person in front of you."
+  ],
+  "hidden": [
+    "Getting the kids out the door is <strong>like herding cats</strong>.",
+    "Pinning down his position is <strong>like nailing jelly to a wall</strong>.",
+    "Another committee? I need that <strong>like I need a hole in the head</strong>.",
+    "The second half of the game was <strong>like watching grass grow</strong>.",
+    "Affordable apartments downtown are <strong>as rare as hen's teeth</strong>.",
+    "That umbrella is <strong>about as much use as a chocolate fireguard</strong>."
+  ],
+  "expressions": [
+    {"e": "as clear as mud", "meaning": "very unclear or confusing", "example": "Thanks for the new expense policy. It's <strong>as clear as mud</strong>.", "tone": "humorous",
+     "bend": "Often drops the first <em>as</em>: <em>clear as mud</em>. Also self-mocking: <em>I hope that wasn't as clear as mud</em>.",
+     "note": "The ironic opposite of <em>as clear as crystal</em> or <em>crystal clear</em>. Safe and friendly: it criticises the explanation, not the person."},
+    {"e": "as useful as a chocolate teapot", "meaning": "completely useless", "example": "This flimsy little umbrella is <strong>about as useful as a chocolate teapot</strong>.", "tone": "humorous",
+     "bend": "<em>About as useful as</em>, <em>about as much use as</em>; British variants include <em>a chocolate fireguard</em>.",
+     "note": "Mainly British, but understood in Canada. A teapot made of chocolate would melt as soon as you filled it."},
+    {"e": "about as much use as a screen door on a submarine", "meaning": "completely useless, or making things worse", "example": "Without a battery, this smoke detector is <strong>about as much use as a screen door on a submarine</strong>.", "tone": "humorous",
+     "bend": "Also <em>as useful as a screen door on a submarine</em>; sometimes just <em>a screen door on a submarine</em>.",
+     "note": "North American: screen doors (with insect mesh) are a summer cottage staple. Stronger than <em>useless</em>: it would actively sink you."},
+    {"e": "as subtle as a sledgehammer", "meaning": "very obvious and heavy-handed", "example": "His hint that he wanted the corner office was <strong>about as subtle as a sledgehammer</strong>.", "tone": "humorous",
+     "bend": "Often with <em>about</em>; also <em>subtle as a brick</em>, <em>as subtle as a punch in the face</em>.",
+     "note": "Used for hints, advertising, political messages and films. Mildly critical. A neutral alternative: <em>heavy-handed</em>."},
+    {"e": "as welcome as a skunk at a garden party", "meaning": "extremely unwelcome", "example": "The tax inspector was <strong>about as welcome as a skunk at a garden party</strong>.", "tone": "humorous",
+     "bend": "Often as a metaphor: <em>he was the skunk at the garden party</em> (the one who spoiled the fun).",
+     "note": "North American; skunks are a familiar summer nuisance in Ontario. Common in political commentary for an unpopular speaker or bad news."},
+    {"e": "about as exciting as watching paint dry", "meaning": "extremely boring", "example": "Honestly, the quarterly report was <strong>about as exciting as watching paint dry</strong>.", "tone": "humorous",
+     "bend": "Also <em>like watching paint dry</em> and <em>like watching grass grow</em>. Fixed: <em>paint dry</em>, not <em>paint drying</em>.",
+     "note": "Very common in both British and North American English. Often used about sport, lectures and long meetings."},
+    {"e": "like a fish needs a bicycle", "meaning": "not needed at all", "example": "This town needs another parking garage <strong>like a fish needs a bicycle</strong>.", "tone": "humorous",
+     "bend": "Usually <em>need X like a fish needs a bicycle</em>. Near-synonym: <em>I need that like I need a hole in the head</em>.",
+     "note": "Coined by the Australian writer Irina Dunn in 1970 in a feminist slogan about women and men, and made famous by Gloria Steinem. Now used for anything unnecessary."},
+    {"e": "as sharp as a bowling ball", "meaning": "not clever or quick-thinking at all (playful insult)", "example": "Before my first coffee, I'm <strong>about as sharp as a bowling ball</strong>.", "tone": "humorous",
+     "bend": "Also <em>as sharp as a marble</em>; compare the understatement <em>not the sharpest tool in the shed</em>.",
+     "note": "Use with care: safest about yourself. Calling a colleague this can be hurtful. The sincere opposite is <em>as sharp as a tack</em> (very clever)."}
+  ],
+  "culture": [
+    {"kind": "Literature", "work": "Farewell, My Lovely", "by": "Raymond Chandler", "year": "1940",
+     "how": "Chandler's detective Philip Marlowe describes Los Angeles in wild, deadpan similes. Early on, a huge ex-convict in loud clothes is said to stand out on a shabby street about as much as a big spider on a pale cake would. The comic exaggeration became the model for hard-boiled crime writing.",
+     "ask": "Describe someone or something that really stood out in a place, using a Chandler-style simile.",
+     "find": "Raymond Chandler Farewell My Lovely similes Moose Malloy"},
+    {"kind": "Literature", "work": "The Hitchhiker's Guide to the Galaxy", "by": "Douglas Adams", "year": "1979",
+     "how": "When an alien fleet arrives over Earth, the narrator says the enormous ships hang in the sky by comparing them to bricks, which famously do not hang anywhere. It's a simile built on a negative: the joke works because you have to undo the comparison to get it.",
+     "ask": "Can you invent a negative simile of your own, comparing something to what it is not?",
+     "find": "Douglas Adams Hitchhiker's Guide Vogon ships bricks"},
+    {"kind": "Poetry", "work": "Sonnet 130", "by": "William Shakespeare", "year": "1609",
+     "how": "Love poets of Shakespeare's time compared their ladies' eyes to the sun, lips to coral and skin to snow. In this sonnet the speaker runs through those clichés and admits his lover matches none of them, then says his love is as real as any. It's a parody of tired similes.",
+     "ask": "Which clichéd compliments or love-song similes would you happily retire today?",
+     "find": "Shakespeare Sonnet 130 my mistress eyes"},
+    {"kind": "Music", "work": "Smells Like Teen Spirit", "by": "Nirvana", "year": "1991",
+     "how": "The title began as a joke. The musician Kathleen Hanna wrote on Kurt Cobain's wall that he smelled like Teen Spirit, a deodorant his girlfriend wore. Cobain didn't know the brand and took it as a rebellious slogan, so a teasing simile became the title of a generation's anthem.",
+     "ask": "Do you know other famous names or slogans that began as a joke or a misunderstanding?",
+     "find": "Nirvana Smells Like Teen Spirit title origin Kathleen Hanna"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "as clear as mud", "r": "very confusing", "why": "Mud is the opposite of clear: the irony gives the real meaning."},
+      {"l": "as useful as a chocolate teapot", "r": "useless (British)", "why": "A chocolate teapot melts when you fill it."},
+      {"l": "about as much use as a screen door on a submarine", "r": "useless, even harmful (North American)", "why": "A mesh door would let the sea in."},
+      {"l": "as subtle as a sledgehammer", "r": "very obvious and heavy-handed", "why": "A sledgehammer is the least subtle tool there is."},
+      {"l": "as welcome as a skunk at a garden party", "r": "extremely unwelcome", "why": "Picture the smell at an elegant outdoor party."},
+      {"l": "about as exciting as watching paint dry", "r": "extremely boring", "why": "Exciting is ironic: nothing happens when paint dries."},
+      {"l": "like a fish needs a bicycle", "r": "not needed at all", "why": "Coined by Irina Dunn in 1970 and popularised by Gloria Steinem."},
+      {"l": "as sharp as a bowling ball", "r": "not clever (playful insult)", "why": "A bowling ball is perfectly round, with no sharp edge. Use with care."}
+    ],
+    "sort": {
+      "h": "Sort the similes: are they <strong>ironic</strong> (they mean the opposite of the adjective) or <strong>sincere</strong> (they mean what they say)?",
+      "cols": ["Ironic: means the opposite", "Sincere: means what it says"],
+      "items": [
+        {"w": "as clear as mud", "c": 0, "why": "Means unclear."},
+        {"w": "as useful as a chocolate teapot", "c": 0, "why": "Means useless."},
+        {"w": "as subtle as a sledgehammer", "c": 0, "why": "Means very obvious."},
+        {"w": "about as exciting as watching paint dry", "c": 0, "why": "Means very boring."},
+        {"w": "as welcome as a skunk at a garden party", "c": 0, "why": "Means very unwelcome."},
+        {"w": "as sharp as a bowling ball", "c": 0, "why": "Means not clever."},
+        {"w": "as clear as crystal", "c": 1, "why": "Really clear. Often crystal clear."},
+        {"w": "as sharp as a tack", "c": 1, "why": "Really clever and quick. Compare the ironic bowling ball."},
+        {"w": "as cool as a cucumber", "c": 1, "why": "Really calm under pressure."},
+        {"w": "as fresh as a daisy", "c": 1, "why": "Really lively and rested."},
+        {"w": "as good as gold", "c": 1, "why": "Really well-behaved, usually about children."},
+        {"w": "as easy as pie", "c": 1, "why": "Really easy."}
+      ]
+    },
+    "pick": [
+      {"q": "The minister's answer on the pipeline was ___; nobody knew if she supported it or not.", "opts": ["as clear as mud", "as clear as crystal", "as good as gold"], "a": 0, "why": "Nobody understood = as clear as mud. Crystal would mean the opposite."},
+      {"q": "That folding chair from the dollar store is ___. It collapsed the first time I sat on it.", "opts": ["as useful as a chocolate teapot", "as fresh as a daisy", "as sharp as a tack"], "a": 0, "why": "Useless = as useful as a chocolate teapot."},
+      {"q": "In a Muskoka storm, a canoe with a hole is ___.", "opts": ["about as much use as a screen door on a submarine", "as cool as a cucumber", "as easy as pie"], "a": 0, "why": "Useless and dangerous = about as much use as a screen door on a submarine."},
+      {"q": "The ad's message, buy now or regret it forever, was ___.", "opts": ["as subtle as a sledgehammer", "as clear as mud", "as welcome as a skunk at a garden party"], "a": 0, "why": "Very obvious and heavy-handed = as subtle as a sledgehammer."},
+      {"q": "After his comments about the budget, the treasurer was ___ at the staff party.", "opts": ["as sharp as a bowling ball", "about as welcome as a skunk at a garden party", "as good as gold"], "a": 1, "why": "Very unwelcome = about as welcome as a skunk at a garden party."},
+      {"q": "Three hours of slides about filing codes? That sounds ___.", "opts": ["as subtle as a sledgehammer", "about as exciting as watching paint dry", "as clear as crystal"], "a": 1, "why": "Extremely boring = about as exciting as watching paint dry."},
+      {"q": "My small apartment needs a giant sectional sofa ___.", "opts": ["like a fish needs a bicycle", "like a kid in a candy store", "as easy as pie"], "a": 0, "why": "Not needed at all = like a fish needs a bicycle."},
+      {"q": "I forgot my own phone number at the bank. Jet lag makes me ___.", "opts": ["as sharp as a tack", "about as sharp as a bowling ball", "as fresh as a daisy"], "a": 1, "why": "Self-mocking: not quick-thinking = about as sharp as a bowling ball."}
+    ],
+    "spot": [
+      {"q": "The new seating plan is as clear as a mud, so please ask me if you're lost.", "bad": "as clear as a mud", "fix": "as clear as mud", "opts": ["as clear as mud", "as clear as fog"], "why": "Mud is uncountable here: as clear as mud, no article."},
+      {"q": "That speech was about as subtle like a sledgehammer.", "bad": "subtle like a sledgehammer", "fix": "subtle as a sledgehammer", "opts": ["subtle as a sledgehammer", "subtle as a hammer drill"], "why": "The frame is as ... as, never as ... like."},
+      {"q": "The cricket highlights were about as exciting as watching the paint drying.", "bad": "watching the paint drying", "fix": "watching paint dry", "opts": ["watching paint dry", "watching the rain"], "why": "The phrase is fixed: watching paint dry."},
+      {"q": "Our tiny office needs a ping-pong table like a fish needs a raincoat.", "bad": "like a fish needs a raincoat", "fix": "like a fish needs a bicycle", "opts": ["like a fish needs a bicycle", "like a fish needs water"], "why": "The famous version is like a fish needs a bicycle. A fish does need water."},
+      {"q": "Without a charger, this laptop is as useful as a chocolate kettle.", "bad": "a chocolate kettle", "fix": "a chocolate teapot", "opts": ["a chocolate teapot", "a chocolate bar"], "why": "The set version is a chocolate teapot (or a chocolate fireguard)."}
+    ],
+    "type": [
+      {"q": "My doctor's explanation of the test results was as clear as ___.", "a": ["mud"], "why": "As clear as mud: very unclear (ironic)."},
+      {"q": "A paper map in the rain is about as useful as a chocolate ___.", "a": ["teapot", "fireguard"], "why": "As useful as a chocolate teapot or fireguard: useless (British)."},
+      {"q": "That old firewall is about as much use as a screen door on a ___.", "a": ["submarine"], "why": "A screen door on a submarine: useless, even harmful."},
+      {"q": "The sponsor's logo on every shirt was as subtle as a ___.", "a": ["sledgehammer"], "why": "As subtle as a sledgehammer: very obvious."},
+      {"q": "Golf on TV is about as exciting as watching paint ___.", "a": ["dry"], "why": "Watching paint dry: extremely boring."},
+      {"q": "The festival needs more rain like a fish needs a ___.", "a": ["bicycle", "bike"], "why": "Like a fish needs a bicycle: not needed at all."}
+    ],
+    "bend": [
+      {"q": "A colleague comments quietly on a confusing memo. Which version sounds most natural? ___", "opts": ["Well, that's clear as mud.", "Well, that's as clear like mud.", "Well, that's clear as a mud."], "a": 0, "why": "In casual speech the first as is often dropped: clear as mud."},
+      {"q": "Someone adds a deadpan understatement. Which version sounds natural? ___", "opts": ["The new app is about as useful as a chocolate teapot.", "The new app is as about useful as a chocolate teapot.", "The new app is useful about a chocolate teapot."], "a": 0, "why": "About goes before the whole frame: about as useful as."},
+      {"q": "A Canadian columnist turns the simile into a metaphor. Which version sounds natural? ___", "opts": ["The finance minister was the skunk at the garden party.", "The finance minister was a garden party of skunks.", "The finance minister was skunk-like at the garden party."], "a": 0, "why": "You can drop as welcome as: he was the skunk at the garden party."},
+      {"q": "Someone gives the boring simile a different image. Which version sounds natural? ___", "opts": ["The debate was like watching grass grow.", "The debate was like watching grass growing up.", "The debate was like watching the grass to grow."], "a": 0, "why": "Like watching grass grow is a common variant of like watching paint dry."}
+    ],
+    "talk": [
+      "Shakespeare's Sonnet 130 mocks the clichéd love comparisons of his day. Which similes or compliments do you find tired today, and what would you say instead?",
+      "Raymond Chandler's similes are funny because they exaggerate. Describe a terrible hotel room, a boring meeting or an awful meal with two ironic similes.",
+      "Role-play: a friend asks for your opinion of a new gadget they bought, which you think is useless. First answer with an ironic simile, then soften it politely.",
+      "In your first language, do people use irony in the same way? Is irony safe at work in your culture?",
+      "Explain the difference between <strong>as sharp as a tack</strong> and <strong>as sharp as a bowling ball</strong>. When would you use the second one, and when never?"
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "as much fun as a trip to the dentist", "r": "not fun at all", "why": "Ironic: most people dread the dentist."},
+      {"l": "like herding cats", "r": "trying to organise people who won't cooperate", "why": "Cats go wherever they like. Often said about volunteers or meetings."},
+      {"l": "like I need a hole in the head", "r": "I really don't need it", "why": "Same meaning as like a fish needs a bicycle, but more personal."},
+      {"l": "as much use as a chocolate fireguard", "r": "useless (British)", "why": "A fireguard made of chocolate would melt."},
+      {"l": "like nailing jelly to a wall", "r": "impossible to pin down", "why": "North Americans often say Jell-O. Used for vague people or ideas."},
+      {"l": "as rare as hen's teeth", "r": "extremely rare", "why": "Hens have no teeth: exaggeration rather than irony."}
+    ],
+    "pick": [
+      {"q": "Renewing my passport this year was ___.", "opts": ["as much fun as a trip to the dentist", "as fresh as a daisy", "as good as gold"], "a": 0, "why": "Not fun at all = as much fun as a trip to the dentist."},
+      {"q": "Organising twenty volunteers for the book sale was ___.", "opts": ["like herding cats", "as clear as crystal", "as easy as pie"], "a": 0, "why": "Trying to organise people who won't cooperate = like herding cats."},
+      {"q": "A second mortgage? I need that ___.", "opts": ["like I need a hole in the head", "like a kid in a candy store", "as cool as a cucumber"], "a": 0, "why": "Not needed at all = like I need a hole in the head."},
+      {"q": "Getting a clear answer from that senator is ___.", "opts": ["as good as gold", "like nailing jelly to a wall", "as fresh as a daisy"], "a": 1, "why": "Impossible to pin down = like nailing jelly to a wall."},
+      {"q": "Family doctors taking new patients are ___ in some rural towns.", "opts": ["as rare as hen's teeth", "as subtle as a sledgehammer", "as clear as mud"], "a": 0, "why": "Extremely rare = as rare as hen's teeth."},
+      {"q": "A paper fan in a heatwave is ___.", "opts": ["as sharp as a tack", "about as much use as a chocolate fireguard", "as cool as a cucumber"], "a": 1, "why": "Useless = about as much use as a chocolate fireguard."}
+    ],
+    "spot": [
+      {"q": "Getting the grandchildren into their snowsuits is like herding dogs.", "bad": "like herding dogs", "fix": "like herding cats", "opts": ["like herding cats", "like walking dogs"], "why": "The image is cats, which can't be herded: like herding cats."},
+      {"q": "A broken dishwasher before the holidays? I need that like I need a hole in the foot.", "bad": "a hole in the foot", "fix": "a hole in the head", "opts": ["a hole in the head", "a hole in my pocket"], "why": "The fixed phrase is like I need a hole in the head."},
+      {"q": "Honest used-car salesmen are as rare as chicken's teeth, my father says.", "bad": "chicken's teeth", "fix": "hen's teeth", "opts": ["hen's teeth", "chicken feathers"], "why": "The fixed phrase is as rare as hen's teeth."},
+      {"q": "His explanation of the merger was like nailing butter to a wall.", "bad": "nailing butter to a wall", "fix": "nailing jelly to a wall", "opts": ["nailing jelly to a wall", "spreading butter on toast"], "why": "The usual phrase is nailing jelly (or Jell-O) to a wall."}
+    ],
+    "type": [
+      {"q": "Filling in the tax forms was about as much fun as a trip to the ___.", "a": ["dentist", "dentist's"], "why": "As much fun as a trip to the dentist: not fun at all."},
+      {"q": "Running the parents' committee is like herding ___.", "a": ["cats"], "why": "Like herding cats: organising people who won't cooperate."},
+      {"q": "More rain this week? I need that like I need a hole in the ___.", "a": ["head"], "why": "Like I need a hole in the head: not needed at all."},
+      {"q": "Trying to pin down his schedule is like nailing ___ to a wall.", "a": ["jelly", "jell-o", "jello"], "why": "Like nailing jelly to a wall: impossible to pin down."},
+      {"q": "Good, cheap childcare is as rare as hen's ___.", "a": ["teeth"], "why": "As rare as hen's teeth: extremely rare."},
+      {"q": "A cardboard umbrella would be about as much use as a chocolate ___.", "a": ["fireguard", "teapot"], "why": "A chocolate fireguard or teapot: useless (British)."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "The assembly instructions for the bookcase were ___, so I watched a video instead.", "opts": ["as clear as mud", "as clear as crystal", "as good as gold"], "a": "as clear as mud", "why": "Confusing = as clear as mud."},
+    {"type": "pick", "q": "A sat-nav with no signal is ___ in the Highlands.", "opts": ["as useful as a chocolate teapot", "as fresh as a daisy", "as cool as a cucumber"], "a": "as useful as a chocolate teapot", "why": "Useless = as useful as a chocolate teapot."},
+    {"type": "pick", "q": "A diet plan you can't follow is ___.", "opts": ["about as much use as a screen door on a submarine", "as sharp as a tack", "as easy as pie"], "a": "about as much use as a screen door on a submarine", "why": "Useless = about as much use as a screen door on a submarine."},
+    {"type": "pick", "q": "Leaving job ads on my desk was ___; I got the message.", "opts": ["about as subtle as a sledgehammer", "as clear as mud", "as good as gold"], "a": "about as subtle as a sledgehammer", "why": "Very obvious = about as subtle as a sledgehammer."},
+    {"type": "pick", "q": "The landlord who raised the rent by 20 per cent was ___ at the tenants' barbecue.", "opts": ["as welcome as a skunk at a garden party", "as fresh as a daisy", "as sharp as a tack"], "a": "as welcome as a skunk at a garden party", "why": "Very unwelcome = as welcome as a skunk at a garden party."},
+    {"type": "pick", "q": "Waiting for the ferry with no phone was ___.", "opts": ["about as exciting as watching paint dry", "as subtle as a sledgehammer", "as cool as a cucumber"], "a": "about as exciting as watching paint dry", "why": "Extremely boring = about as exciting as watching paint dry."},
+    {"type": "pick", "q": "My retired dad needs a smartwatch ___; he doesn't even wear a normal one.", "opts": ["like a fish needs a bicycle", "as sharp as a tack", "like a broken record"], "a": "like a fish needs a bicycle", "why": "Not needed at all = like a fish needs a bicycle."},
+    {"type": "pick", "q": "Her grandmother is ninety-two and still ___; she does the cryptic crossword daily.", "opts": ["as sharp as a tack", "as sharp as a bowling ball", "as clear as mud"], "a": "as sharp as a tack", "why": "Sincere: very clever = as sharp as a tack. The bowling ball version is the ironic opposite."},
+    {"type": "type", "q": "His directions to the cottage were as clear as ___.", "a": ["mud"], "why": "As clear as mud: confusing."},
+    {"type": "type", "q": "The speech about 'synergy' was about as exciting as watching paint ___.", "a": ["dry"], "why": "Watching paint dry: very boring."},
+    {"type": "type", "q": "The council's warning about the fines was as subtle as a ___.", "a": ["sledgehammer"], "why": "As subtle as a sledgehammer: very obvious."},
+    {"type": "type", "q": "Organising a family photo with eight grandchildren is like herding ___.", "a": ["cats"], "why": "Like herding cats: organising people who won't cooperate."},
+    {"type": "type", "q": "Since the move, I've been about as sharp as a bowling ___.", "a": ["ball"], "why": "As sharp as a bowling ball: not quick-thinking. Best used about yourself."},
+    {"type": "spot", "q": "This guidebook is about as useful as a chocolate teacup.", "bad": "a chocolate teacup", "fix": "a chocolate teapot", "opts": ["a chocolate teapot", "a china teapot"], "why": "The set phrase is a chocolate teapot."},
+    {"type": "spot", "q": "Mentioning his ex was about as welcome as a skunk in a garden party.", "bad": "a skunk in a garden party", "fix": "a skunk at a garden party", "opts": ["a skunk at a garden party", "a skunk in the garden"], "why": "The preposition is fixed: a skunk at a garden party."},
+    {"type": "spot", "q": "That training video was about as exciting as watching paint dry.", "bad": "", "why": "Correct! About as exciting as watching paint dry = extremely boring."},
+    {"type": "spot", "q": "We need another reorganisation like a fish needs a bicycle.", "bad": "", "why": "Correct! Like a fish needs a bicycle = not needed at all."},
+    {"type": "order", "a": "The new policy is about as clear as mud", "alt": [], "why": "About + as clear as mud: deadpan understatement."},
+    {"type": "order", "a": "This map is about as useful as a chocolate teapot", "alt": [], "why": "About as useful as + absurd noun = useless."},
+    {"type": "order", "a": "I need that like I need a hole in the head", "alt": [], "why": "I need X like I need a hole in the head = I don't need it at all."}
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "n": 3,
+  "title": "Like ...: Actions",
+  "tagline": "how people and things move, work and behave",
+  "why": "<em>Verb + like + noun</em> similes describe how something is done: how deeply you sleep, how fast news travels, how smoothly a plan works. They are everywhere in conversation, sports commentary and journalism.",
+  "know": [
+    "the frame <strong>verb + like + noun</strong> and eight high-frequency action similes",
+    "which verbs each simile goes with (<em>sell</em> like hot cakes, <em>spread</em> like wildfire)"
+  ],
+  "understand": [
+    "why <em>like</em>, not <em>as</em>, introduces a noun after a verb",
+    "the difference in tone between praise (<em>fit like a glove</em>) and criticism (<em>drink like a fish</em>)"
+  ],
+  "able": [
+    "describe habits, success and speed with natural action similes",
+    "change tense and subject freely while keeping the fixed noun",
+    "judge register, from neutral (<em>spread like wildfire</em>) to slangy (<em>like a bat out of hell</em>)"
+  ],
+  "mistakes": [
+    ["The rumour spread as wildfire through the office.", "The rumour spread <strong>like</strong> wildfire. Before a noun after a verb, use <em>like</em>; <em>as</em> means in the role of."],
+    ["Her new novel is selling like hot bread.", "Selling <strong>like hot cakes</strong> (or <em>hotcakes</em>). A literal translation (e.g. French <em>petits pains</em>) sounds odd in English."],
+    ["I slept like a stone after the hike.", "I slept <strong>like a log</strong>. English also says <em>slept like a baby</em>, but not a stone."],
+    ["The wedding went as a clockwork.", "The wedding went <strong>like clockwork</strong>. No article: <em>clockwork</em> is uncountable."],
+    ["He took to golf like a fish to water.", "He took to golf <strong>like a duck to water</strong>. The animal is fixed."]
+  ],
+  "bigidea": [
+    "After a verb, English uses <strong>like + noun</strong> to compare how something happens: <em>she sleeps like a log</em>, <em>it fits like a glove</em>. Using <em>as</em> here changes the meaning: <em>he worked as a horse</em> would mean that was his job.",
+    "Action similes package a whole picture into one phrase. <em>Spread like wildfire</em> tells you the speed, the danger and the impossibility of stopping it. That's why journalists and commentators love them.",
+    "The verb and the noun usually come as a pair. Things <em>sell</em> like hot cakes, rumours <em>spread</em> like wildfire, plans <em>go</em> or <em>run</em> like clockwork. Change the tense or the subject, but keep the pair together."
+  ],
+  "hidden": [
+    "My brother <strong>drives like a maniac</strong> on the 401.",
+    "The choir's soprano <strong>sings like an angel</strong>.",
+    "The news of the layoffs <strong>hit me like a train</strong>.",
+    "We <strong>worked like dogs</strong> all summer to finish the cottage.",
+    "As soon as the bell rang, the kids <strong>took off like a shot</strong>.",
+    "The new manager <strong>watches us like a hawk</strong>.",
+    "After the long shift I <strong>went out like a light</strong>."
+  ],
+  "expressions": [
+    {"e": "sleep like a log", "meaning": "sleep very deeply and without waking", "example": "After a day of skiing at Blue Mountain, we all <strong>slept like logs</strong>.", "tone": "casual",
+     "bend": "Any tense: <em>I slept like a log</em>, <em>you'll sleep like a log</em>. Plural: <em>slept like logs</em>.",
+     "note": "Near-synonyms: <em>sleep like a baby</em> (peacefully), <em>go out like a light</em> (fall asleep instantly). Not <em>like a stone</em>."},
+    {"e": "eat like a horse", "meaning": "eat very large amounts", "example": "Our teenage son <strong>eats like a horse</strong>; we buy milk every two days.", "tone": "casual",
+     "bend": "Usually present simple for habits. Opposite: <em>eat like a bird</em> (very little).",
+     "note": "Fine for family and friends; saying it to or about a woman you don't know well may sound rude."},
+    {"e": "spread like wildfire", "meaning": "spread very quickly and uncontrollably", "example": "The video of the moose in the mall <strong>spread like wildfire</strong> online.", "tone": "neutral",
+     "bend": "Used with news, rumours, panic, trends and diseases. Any tense. Not <em>spread like fire</em>.",
+     "note": "Neutral enough for news reports. In Canada and California the literal image is very real, so it carries extra force."},
+    {"e": "sell like hot cakes", "meaning": "sell very quickly and in large numbers", "example": "Heat pumps are <strong>selling like hot cakes</strong> since the rebate was announced.", "tone": "casual",
+     "bend": "Also spelled <em>hotcakes</em>. Usually progressive or past: <em>they're selling / they sold like hot cakes</em>.",
+     "note": "Hot cakes are pancakes, which sold fast at fairs. Don't translate a local version like <em>hot bread</em>."},
+    {"e": "fit like a glove", "meaning": "fit perfectly; be exactly right", "example": "The suit I found at the thrift store <strong>fits like a glove</strong>.", "tone": "neutral",
+     "bend": "For clothes, but also jobs and roles: <em>the new role fits her like a glove</em>. Add an object: <em>fits me like a glove</em>.",
+     "note": "Always positive. Compare <em>suit someone down to the ground</em> (British): be perfect for someone."},
+    {"e": "work like a charm", "meaning": "work perfectly, often better than expected", "example": "I tried turning it off and on again, and it <strong>worked like a charm</strong>.", "tone": "casual",
+     "bend": "Usually past simple: <em>it worked like a charm</em>. Variant: <em>work like a dream</em> (British leaning).",
+     "note": "A charm is a magic spell, so the idea is that it worked almost magically. About methods and tricks, not people working hard."},
+    {"e": "go like clockwork", "meaning": "happen exactly as planned, with no problems", "example": "Thanks to the volunteers, the marathon <strong>went like clockwork</strong>.", "tone": "neutral",
+     "bend": "<em>Go</em> or <em>run like clockwork</em>. Related: <em>as regular as clockwork</em> (happening at the same time every time).",
+     "note": "No article: not <em>like a clockwork</em>. Good in work emails and reports."},
+    {"e": "take to something like a duck to water", "meaning": "learn or adapt to something naturally and easily", "example": "My mother <strong>took to</strong> her tablet <strong>like a duck to water</strong>.", "tone": "casual",
+     "bend": "Pattern: <em>take to + noun/ing + like a duck to water</em>. Usually past: <em>she took to teaching like a duck to water</em>.",
+     "note": "The verb is <em>take to</em> (begin to like or do well). Not <em>like a fish to water</em>. Always positive and admiring."}
+  ],
+  "culture": [
+    {"kind": "Literature", "work": "The Trial", "by": "Franz Kafka", "year": "1925",
+     "how": "Josef K. is arrested one morning and spends the novel fighting a court that never tells him his crime. At the very end, as he is put to death, his final thought is that he is dying <strong>like a dog</strong>, and he feels the shame will outlive him. Two words of action simile sum up a whole life without dignity.",
+     "ask": "English has many <em>like a dog</em> similes: work like a dog, be treated like a dog, die like a dog. Why do you think dogs appear in so many negative action similes?",
+     "find": "Kafka The Trial ending Josef K. like a dog"},
+    {"kind": "Poetry", "work": "The Eagle", "by": "Alfred, Lord Tennyson", "year": "1851",
+     "how": "This six-line poem shows an eagle perched high on a cliff above the sea, watching. In the final line the bird drops, and Tennyson compares its sudden dive to a thunderbolt. One action simile carries all the speed and power of the poem.",
+     "ask": "What action in sport or nature would you describe with a thunderbolt simile? Why?",
+     "find": "Tennyson The Eagle poem 1851"},
+    {"kind": "Music", "work": "Like a Hurricane", "by": "Neil Young", "year": "1977",
+     "how": "The Canadian songwriter compares the overwhelming, uncontrollable feeling of being drawn to someone to being caught in a hurricane. The long guitar solos make the storm audible. Like <strong>spread like wildfire</strong>, it pictures a force you can't resist.",
+     "ask": "Which is the better image for falling in love: a hurricane, wildfire, or something calmer? Why?",
+     "find": "Neil Young Like a Hurricane 1977"},
+    {"kind": "Music", "work": "Like a Rock", "by": "Bob Seger", "year": "1986",
+     "how": "Seger looks back at himself as a strong, steady young man and compares him to a rock, then wonders where that strength went. The song later became famous in Chevrolet truck commercials, where the simile sold toughness and reliability.",
+     "ask": "Is it fair for advertisers to use a song about lost youth to sell trucks? What changes when a simile becomes a slogan?",
+     "find": "Bob Seger Like a Rock 1986"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "sleep like a log", "r": "sleep very deeply", "why": "A log lies still and doesn't wake up."},
+      {"l": "eat like a horse", "r": "eat a lot", "why": "Horses eat large amounts. Opposite: eat like a bird."},
+      {"l": "spread like wildfire", "r": "spread fast and uncontrollably", "why": "News, rumours and trends spread like wildfire."},
+      {"l": "sell like hot cakes", "r": "sell quickly in large numbers", "why": "Hot cakes are pancakes, popular at fairs."},
+      {"l": "fit like a glove", "r": "fit perfectly", "why": "Clothes, jobs and roles can all fit like a glove."},
+      {"l": "work like a charm", "r": "work perfectly", "why": "A charm is a magic spell."},
+      {"l": "go like clockwork", "r": "happen smoothly as planned", "why": "Like the precise parts of a clock. No article."},
+      {"l": "take to something like a duck to water", "r": "learn something naturally", "why": "Ducklings swim without being taught."}
+    ],
+    "sort": {
+      "h": "Sort the similes: do they describe <strong>habits of the body</strong>, <strong>success and things going well</strong>, or <strong>speed and force</strong>?",
+      "cols": ["Habits of the body", "Success", "Speed and force"],
+      "items": [
+        {"w": "sleep like a log", "c": 0, "why": "How deeply someone sleeps."},
+        {"w": "eat like a horse", "c": 0, "why": "How much someone eats."},
+        {"w": "drink like a fish", "c": 0, "why": "Drinking a lot of alcohol, as a habit. Critical."},
+        {"w": "smoke like a chimney", "c": 0, "why": "Smoking a lot. Critical or humorous."},
+        {"w": "fit like a glove", "c": 1, "why": "Perfect fit."},
+        {"w": "work like a charm", "c": 1, "why": "Works perfectly."},
+        {"w": "go like clockwork", "c": 1, "why": "Happens exactly as planned."},
+        {"w": "sell like hot cakes", "c": 1, "why": "Commercial success."},
+        {"w": "spread like wildfire", "c": 2, "why": "Fast and uncontrollable."},
+        {"w": "run like the wind", "c": 2, "why": "Run extremely fast."},
+        {"w": "drive like a bat out of hell", "c": 2, "why": "Go dangerously fast. Informal; hell may offend some listeners."},
+        {"w": "come down on someone like a ton of bricks", "c": 2, "why": "Punish or criticise someone very severely."}
+      ]
+    },
+    "pick": [
+      {"q": "The cabin was so quiet that I ___ for ten hours.", "opts": ["slept like a log", "ate like a horse", "sold like hot cakes"], "a": 0, "why": "Sleeping deeply = slept like a log."},
+      {"q": "Since he started playing hockey twice a day, our nephew ___.", "opts": ["eats like a horse", "fits like a glove", "goes like clockwork"], "a": 0, "why": "Eating very large amounts = eats like a horse."},
+      {"q": "Within an hour, the rumour about the mayor's resignation had ___.", "opts": ["worked like a charm", "spread like wildfire", "slept like a log"], "a": 1, "why": "Spreading fast and uncontrollably = spread like wildfire."},
+      {"q": "The bakery's maple butter tarts are ___ at the farmers' market.", "opts": ["selling like hot cakes", "spreading like wildfire", "fitting like a glove"], "a": 0, "why": "Selling fast = selling like hot cakes."},
+      {"q": "My daughter's wedding dress needed no changes. It ___.", "opts": ["went like clockwork", "fit like a glove", "ate like a horse"], "a": 1, "why": "A perfect fit = fit like a glove. North Americans often use fit as the past form."},
+      {"q": "I put a slice of apple in the bag of hard brown sugar, and it ___.", "opts": ["worked like a charm", "spread like wildfire", "sold like hot cakes"], "a": 0, "why": "A trick that worked perfectly = worked like a charm."},
+      {"q": "The move to the new office ___; nobody lost a single file.", "opts": ["slept like a log", "went like clockwork", "took to it like a duck to water"], "a": 1, "why": "Happened exactly as planned = went like clockwork."},
+      {"q": "She'd never coached before, but she ___ and won the league.", "opts": ["took to it like a duck to water", "drank like a fish", "sold like hot cakes"], "a": 0, "why": "Adapted naturally = took to it like a duck to water."}
+    ],
+    "spot": [
+      {"q": "After the night shift I slept like a rock until noon.", "bad": "slept like a rock", "fix": "slept like a log", "opts": ["slept like a log", "slept like a tree"], "why": "The fixed simile is sleep like a log."},
+      {"q": "Panic spread like fire through the stadium when the lights went out.", "bad": "spread like fire", "fix": "spread like wildfire", "opts": ["spread like wildfire", "spread like smoke"], "why": "The noun is wildfire: fast and out of control."},
+      {"q": "The new phones sold like warm bread on launch day.", "bad": "sold like warm bread", "fix": "sold like hot cakes", "opts": ["sold like hot cakes", "sold like hot dogs"], "why": "English uses hot cakes (pancakes)."},
+      {"q": "The concert evacuation went like a clockwork.", "bad": "went like a clockwork", "fix": "went like clockwork", "opts": ["went like clockwork", "went like a clock"], "why": "Clockwork is uncountable: no article."},
+      {"q": "My father took to retirement like a fish to water.", "bad": "like a fish to water", "fix": "like a duck to water", "opts": ["like a duck to water", "like a duck in water"], "why": "The fixed image is a duck taking to water."}
+    ],
+    "type": [
+      {"q": "The camping trip wore the kids out, and they slept like ___.", "a": ["logs", "a log"], "why": "Sleep like a log: plural logs with a plural subject."},
+      {"q": "Don't worry about cooking too much. My brother eats like a ___.", "a": ["horse"], "why": "Eat like a horse: eat a lot."},
+      {"q": "News of the plant closure spread like ___ through the town.", "a": ["wildfire"], "why": "Spread like wildfire: very fast."},
+      {"q": "Her memoir is selling like hot ___ in Ottawa bookstores.", "a": ["cakes"], "why": "Sell like hot cakes: sell very quickly."},
+      {"q": "The new knee brace fits like a ___.", "a": ["glove"], "why": "Fit like a glove: fit perfectly."},
+      {"q": "I tried vinegar on the stain and it worked like a ___.", "a": ["charm", "dream"], "why": "Work like a charm (or a dream): work perfectly."}
+    ],
+    "bend": [
+      {"q": "A teenager is describing a fast getaway to a friend. Which version sounds natural in that casual register? ___", "opts": ["He drove off like a bat out of hell.", "He drove off as a bat out of hell.", "He drove off like the bat of hell out."], "a": 0, "why": "Like a bat out of hell is fine among friends but too strong for formal writing."},
+      {"q": "A British colleague praises a tip you gave her. Which variation sounds natural? ___", "opts": ["Your tip worked like a dream.", "Your tip worked as a dream.", "Your tip dreamed like a charm."], "a": 0, "why": "Work like a dream is a common variant of work like a charm."},
+      {"q": "Which version describes a reliable bus schedule naturally? ___", "opts": ["The 7:15 bus arrives as regular as clockwork.", "The 7:15 bus arrives as regular like a clockwork.", "The 7:15 bus arrives clockwork as regular."], "a": 0, "why": "As regular as clockwork is the as ... as cousin of go like clockwork."},
+      {"q": "Which version sounds natural about a new hire who fits her team perfectly? ___", "opts": ["The job fits her like a glove.", "The job fits like her a glove.", "The job is fitting as a glove to her."], "a": 0, "why": "The object (her) goes right after fits, and the simile stays fixed."}
+    ],
+    "talk": [
+      "Kafka's hero feels he dies <strong>like a dog</strong>. Which animal would you use in a <em>like a ...</em> simile to describe how you work or study? Why?",
+      "Neil Young and Bob Seger use simple title similes. Invent a <em>Like a ...</em> song title about your own life and explain it.",
+      "Role-play: you're planning a family reunion. Describe what went <strong>like clockwork</strong>, what <strong>sold like hot cakes</strong> at the bake table, and who <strong>slept like a log</strong> afterwards.",
+      "Tell a story about something you <strong>took to like a duck to water</strong>, and something you didn't.",
+      "Bad news seems to <strong>spread like wildfire</strong> online. Should social media companies slow it down? Use at least three similes from this lesson."
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "run like the wind", "r": "run very fast", "why": "Often an instruction or encouragement: run like the wind!"},
+      {"l": "drink like a fish", "r": "drink a lot of alcohol regularly", "why": "Critical. Fish seem to drink all the time."},
+      {"l": "fight like cats and dogs", "r": "argue constantly and fiercely", "why": "Often siblings or couples. Mainly North American; Britons also say fight like cat and dog."},
+      {"l": "come down on someone like a ton of bricks", "r": "punish or criticise very severely", "why": "Heavy and sudden. Mainly British, also heard in Canada."},
+      {"l": "go out like a light", "r": "fall asleep instantly", "why": "As fast as switching off a lamp."},
+      {"l": "smoke like a chimney", "r": "smoke a lot of cigarettes", "why": "Like a chimney giving off smoke all day."}
+    ],
+    "pick": [
+      {"q": "When the dog got off its leash, my son ___ after it.", "opts": ["ran like the wind", "drank like a fish", "smoked like a chimney"], "a": 0, "why": "Running very fast = ran like the wind."},
+      {"q": "Her uncle ___ for years before he finally joined AA.", "opts": ["ran like the wind", "drank like a fish", "went out like a light"], "a": 1, "why": "Drinking heavily = drank like a fish."},
+      {"q": "My twin sisters ___ as kids, but now they're best friends.", "opts": ["fought like cats and dogs", "went like clockwork", "fit like a glove"], "a": 0, "why": "Arguing constantly = fought like cats and dogs."},
+      {"q": "If the inspector finds any safety violations, head office will ___.", "opts": ["come down on us like a ton of bricks", "take to us like a duck to water", "sell like hot cakes"], "a": 0, "why": "Severe punishment = come down on us like a ton of bricks."},
+      {"q": "The baby ___ as soon as we started the car.", "opts": ["smoked like a chimney", "went out like a light", "ran like the wind"], "a": 1, "why": "Fell asleep instantly = went out like a light."},
+      {"q": "My grandfather ___ until the doctor showed him his X-rays.", "opts": ["smoked like a chimney", "fit like a glove", "worked like a charm"], "a": 0, "why": "Smoking heavily = smoked like a chimney."}
+    ],
+    "spot": [
+      {"q": "When the alarm rang, the children ran like the air to the exit.", "bad": "ran like the air", "fix": "ran like the wind", "opts": ["ran like the wind", "ran like the storm"], "why": "The fixed simile is run like the wind."},
+      {"q": "My neighbours fight like cats and mice every weekend.", "bad": "fight like cats and mice", "fix": "fight like cats and dogs", "opts": ["fight like cats and dogs", "fight like cat and mouse"], "why": "Cats and dogs argue; cat and mouse is a different idea (a chase)."},
+      {"q": "The boss came down on him like a ton of rocks for missing the deadline.", "bad": "like a ton of rocks", "fix": "like a ton of bricks", "opts": ["like a ton of bricks", "like a pile of bricks"], "why": "The fixed noun is bricks."},
+      {"q": "After the long flight I went out as a light.", "bad": "went out as a light", "fix": "went out like a light", "opts": ["went out like a light", "went out as light"], "why": "After a verb, use like + noun."}
+    ],
+    "type": [
+      {"q": "Grab the umbrella and run like the ___ before the bus leaves.", "a": ["wind"], "why": "Run like the wind: run very fast."},
+      {"q": "At university he drank like a ___, but he's teetotal now.", "a": ["fish"], "why": "Drink like a fish: drink heavily."},
+      {"q": "Those two have fought like cats and ___ since kindergarten.", "a": ["dogs"], "why": "Fight like cats and dogs: argue constantly."},
+      {"q": "If you're late again, the manager will come down on you like a ton of ___.", "a": ["bricks"], "why": "Like a ton of bricks: very severely."},
+      {"q": "I was so tired that I went out like a ___ on the sofa.", "a": ["light"], "why": "Go out like a light: fall asleep instantly."},
+      {"q": "My first landlord smoked like a ___ and the walls were yellow.", "a": ["chimney"], "why": "Smoke like a chimney: smoke heavily."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "Fresh air and a long paddle, and I ___ last night.", "opts": ["slept like a log", "sold like hot cakes", "fit like a glove"], "a": "slept like a log", "why": "Slept deeply = slept like a log."},
+    {"type": "pick", "q": "For someone so slim, my roommate ___.", "opts": ["eats like a horse", "goes like clockwork", "spreads like wildfire"], "a": "eats like a horse", "why": "Eats a lot = eats like a horse."},
+    {"type": "pick", "q": "The fake story about the prime minister ___ on social media.", "opts": ["spread like wildfire", "worked like a charm", "slept like a log"], "a": "spread like wildfire", "why": "Spread fast and out of control = spread like wildfire."},
+    {"type": "pick", "q": "The team's Stanley Cup shirts ___ after the final.", "opts": ["sold like hot cakes", "ate like horses", "went like clockwork"], "a": "sold like hot cakes", "why": "Sold quickly = sold like hot cakes."},
+    {"type": "pick", "q": "The part of the stern headmistress suited the veteran actor; it ___.", "opts": ["fit her like a glove", "sold like hot cakes", "spread like wildfire"], "a": "fit her like a glove", "why": "A role that suits someone perfectly fits them like a glove."},
+    {"type": "pick", "q": "I offered the toddler a sticker to get into the car seat, and it ___.", "opts": ["worked like a charm", "drank like a fish", "spread like wildfire"], "a": "worked like a charm", "why": "A trick that worked perfectly = worked like a charm."},
+    {"type": "pick", "q": "Thanks to careful planning, the city's election night ___.", "opts": ["went like clockwork", "ate like a horse", "slept like a log"], "a": "went like clockwork", "why": "Happened smoothly as planned = went like clockwork."},
+    {"type": "pick", "q": "My retired neighbour started painting last year and ___.", "opts": ["took to it like a duck to water", "drank like a fish", "ran like the wind"], "a": "took to it like a duck to water", "why": "Adapted naturally and quickly = took to it like a duck to water."},
+    {"type": "type", "q": "The baby finally slept like a ___ after her bath.", "a": ["log", "baby"], "why": "Sleep like a log (or ironically, like a baby): sleep deeply."},
+    {"type": "type", "q": "Word of the free concert spread like ___ across campus.", "a": ["wildfire"], "why": "Spread like wildfire: very fast."},
+    {"type": "type", "q": "The handmade mittens are selling like ___ cakes this winter.", "a": ["hot"], "why": "Sell like hot cakes: sell fast."},
+    {"type": "type", "q": "The renovation went like ___, on time and under budget.", "a": ["clockwork"], "why": "Go like clockwork: as planned. No article."},
+    {"type": "type", "q": "Our grandson took to skating like a ___ to water.", "a": ["duck"], "why": "Like a duck to water: naturally and easily."},
+    {"type": "spot", "q": "The leaked memo spread like a wildfire through the ministry.", "bad": "like a wildfire", "fix": "like wildfire", "opts": ["like wildfire", "like the wildfire"], "why": "Usually no article: spread like wildfire."},
+    {"type": "spot", "q": "This old trick for opening jars works as a charm.", "bad": "works as a charm", "fix": "works like a charm", "opts": ["works like a charm", "works as charming"], "why": "After a verb, like + noun. As a charm would mean in the role of a charm."},
+    {"type": "spot", "q": "My new hiking boots fit like a glove straight out of the box.", "bad": "", "why": "Correct! Fit like a glove = fit perfectly."},
+    {"type": "spot", "q": "The ceremony went like clockwork despite the rain.", "bad": "", "why": "Correct! Go like clockwork = happen exactly as planned."},
+    {"type": "order", "a": "The rumour spread like wildfire through the small town.", "alt": [], "why": "Spread like wildfire + where it spread."},
+    {"type": "order", "a": "My teenage son eats like a horse these days.", "alt": [], "why": "Present simple for a habit; time phrase at the end."},
+    {"type": "order", "a": "The new curtains fit the window like a glove.", "alt": [], "why": "Fit + object + like a glove."}
+  ]
+}

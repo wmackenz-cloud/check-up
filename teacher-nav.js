@@ -11,7 +11,7 @@
   ];
   var RES = [
     { label: "Grammar", note: "A or An?, 14 Verb Tenses and the 11 Grammar Traps", href: "grammar/index.html", match: "grammar" },
-    { label: "Advanced English", note: "Metaphors: 12 units for C1/C2 students", href: "advanced/index.html", match: "advanced/" },
+    { label: "Advanced English", note: "Metaphors and Similes for C1/C2 students", href: "advanced/index.html", match: "advanced/" },
     { label: "BBC videos", note: "6 Minute English with your vocabulary notes", href: "bbc/index.html", match: "bbc/" },
     { label: "Vocabulary", note: "20 worksheets, incl. music and photo lessons", href: "vocabulary/index.html", match: "vocabulary/" },
     { label: "STANAG / JFLT", note: "Placement checks and the speaking interview", href: "stanag/index.html", match: "stanag/index" },
