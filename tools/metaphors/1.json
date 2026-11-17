@@ -1,0 +1,211 @@
+{
+  "n": 1,
+  "title": "Argument Is War",
+  "tagline": "debate, competition and conflict",
+  "why": "English talks about disagreement as if it were combat. Noticing this helps you follow meetings, debates and the news, and lets you choose a calmer framing when you want one.",
+  "know": [
+    "the conceptual metaphor <strong>ARGUMENT IS WAR</strong> and where the idea comes from",
+    "eight high-frequency idioms of attack, defence and peace-making"
+  ],
+  "understand": [
+    "why words like <em>attack</em>, <em>defend</em> and <em>win</em> feel completely normal in a debate",
+    "which of these idioms are casual, neutral or slightly critical"
+  ],
+  "able": [
+    "use the idioms accurately and in the right register",
+    "vary the expressions the way native speakers do without breaking them",
+    "notice when military language makes a discussion more hostile than it needs to be"
+  ],
+  "mistakes": [
+    ["We need to bite the bullet of the price increase.", "We need to <strong>bite the bullet and accept</strong> the price increase. <em>Bite the bullet</em> takes no object."],
+    ["She stuck to her weapons in the meeting.", "She <strong>stuck to her guns</strong>. The noun is fixed: always <em>guns</em>."],
+    ["Let's bury the axe and move on.", "Let's <strong>bury the hatchet</strong>. Don't swap in a synonym."],
+    ["We'll fight fire with water.", "We'll <strong>fight fire with fire</strong>. The point is using your opponent's own method."],
+    ["The minister bit the bullet, stuck to her guns and shot down the critics' fort.", "The minister <strong>stuck to her guns</strong>. Stacking war idioms sounds like a parody; one is enough."]
+  ],
+  "bigidea": [
+    "In <em>Metaphors We Live By</em> (1980), linguist George Lakoff and philosopher Mark Johnson used <strong>ARGUMENT IS WAR</strong> as their first example of a conceptual metaphor: a whole way of thinking that shows up in ordinary words, not just in poetry.",
+    "We say a claim is <strong>indefensible</strong>, a critic <strong>attacked</strong> a weak point, and someone <strong>won</strong> the argument. Nobody hears these as figurative; they are simply how English describes disagreement.",
+    "The frame has consequences. If debate is war, the other person is an enemy and changing your mind is defeat. Lakoff and Johnson asked readers to imagine a culture where argument is a dance. Skilled speakers can switch frames: <em>explore</em> an idea, <em>build on</em> a point, <em>meet halfway</em>."
+  ],
+  "hidden": [
+    "She <strong>attacked</strong> every point I made.",
+    "Frankly, his position is <strong>indefensible</strong>.",
+    "The professor <strong>demolished</strong> my argument in about two minutes.",
+    "You can never <strong>win</strong> an argument with my brother.",
+    "The lawyer found a <strong>weak point</strong> in the testimony and <strong>targeted</strong> it.",
+    "The senator <strong>defended</strong> her position for over an hour.",
+    "He <strong>retreated</strong> from his earlier claim when the data came out.",
+    "OK, <strong>fire away</strong>. What's your question?"
+  ],
+  "expressions": [
+    {"e": "stick to your guns", "meaning": "refuse to change your opinion or plan despite pressure", "example": "Everyone said the café would fail, but she <strong>stuck to her guns</strong> and it's thriving.", "tone": "neutral",
+     "bend": "Change the tense and possessive: <em>he stuck to his guns</em>, <em>we're sticking to our guns</em>. Keep <em>guns</em> plural.",
+     "note": "Usually approving. Compare <em>dig your heels in</em>, which suggests stubbornness rather than conviction."},
+    {"e": "bite the bullet", "meaning": "force yourself to do something unpleasant that can't be avoided", "example": "We finally <strong>bit the bullet</strong> and replaced the furnace before winter.", "tone": "neutral",
+     "bend": "Often followed by <em>and</em> + verb: <em>bite the bullet and call him</em>. Tense changes freely; no object after <em>bullet</em>.",
+     "note": "Don't confuse it with <em>dodge a bullet</em> (escape harm). Learners mix them up because both contain <em>bullet</em>."},
+    {"e": "dodge a bullet", "meaning": "narrowly escape something bad", "example": "The firm I almost joined went bankrupt in March. I really <strong>dodged a bullet</strong>.", "tone": "casual",
+     "bend": "<em>We dodged a bullet</em>, <em>that was a bullet dodged</em>, <em>dodged a big bullet</em>. Usually past tense, looking back.",
+     "note": "Often said with relief about a lucky escape, even a relationship: <em>you dodged a bullet with him</em>. British speakers also say <em>a narrow escape</em>."},
+    {"e": "close ranks", "meaning": "(of a group) unite to protect one another from criticism", "example": "When the scandal broke, the board <strong>closed ranks</strong> around the CEO.", "tone": "neutral",
+     "bend": "<em>Close ranks around</em> or <em>behind</em> someone; any tense. Keep <em>ranks</em> plural and with no article.",
+     "note": "In news writing it is often mildly critical: insiders protecting one of their own instead of being open."},
+    {"e": "a double-edged sword", "meaning": "something that has both a clear benefit and a related drawback", "example": "Working from home is <strong>a double-edged sword</strong>: no commute, but no clear end to the day.", "tone": "neutral",
+     "bend": "A fixed noun phrase. Natural frames: <em>something of a double-edged sword</em>, <em>proved a double-edged sword</em>.",
+     "note": "Best when the advantage itself causes the harm. If the pros and cons are unrelated, just say <em>it has pros and cons</em>."},
+    {"e": "shoot down (an idea)", "meaning": "reject an idea or proposal firmly and quickly", "example": "I suggested a four-day week, but my manager <strong>shot it down</strong> in seconds.", "tone": "casual",
+     "bend": "Separable: <em>shoot down the idea</em> or <em>shoot it down</em>. The passive is very common: <em>my plan got shot down</em>.",
+     "note": "A little blunt. In formal writing prefer <em>reject</em> or <em>dismiss</em>. Related: <em>shoot holes in</em> an argument."},
+    {"e": "bury the hatchet", "meaning": "end a quarrel and become friendly again", "example": "After years of silence, the two brothers <strong>buried the hatchet</strong> at their mother's birthday.", "tone": "neutral",
+     "bend": "Any tense or subject: <em>it's time to bury the hatchet</em>. Keep <em>hatchet</em>; never <em>axe</em>.",
+     "note": "Usually linked to peace customs of Indigenous nations in northeastern North America, where weapons were buried to mark the end of hostilities."},
+    {"e": "fight fire with fire", "meaning": "respond to an attack by using the same methods as the attacker", "example": "When the rival campaign ran attack ads, ours decided to <strong>fight fire with fire</strong>.", "tone": "neutral",
+     "bend": "Usually in the base form after <em>decide to</em>, <em>have to</em>, <em>you can't</em>. The wording is fixed.",
+     "note": "Can sound like a justification for bad behaviour. The opposite choice is to <em>take the high road</em>."}
+  ],
+  "culture": [
+    {"kind": "Literature", "work": "Hamlet", "by": "William Shakespeare", "year": "c. 1600",
+     "how": "Shakespeare gave English <strong>hoist with his own petard</strong>. Hamlet arranges for the men sent to betray him to be destroyed by their own plot. A petard was a small bomb for blasting open gates, so the image is an engineer blown up by his own device: caught in your own trap.",
+     "ask": "Can you think of a politician, company or celebrity who was hoist with their own petard?",
+     "find": "hoist with his own petard Hamlet meaning"},
+    {"kind": "Literature", "work": "Julius Caesar", "by": "William Shakespeare", "year": "1599",
+     "how": "After Caesar's murder, Mark Antony imagines war being released like hunting dogs straining at the leash. The phrase <strong>let slip the dogs of war</strong> comes from this speech, and journalists still use it for the start of a conflict, military or political.",
+     "ask": "Why is an image of hunting dogs so effective for the moment a war begins?",
+     "find": "let slip the dogs of war Julius Caesar Mark Antony"},
+    {"kind": "Music", "work": "Love Is a Battlefield", "by": "Pat Benatar", "year": "1983",
+     "how": "The title carries the war frame from debate into romance: a relationship becomes a place of combat, with power struggles, wounds and survival. It shows how easily one conceptual metaphor spreads into new areas of life.",
+     "ask": "Do people in your first language talk about love as a kind of war? What other metaphors do they use for it?",
+     "find": "Pat Benatar Love Is a Battlefield"},
+    {"kind": "Music", "work": "I Won't Back Down", "by": "Tom Petty", "year": "1989",
+     "how": "The title uses the language of holding a position under fire. The song is about refusing to give in to pressure, the same idea as <strong>stick to your guns</strong> or <strong>hold the fort</strong>, which is why it has been popular at rallies and sports events.",
+     "ask": "When is refusing to back down admirable, and when is it just stubbornness?",
+     "find": "Tom Petty I Won't Back Down"},
+    {"kind": "Poetry", "work": "Dulce et Decorum Est", "by": "Wilfred Owen", "year": "1920",
+     "how": "Owen, a British officer killed a week before the 1918 Armistice, describes a gas attack in the First World War. The poem rejects the old idea that dying for your country is sweet and glorious. It is a sober reminder of the real suffering behind our casual war idioms.",
+     "ask": "Does the reality of war change how you feel about phrases like <em>win an argument</em> or <em>shoot down an idea</em>?",
+     "find": "Wilfred Owen Dulce et Decorum Est"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "stick to your guns", "r": "keep your position under pressure", "why": "Like soldiers who stay at their guns instead of retreating."},
+      {"l": "bite the bullet", "r": "make yourself do something unpleasant", "why": "You accept the pain because there is no way around it."},
+      {"l": "dodge a bullet", "r": "narrowly escape something bad", "why": "The bullet missed you. Usually said looking back with relief."},
+      {"l": "close ranks", "r": "unite to protect the group", "why": "Soldiers move closer together so there are no gaps to attack."},
+      {"l": "a double-edged sword", "r": "a benefit with a built-in drawback", "why": "A blade sharp on both sides can cut the person holding it."},
+      {"l": "shoot down", "r": "reject an idea quickly", "why": "The idea is like an aircraft brought down before it can fly."},
+      {"l": "bury the hatchet", "r": "end a quarrel", "why": "Burying a weapon means you no longer intend to fight."},
+      {"l": "fight fire with fire", "r": "use your opponent's own methods", "why": "You answer aggression with the same kind of aggression."}
+    ],
+    "sort": {
+      "h": "Put each expression in the right group: does it describe <strong>holding your position</strong>, <strong>attacking</strong>, or <strong>escaping or ending the fight</strong>?",
+      "cols": ["Holding your position", "Attacking", "Escaping or ending the fight"],
+      "items": [
+        {"w": "stick to your guns", "c": 0, "why": "You stay where you are and refuse to retreat."},
+        {"w": "hold the fort", "c": 0, "why": "You keep things going and protect your position while others are away."},
+        {"w": "close ranks", "c": 0, "why": "The group pulls together to defend itself."},
+        {"w": "dig your heels in", "c": 0, "why": "You refuse to move or change your mind."},
+        {"w": "shoot down an idea", "c": 1, "why": "You actively destroy someone else's proposal."},
+        {"w": "fight fire with fire", "c": 1, "why": "You hit back using the same aggressive methods."},
+        {"w": "go on the offensive", "c": 1, "why": "You stop defending and start attacking."},
+        {"w": "take aim at", "c": 1, "why": "You choose a target to criticise."},
+        {"w": "bury the hatchet", "c": 2, "why": "Both sides agree to stop fighting."},
+        {"w": "call a truce", "c": 2, "why": "A truce is a pause or end to fighting."},
+        {"w": "dodge a bullet", "c": 2, "why": "You escape harm without fighting at all."},
+        {"w": "wave the white flag", "c": 2, "why": "You surrender and end the fight by giving up."}
+      ]
+    },
+    "pick": [
+      {"q": "The dentist said the tooth had to come out, so I ___ and booked the appointment.", "opts": ["bit the bullet", "dodged a bullet", "closed ranks"], "a": 0, "why": "Bite the bullet = make yourself do something unpleasant. Dodging a bullet would mean escaping it."},
+      {"q": "Two days after I sold my shares, the stock crashed. I really ___.", "opts": ["stuck to my guns", "dodged a bullet", "buried the hatchet"], "a": 1, "why": "You escaped a loss by luck and timing: dodge a bullet."},
+      {"q": "When reporters asked about the missing funds, the other officers ___ and refused to comment.", "opts": ["bit the bullet", "shot it down", "closed ranks"], "a": 2, "why": "The group united to protect a colleague: close ranks."},
+      {"q": "Social media is ___ for small businesses: free advertising, but one bad review can go viral.", "opts": ["a double-edged sword", "a war of words", "a bullet dodged"], "a": 0, "why": "The same tool helps and hurts, so it is a double-edged sword."},
+      {"q": "The committee seemed interested in my proposal, but the finance director ___ within five minutes.", "opts": ["held the fort", "shot it down", "stuck to her guns"], "a": 1, "why": "She quickly rejected the idea: shot it down."},
+      {"q": "The neighbours had argued about the fence for years, but they finally ___ over a barbecue.", "opts": ["fought fire with fire", "closed ranks", "buried the hatchet"], "a": 2, "why": "They ended the quarrel and became friendly: buried the hatchet."},
+      {"q": "Critics demanded she cancel the exhibition, but the curator ___ and it opened on schedule.", "opts": ["stuck to her guns", "dodged a bullet", "shot it down"], "a": 0, "why": "She refused to change her plan under pressure: stuck to her guns."},
+      {"q": "If the other team is going to play dirty, we'll have to ___.", "opts": ["bury the hatchet", "fight fire with fire", "bite the bullet"], "a": 1, "why": "Answering their tactics with the same tactics is fighting fire with fire."}
+    ],
+    "spot": [
+      {"q": "After the election the party leaders agreed to bury the axe and work together.", "bad": "bury the axe", "fix": "bury the hatchet", "opts": ["bury the hatchet", "bury the sword"], "why": "The idiom is fixed: bury the hatchet. Swapping in a synonym breaks it."},
+      {"q": "My boss shot up my idea before I could even finish explaining it.", "bad": "shot up", "fix": "shot down", "opts": ["shot down", "shot off"], "why": "To reject an idea is to shoot it down. Shoot up means rise fast."},
+      {"q": "We kept postponing the renovation, but last spring we bit the bomb and started.", "bad": "bit the bomb", "fix": "bit the bullet", "opts": ["bit the bullet", "bit the dust"], "why": "Bite the bullet = do the unpleasant thing. Bite the dust means fail or die."},
+      {"q": "For young families, cheap credit is a two-edged knife.", "bad": "a two-edged knife", "fix": "a double-edged sword", "opts": ["a double-edged sword", "a two-way street"], "why": "The set phrase is a double-edged sword. A two-way street means something mutual."},
+      {"q": "Despite the angry emails, the principal stuck to her weapons and kept the new timetable.", "bad": "stuck to her weapons", "fix": "stuck to her guns", "opts": ["stuck to her guns", "stuck her neck out"], "why": "Always guns: stick to your guns. Stick your neck out means take a risk."}
+    ],
+    "type": [
+      {"q": "The minister had to bite the ___ and admit the figures were wrong.", "a": ["bullet"], "why": "Bite the bullet: accept something painful you can't avoid."},
+      {"q": "For young athletes, sudden fame can be a double-edged ___.", "a": ["sword"], "why": "A double-edged sword: the benefit carries its own risk."},
+      {"q": "When one nurse was blamed, the whole ward closed ___ to protect her.", "a": ["ranks"], "why": "Close ranks: unite in defence. Plural, no article."},
+      {"q": "I nearly bought that house by the river before the flood. I dodged a ___.", "a": ["bullet"], "why": "Dodge a bullet: a narrow escape, said with relief."},
+      {"q": "It's been twenty years. Isn't it time you two buried the ___?", "a": ["hatchet"], "why": "Bury the hatchet: make peace after a long quarrel."},
+      {"q": "The coach told us to fight fire with ___ and match their aggression.", "a": ["fire"], "why": "Fight fire with fire: respond with the same methods."}
+    ],
+    "bend": [
+      {"q": "Which version sounds natural for a past event? ___", "opts": ["Our proposal got shot over by the board.", "Our proposal got shot down by the board.", "Our proposal got shooting down by the board."], "a": 1, "why": "Passive with get is very common: got shot down. The particle down can't change."},
+      {"q": "Which version sounds natural about a whole group? ___", "opts": ["The players are all sticking to their guns.", "The players are all sticking to their gun.", "The players are all sticking at their guns."], "a": 0, "why": "Change the possessive and tense freely, but keep to and plural guns."},
+      {"q": "Which version is a natural variation of the idiom? ___", "opts": ["Fame turned out to be a sword with double edges.", "Fame turned out to be a double-edged swords.", "Fame turned out to be something of a double-edged sword."], "a": 2, "why": "Something of softens the phrase naturally. Reordering the words or adding s breaks it."},
+      {"q": "Which version sounds natural after a long argument? ___", "opts": ["Let's bury a hatchet and move on.", "Let's hide the hatchet and move on.", "Let's bury the hatchet and move on."], "a": 2, "why": "Bury and the are fixed. Only the tense and subject change."}
+    ],
+    "talk": [
+      "Lakoff and Johnson imagined a culture where argument is a dance. Describe a business meeting in that culture. What words would people use instead of <em>attack</em> and <em>win</em>?",
+      "Tell me about a time you <strong>stuck to your guns</strong>, or a time you wish you had.",
+      "Wilfred Owen's poem shows the reality behind war metaphors. Should politicians and sports commentators use less military language? Why or why not?",
+      "Role-play: you are neighbours who have argued about a tree on the property line for years. Use at least three expressions as you argue, then <strong>bury the hatchet</strong>.",
+      "What in modern life is <strong>a double-edged sword</strong>? Give two examples and explain both edges."
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "hold the fort", "r": "manage things while others are away", "why": "Like defending a fort while the main army is elsewhere."},
+      {"l": "a war of words", "r": "a long public exchange of insults or criticism", "why": "Common in headlines about politicians, celebrities or companies."},
+      {"l": "hoist with your own petard", "r": "harmed by your own scheme", "why": "From Hamlet: the plotter is blown up by his own bomb."},
+      {"l": "bite the bullet", "r": "face a painful task", "why": "You stop avoiding it and just do it."},
+      {"l": "close ranks", "r": "stand together against outsiders", "why": "Insiders protect one another, often against criticism."},
+      {"l": "shoot down", "r": "dismiss a suggestion firmly", "why": "Casual and a little blunt; formal writing prefers reject."}
+    ],
+    "pick": [
+      {"q": "The bakery across the street started giving away free coffee, so we ___ and did the same.", "opts": ["fought fire with fire", "buried the hatchet", "dodged a bullet"], "a": 0, "why": "Matching a rival's tactic with the same tactic = fight fire with fire."},
+      {"q": "Can you ___ while I'm at the conference? Just answer the urgent emails.", "opts": ["close ranks", "hold the fort", "stick to your guns"], "a": 1, "why": "Hold the fort = keep things running while someone is away."},
+      {"q": "The two ministers have been locked in ___ over the budget all week.", "opts": ["a double-edged sword", "a war of words", "a bullet dodged"], "a": 1, "why": "A public exchange of criticism is a war of words."},
+      {"q": "The senator who demanded transparency was ___ when his own expenses were published.", "opts": ["hoist with his own petard", "sticking to his guns", "holding the fort"], "a": 0, "why": "His own demand caused his downfall: hoist with his own petard."},
+      {"q": "Lower interest rates are ___: cheaper mortgages, but smaller returns for savers.", "opts": ["a war of words", "a bullet dodged", "a double-edged sword"], "a": 2, "why": "One change brings a linked benefit and cost: a double-edged sword."},
+      {"q": "My sister and I hadn't spoken since the wedding, but last Christmas we ___.", "opts": ["closed ranks", "buried the hatchet", "bit the bullet"], "a": 1, "why": "Ending a quarrel and becoming friendly again = bury the hatchet."}
+    ],
+    "spot": [
+      {"q": "Every time I suggest a change, my partner shoots it off without listening.", "bad": "shoots it off", "fix": "shoots it down", "opts": ["shoots it down", "shoots it up"], "why": "Reject an idea = shoot it down."},
+      {"q": "The firm went under a month after I turned down their job offer, so I avoided a bullet.", "bad": "avoided a bullet", "fix": "dodged a bullet", "opts": ["dodged a bullet", "bit the bullet"], "why": "The verb is fixed: dodge a bullet."},
+      {"q": "The surgeons closed lines when the hospital was criticised in the press.", "bad": "closed lines", "fix": "closed ranks", "opts": ["closed ranks", "closed doors"], "why": "The idiom is close ranks: soldiers standing closer together."},
+      {"q": "I don't like conflict, but sometimes you have to fight fire with water.", "bad": "fight fire with water", "fix": "fight fire with fire", "opts": ["fight fire with fire", "pour oil on fire"], "why": "The point is using the same weapon as your opponent: fire with fire."}
+    ],
+    "type": [
+      {"q": "My manager is on holiday, so I'm holding the ___ this week.", "a": ["fort"], "why": "Hold the fort: keep things running in someone's absence."},
+      {"q": "Despite the online abuse, the author stuck to her ___ and refused to apologise.", "a": ["guns"], "why": "Stick to your guns: keep your position under pressure."},
+      {"q": "We finally bit the ___ and told the children we were moving.", "a": ["bullet"], "why": "Bite the bullet: do the hard thing you've been avoiding."},
+      {"q": "The tech giants are locked in a war of ___ over privacy rules.", "a": ["words"], "why": "A war of words: a public fight conducted through statements."},
+      {"q": "Every proposal I make gets shot ___ before it reaches the director.", "a": ["down"], "why": "Shoot down: reject quickly. The passive with get is common."},
+      {"q": "The cabinet closed ___ behind the prime minister after the leak.", "a": ["ranks"], "why": "Close ranks behind someone: unite to protect them."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "I hate public speaking, but I ___ and signed up for the conference panel.", "opts": ["bit the bullet", "dodged a bullet", "closed ranks"], "a": "bit the bullet", "why": "Forcing yourself to do something unpleasant = bite the bullet."},
+    {"type": "pick", "q": "The storm hit the town an hour after our flight left. We ___.", "opts": ["stuck to our guns", "dodged a bullet", "held the fort"], "a": "dodged a bullet", "why": "A lucky narrow escape = dodge a bullet."},
+    {"type": "pick", "q": "The club's members ___ when a journalist started asking about the coach.", "opts": ["closed ranks", "shot it down", "bit the bullet"], "a": "closed ranks", "why": "A group protecting one of its own = close ranks."},
+    {"type": "pick", "q": "A strong currency is ___ for exporters.", "opts": ["a war of words", "a double-edged sword", "a bullet dodged"], "a": "a double-edged sword", "why": "It brings advantages and related disadvantages: a double-edged sword."},
+    {"type": "pick", "q": "Every time Dad suggests a road trip, Mom ___.", "opts": ["buries the hatchet", "shoots it down", "holds the fort"], "a": "shoots it down", "why": "Quickly rejecting a suggestion = shoot it down."},
+    {"type": "pick", "q": "The two old rivals ___ and now co-host a podcast.", "opts": ["buried the hatchet", "fought fire with fire", "closed ranks"], "a": "buried the hatchet", "why": "Ending a feud and becoming friendly = bury the hatchet."},
+    {"type": "pick", "q": "The council wanted a shorter route, but the engineer ___ and kept the safer design.", "opts": ["dodged a bullet", "stuck to his guns", "shot it down"], "a": "stuck to his guns", "why": "Keeping your position under pressure = stick to your guns."},
+    {"type": "pick", "q": "When the hackers attacked, the company decided to ___ and hired hackers of its own.", "opts": ["fight fire with fire", "bury the hatchet", "bite the bullet"], "a": "fight fire with fire", "why": "Using the attacker's own methods = fight fire with fire."},
+    {"type": "type", "q": "The prime minister's cuts proved a double-edged ___ for his own party.", "a": ["sword"], "why": "A double-edged sword: the benefit causes its own harm."},
+    {"type": "type", "q": "The mayor's own rule was used against him. He was hoist with his own ___.", "a": ["petard"], "why": "Hoist with your own petard: Shakespeare's phrase from Hamlet."},
+    {"type": "type", "q": "Can you hold the ___ at the shop while I pick up the kids?", "a": ["fort"], "why": "Hold the fort: keep things going while someone is away."},
+    {"type": "type", "q": "My brother and I finally buried the ___ after Dad's retirement party.", "a": ["hatchet"], "why": "Bury the hatchet: end a quarrel."},
+    {"type": "type", "q": "If they attack us in the press, we'll fight fire with ___.", "a": ["fire"], "why": "Fight fire with fire: answer with the same methods."},
+    {"type": "spot", "q": "The union stuck to its weapons and the strike continued.", "bad": "stuck to its weapons", "fix": "stuck to its guns", "opts": ["stuck to its guns", "stuck its neck out"], "why": "Always guns: stick to your guns."},
+    {"type": "spot", "q": "I bit the arrow and finally called the tax office.", "bad": "bit the arrow", "fix": "bit the bullet", "opts": ["bit the bullet", "bit the dust"], "why": "Bite the bullet = do something unpleasant. Bite the dust = fail or die."},
+    {"type": "spot", "q": "The board shot down every cost-cutting idea we brought to the meeting.", "bad": "", "why": "Correct! Shoot down an idea = reject it quickly."},
+    {"type": "spot", "q": "When the coach was criticised, the players closed ranks behind him.", "bad": "", "why": "Correct! Close ranks behind someone = unite to protect them."},
+    {"type": "order", "a": "We finally bit the bullet and sold the cottage.", "alt": [], "why": "Bite the bullet and + verb is a very natural pattern."},
+    {"type": "order", "a": "Remote work turned out to be a double-edged sword.", "alt": [], "why": "Turned out to be + a double-edged sword. The noun phrase stays together."},
+    {"type": "order", "a": "The two families buried the hatchet after the wedding.", "alt": [], "why": "Subject + buried the hatchet + time phrase."}
+  ]
+}

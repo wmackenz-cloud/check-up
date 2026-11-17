@@ -1,0 +1,210 @@
+{
+  "n": 10,
+  "title": "Ideas Are Plants and Buildings",
+  "tagline": "growth, foundations and collapse in plans and organisations",
+  "why": "When English speakers talk about plans, careers, arguments and institutions, they rarely use neutral words: ideas <strong>take root</strong>, companies <strong>grow</strong>, theories have <strong>foundations</strong> and arguments <strong>collapse</strong>. These images carry judgement, so choosing the right one sharpens your persuasion.",
+  "know": [
+    "eight key idioms of growth and construction, such as <em>bear fruit</em>, <em>lay the foundations</em> and <em>a house of cards</em>",
+    "everyday hidden metaphors such as <em>a growing company</em>, <em>a solid case</em> and <em>the framework of a theory</em>"
+  ],
+  "understand": [
+    "that plant images stress time, nurture and natural development, while building images stress structure and strength",
+    "that the same idea can be praised or attacked by choosing a different image"
+  ],
+  "able": [
+    "describe how a plan, career or organisation develops, succeeds or fails",
+    "use these idioms with the right verbs and in the right register",
+    "discuss songs, poems and stories that use gardens, walls and cracks"
+  ],
+  "mistakes": [
+    ["We must cut the problem in the bud.", "We must <strong>nip</strong> the problem in the bud. The verb is fixed; a bud is a young flower."],
+    ["The project finally gave fruit.", "The project finally <strong>bore fruit</strong>. English uses <em>bear</em>, not <em>give</em>."],
+    ["She lives in a tower of ivory.", "She lives in <strong>an ivory tower</strong>. Fixed word order, and it's a criticism, not a compliment."],
+    ["The company built the bases for future growth.", "The company <strong>laid the foundations</strong> for future growth. <em>Lay</em> + <em>foundations</em> is the natural collocation."],
+    ["Our plan is a castle of cards.", "Our plan is <strong>a house of cards</strong>. <em>Castle</em> is a literal translation from French or Spanish."]
+  ],
+  "bigidea": [
+    "Ideas and organisations are often <strong>plants</strong>. They start as seeds, take root, grow, branch out, flourish, bear fruit or wither. This image emphasises time, care and natural development.",
+    "They are also <strong>buildings</strong>. They have foundations, frameworks, pillars and cracks, and they can be constructed, supported or collapse. This image emphasises structure, solidity and design.",
+    "Choosing between them is a rhetorical decision. A politician who says a policy will <em>grow</em> sounds patient; one who says it rests on <em>solid foundations</em> sounds careful. Critics attack the same idea by saying its foundations are <em>shaky</em> or that it <em>withered on the vine</em>."
+  ],
+  "hidden": [
+    "We're a <strong>growing</strong> company with offices in three provinces.",
+    "She has had a <strong>flourishing</strong> career in architecture.",
+    "It takes time to <strong>construct</strong> a convincing argument.",
+    "The prosecution has a <strong>solid</strong> case.",
+    "Darwin provided the <strong>framework</strong> for modern biology.",
+    "Once the key witness changed her story, the whole theory <strong>collapsed</strong>.",
+    "The project <strong>withered</strong> when the funding dried up."
+  ],
+  "expressions": [
+    {"e": "lay the foundations", "meaning": "create the basic conditions that later success depends on", "example": "Those early years in a small law firm <strong>laid the foundations</strong> for her career as a judge.", "tone": "formal",
+     "bend": "Flexible: <em>laid solid foundations</em>, <em>the foundations were laid</em>, <em>lay the groundwork</em>. <em>Lay</em> is the natural verb.",
+     "note": "<em>Lay the groundwork</em> is very close; <em>foundations</em> sounds more permanent and important."},
+    {"e": "take root", "meaning": "become established and accepted", "example": "The idea of a four-day week has begun to <strong>take root</strong> in some Canadian firms.", "tone": "neutral",
+     "bend": "Tense is flexible: <em>took root</em>, <em>has taken root</em>. No article and no plural: not <em>take a root</em> or <em>take roots</em>.",
+     "note": "Can be negative: <em>prejudice took root</em>. Compare <em>put down roots</em>, which means settle in a place."},
+    {"e": "bear fruit", "meaning": "produce good results, usually after time and effort", "example": "Years of quiet diplomacy finally <strong>bore fruit</strong> with a ceasefire.", "tone": "formal",
+     "bend": "The verb inflects: <em>bore fruit</em>, <em>has borne fruit</em>. <em>Fruit</em> stays singular.",
+     "note": "Formal. In casual speech people say <em>pay off</em>. Related: <em>the fruits of your labour</em>, the rewards of hard work."},
+    {"e": "nip it in the bud", "meaning": "stop a problem at an early stage before it grows", "example": "When the first complaints about bullying came in, the principal <strong>nipped it in the bud</strong>.", "tone": "neutral",
+     "bend": "The object varies: <em>nip the rumour in the bud</em>. <em>Nip</em> and <em>bud</em> are fixed.",
+     "note": "Often garbled as <em>nip it in the butt</em>, a well-known mistake. The image is a gardener pinching off a bud before it flowers."},
+    {"e": "the cracks are starting to show", "meaning": "problems in something that looked strong are becoming visible", "example": "Six months after the merger, <strong>the cracks are starting to show</strong> in the leadership team.", "tone": "neutral",
+     "bend": "Very flexible: <em>cracks appeared</em>, <em>cracks in the coalition</em>, <em>paper over the cracks</em>.",
+     "note": "<em>Paper over the cracks</em> means hide problems without fixing them, a favourite image in political journalism."},
+    {"e": "a house of cards", "meaning": "a plan or organisation so weak it could collapse at any moment", "example": "The investigation revealed that the fund was <strong>a house of cards</strong> built on borrowed money.", "tone": "dismissive",
+     "bend": "Bends well: <em>collapse like a house of cards</em>, <em>the whole house of cards came down</em>.",
+     "note": "Strongly critical. Also the title of a British political novel and TV series about scheming politicians, later remade in the US."},
+    {"e": "an ivory tower", "meaning": "a privileged place cut off from practical everyday life, especially academia", "example": "Critics say the report was written in <strong>an ivory tower</strong> by people who have never run a small business.", "tone": "dismissive",
+     "bend": "Often used as an adjective: <em>ivory-tower academics</em>, <em>ivory-tower thinking</em>.",
+     "note": "Usually a criticism of academics or experts. Saying <em>I work in an ivory tower</em> about yourself is self-mocking."},
+    {"e": "build bridges", "meaning": "create better relations between groups who disagree or distrust each other", "example": "The new mayor has worked hard to <strong>build bridges</strong> between city hall and Indigenous communities.", "tone": "neutral",
+     "bend": "Flexible: <em>bridge-building</em>, <em>build bridges with someone</em>. The opposite is <em>burn your bridges</em>.",
+     "note": "Positive and common in politics and diplomacy. Don't confuse it with <em>cross that bridge when we come to it</em>, which is about dealing with problems later."}
+  ],
+  "culture": [
+    {"kind": "Music", "work": "Anthem", "by": "Leonard Cohen", "year": "1992",
+     "how": "The Montreal-born songwriter treats imperfection as a crack in a structure, but the crack is not a failure: it is what allows light to enter. The song flips the usual negative meaning of cracks into a message of hope.",
+     "ask": "Can a flaw or failure ever be a strength? Give an example from work, sport or family life.",
+     "find": "Leonard Cohen Anthem"},
+    {"kind": "Music", "work": "Big Yellow Taxi", "by": "Joni Mitchell", "year": "1970",
+     "how": "The Canadian songwriter wrote it after seeing a beautiful view in Hawaii spoiled by a car park. Here building is the villain: paving and construction destroy the natural paradise that growth metaphors usually celebrate.",
+     "ask": "Is building always progress? Think of a place near you that changed. Was something lost?",
+     "find": "Joni Mitchell Big Yellow Taxi"},
+    {"kind": "Literature", "work": "Candide", "by": "Voltaire", "year": "1759",
+     "how": "After a novel full of wars, disasters and foolish optimism, the hero concludes that the best response is simply to tend our own garden. The garden becomes a metaphor for modest, practical work instead of grand theories.",
+     "ask": "Do you agree that modest, practical work is wiser than big theories about the world? Why or why not?",
+     "find": "Voltaire Candide ending garden"},
+    {"kind": "Poetry", "work": "Mending Wall", "by": "Robert Frost", "year": "1914",
+     "how": "Two New England neighbours meet each spring to repair the stone wall between their farms. The speaker questions why the wall is needed at all, while his neighbour repeats an old saying about fences. The wall becomes a metaphor for the barriers people build between themselves.",
+     "ask": "Do good boundaries make good neighbours, colleagues or families? Where do you build walls, and where bridges?",
+     "find": "Robert Frost Mending Wall"},
+    {"kind": "Scripture", "work": "The Parable of the Sower", "by": "The Gospels (Matthew, Mark and Luke)", "year": "1st century",
+     "how": "A farmer scatters seed: some lands on a path, some on rocky ground, some among thorns and some on good soil, where it grows well. Jesus uses it to show how a message takes root in some listeners and not others, an early model of ideas as seeds.",
+     "ask": "Why do some ideas take root in a team or community while others never grow? What makes good soil?",
+     "find": "Parable of the Sower"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "lay the foundations", "r": "create the basis for later success", "why": "Foundations come first and support everything built on top."},
+      {"l": "take root", "r": "become established", "why": "A plant that takes root is stable and will keep growing."},
+      {"l": "bear fruit", "r": "produce good results", "why": "Fruit is the reward that comes after a long period of growth."},
+      {"l": "nip it in the bud", "r": "stop a problem early", "why": "Pinch off the bud and the flower never opens."},
+      {"l": "the cracks are starting to show", "r": "hidden problems are becoming visible", "why": "Cracks are the first sign that a structure is weakening."},
+      {"l": "a house of cards", "r": "something fragile that could collapse", "why": "One touch and a tower of playing cards falls down."},
+      {"l": "an ivory tower", "r": "a place cut off from real life", "why": "Ivory is precious and the tower is high above ordinary people."},
+      {"l": "build bridges", "r": "improve relations between groups", "why": "A bridge connects two sides that were separated."}
+    ],
+    "sort": {
+      "h": "Sort each expression by the image underneath it: is it a <strong>plant</strong> or a <strong>building</strong>?",
+      "cols": ["Plant image", "Building image"],
+      "items": [
+        {"w": "take root", "c": 0, "why": "Roots belong to plants."},
+        {"w": "bear fruit", "c": 0, "why": "Trees and plants bear fruit."},
+        {"w": "branch out", "c": 0, "why": "A tree grows new branches in new directions."},
+        {"w": "a seed of doubt", "c": 0, "why": "A seed is the start of a plant."},
+        {"w": "grassroots", "c": 0, "why": "The roots of the grass: the base of a plant community."},
+        {"w": "nip it in the bud", "c": 0, "why": "A bud is a young flower."},
+        {"w": "lay the foundations", "c": 1, "why": "Foundations are the base of a building."},
+        {"w": "a pillar of the community", "c": 1, "why": "A pillar holds up a building."},
+        {"w": "build bridges", "c": 1, "why": "Bridges are constructed."},
+        {"w": "a house of cards", "c": 1, "why": "A fragile structure, built of playing cards."},
+        {"w": "an ivory tower", "c": 1, "why": "A tower is a building."},
+        {"w": "the cracks are starting to show", "c": 1, "why": "Walls and structures crack."}
+      ]
+    },
+    "pick": [
+      {"q": "After ten years as an accountant, Priya wanted to ___ into wedding photography.", "opts": ["take root", "branch out", "nip it in the bud"], "a": 1, "why": "Branch out into: expand into a new area of activity."},
+      {"q": "The lawyer's careless remark planted ___ in the jury's mind.", "opts": ["a pillar of the community", "an ivory tower", "a seed of doubt"], "a": 2, "why": "A seed of doubt: a small uncertainty that may grow."},
+      {"q": "The movement began with ___ volunteers knocking on doors, not with big donors.", "opts": ["grassroots", "ivory-tower", "house-of-cards"], "a": 0, "why": "Grassroots: ordinary people at the base of a movement."},
+      {"q": "Grandpa coached minor hockey for forty years and was ___ in our small town.", "opts": ["a house of cards", "a pillar of the community", "a seed of doubt"], "a": 1, "why": "A pillar of the community: a respected person others rely on."},
+      {"q": "If students start skipping class, deal with it now and ___.", "opts": ["nip it in the bud", "bear fruit", "build bridges"], "a": 0, "why": "Nip it in the bud: stop it before it grows."},
+      {"q": "The economists' proposals sound elegant, but they come from ___ and ignore how families actually budget.", "opts": ["the grassroots", "a pillar of the community", "an ivory tower"], "a": 2, "why": "An ivory tower: a place cut off from practical life."},
+      {"q": "Once one big client left, the company's finances collapsed like ___.", "opts": ["a house of cards", "a seed of doubt", "a solid case"], "a": 0, "why": "Collapse like a house of cards: fall apart suddenly because it was fragile."},
+      {"q": "Retirement is the time to enjoy ___ after decades of hard work.", "opts": ["the cracks", "the fruits of your labour", "a house of cards"], "a": 1, "why": "The fruits of your labour: the rewards of your work."}
+    ],
+    "spot": [
+      {"q": "We need to nip this rumour in the butt before the press hears about it.", "bad": "in the butt", "fix": "in the bud", "opts": ["in the bud", "in the bloom"], "why": "Nip it in the bud: a bud is a young flower. In the butt is a famous garble."},
+      {"q": "Her research finally bore fruits after a decade in the lab.", "bad": "bore fruits", "fix": "bore fruit", "opts": ["bore fruit", "gave fruit"], "why": "Bear fruit is fixed with singular fruit."},
+      {"q": "The new recycling habit took roots quickly in our neighbourhood.", "bad": "took roots", "fix": "took root", "opts": ["took root", "took a root"], "why": "Take root: no article, no plural."},
+      {"q": "After the bitter election, the two parties are trying to construct bridges.", "bad": "construct bridges", "fix": "build bridges", "opts": ["build bridges", "make bridges"], "why": "The idiom is build bridges. Construct sounds like real engineering."},
+      {"q": "The minister's plan is a tower of cards that will fall at the first recession.", "bad": "a tower of cards", "fix": "a house of cards", "opts": ["a house of cards", "a castle of cards"], "why": "In English it's always a house of cards."}
+    ],
+    "type": [
+      {"q": "The civil rights campaigns of the 1960s laid the ___ for later equality laws.", "a": ["foundations", "foundation", "groundwork"], "why": "Lay the foundations (or groundwork): create the base for later progress."},
+      {"q": "The tradition took ___ in Nova Scotia and spread west from there.", "a": ["root", "hold"], "why": "Take root (or take hold): become established."},
+      {"q": "Professors in their ivory ___ rarely see how students actually live.", "a": ["towers", "tower"], "why": "An ivory tower: a place cut off from everyday reality."},
+      {"q": "Their marriage looked perfect, but the ___ were starting to show by the second year.", "a": ["cracks"], "why": "The cracks are starting to show: hidden problems appear."},
+      {"q": "The negotiators spent months trying to build ___ between the union and management.", "a": ["bridges"], "why": "Build bridges: improve relations between two sides."},
+      {"q": "The scheme was a house of ___ and collapsed as soon as interest rates rose.", "a": ["cards"], "why": "A house of cards: a fragile structure ready to fall."}
+    ],
+    "bend": [
+      {"q": "Which version sounds natural? ___", "opts": ["The government is accused of papering over the cracks.", "The government is accused of painting over the fissures.", "The government is accused of papering under the cracks."], "a": 0, "why": "Paper over the cracks is a natural extension of the cracks image: hide problems without fixing them."},
+      {"q": "Which version sounds natural? ___", "opts": ["Their partnership has well and truly borne fruits.", "Their partnership has well and truly borne fruit.", "Their partnership has well and truly carried fruit."], "a": 1, "why": "Adding well and truly is fine, but the core bear fruit stays: borne fruit, singular."},
+      {"q": "Which version sounds natural? ___", "opts": ["Critics dismissed it as ivory-castle thinking.", "Critics dismissed it as tower-of-ivory thinking.", "Critics dismissed it as ivory-tower thinking."], "a": 2, "why": "Ivory tower works naturally as a hyphenated adjective: ivory-tower thinking."},
+      {"q": "Which version sounds natural? ___", "opts": ["The campaign enjoys strong grassroots support.", "The campaign enjoys strong roots-of-grass support.", "The campaign enjoys strong grassroots supports."], "a": 0, "why": "Grassroots is used as an adjective before uncountable support."}
+    ],
+    "talk": [
+      "Think of a project in your life that took years to <strong>bear fruit</strong>. What <strong>laid the foundations</strong> for it?",
+      "Voltaire's hero decides to tend his own garden. Is modest, practical work better than grand theories? Discuss with an example.",
+      "Leonard Cohen suggests that cracks can be good because they let light in. Do you agree? When did a crack in your plans lead somewhere better?",
+      "Role-play: you are a new manager, and two departments don't trust each other. Explain to Bill how you will <strong>build bridges</strong>.",
+      "Are universities <strong>ivory towers</strong>? Argue one side, then the other."
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "grassroots", "r": "ordinary people, not leaders", "why": "The roots of the grass are at ground level, like ordinary members."},
+      {"l": "a pillar of the community", "r": "a respected, reliable local figure", "why": "Pillars hold a building up, as such people support a community."},
+      {"l": "branch out", "r": "expand into new areas", "why": "A tree grows new branches in new directions."},
+      {"l": "a seed of doubt", "r": "a small first feeling of uncertainty", "why": "A seed is tiny but can grow into something big."},
+      {"l": "the fruits of your labour", "r": "the rewards of hard work", "why": "Fruit is what you harvest after work and patience."},
+      {"l": "a solid case", "r": "a strong, well-supported argument", "why": "Solid structures are hard to knock down, like good arguments."}
+    ],
+    "pick": [
+      {"q": "The bakery did so well that the owners decided to ___ into catering.", "opts": ["nip it in the bud", "branch out", "take root"], "a": 1, "why": "Branch out into: expand into a new line of business."},
+      {"q": "Mrs. Okafor has run the food bank for decades; she's truly ___.", "opts": ["an ivory tower", "a house of cards", "a pillar of the community"], "a": 2, "why": "A pillar of the community: a respected person others depend on."},
+      {"q": "The petition was a ___ effort organised by parents, not politicians.", "opts": ["grassroots", "house-of-cards", "ivory-tower"], "a": 0, "why": "Grassroots: started by ordinary people."},
+      {"q": "One small inconsistency in his story planted ___ in my mind.", "opts": ["the fruits of labour", "a seed of doubt", "a pillar"], "a": 1, "why": "Plant a seed of doubt: start a feeling of uncertainty."},
+      {"q": "With the DNA evidence, the Crown now has ___ against the accused.", "opts": ["a solid case", "a house of cards", "an ivory tower"], "a": 0, "why": "A solid case: a strong argument supported by evidence."},
+      {"q": "After forty years on the farm, they finally sat back to enjoy ___.", "opts": ["a seed of doubt", "the cracks", "the fruits of their labour"], "a": 2, "why": "The fruits of their labour: the rewards of long work."}
+    ],
+    "spot": [
+      {"q": "The retired doctor is a pillow of the community in our town.", "bad": "a pillow of the community", "fix": "a pillar of the community", "opts": ["a pillar of the community", "a pole of the community"], "why": "A pillar supports a building. A pillow is for sleeping!"},
+      {"q": "Our firm is branching off into renewable energy next year.", "bad": "branching off", "fix": "branching out", "opts": ["branching out", "branching up"], "why": "Branch out into: expand. Branch off means a road or path splits away."},
+      {"q": "His testimony planted a grain of doubt in the jury's mind.", "bad": "a grain of doubt", "fix": "a seed of doubt", "opts": ["a seed of doubt", "a root of doubt"], "why": "The usual phrase is a seed of doubt; you plant seeds. Compare a grain of truth."},
+      {"q": "After years of patient research, the vaccine project finally gave fruit.", "bad": "gave fruit", "fix": "bore fruit", "opts": ["bore fruit", "made fruit"], "why": "English uses bear: bore fruit. Gave fruit is a literal translation."}
+    ],
+    "type": [
+      {"q": "The rumours planted a ___ of doubt about the coach's future.", "a": ["seed"], "why": "A seed of doubt: a small uncertainty that can grow."},
+      {"q": "Dr. Ahmed was a ___ of the community, delivering half the babies in town.", "a": ["pillar"], "why": "A pillar of the community: someone others rely on."},
+      {"q": "Once you've paid off the mortgage, you can enjoy the ___ of your labour.", "a": ["fruits"], "why": "The fruits of your labour: the rewards of hard work."},
+      {"q": "Her lawyers built a ___ case, backed by emails and witness statements.", "a": ["solid", "strong", "watertight", "airtight"], "why": "A solid (or watertight) case is strong and well supported."},
+      {"q": "The opposition's argument ___ completely when the real figures were published.", "a": ["collapsed", "crumbled"], "why": "Arguments are buildings: they collapse or crumble."},
+      {"q": "It's best to ___ bad habits in the bud.", "a": ["nip"], "why": "Nip something in the bud: stop it early."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "The city's composting program has finally ___ in the suburbs.", "opts": ["nipped in the bud", "taken root", "branched out"], "a": "taken root", "why": "Take root: become established and accepted."},
+    {"type": "pick", "q": "Without a real business plan, the start-up was ___ waiting to fall.", "opts": ["a house of cards", "a pillar of the community", "a seed of doubt"], "a": "a house of cards", "why": "A house of cards: something fragile that could collapse."},
+    {"type": "pick", "q": "The peace talks finally ___ after years of patient negotiation.", "opts": ["branched out", "bore fruit", "took a root"], "a": "bore fruit", "why": "Bear fruit: produce good results after long effort."},
+    {"type": "pick", "q": "A good principal can ___ between angry parents and teachers.", "opts": ["nip it in the bud", "bear fruit", "build bridges"], "a": "build bridges", "why": "Build bridges: improve relations between two sides."},
+    {"type": "pick", "q": "Commentators who live in ___ rarely understand the cost of groceries.", "opts": ["an ivory tower", "grassroots", "a solid case"], "a": "an ivory tower", "why": "An ivory tower: a privileged place cut off from ordinary life."},
+    {"type": "pick", "q": "Our early savings habits ___ for a comfortable retirement.", "opts": ["took root", "laid the foundations", "bore fruit"], "a": "laid the foundations", "why": "Lay the foundations for: create the base for later success."},
+    {"type": "pick", "q": "The coach noticed the locker-room tension and ___ before the playoffs.", "opts": ["built bridges", "branched out", "nipped it in the bud"], "a": "nipped it in the bud", "why": "Nip it in the bud: deal with a problem early."},
+    {"type": "pick", "q": "By the third year, ___ in their business partnership, and they argued constantly.", "opts": ["the cracks were starting to show", "the fruits of their labour", "a pillar of the community"], "a": "the cracks were starting to show", "why": "The cracks are starting to show: problems become visible."},
+    {"type": "type", "q": "His decision to ___ out into politics surprised everyone at the law firm.", "a": ["branch"], "why": "Branch out: move into a new area."},
+    {"type": "type", "q": "These reforms will lay the ___ for a fairer tax system.", "a": ["foundations", "foundation", "groundwork"], "why": "Lay the foundations: create the base for something."},
+    {"type": "type", "q": "That one late payment sowed a ___ of doubt about the supplier.", "a": ["seed"], "why": "Sow or plant a seed of doubt: start a feeling of uncertainty."},
+    {"type": "type", "q": "Political change often starts at the ___ level, in kitchens and church halls.", "a": ["grassroots"], "why": "Grassroots: among ordinary people rather than leaders."},
+    {"type": "type", "q": "Once the main witness withdrew, the case ___ like a house of cards.", "a": ["collapsed", "crumbled", "fell"], "why": "Collapse like a house of cards: fall apart suddenly."},
+    {"type": "spot", "q": "The board hopes the new strategy will bare fruit by next spring.", "bad": "bare fruit", "fix": "bear fruit", "opts": ["bear fruit", "bore fruit"], "why": "Bear (produce) fruit, not bare (uncovered). Will + base form: will bear fruit."},
+    {"type": "spot", "q": "The new hiring policy has started to take root across all our branches.", "bad": "", "why": "Correct: take root means become established."},
+    {"type": "spot", "q": "Academics in their ivory castles often ignore practical problems.", "bad": "ivory castles", "fix": "ivory towers", "opts": ["ivory towers", "ivory palaces"], "why": "The fixed phrase is an ivory tower."},
+    {"type": "spot", "q": "We managed to nip the complaint in the bloom before it reached head office.", "bad": "in the bloom", "fix": "in the bud", "opts": ["in the bud", "in the butt"], "why": "Nip it in the bud: stop it before the flower opens."},
+    {"type": "order", "a": "Years of hard work finally bore fruit for the team.", "alt": [], "why": "Subject + finally + bore fruit + for someone."},
+    {"type": "order", "a": "She laid the foundations for a successful business.", "alt": [], "why": "Lay the foundations for + noun phrase."},
+    {"type": "order", "a": "The rumour planted a seed of doubt in my mind.", "alt": [], "why": "Plant a seed of doubt in someone's mind."}
+  ]
+}

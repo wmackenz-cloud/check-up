@@ -1,0 +1,210 @@
+{
+  "n": 2,
+  "title": "Understanding Is Seeing",
+  "tagline": "clarity, insight and perspective",
+  "why": "English talks about knowing as seeing and ignorance as darkness. These idioms let you say exactly how well someone understands, and whether they are choosing not to look.",
+  "know": [
+    "the conceptual metaphor <strong>UNDERSTANDING IS SEEING</strong> and its partner <strong>KNOWLEDGE IS LIGHT</strong>",
+    "eight common idioms of clarity, ignorance and point of view"
+  ],
+  "understand": [
+    "why <em>I see</em> can mean <em>I understand</em>, and why a talk can be <em>illuminating</em>",
+    "the difference between not knowing (<em>in the dark</em>) and choosing not to know (<em>turn a blind eye</em>)"
+  ],
+  "able": [
+    "describe understanding, confusion and bias precisely",
+    "disagree politely using perspective idioms",
+    "use these idioms in the negative or positive form that natives actually use"
+  ],
+  "mistakes": [
+    ["We see eye in eye on most things.", "We <strong>see eye to eye</strong> on most things. The preposition is <em>to</em>, and the phrase is far more common in the negative."],
+    ["Can you throw light to the problem?", "Can you <strong>shed light on</strong> the problem? <em>Shed</em> or <em>throw</em> light <strong>on</strong>, never <em>to</em>."],
+    ["The managers closed a blind eye to the bullying.", "The managers <strong>turned a blind eye</strong> to the bullying. The verb is fixed: <em>turn</em>."],
+    ["I see where are you coming from.", "I see <strong>where you're coming from</strong>. It's an embedded question, so no inversion."],
+    ["Nobody told me, so I was in the darkness.", "I was <strong>in the dark</strong>. The idiom uses <em>the dark</em>, not <em>the darkness</em>."]
+  ],
+  "bigidea": [
+    "In English, the mind has eyes. We <strong>see</strong> what someone means, an explanation is <strong>clear</strong> or <strong>murky</strong>, and a clever person is <strong>brilliant</strong> while a slow one is <strong>dim</strong>. Lakoff and Johnson listed this pattern as UNDERSTANDING IS SEEING.",
+    "The pattern goes back a long way. Plato pictured ignorance as life in a dark cave, and the eighteenth-century movement that celebrated reason is still called the <strong>Enlightenment</strong>.",
+    "Because seeing depends on where you stand, the metaphor also gives us <strong>perspective</strong>, <strong>point of view</strong> and <strong>angle</strong>. Two people can look at the same facts and see different things, which is why this system is so useful for polite disagreement."
+  ],
+  "hidden": [
+    "<strong>I see.</strong> So the meeting is cancelled, not postponed.",
+    "Thanks, that was a really <strong>clear</strong> explanation.",
+    "The legal situation is still pretty <strong>murky</strong>.",
+    "It was an <strong>illuminating</strong> talk about the history of the city.",
+    "She's absolutely <strong>brilliant</strong> at statistics.",
+    "I have a <strong>dim</strong> memory of meeting him in Montreal.",
+    "From my <strong>point of view</strong>, the deadline is unrealistic.",
+    "The report offers real <strong>insight</strong> into rural poverty."
+  ],
+  "expressions": [
+    {"e": "shed light on", "meaning": "help to explain something that was unclear", "example": "The new documents <strong>shed light on</strong> why the bridge collapsed.", "tone": "formal",
+     "bend": "Also <em>throw light on</em>; add adjectives: <em>shed new light on</em>, <em>shed little light on</em>. Past tense is <em>shed</em>.",
+     "note": "Common in journalism and academic writing. In conversation people more often say <em>explain</em> or <em>clear up</em>."},
+    {"e": "in the dark", "meaning": "not informed about something", "example": "The staff were kept <strong>in the dark</strong> about the merger until the last minute.", "tone": "neutral",
+     "bend": "Usually <em>keep someone in the dark</em> or <em>be left in the dark</em>. Also <em>a shot in the dark</em> (a pure guess).",
+     "note": "It suggests information was withheld. If you simply don't know, <em>I have no idea</em> is more natural."},
+    {"e": "a blind spot", "meaning": "an area where someone consistently fails to notice or understand something", "example": "He's a great manager, but he has <strong>a blind spot</strong> when it comes to his own son.", "tone": "neutral",
+     "bend": "<em>Have a blind spot about/for/when it comes to</em>. Plural is fine: <em>we all have blind spots</em>.",
+     "note": "From the area a driver can't see in the mirrors. It is a gentle, non-insulting way to point out bias."},
+    {"e": "tunnel vision", "meaning": "focusing on one thing so much that you ignore everything else", "example": "The investigators developed <strong>tunnel vision</strong> and ignored evidence that pointed elsewhere.", "tone": "neutral",
+     "bend": "Uncountable noun: <em>have/develop tunnel vision</em>. No article: not <em>a tunnel vision</em>.",
+     "note": "Usually critical. A positive version of focus is <em>single-minded</em> or <em>laser-focused</em>."},
+    {"e": "not see eye to eye", "meaning": "disagree", "example": "My father and I <strong>don't see eye to eye</strong> on politics, so we talk about hockey.", "tone": "neutral",
+     "bend": "Usually negative: <em>don't/didn't/never see eye to eye on/about/with</em>. Positive use exists but is rare.",
+     "note": "A polite, rather mild way to describe ongoing disagreement. It doesn't mean a single argument."},
+    {"e": "see where you're coming from", "meaning": "understand the reasons for someone's opinion", "example": "I <strong>see where you're coming from</strong>, but I still think we should wait.", "tone": "casual",
+     "bend": "Change the person: <em>I can see where she's coming from</em>. Often followed by <em>but</em>.",
+     "note": "A classic softener before disagreeing. Overused, it can sound like a script; vary it with <em>I take your point</em>."},
+    {"e": "in my mind's eye", "meaning": "in my imagination or memory", "example": "<strong>In my mind's eye</strong> I can still see my grandmother's kitchen in Sudbury.", "tone": "formal",
+     "bend": "Change the possessive: <em>in her mind's eye</em>. Also <em>picture something in your mind's eye</em>.",
+     "note": "Slightly literary. Shakespeare's Hamlet made it famous, though earlier writers used similar wording."},
+    {"e": "turn a blind eye", "meaning": "deliberately ignore something you know is wrong", "example": "For years the league <strong>turned a blind eye</strong> to violence on the ice.", "tone": "neutral",
+     "bend": "<em>Turn a blind eye to</em> something; any tense. The verb <em>turn</em> is fixed.",
+     "note": "Popularly linked to Admiral Nelson at Copenhagen in 1801, said to have raised his telescope to his blind eye to avoid seeing a signal. The story is likely embellished."}
+  ],
+  "culture": [
+    {"kind": "Literature", "work": "Hamlet", "by": "William Shakespeare", "year": "c. 1600",
+     "how": "Early in the play Hamlet tells his friend Horatio that he can picture his dead father, not with his real eyes but with his <strong>mind's eye</strong>. Shakespeare made the phrase famous, and it neatly shows how English treats imagination and memory as a kind of inner sight.",
+     "ask": "What place or person can you see most clearly in your mind's eye? Describe it.",
+     "find": "mind's eye Hamlet Horatio meaning"},
+    {"kind": "Philosophy", "work": "The Republic (the allegory of the cave)", "by": "Plato", "year": "c. 375 BCE",
+     "how": "Plato imagines prisoners chained in a cave who see only shadows on a wall and think they are reality. One prisoner escapes, is dazzled by the sun, and slowly learns to see the real world. Leaving darkness for light becomes a picture of education itself.",
+     "ask": "Is there something you once believed that now looks like a shadow on the wall to you?",
+     "find": "Plato allegory of the cave explained"},
+    {"kind": "Music", "work": "Both Sides Now", "by": "Joni Mitchell", "year": "1969",
+     "how": "The Canadian songwriter looks at clouds, then love, then life itself from two opposite points of view. Each time she ends up admitting she doesn't really understand them at all. Seeing from both sides becomes a picture of growing up and of honest uncertainty.",
+     "ask": "Is there a topic you understood better when you were younger than you do now?",
+     "find": "Joni Mitchell Both Sides Now"},
+    {"kind": "Music", "work": "Anthem", "by": "Leonard Cohen", "year": "1992",
+     "how": "Cohen, from Montreal, suggests that imperfection is not a failure: the broken places in people and the world are exactly where light, and understanding, can enter. It is one of the most quoted ideas in Canadian song.",
+     "ask": "Do you agree that mistakes and failures help us understand more? Give an example.",
+     "find": "Leonard Cohen Anthem"},
+    {"kind": "Poetry", "work": "Amazing Grace", "by": "John Newton", "year": "1779",
+     "how": "Newton, a former captain of slave ships who later supported abolition, wrote this hymn about his own change of heart. He describes his past as blindness and his new understanding as finally being able to see, the same contrast as the idiom <strong>see the light</strong>.",
+     "ask": "Why do you think the idea of blindness and sight is so powerful when people describe a change of belief?",
+     "find": "John Newton Amazing Grace history"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "shed light on", "r": "help explain", "why": "Light makes something visible, so it becomes understandable."},
+      {"l": "in the dark", "r": "not informed", "why": "You can't see, so you don't know. Often kept in the dark by others."},
+      {"l": "a blind spot", "r": "something you consistently fail to notice", "why": "Like the area a driver can't see in the mirrors."},
+      {"l": "tunnel vision", "r": "a narrow focus that ignores everything else", "why": "You see only what is straight ahead, as in a tunnel."},
+      {"l": "not see eye to eye", "r": "disagree", "why": "Your views don't line up. Almost always used in the negative."},
+      {"l": "see where you're coming from", "r": "understand someone's reasons", "why": "You can see their starting point, even if you disagree."},
+      {"l": "in my mind's eye", "r": "in my imagination or memory", "why": "The mind has its own eye. Made famous by Hamlet."},
+      {"l": "turn a blind eye", "r": "deliberately ignore wrongdoing", "why": "You choose not to look, so you can claim not to know."}
+    ],
+    "sort": {
+      "h": "Sort the expressions: do they describe <strong>clear understanding</strong>, <strong>limited understanding</strong>, or <strong>choosing not to see</strong>?",
+      "cols": ["Clear understanding", "Limited understanding", "Choosing not to see"],
+      "items": [
+        {"w": "shed light on", "c": 0, "why": "Something becomes easier to understand."},
+        {"w": "see the light", "c": 0, "why": "You finally understand or accept the truth."},
+        {"w": "see where you're coming from", "c": 0, "why": "You understand someone's reasons."},
+        {"w": "crystal clear", "c": 0, "why": "Completely easy to understand."},
+        {"w": "in the dark", "c": 1, "why": "You lack information, usually because nobody told you."},
+        {"w": "a blind spot", "c": 1, "why": "A gap in what you notice, often without realising it."},
+        {"w": "tunnel vision", "c": 1, "why": "Your focus is too narrow to see the whole picture."},
+        {"w": "can't see the wood for the trees", "c": 1, "why": "Too many details stop you seeing the big picture. North Americans also say forest."},
+        {"w": "turn a blind eye", "c": 2, "why": "You know about a problem and deliberately ignore it."},
+        {"w": "look the other way", "c": 2, "why": "You deliberately avoid noticing something wrong."},
+        {"w": "bury your head in the sand", "c": 2, "why": "You refuse to face an unpleasant reality."}
+      ]
+    },
+    "pick": [
+      {"q": "The inquiry should ___ how the patient records were leaked.", "opts": ["turn a blind eye to", "shed light on", "see eye to eye on"], "a": 1, "why": "An inquiry explains what happened: shed light on."},
+      {"q": "Nobody told the volunteers the event was cancelled. They were completely ___.", "opts": ["in the dark", "in my mind's eye", "on the same page"], "a": 0, "why": "Not informed because nobody told them: in the dark."},
+      {"q": "She's a brilliant editor, but spelling in her own emails is ___ for her.", "opts": ["tunnel vision", "a blind spot", "a shot in the dark"], "a": 1, "why": "A specific area she keeps failing to notice is a blind spot."},
+      {"q": "The team was so focused on the launch date that they developed ___ and missed obvious bugs.", "opts": ["a blind eye", "tunnel vision", "a mind's eye"], "a": 1, "why": "Narrow focus that ignores everything else = tunnel vision."},
+      {"q": "My husband and I don't ___ on how much screen time the kids should have.", "opts": ["see eye to eye", "see the light", "shed light"], "a": 0, "why": "Disagree, in the usual negative form: don't see eye to eye."},
+      {"q": "I ___, but moving the wedding now would cost a fortune.", "opts": ["turn a blind eye", "see where you're coming from", "am in the dark"], "a": 1, "why": "A polite softener before disagreeing: I see where you're coming from."},
+      {"q": "___, I can still picture the lake at sunrise from my uncle's cottage.", "opts": ["In the dark", "In my mind's eye", "From a different angle"], "a": 1, "why": "Picturing something in memory = in my mind's eye."},
+      {"q": "The landlord ___ to the broken smoke alarms for months.", "opts": ["shed light", "turned a blind eye", "saw the light"], "a": 1, "why": "Deliberately ignoring a known problem = turn a blind eye."}
+    ],
+    "spot": [
+      {"q": "The new biography throws light to her early years in Halifax.", "bad": "throws light to", "fix": "throws light on", "opts": ["throws light on", "throws light at"], "why": "Shed or throw light on something. The preposition is on."},
+      {"q": "The coach shut a blind eye to the players' late nights.", "bad": "shut a blind eye", "fix": "turned a blind eye", "opts": ["turned a blind eye", "cast a blind eye"], "why": "The verb is fixed: turn a blind eye."},
+      {"q": "We've never seen eye in eye on money, but we make it work.", "bad": "eye in eye", "fix": "eye to eye", "opts": ["eye to eye", "face to face"], "why": "See eye to eye = agree. Face to face means in person."},
+      {"q": "I see where are you coming from, but the budget is fixed.", "bad": "where are you coming from", "fix": "where you're coming from", "opts": ["where you're coming from", "what you're coming from"], "why": "Embedded question: no inversion. I see where you're coming from."},
+      {"q": "Investors were kept in the darkness about the losses.", "bad": "in the darkness", "fix": "in the dark", "opts": ["in the dark", "in the shade"], "why": "The idiom is in the dark. In the shade means less noticed."}
+    ],
+    "type": [
+      {"q": "The leaked emails shed new ___ on the minister's decision.", "a": ["light"], "why": "Shed light on: help explain. New is a natural addition."},
+      {"q": "Shareholders were kept in the ___ until the deal was signed.", "a": ["dark"], "why": "Keep someone in the dark: withhold information."},
+      {"q": "We all have a blind ___ about our own children.", "a": ["spot"], "why": "A blind spot: an area where you don't notice things."},
+      {"q": "Our new director has tunnel ___; she only cares about quarterly profits.", "a": ["vision"], "why": "Tunnel vision: a narrow focus that ignores everything else."},
+      {"q": "My sister and I rarely see eye to ___ about holidays.", "a": ["eye"], "why": "See eye to eye: agree. Usually negative or with rarely."},
+      {"q": "The authorities turned a blind ___ to the illegal dumping.", "a": ["eye"], "why": "Turn a blind eye: deliberately ignore wrongdoing."}
+    ],
+    "bend": [
+      {"q": "Which version sounds most natural? ___", "opts": ["We've never really seen eye with eye.", "We've never really seen eye to eye.", "We've never really seen eyes to eyes."], "a": 1, "why": "Tense and adverbs can change, but eye to eye is fixed: singular, with to. It's mostly used in the negative."},
+      {"q": "Which version is a natural variation? ___", "opts": ["The study sheds little light on the causes.", "The study sheds a little lights on the causes.", "The study sheds light to the causes."], "a": 0, "why": "Adjectives like little, new or fresh fit before light. Keep on."},
+      {"q": "Which version sounds natural about many people? ___", "opts": ["We all have our blind spots.", "We all have our blind eyes.", "We all have a blindness spot."], "a": 0, "why": "Blind spot can go plural. Blind eye belongs to a different idiom."},
+      {"q": "Which version sounds natural in the passive? ___", "opts": ["The problem was turned a blind eye.", "A blind eye was turned to the problem.", "The problem was blind-eyed."], "a": 1, "why": "The passive keeps the full phrase: a blind eye was turned to it. It's common in reports."}
+    ],
+    "talk": [
+      "Plato's prisoners mistake shadows for reality. What are the <em>shadows on the wall</em> of modern life: social media, advertising, something else?",
+      "Joni Mitchell looks at life from both sides. Choose a topic you've changed your mind about and describe it <strong>from a different angle</strong>.",
+      "Role-play: a colleague wants to cancel the office holiday party. Disagree politely using <strong>I see where you're coming from</strong> and <strong>we don't see eye to eye</strong>.",
+      "When is it acceptable to <strong>turn a blind eye</strong>? Think about a parent, a teacher, a police officer and a manager.",
+      "What is one of your <strong>blind spots</strong>? How did you find out about it?"
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "see the light", "r": "finally understand or accept the truth", "why": "Like the moment of sight in Amazing Grace or Plato's cave."},
+      {"l": "a shot in the dark", "r": "a pure guess", "why": "You can't see the target, so you just hope to hit it."},
+      {"l": "from a different angle", "r": "from another point of view", "why": "Moving where you stand changes what you see."},
+      {"l": "crystal clear", "r": "completely easy to understand", "why": "As clear as glass. Also used as a warning: Is that crystal clear?"},
+      {"l": "tunnel vision", "r": "an unhealthy narrow focus", "why": "Usually critical: you miss everything at the sides."},
+      {"l": "turn a blind eye", "r": "choose to ignore something wrong", "why": "Different from in the dark: you know, but pretend not to."}
+    ],
+    "pick": [
+      {"q": "My dad refused to wear a seat belt for years, but after the accident he finally ___.", "opts": ["saw the light", "turned a blind eye", "kept us in the dark"], "a": 0, "why": "Finally understanding and accepting the truth = see the light."},
+      {"q": "I don't know the password. Try 1234; it's ___.", "opts": ["a blind spot", "a shot in the dark", "crystal clear"], "a": 1, "why": "A pure guess = a shot in the dark."},
+      {"q": "If you look at the problem ___, the delay might actually help us.", "opts": ["in the dark", "from a different angle", "with a blind eye"], "a": 1, "why": "Changing your point of view = look at it from a different angle."},
+      {"q": "The instructions were ___, so nobody had any excuse.", "opts": ["crystal clear", "murky", "in the dark"], "a": 0, "why": "Completely easy to understand = crystal clear."},
+      {"q": "Her report finally ___ why sales had fallen in Quebec.", "opts": ["turned a blind eye to", "shed light on", "saw eye to eye with"], "a": 1, "why": "Explaining something unclear = shed light on."},
+      {"q": "The coach and the owner have never ___, so the coach's departure was no surprise.", "opts": ["seen the light", "seen eye to eye", "shed light"], "a": 1, "why": "Long-term disagreement = never seen eye to eye."}
+    ],
+    "spot": [
+      {"q": "After years of smoking, my uncle finally saw the lights and quit.", "bad": "saw the lights", "fix": "saw the light", "opts": ["saw the light", "saw the stars"], "why": "Singular: see the light."},
+      {"q": "It was just a shot in the darkness, but my answer was right.", "bad": "a shot in the darkness", "fix": "a shot in the dark", "opts": ["a shot in the dark", "a shot in the arm"], "why": "The fixed phrase uses the dark. A shot in the arm is a boost."},
+      {"q": "Try to look at the situation from a different corner.", "bad": "from a different corner", "fix": "from a different angle", "opts": ["from a different angle", "from a different side"], "why": "The usual idiom is from a different angle."},
+      {"q": "The police were accused of closing a blind eye to the protest violence.", "bad": "closing a blind eye", "fix": "turning a blind eye", "opts": ["turning a blind eye", "keeping a blind eye"], "why": "Always turn: turning a blind eye."}
+    ],
+    "type": [
+      {"q": "Let me make one thing crystal ___: no phones at the dinner table.", "a": ["clear"], "why": "Crystal clear: perfectly understandable, often as a firm warning."},
+      {"q": "It took a heart attack for him to finally see the ___ about his diet.", "a": ["light"], "why": "See the light: finally understand or accept the truth."},
+      {"q": "I had no idea of the answer; it was a shot in the ___.", "a": ["dark"], "why": "A shot in the dark: a pure guess."},
+      {"q": "Try to look at it from a different ___ before you decide.", "a": ["angle", "perspective"], "why": "From a different angle or perspective: another point of view."},
+      {"q": "I can still see the old farmhouse in my mind's ___.", "a": ["eye"], "why": "In my mind's eye: in my memory or imagination."},
+      {"q": "I see where you're ___ from, but I can't agree.", "a": ["coming"], "why": "I see where you're coming from: I understand your reasons."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "The museum's new exhibit ___ the lives of early settlers in Upper Canada.", "opts": ["sheds light on", "turns a blind eye to", "sees eye to eye with"], "a": "sheds light on", "why": "Helping people understand something = shed light on."},
+    {"type": "pick", "q": "The employees were left ___ about the layoffs until the press release.", "opts": ["in the dark", "in my mind's eye", "crystal clear"], "a": "in the dark", "why": "Not informed = left in the dark."},
+    {"type": "pick", "q": "My mother has ___ about my brother; he can do no wrong in her eyes.", "opts": ["tunnel vision", "a blind spot", "a shot in the dark"], "a": "a blind spot", "why": "A specific area where she fails to see problems = a blind spot."},
+    {"type": "pick", "q": "The police had such ___ that they ignored every other suspect.", "opts": ["tunnel vision", "a mind's eye", "a blind eye"], "a": "tunnel vision", "why": "Focusing so narrowly that you ignore alternatives = tunnel vision."},
+    {"type": "pick", "q": "The two co-founders never ___ on hiring, so one of them left.", "opts": ["saw eye to eye", "saw the light", "shed light"], "a": "saw eye to eye", "why": "Persistent disagreement = never saw eye to eye."},
+    {"type": "pick", "q": "I ___, but the safety rules apply to everyone.", "opts": ["see where you're coming from", "turn a blind eye", "am in the dark"], "a": "see where you're coming from", "why": "Showing you understand before disagreeing = I see where you're coming from."},
+    {"type": "pick", "q": "The referee ___ to the shirt-pulling all game.", "opts": ["shed light", "turned a blind eye", "saw the light"], "a": "turned a blind eye", "why": "Deliberately ignoring a foul = turn a blind eye."},
+    {"type": "pick", "q": "___ I could see exactly how the new kitchen would look.", "opts": ["In my mind's eye", "In the dark", "From a blind spot"], "a": "In my mind's eye", "why": "Imagining something clearly = in my mind's eye."},
+    {"type": "type", "q": "The investigation shed little ___ on who gave the order.", "a": ["light"], "why": "Shed little light on: didn't explain much."},
+    {"type": "type", "q": "Don't keep me in the ___. What did the doctor say?", "a": ["dark"], "why": "Keep someone in the dark: withhold information."},
+    {"type": "type", "q": "Driving is dangerous for new drivers who forget to check their blind ___.", "a": ["spot", "spots"], "why": "The literal meaning behind the idiom a blind spot."},
+    {"type": "type", "q": "After the recession, the bank finally saw the ___ and tightened its lending.", "a": ["light"], "why": "See the light: finally understand the truth."},
+    {"type": "type", "q": "My guess was a shot in the ___, but it turned out right.", "a": ["dark"], "why": "A shot in the dark: a guess with no information."},
+    {"type": "spot", "q": "The witness's statement shed light to the timeline of the robbery.", "bad": "shed light to", "fix": "shed light on", "opts": ["shed light on", "shed light at"], "why": "The preposition is on: shed light on."},
+    {"type": "spot", "q": "My boss and I see eye with eye on most issues.", "bad": "eye with eye", "fix": "eye to eye", "opts": ["eye to eye", "face to face"], "why": "See eye to eye = agree."},
+    {"type": "spot", "q": "For years the school turned a blind eye to bullying in the change rooms.", "bad": "", "why": "Correct! Turn a blind eye to = deliberately ignore."},
+    {"type": "spot", "q": "We don't see eye to eye on politics, but we're still close friends.", "bad": "", "why": "Correct! The negative form is the most natural use."},
+    {"type": "order", "a": "The new evidence sheds light on the crash.", "alt": [], "why": "Subject + sheds light on + the thing explained."},
+    {"type": "order", "a": "My parents never saw eye to eye about money.", "alt": [], "why": "Never + saw eye to eye + about/on: long-term disagreement."},
+    {"type": "order", "a": "The staff were kept in the dark for weeks.", "alt": [], "why": "Passive keep someone in the dark: were kept in the dark."}
+  ]
+}

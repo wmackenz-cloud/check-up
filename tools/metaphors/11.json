@@ -1,0 +1,210 @@
+{
+  "n": 11,
+  "title": "People Are Animals and Hidden Meanings",
+  "tagline": "character, secrets and things nobody says",
+  "why": "English uses animals to judge people quickly and indirectly: a <strong>lone wolf</strong>, the <strong>black sheep</strong>, <strong>crocodile tears</strong>. Many of these idioms also name what is hidden or unspoken, so they are essential for reading between the lines.",
+  "know": [
+    "eight key idioms such as <em>the elephant in the room</em>, <em>a red herring</em> and <em>a dark horse</em>",
+    "everyday hidden animal verbs: <em>wolf down</em>, <em>badger</em>, <em>weasel out of</em>, <em>ferret out</em>, <em>parrot</em>"
+  ],
+  "understand": [
+    "that each animal carries a fixed character in English, which may differ from your own language",
+    "that animal labels judge people, so they can sound insulting or humorous"
+  ],
+  "able": [
+    "describe people's character and roles with the right animal idiom",
+    "talk about secrets, distractions and awkward truths indirectly",
+    "discuss fables, novels and poems that use animals as metaphors"
+  ],
+  "mistakes": [
+    ["She let the dog out of the bag.", "She let the <strong>cat</strong> out of the bag. The animal is fixed."],
+    ["He cried tears of crocodile.", "He shed <strong>crocodile tears</strong>. <em>Crocodile</em> works as an adjective, before the noun."],
+    ["The boss took the share of the lion.", "The boss took <strong>the lion's share</strong>. Use the possessive, not <em>of the</em>."],
+    ["There's an elephant in the room: by the way, how was your holiday?", "Use it only for a <strong>serious, avoided problem</strong>, then actually name or address it."],
+    ["My brother is the black sheep: he's a doctor and everyone's proud of him.", "<strong>The black sheep</strong> is the family member seen as a disappointment, not just someone different."]
+  ],
+  "bigidea": [
+    "People are often described as <strong>animals</strong>, and each animal carries a fixed character: foxes are cunning, wolves are dangerous or solitary, sheep follow the crowd, lions are powerful. Most of these images come from fables, farming and the Bible, so they are old and stable.",
+    "A second group is about <strong>hidden meaning</strong>: secrets kept in bags, enormous animals nobody mentions, smelly fish that lead you off the trail. These idioms let speakers point at awkward truths without saying them directly.",
+    "Because animal labels judge character, they are rarely neutral. Calling a colleague <em>a snake</em> or a politician <em>a dinosaur</em> is a strong move. Check whether the animal means the same thing in your language: an owl is wise in English but unlucky in some cultures."
+  ],
+  "hidden": [
+    "He <strong>wolfed down</strong> his lunch in five minutes.",
+    "Stop <strong>badgering</strong> me about the report.",
+    "The senator <strong>weaselled</strong> out of answering the question.",
+    "She's been <strong>hounded</strong> by reporters all week.",
+    "Investors <strong>flocked</strong> to the new fund.",
+    "Don't just <strong>parrot</strong> the textbook; give your own view.",
+    "The journalist <strong>ferreted out</strong> the truth from old tax records.",
+    "A few <strong>sheepish</strong> employees admitted they hadn't read the policy."
+  ],
+  "expressions": [
+    {"e": "the elephant in the room", "meaning": "an obvious, important problem that everyone avoids mentioning", "example": "Nobody at the family dinner mentioned Dad's drinking, but it was <strong>the elephant in the room</strong>.", "tone": "neutral",
+     "bend": "Flexible: <em>address the elephant in the room</em>, <em>a huge elephant in the room</em>, even <em>a whole herd of elephants</em> as a joke.",
+     "note": "Very common in business and politics, so some editors call it overused. <em>Address</em> or <em>acknowledge</em> the elephant is the usual verb."},
+    {"e": "a red herring", "meaning": "something that distracts attention from the real issue, often deliberately", "example": "The fuss about the mayor's haircut was <strong>a red herring</strong>; the real issue was the budget.", "tone": "neutral",
+     "bend": "Fixed noun phrase, but plurals work: <em>the novel is full of red herrings</em>.",
+     "note": "A favourite term in mystery fiction for a false clue. Its exact origin is debated, so treat the popular dog-training story with caution."},
+    {"e": "a dark horse", "meaning": "a little-known competitor who unexpectedly succeeds, or someone with surprising hidden talents", "example": "Nobody expected the quiet candidate from Saskatchewan to win; she was <strong>a dark horse</strong>.", "tone": "neutral",
+     "bend": "Used as an adjective: <em>a dark-horse candidate</em>. British speakers also say <em>You're a dark horse!</em> to someone with a surprising secret.",
+     "note": "Popularised by Benjamin Disraeli's novel <em>The Young Duke</em> (1831), in which an unknown horse wins a race. Never <em>black horse</em>."},
+    {"e": "let the cat out of the bag", "meaning": "reveal a secret, usually by accident", "example": "My nephew <strong>let the cat out of the bag</strong> about the surprise party.", "tone": "casual",
+     "bend": "Flexible: <em>the cat's out of the bag now</em>, <em>who let the cat out?</em>",
+     "note": "Usually accidental. For a deliberate leak to the press, <em>leak</em> or <em>blow the whistle</em> is more precise."},
+    {"e": "the lion's share", "meaning": "the largest part of something", "example": "The province's two largest cities receive <strong>the lion's share</strong> of the funding.", "tone": "neutral",
+     "bend": "Almost fixed: <em>the lion's share of</em>. Singular lion, with an apostrophe before the s.",
+     "note": "From an Aesop fable in which the lion keeps all the prey for himself. Originally it meant all of it; today it usually means the biggest part."},
+    {"e": "a sacred cow", "meaning": "a belief, custom or institution treated as beyond criticism", "example": "The new CEO says no department is <strong>a sacred cow</strong> in the budget review.", "tone": "neutral",
+     "bend": "Plurals are common: <em>challenge sacred cows</em>, <em>slaughter a few sacred cows</em>.",
+     "note": "Inspired by the reverence for cows in Hinduism. Used about politics and business; be thoughtful using it in conversations about religion itself."},
+    {"e": "crocodile tears", "meaning": "fake sadness or sympathy", "example": "The executives shed <strong>crocodile tears</strong> over the layoffs while accepting huge bonuses.", "tone": "dismissive",
+     "bend": "Usually with <em>shed</em> or <em>weep</em>: <em>shedding crocodile tears</em>. Always plural.",
+     "note": "From an old legend that crocodiles weep while eating their prey. It is a strong accusation of hypocrisy."},
+    {"e": "a wolf in sheep's clothing", "meaning": "a dangerous person who appears harmless", "example": "The friendly investment adviser turned out to be <strong>a wolf in sheep's clothing</strong>.", "tone": "neutral",
+     "bend": "Plural works: <em>wolves in sheep's clothing</em>. The rest is fixed.",
+     "note": "The image appears in the Gospel of Matthew, warning against false prophets, and in later fables attributed to Aesop."}
+  ],
+  "culture": [
+    {"kind": "Literature", "work": "Aesop's Fables", "by": "attributed to Aesop", "year": "ancient Greece (traditionally 6th century BCE)",
+     "how": "Short stories in which animals behave like people: a lion who keeps all the prey, a wolf disguised in a fleece, a fox who calls the grapes he can't reach sour. Each animal is a fixed human type, and English inherited idioms such as <em>the lion's share</em> and <em>sour grapes</em> from them.",
+     "ask": "Is there a fable or folk tale from your culture whose moral became a common saying?",
+     "find": "Aesop's Fables The Lion's Share"},
+    {"kind": "Literature", "work": "Animal Farm", "by": "George Orwell", "year": "1945",
+     "how": "Farm animals overthrow their human farmer, but the pigs slowly become new tyrants. The whole novel is an extended metaphor, an allegory, for the Russian Revolution and Stalin's rule, with each animal standing for a type of person or group.",
+     "ask": "Why might a writer tell a political story with animals instead of people? What does it allow him to say?",
+     "find": "George Orwell Animal Farm"},
+    {"kind": "Poetry", "work": "Hope is the thing with feathers", "by": "Emily Dickinson", "year": "written around 1861",
+     "how": "Dickinson pictures hope as a small bird living inside a person, singing without stopping through the worst storms and never asking for anything in return. An abstract feeling becomes a creature you can almost hold.",
+     "ask": "If you described courage, worry or love as an animal, which animal would it be?",
+     "find": "Emily Dickinson Hope is the thing with feathers"},
+    {"kind": "Music", "work": "Roar", "by": "Katy Perry", "year": "2013",
+     "how": "The singer describes moving from being quiet and pushed around to finding her strength. The tiger and its roar become a metaphor for confidence regained, a modern pop version of the lion as a symbol of courage.",
+     "ask": "Which animal would you choose as a symbol of confidence in your culture? Is it the same as in English?",
+     "find": "Katy Perry Roar"},
+    {"kind": "Literature", "work": "The Metamorphosis", "by": "Franz Kafka", "year": "1915",
+     "how": "A travelling salesman wakes up transformed into a huge insect, and his family slowly turns away from him. Readers often see the change as a metaphor for alienation, illness or being treated as useless once you can no longer earn money.",
+     "ask": "Have you ever felt like a different creature in a new job, school or country? What changed in how people treated you?",
+     "find": "Franz Kafka The Metamorphosis"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "the elephant in the room", "r": "an obvious problem nobody mentions", "why": "Something as big as an elephant can't be missed, yet people pretend not to see it."},
+      {"l": "a red herring", "r": "a misleading distraction", "why": "A strong-smelling fish could lead you away from the real trail."},
+      {"l": "a dark horse", "r": "an unexpected winner", "why": "In racing, an unknown horse nobody had information about."},
+      {"l": "let the cat out of the bag", "r": "reveal a secret", "why": "Once the cat escapes, you can't put it back."},
+      {"l": "the lion's share", "r": "the largest part", "why": "In the fable, the powerful lion takes most or all of the prey."},
+      {"l": "a sacred cow", "r": "something nobody may criticise", "why": "Sacred means protected from question or attack."},
+      {"l": "crocodile tears", "r": "fake sadness", "why": "Legend says crocodiles weep while eating their victims."},
+      {"l": "a wolf in sheep's clothing", "r": "a dangerous person who seems harmless", "why": "A predator disguised as a gentle animal."}
+    ],
+    "sort": {
+      "h": "What does each idiom describe? Sort it into <strong>a type of person</strong>, <strong>secrets and deception</strong> or <strong>things and shares</strong>.",
+      "cols": ["A type of person", "Secrets and deception", "Things and shares"],
+      "items": [
+        {"w": "a dark horse", "c": 0, "why": "A person who surprises everyone by succeeding."},
+        {"w": "a lone wolf", "c": 0, "why": "A person who prefers to work or live alone."},
+        {"w": "the black sheep", "c": 0, "why": "The family member seen as a disappointment."},
+        {"w": "a fish out of water", "c": 0, "why": "A person who feels uncomfortable in unfamiliar surroundings."},
+        {"w": "the elephant in the room", "c": 1, "why": "An avoided truth that everyone knows about."},
+        {"w": "a red herring", "c": 1, "why": "A false clue or distraction."},
+        {"w": "let the cat out of the bag", "c": 1, "why": "Reveal a secret."},
+        {"w": "smell a rat", "c": 1, "why": "Suspect that something dishonest is going on."},
+        {"w": "a white elephant", "c": 2, "why": "A costly possession that is more trouble than it's worth."},
+        {"w": "the lion's share", "c": 2, "why": "The biggest part of something."},
+        {"w": "a sacred cow", "c": 2, "why": "A belief or institution nobody may criticise."}
+      ]
+    },
+    "pick": [
+      {"q": "The stadium built for the 1976 Olympics became ___, costing taxpayers for decades.", "opts": ["a dark horse", "a white elephant", "the lion's share"], "a": 1, "why": "A white elephant: an expensive thing that is hard to use or get rid of."},
+      {"q": "My cousin dropped out of law school, borrowed money from everyone and vanished; he's ___ of the family.", "opts": ["a lone wolf", "a red herring", "the black sheep"], "a": 2, "why": "The black sheep: the family member others are embarrassed by."},
+      {"q": "As the only vegetarian at the hunting lodge, I felt like ___.", "opts": ["a fish out of water", "a sacred cow", "the lion's share"], "a": 0, "why": "A fish out of water: uncomfortable in an unfamiliar setting."},
+      {"q": "She prefers to work alone and rarely joins team lunches; she's a bit of ___.", "opts": ["a white elephant", "a lone wolf", "a wolf in sheep's clothing"], "a": 1, "why": "A lone wolf: someone who prefers independence."},
+      {"q": "The detective realised the missing key was ___ planted to mislead her.", "opts": ["a dark horse", "the elephant in the room", "a red herring"], "a": 2, "why": "A red herring: a false clue that distracts from the truth."},
+      {"q": "We talked about everything except the coming layoffs, which were ___.", "opts": ["the elephant in the room", "the lion's share", "a sacred cow"], "a": 0, "why": "The elephant in the room: a huge issue everyone avoids."},
+      {"q": "The defending champion lost in the first round to ___ ranked 140th in the world.", "opts": ["a black sheep", "a dark horse", "a white elephant"], "a": 1, "why": "A dark horse: an unknown competitor who wins unexpectedly."},
+      {"q": "Don't be fooled by his tearful apology on television; those are ___.", "opts": ["red herrings", "sacred cows", "crocodile tears"], "a": 2, "why": "Crocodile tears: fake sadness."}
+    ],
+    "spot": [
+      {"q": "Sorry, I let the dog out of the bag about your new job.", "bad": "the dog out of the bag", "fix": "the cat out of the bag", "opts": ["the cat out of the bag", "the cat out of the box"], "why": "The idiom is fixed: let the cat out of the bag."},
+      {"q": "The CEO took the tiger's share of the bonus pool.", "bad": "the tiger's share", "fix": "the lion's share", "opts": ["the lion's share", "the lions' share"], "why": "From Aesop's lion: the lion's share, singular lion."},
+      {"q": "Nobody wanted to mention the hippo in the room: the budget deficit.", "bad": "the hippo in the room", "fix": "the elephant in the room", "opts": ["the elephant in the room", "the rhino in the room"], "why": "Only the elephant works, unless you're joking on purpose."},
+      {"q": "The minister wept alligator tears over the hospital closures he had ordered.", "bad": "alligator tears", "fix": "crocodile tears", "opts": ["crocodile tears", "crocodile's tears"], "why": "The fixed phrase is crocodile tears: fake sorrow."},
+      {"q": "Pensions have long been a holy cow that no party dares to touch.", "bad": "a holy cow", "fix": "a sacred cow", "opts": ["a sacred cow", "a holy bull"], "why": "Holy cow! is an exclamation of surprise. Something beyond criticism is a sacred cow."}
+    ],
+    "type": [
+      {"q": "That charming new neighbour is a wolf in ___ clothing; he's been cheating pensioners.", "a": ["sheep's"], "why": "A wolf in sheep's clothing: dangerous but disguised as harmless."},
+      {"q": "The business rivalry turned out to be a red ___; the real motive was jealousy.", "a": ["herring"], "why": "A red herring: a distraction from the real issue."},
+      {"q": "Our old cottage became a white ___: too expensive to keep and impossible to sell.", "a": ["elephant"], "why": "A white elephant: a costly, burdensome possession."},
+      {"q": "After moving from Lagos to Thunder Bay, Ade felt like a fish out of ___ for months.", "a": ["water"], "why": "A fish out of water: uncomfortable in a new environment."},
+      {"q": "I began to smell a ___ when the seller refused to let us see the engine.", "a": ["rat"], "why": "Smell a rat: suspect something dishonest."},
+      {"q": "Uncle Ray, the black ___ of the family, turned up at the wedding uninvited.", "a": ["sheep"], "why": "The black sheep: the family member seen as a disgrace."}
+    ],
+    "bend": [
+      {"q": "Which version sounds natural? ___", "opts": ["Well, the cat's out of the bag now.", "Well, the cat has escaped the bag now.", "Well, the kitten's out of the bag now."], "a": 0, "why": "The cat's out of the bag is a common, natural variation of let the cat out of the bag."},
+      {"q": "Which version sounds natural? ___", "opts": ["He's a real black-horse candidate for the leadership.", "He's a real dark-horse candidate for the leadership.", "He's a real dark-pony candidate for the leadership."], "a": 1, "why": "Dark horse works naturally as an adjective: a dark-horse candidate. The colour and animal are fixed."},
+      {"q": "Which version sounds natural? ___", "opts": ["The report slaughters several sacred bulls of economic policy.", "The report slaughters several holy cattle of economic policy.", "The report slaughters several sacred cows of economic policy."], "a": 2, "why": "Slaughtering sacred cows is a natural extension: challenging untouchable ideas."},
+      {"q": "Which version sounds natural? ___", "opts": ["Honestly, there's a whole herd of elephants in this meeting.", "Honestly, there's a whole herd of elephants on this meeting.", "Honestly, there's an elephant inside the middle of this meeting."], "a": 0, "why": "Joking that there's a herd of elephants extends the image naturally: many avoided problems."}
+    ],
+    "talk": [
+      "Orwell turned a farm into a political system. If you wrote a fable about your workplace or country, which animals would you use, and for whom?",
+      "Is there <strong>an elephant in the room</strong> in your profession or community that people avoid discussing? Keep it general if you prefer.",
+      "Role-play: you accidentally <strong>let the cat out of the bag</strong> about a colleague's resignation. Apologise to Bill, who plays the colleague.",
+      "Have you ever felt like <strong>a fish out of water</strong>? What helped you adapt?",
+      "Which animal metaphors from your language don't work in English? Which animal stands for stupidity, loyalty or cunning where you grew up?"
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "a white elephant", "r": "a costly, useless possession", "why": "A rare white elephant was expensive to keep and couldn't be put to work."},
+      {"l": "the black sheep", "r": "the family member seen as a disgrace", "why": "A black sheep stood out in the flock and its wool was worth less."},
+      {"l": "a lone wolf", "r": "someone who prefers to act alone", "why": "Most wolves live in packs; a lone wolf does not."},
+      {"l": "a fish out of water", "r": "someone uncomfortable in new surroundings", "why": "A fish can't function outside its natural element."},
+      {"l": "smell a rat", "r": "suspect dishonesty", "why": "You notice a bad smell before you see the cause."},
+      {"l": "crocodile tears", "r": "insincere sorrow", "why": "The legend of the weeping crocodile who keeps eating."}
+    ],
+    "pick": [
+      {"q": "Dad's enormous boat is ___; he uses it twice a year and pays a fortune to store it.", "opts": ["a white elephant", "a red herring", "a sacred cow"], "a": 0, "why": "A white elephant: expensive to keep, little use."},
+      {"q": "On the reality show, the quiet farmer from Alberta was ___ who won the whole competition.", "opts": ["the black sheep", "a dark horse", "crocodile tears"], "a": 1, "why": "A dark horse: an unexpected winner."},
+      {"q": "The big supermarkets take ___ of the profits, leaving farmers very little.", "opts": ["the elephant in the room", "a white elephant", "the lion's share"], "a": 2, "why": "The lion's share: the largest part."},
+      {"q": "When the auditor saw that the numbers didn't add up, she began to ___.", "opts": ["smell a rat", "let the cat out of the bag", "shed crocodile tears"], "a": 0, "why": "Smell a rat: suspect something is wrong or dishonest."},
+      {"q": "The politician's sudden focus on street crime was ___ to distract from the scandal.", "opts": ["a dark horse", "a red herring", "a lone wolf"], "a": 1, "why": "A red herring: a deliberate distraction."},
+      {"q": "In our company, the annual retreat is ___; nobody dares suggest cancelling it.", "opts": ["a fish out of water", "a black sheep", "a sacred cow"], "a": 2, "why": "A sacred cow: something treated as beyond criticism."}
+    ],
+    "spot": [
+      {"q": "My brother has always been the black goat of the family.", "bad": "the black goat", "fix": "the black sheep", "opts": ["the black sheep", "the dark sheep"], "why": "The idiom is the black sheep of the family."},
+      {"q": "Grandma let the cat out of the box about the engagement.", "bad": "out of the box", "fix": "out of the bag", "opts": ["out of the bag", "out of the sack"], "why": "Let the cat out of the bag: the container is fixed."},
+      {"q": "As a city kid on the farm, I felt like a fish out of the sea.", "bad": "out of the sea", "fix": "out of water", "opts": ["out of water", "out of the river"], "why": "The fixed phrase is a fish out of water."},
+      {"q": "The detective in the series is a lonely wolf who trusts no one.", "bad": "a lonely wolf", "fix": "a lone wolf", "opts": ["a lone wolf", "an alone wolf"], "why": "Lone means on your own by choice; lonely means sad about being alone. The idiom is a lone wolf."}
+    ],
+    "type": [
+      {"q": "Everyone avoided the ___ in the room: the company was running out of money.", "a": ["elephant"], "why": "The elephant in the room: a big problem nobody mentions."},
+      {"q": "The friendly new manager turned out to be a ___ in sheep's clothing.", "a": ["wolf"], "why": "A wolf in sheep's clothing: dangerous but appears harmless."},
+      {"q": "Real estate developers get the lion's ___ of the tax breaks.", "a": ["share"], "why": "The lion's share: the biggest part."},
+      {"q": "Hockey fans called the young goalie a dark ___ for the trophy.", "a": ["horse"], "why": "A dark horse: an unexpected contender."},
+      {"q": "She shed ___ tears at the funeral of the uncle she had taken to court.", "a": ["crocodile"], "why": "Crocodile tears: fake sadness."},
+      {"q": "Questioning the head chef's recipes is impossible; they're a sacred ___ in this kitchen.", "a": ["cow"], "why": "A sacred cow: something nobody may criticise."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "That exercise bike is ___; nobody uses it, but it cost a fortune.", "opts": ["a dark horse", "a white elephant", "a sacred cow"], "a": "a white elephant", "why": "A white elephant: expensive and useless."},
+    {"type": "pick", "q": "I'm the only lawyer in a family of musicians, so at reunions I feel like ___.", "opts": ["a fish out of water", "a white elephant", "the lion's share"], "a": "a fish out of water", "why": "A fish out of water: out of place among different people."},
+    {"type": "pick", "q": "The quiet intern turned out to be ___ and won the national design award.", "opts": ["a sacred cow", "a red herring", "a dark horse"], "a": "a dark horse", "why": "A dark horse: an unexpected winner."},
+    {"type": "pick", "q": "Investigators dismissed the anonymous tip as ___.", "opts": ["a red herring", "the lion's share", "a lone wolf"], "a": "a red herring", "why": "A red herring: a misleading distraction."},
+    {"type": "pick", "q": "Before the vote, someone ___ and told the press about the deal.", "opts": ["smelled a rat", "let the cat out of the bag", "shed crocodile tears"], "a": "let the cat out of the bag", "why": "Let the cat out of the bag: reveal a secret."},
+    {"type": "pick", "q": "Shareholders received ___ of the profits, while wages stayed flat.", "opts": ["the black sheep", "a white elephant", "the lion's share"], "a": "the lion's share", "why": "The lion's share: the biggest part."},
+    {"type": "pick", "q": "Her grief at the memorial seemed sincere, not ___.", "opts": ["crocodile tears", "a red herring", "a dark horse"], "a": "crocodile tears", "why": "Crocodile tears: fake sorrow, the opposite of sincere."},
+    {"type": "pick", "q": "Nobody in the meeting raised ___: the founder's failing health.", "opts": ["the lion's share", "the elephant in the room", "a white elephant"], "a": "the elephant in the room", "why": "The elephant in the room: an obvious issue everyone avoids."},
+    {"type": "type", "q": "My grandfather was something of a lone ___; he hiked the Bruce Trail by himself every summer.", "a": ["wolf"], "why": "A lone wolf: someone who prefers to be alone."},
+    {"type": "type", "q": "The tax cut is a red ___; the real story is the pension change.", "a": ["herring"], "why": "A red herring: a distraction from the main issue."},
+    {"type": "type", "q": "Who let the ___ out of the bag about the merger?", "a": ["cat"], "why": "Let the cat out of the bag: reveal a secret."},
+    {"type": "type", "q": "When the landlord insisted on cash only, I started to smell a ___.", "a": ["rat"], "why": "Smell a rat: suspect something dishonest."},
+    {"type": "type", "q": "That new arena is a white ___ the city can't afford to run.", "a": ["elephant"], "why": "A white elephant: a costly burden."},
+    {"type": "spot", "q": "Tuition fees are a sacred bull in this province's politics.", "bad": "a sacred bull", "fix": "a sacred cow", "opts": ["a sacred cow", "a holy cow"], "why": "The idiom is a sacred cow: something beyond criticism."},
+    {"type": "spot", "q": "She was a dark horse in the election and surprised everyone by winning.", "bad": "", "why": "Correct: a dark horse is an unexpected winner."},
+    {"type": "spot", "q": "The friendly banker turned out to be a fox in sheep's clothing.", "bad": "a fox in sheep's clothing", "fix": "a wolf in sheep's clothing", "opts": ["a wolf in sheep's clothing", "a wolf in lamb's clothing"], "why": "The fixed phrase is a wolf in sheep's clothing."},
+    {"type": "spot", "q": "The government kept the lion's piece of the oil revenue.", "bad": "the lion's piece", "fix": "the lion's share", "opts": ["the lion's share", "the lion's part"], "why": "The idiom is the lion's share: the largest part."},
+    {"type": "order", "a": "Nobody wanted to talk about the elephant in the room.", "alt": [], "why": "Talk about + the elephant in the room."},
+    {"type": "order", "a": "My sister let the cat out of the bag.", "alt": [], "why": "Subject + let the cat out of the bag (past tense let)."},
+    {"type": "order", "a": "The quiet newcomer turned out to be a dark horse.", "alt": [], "why": "Turn out to be + a dark horse: prove surprisingly successful."}
+  ]
+}

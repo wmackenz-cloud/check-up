@@ -1,0 +1,218 @@
+{
+  "n": 8,
+  "title": "Progress Is a Journey",
+  "tagline": "life, careers and projects",
+  "why": "English talks about careers, projects and whole lives as <strong>journeys</strong> with roads, crossroads, hills and tunnels. It is one of the most productive metaphors in the language, and using it well lets you describe change and progress vividly.",
+  "know": [
+    "Eight core journey idioms, from <strong>at a crossroads</strong> to <strong>go the extra mile</strong>.",
+    "Everyday 'hidden' journey words: <strong>milestone</strong>, <strong>roadblock</strong>, <strong>sidetracked</strong>, <strong>the road ahead</strong>.",
+    "That <strong>go the extra mile</strong> comes from the Gospel of Matthew."
+  ],
+  "understand": [
+    "How the metaphor maps <strong>goals onto destinations</strong>, <strong>difficulties onto obstacles</strong> and <strong>choices onto forks in the road</strong>.",
+    "Why poems like Frost's The Road Not Taken are often <strong>misread</strong> as simple advice."
+  ],
+  "able": [
+    "Describe your career or a project as a journey, using three or four idioms naturally.",
+    "Choose the right idiom for hope (<strong>light at the end of the tunnel</strong>) versus difficulty (<strong>an uphill battle</strong>).",
+    "Discuss a poem, novel or song that presents life as a road or a climb."
+  ],
+  "mistakes": [
+    ["We'll cross that bridge when we arrive to it.", "We'll cross that bridge when we <strong>come to</strong> it. The idiom is fixed."],
+    ["She went the extra kilometre for her clients.", "She went the extra <strong>mile</strong>. Even in metric Canada, the idiom keeps mile."],
+    ["I'm in a crossroads in my career.", "I'm <strong>at</strong> a crossroads in my career. We stand at a point on a road."],
+    ["You're in the right track.", "You're <strong>on</strong> the right track. Trains and runners are on a track."],
+    ["We hit a dead end, but there's light at the end of the bridge.", "There's light at the end of the <strong>tunnel</strong>. Mixing roads, bridges and tunnels confuses the image."]
+  ],
+  "bigidea": [
+    "In English, <strong>progress is movement along a path</strong>. A goal is a destination, a plan is a route, problems are obstacles, choices are forks in the road, and how far we have got is distance travelled.",
+    "That is why we say a career is <strong>going nowhere</strong>, a project is <strong>on track</strong> or <strong>behind schedule</strong>, a couple has <strong>drifted apart</strong>, and a country is <strong>moving forward</strong>. Even 'progress' itself comes from a Latin word for stepping forward.",
+    "The metaphor also carries values: <strong>forward is good</strong>, going back is bad, and difficult roads are uphill. Noticing this helps you see why some political slogans and business mission statements feel persuasive."
+  ],
+  "hidden": [
+    "We've reached an important <strong>milestone</strong>: our hundredth client.",
+    "The talks <strong>hit a roadblock</strong> over pension funding.",
+    "I got <strong>sidetracked</strong> by emails and never finished the report.",
+    "Nobody knows what <strong>the road ahead</strong> holds for the industry.",
+    "She chose a route <strong>off the beaten track</strong> and studied ancient languages.",
+    "After the merger, we came to <strong>a fork in the road</strong>.",
+    "The negotiations are finally <strong>moving forward</strong>.",
+    "Their relationship seems to be <strong>going nowhere</strong>."
+  ],
+  "expressions": [
+    {"e": "at a crossroads", "meaning": "at a point where an important decision must be made", "example": "After twenty years in banking, Marc is <strong>at a crossroads</strong>: stay or retrain as a teacher.",
+     "tone": "neutral",
+     "bend": "Common with <strong>stand / find yourself / reach</strong>. Add focus: <strong>at a crossroads in my career</strong>, <strong>at a critical crossroads</strong>.",
+     "note": "Crossroads is singular and plural (<em>a crossroads</em>). Compare <em>a fork in the road</em>, which suggests two clear options."},
+    {"e": "a dead end", "meaning": "a situation or path with no possibility of progress", "example": "The police investigation led to <strong>a dead end</strong>.",
+     "tone": "neutral",
+     "bend": "As adjective: <strong>a dead-end job</strong>, <strong>a dead-end relationship</strong>. Verb phrases: <strong>hit / reach a dead end</strong>.",
+     "note": "<em>A dead-end job</em> is a strong phrase: no promotion, no future. It can sound insulting about someone else's work."},
+    {"e": "an uphill battle", "meaning": "a struggle that is very hard to win", "example": "Getting the bylaw changed will be <strong>an uphill battle</strong>.",
+     "tone": "neutral",
+     "bend": "Also <strong>an uphill struggle / climb / fight</strong>. Verb phrase: <strong>face an uphill battle</strong>.",
+     "note": "Mixes journey (uphill) and war (battle). The image is soldiers fighting up a slope, always at a disadvantage."},
+    {"e": "on the right track", "meaning": "doing things in a way that will probably succeed", "example": "Your draft is <strong>on the right track</strong>; it just needs a stronger ending.",
+     "tone": "neutral",
+     "bend": "Opposite: <strong>on the wrong track</strong>. Related: <strong>back on track</strong>, <strong>off track</strong>, <strong>keep on track</strong>.",
+     "note": "Encouraging and very useful for teachers and managers giving feedback. <em>On track</em> alone means 'on schedule'."},
+    {"e": "light at the end of the tunnel", "meaning": "a sign that a long difficult period is ending", "example": "After a year of treatments, she finally sees <strong>light at the end of the tunnel</strong>.",
+     "tone": "neutral",
+     "bend": "Often <strong>see / there's light at the end of the tunnel</strong>. Joke version: <strong>the light at the end of the tunnel is an oncoming train</strong>.",
+     "note": "Hopeful but cautious: the difficulty isn't over yet. Politicians use it often, so it can sound like spin."},
+    {"e": "cross that bridge when we come to it", "meaning": "deal with a problem only when it actually happens", "example": "What if the venue cancels? We'll <strong>cross that bridge when we come to it</strong>.",
+     "tone": "casual",
+     "bend": "Pronouns change: <strong>I'll / you can cross that bridge when you come to it</strong>. Short form: <strong>that's a bridge to cross later</strong>.",
+     "note": "Can sound relaxed and wise, or like avoiding planning. Don't confuse with <em>burn your bridges</em> (destroy relationships)."},
+    {"e": "go the extra mile", "meaning": "make more effort than is expected", "example": "Our contractor <strong>went the extra mile</strong> and fixed the fence for free.",
+     "tone": "neutral",
+     "bend": "Tense changes: <strong>going the extra mile</strong>. Fixed noun: always <strong>the extra mile</strong>, never kilometre.",
+     "note": "From the Gospel of Matthew, where Jesus tells listeners to go two miles when someone forces them to go one. Common in job ads and reviews."},
+    {"e": "come a long way", "meaning": "make a lot of progress", "example": "Treatment for childhood leukemia has <strong>come a long way</strong> since the 1970s.",
+     "tone": "neutral",
+     "bend": "Usually present perfect: <strong>you've come a long way</strong>. Add <strong>since</strong> or <strong>from</strong>: <strong>come a long way from</strong> her first job.",
+     "note": "Warm praise, but in some contexts it can sound patronizing, as if the person started very low. <em>Still have a long way to go</em> is the opposite."}
+  ],
+  "culture": [
+    {"kind": "Poetry", "work": "The Road Not Taken", "by": "Robert Frost", "year": "1916",
+     "how": "A traveller chooses between two paths in a wood, though the poem says they are worn about equally. He imagines telling the story years later as if his choice changed everything. It is often read as a call to be different, but many critics see a gentle <strong>irony</strong>: we invent meaning for our choices afterwards. Frost reportedly had his indecisive friend, the poet Edward Thomas, in mind.",
+     "ask": "Do you think people exaggerate how important their past choices were? Think of a 'road not taken' in your own life.",
+     "find": "Robert Frost The Road Not Taken"},
+    {"kind": "Poetry", "work": "Mother to Son", "by": "Langston Hughes", "year": "1922",
+     "how": "A mother tells her son that her life has not been a smooth, elegant staircase but a rough, broken one, full of hazards and dark stretches. Still she has kept climbing, and she urges him not to stop. Progress here is a <strong>hard climb</strong>, not a road.",
+     "ask": "Who in your family 'kept climbing' through difficult times? What did they teach you?",
+     "find": "Langston Hughes Mother to Son"},
+    {"kind": "Literature", "work": "The Pilgrim's Progress", "by": "John Bunyan", "year": "1678",
+     "how": "This Christian allegory follows a man named Christian on a journey from the City of Destruction to the Celestial City. On the way he falls into the <strong>Slough of Despond</strong> and passes through <strong>Vanity Fair</strong>, place names that became English expressions. Every spiritual difficulty is a physical obstacle on the road.",
+     "ask": "If your life were an allegory, what would you call its places: the swamp, the fair, the hill?",
+     "find": "John Bunyan The Pilgrim's Progress"},
+    {"kind": "Music", "work": "The Long and Winding Road", "by": "The Beatles (written by Paul McCartney)", "year": "1970",
+     "how": "From the album Let It Be, the song describes a long, winding road that keeps leading the singer back to the person he loves. The journey is not about career success but about <strong>longing and return</strong>, and the endless curves suggest frustration.",
+     "ask": "Is there a 'long and winding road' in your life: a goal that kept bringing you back after detours?",
+     "find": "The Beatles The Long and Winding Road"},
+    {"kind": "Music", "work": "Road to Nowhere", "by": "Talking Heads", "year": "1985",
+     "how": "A cheerful, marching song about travelling on a road that leads nowhere in particular. Instead of treating that as failure, the singer seems to accept it with a smile. It flips the usual metaphor: maybe life is a <strong>journey without a destination</strong>.",
+     "ask": "Is it comforting or depressing to think life has no final destination? Explain your view.",
+     "find": "Talking Heads Road to Nowhere"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "at a crossroads", "r": "facing an important decision", "why": "Several roads meet, and you must choose one."},
+      {"l": "a dead end", "r": "a path with no future", "why": "A dead-end street doesn't lead anywhere."},
+      {"l": "an uphill battle", "r": "a very hard struggle", "why": "Fighting uphill puts you at a disadvantage."},
+      {"l": "on the right track", "r": "likely to succeed", "why": "You are on the route that leads to your goal."},
+      {"l": "light at the end of the tunnel", "r": "signs that a hard time is ending", "why": "You can see the exit from a long dark tunnel."},
+      {"l": "cross that bridge when we come to it", "r": "deal with a problem only if it happens", "why": "Don't worry about a bridge you haven't reached."},
+      {"l": "go the extra mile", "r": "make more effort than expected", "why": "From Matthew: go two miles when asked to go one."},
+      {"l": "come a long way", "r": "make a lot of progress", "why": "Distance travelled stands for progress made."}
+    ],
+    "sort": {"h": "Is each phrase about <strong>progress</strong>, <strong>difficulty or blockage</strong>, or <strong>choosing a direction</strong>?",
+      "cols": ["Progress", "Difficulty or blockage", "Choosing a direction"],
+      "items": [
+        {"w": "come a long way", "c": 0, "why": "Distance covered = progress made."},
+        {"w": "on the right track", "c": 0, "why": "You are moving correctly toward the goal."},
+        {"w": "reach a milestone", "c": 0, "why": "A milestone marks distance travelled."},
+        {"w": "make headway", "c": 0, "why": "Headway is forward movement, originally for ships."},
+        {"w": "hit a roadblock", "c": 1, "why": "A roadblock stops your progress."},
+        {"w": "a dead end", "c": 1, "why": "A road that leads nowhere."},
+        {"w": "an uphill battle", "c": 1, "why": "The struggle is long and hard."},
+        {"w": "get bogged down", "c": 1, "why": "Stuck in mud, so you can't move."},
+        {"w": "at a crossroads", "c": 2, "why": "Several roads meet and you must choose."},
+        {"w": "a fork in the road", "c": 2, "why": "The road splits into two options."},
+        {"w": "go your own way", "c": 2, "why": "Choosing a path different from others."},
+        {"w": "change course", "c": 2, "why": "Choosing a new direction."}
+      ]},
+    "pick": [
+      {"q": "With her kids grown up and her firm closing, Leila is ___ and isn't sure what comes next.", "opts": ["at a crossroads", "on the right track", "going the extra mile"], "a": 0, "why": "Facing an important decision: at a crossroads."},
+      {"q": "He loves the company, but with no chance of promotion it's really ___ job.", "opts": ["an uphill", "a dead-end", "a long-way"], "a": 1, "why": "A job with no future is a dead-end job."},
+      {"q": "Convincing rural voters to support the carbon tax will be ___.", "opts": ["light at the end of the tunnel", "a fork in the road", "an uphill battle"], "a": 2, "why": "A very hard struggle: an uphill battle."},
+      {"q": "Your essay is ___; just add more evidence in the second section.", "opts": ["on the right track", "at a crossroads", "a dead end"], "a": 0, "why": "Encouraging feedback: the work is likely to succeed."},
+      {"q": "Vaccination rates are rising and hospitals are emptying; at last there's ___.", "opts": ["an uphill battle", "light at the end of the tunnel", "a road to nowhere"], "a": 1, "why": "Signs that a hard time is ending: light at the end of the tunnel."},
+      {"q": "What if the visa is refused? Let's not panic. We'll ___.", "opts": ["go the extra mile", "come a long way", "cross that bridge when we come to it"], "a": 2, "why": "Deal with the problem only if it happens."},
+      {"q": "The hotel staff ___: they found my lost ring and posted it to me in Regina.", "opts": ["went the extra mile", "hit a roadblock", "came to a crossroads"], "a": 0, "why": "More effort than expected: went the extra mile."},
+      {"q": "When I think of my first broken English, I realize I've ___.", "opts": ["hit a dead end", "come a long way", "crossed that bridge"], "a": 1, "why": "A lot of progress: come a long way."}
+    ],
+    "spot": [
+      {"q": "We'll cross that bridge when we arrive to it.", "bad": "arrive to it", "fix": "come to it", "opts": ["come to it", "get on it"], "why": "The idiom is fixed: cross that bridge when we come to it."},
+      {"q": "The nurses always went the extra kilometre for my mother.", "bad": "extra kilometre", "fix": "extra mile", "opts": ["extra mile", "extra step"], "why": "The idiom keeps mile, even in metric countries."},
+      {"q": "After the divorce, he found himself in a crossroads.", "bad": "in a crossroads", "fix": "at a crossroads", "opts": ["at a crossroads", "on a crossroads"], "why": "We are at a point on a road: at a crossroads."},
+      {"q": "Don't worry, you're in the right track with this design.", "bad": "in the right track", "fix": "on the right track", "opts": ["on the right track", "at the right track"], "why": "The preposition is on: on the right track."},
+      {"q": "There's finally light at the end of the bridge for the striking teachers.", "bad": "end of the bridge", "fix": "end of the tunnel", "opts": ["end of the tunnel", "end of the road"], "why": "The image is leaving a dark tunnel. End of the road means something is finished."}
+    ],
+    "type": [
+      {"q": "The peace talks have hit a ___ over the question of borders.", "a": ["roadblock", "snag"], "why": "Hit a roadblock = meet an obstacle that stops progress."},
+      {"q": "We passed an important ___ yesterday: ten thousand subscribers.", "a": ["milestone"], "why": "A milestone = a significant stage reached."},
+      {"q": "I was supposed to write my speech, but I got side___ by the news.", "a": ["tracked"], "why": "Get sidetracked = be distracted from your path."},
+      {"q": "We spent our honeymoon somewhere off the beaten ___ in Newfoundland.", "a": ["track", "path"], "why": "Off the beaten track = far from popular places."},
+      {"q": "Leaving law school was the right decision, but it was a real ___ in the road.", "a": ["fork", "turning"], "why": "A fork in the road = a point where you must choose."},
+      {"q": "No one knows what the road ___ looks like for local newspapers.", "a": ["ahead"], "why": "The road ahead = the future."}
+    ],
+    "bend": [
+      {"q": "Which version sounds natural about a job? ___", "opts": ["She's stuck in a dead-end job.", "She's stuck in a job of dead end.", "She's stuck in a deadly-end job."], "a": 0, "why": "Dead end becomes a hyphenated adjective before a noun: a dead-end job."},
+      {"q": "Which version sounds natural about a campaign? ___", "opts": ["They face a battle of uphill.", "They face a long uphill struggle.", "They face an upwards battling."], "a": 1, "why": "You can add long and swap battle for struggle; the uphill image stays."},
+      {"q": "Which version sounds natural when praising a student? ___", "opts": ["You've come a long road since September.", "You've came a long way since September.", "You've come such a long way since September."], "a": 2, "why": "Such can intensify a long way. The verb is come (past participle), and the noun is way."},
+      {"q": "Which version sounds natural about a project that's recovering? ___", "opts": ["The project is back on track after the delays.", "The project is back in the track after the delays.", "The project is tracked back after the delays."], "a": 0, "why": "Back on track is a natural variation of on the right track."}
+    ],
+    "talk": [
+      "Describe a moment when you were <strong>at a crossroads</strong>. Which road did you take, and how do you see it now?",
+      "Frost's poem is often read as 'be different', but may be ironic. Which reading do you prefer, and why?",
+      "Role-play: you are a manager giving feedback to a new employee. Use <strong>on the right track</strong>, <strong>come a long way</strong> and <strong>go the extra mile</strong>.",
+      "Are you someone who plans every step, or someone who will <strong>cross that bridge when you come to it</strong>? Give examples.",
+      "Tell Bill about a time you saw <strong>light at the end of the tunnel</strong> after a long, hard period."
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "a fork in the road", "r": "a point where you must choose between options", "why": "The road splits in two."},
+      {"l": "the road ahead", "r": "the future", "why": "The part of the journey you haven't travelled yet."},
+      {"l": "hit a roadblock", "r": "meet an obstacle that stops progress", "why": "A roadblock physically blocks the road."},
+      {"l": "off the beaten track", "r": "away from popular, familiar places", "why": "A beaten track is worn down by many feet."},
+      {"l": "a milestone", "r": "an important stage or achievement", "why": "Stone markers once showed each mile travelled."},
+      {"l": "get sidetracked", "r": "become distracted from your main task", "why": "A train moved to a side track leaves the main line."}
+    ],
+    "pick": [
+      {"q": "The health reform ___ when two provinces refused to sign.", "opts": ["hit a roadblock", "went the extra mile", "came a long way"], "a": 0, "why": "An obstacle stopped progress: hit a roadblock."},
+      {"q": "Our app just reached a big ___: one million downloads.", "opts": ["crossroads", "milestone", "dead end"], "a": 1, "why": "An important achievement is a milestone."},
+      {"q": "I sat down to do my taxes but got ___ by old photos.", "opts": ["off the beaten track", "on the right track", "sidetracked"], "a": 2, "why": "Distracted from the main task: sidetracked."},
+      {"q": "Every lead the journalists followed turned out to be ___.", "opts": ["a dead end", "a milestone", "the road ahead"], "a": 0, "why": "A path that leads nowhere: a dead end."},
+      {"q": "We prefer little villages ___ to busy tourist resorts.", "opts": ["at a crossroads", "off the beaten track", "on borrowed roads"], "a": 1, "why": "Away from popular places: off the beaten track."},
+      {"q": "Starting a business with no savings is ___, but many people manage it.", "opts": ["an uphill battle", "on the right track", "a milestone"], "a": 0, "why": "A very hard struggle: an uphill battle."}
+    ],
+    "spot": [
+      {"q": "Graduating from college was an important milepost in her life.", "bad": "milepost", "fix": "milestone", "opts": ["milestone", "landmark stone"], "why": "The idiom is milestone: an important stage."},
+      {"q": "We prefer cottages off the beaten road where it's quiet.", "bad": "off the beaten road", "fix": "off the beaten track", "opts": ["off the beaten track", "off the beat road"], "why": "The fixed form is off the beaten track (or path)."},
+      {"q": "The coach says the team is finally back in track after a bad start.", "bad": "back in track", "fix": "back on track", "opts": ["back on track", "back at track"], "why": "The preposition is on: back on track."},
+      {"q": "Nobody can predict the road before for the auto industry.", "bad": "road before", "fix": "road ahead", "opts": ["road ahead", "road forward"], "why": "The future is the road ahead."}
+    ],
+    "type": [
+      {"q": "My grandmother went the extra ___ for every neighbour on her street.", "a": ["mile"], "why": "Go the extra mile = make more effort than expected."},
+      {"q": "The search for the missing files hit a dead ___.", "a": ["end"], "why": "A dead end = a path with no progress."},
+      {"q": "Women's hockey has come a long ___ since the 1990s.", "a": ["way"], "why": "Come a long way = make a lot of progress."},
+      {"q": "After months of rehab, he can see light at the end of the ___.", "a": ["tunnel"], "why": "Light at the end of the tunnel = a hard time is ending."},
+      {"q": "If the bank says no, we'll cross that ___ when we come to it.", "a": ["bridge"], "why": "Cross that bridge when we come to it = deal with it only if it happens."},
+      {"q": "The province is at a ___ on energy policy.", "a": ["crossroads"], "why": "At a crossroads = facing an important decision."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "With two offers on the table, Tomas is ___ in his career.", "opts": ["at a crossroads", "off the beaten track", "on borrowed time"], "a": "at a crossroads", "why": "Facing an important choice: at a crossroads."},
+    {"type": "pick", "q": "The investigation reached ___ when the main witness disappeared.", "opts": ["a milestone", "a dead end", "the road ahead"], "a": "a dead end", "why": "No way to continue: a dead end."},
+    {"type": "pick", "q": "Getting a new hospital approved in a small town is ___.", "opts": ["on the right track", "an uphill battle", "the extra mile"], "a": "an uphill battle", "why": "A very hard struggle: an uphill battle."},
+    {"type": "pick", "q": "Your pronunciation is ___; keep practising the vowels.", "opts": ["at a crossroads", "a dead end", "on the right track"], "a": "on the right track", "why": "Likely to succeed: on the right track."},
+    {"type": "pick", "q": "After two years of losses, the airline sees ___ as bookings recover.", "opts": ["light at the end of the tunnel", "a fork in the road", "an uphill battle"], "a": "light at the end of the tunnel", "why": "Signs that a bad time is ending."},
+    {"type": "pick", "q": "What if it rains on the wedding day? We'll ___.", "opts": ["come a long way", "cross that bridge when we come to it", "go the extra mile"], "a": "cross that bridge when we come to it", "why": "Deal with the problem only if it happens."},
+    {"type": "pick", "q": "The volunteers ___ and delivered meals during the ice storm.", "opts": ["hit a roadblock", "went the extra mile", "got sidetracked"], "a": "went the extra mile", "why": "More effort than expected: went the extra mile."},
+    {"type": "pick", "q": "Wind power has ___ since the first turbines were built.", "opts": ["come a long way", "hit a dead end", "crossed that bridge"], "a": "come a long way", "why": "A lot of progress: come a long way."},
+    {"type": "type", "q": "Turning sixty felt like a real ___ for my father.", "a": ["milestone"], "why": "A milestone = an important stage of life."},
+    {"type": "type", "q": "The merger talks have hit a ___ over job cuts.", "a": ["roadblock", "snag"], "why": "Hit a roadblock = meet an obstacle."},
+    {"type": "type", "q": "Stay focused and don't get ___ by social media.", "a": ["sidetracked", "distracted"], "why": "Get sidetracked = be distracted from your path."},
+    {"type": "type", "q": "Choosing between medicine and music was a ___ in the road for her.", "a": ["fork", "turning"], "why": "A fork in the road = a point of choice."},
+    {"type": "type", "q": "We found a lovely café off the beaten ___ in Old Montreal.", "a": ["track", "path"], "why": "Off the beaten track = away from tourist areas."},
+    {"type": "spot", "q": "I'm afraid this relationship is going anywhere.", "bad": "going anywhere", "fix": "going nowhere", "opts": ["going nowhere", "going everywhere"], "why": "A relationship without progress is going nowhere."},
+    {"type": "spot", "q": "The project is on the right rail now.", "bad": "rail", "fix": "track", "opts": ["track", "road"], "why": "The idiom is on the right track."},
+    {"type": "spot", "q": "After the strike, the school year is back on track.", "bad": "", "why": "Correct! Back on track = progressing as planned again."},
+    {"type": "spot", "q": "The new mayor promised to go the extra mile for seniors.", "bad": "", "why": "Correct! Go the extra mile = make more effort than expected."},
+    {"type": "order", "a": "Our little company has come a long way.", "alt": [], "why": "Present perfect: has come a long way."},
+    {"type": "order", "a": "We will cross that bridge when we come to it.", "alt": [], "why": "Fixed idiom: cross that bridge when we come to it."},
+    {"type": "order", "a": "She always goes the extra mile for her students.", "alt": [], "why": "Always goes before the verb: always goes the extra mile."}
+  ]
+}

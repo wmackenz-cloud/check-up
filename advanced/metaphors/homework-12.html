@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Homework: Bending the Rules</title>
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="../../grammar-traps/traps.css?v=1795100000">
+<link rel="stylesheet" href="../../games.css?v=1794300000">
+<style>
+/* Advanced English: metaphor units */
+.big-idea { border: 2px solid var(--accent); background: var(--accent-soft); border-radius: 12px; padding: 14px 18px; margin: 14px 0; }
+.big-idea p { margin: 6px 0; }
+.hidden-list { columns: 2 260px; margin: 6px 0 0; padding-left: 1.2em; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 12px; margin: 12px 0; }
+.xcard { border: 1px solid var(--rule); border-radius: 12px; background: var(--sheet); padding: 0; }
+.xcard > summary { list-style: none; cursor: pointer; padding: 12px 14px; display: grid; gap: 4px; }
+.xcard > summary::-webkit-details-marker { display: none; }
+.xcard > summary .xe { font-family: var(--font-display); font-weight: 700; font-size: 1.12rem; color: var(--accent); }
+.xcard > summary .xtap { font-size: .85rem; color: var(--ink-soft); }
+.xcard[open] { border-color: var(--accent); }
+.xcard[open] .xtap { display: none; }
+.xbody { padding: 0 14px 12px; display: grid; gap: 6px; font-size: .97rem; }
+.xbody p { margin: 0; }
+.tone { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; border-radius: 999px; padding: 1px 9px; background: var(--accent-soft); color: var(--accent); }
+.tone.casual, .tone.humorous { background: var(--ok-soft); color: var(--ok); }
+.tone.dismissive { background: #fbece4; color: var(--bad); }
+.tone.formal { background: var(--sheet); border: 1px solid var(--accent); }
+.ccard { border: 1px solid var(--rule); border-left: 5px solid var(--accent); border-radius: 10px; background: var(--sheet); padding: 12px 14px; display: grid; gap: 6px; }
+.ccard .kind { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+.ccard h3 { font-size: 1.08rem; }
+.ccard .by { color: var(--ink-soft); font-size: .92rem; margin: 0; }
+.ccard p { margin: 0; }
+.ccard .ask { font-style: italic; }
+.ccard .find { justify-self: start; font-size: .9rem; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 700; }
+.ccard.k-music { border-left-color: #8a5a00; } .ccard.k-poetry { border-left-color: var(--ok); }
+.guess-note { color: var(--ink-soft); font-size: .92rem; margin: 4px 0 0; }
+.talk ol { display: grid; gap: 8px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tone.dismissive { background: #3a2620; } }
+</style>
+</head>
+<body class="student" data-item="metaphor-h12">
+<header class="top">
+  <p class="eyebrow">Homework &middot; Advanced English &middot; Metaphors</p>
+  <h1>Homework: Bending the Rules</h1>
+  <p class="namedate">Name: <span class="line"></span> Date: <span class="line"></span></p>
+  <div class="tools">
+    <button type="button" id="print">Print or save as PDF</button>
+    <button type="button" class="ghost" id="clear">Clear my answers</button>
+    <span class="hint">Tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
+  </div>
+</header>
+<main class="sheet">
+<section class="aims" aria-labelledby="rem-h">
+<h2 id="rem-h">Quick reminder</h2>
+<p>Idioms are fixed, but not frozen. Natives bend them for effect: headline writers love puns, such as <em>grate expectations</em> for a story about a cheese shop, and comedians extend a familiar image until it becomes absurd. The trick works only because everyone knows the original.</p>
+<ul><li><strong>for all intents and purposes</strong>: in every practical sense; virtually</li><li><strong>nip it in the bud</strong>: stop something at an early stage</li><li><strong>a moot point</strong>: a question that no longer matters, or one still open to debate</li><li><strong>I couldn't care less</strong>: I don't care at all</li><li><strong>case in point</strong>: an example that proves what you have just said</li><li><strong>toe the line</strong>: obey the rules or official policy, often reluctantly</li><li><strong>home in on</strong>: move steadily towards a target; focus closely on something</li><li><strong>free rein</strong>: complete freedom to act as you choose</li></ul>
+</section>
+<section class="mistakes" aria-labelledby="mis-h">
+<h2 id="mis-h">Watch out for</h2>
+<ul>
+<li><del>For all intensive purposes, the deal is done.</del> For <strong>all intents and purposes</strong>, the deal is done. A classic mishearing, known as an eggcorn.</li>
+<li><del>We'll burn that bridge when we come to it.</del> We'll <strong>cross</strong> that bridge when we come to it. Mixing in <em>burn your bridges</em> is only funny on purpose.</li>
+<li><del>Ironically, it rained on the day of our picnic.</del> <strong>Unfortunately</strong>, it rained on the day of our picnic. Bad luck isn't irony; irony needs a reversal of expectation.</li>
+</ul>
+</section>
+<h2 id="ex1" class="ex">Exercise 1: Match the expression to its meaning</h2>
+<p>Tap an expression, then tap its meaning.</p>
+<div class="g-match" data-g="ex1m">
+<ul>
+<li data-why="E.g. we&#x27;ll burn that bridge when we come to it." data-l="mixed metaphor" data-r="two clashing images in one phrase" data-q="Match: mixed metaphor">mixed metaphor = two clashing images in one phrase<input class="blank" type="hidden" data-k="ex1m-1"></li>
+<li data-why="Named after Mrs Malaprop in Sheridan&#x27;s The Rivals." data-l="malapropism" data-r="a wrong word that sounds like the right one" data-q="Match: malapropism">malapropism = a wrong word that sounds like the right one<input class="blank" type="hidden" data-k="ex1m-2"></li>
+<li data-why="E.g. the leg of a table or the head of a department." data-l="dead metaphor" data-r="a figure of speech nobody notices any more" data-q="Match: dead metaphor">dead metaphor = a figure of speech nobody notices any more<input class="blank" type="hidden" data-k="ex1m-3"></li>
+<li data-why="Once fresh, now tired from repetition." data-l="cliche" data-r="an overused, stale expression" data-q="Match: cliche">cliche = an overused, stale expression<input class="blank" type="hidden" data-k="ex1m-4"></li>
+<li data-why="E.g. for all intensive purposes: the wrong words still make some sense." data-l="eggcorn" data-r="a mishearing that seems logical" data-q="Match: eggcorn">eggcorn = a mishearing that seems logical<input class="blank" type="hidden" data-k="ex1m-5"></li>
+<li data-why="A fire station burning down is ironic; rain on a picnic is just bad luck." data-l="irony" data-r="a reversal of what is expected" data-q="Match: irony">irony = a reversal of what is expected<input class="blank" type="hidden" data-k="ex1m-6"></li>
+</ul>
+</div>
+<h2 id="ex2" class="ex">Exercise 2: Which expression fits?</h2>
+<p>Choose the expression that fits the situation best.</p>
+<ol class="g-pick" data-g="ex2">
+<li data-why="A mixed metaphor or blend: rocket science plus brain surgery." data-a="1" data-form="mixed metaphor" data-q="Calling a simple task &lt;em&gt;not rocket surgery&lt;/em&gt; blends two idioms; it&#x27;s a ___.">Calling a simple task &lt;em&gt;not rocket surgery&lt;/em&gt; blends two idioms; it's a <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-1">. <span class="opts game-ui"><button>dead metaphor</button><button>mixed metaphor</button><button>moot point</button></span></li>
+<li data-why="Irony: the opposite of what you&#x27;d expect happens." data-a="0" data-form="situational irony" data-q="A fire station burning down is a classic example of ___.">A fire station burning down is a classic example of <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-2">. <span class="opts game-ui"><button>situational irony</button><button>a malapropism</button><button>a dead metaphor</button></span></li>
+<li data-why="A malapropism: a similar-sounding wrong word." data-a="2" data-form="malapropism" data-q="Grandpa told the doctor he had &lt;em&gt;very close veins&lt;/em&gt; instead of varicose veins; it was a lovely ___.">Grandpa told the doctor he had &lt;em&gt;very close veins&lt;/em&gt; instead of varicose veins; it was a lovely <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-3">. <span class="opts game-ui"><button>mixed metaphor</button><button>cliche</button><button>malapropism</button></span></li>
+<li data-why="A moot point: no longer relevant." data-a="0" data-form="a moot point" data-q="The committee agreed that the matter was ___ since the building had already been sold.">The committee agreed that the matter was <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-4"> since the building had already been sold. <span class="opts game-ui"><button>a moot point</button><button>a mute point</button><button>a case in point</button></span></li>
+<li data-why="Free rein: complete freedom." data-a="1" data-form="free rein" data-q="Our new manager gives us ___ to choose our own hours.">Our new manager gives us <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-5"> to choose our own hours. <span class="opts game-ui"><button>free reign</button><button>free rein</button><button>toe the line</button></span></li>
+<li data-why="Couldn&#x27;t care less: doesn&#x27;t care at all." data-a="2" data-form="couldn&#x27;t care less" data-q="My friend ___ who wins the election; she never votes.">My friend <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex2-6"> who wins the election; she never votes. <span class="opts game-ui"><button>could care more</button><button>couldn't care fewer</button><button>couldn't care less</button></span></li>
+</ol>
+<h2 id="ex3" class="ex">Exercise 3: Find the mistake</h2>
+<p>Each sentence has one mistake in an expression. Tap the wrong word (or words), then choose the right words.</p>
+<ol class="g-spot" data-g="ex3">
+<li data-why="Nip it in the bud: stop it early, like pinching off a flower bud." data-bad="in the butt" data-fix="in the bud" data-opts="in the bud,in the bug" data-q="Let&#x27;s nip this argument in the butt before dinner is ruined."><span class="sent">Let's nip this argument in the butt before dinner is ruined.</span><input class="blank" type="hidden" data-k="ex3-1"></li>
+<li data-why="The correct form is for all intents and purposes." data-bad="For all intense purposes" data-fix="For all intents and purposes" data-opts="For all intents and purposes,For all intents purposes" data-q="For all intense purposes, my phone is my office."><span class="sent">For all intense purposes, my phone is my office.</span><input class="blank" type="hidden" data-k="ex3-2"></li>
+<li data-why="Cookies crumble; balls bounce. Mixing them is a blend error." data-bad="the way the cookie bounces" data-fix="the way the cookie crumbles" data-opts="the way the cookie crumbles,the way the cookie breaks" data-q="We didn&#x27;t get the grant, but that&#x27;s the way the cookie bounces."><span class="sent">We didn't get the grant, but that's the way the cookie bounces.</span><input class="blank" type="hidden" data-k="ex3-3"></li>
+<li data-why="Cross that bridge when we come to it: deal with it later. Burn your bridges is a different idiom." data-bad="burn that bridge" data-fix="cross that bridge" data-opts="cross that bridge,build that bridge" data-q="We&#x27;ll burn that bridge when we come to it; first let&#x27;s finish the budget."><span class="sent">We'll burn that bridge when we come to it; first let's finish the budget.</span><input class="blank" type="hidden" data-k="ex3-4"></li>
+</ol>
+<h2 id="ex4" class="ex">Exercise 4: Complete the expression</h2>
+<p>Type the missing word, then press <strong>Check</strong> (or Enter).</p>
+<ol class="g-type" data-g="ex4">
+<li data-why="Toe the line: follow official policy." data-q="The premier told her caucus to ___ the line on the trade deal.">The premier told her caucus to <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex4-1" data-ok="toe"> the line on the trade deal.</li>
+<li data-why="Free rein: complete freedom." data-q="Our grandson has free ___ of the garden in summer.">Our grandson has free <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex4-2" data-ok="rein"> of the garden in summer.</li>
+<li data-why="A case in point: an example that proves the claim." data-q="Rising rents are a case in ___: housing is the issue of this election.">Rising rents are a case in <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex4-3" data-ok="point"> : housing is the issue of this election.</li>
+<li data-why="For all intents and purposes: in every practical sense." data-q="For all intents and ___, the old factory is a museum now.">For all intents and <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex4-4" data-ok="purposes">, the old factory is a museum now.</li>
+<li data-why="Home in on: focus on a target." data-q="The vet quickly homed ___ on the cause of the dog&#x27;s limp.">The vet quickly homed <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex4-5" data-ok="in"> on the cause of the dog's limp.</li>
+<li data-why="A moot point: no longer relevant." data-q="The scandal is a ___ point; the senator has already resigned.">The scandal is a <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex4-6" data-ok="moot"> point; the senator has already resigned.</li>
+</ol>
+<details class="answers">
+  <summary>Check your answers</summary>
+  <div class="answers-body">
+<p><strong>Exercise 1:</strong> <em>mixed metaphor</em> = two clashing images in one phrase. <em>malapropism</em> = a wrong word that sounds like the right one. <em>dead metaphor</em> = a figure of speech nobody notices any more. <em>cliche</em> = an overused, stale expression. <em>eggcorn</em> = a mishearing that seems logical. <em>irony</em> = a reversal of what is expected.</p>
+<p><strong>Exercise 2:</strong> 1 mixed metaphor 2 situational irony 3 malapropism 4 a moot point 5 free rein 6 couldn't care less</p>
+<p><strong>Exercise 3:</strong> 1 Let's nip this argument <strong>in the bud</strong> before dinner is ruined. 2 <strong>For all intents and purposes</strong>, my phone is my office. 3 We didn't get the grant, but that's <strong>the way the cookie crumbles</strong>. 4 We'll <strong>cross that bridge</strong> when we come to it; first let's finish the budget.</p>
+<p><strong>Exercise 4:</strong> 1 toe 2 rein 3 point 4 purposes 5 in 6 moot</p>
+  </div>
+</details>
+</main>
+<footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
+<script>
+(function () {
+  var key = "traps-" + location.pathname;
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || "{}") || {}; } catch (e) {}
+  var fields = document.querySelectorAll(".blank");
+  fields.forEach(function (f) {
+    if (saved[f.dataset.k]) f.value = saved[f.dataset.k];
+    f.addEventListener("input", function () {
+      saved[f.dataset.k] = f.value;
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
+    });
+  });
+  var clear = document.getElementById("clear");
+  if (clear) clear.addEventListener("click", function () {
+    if (!confirm("Clear all your answers on this page?")) return;
+    fields.forEach(function (f) { f.value = ""; });
+    saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
+    location.reload();
+  });
+  var pr = document.getElementById("print");
+  if (pr) pr.addEventListener("click", function () { window.print(); });
+  // Print the answer key on its own last page, even when it's closed on screen.
+  var ans = document.querySelector("details.answers"), wasOpen = false;
+  window.addEventListener("beforeprint", function () { if (ans) { wasOpen = ans.open; ans.open = true; } });
+  window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
+})();
+</script>
+<script src="../../games.js?v=1794300000"></script>
+<script src="../../api.js?v=1792889681"></script>
+<script src="../../work.js?v=1793900000"></script>
+</body>
+</html>

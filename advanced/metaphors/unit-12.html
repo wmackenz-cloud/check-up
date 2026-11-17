@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bending the Rules</title>
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="../../grammar-traps/traps.css?v=1795100000">
+<link rel="stylesheet" href="../../games.css?v=1794300000">
+<style>
+/* Advanced English: metaphor units */
+.big-idea { border: 2px solid var(--accent); background: var(--accent-soft); border-radius: 12px; padding: 14px 18px; margin: 14px 0; }
+.big-idea p { margin: 6px 0; }
+.hidden-list { columns: 2 260px; margin: 6px 0 0; padding-left: 1.2em; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 12px; margin: 12px 0; }
+.xcard { border: 1px solid var(--rule); border-radius: 12px; background: var(--sheet); padding: 0; }
+.xcard > summary { list-style: none; cursor: pointer; padding: 12px 14px; display: grid; gap: 4px; }
+.xcard > summary::-webkit-details-marker { display: none; }
+.xcard > summary .xe { font-family: var(--font-display); font-weight: 700; font-size: 1.12rem; color: var(--accent); }
+.xcard > summary .xtap { font-size: .85rem; color: var(--ink-soft); }
+.xcard[open] { border-color: var(--accent); }
+.xcard[open] .xtap { display: none; }
+.xbody { padding: 0 14px 12px; display: grid; gap: 6px; font-size: .97rem; }
+.xbody p { margin: 0; }
+.tone { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; border-radius: 999px; padding: 1px 9px; background: var(--accent-soft); color: var(--accent); }
+.tone.casual, .tone.humorous { background: var(--ok-soft); color: var(--ok); }
+.tone.dismissive { background: #fbece4; color: var(--bad); }
+.tone.formal { background: var(--sheet); border: 1px solid var(--accent); }
+.ccard { border: 1px solid var(--rule); border-left: 5px solid var(--accent); border-radius: 10px; background: var(--sheet); padding: 12px 14px; display: grid; gap: 6px; }
+.ccard .kind { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+.ccard h3 { font-size: 1.08rem; }
+.ccard .by { color: var(--ink-soft); font-size: .92rem; margin: 0; }
+.ccard p { margin: 0; }
+.ccard .ask { font-style: italic; }
+.ccard .find { justify-self: start; font-size: .9rem; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 700; }
+.ccard.k-music { border-left-color: #8a5a00; } .ccard.k-poetry { border-left-color: var(--ok); }
+.guess-note { color: var(--ink-soft); font-size: .92rem; margin: 4px 0 0; }
+.talk ol { display: grid; gap: 8px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tone.dismissive { background: #3a2620; } }
+</style>
+</head>
+<body class="student" data-item="metaphor-12">
+<header class="top">
+  <p class="eyebrow">Advanced English &middot; Metaphors &middot; playing with idioms, and the garbled forms to avoid</p>
+  <h1>Bending the Rules</h1>
+  <p class="namedate">Name: <span class="line"></span> Date: <span class="line"></span></p>
+  <div class="tools">
+    <button type="button" id="print">Print or save as PDF</button>
+    <button type="button" class="ghost" id="clear">Clear my answers</button>
+    <span class="hint">Tap or type your answers. Green dot = right first time. Get a gold star for each perfect exercise. Your progress stays on this device.</span>
+  </div>
+</header>
+<main class="sheet">
+<section class="aims" aria-labelledby="aims-h">
+<h2 id="aims-h">What this lesson is for</h2>
+<p class="why"><strong>Why this matters:</strong> Native speakers twist idioms on purpose for humour, headlines and emphasis, and they also garble them by accident. Knowing the difference lets you enjoy wordplay, avoid embarrassing errors and judge when a fixed phrase is better left alone.</p>
+<div class="aims-grid">
+<div><h3>You will know</h3><ul><li>the correct forms of eight commonly garbled expressions, such as <em>for all intents and purposes</em> and <em>a moot point</em></li><li>the terms <em>mixed metaphor</em>, <em>malapropism</em>, <em>eggcorn</em> and <em>dead metaphor</em></li></ul></div>
+<div><h3>You will understand</h3><ul><li>that a deliberate twist works only when the original idiom is instantly recognisable</li><li>why stale cliches weaken writing, and when plain language beats an idiom</li></ul></div>
+<div><h3>You will be able to</h3><ul><li>spot and correct garbled idioms in speech and writing</li><li>extend or twist a metaphor deliberately for effect</li><li>decide when not to use an idiom at all</li></ul></div>
+</div>
+</section>
+<section class="mistakes" aria-labelledby="mis-h">
+<h2 id="mis-h">Common mistakes to watch for</h2>
+<ul>
+<li><del>For all intensive purposes, the deal is done.</del> For <strong>all intents and purposes</strong>, the deal is done. A classic mishearing, known as an eggcorn.</li>
+<li><del>We'll burn that bridge when we come to it.</del> We'll <strong>cross</strong> that bridge when we come to it. Mixing in <em>burn your bridges</em> is only funny on purpose.</li>
+<li><del>Ironically, it rained on the day of our picnic.</del> <strong>Unfortunately</strong>, it rained on the day of our picnic. Bad luck isn't irony; irony needs a reversal of expectation.</li>
+<li><del>The new policy gives managers free reign.</del> The new policy gives managers <strong>free rein</strong>. From riding: loose reins, not a king's reign.</li>
+<li><del>(Cover letter) I'm a team player who thinks outside the box and hits the ground running.</del> <strong>Replace stacked cliches with specifics</strong>: name a result you achieved. Too many idioms in formal writing sound empty.</li>
+</ul>
+</section>
+<h2>The big idea</h2>
+<div class="big-idea">
+<p>Idioms are fixed, but not frozen. Natives bend them for effect: headline writers love puns, such as <em>grate expectations</em> for a story about a cheese shop, and comedians extend a familiar image until it becomes absurd. The trick works only because everyone knows the original.</p>
+<p>Accidental bending is different. A <strong>mixed metaphor</strong> joins two images that clash (<em>we'll burn that bridge when we come to it</em>). A <strong>malapropism</strong> swaps in a similar-sounding wrong word (<em>a mute point</em>). Some speakers turn this into a style: the baseball player Yogi Berra became famous for odd but memorable sayings such as <em>it ain't over till it's over</em>.</p>
+<p>Finally, many metaphors are <strong>dead</strong>: nobody notices that a <em>deadline</em> or the <em>foot</em> of a mountain is figurative. Writers can revive a dead metaphor by taking it literally. George Orwell warned against the half-dead ones in between: worn-out images that people use to avoid thinking.</p>
+<p><strong>You already use it:</strong></p>
+<ul class="hidden-list"><li>We're coming up to the <strong>deadline</strong>.</li><li>She's the <strong>head</strong> of the department.</li><li>The <strong>foot</strong> of the mountain was covered in fog.</li><li>I finally <strong>grasp</strong> the idea.</li><li>Traffic hit a <strong>bottleneck</strong> near the bridge.</li><li>Prices <strong>skyrocketed</strong> after the storm.</li><li>Let's <strong>tackle</strong> the agenda.</li></ul>
+</div>
+<h2>The expressions</h2>
+<p>Read each example and guess the meaning first. Then tap the card to check the meaning, the tone, and how native speakers bend it.</p>
+<div class="cards">
+<details class="xcard">
+<summary><span class="xe">for all intents and purposes</span><span><strong>For all intents and purposes</strong>, the election was over by nine o'clock.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> in every practical sense; virtually <span class="tone formal">formal</span></p>
+<p><strong>Bend it:</strong> Fixed: don't change it. Commonly misheard as <em>for all intensive purposes</em>.</p>
+<p><strong>Note:</strong> Slightly formal and wordy. In concise writing, <em>effectively</em> or <em>in practice</em> is often better.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">nip it in the bud</span><span>If a new hire is rude to customers, <strong>nip it in the bud</strong> on day one.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> stop something at an early stage <span class="tone neutral">neutral</span></p>
+<p><strong>Bend it:</strong> The object can change (<em>nip the problem in the bud</em>); <em>nip</em> and <em>bud</em> are fixed.</p>
+<p><strong>Note:</strong> The garble <em>nip it in the butt</em> is a real error and a popular joke. The image is pinching off a flower bud.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">a moot point</span><span>Whether we should have hired more staff is <strong>a moot point</strong> now that the shop has closed.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> a question that no longer matters, or one still open to debate <span class="tone formal">formal</span></p>
+<p><strong>Bend it:</strong> Fixed: <em>moot</em>, never <em>mute</em>. Also <em>the point is moot</em>.</p>
+<p><strong>Note:</strong> In North America it usually means irrelevant; in British usage it can still mean debatable. Context decides.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">I couldn't care less</span><span>Honestly, <strong>I couldn't care less</strong> who wins the cooking show.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> I don't care at all <span class="tone dismissive">dismissive</span></p>
+<p><strong>Bend it:</strong> Many Americans say <em>I could care less</em> with the same meaning. It's common but widely criticised; use <em>couldn't</em> in careful speech.</p>
+<p><strong>Note:</strong> Can sound rude. Softer options: <em>I'm not too bothered</em> or <em>it doesn't really matter to me</em>.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">case in point</span><span>Small towns are losing their banks; <strong>case in point</strong>, ours closed in March.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> an example that proves what you have just said <span class="tone neutral">neutral</span></p>
+<p><strong>Bend it:</strong> Fixed. Also <em>a case in point</em>. Often misheard and written as <em>case and point</em>.</p>
+<p><strong>Note:</strong> Used right after a general claim. <em>For example</em> is neutral; <em>case in point</em> sounds more pointed and argumentative.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">toe the line</span><span>Backbench MPs were told to <strong>toe the line</strong> on the budget vote.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> obey the rules or official policy, often reluctantly <span class="tone neutral">neutral</span></p>
+<p><strong>Bend it:</strong> Tense and noun vary: <em>toed the party line</em>. Often misspelled <em>tow the line</em>.</p>
+<p><strong>Note:</strong> The image is runners with their toes on a starting line. Orwell noted the <em>tow</em> spelling as proof that writers no longer picture the image.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">home in on</span><span>The investigators quickly <strong>homed in on</strong> the accounting department.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> move steadily towards a target; focus closely on something <span class="tone neutral">neutral</span></p>
+<p><strong>Bend it:</strong> Tense varies: <em>homing in on</em>, <em>homed in on</em>. <em>Hone in on</em> is widespread in North America but many editors still mark it as an error.</p>
+<p><strong>Note:</strong> The image is a homing pigeon or missile. <em>Hone</em> means sharpen, as in <em>hone your skills</em>.</p>
+</div>
+</details>
+<details class="xcard">
+<summary><span class="xe">free rein</span><span>The new chef was given <strong>free rein</strong> to redesign the menu.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<div class="xbody">
+<p><strong>Meaning:</strong> complete freedom to act as you choose <span class="tone neutral">neutral</span></p>
+<p><strong>Bend it:</strong> Fixed noun: <em>give someone free rein</em>, <em>have free rein</em>. Spelled <em>rein</em>, not <em>reign</em>.</p>
+<p><strong>Note:</strong> From riding: a horse given loose reins can go where it likes. The <em>reign</em> spelling is a very common written error.</p>
+</div>
+</details>
+</div>
+<h2>In literature, poetry and music</h2>
+<p>Writers and songwriters use the same big idea. Read about each one, then find it and read or listen together in the lesson.</p>
+<div class="cards">
+<article class="ccard k-essay">
+<span class="kind">Essay</span>
+<h3>Politics and the English Language</h3>
+<p class="by">George Orwell, 1946</p>
+<p>Orwell argued that tired, ready-made phrases let writers avoid thinking. His first rule says, in effect: if a metaphor or simile is one you're used to seeing in print, don't use it; find a fresh image or speak plainly. He also noticed that people mangle dying metaphors because they no longer picture them.</p>
+<p class="ask">Is Orwell's rule realistic for everyday business writing? Which cliches would you ban first?</p>
+<a class="find" href="https://www.google.com/search?q=George+Orwell+Politics+and+the+English+Language" target="_blank" rel="noopener">Find it</a>
+</article>
+<article class="ccard k-literature">
+<span class="kind">Literature</span>
+<h3>The Rivals</h3>
+<p class="by">Richard Brinsley Sheridan, 1775</p>
+<p>Mrs Malaprop constantly reaches for impressive words and picks slightly wrong ones that sound similar. She is so memorable that English named the mistake after her: a <em>malapropism</em>. Her name comes from the French <em>mal à propos</em>, meaning inappropriate.</p>
+<p class="ask">Why do people misuse big words? Have you heard a funny malapropism in English or in your own language?</p>
+<a class="find" href="https://www.google.com/search?q=Mrs+Malaprop+The+Rivals+Sheridan" target="_blank" rel="noopener">Find it</a>
+</article>
+<article class="ccard k-literature">
+<span class="kind">Literature</span>
+<h3>Much Ado About Nothing</h3>
+<p class="by">William Shakespeare, around 1598</p>
+<p>Dogberry, a self-important constable, keeps choosing grand words that mean the opposite of what he intends, yet his bumbling night watch accidentally uncovers the villain's plot. Such errors are sometimes called <em>dogberryisms</em>.</p>
+<p class="ask">Why might a writer let a foolish character solve the mystery? What does that say about cleverness and language?</p>
+<a class="find" href="https://www.google.com/search?q=Dogberry+Much+Ado+About+Nothing" target="_blank" rel="noopener">Find it</a>
+</article>
+<article class="ccard k-poetry">
+<span class="kind">Poetry</span>
+<h3>Metaphors</h3>
+<p class="by">Sylvia Plath, 1960</p>
+<p>A nine-line riddle in which every line offers a different metaphor for the speaker, and the hidden answer is pregnancy. The form plays along: nine lines of nine syllables each, echoing nine months. It shows how stacking metaphors can be deliberate and clever, not mixed.</p>
+<p class="ask">Try to describe yourself, your job or your city as a riddle of three quick metaphors. Can Bill guess it?</p>
+<a class="find" href="https://www.google.com/search?q=Sylvia+Plath+Metaphors+poem" target="_blank" rel="noopener">Find it</a>
+</article>
+<article class="ccard k-music">
+<span class="kind">Music</span>
+<h3>Ironic</h3>
+<p class="by">Alanis Morissette, 1995</p>
+<p>The Ottawa-born singer lists a series of frustrating situations and calls them ironic. Critics and comedians famously pointed out that most are bad luck or bad timing rather than true irony, so the song became a favourite example in debates about what irony really means.</p>
+<p class="ask">Describe a situation from your life or the news that is truly ironic, not just unlucky. What makes it ironic?</p>
+<a class="find" href="https://www.youtube.com/results?search_query=Alanis+Morissette+Ironic" target="_blank" rel="noopener">Listen to it</a>
+</article>
+</div>
+<h2 id="ex1" class="ex">Exercise 1: Match the expression to its meaning</h2>
+<p>Tap an expression, then tap its meaning.</p>
+<div class="g-match" data-g="ex1m">
+<ul>
+<li data-why="Intents means aims: for every purpose that matters." data-l="for all intents and purposes" data-r="in every practical sense" data-q="Match: for all intents and purposes">for all intents and purposes = in every practical sense<input class="blank" type="hidden" data-k="ex1m-1"></li>
+<li data-why="Pinch off the bud and the flower never opens." data-l="nip it in the bud" data-r="stop it early" data-q="Match: nip it in the bud">nip it in the bud = stop it early<input class="blank" type="hidden" data-k="ex1m-2"></li>
+<li data-why="In North America moot usually means irrelevant now." data-l="a moot point" data-r="a question that no longer matters" data-q="Match: a moot point">a moot point = a question that no longer matters<input class="blank" type="hidden" data-k="ex1m-3"></li>
+<li data-why="It&#x27;s impossible to care any less than I already do." data-l="I couldn&#x27;t care less" data-r="I don&#x27;t care at all" data-q="Match: I couldn&#x27;t care less">I couldn't care less = I don't care at all<input class="blank" type="hidden" data-k="ex1m-4"></li>
+<li data-why="A case relevant to the point you are making." data-l="case in point" data-r="an example that proves it" data-q="Match: case in point">case in point = an example that proves it<input class="blank" type="hidden" data-k="ex1m-5"></li>
+<li data-why="Runners put their toes on the line and wait for the signal." data-l="toe the line" data-r="obey the rules" data-q="Match: toe the line">toe the line = obey the rules<input class="blank" type="hidden" data-k="ex1m-6"></li>
+<li data-why="Like a homing pigeon finding its way home." data-l="home in on" data-r="focus closely on a target" data-q="Match: home in on">home in on = focus closely on a target<input class="blank" type="hidden" data-k="ex1m-7"></li>
+<li data-why="A rider loosens the reins and lets the horse choose its way." data-l="free rein" data-r="complete freedom" data-q="Match: free rein">free rein = complete freedom<input class="blank" type="hidden" data-k="ex1m-8"></li>
+</ul>
+</div>
+<h2 id="ex2" class="ex">Exercise 2: Sort them</h2>
+<p>Is each phrase the <strong>correct form</strong>, a <strong>garbled word</strong> (malapropism or eggcorn), or a <strong>mixed metaphor</strong> blending two idioms?</p>
+<div class="sorter g-sort" data-k="sort1"><p class="hint sort-how">Tap an expression, then tap the column it belongs in. On a computer you can also drag. Right answers stay; wrong ones jump back.</p><div class="bank drop" data-col=""><button type="button" class="chip" draggable="true" data-why="The standard form." data-i="0" data-a="0">for all intents and purposes</button><button type="button" class="chip" draggable="true" data-why="The standard form: moot, meaning no longer relevant." data-i="1" data-a="0">a moot point</button><button type="button" class="chip" draggable="true" data-why="Correct: rein, as in horse riding." data-i="2" data-a="0">free rein</button><button type="button" class="chip" draggable="true" data-why="The standard form." data-i="3" data-a="0">case in point</button><button type="button" class="chip" draggable="true" data-why="Intensive replaces intents and: a mishearing." data-i="4" data-a="1">for all intensive purposes</button><button type="button" class="chip" draggable="true" data-why="Mute (silent) replaces moot." data-i="5" data-a="1">a mute point</button><button type="button" class="chip" draggable="true" data-why="Butt replaces bud." data-i="6" data-a="1">nip it in the butt</button><button type="button" class="chip" draggable="true" data-why="Tow (pull) replaces toe." data-i="7" data-a="1">tow the line</button><button type="button" class="chip" draggable="true" data-why="Blends cross that bridge with burn your bridges." data-i="8" data-a="2">we'll burn that bridge when we come to it</button><button type="button" class="chip" draggable="true" data-why="Blends the way the cookie crumbles with the way the ball bounces." data-i="9" data-a="2">that's the way the cookie bounces</button><button type="button" class="chip" draggable="true" data-why="Blends rocket science with brain surgery." data-i="10" data-a="2">it's not rocket surgery</button><button type="button" class="chip" draggable="true" data-why="Blends wake up and smell the coffee with stop and smell the roses." data-i="11" data-a="2">wake up and smell the roses</button></div><div class="cols" style="--n:3"><div class="col" data-col="0"><p class="col-h">Correct form</p><div class="drop" data-col="0"></div></div><div class="col" data-col="1"><p class="col-h">Garbled word</p><div class="drop" data-col="1"></div></div><div class="col" data-col="2"><p class="col-h">Mixed metaphor or blend</p><div class="drop" data-col="2"></div></div></div><div class="sort-acts"><button type="button" class="ghost sort-reset">Start again</button></div></div>
+<h2 id="ex3" class="ex">Exercise 3: Which expression fits?</h2>
+<p>Choose the expression that fits the situation best.</p>
+<ol class="g-pick" data-g="ex3">
+<li data-why="Correct form: for all intents and purposes, meaning in practice." data-a="1" data-form="for all intents and purposes" data-q="The merger hasn&#x27;t been signed, but ___ the two firms already operate as one company.">The merger hasn't been signed, but <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-1"> the two firms already operate as one company. <span class="opts game-ui"><button>for all intensive purposes</button><button>for all intents and purposes</button><button>for all intent and purpose</button></span></li>
+<li data-why="A moot point: no longer worth discussing." data-a="0" data-form="a moot point" data-q="Whether we should have booked earlier is ___; the flight is full anyway.">Whether we should have booked earlier is <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-2"> ; the flight is full anyway. <span class="opts game-ui"><button>a moot point</button><button>a mute point</button><button>a mood point</button></span></li>
+<li data-why="Free rein: complete freedom, from horse riding." data-a="2" data-form="free rein" data-q="Teachers were given ___ to design their own curriculum this year.">Teachers were given <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-3"> to design their own curriculum this year. <span class="opts game-ui"><button>free reign</button><button>free rain</button><button>free rein</button></span></li>
+<li data-why="Case in point: an example proving what you just said." data-a="1" data-form="case in point" data-q="Fuel prices affect everything; ___, our grocery bill rose fifteen percent.">Fuel prices affect everything; <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-4">, our grocery bill rose fifteen percent. <span class="opts game-ui"><button>case and point</button><button>case in point</button><button>in point case</button></span></li>
+<li data-why="Toe the line: follow the rules or party policy." data-a="2" data-form="toe the line" data-q="Cabinet ministers who refuse to ___ may lose their posts.">Cabinet ministers who refuse to <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-5"> may lose their posts. <span class="opts game-ui"><button>tote the line</button><button>tow the line</button><button>toe the line</button></span></li>
+<li data-why="Home in on: move steadily toward a target." data-a="0" data-form="homed in on" data-q="The search team ___ the signal from the lost hiker&#x27;s phone.">The search team <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-6"> the signal from the lost hiker's phone. <span class="opts game-ui"><button>homed in on</button><button>homed on in</button><button>held in on</button></span></li>
+<li data-why="I couldn&#x27;t care less: I don&#x27;t care at all." data-a="1" data-form="I couldn&#x27;t care less" data-q="Frankly, ___ about the office party; I&#x27;ll be on holiday anyway.">Frankly, <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-7"> about the office party; I'll be on holiday anyway. <span class="opts game-ui"><button>I could care more</button><button>I couldn't care less</button><button>I couldn't care more</button></span></li>
+<li data-why="Nip it in the bud: stop it at the start." data-a="2" data-form="nip it in the bud" data-q="If staff start arriving late, ___ before it becomes a habit.">If staff start arriving late, <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex3-8"> before it becomes a habit. <span class="opts game-ui"><button>nip it in the butt</button><button>nip it in the bug</button><button>nip it in the bud</button></span></li>
+</ol>
+<h2 id="ex4" class="ex">Exercise 4: Find the mistake</h2>
+<p>Each sentence has one mistake in an expression. Tap the wrong word (or words), then choose the right words.</p>
+<ol class="g-spot" data-g="ex4">
+<li data-why="Moot means no longer relevant. Mute means silent." data-bad="a mute point" data-fix="a moot point" data-opts="a moot point,a mood point" data-q="The question of who pays is a mute point now that the event is cancelled."><span class="sent">The question of who pays is a mute point now that the event is cancelled.</span><input class="blank" type="hidden" data-k="ex4-1"></li>
+<li data-why="A classic mishearing. The phrase is for all intents and purposes." data-bad="For all intensive purposes" data-fix="For all intents and purposes" data-opts="For all intents and purposes,For all intent purposes" data-q="For all intensive purposes, the referendum result is final."><span class="sent">For all intensive purposes, the referendum result is final.</span><input class="blank" type="hidden" data-k="ex4-2"></li>
+<li data-why="Rein, as in a horse&#x27;s reins: freedom to go where you like." data-bad="free reign" data-fix="free rein" data-opts="free rein,free rain" data-q="The editor gave the young journalist free reign to cover the protests."><span class="sent">The editor gave the young journalist free reign to cover the protests.</span><input class="blank" type="hidden" data-k="ex4-3"></li>
+<li data-why="Toe the line: put your toes on the line, follow the rules." data-bad="tow the line" data-fix="toe the line" data-opts="toe the line,tote the line" data-q="Opposition members refused to tow the line on the pipeline bill."><span class="sent">Opposition members refused to tow the line on the pipeline bill.</span><input class="blank" type="hidden" data-k="ex4-4"></li>
+<li data-why="Case in point: an example that proves your claim." data-bad="case and point" data-fix="case in point" data-opts="case in point,case at point" data-q="Prices in this town keep rising; case and point, a coffee now costs six dollars."><span class="sent">Prices in this town keep rising; case and point, a coffee now costs six dollars.</span><input class="blank" type="hidden" data-k="ex4-5"></li>
+</ol>
+<h2 id="ex5" class="ex">Exercise 5: Complete the expression</h2>
+<p>Type the missing word, then press <strong>Check</strong> (or Enter).</p>
+<ol class="g-type" data-g="ex5">
+<li data-why="Cross that bridge when we come to it: deal with a problem when it actually arrives." data-q="We&#x27;ll cross that ___ when we come to it; let&#x27;s focus on today.">We'll cross that <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-1" data-ok="bridge"> when we come to it; let's focus on today.</li>
+<li data-why="That&#x27;s the way the cookie crumbles: that&#x27;s life, accept it." data-q="That&#x27;s the way the cookie ___, I&#x27;m afraid; we lost the contract.">That's the way the cookie <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-2" data-ok="crumbles">, I'm afraid; we lost the contract.</li>
+<li data-why="Home in on (or zero in on): focus on a target." data-q="The detectives slowly ___ in on the gang&#x27;s leader.">The detectives slowly <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-3" data-ok="homed|zeroed"> in on the gang's leader.</li>
+<li data-why="I couldn&#x27;t care less: I don&#x27;t care at all." data-q="Honestly, I couldn&#x27;t care ___ about celebrity gossip.">Honestly, I couldn't care <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-4" data-ok="less"> about celebrity gossip.</li>
+<li data-why="A moot point: no longer worth discussing." data-q="Whether the stadium should have been built is a ___ point; it opened last year.">Whether the stadium should have been built is a <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-5" data-ok="moot"> point; it opened last year.</li>
+<li data-why="Nip it in the bud: stop it early." data-q="City inspectors want to nip the rat problem in the ___ before winter.">City inspectors want to nip the rat problem in the <input class="blank mid" type="text" aria-label="Answer" autocomplete="off" spellcheck="false" data-k="ex5-6" data-ok="bud"> before winter.</li>
+</ol>
+<h2 id="ex6" class="ex">Exercise 6: Bend it</h2>
+<p>Native speakers change tense, add words and play with expressions, but only in some ways. Which version sounds natural?</p>
+<ol class="g-pick" data-g="ex6">
+<li data-why="Rise to the occasion stays intact, and rise also suggests bread dough: a pun only works on the real idiom." data-a="0" data-form="Bakers rise to the occasion as bread prices soar" data-q="Which headline sounds like natural, deliberate wordplay? ___">Which headline sounds like natural, deliberate wordplay? <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex6-1"> <span class="opts game-ui"><button>Bakers rise to the occasion as bread prices soar</button><button>Bakers ascend to the occasion as bread prices soar</button><button>Bakers rise on the occasion as bread prices soar</button></span></li>
+<li data-why="Extending can of worms works because the original is untouched; the others mix images." data-a="1" data-form="We&#x27;ve opened a can of worms, and now the worms are organising." data-q="Which extended metaphor sounds natural and witty? ___">Which extended metaphor sounds natural and witty? <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex6-2"> <span class="opts game-ui"><button>We've opened a tin of snakes, and now the worms are organising.</button><button>We've opened a can of worms, and now the worms are organising.</button><button>We've opened a can of worms in the bud.</button></span></li>
+<li data-why="The joke keeps the original intact, then adds a clever twist about mousetraps." data-a="2" data-form="The early bird gets the worm, but the second mouse gets the cheese." data-q="Which deliberate twist sounds natural and witty? ___">Which deliberate twist sounds natural and witty? <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex6-3"> <span class="opts game-ui"><button>The early bird gets the cheese, but the worm gets the mouse.</button><button>The early birds catches the worms early.</button><button>The early bird gets the worm, but the second mouse gets the cheese.</button></span></li>
+<li data-why="In formal reports, plain language beats stacked idioms and mixed images." data-a="0" data-form="Sales fell sharply in the third quarter." data-q="Which sentence suits a formal quarterly report? ___">Which sentence suits a formal quarterly report? <span class="gap game-ui"></span><input class="blank" type="hidden" data-k="ex6-4"> <span class="opts game-ui"><button>Sales fell sharply in the third quarter.</button><button>Sales went south big time, and it's a whole new ball game.</button><button>Sales fell off a cliff and hit rock bottom in the basement.</button></span></li>
+</ol>
+<h2 id="ex7">Exercise 7: Talk about it</h2>
+<div class="rule talk"><ol><li>Orwell would ban any metaphor you're used to seeing in print. Pick three cliches from your workplace or the news and replace each with a fresh image or plain words.</li><li>Alanis Morissette's <em>Ironic</em> is famous for situations that aren't strictly ironic. Describe one truly ironic situation from your life or the news.</li><li>Which English idioms did you mishear or misunderstand when you first learned them? What did you think they meant?</li><li>Role-play: Bill is your editor. Defend a mixed metaphor in your article as deliberate humour, or agree to fix it and explain how.</li><li>Mrs Malaprop and Dogberry use big words to sound important. Do people in your workplace use jargon the same way? Give examples.</li></ol></div>
+<details class="answers">
+  <summary>Check your answers</summary>
+  <div class="answers-body">
+<p><strong>Exercise 1:</strong> <em>for all intents and purposes</em> = in every practical sense. <em>nip it in the bud</em> = stop it early. <em>a moot point</em> = a question that no longer matters. <em>I couldn't care less</em> = I don't care at all. <em>case in point</em> = an example that proves it. <em>toe the line</em> = obey the rules. <em>home in on</em> = focus closely on a target. <em>free rein</em> = complete freedom.</p>
+<p><strong>Exercise 2:</strong> <strong>Correct form:</strong> for all intents and purposes, a moot point, free rein, case in point. <strong>Garbled word:</strong> for all intensive purposes, a mute point, nip it in the butt, tow the line. <strong>Mixed metaphor or blend:</strong> we'll burn that bridge when we come to it, that's the way the cookie bounces, it's not rocket surgery, wake up and smell the roses.</p>
+<p><strong>Exercise 3:</strong> 1 for all intents and purposes 2 a moot point 3 free rein 4 case in point 5 toe the line 6 homed in on 7 I couldn't care less 8 nip it in the bud</p>
+<p><strong>Exercise 4:</strong> 1 The question of who pays is <strong>a moot point</strong> now that the event is cancelled. 2 <strong>For all intents and purposes</strong>, the referendum result is final. 3 The editor gave the young journalist <strong>free rein</strong> to cover the protests. 4 Opposition members refused to <strong>toe the line</strong> on the pipeline bill. 5 Prices in this town keep rising; <strong>case in point</strong>, a coffee now costs six dollars.</p>
+<p><strong>Exercise 5:</strong> 1 bridge 2 crumbles 3 homed 4 less 5 moot 6 bud</p>
+<p><strong>Exercise 6:</strong> 1 Bakers rise to the occasion as bread prices soar 2 We've opened a can of worms, and now the worms are organising. 3 The early bird gets the worm, but the second mouse gets the cheese. 4 Sales fell sharply in the third quarter.</p>
+  </div>
+</details>
+</main>
+<footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
+<script>
+(function () {
+  var key = "traps-" + location.pathname;
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || "{}") || {}; } catch (e) {}
+  var fields = document.querySelectorAll(".blank");
+  fields.forEach(function (f) {
+    if (saved[f.dataset.k]) f.value = saved[f.dataset.k];
+    f.addEventListener("input", function () {
+      saved[f.dataset.k] = f.value;
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
+    });
+  });
+  var clear = document.getElementById("clear");
+  if (clear) clear.addEventListener("click", function () {
+    if (!confirm("Clear all your answers on this page?")) return;
+    fields.forEach(function (f) { f.value = ""; });
+    saved = {}; try { localStorage.removeItem(key); } catch (e) {}
+    if (window.lessonGames) window.lessonGames.reset();
+    location.reload();
+  });
+  var pr = document.getElementById("print");
+  if (pr) pr.addEventListener("click", function () { window.print(); });
+  // Print the answer key on its own last page, even when it's closed on screen.
+  var ans = document.querySelector("details.answers"), wasOpen = false;
+  window.addEventListener("beforeprint", function () { if (ans) { wasOpen = ans.open; ans.open = true; } });
+  window.addEventListener("afterprint", function () { if (ans) ans.open = wasOpen; });
+})();
+</script>
+<script src="../../games.js?v=1794300000"></script>
+<script src="../../api.js?v=1792889681"></script>
+<script src="../../work.js?v=1793900000"></script>
+</body>
+</html>

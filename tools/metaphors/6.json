@@ -1,0 +1,216 @@
+{
+  "n": 6,
+  "title": "Work Is Sport",
+  "tagline": "business, competition and fairness",
+  "why": "Meetings, emails and news reports are full of sports images: balls, goalposts, plates and towels. They are quick and vivid, but many come from <strong>baseball or cricket</strong>, so knowing which side of the Atlantic they belong to helps you choose the right one.",
+  "know": [
+    "Eight core sports idioms for work, such as <strong>drop the ball</strong>, <strong>move the goalposts</strong> and <strong>step up to the plate</strong>.",
+    "Which idioms come from <strong>baseball</strong> (North American) and which from <strong>football, cricket or boxing</strong> (more British or international)."
+  ],
+  "understand": [
+    "How the metaphor turns work into a <strong>game with rules, teams, referees and a score</strong>.",
+    "Why many of these idioms are really about <strong>fairness</strong>: who changed the rules, who hit below the belt."
+  ],
+  "able": [
+    "Describe a workplace problem or success using sports idioms in a natural, not overdone, way.",
+    "Choose a North American or British idiom to suit your listener.",
+    "Discuss a song, poem or book that links sport with success, failure or fairness."
+  ],
+  "mistakes": [
+    ["The ball is on your court now.", "The ball is <strong>in</strong> your court now. It is the tennis court; the ball lands in it."],
+    ["They keep moving the goals.", "They keep moving the <strong>goalposts</strong>. The idiom names the posts themselves."],
+    ["Can you give me a baseball figure?", "Can you give me a <strong>ballpark</strong> figure? A ballpark is the stadium, so a ballpark figure is roughly in the right area."],
+    ["He threw the towel after the third rejection.", "He threw <strong>in</strong> the towel. Without in, it only means he threw a towel."],
+    ["We need to step up to the plate, hit it out of the park, touch base and not drop the ball.", "<strong>Use one or two at a time.</strong> Stacking sports idioms sounds like a parody of corporate jargon."]
+  ],
+  "bigidea": [
+    "In English, work is often described as a <strong>sport</strong>: there are players and teams, rules and referees, winners and losers, and a score to keep. A project is a game, a deadline is the final whistle, a mistake is a dropped ball.",
+    "The sports chosen tell you where an idiom grew up. North American business talk is full of <strong>baseball</strong> (ballpark, step up to the plate, out of left field), while British English leans on <strong>football and cricket</strong> (move the goalposts, a sticky wicket, it's not cricket). <strong>Boxing</strong> gives everyone below the belt and throw in the towel.",
+    "Because sport depends on rules, these idioms are often about <strong>fairness</strong>. Complaining that someone moved the goalposts or hit below the belt is a moral judgement wrapped in a game image."
+  ],
+  "hidden": [
+    "Our team <strong>scored</strong> a big win with the Quebec contract.",
+    "The two firms are <strong>neck and neck</strong> in the race for the licence.",
+    "Let's <strong>touch base</strong> on Monday about the schedule.",
+    "Remote work is <strong>a whole new ball game</strong> for managers.",
+    "Her keynote speech really <strong>hit it out of the park</strong>.",
+    "Bringing up his divorce in the debate was <strong>below the belt</strong>.",
+    "Changing the deadline without warning? That's just <strong>not cricket</strong>.",
+    "The new director is <strong>calling the shots</strong> now."
+  ],
+  "expressions": [
+    {"e": "drop the ball", "meaning": "make a mistake by failing to do something you were responsible for", "example": "Someone <strong>dropped the ball</strong> and the invoices never went out.",
+     "tone": "casual",
+     "bend": "Tense changes: <strong>I dropped the ball on that one</strong>. Add the task with <strong>on</strong>: <strong>drop the ball on the renewal</strong>.",
+     "note": "A soft way to admit a failure, common in North American offices. 'I dropped the ball' sounds more responsible and less dramatic than 'I failed'."},
+    {"e": "a level playing field", "meaning": "a situation where everyone has the same chance", "example": "The new rules are meant to create <strong>a level playing field</strong> for small and large banks.",
+     "tone": "formal",
+     "bend": "Common verbs: <strong>create / ensure / provide a level playing field</strong>. Opposite: <strong>an uneven playing field</strong>; verb: <strong>level the playing field</strong>.",
+     "note": "Very common in politics, economics and trade. It is a general sports image, used everywhere in the English-speaking world."},
+    {"e": "move the goalposts", "meaning": "unfairly change the rules or targets while something is in progress", "example": "Every time we meet the target, head office <strong>moves the goalposts</strong>.",
+     "tone": "neutral",
+     "bend": "Often progressive and a complaint: <strong>they keep moving the goalposts</strong>. Noun: <strong>goalpost-moving</strong>.",
+     "note": "From British football (soccer). Always critical: it accuses someone of unfairness. Canadians and Americans use it too."},
+    {"e": "the ball's in your court", "meaning": "it is your turn to act or decide", "example": "We've sent our final offer, so <strong>the ball's in their court</strong> now.",
+     "tone": "neutral",
+     "bend": "Change the owner: <strong>the ball is in Ottawa's court</strong>. Also <strong>put the ball back in their court</strong>.",
+     "note": "From tennis. Use <em>in</em>, not <em>on</em> or <em>at</em>. Often used to show that you have done your part."},
+    {"e": "a ballpark figure", "meaning": "a rough estimate", "example": "I don't need exact numbers, just <strong>a ballpark figure</strong> for the renovation.",
+     "tone": "casual",
+     "bend": "Also <strong>in the ballpark</strong> (close enough), <strong>in the same ballpark</strong> (similar), <strong>a ballpark estimate</strong>.",
+     "note": "From baseball; a ballpark is the stadium. Very North American, but now understood in the UK too. Formal alternative: <em>an approximate figure</em>."},
+    {"e": "out of left field", "meaning": "unexpected and surprising, often strange", "example": "The question about my childhood came completely <strong>out of left field</strong>.",
+     "tone": "casual",
+     "bend": "Fixed core. Add intensifiers: <strong>totally / completely out of left field</strong>. Also as adjective: <strong>a left-field idea</strong>.",
+     "note": "Baseball, so mainly North American. British speakers more often say <em>out of the blue</em>. <em>Left-field</em> as an adjective can be positive: unconventional, creative."},
+    {"e": "step up to the plate", "meaning": "take responsibility or action when it is needed", "example": "When the manager got sick, Priya <strong>stepped up to the plate</strong> and ran the launch.",
+     "tone": "neutral",
+     "bend": "Shortened to <strong>step up</strong>. Tense and subject change: <strong>it's time for the province to step up to the plate</strong>.",
+     "note": "Baseball: the batter steps up to home plate. A common call to action in politics. British English may prefer <em>rise to the occasion</em>."},
+    {"e": "throw in the towel", "meaning": "give up, admit defeat", "example": "After three years of losses, the owners finally <strong>threw in the towel</strong> and sold the store.",
+     "tone": "casual",
+     "bend": "Word order can change: <strong>throw the towel in</strong>. Tense changes. Variant: <strong>throw in the sponge</strong> (old-fashioned).",
+     "note": "From boxing: a trainer throws a towel into the ring to stop the fight. Sounds more final and dramatic than <em>give up</em>."}
+  ],
+  "culture": [
+    {"kind": "Music", "work": "We Are the Champions", "by": "Queen (written by Freddie Mercury)", "year": "1977",
+     "how": "The song looks back on a life of struggles and mistakes and turns it into a victory celebration. Because it is played in stadiums after almost every final, it has become the soundtrack for <strong>success as winning a trophy</strong>, at work as much as in sport.",
+     "ask": "Why do you think companies and schools love to borrow the language and music of sports victories?",
+     "find": "Queen We Are the Champions"},
+    {"kind": "Music", "work": "The Hockey Song", "by": "Stompin' Tom Connors", "year": "1973",
+     "how": "A cheerful play-by-play of a hockey game that became a Canadian anthem, played in NHL arenas including Ottawa and Toronto. It shows how one sport can stand for a whole <strong>national identity</strong>, and why Canadians reach for hockey images (a hat trick, a power play, dropping the gloves) at work.",
+     "ask": "Which sport supplies the metaphors in your first language? Give one example and translate it for Bill.",
+     "find": "Stompin' Tom Connors The Hockey Song"},
+    {"kind": "Poetry", "work": "Casey at the Bat", "by": "Ernest Lawrence Thayer", "year": "1888",
+     "how": "A small-town baseball team's hopes rest on its star batter, who is so confident that he lets good pitches go by and then strikes out. The comic poem is a classic picture of someone who <strong>steps up to the plate</strong> and fails through arrogance.",
+     "ask": "Have you seen a 'Casey' at work: someone talented who lost because of overconfidence?",
+     "find": "Ernest Thayer Casey at the Bat"},
+    {"kind": "Literature", "work": "Moneyball", "by": "Michael Lewis", "year": "2003",
+     "how": "This non-fiction book (filmed in 2011) follows the Oakland Athletics, a poor baseball team that used statistics to compete with rich clubs. It became a favourite of business readers because it is about finding ways to play on an <strong>uneven playing field</strong>.",
+     "ask": "In your field, how could a small player compete with much bigger, richer rivals?",
+     "find": "Michael Lewis Moneyball"},
+    {"kind": "Speech", "work": "Pre-fight boasts", "by": "Muhammad Ali", "year": "1964",
+     "how": "Before fighting Sonny Liston for the heavyweight title, Ali (then Cassius Clay) became famous for rhyming boasts. His best-known slogan, <strong>float like a butterfly</strong>, compared his footwork and punches to insects. It shows that sport talk itself runs on metaphor.",
+     "ask": "Is confident self-promotion admired or disliked where you grew up? Would Ali's style work in a job interview?",
+     "find": "Muhammad Ali float like a butterfly 1964"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "drop the ball", "r": "fail to do something you were responsible for", "why": "A player who drops the ball loses it for the team."},
+      {"l": "a level playing field", "r": "equal chances for everyone", "why": "On a flat field, neither team has a slope in its favour."},
+      {"l": "move the goalposts", "r": "unfairly change the targets", "why": "If the goal moves during the game, you can never score."},
+      {"l": "the ball's in your court", "r": "it's your turn to act", "why": "In tennis, you must hit the ball once it lands on your side."},
+      {"l": "a ballpark figure", "r": "a rough estimate", "why": "It's in the ballpark: in the right area, but not exact."},
+      {"l": "out of left field", "r": "unexpected and surprising", "why": "Something arrives from a direction you weren't watching."},
+      {"l": "step up to the plate", "r": "take responsibility when needed", "why": "In baseball the batter steps up to the plate to face the pitch."},
+      {"l": "throw in the towel", "r": "give up", "why": "A boxer's corner throws in the towel to end the fight."}
+    ],
+    "sort": {"h": "Where does each idiom come from? Sort them into <strong>baseball</strong>, <strong>boxing</strong> or <strong>football and cricket</strong>.",
+      "cols": ["Baseball (North American)", "Boxing", "Football and cricket (British)"],
+      "items": [
+        {"w": "a ballpark figure", "c": 0, "why": "A ballpark is a baseball stadium."},
+        {"w": "out of left field", "c": 0, "why": "Left field is part of a baseball diamond."},
+        {"w": "step up to the plate", "c": 0, "why": "The batter steps up to home plate."},
+        {"w": "touch base", "c": 0, "why": "Runners touch each base in baseball."},
+        {"w": "hit it out of the park", "c": 0, "why": "A home run leaves the ballpark completely."},
+        {"w": "throw in the towel", "c": 1, "why": "A trainer throws a towel into the ring to stop a fight."},
+        {"w": "below the belt", "c": 1, "why": "Boxing rules forbid punches below the belt."},
+        {"w": "on the ropes", "c": 1, "why": "A boxer pushed against the ropes is close to losing."},
+        {"w": "move the goalposts", "c": 2, "why": "Goalposts belong to football (soccer) and rugby; the idiom is British."},
+        {"w": "it's not cricket", "c": 2, "why": "Cricket stands for fair play in British English."},
+        {"w": "a sticky wicket", "c": 2, "why": "A wet cricket pitch made batting hard, so a sticky wicket is a tricky situation."}
+      ]},
+    "pick": [
+      {"q": "I was supposed to book the venue, but I completely ___. It's gone.", "opts": ["dropped the ball", "stepped up to the plate", "threw in the towel"], "a": 0, "why": "Failing to do a task you were responsible for is dropping the ball."},
+      {"q": "Small farms want ___ with the big agribusinesses when it comes to subsidies.", "opts": ["a ballpark figure", "a level playing field", "a whole new ball game"], "a": 1, "why": "They want equal chances: a level playing field."},
+      {"q": "We hit last year's sales target, and now they say we need 20 percent more just to get a bonus. They're ___.", "opts": ["moving the goalposts", "touching base", "dropping the ball"], "a": 0, "why": "Changing the target unfairly is moving the goalposts."},
+      {"q": "We've answered all their questions and lowered our price. ___ now.", "opts": ["It's a level playing field", "The ball's in their court", "It's out of left field"], "a": 1, "why": "We have done our part; it's their turn to decide."},
+      {"q": "I won't hold you to it, but can you give me ___ for the new roof?", "opts": ["a level playing field", "a ballpark figure", "a sticky wicket"], "a": 1, "why": "A rough estimate is a ballpark figure."},
+      {"q": "Her resignation came ___. Nobody in the office suspected anything.", "opts": ["out of left field", "below the belt", "in their court"], "a": 0, "why": "Totally unexpected: out of left field."},
+      {"q": "With the deadline tomorrow and half the team sick, we need someone to ___.", "opts": ["throw in the towel", "move the goalposts", "step up to the plate"], "a": 2, "why": "Taking responsibility in a crisis is stepping up to the plate."},
+      {"q": "After two failed appeals, the family finally ___ and accepted the ruling.", "opts": ["stepped up to the plate", "threw in the towel", "dropped the ball"], "a": 1, "why": "Giving up after a long fight is throwing in the towel."}
+    ],
+    "spot": [
+      {"q": "I've sent my proposal, so the ball is on your court.", "bad": "on your court", "fix": "in your court", "opts": ["in your court", "at your court"], "why": "The ball lands in a tennis court, so the idiom uses in."},
+      {"q": "The government keeps moving the goals on emissions targets.", "bad": "moving the goals", "fix": "moving the goalposts", "opts": ["moving the goalposts", "moving the nets"], "why": "The fixed idiom names the goalposts."},
+      {"q": "Can you give me a baseball figure for the catering?", "bad": "baseball figure", "fix": "ballpark figure", "opts": ["ballpark figure", "ballgame figure"], "why": "A ballpark figure is a rough estimate. The idiom names the stadium, not the sport."},
+      {"q": "After the third rejection letter, he threw the towel and stopped applying.", "bad": "threw the towel", "fix": "threw in the towel", "opts": ["threw in the towel", "dropped the towel"], "why": "The particle in is essential: throw in the towel (or throw the towel in)."},
+      {"q": "Mentioning her illness in the debate was really under the belt.", "bad": "under the belt", "fix": "below the belt", "opts": ["below the belt", "beneath the waist"], "why": "Unfair attacks are below the belt. Under your belt means experience you already have."}
+    ],
+    "type": [
+      {"q": "Sorry, I dropped the ___ on your reference letter. I'll send it tonight.", "a": ["ball"], "why": "Drop the ball = fail to do something you were responsible for."},
+      {"q": "The trade deal is meant to level the playing ___ for Canadian exporters.", "a": ["field"], "why": "Level the playing field = make the chances equal."},
+      {"q": "Every time I finish the report, my manager moves the ___.", "a": ["goalposts"], "why": "Move the goalposts = unfairly change the target."},
+      {"q": "That idea came out of left ___, but it might actually work.", "a": ["field"], "why": "Out of left field = unexpected."},
+      {"q": "It's time for the big tech firms to step up to the ___ on privacy.", "a": ["plate"], "why": "Step up to the plate = take responsibility."},
+      {"q": "Working from home with three kids is a whole new ball ___.", "a": ["game"], "why": "A whole new ball game = a completely different situation."}
+    ],
+    "bend": [
+      {"q": "Which version sounds natural after a mistake at work? ___", "opts": ["I really dropped the ball on that client.", "I really dropped a ball for that client.", "I really let the ball drop on that client."], "a": 0, "why": "Drop the ball keeps the and takes on + task. A ball or let the ball drop sound like literal sport."},
+      {"q": "Which version sounds natural in a trade negotiation? ___", "opts": ["The ball is now on Washington's court.", "The ball is now firmly in Washington's court.", "The ball now courts Washington."], "a": 1, "why": "You can add firmly and change the owner, but keep in + court."},
+      {"q": "Which version sounds natural about an estimate? ___", "opts": ["Your guess is in the same ballpark as mine.", "Your guess is in the same baseball as mine.", "Your guess is the same ballpark figure of mine."], "a": 0, "why": "In the same ballpark = similar. It is a common, natural variation."},
+      {"q": "Which version sounds natural for a business story? ___", "opts": ["The startup threw its towel at the market.", "The startup was towel-thrown in the end.", "The startup threw the towel in after two years."], "a": 2, "why": "The particle can move: throw the towel in. Passive or other changes break the idiom."}
+    ],
+    "talk": [
+      "Tell Bill about a time someone <strong>moved the goalposts</strong> on you at work or school. How did you react?",
+      "Role-play: you are a manager. A team member has <strong>dropped the ball</strong> on an important task. Talk to them firmly but kindly.",
+      "Stompin' Tom made hockey sound like Canada's national story. Which sport tells the story of your country, and what metaphors come from it?",
+      "Is the job market in your field <strong>a level playing field</strong>? Who has an advantage, and why?",
+      "Which sports idioms do you find useful, and which sound like empty corporate jargon to you? Give examples."
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "touch base", "r": "make brief contact to check in", "why": "A baseball runner touches each base on the way round."},
+      {"l": "a whole new ball game", "r": "a completely different situation", "why": "When the game changes, the old rules and strategies no longer apply."},
+      {"l": "hit it out of the park", "r": "do something extremely well", "why": "A home run that leaves the stadium is the best possible hit."},
+      {"l": "below the belt", "r": "unfair and cruel", "why": "Hitting below the belt is against boxing rules."},
+      {"l": "it's not cricket", "r": "it's unfair or dishonest (British)", "why": "Cricket stood for gentlemanly fair play."},
+      {"l": "on the ropes", "r": "close to defeat", "why": "A boxer trapped against the ropes is in trouble."}
+    ],
+    "pick": [
+      {"q": "Let's ___ next week and see how the hiring is going.", "opts": ["touch base", "throw in the towel", "move the goalposts"], "a": 0, "why": "A short check-in is touching base."},
+      {"q": "Her presentation to the investors was brilliant. She ___.", "opts": ["dropped the ball", "hit it out of the park", "was on the ropes"], "a": 1, "why": "Doing something extremely well is hitting it out of the park."},
+      {"q": "Joking about his stutter during the interview was ___.", "opts": ["below the belt", "a ballpark figure", "out of the park"], "a": 0, "why": "A cruel, unfair remark is below the belt."},
+      {"q": "Managing a team of forty after leading a team of four is ___.", "opts": ["a level playing field", "on the ropes", "a whole new ball game"], "a": 2, "why": "A completely different situation is a whole new ball game."},
+      {"q": "After the scandal, the party was ___ and its poll numbers kept falling.", "opts": ["on the ropes", "in its court", "touching base"], "a": 0, "why": "Close to defeat is on the ropes."},
+      {"q": "When the chair resigned, the deputy ___ and kept the board together.", "opts": ["threw in the towel", "stepped up to the plate", "dropped the ball"], "a": 1, "why": "She took responsibility in a crisis: she stepped up to the plate."}
+    ],
+    "spot": [
+      {"q": "Let's touch the base after lunch about the budget.", "bad": "touch the base", "fix": "touch base", "opts": ["touch base", "touch bases"], "why": "Touch base has no article."},
+      {"q": "Making us reapply after we were already accepted? That's not tennis.", "bad": "not tennis", "fix": "not cricket", "opts": ["not cricket", "not football"], "why": "The British idiom for unfairness is it's not cricket."},
+      {"q": "Her question came out of right field and nobody knew how to answer.", "bad": "right field", "fix": "left field", "opts": ["left field", "far field"], "why": "The fixed idiom is out of left field."},
+      {"q": "With two new hires, our department is finally stepping up to the plateau.", "bad": "plateau", "fix": "plate", "opts": ["plate", "pitch"], "why": "Step up to the plate (the batter's home plate). A plateau is flat high ground."}
+    ],
+    "type": [
+      {"q": "My boss wants a ___ figure for the trip by Friday.", "a": ["ballpark"], "why": "A ballpark figure = a rough estimate."},
+      {"q": "The candidates traded blows, and some of them landed below the ___.", "a": ["belt"], "why": "Below the belt = unfair or cruel."},
+      {"q": "I'll touch ___ with the supplier this afternoon.", "a": ["base"], "why": "Touch base = make brief contact."},
+      {"q": "The ball is in the union's ___ now.", "a": ["court"], "why": "The ball is in your court = it's your turn to act."},
+      {"q": "After losing two major clients, the agency is on the ___.", "a": ["ropes"], "why": "On the ropes = close to defeat."},
+      {"q": "Don't throw in the ___ yet; we still have a week.", "a": ["towel"], "why": "Throw in the towel = give up."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "The shipping team ___ and the parts arrived a week late.", "opts": ["dropped the ball", "touched base", "hit it out of the park"], "a": "dropped the ball", "why": "Failing in a responsibility is dropping the ball."},
+    {"type": "pick", "q": "International students say high fees mean there's no ___ for them.", "opts": ["ballpark figure", "level playing field", "sticky wicket"], "a": "level playing field", "why": "Equal chances for all: a level playing field."},
+    {"type": "pick", "q": "First they asked for two references, now they want five. They keep ___.", "opts": ["moving the goalposts", "stepping up to the plate", "touching base"], "a": "moving the goalposts", "why": "Changing requirements unfairly is moving the goalposts."},
+    {"type": "pick", "q": "I've apologized twice. ___ now.", "opts": ["The ball's in her court", "It's out of left field", "It's below the belt"], "a": "The ball's in her court", "why": "I have done my part; it's her turn to act."},
+    {"type": "pick", "q": "The plumber gave us ___ of about two thousand dollars.", "opts": ["a ballpark figure", "a whole new ball game", "a level playing field"], "a": "a ballpark figure", "why": "A rough estimate is a ballpark figure."},
+    {"type": "pick", "q": "The CEO's sudden support for a four-day week came ___.", "opts": ["on the ropes", "out of left field", "below the belt"], "a": "out of left field", "why": "Unexpected: out of left field."},
+    {"type": "pick", "q": "When the volunteers quit, local businesses ___ and funded the festival.", "opts": ["threw in the towel", "stepped up to the plate", "moved the goalposts"], "a": "stepped up to the plate", "why": "They took responsibility when it was needed."},
+    {"type": "pick", "q": "After a decade of falling sales, the newspaper ___ and stopped printing.", "opts": ["threw in the towel", "touched base", "called the shots"], "a": "threw in the towel", "why": "Giving up is throwing in the towel."},
+    {"type": "type", "q": "Her pitch to the Dragons really hit it out of the ___.", "a": ["park"], "why": "Hit it out of the park = do something extremely well."},
+    {"type": "type", "q": "Getting the minister on the phone is a sticky ___.", "a": ["wicket"], "why": "A sticky wicket (British, cricket) = a difficult situation."},
+    {"type": "type", "q": "Insulting his family was below the ___.", "a": ["belt"], "why": "Below the belt = unfair and hurtful."},
+    {"type": "type", "q": "The new director is calling the ___ now.", "a": ["shots"], "why": "Call the shots = be the one who makes decisions."},
+    {"type": "type", "q": "Once the twins arrived, travel became a whole new ball ___.", "a": ["game"], "why": "A whole new ball game = a completely different situation."},
+    {"type": "spot", "q": "We need someone to step up the plate and lead the project.", "bad": "step up the plate", "fix": "step up to the plate", "opts": ["step up to the plate", "step on the plate"], "why": "The batter steps up to the plate; to is needed."},
+    {"type": "spot", "q": "The team leader dropped a ball on the safety training.", "bad": "dropped a ball", "fix": "dropped the ball", "opts": ["dropped the ball", "lost a ball"], "why": "The idiom uses the: drop the ball."},
+    {"type": "spot", "q": "Can we touch base tomorrow morning about the budget?", "bad": "", "why": "Correct! Touch base = a short check-in, very common in North American offices."},
+    {"type": "spot", "q": "The new tax rules are supposed to level the playing field.", "bad": "", "why": "Correct! Level the playing field = make chances equal."},
+    {"type": "order", "a": "The ball is in their court now.", "alt": ["The ball is now in their court."], "why": "The ball is in their court = it's their turn to act."},
+    {"type": "order", "a": "Our team really hit it out of the park.", "alt": [], "why": "Subject + really + hit it out of the park."},
+    {"type": "order", "a": "Please give me a ballpark figure by Friday.", "alt": [], "why": "Give me + a ballpark figure + time phrase."}
+  ]
+}

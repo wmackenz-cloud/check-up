@@ -1,0 +1,211 @@
+{
+  "n": 4,
+  "title": "Life Is Water and Navigation",
+  "tagline": "uncertainty, progress and trouble",
+  "why": "English describes life as a voyage across water: calm or stormy, shallow or deep. These idioms let you talk precisely about risk, struggle, change and letting go.",
+  "know": [
+    "the conceptual metaphor <strong>LIFE IS A JOURNEY BY WATER</strong> and its link to the wider LIFE IS A JOURNEY",
+    "eight common idioms of water, depth, tides and boats"
+  ],
+  "understand": [
+    "the difference between being <em>in deep water</em> and being <em>in hot water</em>",
+    "why some idioms describe struggle, some describe progress and some describe change"
+  ],
+  "able": [
+    "describe difficulty, caution and turning points with idiomatic precision",
+    "choose between close pairs such as <em>tread water</em> and <em>keep your head above water</em>",
+    "talk about the past and moving on with <em>water under the bridge</em>"
+  ],
+  "mistakes": [
+    ["After the scandal, the minister is in hot water financially.", "The minister is <strong>in deep water</strong> financially. <em>Hot water</em> means trouble for doing wrong; <em>deep water</em> means serious difficulty."],
+    ["That argument is water below the bridge.", "That argument is <strong>water under the bridge</strong>. The preposition is fixed."],
+    ["I felt out of my deep at the new job.", "I felt <strong>out of my depth</strong>. The noun is <em>depth</em>."],
+    ["Let's test the water of the market first.", "Let's <strong>test the waters</strong> first. The idiom is usually plural and takes no <em>of</em>."],
+    ["Don't shake the boat, the deal is almost done.", "Don't <strong>rock the boat</strong>. Only <em>rock</em> works here."]
+  ],
+  "bigidea": [
+    "Lakoff and Johnson showed that English often treats LIFE IS A JOURNEY. When that journey is by water, we get a rich family of idioms: we <strong>navigate</strong> a career, <strong>steer</strong> a company, <strong>drift</strong> apart, and hope for <strong>plain sailing</strong>.",
+    "Water stands for forces we can't fully control. Its depth measures difficulty (<em>out of your depth</em>, <em>in deep water</em>), its movement stands for trends and change (<em>go with the flow</em>, <em>turn the tide</em>), and storms are crises we must <strong>weather</strong>.",
+    "For Canadians, with three oceans and the Great Lakes, these images are not abstract. The literal danger of water is what gives the metaphors their force."
+  ],
+  "hidden": [
+    "We need someone to <strong>steer</strong> the project through the next phase.",
+    "After university the two friends slowly <strong>drifted</strong> apart.",
+    "The company is <strong>navigating</strong> a difficult market.",
+    "There's a <strong>wave</strong> of resignations across the sector.",
+    "The economy is finally <strong>on an even keel</strong> again.",
+    "She was <strong>flooded</strong> with messages after the interview.",
+    "I'm <strong>drowning</strong> in paperwork this month.",
+    "Public opinion is <strong>flowing</strong> in the other direction now."
+  ],
+  "expressions": [
+    {"e": "test the waters", "meaning": "try something carefully to see how people react before committing", "example": "The senator is <strong>testing the waters</strong> for a leadership run.", "tone": "neutral",
+     "bend": "Usually plural <em>waters</em>; <em>test the water</em> is also heard in Britain. Often <em>test the waters for</em> + noun.",
+     "note": "Very common in politics and business. Near-synonym: <em>dip a toe in the water</em>, which suggests a small first step."},
+    {"e": "out of your depth", "meaning": "in a situation that is too difficult for your knowledge or ability", "example": "In the meeting with the tax lawyers, I felt completely <strong>out of my depth</strong>.", "tone": "neutral",
+     "bend": "Change the possessive: <em>out of her depth</em>, <em>way out of our depth</em>. Usually with <em>be</em> or <em>feel</em>.",
+     "note": "From swimming where your feet can't touch the bottom. It's about ability, not about having too much work."},
+    {"e": "keep your head above water", "meaning": "manage to survive, especially financially, but only just", "example": "With rent rising, many young families are struggling to <strong>keep their heads above water</strong>.", "tone": "neutral",
+     "bend": "<em>Just about keep our heads above water</em>, <em>struggle to keep your head above water</em>. Plural <em>heads</em> with plural subjects.",
+     "note": "Focus is on survival. Compare <em>tread water</em>, which focuses on making no progress."},
+    {"e": "tread water", "meaning": "stay in the same position without making progress", "example": "The negotiations have been <strong>treading water</strong> since the spring.", "tone": "neutral",
+     "bend": "Any tense: <em>we're just treading water</em>, <em>the economy trod water</em> (or <em>treaded</em>). No article before <em>water</em>.",
+     "note": "Usually mildly negative: you are busy but going nowhere."},
+    {"e": "turn the tide", "meaning": "change a situation, usually from bad to good", "example": "A late goal from the captain <strong>turned the tide</strong> in the final period.", "tone": "neutral",
+     "bend": "<em>Turn the tide against/in favour of</em>; also <em>the tide is turning</em>, <em>stem the tide</em> (stop a bad trend).",
+     "note": "Popular with sports commentators and historians. Watch the difference: <em>turn the tide</em> changes direction, <em>stem the tide</em> only stops it."},
+    {"e": "rock the boat", "meaning": "cause trouble by challenging a stable situation", "example": "He had doubts about the policy but didn't want to <strong>rock the boat</strong> before his review.", "tone": "casual",
+     "bend": "Usually negative: <em>don't rock the boat</em>, <em>I didn't want to rock the boat</em>. The wording is fixed.",
+     "note": "Can praise or criticise: someone who never rocks the boat may be loyal or simply timid."},
+    {"e": "water under the bridge", "meaning": "past problems that are forgotten or no longer matter", "example": "We fought a lot as teenagers, but that's all <strong>water under the bridge</strong> now.", "tone": "casual",
+     "bend": "Usually <em>it's (all) water under the bridge</em>. A fixed phrase: don't change the preposition.",
+     "note": "Signals forgiveness. Close to <em>bury the hatchet</em>, but that is an action; this describes the past."},
+    {"e": "in deep water", "meaning": "in serious difficulty", "example": "If the loan isn't approved by Friday, the business will be <strong>in deep water</strong>.", "tone": "neutral",
+     "bend": "<em>Get into deep water</em>, <em>be in deep water</em>. Not usually plural.",
+     "note": "Trap: <em>in hot water</em> means in trouble because you did something wrong and someone is angry. Deep water is just serious danger."}
+  ],
+  "culture": [
+    {"kind": "Literature", "work": "The Tempest", "by": "William Shakespeare", "year": "c. 1611",
+     "how": "The spirit Ariel sings to Ferdinand, who believes his father has drowned, describing how the sea has transformed the body into coral and pearls. This is where <strong>sea change</strong> comes from; today it means a complete, deep transformation.",
+     "ask": "What area of society has gone through a sea change in your lifetime?",
+     "find": "sea change The Tempest Ariel song meaning"},
+    {"kind": "Literature", "work": "Julius Caesar", "by": "William Shakespeare", "year": "1599",
+     "how": "Before the final battle, Brutus argues that opportunity in human life works like the tide: catch it at its height and it carries you to success; miss it and you may be stranded in the shallows for the rest of your life. It is the classic picture behind <strong>turn the tide</strong>.",
+     "ask": "Have you ever caught, or missed, a high tide in your own life?",
+     "find": "Brutus tide in the affairs of men Julius Caesar"},
+    {"kind": "Poetry", "work": "Not Waving but Drowning", "by": "Stevie Smith", "year": "1957",
+     "how": "A man dies in the sea and onlookers had assumed he was just waving and having fun. The poet turns this into a picture of someone who has struggled to keep their head above water all their life while everyone thought they were fine.",
+     "ask": "Why do people sometimes hide the fact that they are out of their depth?",
+     "find": "Stevie Smith Not Waving but Drowning"},
+    {"kind": "Music", "work": "Bridge over Troubled Water", "by": "Simon & Garfunkel", "year": "1970",
+     "how": "Paul Simon's song uses the title image as a promise of loyalty: when a friend's life becomes dangerous and stormy, the singer offers to become the safe way across. Troubled water stands for any hard time.",
+     "ask": "Who has been a bridge over troubled water for you, or for whom have you been one?",
+     "find": "Simon and Garfunkel Bridge over Troubled Water"},
+    {"kind": "Music", "work": "The Wreck of the Edmund Fitzgerald", "by": "Gordon Lightfoot", "year": "1976",
+     "how": "The Canadian singer tells the true story of a freighter that sank in a storm on Lake Superior in November 1975, with all 29 crew lost. Here water is not a metaphor at all, and the song reminds us of the real danger behind phrases like <strong>weather the storm</strong>.",
+     "ask": "Does the literal danger of water make these idioms feel stronger to you? Which ones?",
+     "find": "Gordon Lightfoot The Wreck of the Edmund Fitzgerald"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "test the waters", "r": "check reactions before committing", "why": "Like putting a foot in the lake before you swim."},
+      {"l": "out of your depth", "r": "in a situation beyond your ability", "why": "Your feet can't touch the bottom any more."},
+      {"l": "keep your head above water", "r": "only just survive, often financially", "why": "You're not drowning, but you're not comfortable either."},
+      {"l": "tread water", "r": "make no progress", "why": "Swimmers who tread water stay afloat but don't move forward."},
+      {"l": "turn the tide", "r": "reverse a situation", "why": "The direction of the water changes."},
+      {"l": "rock the boat", "r": "disturb a stable situation", "why": "Moving suddenly in a small boat can tip everyone out."},
+      {"l": "water under the bridge", "r": "past problems that no longer matter", "why": "The water has flowed past and won't come back."},
+      {"l": "in deep water", "r": "in serious difficulty", "why": "Deep water is dangerous. Not the same as in hot water."}
+    ],
+    "sort": {
+      "h": "Sort the expressions: do they describe <strong>struggling</strong>, things <strong>going smoothly</strong>, or <strong>changing direction</strong>?",
+      "cols": ["Struggling", "Going smoothly", "Changing direction"],
+      "items": [
+        {"w": "out of your depth", "c": 0, "why": "The situation is beyond your ability."},
+        {"w": "keep your head above water", "c": 0, "why": "You're only just surviving."},
+        {"w": "in deep water", "c": 0, "why": "You're in serious difficulty."},
+        {"w": "tread water", "c": 0, "why": "You're working hard but going nowhere."},
+        {"w": "plain sailing", "c": 1, "why": "Easy and without problems. North Americans also say smooth sailing."},
+        {"w": "go with the flow", "c": 1, "why": "You relax and accept what happens."},
+        {"w": "on an even keel", "c": 1, "why": "Stable and balanced, like a boat that isn't tipping."},
+        {"w": "ride the wave", "c": 1, "why": "You enjoy and take advantage of a period of success."},
+        {"w": "turn the tide", "c": 2, "why": "You reverse the situation."},
+        {"w": "a sea change", "c": 2, "why": "A complete transformation. From The Tempest."},
+        {"w": "change tack", "c": 2, "why": "A sailing term: try a different approach."},
+        {"w": "change course", "c": 2, "why": "Choose a new direction or plan."}
+      ]
+    },
+    "pick": [
+      {"q": "Before launching nationally, the brewery ___ with a few stores in Kingston.", "opts": ["tested the waters", "rocked the boat", "trod water"], "a": 0, "why": "A careful trial to see the reaction = test the waters."},
+      {"q": "The new hire was ___ in the board meeting; she'd never read a balance sheet.", "opts": ["out of her depth", "on an even keel", "going with the flow"], "a": 0, "why": "In a situation beyond her ability = out of her depth."},
+      {"q": "Since the plant closed, we've barely been able to ___.", "opts": ["rock the boat", "keep our heads above water", "turn the tide"], "a": 1, "why": "Only just surviving financially = keep our heads above water."},
+      {"q": "My career has been ___ for three years: same job, same salary, no new skills.", "opts": ["treading water", "turning the tide", "testing the waters"], "a": 0, "why": "No progress despite effort = treading water."},
+      {"q": "Vaccines helped ___ against the disease.", "opts": ["rock the boat", "turn the tide", "tread water"], "a": 1, "why": "Reversing a bad situation = turn the tide."},
+      {"q": "Everyone knew the schedule was impossible, but nobody wanted to ___ by saying so.", "opts": ["rock the boat", "test the waters", "go with the flow"], "a": 0, "why": "Causing trouble by challenging the situation = rock the boat."},
+      {"q": "We had a terrible falling-out years ago, but it's ___ now.", "opts": ["in deep water", "water under the bridge", "plain sailing"], "a": 1, "why": "Past problems that no longer matter = water under the bridge."},
+      {"q": "Without new investors, the airline will be ___ by the end of the year.", "opts": ["in deep water", "in hot water", "out of the woods"], "a": 0, "why": "Serious difficulty, not blame for wrongdoing = in deep water."}
+    ],
+    "spot": [
+      {"q": "The fishing industry is in hot water because fish stocks have collapsed.", "bad": "in hot water", "fix": "in deep water", "opts": ["in deep water", "in high water"], "why": "No one did anything wrong here; it's serious difficulty: in deep water."},
+      {"q": "Our old quarrel is water over the bridge now.", "bad": "water over the bridge", "fix": "water under the bridge", "opts": ["water under the bridge", "a bridge too far"], "why": "The phrase is fixed: water under the bridge."},
+      {"q": "I was completely out of my deep in the advanced class.", "bad": "out of my deep", "fix": "out of my depth", "opts": ["out of my depth", "out of my league"], "why": "The noun is depth. Out of my league is a different idiom about status."},
+      {"q": "Don't shake the boat now; the contract is nearly signed.", "bad": "shake the boat", "fix": "rock the boat", "opts": ["rock the boat", "miss the boat"], "why": "Only rock works. Miss the boat means miss an opportunity."},
+      {"q": "The striker's goal turned the wave in the second half.", "bad": "turned the wave", "fix": "turned the tide", "opts": ["turned the tide", "rode the wave"], "why": "Reversing a situation = turn the tide."}
+    ],
+    "type": [
+      {"q": "The company is testing the ___ with a small pilot project in Halifax.", "a": ["waters", "water"], "why": "Test the waters: try something carefully first. Waters is more common."},
+      {"q": "The young lawyer was clearly out of her ___ in the Supreme Court.", "a": ["depth"], "why": "Out of your depth: beyond your ability."},
+      {"q": "Both parents work two jobs just to keep their heads above ___.", "a": ["water"], "why": "Keep your head above water: only just survive."},
+      {"q": "Talks have been ___ water for weeks with no new offers.", "a": ["treading"], "why": "Tread water: make no progress."},
+      {"q": "Public support helped turn the ___ in favour of the new park.", "a": ["tide"], "why": "Turn the tide: reverse a situation."},
+      {"q": "There was a sea ___ in attitudes to smoking in the 1990s.", "a": ["change"], "why": "A sea change: a complete transformation. From The Tempest."}
+    ],
+    "bend": [
+      {"q": "Which version is a natural variation of turn the tide? ___", "opts": ["The tide is finally turning for the team.", "The tide is finally turned by the team's.", "The tides finally turn the team."], "a": 0, "why": "The tide is turning is a very common intransitive variation."},
+      {"q": "Which version sounds natural about a whole family? ___", "opts": ["We're just about keeping our head above waters.", "We're just about keeping our heads above water.", "We're just about keeping heads over water."], "a": 1, "why": "Plural subject, plural heads; water stays singular and above is fixed."},
+      {"q": "Which version sounds natural with an intensifier? ___", "opts": ["I was way out of my depth.", "I was out of my way depth.", "I was out of my depths way."], "a": 0, "why": "Way, completely or totally can go before out of your depth."},
+      {"q": "Which version is a natural variation of test the waters? ___", "opts": ["She's dipping a toe in the water with a part-time course.", "She's dipping the waters with a part-time course.", "She's testing a toe in the water with a part-time course."], "a": 0, "why": "Dip a toe in the water is a close cousin of test the waters: a small first try."}
+    ],
+    "talk": [
+      "Gordon Lightfoot's song is about a real shipwreck. Do you think it is respectful to use water and storm idioms for ordinary problems? Why or why not?",
+      "Brutus says opportunity is like a tide. Describe a moment when you caught the tide, or missed it.",
+      "Role-play: you're new on a team and think a process is wasteful. Decide whether to <strong>rock the boat</strong>. Use at least three expressions from this lesson.",
+      "Explain the difference between being <strong>in deep water</strong> and <strong>in hot water</strong> with an example from the news or your own life.",
+      "Stevie Smith's poem is about someone who looked fine but wasn't. How can friends or colleagues tell when someone is <strong>out of their depth</strong>?"
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "in hot water", "r": "in trouble for doing something wrong", "why": "Someone is angry with you. Compare in deep water: just serious difficulty."},
+      {"l": "plain sailing", "r": "easy, without problems", "why": "Sailing in good conditions. North Americans also say smooth sailing."},
+      {"l": "weather the storm", "r": "survive a difficult period", "why": "A ship that weathers a storm comes out the other side."},
+      {"l": "go with the flow", "r": "relax and accept what happens", "why": "You stop swimming against the current."},
+      {"l": "a sea change", "r": "a complete transformation", "why": "Coined by Shakespeare in The Tempest."},
+      {"l": "rock the boat", "r": "disturb a calm situation", "why": "Usually negative: don't rock the boat."}
+    ],
+    "pick": [
+      {"q": "My son is ___ with his teacher after he posted that video of her.", "opts": ["in hot water", "in deep water", "plain sailing"], "a": 0, "why": "In trouble for doing something wrong = in hot water."},
+      {"q": "Once we found a good contractor, the renovation was ___.", "opts": ["in deep water", "plain sailing", "treading water"], "a": 1, "why": "Easy, without problems = plain sailing."},
+      {"q": "Most small businesses managed to ___ during the pandemic with government loans.", "opts": ["weather the storm", "rock the boat", "test the waters"], "a": 0, "why": "Survive a difficult period = weather the storm."},
+      {"q": "On holiday I don't plan anything. I just ___.", "opts": ["tread water", "go with the flow", "turn the tide"], "a": 1, "why": "Relax and accept what happens = go with the flow."},
+      {"q": "There has been ___ in how employers view remote work since 2020.", "opts": ["a sea change", "water under the bridge", "a shot across the bow"], "a": 0, "why": "A deep, complete transformation = a sea change."},
+      {"q": "Our new manager is so keen to ___ that she changed every process in her first week.", "opts": ["go with the flow", "rock the boat", "tread water"], "a": 1, "why": "Disturbing a stable situation = rock the boat."}
+    ],
+    "spot": [
+      {"q": "The bank weathered the rain and reported a profit by year end.", "bad": "weathered the rain", "fix": "weathered the storm", "opts": ["weathered the storm", "weathered the wind"], "why": "The idiom is weather the storm: survive a crisis."},
+      {"q": "Once the permits came through, the project was flat sailing.", "bad": "flat sailing", "fix": "plain sailing", "opts": ["plain sailing", "smooth waters"], "why": "Plain sailing (or smooth sailing in North America)."},
+      {"q": "He's in deep water with his wife for forgetting their anniversary.", "bad": "in deep water", "fix": "in hot water", "opts": ["in hot water", "in the deep end"], "why": "Someone is angry about something he did wrong: in hot water."},
+      {"q": "I don't like planning every detail; I prefer to go with the stream.", "bad": "go with the stream", "fix": "go with the flow", "opts": ["go with the flow", "go with the tide"], "why": "The fixed phrase is go with the flow."}
+    ],
+    "type": [
+      {"q": "The hospital weathered the ___ despite three years of cuts.", "a": ["storm"], "why": "Weather the storm: survive a difficult period."},
+      {"q": "After the first week, the new job was plain ___.", "a": ["sailing"], "why": "Plain sailing: easy, without problems."},
+      {"q": "The mayor is in hot ___ over those expense claims.", "a": ["water"], "why": "In hot water: in trouble for doing something wrong."},
+      {"q": "Don't stress about the itinerary. Just go with the ___.", "a": ["flow"], "why": "Go with the flow: relax and accept what happens."},
+      {"q": "I know you're unhappy, but please don't ___ the boat before the merger.", "a": ["rock"], "why": "Rock the boat: disturb a stable situation."},
+      {"q": "We argued about the will for years, but it's water under the ___ now.", "a": ["bridge"], "why": "Water under the bridge: past problems that no longer matter."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "The author ___ by posting a few chapters online before finding a publisher.", "opts": ["tested the waters", "rocked the boat", "trod water"], "a": "tested the waters", "why": "A careful trial first = test the waters."},
+    {"type": "pick", "q": "I was ___ at the wine tasting; everyone else knew the vintages.", "opts": ["out of my depth", "plain sailing", "in hot water"], "a": "out of my depth", "why": "Beyond your knowledge = out of your depth."},
+    {"type": "pick", "q": "With two kids in daycare, we're barely ___.", "opts": ["keeping our heads above water", "turning the tide", "testing the waters"], "a": "keeping our heads above water", "why": "Only just surviving financially = keeping our heads above water."},
+    {"type": "pick", "q": "The project has been ___ since the lead designer left.", "opts": ["treading water", "turning the tide", "going with the flow"], "a": "treading water", "why": "No progress = treading water."},
+    {"type": "pick", "q": "New evidence ___ in the defendant's favour.", "opts": ["turned the tide", "rocked the boat", "trod water"], "a": "turned the tide", "why": "Reversing a situation = turn the tide."},
+    {"type": "pick", "q": "She agreed with the plan in public because she didn't want to ___.", "opts": ["rock the boat", "weather the storm", "test the waters"], "a": "rock the boat", "why": "Avoiding conflict by not challenging things = not rock the boat."},
+    {"type": "pick", "q": "Don't worry about what you said at the party. It's ___.", "opts": ["water under the bridge", "in deep water", "a sea change"], "a": "water under the bridge", "why": "A past problem that no longer matters = water under the bridge."},
+    {"type": "pick", "q": "The team got ___ with the league for breaking the salary cap.", "opts": ["in hot water", "plain sailing", "out of its depth"], "a": "in hot water", "why": "Trouble for breaking rules = in hot water."},
+    {"type": "type", "q": "The airline is in ___ water after losing its biggest route.", "a": ["deep"], "why": "In deep water: in serious difficulty."},
+    {"type": "type", "q": "Let's test the ___ before we announce the price increase.", "a": ["waters", "water"], "why": "Test the waters: check reactions first."},
+    {"type": "type", "q": "The goalie's saves helped turn the ___ in the third period.", "a": ["tide"], "why": "Turn the tide: change the direction of a game or situation."},
+    {"type": "type", "q": "The family business weathered the ___ of the recession.", "a": ["storm"], "why": "Weather the storm: survive a crisis."},
+    {"type": "type", "q": "His views on marriage have undergone a sea ___ since he had kids.", "a": ["change"], "why": "A sea change: a deep transformation. Coined in The Tempest."},
+    {"type": "spot", "q": "The new trainee is out of his deep with the accounting software.", "bad": "out of his deep", "fix": "out of his depth", "opts": ["out of his depth", "out of his league"], "why": "The noun is depth: out of your depth."},
+    {"type": "spot", "q": "The talks have been treading waves for months.", "bad": "treading waves", "fix": "treading water", "opts": ["treading water", "riding waves"], "why": "Tread water: stay in place without progress."},
+    {"type": "spot", "q": "Our old disagreements are all water under the bridge now.", "bad": "", "why": "Correct! Water under the bridge = past problems that no longer matter."},
+    {"type": "spot", "q": "Once we hired a planner, organising the wedding was plain sailing.", "bad": "", "why": "Correct! Plain sailing = easy and without problems."},
+    {"type": "order", "a": "We are just about keeping our heads above water.", "alt": [], "why": "Just about softens it: we are surviving, but only barely."},
+    {"type": "order", "a": "I felt completely out of my depth at first.", "alt": [], "why": "Feel + completely + out of my depth + time phrase."},
+    {"type": "order", "a": "Nobody wanted to rock the boat before the election.", "alt": [], "why": "Usually negative: nobody wanted to rock the boat."}
+  ]
+}

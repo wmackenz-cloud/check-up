@@ -1,0 +1,206 @@
+{
+  "n": 3,
+  "title": "Ideas Are Food",
+  "tagline": "thinking, accepting and learning",
+  "why": "English treats ideas as things we cook, serve, taste and digest. Knowing the system lets you describe how good an idea is, how hard it is to accept and how it is presented.",
+  "know": [
+    "the conceptual metaphor <strong>IDEAS ARE FOOD</strong> and its everyday traces",
+    "eight common food idioms for thinking, accepting and teaching"
+  ],
+  "understand": [
+    "why we <em>digest</em> information and call a weak plan <em>half-baked</em>",
+    "which idioms praise, criticise or simply describe"
+  ],
+  "able": [
+    "evaluate ideas and proposals with precise, idiomatic language",
+    "criticise tactfully, for example a plan that is <em>half-baked</em> or news that is <em>hard to swallow</em>",
+    "avoid common distortions such as <em>the proof is in the pudding</em> in formal writing"
+  ],
+  "mistakes": [
+    ["That gave me a food for thought.", "That gave me <strong>food for thought</strong>. It's uncountable: no <em>a</em>."],
+    ["The proof is in the pudding.", "<strong>The proof of the pudding is in the eating.</strong> The short form is very common in North America, but the full proverb makes the logic clear: you judge by results."],
+    ["His plan is half-cooked.", "His plan is <strong>half-baked</strong>. Only <em>baked</em> works in this idiom."],
+    ["I have a lot in my plate this month.", "I have a lot <strong>on</strong> my plate. Food sits on a plate."],
+    ["Don't sugar my news, just tell me.", "Don't <strong>sugar-coat</strong> it. The verb is <em>sugar-coat</em>."]
+  ],
+  "bigidea": [
+    "Lakoff and Johnson noticed that English treats ideas like food. We <strong>cook up</strong> a plan, find a theory <strong>hard to swallow</strong>, need time to <strong>digest</strong> a report, and have a <strong>taste for</strong> history. Data that hasn't been processed is <strong>raw</strong>.",
+    "The metaphor maps the whole meal onto thinking: preparing ideas (<em>half-baked</em>, <em>cooked up</em>), serving them (<em>spoon-feed</em>, <em>sugar-coat</em>), and taking them in (<em>chew over</em>, <em>swallow</em>, <em>digest</em>). Students who only repeat facts <strong>regurgitate</strong> them, which is not a compliment.",
+    "Because eating is so physical, these idioms are vivid and often evaluative. A <strong>meaty</strong> argument has substance; a <strong>half-baked</strong> one does not."
+  ],
+  "hidden": [
+    "I need a few days to <strong>digest</strong> all this information.",
+    "It's a <strong>meaty</strong> report with plenty to discuss.",
+    "We have the <strong>raw</strong> data, but nobody has analysed it yet.",
+    "They <strong>cooked up</strong> a plan to surprise their parents.",
+    "Don't just <strong>regurgitate</strong> the textbook. Tell me what you think.",
+    "She developed a <strong>taste for</strong> politics at university.",
+    "I'm still trying to <strong>swallow</strong> the idea that he's retiring.",
+    "The documentary left a <strong>bitter taste</strong> in my mouth."
+  ],
+  "expressions": [
+    {"e": "food for thought", "meaning": "something worth thinking about carefully", "example": "The speaker's comments on loneliness gave us all <strong>food for thought</strong>.", "tone": "neutral",
+     "bend": "Uncountable: <em>give someone food for thought</em>, <em>plenty of food for thought</em>, <em>real food for thought</em>.",
+     "note": "Polite and positive. In a meeting, <em>That's food for thought</em> can also be a diplomatic way of saying <em>I'm not convinced yet</em>."},
+    {"e": "half-baked", "meaning": "(of an idea or plan) not properly thought out", "example": "The council's <strong>half-baked</strong> parking scheme lasted three weeks.", "tone": "dismissive",
+     "bend": "Adjective before a noun (<em>a half-baked idea</em>) or after <em>be</em> (<em>the plan is half-baked</em>). Fixed: always <em>baked</em>.",
+     "note": "Quite critical. To soften, say <em>it needs more work</em> or <em>it isn't fully developed yet</em>."},
+    {"e": "hard to swallow", "meaning": "difficult to accept or believe", "example": "The news that the clinic would close was <strong>hard to swallow</strong>.", "tone": "neutral",
+     "bend": "Also <em>difficult to swallow</em>, <em>a bitter pill to swallow</em>, or the verb alone: <em>I can't swallow that excuse</em>.",
+     "note": "Can mean emotionally painful (bad news) or not believable (a weak excuse). Context decides."},
+    {"e": "chew it over", "meaning": "think about something carefully before deciding", "example": "It's a generous offer, but let me <strong>chew it over</strong> this weekend.", "tone": "casual",
+     "bend": "Separable: <em>chew over the offer</em> / <em>chew it over</em>. Also <em>chew on it</em>.",
+     "note": "Friendly and informal. In formal writing use <em>consider</em> or <em>reflect on</em>."},
+    {"e": "sugar-coat", "meaning": "make bad news sound better than it really is", "example": "Please don't <strong>sugar-coat</strong> it, doctor. How serious is it?", "tone": "neutral",
+     "bend": "A verb: <em>sugar-coat the truth</em>, <em>a sugar-coated version</em>. Often negative: <em>I won't sugar-coat this</em>.",
+     "note": "Like a sweet coating on a bitter pill. Compare <em>sweeten the deal</em>, which means adding a real benefit."},
+    {"e": "spoon-feed", "meaning": "give people information so simply that they don't have to think", "example": "University lecturers won't <strong>spoon-feed</strong> you the way some high-school teachers do.", "tone": "dismissive",
+     "bend": "<em>Spoon-feed someone</em> or <em>spoon-feed information to someone</em>; past tense <em>spoon-fed</em>.",
+     "note": "Critical of both sides: the teacher who over-helps and the learner who waits to be fed."},
+    {"e": "have a lot on your plate", "meaning": "have many tasks or problems to deal with", "example": "With a new baby and a house move, they <strong>have a lot on their plate</strong>.", "tone": "casual",
+     "bend": "<em>Have too much / enough on your plate</em>; <em>with everything on her plate</em>.",
+     "note": "A sympathetic way to explain why someone is busy or stressed. British speakers also say <em>have a lot on</em>."},
+    {"e": "bring something to the table", "meaning": "offer a useful skill, idea or resource", "example": "Her years in Nunavut <strong>bring</strong> a valuable perspective <strong>to the table</strong>.", "tone": "neutral",
+     "bend": "Name the thing: <em>bring experience/energy/a fresh perspective to the table</em>. Question: <em>What do you bring to the table?</em>",
+     "note": "Very common in job interviews and business. Can sound like jargon if repeated."}
+  ],
+  "culture": [
+    {"kind": "Literature", "work": "Antony and Cleopatra", "by": "William Shakespeare", "year": "c. 1606",
+     "how": "Cleopatra looks back on her earlier romance with Julius Caesar and dismisses it as belonging to her <strong>salad days</strong>, when she was young, inexperienced and as green as fresh leaves. Shakespeare coined the phrase, which now means a carefree and naive youth.",
+     "ask": "What were your salad days like? What did you believe then that makes you smile now?",
+     "find": "salad days Shakespeare Antony and Cleopatra meaning"},
+    {"kind": "Literature", "work": "The Fox and the Grapes", "by": "Aesop", "year": "c. 6th century BCE",
+     "how": "A hungry fox fails to reach a bunch of grapes and walks away telling himself they were probably sour anyway. The fable gave English <strong>sour grapes</strong>: pretending you never wanted something you couldn't have.",
+     "ask": "Can you think of a public figure or company whose criticism looked like sour grapes?",
+     "find": "Aesop The Fox and the Grapes sour grapes"},
+    {"kind": "Poetry", "work": "Harlem", "by": "Langston Hughes", "year": "1951",
+     "how": "Hughes asks what happens to a dream that is put off for too long, and imagines it spoiling like food: drying up like a raisin in the sun, festering, going rotten. The dream is food that has been left uneaten. The poem gave Lorraine Hansberry the title of her 1959 play <em>A Raisin in the Sun</em>.",
+     "ask": "What happens to a dream or plan that is postponed for years? Is food a good metaphor for it?",
+     "find": "Langston Hughes Harlem dream deferred"},
+    {"kind": "Music", "work": "Food for Thought", "by": "UB40", "year": "1980",
+     "how": "The Birmingham reggae band's first single takes the idiom as its title, but the song is about real hunger: it contrasts Christmas feasting in rich countries with famine elsewhere. The double meaning makes listeners think about literal food and thought at the same time.",
+     "ask": "Why might a songwriter choose an idiom with a literal meaning that matches the song's subject?",
+     "find": "UB40 Food for Thought"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "food for thought", "r": "something worth thinking about", "why": "The idea feeds your mind."},
+      {"l": "half-baked", "r": "not properly thought out", "why": "Like a cake taken out of the oven too soon."},
+      {"l": "hard to swallow", "r": "difficult to accept or believe", "why": "Your mind refuses it, as your throat refuses something unpleasant."},
+      {"l": "chew it over", "r": "think about it carefully", "why": "You take time, as you do when you chew slowly."},
+      {"l": "sugar-coat", "r": "make bad news sound better", "why": "Like the sweet coating on a bitter pill."},
+      {"l": "spoon-feed", "r": "make things too easy for learners", "why": "Like feeding a baby who can't use a spoon yet."},
+      {"l": "have a lot on your plate", "r": "have many things to deal with", "why": "Your plate is full, so you can't take more."},
+      {"l": "bring something to the table", "r": "contribute something useful", "why": "Like bringing a dish to share at a meal."}
+    ],
+    "sort": {
+      "h": "Sort the expressions: are they about <strong>thinking an idea through</strong>, an idea that is <strong>not ready or not good</strong>, or <strong>serving ideas to others</strong>?",
+      "cols": ["Thinking it through", "Not ready or not good", "Serving it to others"],
+      "items": [
+        {"w": "chew it over", "c": 0, "why": "You think about it slowly and carefully."},
+        {"w": "digest a report", "c": 0, "why": "You take time to understand it fully."},
+        {"w": "food for thought", "c": 0, "why": "Something that gives you plenty to think about."},
+        {"w": "devour a novel", "c": 0, "why": "You read it eagerly and fast."},
+        {"w": "half-baked", "c": 1, "why": "The idea was taken out of the oven too soon."},
+        {"w": "raw data", "c": 1, "why": "Information that hasn't been processed yet."},
+        {"w": "a rehash", "c": 1, "why": "Old ideas reheated and served again."},
+        {"w": "sugar-coat", "c": 2, "why": "You present bad news as sweeter than it is."},
+        {"w": "spoon-feed", "c": 2, "why": "You give information in tiny, easy portions."},
+        {"w": "serve up", "c": 2, "why": "You present or offer something, often to an audience."},
+        {"w": "regurgitate", "c": 2, "why": "You repeat facts without understanding or adding anything."}
+      ]
+    },
+    "pick": [
+      {"q": "The guest lecture on aging gave the nursing students plenty of ___.", "opts": ["food for thought", "sour grapes", "salad days"], "a": 0, "why": "Something worth thinking about = food for thought."},
+      {"q": "The minister announced a ___ scheme to cut wait times with no funding and no staff.", "opts": ["hard to swallow", "half-baked", "meaty"], "a": 1, "why": "A plan with no thought behind it is half-baked."},
+      {"q": "After forty years at the plant, being let go by email was ___.", "opts": ["hard to swallow", "food for thought", "spoon-fed"], "a": 0, "why": "Painful and difficult to accept = hard to swallow."},
+      {"q": "I'm not saying no. Let me ___ and call you on Monday.", "opts": ["sugar-coat it", "chew it over", "spoon-feed it"], "a": 1, "why": "Asking for time to think = chew it over."},
+      {"q": "I won't ___: the company lost money every month this year.", "opts": ["sugar-coat it", "chew it over", "bring it to the table"], "a": 0, "why": "Promising not to soften bad news = I won't sugar-coat it."},
+      {"q": "Some trainers ___ new staff, so they never learn to solve problems themselves.", "opts": ["chew over", "spoon-feed", "sugar-coat"], "a": 1, "why": "Making learning too easy = spoon-feed."},
+      {"q": "Let's not give Priya the extra project; she ___ already.", "opts": ["has a lot on her plate", "brings a lot to the table", "is hard to swallow"], "a": 0, "why": "Already busy with many tasks = has a lot on her plate."},
+      {"q": "As a former nurse, she ___ that most of the board can't.", "opts": ["has a lot on her plate", "brings something to the table", "sugar-coats something"], "a": 1, "why": "Contributing a useful skill or perspective = bring something to the table."}
+    ],
+    "spot": [
+      {"q": "The film about climate refugees gave me a food for thought.", "bad": "a food for thought", "fix": "food for thought", "opts": ["food for thought", "the food for thought"], "why": "Uncountable: no article before food for thought."},
+      {"q": "The mayor's half-cooked plan to ban cars downtown was dropped within a week.", "bad": "half-cooked", "fix": "half-baked", "opts": ["half-baked", "half-done"], "why": "Only baked works: a half-baked plan."},
+      {"q": "With two jobs and a sick parent, Marco has a lot in his plate.", "bad": "a lot in his plate", "fix": "a lot on his plate", "opts": ["a lot on his plate", "a lot of his plate"], "why": "Food sits on a plate: have a lot on your plate."},
+      {"q": "The doctor didn't sugar the diagnosis; she told me exactly what to expect.", "bad": "sugar the diagnosis", "fix": "sugar-coat the diagnosis", "opts": ["sugar-coat the diagnosis", "sweeten the deal"], "why": "The verb is sugar-coat. Sweeten the deal means add a benefit."},
+      {"q": "What exactly will you bring on the table if we hire you?", "bad": "bring on the table", "fix": "bring to the table", "opts": ["bring to the table", "put on the plate"], "why": "You bring something to the table, like a dish to a shared meal."}
+    ],
+    "type": [
+      {"q": "The report is full of ___ for thought about rural health care.", "a": ["food"], "why": "Food for thought: something worth thinking about."},
+      {"q": "Honestly, the whole marketing strategy seems half-___ to me.", "a": ["baked"], "why": "Half-baked: not properly thought out."},
+      {"q": "Losing the final in overtime was a bitter pill to ___.", "a": ["swallow"], "why": "A bitter pill to swallow: something painful you must accept."},
+      {"q": "Take a few days to ___ it over before you sign the contract.", "a": ["chew"], "why": "Chew it over: think carefully before deciding."},
+      {"q": "Good teachers don't ___-feed their students; they make them think.", "a": ["spoon"], "why": "Spoon-feed: make learning so easy that no thinking is needed."},
+      {"q": "Her criticism of the winning design was just sour ___.", "a": ["grapes"], "why": "Sour grapes: criticising what you couldn't have. From Aesop."}
+    ],
+    "bend": [
+      {"q": "Which version sounds natural after an interesting talk? ___", "opts": ["That gives us plenty of food for thought.", "That gives us plenty of foods for thought.", "That gives us plenty of food for thinking."], "a": 0, "why": "Food for thought is uncountable and fixed, but plenty of or real can go before it."},
+      {"q": "Which version is a natural variation of hard to swallow? ___", "opts": ["The price rise was a bitter pill to swallow.", "The price rise was a hard pill of swallowing.", "The price rise was swallowing hard."], "a": 0, "why": "A bitter pill to swallow is a common extended form of the same image."},
+      {"q": "Which version sounds natural with a pronoun? ___", "opts": ["I'll chew over it and get back to you.", "I'll chew it over and get back to you.", "I'll chew it and get back over to you."], "a": 1, "why": "With a pronoun, separable phrasal verbs split: chew it over."},
+      {"q": "Which version sounds natural in a job interview? ___", "opts": ["I bring ten years of sales experience to the table.", "I bring to the table of sales ten years.", "I table ten years of sales experience."], "a": 0, "why": "Bring + the contribution + to the table. Table as a verb means something else."}
+    ],
+    "talk": [
+      "Langston Hughes compares a postponed dream to food left too long. Describe a dream or plan that you or someone you know put off. What happened to it?",
+      "Is it ever right to <strong>sugar-coat</strong> bad news? Think about doctors, teachers, parents and politicians.",
+      "Role-play: you are interviewing for a job you really want. Explain what you <strong>bring to the table</strong> and ask for time to <strong>chew over</strong> the offer.",
+      "Do schools today <strong>spoon-feed</strong> students, or do they push them to think? Compare with your own education.",
+      "Describe your <strong>salad days</strong>. Where were you, and what did you believe about the world?"
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "sour grapes", "r": "pretending not to want what you couldn't get", "why": "From Aesop's fox, who decided the grapes he couldn't reach were sour."},
+      {"l": "salad days", "r": "your young and inexperienced years", "why": "Coined by Shakespeare in Antony and Cleopatra. Green like salad."},
+      {"l": "the proof of the pudding is in the eating", "r": "you judge something by its results", "why": "Proof once meant test: you test a pudding by eating it."},
+      {"l": "half-baked", "r": "badly thought out", "why": "Dismissive: the idea needed more time in the oven."},
+      {"l": "food for thought", "r": "an idea worth reflecting on", "why": "Positive and polite. Uncountable."},
+      {"l": "spoon-feed", "r": "over-simplify for someone", "why": "Critical: the learner never has to think."}
+    ],
+    "pick": [
+      {"q": "He says the award means nothing, but that's just ___ because he wasn't nominated.", "opts": ["sour grapes", "salad days", "food for thought"], "a": 0, "why": "Criticising what you couldn't get = sour grapes."},
+      {"q": "In our ___ we hitchhiked across the Prairies with forty dollars.", "opts": ["sour grapes", "salad days", "half-baked days"], "a": 1, "why": "Your carefree youth = your salad days."},
+      {"q": "The new system looks good on paper, but ___. Let's see how it works in practice.", "opts": ["it's hard to swallow", "the proof of the pudding is in the eating", "it's food for thought"], "a": 1, "why": "Judging by results, not appearances = the proof of the pudding is in the eating."},
+      {"q": "The textbook ___ everything, so students never learn to find answers themselves.", "opts": ["spoon-feeds", "chews over", "brings to the table"], "a": 0, "why": "Making things too easy = spoon-feeds."},
+      {"q": "Her excuse that the dog deleted the file was a little ___.", "opts": ["hard to swallow", "on her plate", "food for thought"], "a": 0, "why": "Difficult to believe = hard to swallow."},
+      {"q": "Between the renovation and her mother's surgery, Leila ___ right now.", "opts": ["brings a lot to the table", "has a lot on her plate", "chews it over"], "a": 1, "why": "Many problems at once = has a lot on her plate."}
+    ],
+    "spot": [
+      {"q": "Losing the contract to a smaller firm was a bitter pill to chew.", "bad": "a bitter pill to chew", "fix": "a bitter pill to swallow", "opts": ["a bitter pill to swallow", "a bitter pill to taste"], "why": "Pills are swallowed: a bitter pill to swallow."},
+      {"q": "His complaints about the winner sound like sour apples to me.", "bad": "sour apples", "fix": "sour grapes", "opts": ["sour grapes", "bad apples"], "why": "From Aesop: sour grapes. A bad apple is a dishonest person."},
+      {"q": "In her salad years she played bass in a punk band.", "bad": "salad years", "fix": "salad days", "opts": ["salad days", "golden years"], "why": "Shakespeare's phrase is salad days. Golden years means old age."},
+      {"q": "I don't want to spoon-eat you, so try the first problem on your own.", "bad": "spoon-eat", "fix": "spoon-feed", "opts": ["spoon-feed", "hand-feed"], "why": "The idiom is spoon-feed: someone else feeds you."}
+    ],
+    "type": [
+      {"q": "The theory sounds fine, but the proof of the ___ is in the eating.", "a": ["pudding"], "why": "Judge by results. Proof meant test."},
+      {"q": "When we were young and broke in Toronto, those were our salad ___.", "a": ["days"], "why": "Salad days: your naive, carefree youth."},
+      {"q": "The candidate who lost called the vote rigged, but most people saw it as sour ___.", "a": ["grapes"], "why": "Sour grapes: bitterness about losing."},
+      {"q": "I can't take on the extra shift; I've got too much on my ___.", "a": ["plate"], "why": "Too much on my plate: too many responsibilities."},
+      {"q": "Don't sugar-___ it. Did we get the grant or not?", "a": ["coat"], "why": "Sugar-coat: make bad news sound better."},
+      {"q": "Let me chew ___ your proposal over the weekend.", "a": ["over", "on"], "why": "Chew over or chew on: think carefully."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "The podcast on Indigenous languages gave me real ___.", "opts": ["food for thought", "sour grapes", "a lot on my plate"], "a": "food for thought", "why": "Something worth thinking about = food for thought."},
+    {"type": "pick", "q": "It was a ___ idea to open a ski shop in a town with no snow.", "opts": ["meaty", "half-baked", "hard to swallow"], "a": "half-baked", "why": "Badly thought out = half-baked."},
+    {"type": "pick", "q": "The news that the factory was moving overseas was ___ for the whole town.", "opts": ["hard to swallow", "food for thought", "half-baked"], "a": "hard to swallow", "why": "Painful to accept = hard to swallow."},
+    {"type": "pick", "q": "Before you accept the transfer, ___ with your family.", "opts": ["chew it over", "sugar-coat it", "spoon-feed it"], "a": "chew it over", "why": "Think carefully first = chew it over."},
+    {"type": "pick", "q": "The report ___ the problems, but the auditors saw through it.", "opts": ["sugar-coated", "chewed over", "spoon-fed"], "a": "sugar-coated", "why": "Making bad news sound better = sugar-coat."},
+    {"type": "pick", "q": "Don't ___ the trainees; let them make a few mistakes.", "opts": ["spoon-feed", "chew over", "bring to the table"], "a": "spoon-feed", "why": "Making things too easy = spoon-feed."},
+    {"type": "pick", "q": "I'd love to help with the fundraiser, but I ___ until June.", "opts": ["have a lot on my plate", "bring a lot to the table", "am half-baked"], "a": "have a lot on my plate", "why": "Too busy = have a lot on my plate."},
+    {"type": "pick", "q": "Each volunteer ___, whether it's cooking, driving or just a friendly face.", "opts": ["brings something to the table", "has a lot on their plate", "sugar-coats something"], "a": "brings something to the table", "why": "Contributing something useful = bring something to the table."},
+    {"type": "type", "q": "The minister's ___-baked reforms were withdrawn after a month.", "a": ["half"], "why": "Half-baked: not properly thought out."},
+    {"type": "type", "q": "You'll need time to ___ all this information; it's a lot.", "a": ["digest", "process"], "why": "Digest information: take time to understand it."},
+    {"type": "type", "q": "Calling the prize meaningless after losing it is just sour ___.", "a": ["grapes"], "why": "Sour grapes: pretending you didn't want it."},
+    {"type": "type", "q": "Don't just ___ the lecture notes; tell me what you think.", "a": ["regurgitate", "repeat"], "why": "Regurgitate: repeat without understanding."},
+    {"type": "type", "q": "That essay on housing gave me a lot of food for ___.", "a": ["thought"], "why": "Food for thought: something worth thinking about."},
+    {"type": "spot", "q": "With exams and a part-time job, my daughter has a lot in her plate.", "bad": "a lot in her plate", "fix": "a lot on her plate", "opts": ["a lot on her plate", "a lot of her plate"], "why": "On, not in: a lot on your plate."},
+    {"type": "spot", "q": "I'll chew it out and let you know tomorrow.", "bad": "chew it out", "fix": "chew it over", "opts": ["chew it over", "chew it up"], "why": "Chew it over = think about it. Chew someone out means scold them."},
+    {"type": "spot", "q": "The new coach brings years of international experience to the table.", "bad": "", "why": "Correct! Bring + contribution + to the table."},
+    {"type": "spot", "q": "His story about being kidnapped by aliens was hard to swallow.", "bad": "", "why": "Correct! Hard to swallow = difficult to believe."},
+    {"type": "order", "a": "The lecture gave everyone plenty of food for thought.", "alt": [], "why": "Give someone plenty of food for thought. No article."},
+    {"type": "order", "a": "Please do not sugar-coat the results for the board.", "alt": [], "why": "Do not + sugar-coat + the thing being softened."},
+    {"type": "order", "a": "She has far too much on her plate this year.", "alt": [], "why": "Have far too much on your plate: too many responsibilities."}
+  ]
+}

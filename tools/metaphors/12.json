@@ -1,0 +1,210 @@
+{
+  "n": 12,
+  "title": "Bending the Rules",
+  "tagline": "playing with idioms, and the garbled forms to avoid",
+  "why": "Native speakers twist idioms on purpose for humour, headlines and emphasis, and they also garble them by accident. Knowing the difference lets you enjoy wordplay, avoid embarrassing errors and judge when a fixed phrase is better left alone.",
+  "know": [
+    "the correct forms of eight commonly garbled expressions, such as <em>for all intents and purposes</em> and <em>a moot point</em>",
+    "the terms <em>mixed metaphor</em>, <em>malapropism</em>, <em>eggcorn</em> and <em>dead metaphor</em>"
+  ],
+  "understand": [
+    "that a deliberate twist works only when the original idiom is instantly recognisable",
+    "why stale cliches weaken writing, and when plain language beats an idiom"
+  ],
+  "able": [
+    "spot and correct garbled idioms in speech and writing",
+    "extend or twist a metaphor deliberately for effect",
+    "decide when not to use an idiom at all"
+  ],
+  "mistakes": [
+    ["For all intensive purposes, the deal is done.", "For <strong>all intents and purposes</strong>, the deal is done. A classic mishearing, known as an eggcorn."],
+    ["We'll burn that bridge when we come to it.", "We'll <strong>cross</strong> that bridge when we come to it. Mixing in <em>burn your bridges</em> is only funny on purpose."],
+    ["Ironically, it rained on the day of our picnic.", "<strong>Unfortunately</strong>, it rained on the day of our picnic. Bad luck isn't irony; irony needs a reversal of expectation."],
+    ["The new policy gives managers free reign.", "The new policy gives managers <strong>free rein</strong>. From riding: loose reins, not a king's reign."],
+    ["(Cover letter) I'm a team player who thinks outside the box and hits the ground running.", "<strong>Replace stacked cliches with specifics</strong>: name a result you achieved. Too many idioms in formal writing sound empty."]
+  ],
+  "bigidea": [
+    "Idioms are fixed, but not frozen. Natives bend them for effect: headline writers love puns, such as <em>grate expectations</em> for a story about a cheese shop, and comedians extend a familiar image until it becomes absurd. The trick works only because everyone knows the original.",
+    "Accidental bending is different. A <strong>mixed metaphor</strong> joins two images that clash (<em>we'll burn that bridge when we come to it</em>). A <strong>malapropism</strong> swaps in a similar-sounding wrong word (<em>a mute point</em>). Some speakers turn this into a style: the baseball player Yogi Berra became famous for odd but memorable sayings such as <em>it ain't over till it's over</em>.",
+    "Finally, many metaphors are <strong>dead</strong>: nobody notices that a <em>deadline</em> or the <em>foot</em> of a mountain is figurative. Writers can revive a dead metaphor by taking it literally. George Orwell warned against the half-dead ones in between: worn-out images that people use to avoid thinking."
+  ],
+  "hidden": [
+    "We're coming up to the <strong>deadline</strong>.",
+    "She's the <strong>head</strong> of the department.",
+    "The <strong>foot</strong> of the mountain was covered in fog.",
+    "I finally <strong>grasp</strong> the idea.",
+    "Traffic hit a <strong>bottleneck</strong> near the bridge.",
+    "Prices <strong>skyrocketed</strong> after the storm.",
+    "Let's <strong>tackle</strong> the agenda."
+  ],
+  "expressions": [
+    {"e": "for all intents and purposes", "meaning": "in every practical sense; virtually", "example": "<strong>For all intents and purposes</strong>, the election was over by nine o'clock.", "tone": "formal",
+     "bend": "Fixed: don't change it. Commonly misheard as <em>for all intensive purposes</em>.",
+     "note": "Slightly formal and wordy. In concise writing, <em>effectively</em> or <em>in practice</em> is often better."},
+    {"e": "nip it in the bud", "meaning": "stop something at an early stage", "example": "If a new hire is rude to customers, <strong>nip it in the bud</strong> on day one.", "tone": "neutral",
+     "bend": "The object can change (<em>nip the problem in the bud</em>); <em>nip</em> and <em>bud</em> are fixed.",
+     "note": "The garble <em>nip it in the butt</em> is a real error and a popular joke. The image is pinching off a flower bud."},
+    {"e": "a moot point", "meaning": "a question that no longer matters, or one still open to debate", "example": "Whether we should have hired more staff is <strong>a moot point</strong> now that the shop has closed.", "tone": "formal",
+     "bend": "Fixed: <em>moot</em>, never <em>mute</em>. Also <em>the point is moot</em>.",
+     "note": "In North America it usually means irrelevant; in British usage it can still mean debatable. Context decides."},
+    {"e": "I couldn't care less", "meaning": "I don't care at all", "example": "Honestly, <strong>I couldn't care less</strong> who wins the cooking show.", "tone": "dismissive",
+     "bend": "Many Americans say <em>I could care less</em> with the same meaning. It's common but widely criticised; use <em>couldn't</em> in careful speech.",
+     "note": "Can sound rude. Softer options: <em>I'm not too bothered</em> or <em>it doesn't really matter to me</em>."},
+    {"e": "case in point", "meaning": "an example that proves what you have just said", "example": "Small towns are losing their banks; <strong>case in point</strong>, ours closed in March.", "tone": "neutral",
+     "bend": "Fixed. Also <em>a case in point</em>. Often misheard and written as <em>case and point</em>.",
+     "note": "Used right after a general claim. <em>For example</em> is neutral; <em>case in point</em> sounds more pointed and argumentative."},
+    {"e": "toe the line", "meaning": "obey the rules or official policy, often reluctantly", "example": "Backbench MPs were told to <strong>toe the line</strong> on the budget vote.", "tone": "neutral",
+     "bend": "Tense and noun vary: <em>toed the party line</em>. Often misspelled <em>tow the line</em>.",
+     "note": "The image is runners with their toes on a starting line. Orwell noted the <em>tow</em> spelling as proof that writers no longer picture the image."},
+    {"e": "home in on", "meaning": "move steadily towards a target; focus closely on something", "example": "The investigators quickly <strong>homed in on</strong> the accounting department.", "tone": "neutral",
+     "bend": "Tense varies: <em>homing in on</em>, <em>homed in on</em>. <em>Hone in on</em> is widespread in North America but many editors still mark it as an error.",
+     "note": "The image is a homing pigeon or missile. <em>Hone</em> means sharpen, as in <em>hone your skills</em>."},
+    {"e": "free rein", "meaning": "complete freedom to act as you choose", "example": "The new chef was given <strong>free rein</strong> to redesign the menu.", "tone": "neutral",
+     "bend": "Fixed noun: <em>give someone free rein</em>, <em>have free rein</em>. Spelled <em>rein</em>, not <em>reign</em>.",
+     "note": "From riding: a horse given loose reins can go where it likes. The <em>reign</em> spelling is a very common written error."}
+  ],
+  "culture": [
+    {"kind": "Essay", "work": "Politics and the English Language", "by": "George Orwell", "year": "1946",
+     "how": "Orwell argued that tired, ready-made phrases let writers avoid thinking. His first rule says, in effect: if a metaphor or simile is one you're used to seeing in print, don't use it; find a fresh image or speak plainly. He also noticed that people mangle dying metaphors because they no longer picture them.",
+     "ask": "Is Orwell's rule realistic for everyday business writing? Which cliches would you ban first?",
+     "find": "George Orwell Politics and the English Language"},
+    {"kind": "Literature", "work": "The Rivals", "by": "Richard Brinsley Sheridan", "year": "1775",
+     "how": "Mrs Malaprop constantly reaches for impressive words and picks slightly wrong ones that sound similar. She is so memorable that English named the mistake after her: a <em>malapropism</em>. Her name comes from the French <em>mal à propos</em>, meaning inappropriate.",
+     "ask": "Why do people misuse big words? Have you heard a funny malapropism in English or in your own language?",
+     "find": "Mrs Malaprop The Rivals Sheridan"},
+    {"kind": "Literature", "work": "Much Ado About Nothing", "by": "William Shakespeare", "year": "around 1598",
+     "how": "Dogberry, a self-important constable, keeps choosing grand words that mean the opposite of what he intends, yet his bumbling night watch accidentally uncovers the villain's plot. Such errors are sometimes called <em>dogberryisms</em>.",
+     "ask": "Why might a writer let a foolish character solve the mystery? What does that say about cleverness and language?",
+     "find": "Dogberry Much Ado About Nothing"},
+    {"kind": "Poetry", "work": "Metaphors", "by": "Sylvia Plath", "year": "1960",
+     "how": "A nine-line riddle in which every line offers a different metaphor for the speaker, and the hidden answer is pregnancy. The form plays along: nine lines of nine syllables each, echoing nine months. It shows how stacking metaphors can be deliberate and clever, not mixed.",
+     "ask": "Try to describe yourself, your job or your city as a riddle of three quick metaphors. Can Bill guess it?",
+     "find": "Sylvia Plath Metaphors poem"},
+    {"kind": "Music", "work": "Ironic", "by": "Alanis Morissette", "year": "1995",
+     "how": "The Ottawa-born singer lists a series of frustrating situations and calls them ironic. Critics and comedians famously pointed out that most are bad luck or bad timing rather than true irony, so the song became a favourite example in debates about what irony really means.",
+     "ask": "Describe a situation from your life or the news that is truly ironic, not just unlucky. What makes it ironic?",
+     "find": "Alanis Morissette Ironic"}
+  ],
+  "ws": {
+    "match": [
+      {"l": "for all intents and purposes", "r": "in every practical sense", "why": "Intents means aims: for every purpose that matters."},
+      {"l": "nip it in the bud", "r": "stop it early", "why": "Pinch off the bud and the flower never opens."},
+      {"l": "a moot point", "r": "a question that no longer matters", "why": "In North America moot usually means irrelevant now."},
+      {"l": "I couldn't care less", "r": "I don't care at all", "why": "It's impossible to care any less than I already do."},
+      {"l": "case in point", "r": "an example that proves it", "why": "A case relevant to the point you are making."},
+      {"l": "toe the line", "r": "obey the rules", "why": "Runners put their toes on the line and wait for the signal."},
+      {"l": "home in on", "r": "focus closely on a target", "why": "Like a homing pigeon finding its way home."},
+      {"l": "free rein", "r": "complete freedom", "why": "A rider loosens the reins and lets the horse choose its way."}
+    ],
+    "sort": {
+      "h": "Is each phrase the <strong>correct form</strong>, a <strong>garbled word</strong> (malapropism or eggcorn), or a <strong>mixed metaphor</strong> blending two idioms?",
+      "cols": ["Correct form", "Garbled word", "Mixed metaphor or blend"],
+      "items": [
+        {"w": "for all intents and purposes", "c": 0, "why": "The standard form."},
+        {"w": "a moot point", "c": 0, "why": "The standard form: moot, meaning no longer relevant."},
+        {"w": "free rein", "c": 0, "why": "Correct: rein, as in horse riding."},
+        {"w": "case in point", "c": 0, "why": "The standard form."},
+        {"w": "for all intensive purposes", "c": 1, "why": "Intensive replaces intents and: a mishearing."},
+        {"w": "a mute point", "c": 1, "why": "Mute (silent) replaces moot."},
+        {"w": "nip it in the butt", "c": 1, "why": "Butt replaces bud."},
+        {"w": "tow the line", "c": 1, "why": "Tow (pull) replaces toe."},
+        {"w": "we'll burn that bridge when we come to it", "c": 2, "why": "Blends cross that bridge with burn your bridges."},
+        {"w": "that's the way the cookie bounces", "c": 2, "why": "Blends the way the cookie crumbles with the way the ball bounces."},
+        {"w": "it's not rocket surgery", "c": 2, "why": "Blends rocket science with brain surgery."},
+        {"w": "wake up and smell the roses", "c": 2, "why": "Blends wake up and smell the coffee with stop and smell the roses."}
+      ]
+    },
+    "pick": [
+      {"q": "The merger hasn't been signed, but ___ the two firms already operate as one company.", "opts": ["for all intensive purposes", "for all intents and purposes", "for all intent and purpose"], "a": 1, "why": "Correct form: for all intents and purposes, meaning in practice."},
+      {"q": "Whether we should have booked earlier is ___; the flight is full anyway.", "opts": ["a moot point", "a mute point", "a mood point"], "a": 0, "why": "A moot point: no longer worth discussing."},
+      {"q": "Teachers were given ___ to design their own curriculum this year.", "opts": ["free reign", "free rain", "free rein"], "a": 2, "why": "Free rein: complete freedom, from horse riding."},
+      {"q": "Fuel prices affect everything; ___, our grocery bill rose fifteen percent.", "opts": ["case and point", "case in point", "in point case"], "a": 1, "why": "Case in point: an example proving what you just said."},
+      {"q": "Cabinet ministers who refuse to ___ may lose their posts.", "opts": ["tote the line", "tow the line", "toe the line"], "a": 2, "why": "Toe the line: follow the rules or party policy."},
+      {"q": "The search team ___ the signal from the lost hiker's phone.", "opts": ["homed in on", "homed on in", "held in on"], "a": 0, "why": "Home in on: move steadily toward a target."},
+      {"q": "Frankly, ___ about the office party; I'll be on holiday anyway.", "opts": ["I could care more", "I couldn't care less", "I couldn't care more"], "a": 1, "why": "I couldn't care less: I don't care at all."},
+      {"q": "If staff start arriving late, ___ before it becomes a habit.", "opts": ["nip it in the butt", "nip it in the bug", "nip it in the bud"], "a": 2, "why": "Nip it in the bud: stop it at the start."}
+    ],
+    "spot": [
+      {"q": "The question of who pays is a mute point now that the event is cancelled.", "bad": "a mute point", "fix": "a moot point", "opts": ["a moot point", "a mood point"], "why": "Moot means no longer relevant. Mute means silent."},
+      {"q": "For all intensive purposes, the referendum result is final.", "bad": "For all intensive purposes", "fix": "For all intents and purposes", "opts": ["For all intents and purposes", "For all intent purposes"], "why": "A classic mishearing. The phrase is for all intents and purposes."},
+      {"q": "The editor gave the young journalist free reign to cover the protests.", "bad": "free reign", "fix": "free rein", "opts": ["free rein", "free rain"], "why": "Rein, as in a horse's reins: freedom to go where you like."},
+      {"q": "Opposition members refused to tow the line on the pipeline bill.", "bad": "tow the line", "fix": "toe the line", "opts": ["toe the line", "tote the line"], "why": "Toe the line: put your toes on the line, follow the rules."},
+      {"q": "Prices in this town keep rising; case and point, a coffee now costs six dollars.", "bad": "case and point", "fix": "case in point", "opts": ["case in point", "case at point"], "why": "Case in point: an example that proves your claim."}
+    ],
+    "type": [
+      {"q": "We'll cross that ___ when we come to it; let's focus on today.", "a": ["bridge"], "why": "Cross that bridge when we come to it: deal with a problem when it actually arrives."},
+      {"q": "That's the way the cookie ___, I'm afraid; we lost the contract.", "a": ["crumbles"], "why": "That's the way the cookie crumbles: that's life, accept it."},
+      {"q": "The detectives slowly ___ in on the gang's leader.", "a": ["homed", "zeroed"], "why": "Home in on (or zero in on): focus on a target."},
+      {"q": "Honestly, I couldn't care ___ about celebrity gossip.", "a": ["less"], "why": "I couldn't care less: I don't care at all."},
+      {"q": "Whether the stadium should have been built is a ___ point; it opened last year.", "a": ["moot"], "why": "A moot point: no longer worth discussing."},
+      {"q": "City inspectors want to nip the rat problem in the ___ before winter.", "a": ["bud"], "why": "Nip it in the bud: stop it early."}
+    ],
+    "bend": [
+      {"q": "Which headline sounds like natural, deliberate wordplay? ___", "opts": ["Bakers rise to the occasion as bread prices soar", "Bakers ascend to the occasion as bread prices soar", "Bakers rise on the occasion as bread prices soar"], "a": 0, "why": "Rise to the occasion stays intact, and rise also suggests bread dough: a pun only works on the real idiom."},
+      {"q": "Which extended metaphor sounds natural and witty? ___", "opts": ["We've opened a tin of snakes, and now the worms are organising.", "We've opened a can of worms, and now the worms are organising.", "We've opened a can of worms in the bud."], "a": 1, "why": "Extending can of worms works because the original is untouched; the others mix images."},
+      {"q": "Which deliberate twist sounds natural and witty? ___", "opts": ["The early bird gets the cheese, but the worm gets the mouse.", "The early birds catches the worms early.", "The early bird gets the worm, but the second mouse gets the cheese."], "a": 2, "why": "The joke keeps the original intact, then adds a clever twist about mousetraps."},
+      {"q": "Which sentence suits a formal quarterly report? ___", "opts": ["Sales fell sharply in the third quarter.", "Sales went south big time, and it's a whole new ball game.", "Sales fell off a cliff and hit rock bottom in the basement."], "a": 0, "why": "In formal reports, plain language beats stacked idioms and mixed images."}
+    ],
+    "talk": [
+      "Orwell would ban any metaphor you're used to seeing in print. Pick three cliches from your workplace or the news and replace each with a fresh image or plain words.",
+      "Alanis Morissette's <em>Ironic</em> is famous for situations that aren't strictly ironic. Describe one truly ironic situation from your life or the news.",
+      "Which English idioms did you mishear or misunderstand when you first learned them? What did you think they meant?",
+      "Role-play: Bill is your editor. Defend a mixed metaphor in your article as deliberate humour, or agree to fix it and explain how.",
+      "Mrs Malaprop and Dogberry use big words to sound important. Do people in your workplace use jargon the same way? Give examples."
+    ]
+  },
+  "hw": {
+    "match": [
+      {"l": "mixed metaphor", "r": "two clashing images in one phrase", "why": "E.g. we'll burn that bridge when we come to it."},
+      {"l": "malapropism", "r": "a wrong word that sounds like the right one", "why": "Named after Mrs Malaprop in Sheridan's The Rivals."},
+      {"l": "dead metaphor", "r": "a figure of speech nobody notices any more", "why": "E.g. the leg of a table or the head of a department."},
+      {"l": "cliche", "r": "an overused, stale expression", "why": "Once fresh, now tired from repetition."},
+      {"l": "eggcorn", "r": "a mishearing that seems logical", "why": "E.g. for all intensive purposes: the wrong words still make some sense."},
+      {"l": "irony", "r": "a reversal of what is expected", "why": "A fire station burning down is ironic; rain on a picnic is just bad luck."}
+    ],
+    "pick": [
+      {"q": "Calling a simple task <em>not rocket surgery</em> blends two idioms; it's a ___.", "opts": ["dead metaphor", "mixed metaphor", "moot point"], "a": 1, "why": "A mixed metaphor or blend: rocket science plus brain surgery."},
+      {"q": "A fire station burning down is a classic example of ___.", "opts": ["situational irony", "a malapropism", "a dead metaphor"], "a": 0, "why": "Irony: the opposite of what you'd expect happens."},
+      {"q": "Grandpa told the doctor he had <em>very close veins</em> instead of varicose veins; it was a lovely ___.", "opts": ["mixed metaphor", "cliche", "malapropism"], "a": 2, "why": "A malapropism: a similar-sounding wrong word."},
+      {"q": "The committee agreed that the matter was ___ since the building had already been sold.", "opts": ["a moot point", "a mute point", "a case in point"], "a": 0, "why": "A moot point: no longer relevant."},
+      {"q": "Our new manager gives us ___ to choose our own hours.", "opts": ["free reign", "free rein", "toe the line"], "a": 1, "why": "Free rein: complete freedom."},
+      {"q": "My friend ___ who wins the election; she never votes.", "opts": ["could care more", "couldn't care fewer", "couldn't care less"], "a": 2, "why": "Couldn't care less: doesn't care at all."}
+    ],
+    "spot": [
+      {"q": "Let's nip this argument in the butt before dinner is ruined.", "bad": "in the butt", "fix": "in the bud", "opts": ["in the bud", "in the bug"], "why": "Nip it in the bud: stop it early, like pinching off a flower bud."},
+      {"q": "For all intense purposes, my phone is my office.", "bad": "For all intense purposes", "fix": "For all intents and purposes", "opts": ["For all intents and purposes", "For all intents purposes"], "why": "The correct form is for all intents and purposes."},
+      {"q": "We didn't get the grant, but that's the way the cookie bounces.", "bad": "the way the cookie bounces", "fix": "the way the cookie crumbles", "opts": ["the way the cookie crumbles", "the way the cookie breaks"], "why": "Cookies crumble; balls bounce. Mixing them is a blend error."},
+      {"q": "We'll burn that bridge when we come to it; first let's finish the budget.", "bad": "burn that bridge", "fix": "cross that bridge", "opts": ["cross that bridge", "build that bridge"], "why": "Cross that bridge when we come to it: deal with it later. Burn your bridges is a different idiom."}
+    ],
+    "type": [
+      {"q": "The premier told her caucus to ___ the line on the trade deal.", "a": ["toe"], "why": "Toe the line: follow official policy."},
+      {"q": "Our grandson has free ___ of the garden in summer.", "a": ["rein"], "why": "Free rein: complete freedom."},
+      {"q": "Rising rents are a case in ___: housing is the issue of this election.", "a": ["point"], "why": "A case in point: an example that proves the claim."},
+      {"q": "For all intents and ___, the old factory is a museum now.", "a": ["purposes"], "why": "For all intents and purposes: in every practical sense."},
+      {"q": "The vet quickly homed ___ on the cause of the dog's limp.", "a": ["in"], "why": "Home in on: focus on a target."},
+      {"q": "The scandal is a ___ point; the senator has already resigned.", "a": ["moot"], "why": "A moot point: no longer relevant."}
+    ]
+  },
+  "bank": [
+    {"type": "pick", "q": "___, the strike is over; only the paperwork remains.", "opts": ["For all intensive purposes", "For all intents and purposes", "For all intent and purposes"], "a": "For all intents and purposes", "why": "For all intents and purposes: in practice, effectively."},
+    {"type": "pick", "q": "Parents were given ___ to plan the school fundraiser.", "opts": ["free reign", "free rain", "free rein"], "a": "free rein", "why": "Free rein: complete freedom, from loose reins on a horse."},
+    {"type": "pick", "q": "Team members who won't ___ will be moved to another project.", "opts": ["toe the line", "tow the line", "toe the lane"], "a": "toe the line", "why": "Toe the line: follow the rules."},
+    {"type": "pick", "q": "The thermal camera ___ the missing child within minutes.", "opts": ["homed on to", "homed in on", "homed into on"], "a": "homed in on", "why": "Home in on: locate and move toward a target."},
+    {"type": "pick", "q": "Politicians rarely answer the question; ___, last night's debate.", "opts": ["case and point", "in point case", "case in point"], "a": "case in point", "why": "Case in point: an example that proves your claim."},
+    {"type": "pick", "q": "Whether we should have sold the house in spring is now ___.", "opts": ["a moot point", "a mute point", "a mooted pointed"], "a": "a moot point", "why": "A moot point: no longer worth discussing."},
+    {"type": "pick", "q": "Teenagers often claim they ___ what their parents think.", "opts": ["could care more", "couldn't care less", "couldn't care fewer"], "a": "couldn't care less", "why": "Couldn't care less: don't care at all."},
+    {"type": "pick", "q": "The supervisor decided to ___ before the gossip spread.", "opts": ["nip it in the butt", "nip it at the bud", "nip it in the bud"], "a": "nip it in the bud", "why": "Nip it in the bud: stop something early."},
+    {"type": "type", "q": "That's the way the ___ crumbles; we'll try again next year.", "a": ["cookie"], "why": "That's the way the cookie crumbles: that's life."},
+    {"type": "type", "q": "Don't worry about the next stage yet; we'll ___ that bridge when we come to it.", "a": ["cross"], "why": "Cross that bridge when we come to it: deal with it later."},
+    {"type": "type", "q": "Mrs Malaprop gave her name to the ___, a comic misuse of a similar-sounding word.", "a": ["malapropism"], "why": "A malapropism: named after Sheridan's character in The Rivals (1775)."},
+    {"type": "type", "q": "Saying <em>we'll burn that bridge when we come to it</em> produces a ___ metaphor.", "a": ["mixed"], "why": "A mixed metaphor combines two clashing idioms."},
+    {"type": "type", "q": "Orwell advised writers to avoid stale ___ and find fresh images instead.", "a": ["metaphors", "cliches", "clichés", "phrases"], "why": "Orwell's first rule warns against figures of speech you are used to seeing in print."},
+    {"type": "spot", "q": "The new director has free rein to restructure the department.", "bad": "", "why": "Correct: free rein, spelled like a horse's reins."},
+    {"type": "spot", "q": "My nephew could care less about hockey, which shocks his Canadian grandparents.", "bad": "could care less", "fix": "couldn't care less", "opts": ["couldn't care less", "could care more"], "why": "Could care less is common in the US but widely criticised; the logical form is couldn't care less."},
+    {"type": "spot", "q": "Analysts are homing in on the cause of the market crash.", "bad": "", "why": "Correct: home in on means focus on a target. Hone means sharpen."},
+    {"type": "spot", "q": "Rising crime is a case and point for more police funding, the mayor argued.", "bad": "a case and point", "fix": "a case in point", "opts": ["a case in point", "a case at point"], "why": "The phrase is a case in point: an example that supports the claim."},
+    {"type": "order", "a": "For all intents and purposes the deal is done.", "alt": [], "why": "For all intents and purposes + main clause. A comma after purposes is optional in writing."},
+    {"type": "order", "a": "We will cross that bridge when we come to it.", "alt": [], "why": "Cross that bridge + when we come to it."},
+    {"type": "order", "a": "The new manager gave us free rein on the project.", "alt": [], "why": "Give someone free rein on something."}
+  ]
+}

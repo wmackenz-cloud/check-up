@@ -6,6 +6,7 @@
   for (i = 1; i <= 11; i++) IDS.push("gt-" + i);
   IDS.push("aa");
   for (i = 1; i <= 14; i++) IDS.push("vt-" + i);
+  for (i = 1; i <= 12; i++) IDS.push("am-" + i);
   for (i = 1; i <= 20; i++) IDS.push("v-" + i);
   for (i = 1; i <= 8; i++) IDS.push("sv-" + i);
   for (i = 1; i <= 7; i++) IDS.push("sp-" + i);
@@ -17,6 +18,7 @@
   function pageFor(id) {
     var m = /^([a-z]+)-?(\d*)$/.exec(id) || [];
     if (id === "aa") return "grammar/a-or-an.html";
+    if (m[1] === "am") return "advanced/metaphors/unit-" + m[2] + ".html";
     if (m[1] === "vt") return "grammar/tense-" + m[2] + ".html";
     if (m[1] === "gt") return "grammar-traps/student-" + m[2] + ".html";
     if (m[1] === "v") return "vocabulary/student-" + m[2] + ".html";
@@ -29,6 +31,7 @@
   }
   function groupFor(id) {
     if (id === "aa" || /^gt-/.test(id) || /^vt-/.test(id)) return "Grammar";
+    if (/^am-/.test(id)) return "Advanced English";
     if (/^v-/.test(id)) return "Vocabulary";
     if (/^sv-/.test(id)) return "Military English";
     if (/^sp-/.test(id)) return "Speaking Confidence";
