@@ -57,6 +57,11 @@ STYLE = """<style>
 .ccard .ask { font-style: italic; }
 .ccard .find { justify-self: start; font-size: .9rem; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 700; }
 .ccard.k-music { border-left-color: #8a5a00; } .ccard.k-poetry { border-left-color: var(--ok); }
+.xpic { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.xpic img { width: 72px; height: 72px; object-fit: contain; flex: none; }
+.xpic img + img { margin-left: -4px; }
+.xpic .xlabel { font-size: .88rem; color: var(--ink-soft); }
+.pic-credits { margin-top: 26px; border-top: 1px solid var(--rule); padding-top: 8px; color: var(--ink-soft); font-size: .88rem; }
 .guess-note { color: var(--ink-soft); font-size: .92rem; margin: 4px 0 0; }
 .talk ol { display: grid; gap: 8px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tone.dismissive { background: #3a2620; } }
@@ -91,8 +96,12 @@ def sort_box(k, s):
 def expr_cards(d):
     out = []
     for x in d["expressions"]:
+        pic = ""
+        if x.get("pic"):
+            pic = '<span class="xpic">%s<span class="xlabel">%s</span></span>' % (
+                "".join('<img src="img/%s" alt="" width="72" height="72" loading="lazy">' % A(f) for f in x["pic"]["img"]), T(x["pic"]["label"]))
         out.append("""<details class="xcard">
-<summary><span class="xe">%s</span><span>%s</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary>""" + pic + """<span class="xe">%s</span><span>%s</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> %s <span class="tone %s">%s</span></p>
 <p><strong>Bend it:</strong> %s</p>
@@ -185,6 +194,9 @@ def unit(d):
         body += '<h2 id="ex%d" class="ex">Exercise %d: %s</h2>\n<p>%s</p>\n%s\n' % (i + 1, i + 1, h, p, g)
     body += '<h2 id="ex7">Exercise 7: Talk about it</h2>\n<div class="rule talk"><ol>%s</ol></div>\n' % lis(ws["talk"])
     body += answers([key_match(ws["match"]), key_sort(ws["sort"]), key_pick(ws["pick"]), key_spot(ws["spot"]), key_type(ws["type"]), key_pick(ws["bend"])])
+    if any(x.get("pic") for x in d["expressions"]):
+        body += ('<p class="pic-credits">Pictures: Microsoft Fluent Emoji, used under the MIT License (see img/LICENSE.txt). '
+                 'The mud and submarine pictures were drawn for this site.</p>\n')
     return body + TAIL
 
 def homework(d):

@@ -38,6 +38,11 @@
 .ccard .ask { font-style: italic; }
 .ccard .find { justify-self: start; font-size: .9rem; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 700; }
 .ccard.k-music { border-left-color: #8a5a00; } .ccard.k-poetry { border-left-color: var(--ok); }
+.xpic { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.xpic img { width: 72px; height: 72px; object-fit: contain; flex: none; }
+.xpic img + img { margin-left: -4px; }
+.xpic .xlabel { font-size: .88rem; color: var(--ink-soft); }
+.pic-credits { margin-top: 26px; border-top: 1px solid var(--rule); padding-top: 8px; color: var(--ink-soft); font-size: .88rem; }
 .guess-note { color: var(--ink-soft); font-size: .92rem; margin: 4px 0 0; }
 .talk ol { display: grid; gap: 8px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tone.dismissive { background: #3a2620; } }
@@ -86,7 +91,7 @@
 <p>Read each example and guess the meaning first. Then tap the card to check the meaning, the tone, and how native speakers bend it.</p>
 <div class="cards">
 <details class="xcard">
-<summary><span class="xe">as light as a feather</span><span>The new carbon-fibre bike is <strong>as light as a feather</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/feather.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a feather</span></span><span class="xe">as light as a feather</span><span>The new carbon-fibre bike is <strong>as light as a feather</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> extremely light in weight <span class="tone neutral">neutral</span></p>
 <p><strong>Bend it:</strong> Often <em>light as a feather</em>. Also <em>feather-light</em> and <em>light as air</em> (for food: <em>the soufflé was light as air</em>).</p>
@@ -94,7 +99,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as cold as ice</span><span>The cottage was <strong>as cold as ice</strong> when we arrived in January.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/ice.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">ice</span></span><span class="xe">as cold as ice</span><span>The cottage was <strong>as cold as ice</strong> when we arrived in January.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> very cold; also emotionally cold and unfriendly <span class="tone neutral">neutral</span></p>
 <p><strong>Bend it:</strong> <em>Ice-cold</em> as an adjective (<em>an ice-cold drink</em>). For people: <em>she was cold as ice to him</em>.</p>
@@ -102,7 +107,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as old as the hills</span><span>That excuse is <strong>as old as the hills</strong>; teachers have heard it for decades.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/hill.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">the hills</span></span><span class="xe">as old as the hills</span><span>That excuse is <strong>as old as the hills</strong>; teachers have heard it for decades.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> extremely old; very well known for a long time <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Usually about ideas, jokes, tricks or problems. Also <em>as old as time</em>, which is more poetic.</p>
@@ -110,7 +115,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as clear as day</span><span>From the security video it was <strong>as clear as day</strong> who had taken the parcel.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/sun.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">day (bright daylight)</span></span><span class="xe">as clear as day</span><span>From the security video it was <strong>as clear as day</strong> who had taken the parcel.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> completely obvious or easy to see <span class="tone neutral">neutral</span></p>
 <p><strong>Bend it:</strong> Also <em>as plain as day</em>. No article before <em>day</em>. <em>Crystal clear</em> is more about being easy to understand.</p>
@@ -118,7 +123,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as easy as pie</span><span>Once you know the shortcut, the tax form is <strong>as easy as pie</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/pie.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a pie</span></span><span class="xe">as easy as pie</span><span>Once you know the shortcut, the tax form is <strong>as easy as pie</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> very easy <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> <em>Easy as pie</em> is most common. Near-synonyms: <em>a piece of cake</em>, <em>easy as ABC</em>, <em>easy peasy</em> (childish or playful).</p>
@@ -126,7 +131,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as dead as a doornail</span><span>After the vote, the pipeline proposal was <strong>as dead as a doornail</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/door.webp" alt="" width="72" height="72" loading="lazy"><img src="img/hammer.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a doornail (a big nail hammered into an old door)</span></span><span class="xe">as dead as a doornail</span><span>After the vote, the pipeline proposal was <strong>as dead as a doornail</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> completely dead; also completely finished or failed <span class="tone humorous">humorous</span></p>
 <p><strong>Bend it:</strong> Used for plans, deals, batteries and phones as well as people and animals. Often <em>dead as a doornail</em>.</p>
@@ -134,7 +139,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as right as rain</span><span>Drink plenty of fluids and you'll be <strong>as right as rain</strong> by Monday.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/rain.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">rain</span></span><span class="xe">as right as rain</span><span>Drink plenty of fluids and you'll be <strong>as right as rain</strong> by Monday.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> perfectly healthy or fine again, especially after illness <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Almost always <em>be/feel/look right as rain</em>, often in the future: <em>you'll be right as rain</em>. Fixed: no <em>like</em>.</p>
@@ -142,7 +147,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as safe as houses</span><span>Her parents told her a government bond was <strong>as safe as houses</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/houses.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">houses</span></span><span class="xe">as safe as houses</span><span>Her parents told her a government bond was <strong>as safe as houses</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> very safe or secure, with no risk <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> British; rare in North America. Fixed plural <em>houses</em>. Often ironic since housing crashes.</p>
@@ -255,6 +260,7 @@
 <p><strong>Exercise 6:</strong> 1 Thanks, that's as clear as mud. 2 You'll be right as rain by the weekend. 3 We served ice-cold lemonade. 4 It's about as useful as a chocolate teapot.</p>
   </div>
 </details>
+<p class="pic-credits">Pictures: Microsoft Fluent Emoji, used under the MIT License (see img/LICENSE.txt). The mud and submarine pictures were drawn for this site.</p>
 </main>
 <footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
 <script>

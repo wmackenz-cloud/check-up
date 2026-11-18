@@ -38,6 +38,11 @@
 .ccard .ask { font-style: italic; }
 .ccard .find { justify-self: start; font-size: .9rem; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 700; }
 .ccard.k-music { border-left-color: #8a5a00; } .ccard.k-poetry { border-left-color: var(--ok); }
+.xpic { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.xpic img { width: 72px; height: 72px; object-fit: contain; flex: none; }
+.xpic img + img { margin-left: -4px; }
+.xpic .xlabel { font-size: .88rem; color: var(--ink-soft); }
+.pic-credits { margin-top: 26px; border-top: 1px solid var(--rule); padding-top: 8px; color: var(--ink-soft); font-size: .88rem; }
 .guess-note { color: var(--ink-soft); font-size: .92rem; margin: 4px 0 0; }
 .talk ol { display: grid; gap: 8px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tone.dismissive { background: #3a2620; } }

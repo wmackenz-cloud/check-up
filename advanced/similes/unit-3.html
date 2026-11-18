@@ -38,6 +38,11 @@
 .ccard .ask { font-style: italic; }
 .ccard .find { justify-self: start; font-size: .9rem; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 700; }
 .ccard.k-music { border-left-color: #8a5a00; } .ccard.k-poetry { border-left-color: var(--ok); }
+.xpic { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.xpic img { width: 72px; height: 72px; object-fit: contain; flex: none; }
+.xpic img + img { margin-left: -4px; }
+.xpic .xlabel { font-size: .88rem; color: var(--ink-soft); }
+.pic-credits { margin-top: 26px; border-top: 1px solid var(--rule); padding-top: 8px; color: var(--ink-soft); font-size: .88rem; }
 .guess-note { color: var(--ink-soft); font-size: .92rem; margin: 4px 0 0; }
 .talk ol { display: grid; gap: 8px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tone.dismissive { background: #3a2620; } }
@@ -86,7 +91,7 @@
 <p>Read each example and guess the meaning first. Then tap the card to check the meaning, the tone, and how native speakers bend it.</p>
 <div class="cards">
 <details class="xcard">
-<summary><span class="xe">sleep like a log</span><span>After a day of skiing at Blue Mountain, we all <strong>slept like logs</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/log.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a log</span></span><span class="xe">sleep like a log</span><span>After a day of skiing at Blue Mountain, we all <strong>slept like logs</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> sleep very deeply and without waking <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Any tense: <em>I slept like a log</em>, <em>you'll sleep like a log</em>. Plural: <em>slept like logs</em>.</p>
@@ -94,7 +99,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">eat like a horse</span><span>Our teenage son <strong>eats like a horse</strong>; we buy milk every two days.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/horse.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a horse</span></span><span class="xe">eat like a horse</span><span>Our teenage son <strong>eats like a horse</strong>; we buy milk every two days.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> eat very large amounts <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Usually present simple for habits. Opposite: <em>eat like a bird</em> (very little).</p>
@@ -102,7 +107,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">spread like wildfire</span><span>The video of the moose in the mall <strong>spread like wildfire</strong> online.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/fire.webp" alt="" width="72" height="72" loading="lazy"><img src="img/tree.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">wildfire (a fire spreading through a forest)</span></span><span class="xe">spread like wildfire</span><span>The video of the moose in the mall <strong>spread like wildfire</strong> online.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> spread very quickly and uncontrollably <span class="tone neutral">neutral</span></p>
 <p><strong>Bend it:</strong> Used with news, rumours, panic, trends and diseases. Any tense. Not <em>spread like fire</em>.</p>
@@ -110,7 +115,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">sell like hot cakes</span><span>Heat pumps are <strong>selling like hot cakes</strong> since the rebate was announced.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/pancakes.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">hot cakes (pancakes)</span></span><span class="xe">sell like hot cakes</span><span>Heat pumps are <strong>selling like hot cakes</strong> since the rebate was announced.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> sell very quickly and in large numbers <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Also spelled <em>hotcakes</em>. Usually progressive or past: <em>they're selling / they sold like hot cakes</em>.</p>
@@ -118,7 +123,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">fit like a glove</span><span>The suit I found at the thrift store <strong>fits like a glove</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/gloves.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a glove</span></span><span class="xe">fit like a glove</span><span>The suit I found at the thrift store <strong>fits like a glove</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> fit perfectly; be exactly right <span class="tone neutral">neutral</span></p>
 <p><strong>Bend it:</strong> For clothes, but also jobs and roles: <em>the new role fits her like a glove</em>. Add an object: <em>fits me like a glove</em>.</p>
@@ -126,7 +131,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">work like a charm</span><span>I tried turning it off and on again, and it <strong>worked like a charm</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/clover.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a charm (a lucky object, like a four-leaf clover)</span></span><span class="xe">work like a charm</span><span>I tried turning it off and on again, and it <strong>worked like a charm</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> work perfectly, often better than expected <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Usually past simple: <em>it worked like a charm</em>. Variant: <em>work like a dream</em> (British leaning).</p>
@@ -134,7 +139,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">go like clockwork</span><span>Thanks to the volunteers, the marathon <strong>went like clockwork</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/gear.webp" alt="" width="72" height="72" loading="lazy"><img src="img/clock.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">clockwork (the gears inside a clock)</span></span><span class="xe">go like clockwork</span><span>Thanks to the volunteers, the marathon <strong>went like clockwork</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> happen exactly as planned, with no problems <span class="tone neutral">neutral</span></p>
 <p><strong>Bend it:</strong> <em>Go</em> or <em>run like clockwork</em>. Related: <em>as regular as clockwork</em> (happening at the same time every time).</p>
@@ -142,7 +147,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">take to something like a duck to water</span><span>My mother <strong>took to</strong> her tablet <strong>like a duck to water</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/duck.webp" alt="" width="72" height="72" loading="lazy"><img src="img/wave.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a duck and water</span></span><span class="xe">take to something like a duck to water</span><span>My mother <strong>took to</strong> her tablet <strong>like a duck to water</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> learn or adapt to something naturally and easily <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Pattern: <em>take to + noun/ing + like a duck to water</em>. Usually past: <em>she took to teaching like a duck to water</em>.</p>
@@ -255,6 +260,7 @@
 <p><strong>Exercise 6:</strong> 1 He drove off like a bat out of hell. 2 Your tip worked like a dream. 3 The 7:15 bus arrives as regular as clockwork. 4 The job fits her like a glove.</p>
   </div>
 </details>
+<p class="pic-credits">Pictures: Microsoft Fluent Emoji, used under the MIT License (see img/LICENSE.txt). The mud and submarine pictures were drawn for this site.</p>
 </main>
 <footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
 <script>

@@ -38,6 +38,11 @@
 .ccard .ask { font-style: italic; }
 .ccard .find { justify-self: start; font-size: .9rem; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 700; }
 .ccard.k-music { border-left-color: #8a5a00; } .ccard.k-poetry { border-left-color: var(--ok); }
+.xpic { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.xpic img { width: 72px; height: 72px; object-fit: contain; flex: none; }
+.xpic img + img { margin-left: -4px; }
+.xpic .xlabel { font-size: .88rem; color: var(--ink-soft); }
+.pic-credits { margin-top: 26px; border-top: 1px solid var(--rule); padding-top: 8px; color: var(--ink-soft); font-size: .88rem; }
 .guess-note { color: var(--ink-soft); font-size: .92rem; margin: 4px 0 0; }
 .talk ol { display: grid; gap: 8px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tone.dismissive { background: #3a2620; } }
@@ -86,7 +91,7 @@
 <p>Read each example and guess the meaning first. Then tap the card to check the meaning, the tone, and how native speakers bend it.</p>
 <div class="cards">
 <details class="xcard">
-<summary><span class="xe">as clear as mud</span><span>Thanks for the new expense policy. It's <strong>as clear as mud</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/mud.svg" alt="" width="72" height="72" loading="lazy"><span class="xlabel">mud</span></span><span class="xe">as clear as mud</span><span>Thanks for the new expense policy. It's <strong>as clear as mud</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> very unclear or confusing <span class="tone humorous">humorous</span></p>
 <p><strong>Bend it:</strong> Often drops the first <em>as</em>: <em>clear as mud</em>. Also self-mocking: <em>I hope that wasn't as clear as mud</em>.</p>
@@ -94,7 +99,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as useful as a chocolate teapot</span><span>This flimsy little umbrella is <strong>about as useful as a chocolate teapot</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/chocolate.webp" alt="" width="72" height="72" loading="lazy"><img src="img/teapot.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">chocolate and a teapot</span></span><span class="xe">as useful as a chocolate teapot</span><span>This flimsy little umbrella is <strong>about as useful as a chocolate teapot</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> completely useless <span class="tone humorous">humorous</span></p>
 <p><strong>Bend it:</strong> <em>About as useful as</em>, <em>about as much use as</em>; British variants include <em>a chocolate fireguard</em>.</p>
@@ -102,7 +107,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">about as much use as a screen door on a submarine</span><span>Without a battery, this smoke detector is <strong>about as much use as a screen door on a submarine</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/submarine.svg" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a submarine with a screen door</span></span><span class="xe">about as much use as a screen door on a submarine</span><span>Without a battery, this smoke detector is <strong>about as much use as a screen door on a submarine</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> completely useless, or making things worse <span class="tone humorous">humorous</span></p>
 <p><strong>Bend it:</strong> Also <em>as useful as a screen door on a submarine</em>; sometimes just <em>a screen door on a submarine</em>.</p>
@@ -110,7 +115,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as subtle as a sledgehammer</span><span>His hint that he wanted the corner office was <strong>about as subtle as a sledgehammer</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/hammer.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a sledgehammer (a big, heavy hammer)</span></span><span class="xe">as subtle as a sledgehammer</span><span>His hint that he wanted the corner office was <strong>about as subtle as a sledgehammer</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> very obvious and heavy-handed <span class="tone humorous">humorous</span></p>
 <p><strong>Bend it:</strong> Often with <em>about</em>; also <em>subtle as a brick</em>, <em>as subtle as a punch in the face</em>.</p>
@@ -118,7 +123,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as welcome as a skunk at a garden party</span><span>The tax inspector was <strong>about as welcome as a skunk at a garden party</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/skunk.webp" alt="" width="72" height="72" loading="lazy"><img src="img/tulip.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a skunk and a garden</span></span><span class="xe">as welcome as a skunk at a garden party</span><span>The tax inspector was <strong>about as welcome as a skunk at a garden party</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> extremely unwelcome <span class="tone humorous">humorous</span></p>
 <p><strong>Bend it:</strong> Often as a metaphor: <em>he was the skunk at the garden party</em> (the one who spoiled the fun).</p>
@@ -126,7 +131,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">about as exciting as watching paint dry</span><span>Honestly, the quarterly report was <strong>about as exciting as watching paint dry</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/paintbrush.webp" alt="" width="72" height="72" loading="lazy"><img src="img/hourglass.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">paint and time passing slowly</span></span><span class="xe">about as exciting as watching paint dry</span><span>Honestly, the quarterly report was <strong>about as exciting as watching paint dry</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> extremely boring <span class="tone humorous">humorous</span></p>
 <p><strong>Bend it:</strong> Also <em>like watching paint dry</em> and <em>like watching grass grow</em>. Fixed: <em>paint dry</em>, not <em>paint drying</em>.</p>
@@ -134,7 +139,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">like a fish needs a bicycle</span><span>This town needs another parking garage <strong>like a fish needs a bicycle</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/fish.webp" alt="" width="72" height="72" loading="lazy"><img src="img/bicycle.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a fish and a bicycle</span></span><span class="xe">like a fish needs a bicycle</span><span>This town needs another parking garage <strong>like a fish needs a bicycle</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> not needed at all <span class="tone humorous">humorous</span></p>
 <p><strong>Bend it:</strong> Usually <em>need X like a fish needs a bicycle</em>. Near-synonym: <em>I need that like I need a hole in the head</em>.</p>
@@ -142,7 +147,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as sharp as a bowling ball</span><span>Before my first coffee, I'm <strong>about as sharp as a bowling ball</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/bowling.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a bowling ball</span></span><span class="xe">as sharp as a bowling ball</span><span>Before my first coffee, I'm <strong>about as sharp as a bowling ball</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> not clever or quick-thinking at all (playful insult) <span class="tone humorous">humorous</span></p>
 <p><strong>Bend it:</strong> Also <em>as sharp as a marble</em>; compare the understatement <em>not the sharpest tool in the shed</em>.</p>
@@ -255,6 +260,7 @@
 <p><strong>Exercise 6:</strong> 1 Well, that's clear as mud. 2 The new app is about as useful as a chocolate teapot. 3 The finance minister was the skunk at the garden party. 4 The debate was like watching grass grow.</p>
   </div>
 </details>
+<p class="pic-credits">Pictures: Microsoft Fluent Emoji, used under the MIT License (see img/LICENSE.txt). The mud and submarine pictures were drawn for this site.</p>
 </main>
 <footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
 <script>

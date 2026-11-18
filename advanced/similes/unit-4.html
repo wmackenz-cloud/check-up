@@ -38,6 +38,11 @@
 .ccard .ask { font-style: italic; }
 .ccard .find { justify-self: start; font-size: .9rem; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 700; }
 .ccard.k-music { border-left-color: #8a5a00; } .ccard.k-poetry { border-left-color: var(--ok); }
+.xpic { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.xpic img { width: 72px; height: 72px; object-fit: contain; flex: none; }
+.xpic img + img { margin-left: -4px; }
+.xpic .xlabel { font-size: .88rem; color: var(--ink-soft); }
+.pic-credits { margin-top: 26px; border-top: 1px solid var(--rule); padding-top: 8px; color: var(--ink-soft); font-size: .88rem; }
 .guess-note { color: var(--ink-soft); font-size: .92rem; margin: 4px 0 0; }
 .talk ol { display: grid; gap: 8px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tone.dismissive { background: #3a2620; } }
@@ -86,7 +91,7 @@
 <p>Read each example and guess the meaning first. Then tap the card to check the meaning, the tone, and how native speakers bend it.</p>
 <div class="cards">
 <details class="xcard">
-<summary><span class="xe">like a kid in a candy store</span><span>Give my dad an afternoon in a hardware store and he's <strong>like a kid in a candy store</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/child.webp" alt="" width="72" height="72" loading="lazy"><img src="img/lollipop.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a kid and candy</span></span><span class="xe">like a kid in a candy store</span><span>Give my dad an afternoon in a hardware store and he's <strong>like a kid in a candy store</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> delighted and excited, especially by having lots of things to choose from <span class="tone humorous">humorous</span></p>
 <p><strong>Bend it:</strong> Usually after <em>be</em> or <em>feel</em>: <em>I felt like a kid in a candy store</em>. British version: <em>like a child in a sweet shop</em>.</p>
@@ -94,7 +99,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">like a deer in the headlights</span><span>When the reporter asked about the missing funds, the spokesperson looked <strong>like a deer in the headlights</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/deer.webp" alt="" width="72" height="72" loading="lazy"><img src="img/car.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a deer and a car's headlights</span></span><span class="xe">like a deer in the headlights</span><span>When the reporter asked about the missing funds, the spokesperson looked <strong>like a deer in the headlights</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> frozen with shock or fear, unable to think or act <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Also <em>like a deer caught in the headlights</em>, and as a compound adjective: <em>a deer-in-the-headlights look</em>.</p>
@@ -102,7 +107,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">like a bull in a china shop</span><span>He handled the merger talks <strong>like a bull in a china shop</strong> and offended both families.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/bull.webp" alt="" width="72" height="72" loading="lazy"><img src="img/teapot.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a bull and china (teapots, cups and plates)</span></span><span class="xe">like a bull in a china shop</span><span>He handled the merger talks <strong>like a bull in a china shop</strong> and offended both families.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> clumsy or tactless in a situation that needs care <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Often after <em>act</em>, <em>behave</em>, <em>go in</em>; also as a metaphor: <em>he's a bull in a china shop</em>.</p>
@@ -110,7 +115,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">like talking to a brick wall</span><span>I've asked the landlord about the heating five times. It's <strong>like talking to a brick wall</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/bricks.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a brick wall</span></span><span class="xe">like talking to a brick wall</span><span>I've asked the landlord about the heating five times. It's <strong>like talking to a brick wall</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> the other person doesn't listen or respond at all <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Usually <em>it's like talking to a brick wall</em>; also <em>I might as well be talking to a brick wall</em>.</p>
@@ -118,7 +123,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">like water off a duck's back</span><span>The coach yells a lot, but it's <strong>like water off a duck's back</strong> to the veterans.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/duck.webp" alt="" width="72" height="72" loading="lazy"><img src="img/drop.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">water and a duck</span></span><span class="xe">like water off a duck's back</span><span>The coach yells a lot, but it's <strong>like water off a duck's back</strong> to the veterans.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> criticism or insults have no effect on someone <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Often <em>it's (just) like water off a duck's back (to him)</em>. Sometimes shortened: <em>water off a duck's back</em>.</p>
@@ -126,7 +131,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">like a red rag to a bull</span><span>Mentioning the parking fines at the council meeting was <strong>like a red rag to a bull</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/bull.webp" alt="" width="72" height="72" loading="lazy"><img src="img/red-flag.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a bull and a red rag</span></span><span class="xe">like a red rag to a bull</span><span>Mentioning the parking fines at the council meeting was <strong>like a red rag to a bull</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> certain to make a particular person very angry <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Often without <em>like</em>: <em>it's a red rag to a bull</em>. North Americans tend to say <em>like waving a red flag in front of a bull</em>.</p>
@@ -134,7 +139,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">like a broken record</span><span>I know I sound <strong>like a broken record</strong>, but please save your work before you leave.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/disc.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a record (a disc that plays music)</span></span><span class="xe">like a broken record</span><span>I know I sound <strong>like a broken record</strong>, but please save your work before you leave.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> saying the same thing again and again, annoyingly <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Usually <em>sound like a broken record</em>. British speakers also say <em>like a stuck record</em>.</p>
@@ -142,7 +147,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">like a cat on a hot tin roof</span><span>Waiting for the biopsy results, she was <strong>like a cat on a hot tin roof</strong> all week.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/cat.webp" alt="" width="72" height="72" loading="lazy"><img src="img/house.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a cat and a roof</span></span><span class="xe">like a cat on a hot tin roof</span><span>Waiting for the biopsy results, she was <strong>like a cat on a hot tin roof</strong> all week.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> nervous, restless and unable to keep still <span class="tone neutral">neutral</span></p>
 <p><strong>Bend it:</strong> Usually after <em>be</em>; British speakers also say <em>like a cat on hot bricks</em>, the older form.</p>
@@ -255,6 +260,7 @@
 <p><strong>Exercise 6:</strong> 1 I know I sound like a broken record, but wear your helmets. 2 Late invoices are a red rag to a bull for her. 3 The candidate had a deer-in-the-headlights look. 4 I was just like a kid in a candy store.</p>
   </div>
 </details>
+<p class="pic-credits">Pictures: Microsoft Fluent Emoji, used under the MIT License (see img/LICENSE.txt). The mud and submarine pictures were drawn for this site.</p>
 </main>
 <footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
 <script>

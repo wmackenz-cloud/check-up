@@ -38,6 +38,11 @@
 .ccard .ask { font-style: italic; }
 .ccard .find { justify-self: start; font-size: .9rem; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 700; }
 .ccard.k-music { border-left-color: #8a5a00; } .ccard.k-poetry { border-left-color: var(--ok); }
+.xpic { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.xpic img { width: 72px; height: 72px; object-fit: contain; flex: none; }
+.xpic img + img { margin-left: -4px; }
+.xpic .xlabel { font-size: .88rem; color: var(--ink-soft); }
+.pic-credits { margin-top: 26px; border-top: 1px solid var(--rule); padding-top: 8px; color: var(--ink-soft); font-size: .88rem; }
 .guess-note { color: var(--ink-soft); font-size: .92rem; margin: 4px 0 0; }
 .talk ol { display: grid; gap: 8px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tone.dismissive { background: #3a2620; } }
@@ -86,7 +91,7 @@
 <p>Read each example and guess the meaning first. Then tap the card to check the meaning, the tone, and how native speakers bend it.</p>
 <div class="cards">
 <details class="xcard">
-<summary><span class="xe">as stubborn as a mule</span><span>Dad is <strong>as stubborn as a mule</strong>; he still won't use a GPS.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/donkey.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a mule</span></span><span class="xe">as stubborn as a mule</span><span>Dad is <strong>as stubborn as a mule</strong>; he still won't use a GPS.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> extremely unwilling to change your mind or behaviour <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Often shortened: <em>stubborn as a mule</em>. Also <em>mule-headed</em>. Usually critical, but can be affectionate in families.</p>
@@ -94,7 +99,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as quiet as a mouse</span><span>The new analyst was <strong>as quiet as a mouse</strong> for her first month.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/mouse.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a mouse</span></span><span class="xe">as quiet as a mouse</span><span>The new analyst was <strong>as quiet as a mouse</strong> for her first month.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> very quiet, shy or making almost no noise <span class="tone neutral">neutral</span></p>
 <p><strong>Bend it:</strong> Describes people or how they move: <em>she crept up the stairs as quiet as a mouse</em>. Also <em>mousy</em> (shy and dull, unkind).</p>
@@ -102,7 +107,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as proud as a peacock</span><span>He walked around the wedding <strong>as proud as a peacock</strong> after his speech.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/peacock.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a peacock</span></span><span class="xe">as proud as a peacock</span><span>He walked around the wedding <strong>as proud as a peacock</strong> after his speech.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> very proud, often showing off <span class="tone humorous">humorous</span></p>
 <p><strong>Bend it:</strong> Fixed noun. Also the verb <em>to peacock</em> (show off) and <em>preen</em>. Often lightly mocking.</p>
@@ -110,7 +115,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as cool as a cucumber</span><span>The pilot stayed <strong>as cool as a cucumber</strong> during the emergency landing.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/cucumber.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a cucumber</span></span><span class="xe">as cool as a cucumber</span><span>The pilot stayed <strong>as cool as a cucumber</strong> during the emergency landing.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> very calm and relaxed, especially under pressure <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Very often without the first <em>as</em>: <em>cool as a cucumber</em>. Always <em>a cucumber</em>.</p>
@@ -118,7 +123,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as fit as a fiddle</span><span>After the hip replacement, Mum is <strong>as fit as a fiddle</strong> again.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/violin.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a fiddle (a violin)</span></span><span class="xe">as fit as a fiddle</span><span>After the hip replacement, Mum is <strong>as fit as a fiddle</strong> again.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> in very good health, often said of older people <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> <em>Fit as a fiddle</em> in casual speech. Usually after <em>be</em>, <em>feel</em> or <em>look</em>.</p>
@@ -126,7 +131,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as busy as a bee</span><span>With three grandchildren visiting, I've been <strong>as busy as a bee</strong> all week.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/bee.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a bee</span></span><span class="xe">as busy as a bee</span><span>With three grandchildren visiting, I've been <strong>as busy as a bee</strong> all week.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> very busy, working actively and cheerfully <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Related noun: <em>a busy bee</em> (<em>she's a real busy bee</em>). Not <em>as busy like a bee</em>.</p>
@@ -134,7 +139,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as sharp as a tack</span><span>Our MP is <strong>as sharp as a tack</strong>; she remembers every figure.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/pin.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a tack (a drawing pin)</span></span><span class="xe">as sharp as a tack</span><span>Our MP is <strong>as sharp as a tack</strong>; she remembers every figure.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> very intelligent and quick-thinking <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> Mainly North American. British speakers say <em>as sharp as a knife</em> or <em>as sharp as a razor</em>; <em>razor-sharp</em> works everywhere.</p>
@@ -142,7 +147,7 @@
 </div>
 </details>
 <details class="xcard">
-<summary><span class="xe">as happy as a clam</span><span>Give him a lawn chair and a fishing rod and he's <strong>as happy as a clam</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
+<summary><span class="xpic"><img src="img/shellfish.webp" alt="" width="72" height="72" loading="lazy"><span class="xlabel">a clam (a shellfish)</span></span><span class="xe">as happy as a clam</span><span>Give him a lawn chair and a fishing rod and he's <strong>as happy as a clam</strong>.</span><span class="xtap">What do you think it means? Tap to check.</span></summary>
 <div class="xbody">
 <p><strong>Meaning:</strong> very happy and contented <span class="tone casual">casual</span></p>
 <p><strong>Bend it:</strong> North American. The British and Australian version is <em>as happy as Larry</em>. Also <em>happy as a pig in mud</em> (very informal).</p>
@@ -255,6 +260,7 @@
 <p><strong>Exercise 6:</strong> 1 She was cool as a cucumber the whole time. 2 He's as happy as Larry in his garden. 3 My aunt is a real busy bee. 4 They're as stubborn as mules about it.</p>
   </div>
 </details>
+<p class="pic-credits">Pictures: Microsoft Fluent Emoji, used under the MIT License (see img/LICENSE.txt). The mud and submarine pictures were drawn for this site.</p>
 </main>
 <footer class="foot"><p>From Bill's English lessons. Questions? Ask me in our next lesson.</p></footer>
 <script>
