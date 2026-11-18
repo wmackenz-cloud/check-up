@@ -13,3 +13,4 @@ Differences for similes:
 - Exercises: "type" should usually ask for the missing comparison noun ("as stubborn as a ___"); "bend" covers natural variation (dropping the first "as" in casual speech, "about as useful as", adding "a real", "like a bat out of hell" register).
 - Keep it adult and respectful; no similes that mock groups of people.
 - Do not repeat these expressions already taught in the Metaphors units: a fish out of water, the elephant in the room, a dark horse. Everything else is fine.
+- Optional "pic" on each expression: {"img": ["<file in advanced/similes/img>", ...], "label": "a mule"}. One or two pictures of the comparison noun(s), shown at the top of the card with the label. Use Microsoft Fluent Emoji 3D (MIT) or a picture drawn for the site; no photos without a free licence and a credit.
