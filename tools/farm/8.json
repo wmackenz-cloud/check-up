@@ -1,0 +1,262 @@
+{
+ "n": 8,
+ "title": "Farm Idioms and Country Life",
+ "hint": "Make hay while the sun shines, hold your horses, a wild goose chase; country vs city with quieter than, not as busy as",
+ "why": "English speakers use farm idioms every day, even in big cities: at work, in the news and with friends. Knowing them helps you understand native speakers. And comparing country life and city life is a favourite conversation topic, so you need comparatives that sound natural.",
+ "know": [
+  "ten common farm idioms: <em>make hay while the sun shines, hold your horses, a wild goose chase, bring home the bacon</em>",
+  "words for country and city life: <em>rural, urban, countryside, commute, isolated, community, wildlife</em>",
+  "comparison patterns: <em>quieter than, much more expensive, not as busy as, the most peaceful</em>"
+ ],
+ "understand": [
+  "when to use <em>-er</em> and when to use <em>more</em>: <em>cheaper</em> but <em>more expensive</em>, never <em>more cheaper</em>",
+  "that idioms are fixed: <em>till the cows come home</em>, not <em>till the cows go home</em>"
+ ],
+ "able": [
+  "understand and use farm idioms in everyday conversation",
+  "compare life in the country and life in the city",
+  "give your opinion about where you would prefer to live, with reasons"
+ ],
+ "mistakes": [
+  ["Houses in the country are more cheaper.", "Houses in the country are <strong>cheaper</strong>. (no <em>more</em> with <em>-er</em>)"],
+  ["The village is not as busy than the city.", "The village is not as busy <strong>as</strong> the city."],
+  ["Life here is more good.", "Life here is <strong>better</strong>."],
+  ["Don't count your chicken before they hatch.", "Don't count your <strong>chickens</strong> before they hatch."],
+  ["We talked until the cows go home.", "We talked <strong>till the cows came home</strong>."],
+  ["I want to live in a country.", "I want to live in <strong>the country</strong>. (<em>the country</em> = outside towns; <em>a country</em> = a nation)"]
+ ],
+ "warmup": [
+  "Do you live in a city, a town or a village? Do you like it?",
+  "Do you know any English idioms with animals in them? What do they mean?",
+  "If you could live anywhere for one year, would you choose a farm or a big city?"
+ ],
+ "vocab": [
+  {
+   "h": "Farm idioms",
+   "cols": ["Idiom", "Meaning", "Example"],
+   "rows": [
+    ["make hay while the sun shines", "use a good chance while you have it", "<em>The shop is busy this month, so let's make hay while the sun shines.</em>"],
+    ["don't count your chickens (before they hatch)", "don't be sure of a good result too early", "<em>You haven't got the job yet, so don't count your chickens.</em>"],
+    ["till the cows come home", "for a very long time", "<em>You can argue till the cows come home, but I won't change my mind.</em>"],
+    ["put the cart before the horse", "do things in the wrong order", "<em>Buying furniture before you find an apartment is putting the cart before the horse.</em>"],
+    ["bring home the bacon", "earn the money for the family", "<em>In our house, we both bring home the bacon.</em>"],
+    ["the cream of the crop", "the best of a group", "<em>These students are the cream of the crop.</em>"],
+    ["a wild goose chase", "a long search that brings no result", "<em>We went on a wild goose chase for a petrol station that had closed years ago.</em>"],
+    ["hold your horses", "wait, slow down, don't decide too fast", "<em>Hold your horses! Let's read the contract first.</em>"],
+    ["get your ducks in a row", "organize everything before you start", "<em>Get your ducks in a row before you talk to the bank.</em>"],
+    ["the pecking order", "who is more and less important in a group", "<em>New staff are at the bottom of the pecking order.</em>"]
+   ]
+  },
+  {
+   "h": "Country and city words",
+   "cols": ["Word", "Meaning", "Example"],
+   "rows": [
+    ["the country / the countryside", "land outside towns and cities, with fields and forests", "<em>We spent the weekend in the country.</em>"],
+    ["rural / urban", "of the country / of the city", "<em>Rural areas often have slower internet than urban areas.</em>"],
+    ["village", "a very small town in the country", "<em>The village has one shop and a church.</em>"],
+    ["commute", "the journey to work and back every day (noun and verb)", "<em>My commute is an hour each way.</em>"],
+    ["isolated", "far away from other people and places", "<em>The farm is quite isolated in winter.</em>"],
+    ["community", "the people who live in a place, and the feeling of belonging", "<em>There's a strong community in the village.</em>"],
+    ["neighbours", "the people who live near you", "<em>Our neighbours helped us with the harvest.</em>"],
+    ["wildlife", "wild animals and birds (no <em>-s</em>)", "<em>You can see lots of wildlife near the river.</em>"],
+    ["peace and quiet", "a calm place with no noise (fixed order)", "<em>I go to the lake for some peace and quiet.</em>"]
+   ]
+  },
+  {
+   "h": "Comparing places",
+   "cols": ["Pattern", "Rule", "Example"],
+   "rows": [
+    ["-er than", "short adjectives: quiet, cheap, safe", "<em>The village is quieter than the city.</em>"],
+    ["-ier than", "adjectives ending in -y: busy, noisy, friendly", "<em>The city is busier and noisier.</em>"],
+    ["more ... than", "long adjectives: expensive, peaceful, crowded", "<em>Toronto is more expensive than our village.</em>"],
+    ["better, worse, further", "irregular: good, bad, far", "<em>The roads are worse, but the air is better.</em>"],
+    ["not as ... as", "less than, said politely", "<em>Shopping is not as easy as in the city.</em>"],
+    ["much / a lot / a bit + comparative", "how big the difference is", "<em>It's much cheaper and a bit colder.</em>"],
+    ["the most ... / the -est", "the top of the group", "<em>It's the most peaceful place I know.</em>"]
+   ]
+  }
+ ],
+ "say": "<strong>RU</strong>ral is hard: two soft <em>r</em> sounds, /&#712;r&#650;&#601;r&#601;l/; <strong>UR</strong>ban /&#712;&#604;&#720;b&#601;n/; com<strong>MUTE</strong> /k&#601;&#712;mju&#720;t/; <strong>IS</strong>olated /&#712;a&#618;s&#601;le&#618;t&#618;d/; in idioms, stress the key words: make <strong>HAY</strong> while the <strong>SUN</strong> shines.",
+ "exercises": [
+  {
+   "title": "What does it mean?",
+   "kind": "match",
+   "intro": "Match each idiom to its meaning. Tap an idiom, then tap what it means.",
+   "items": [
+    {"l": "make hay while the sun shines", "r": "use a good chance while you have it", "why": "Farmers cut and dry hay on sunny days, because rain spoils it. So: use a good chance before it goes."},
+    {"l": "don't count your chickens", "r": "don't be sure of a good result too early", "why": "Not every egg becomes a chicken. Don't count them before they hatch: wait for the result."},
+    {"l": "till the cows come home", "r": "for a very long time", "why": "Cows walk back from the fields very slowly, so till the cows come home means for a very long time."},
+    {"l": "put the cart before the horse", "r": "do things in the wrong order", "why": "The horse pulls the cart, so it must go first. The cart before the horse is the wrong order."},
+    {"l": "bring home the bacon", "r": "earn the money for the family", "why": "Bring home the bacon means earn the money that the family lives on. It's informal."},
+    {"l": "the cream of the crop", "r": "the best of a group", "why": "Cream is the richest part of milk, and the crop is the harvest: the cream of the crop is the very best."},
+    {"l": "a wild goose chase", "r": "a long search that brings no result", "why": "Wild geese are almost impossible to catch, so a wild goose chase is a search that gets you nothing."},
+    {"l": "hold your horses", "r": "wait, slow down", "why": "Hold your horses means wait a moment, don't rush. It's informal and friendly."}
+   ]
+  },
+  {
+   "title": "Country or city?",
+   "kind": "pick",
+   "items": [
+    {"pre": "The countryside is ", "post": " than the city at night.", "opts": ["quieter", "more quiet", "quietest"], "a": 0, "why": "Quiet is a short adjective, so add -er: quieter than."},
+    {"pre": "Rent in Toronto is ", "post": " than in a small village.", "opts": ["much more expensive", "much expensiver", "more much expensive"], "a": 0, "why": "Expensive is long, so use more. Much goes before more: much more expensive."},
+    {"pre": "The village isn't as busy ", "post": " the city centre.", "opts": ["as", "than", "like"], "a": 0, "why": "The pattern is not as + adjective + as: not as busy as."},
+    {"pre": "For me, the farm is the ", "post": " place in the world.", "opts": ["most peaceful", "more peaceful", "peacefulest"], "a": 0, "why": "For the top of a group, use the most with long adjectives: the most peaceful."},
+    {"pre": "The roads in the country are ", "post": " than in the city, but there's less traffic.", "opts": ["worse", "badder", "more bad"], "a": 0, "why": "Bad is irregular: bad, worse, the worst."},
+    {"pre": "My commute is ", "post": " now: two hours a day!", "opts": ["longer", "more long", "longest"], "a": 0, "why": "Long is a short adjective, so add -er: longer."},
+    {"pre": "People in our village are ", "post": " friendlier than in the city.", "opts": ["a lot", "very", "more"], "a": 0, "why": "Use a lot, much or a bit before a comparative. Not very friendlier."},
+    {"pre": "The nearest shop is ", "post": " away than before: twenty kilometres.", "opts": ["further", "farer", "more far"], "a": 0, "why": "Far is irregular: far, further (or farther), the furthest."}
+   ]
+  },
+  {
+   "title": "Life in the country",
+   "kind": "type",
+   "bank": ["commute", "community", "countryside", "isolated", "neighbours", "rural", "urban", "wildlife"],
+   "items": [
+    {"pre": "I love the ", "post": ": green fields, forests and quiet roads.", "ok": ["countryside"], "why": "The countryside is the land outside towns and cities."},
+    {"pre": "My ", "post": " to work is an hour and a half by train.", "ok": ["commute"], "why": "Your commute is your journey to work every day."},
+    {"pre": "Our nearest ", "post": " live two kilometres away, but we see them every week.", "ok": ["neighbours", "neighbors"], "why": "Neighbours are the people who live near you. In the country, that can be quite far!"},
+    {"pre": "Deer, foxes and owls: there is so much ", "post": " around the farm.", "ok": ["wildlife"], "why": "Wildlife means wild animals and birds. It has no -s."},
+    {"pre": "Toronto is an ", "post": " area: most people live close together in apartments and houses.", "ok": ["urban"], "why": "Urban means of the city. Note an urban, because urban starts with a vowel sound."},
+    {"pre": "Many farmers live in ", "post": " areas, far from big cities.", "ok": ["rural"], "why": "Rural means of the country, outside towns and cities. The opposite is urban."},
+    {"pre": "In winter the farm can feel ", "post": ". The nearest town is fifty kilometres away.", "ok": ["isolated"], "why": "Isolated means far away from other people and places."},
+    {"pre": "Everyone in the village helps each other. There's a real sense of ", "post": ".", "ok": ["community"], "why": "A sense of community is the feeling that people in a place belong together and help each other."}
+   ]
+  },
+  {
+   "title": "Word order",
+   "kind": "order",
+   "items": [
+    {"answer": "The village is much quieter than the city.", "why": "Subject + is + much + comparative + than + the other place."},
+    {"answer": "Life on a farm is not as easy as people think.", "why": "not as + adjective + as: Life on a farm is not as easy as people think."},
+    {"answer": "Houses in the country are a lot cheaper.", "why": "a lot goes before the comparative: a lot cheaper."},
+    {"answer": "This is the most beautiful view in the valley.", "why": "Superlative: the most + long adjective + noun, then in + the place."},
+    {"answer": "My commute is longer than it was before.", "why": "Comparative + than + a clause: longer than it was before."}
+   ]
+  },
+  {
+   "title": "Reading",
+   "kind": "reading",
+   "text": "<p><strong>From Toronto to the farm: one year later</strong></p>\n<p>A year ago, my husband and I left our apartment in downtown Toronto and bought a small farm near Owen Sound. Our friends said we were mad. &ldquo;Hold your horses,&rdquo; my mother said. &ldquo;You don't know anything about farming!&rdquo;</p>\n<p>She was right. In the first month we put the cart before the horse: we bought twelve hens before we built a henhouse. Then we spent a whole day on a wild goose chase, driving from town to town to find chicken wire.</p>\n<p>But life here is much better than I expected. It's quieter than the city, of course, and the air is cleaner. The nearest supermarket is thirty kilometres away, so shopping is not as easy as it was in Toronto. My husband still works online, so he brings home the bacon, and I look after the animals.</p>\n<p>The best thing is the community. Our neighbours helped us bring in the hay in July. &ldquo;Make hay while the sun shines,&rdquo; they laughed. In the city, I didn't even know my neighbours' names.</p>",
+   "intro": "Read the blog post. Then type the missing word from the text, and press <strong>Check</strong>.",
+   "items": [
+    {"ask": "Where did the writer live before?", "pre": "In downtown ", "post": ".", "ok": ["toronto"], "why": "Paragraph 1: 'my husband and I left our apartment in downtown Toronto'."},
+    {"ask": "What did they buy before they built a henhouse?", "pre": "Twelve ", "post": ".", "ok": ["hens"], "why": "Paragraph 2: 'we bought twelve hens before we built a henhouse'. That's the cart before the horse!"},
+    {"ask": "How far away is the nearest supermarket?", "pre": "", "post": " kilometres.", "ok": ["thirty", "30"], "why": "Paragraph 3: 'The nearest supermarket is thirty kilometres away'."},
+    {"ask": "Who earns the money for the family?", "pre": "Her ", "post": ".", "ok": ["husband"], "why": "Paragraph 3: 'My husband still works online, so he brings home the bacon'."},
+    {"ask": "What is the best thing about their new life?", "pre": "The ", "post": ".", "ok": ["community"], "why": "Paragraph 4: 'The best thing is the community.'"}
+   ]
+  },
+  {
+   "title": "Speaking",
+   "kind": "speaking",
+   "items": [
+    "Would you prefer to live in the country or in the city? Give three reasons. Try to use <em>quieter, much cheaper, not as convenient as</em>.",
+    "Compare the place where you grew up with the place where you live now. What is better, and what is worse?",
+    "Do you have idioms about animals or farms in your language? Translate one into English and explain what it means.",
+    "Tell a short story about a time you went on a wild goose chase, or put the cart before the horse."
+   ]
+  },
+  {
+   "title": "Comparatives and mistakes",
+   "parts": [
+    {
+     "h": "-er, more or irregular?",
+     "kind": "sort",
+     "rule": "<p><strong>Watch out</strong></p>\n<ul>\n<li><strong>-er / -ier</strong>: short adjectives: quiet &rarr; quieter, busy &rarr; busier</li>\n<li><strong>more</strong>: long adjectives: expensive &rarr; more expensive</li>\n<li><strong>irregular</strong>: good &rarr; better, bad &rarr; worse, far &rarr; further</li>\n</ul>",
+     "intro": "How does each adjective make its comparative? Sort them.",
+     "cols": ["-er / -ier", "more", "irregular"],
+     "chips": [
+      {"t": "quiet", "col": 0, "why": "Quiet is short: quieter."},
+      {"t": "busy", "col": 0, "why": "Busy ends in -y, so change y to i and add -er: busier."},
+      {"t": "safe", "col": 0, "why": "Safe ends in -e, so just add -r: safer."},
+      {"t": "expensive", "col": 1, "why": "Expensive is long (three syllables): more expensive."},
+      {"t": "peaceful", "col": 1, "why": "Peaceful is long (two syllables, not ending in -y): more peaceful."},
+      {"t": "crowded", "col": 1, "why": "Crowded ends in -ed: more crowded."},
+      {"t": "isolated", "col": 1, "why": "Isolated is long: more isolated."},
+      {"t": "good", "col": 2, "why": "Good is irregular: good, better, the best."},
+      {"t": "bad", "col": 2, "why": "Bad is irregular: bad, worse, the worst."},
+      {"t": "far", "col": 2, "why": "Far is irregular: far, further (or farther), the furthest."}
+     ]
+    },
+    {
+     "h": "Find the mistake",
+     "kind": "spot",
+     "items": [
+      {"q": "The village is more cheaper than Toronto.", "bad": "more cheaper", "fix": "cheaper", "opts": ["most cheap", "more cheap"], "why": "Use -er or more, never both: cheaper than."},
+      {"q": "Don't count your chicken before they hatch.", "bad": "chicken", "fix": "chickens", "opts": ["chick", "hens"], "why": "The idiom is fixed: don't count your chickens before they hatch."},
+      {"q": "The farm is not as busy than the city.", "bad": "than", "fix": "as", "opts": ["like", "that"], "why": "The pattern is not as + adjective + as: not as busy as."},
+      {"q": "It's the most peaceful place I've ever lived.", "bad": "", "why": "Correct: peaceful is long, so the most peaceful."},
+      {"q": "We could talk about farming until the cows go home.", "bad": "go", "fix": "come", "opts": ["walk", "get"], "why": "The idiom is fixed: till (or until) the cows come home."}
+     ]
+    }
+   ]
+  }
+ ],
+ "teacher": {
+  "purpose": "finish the Farm English series with ten everyday farm idioms (<em>make hay while the sun shines, hold your horses, a wild goose chase</em>) and the language for comparing country and city life: <em>-er / more than, not as ... as, much / a lot / a bit</em> and superlatives. It pulls together the animals, places and farm work from the earlier lessons.",
+  "before": "think of a real story of your own that fits one idiom (a wild goose chase, putting the cart before the horse). Students remember idioms much better from a teacher's story. Ask the student to think about the place they grew up.",
+  "plan": [
+   ["Warm-up (5 min).", "The three warm-up questions. Note the comparatives the student uses naturally, and any errors (<em>more cheaper</em>, <em>more good</em>)."],
+   ["Key vocabulary (12 min).", "Idioms first: tell the farm picture behind each one (why hay needs sun, why cows come home slowly) before the meaning. Then the country and city words, then a quick review of the comparison table."],
+   ["Exercises 1 and 2 (8 min).", "Matching idioms, then the comparatives. In Exercise 2, ask the student to say the rule each time: short, long or irregular."],
+   ["Exercise 3 or 4 (5 min).", "Do one together and set the other for home."],
+   ["Reading (7 min).", "The blog post. First ask: &ldquo;Find four idioms in the text.&rdquo; (hold your horses, put the cart before the horse, a wild goose chase, brings home the bacon, make hay while the sun shines). Then the questions."],
+   ["Speaking (10 min).", "Questions 1 and 4 are the core. Push for a range of comparison forms, not just <em>better</em>."],
+   ["Sort and wrap-up (3 min).", "Exercise 7 Part A together; Part B at home."]
+  ],
+  "pron": [
+   "<strong>rural</strong> /&#712;r&#650;&#601;r&#601;l/: one of the hardest words in English for many students. Practise it slowly: <em>ROO-rul</em>. If it really doesn't work, <em>in the country</em> is a fine alternative.",
+   "<strong>urban</strong> /&#712;&#604;&#720;b&#601;n/: the same vowel as <em>bird</em> and <em>work</em>, not <em>ar</em>.",
+   "<strong>commute</strong> /k&#601;&#712;mju&#720;t/: stress on the second syllable, for both the noun and the verb.",
+   "<strong>isolated</strong> /&#712;a&#618;s&#601;le&#618;t&#618;d/: the first syllable is <em>eye</em>; the <em>-ed</em> is an extra syllable after <em>t</em>.",
+   "Comparatives: the <em>-er</em> and <em>than</em> are weak: <em>quieter than</em> /&#712;kwa&#618;&#601;t&#601; &eth;&#601;n/. Students often stress <em>than</em>.",
+   "<strong>further</strong> /&#712;f&#604;&#720;&eth;&#601;/: the <em>th</em> is voiced, as in <em>this</em>."
+  ],
+  "mistakes_h": "Idioms, register and common mistakes",
+  "mistakes": [
+   "<strong>Informal idioms:</strong> <em>hold your horses</em>, <em>bring home the bacon</em> and <em>till the cows come home</em> are informal: fine with friends and colleagues, not in a formal email. <em>Get your ducks in a row</em> and <em>the pecking order</em> are common in work talk. <em>The cream of the crop</em>, <em>a wild goose chase</em> and <em>putting the cart before the horse</em> are neutral and fine almost anywhere.",
+   "<strong>Idioms are fixed.</strong> Students change small words: <em>till the cows go home</em>, <em>count your eggs</em>, <em>the cream of the milk</em>. Praise the meaning, then correct the form.",
+   "<strong>more cheaper, more better</strong>: the most common comparative error. One way only: <em>-er</em> or <em>more</em>.",
+   "<strong>not as ... than</strong>: a mix of two patterns. It's <em>not as busy as</em> or <em>less busy than</em>.",
+   "<strong>very + comparative</strong>: <em>very cheaper</em> is wrong. Use <em>much, a lot, a bit, far</em>: <em>much cheaper</em>.",
+   "<strong>the country / a country / the countryside</strong>: <em>I live in the country</em> = outside towns. <em>Canada is a big country</em> = a nation. Spanish <em>campo</em>, French <em>campagne</em>, Italian <em>campagna</em> = <em>the country(side)</em>, not <em>camp</em> or <em>campaign</em>.",
+   "<strong>Other idioms:</strong> <em>the black sheep</em> and <em>like a bull in a china shop</em> are farm idioms too; they are taught in the Advanced English similes and metaphors units, so they are left out here."
+  ],
+  "uk_us": [
+   ["flat", "apartment", "British English says flat; Canadians and Americans say apartment (or condo)."],
+   ["till / until the cows come home", "same", "Till is a little more informal than until; both are fine."]
+  ],
+  "adapt": [
+   ["Vocabulary", "Focus on five idioms (make hay while the sun shines, don't count your chickens, hold your horses, a wild goose chase, bring home the bacon) and the regular comparative rules.", "All ten idioms, plus <em>the black sheep</em> and <em>like a bull in a china shop</em>; add <em>far / slightly / considerably + comparative</em>, <em>the + comparative, the + comparative</em> (<em>the further from the city, the cheaper the houses</em>)."],
+   ["Speaking", "Compare two places they know with three or four sentences each.", "A mini-debate: the student argues for city life, then for country life. Then a short story using two idioms naturally."]
+  ],
+  "prompts": [
+   "<strong>Country or city?</strong> Follow up: &ldquo;What would you miss most?&rdquo; &ldquo;Is it better for children? For older people?&rdquo; Listen for <em>more cheaper</em> and <em>not as ... than</em>.",
+   "<strong>Then and now.</strong> Follow up: &ldquo;Is your commute longer or shorter now?&rdquo; &ldquo;Which place has the best food?&rdquo; Good for superlatives.",
+   "<strong>Idioms in your language.</strong> Many languages have a version of <em>don't count your chickens</em> (Spanish <em>no vendas la piel del oso antes de cazarlo</em>, French <em>il ne faut pas vendre la peau de l'ours</em>). Ask: &ldquo;Which animal is in your version?&rdquo;",
+   "<strong>A wild goose chase story.</strong> Tell yours first. Follow up: &ldquo;What happened in the end?&rdquo; &ldquo;What did you learn?&rdquo; Coach the student to put the idiom at the end as a summary: <em>It was a real wild goose chase.</em>"
+  ]
+ },
+ "bank": [
+  {"type": "pick", "q": "My sister has a great job, so she ___ home the bacon in their family.", "opts": ["brings", "takes", "carries"], "a": "brings", "why": "The idiom is bring home the bacon: earn the money for the family."},
+  {"type": "pick", "q": "Hold your ___! Let me finish explaining first.", "opts": ["horses", "cows", "chickens"], "a": "horses", "why": "Hold your horses means wait, don't rush."},
+  {"type": "pick", "q": "The bus to town is ___ than the train.", "opts": ["slower", "more slow", "slowlier"], "a": "slower", "why": "Slow is a short adjective, so add -er: slower than."},
+  {"type": "pick", "q": "Our new house is ___ bigger than the old one.", "opts": ["much", "very", "more"], "a": "much", "why": "Use much, a lot or a bit before a comparative, not very: much bigger."},
+  {"type": "pick", "q": "Village life isn't as exciting ___ city life.", "opts": ["as", "than", "like"], "a": "as", "why": "The pattern is not as + adjective + as: not as exciting as."},
+  {"type": "pick", "q": "Only the cream of the ___ get a place at this cooking school.", "opts": ["crop", "milk", "farm"], "a": "crop", "why": "The idiom is the cream of the crop: the very best."},
+  {"type": "pick", "q": "We spent all afternoon on a wild ___ chase looking for a farm shop that had closed.", "opts": ["goose", "duck", "horse"], "a": "goose", "why": "A wild goose chase is a long search that brings no result."},
+  {"type": "pick", "q": "That was the ___ walk I've ever had: no cars, just birds.", "opts": ["quietest", "quieter", "more quietest"], "a": "quietest", "why": "Short adjective, top of the group: the quietest."},
+  {"type": "type", "q": "It's sunny today, so let's cut the grass. Make ___ while the sun shines!", "a": ["hay"], "why": "The idiom is make hay while the sun shines: use a good chance while you have it."},
+  {"type": "type", "q": "Before you buy a farm, get your ducks in a ___.", "a": ["row"], "why": "Get your ducks in a row means organize everything before you start."},
+  {"type": "type", "q": "Houses in the village are much ___ than in Toronto. (cheap)", "a": ["cheaper"], "why": "Cheap is short, so add -er: much cheaper."},
+  {"type": "type", "q": "The weather this winter was ___ than last year. (bad)", "a": ["worse"], "why": "Bad is irregular: bad, worse, the worst."},
+  {"type": "type", "q": "The nearest hospital is an hour away. It's quite ___ out here.", "a": ["isolated", "remote"], "why": "Isolated (or remote) means far away from other people and places."},
+  {"type": "spot", "q": "My brother can talk about football till the cows come back.", "bad": "back", "fix": "home", "opts": ["home", "out"], "why": "The idiom is fixed: till the cows come home."},
+  {"type": "spot", "q": "Life in the country is more healthier than in the city.", "bad": "more healthier", "fix": "healthier", "opts": ["healthier", "most healthy"], "why": "Use -er or more, never both: healthier."},
+  {"type": "spot", "q": "Our village is much friendlier than the town where I grew up.", "bad": "", "why": "Correct: much + comparative: much friendlier."},
+  {"type": "spot", "q": "In the farm, the oldest hen is at the top of the pecking order.", "bad": "In", "fix": "On", "opts": ["On", "At"], "why": "We say on a farm: On the farm, the oldest hen is at the top of the pecking order."},
+  {"type": "order", "a": "Life in the country is much slower than in Toronto.", "alt": [], "why": "Subject + is + much + comparative + than + place."},
+  {"type": "order", "a": "The village is not as noisy as the city.", "alt": [], "why": "not as + adjective + as: not as noisy as the city."},
+  {"type": "order", "a": "Don't count your chickens before they hatch.", "alt": [], "why": "The idiom is fixed: Don't count your chickens before they hatch."}
+ ]
+}

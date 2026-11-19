@@ -27,7 +27,9 @@ window.PATHWAY = {
     { id: "pron-zh", lang: "zh", name: "Pronunciation: Chinese speakers", note: "Endings and voicing first, then the sounds most specific to Chinese speakers (v and w, z, th), then linking and rhythm. Finish by repeating the Reading Check and comparing the two recordings.",
       order: ["pron-1", "pron-2", "pron-d1", "pron-3", "pron-d3", "pron-d2", "pron-5", "pron-d4", "pron-4", "pron-d5", "pron-6"] },
     { id: "educators", name: "English for Educators", note: "For students who work as teachers, with US and UK school terms; links into the grammar and speaking routes.",
-      order: ["ed-1", "ed-2", "ed-3", "ed-4", "ed-5", "ed-6"] }
+      order: ["ed-1", "ed-2", "ed-3", "ed-4", "ed-5", "ed-6"] },
+    { id: "farm", name: "Farm English", note: "For any curious learner: farm animals, places, machines, crops, food, weather and idioms; links into the grammar route.",
+      order: ["fa-1", "fa-2", "fa-3", "fa-4", "fa-5", "fa-6", "fa-7", "fa-8"] }
   ],
   lessons: {
     "vt-1": { t: "Present Simple", p: "grammar/tense-1.html", next: [["vt-2", "Next tense: Present Continuous."]] },
@@ -129,6 +131,14 @@ window.PATHWAY = {
     "ed-4": { t: "Curriculum, Planning and Teaching", p: "educators/student-4.html", next: [["ed-5", "Assessment, grading and reports."], ["sp-4", "Give opinions about teaching with A.R.E."]] },
     "ed-5": { t: "Assessment, Grading and Reports", p: "educators/student-5.html", next: [["ed-6", "Parents, colleagues and job interviews."], ["gt-8", "The passive for reports: Work is marked by ..."]] },
     "ed-6": { t: "Parents, Colleagues and Job Interviews", p: "educators/student-6.html", next: [["sp-6", "STAR stories for interview answers."], ["v-6", "Formal and informal words for emails to parents."]] },
+    "fa-1": { t: "Farm Animals and Their Young", p: "farm/student-1.html", next: [["fa-2", "Around the farm: buildings and land."], ["gt-4", "Countable and uncountable: sheep, cattle, livestock."]] },
+    "fa-2": { t: "Around the Farm: Buildings and Land", p: "farm/student-2.html", next: [["fa-3", "Farm machines and tools."], ["v-18", "Fixed phrases with prepositions."]] },
+    "fa-3": { t: "Farm Machines and Tools", p: "farm/student-3.html", next: [["fa-4", "Crops and the farming year."], ["gt-5", "Gerund or infinitive: used for digging, used to dig."]] },
+    "fa-4": { t: "Crops and the Farming Year", p: "farm/student-4.html", next: [["fa-5", "Looking after animals."], ["gt-8", "The passive in full: the seeds are sown."]] },
+    "fa-5": { t: "Looking After Animals", p: "farm/student-5.html", next: [["fa-6", "From farm to table."], ["gt-2", "Routines: present simple or continuous."]] },
+    "fa-6": { t: "From Farm to Table", p: "farm/student-6.html", next: [["fa-7", "Weather, soil and farm problems."], ["gt-4", "Countable, uncountable and quantifiers in full."]] },
+    "fa-7": { t: "Weather, Soil and Farm Problems", p: "farm/student-7.html", next: [["fa-8", "Farm idioms and country life."], ["gt-6", "Conditionals in full: If it doesn't rain ..."]] },
+    "fa-8": { t: "Farm Idioms and Country Life", p: "farm/student-8.html", next: [["sp-4", "Give your opinion: country or city?"], ["as-2", "For strong students: as ... as similes."]] },
     "pron-1":  { t: "Reading Check", p: "pronunciation/lesson-1-c7805b.html", next: [["pron-2", "Endings are the biggest problem for most Vietnamese and Chinese speakers: start there."]] },
     "pron-2":  { t: "Finish the Word", p: "pronunciation/lesson-2-d96f38.html", next: [["pron-d1", "The daily drill for endings: the back-chaining ladders fix clusters."]],
       nextBy: { zh: [["pron-d1", "The daily drill for endings and voicing: bag or back, rib or rip."]] } },

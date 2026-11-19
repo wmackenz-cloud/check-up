@@ -1,0 +1,259 @@
+{
+ "n": 3,
+ "title": "Farm Machines and Tools",
+ "hint": "Tractor, plough, combine, baler; spade, rake, hoe, pitchfork; used to, used for, so that, in order to",
+ "why": "farm machines are big, loud and everywhere in the countryside, and garden tools are in almost every home. Knowing their names, and how to say what something is <em>used for</em>, helps you describe any tool or machine, on a farm or in your own garden.",
+ "know": [
+  "farm machines: <em>tractor, trailer, plough, harrow, seed drill, sprayer, combine harvester, baler, quad bike</em>",
+  "hand tools: <em>spade, shovel, pitchfork, hoe, rake, wheelbarrow, shears, bucket</em>",
+  "purpose phrases: <em>is used to, is used for, to, in order to, so that</em>"
+ ],
+ "understand": [
+  "the difference between <em>is used to + verb</em> and <em>is used for + -ing</em>",
+  "why we say <em>I came here to learn</em>, not <em>for learn</em> or <em>for to learn</em>"
+ ],
+ "able": [
+  "name common farm machines and garden tools",
+  "explain what a machine or tool does and what it is used for",
+  "say why people do things: <em>She bought a quad bike to check the fences.</em>"
+ ],
+ "mistakes": [
+  ["A spade is used for dig.", "A spade is used <strong>for digging</strong>. / A spade is used <strong>to dig</strong>."],
+  ["I came here for learn about farms.", "I came here <strong>to learn</strong> about farms."],
+  ["He wears gloves for to protect his hands.", "He wears gloves <strong>to protect</strong> his hands."],
+  ["The machine for harvest wheat is a combine.", "The machine for <strong>harvesting</strong> wheat is a combine."],
+  ["We cover the hay so that it stay dry.", "We cover the hay so that it <strong>stays</strong> dry."],
+  ["Pass me a shear, please.", "Pass me the <strong>shears</strong>, please. (always plural, like <em>scissors</em>)"]
+ ],
+ "warmup": [
+  "Which farm machines can you name in English? Have you ever sat on a tractor?",
+  "Do you have a garden or a balcony with plants? Which tools do you use?",
+  "Think of one tool in your kitchen. What is it for? Try to explain it without saying its name."
+ ],
+ "vocab": [
+  {
+   "h": "Farm machines",
+   "cols": ["Machine", "What it does"],
+   "rows": [
+    ["tractor", "a strong vehicle that pulls other machines and trailers"],
+    ["trailer", "a cart pulled behind a tractor; it carries hay, crops or animals"],
+    ["plough (US/Canada plow)", "turns over the soil before planting"],
+    ["harrow", "breaks the soil into small pieces after ploughing"],
+    ["seed drill", "puts seeds into the ground in neat rows"],
+    ["sprayer", "sprays water, fertiliser or chemicals on crops"],
+    ["combine harvester (a combine)", "cuts grain crops and separates the grain from the straw"],
+    ["baler", "presses hay or straw into bales (big round or square blocks)"],
+    ["quad bike (US/Canada ATV)", "a small motorbike with four wheels for getting around the farm"]
+   ]
+  },
+  {
+   "h": "Hand tools",
+   "cols": ["Tool", "What it is used for"],
+   "rows": [
+    ["spade", "a flat, sharp blade on a handle, for digging"],
+    ["shovel", "a wide, curved blade, for moving soil, sand or snow"],
+    ["pitchfork", "a long fork, for lifting hay and straw"],
+    ["hoe", "a thin, flat blade on a long handle, for removing weeds"],
+    ["rake", "a row of metal or plastic teeth, for collecting leaves and making soil smooth"],
+    ["wheelbarrow", "a small cart with one wheel, for carrying soil, stones or manure"],
+    ["shears", "very big scissors, for cutting hedges or sheep's wool (always plural)"],
+    ["bucket", "a round container with a handle, for carrying water or feed"]
+   ]
+  },
+  {
+   "h": "Saying what it's for",
+   "cols": ["Phrase", "Use it for", "Example"],
+   "rows": [
+    ["is used to + verb", "the job of a tool or machine", "<em>A harrow is used to break up the soil.</em>"],
+    ["is used for + -ing / noun", "the same idea, with -ing or a noun", "<em>A pitchfork is used for lifting hay. This trailer is for animals.</em>"],
+    ["to + verb", "why someone does something", "<em>She bought a quad bike to check the fences.</em>"],
+    ["in order to + verb", "the same, more formal", "<em>Farmers rotate crops in order to keep the soil healthy.</em>"],
+    ["so that + subject + verb", "the result you want; often with <em>can</em> or <em>will</em>", "<em>We cover the hay so that it stays dry.</em>"]
+   ]
+  }
+ ],
+ "say": "<strong>plough</strong> rhymes with <em>cow</em>; a <strong>COMbine</strong> (the machine) has stress on the first part, but to <strong>comBINE</strong> (mix) has stress on the second; <strong>hoe</strong> sounds like <em>go</em>; <strong>SHOvel</strong> rhymes with <em>love-l</em>; <strong>shears</strong> rhymes with <em>ears</em>.",
+ "exercises": [
+  {
+   "title": "What does it do?",
+   "kind": "match",
+   "intro": "Match each machine or tool to its job. Tap one, then tap what it does.",
+   "items": [
+    {"l": "tractor", "r": "pulls machines and trailers", "why": "A tractor is the farm's strongest vehicle. It pulls other machines, like a plough or a trailer."},
+    {"l": "plough", "r": "turns over the soil", "why": "A plough (US/Canada plow) turns over the soil before farmers plant seeds."},
+    {"l": "harrow", "r": "breaks the soil into small pieces", "why": "A harrow comes after the plough. It breaks big pieces of soil into small ones."},
+    {"l": "seed drill", "r": "puts seeds into the ground in rows", "why": "A seed drill makes small holes and puts seeds into the ground in neat rows."},
+    {"l": "sprayer", "r": "sprays crops with water or chemicals", "why": "A sprayer sprays water, fertiliser or chemicals onto crops."},
+    {"l": "combine harvester", "r": "cuts grain and separates it from the straw", "why": "A combine harvester cuts wheat or barley and separates the grain from the straw at the same time."},
+    {"l": "baler", "r": "makes hay into bales", "why": "A baler presses hay or straw into bales: big round or square blocks."},
+    {"l": "wheelbarrow", "r": "carries soil or manure by hand", "why": "A wheelbarrow is a small cart with one wheel. You push it to carry soil, stones or manure."}
+   ]
+  },
+  {
+   "title": "What's it for?",
+   "kind": "pick",
+   "items": [
+    {"pre": "A hoe is used ", "post": " weeds.", "opts": ["to remove", "for remove", "removing"], "a": 0, "why": "is used to + verb: used to remove weeds. (Or: used for removing weeds.)"},
+    {"pre": "A rake is used for ", "post": " leaves.", "opts": ["collect", "to collect", "collecting"], "a": 2, "why": "After for, use -ing: used for collecting leaves."},
+    {"pre": "The farmer bought a quad bike ", "post": " check the sheep in the hills.", "opts": ["to", "for", "for to"], "a": 0, "why": "To say why someone does something, use to + verb: to check the sheep. Not for or for to."},
+    {"pre": "We put a cover on the hay ", "post": " it stays dry.", "opts": ["for", "so that", "to"], "a": 1, "why": "Before a subject and verb (it stays), use so that: so that it stays dry."},
+    {"pre": "The combine works late at night ", "post": " finish the harvest before the rain.", "opts": ["so that", "in order to", "for"], "a": 1, "why": "in order to + verb (a formal way to say to): in order to finish. So that needs a subject: so that they can finish."},
+    {"pre": "This trailer is ", "post": " carrying animals.", "opts": ["to", "for", "so that"], "a": 1, "why": "is for + -ing: This trailer is for carrying animals."},
+    {"pre": "The sprayer is used to ", "post": " the crops from insects.", "opts": ["protect", "protecting", "protects"], "a": 0, "why": "is used to + the base verb: used to protect. No -ing and no -s."},
+    {"pre": "Sheep farmers use shears ", "post": " the wool.", "opts": ["for cut", "cutting", "to cut"], "a": 2, "why": "use something + to + verb: use shears to cut the wool."}
+   ]
+  },
+  {
+   "title": "Name the tool",
+   "kind": "type",
+   "bank": ["baler", "bucket", "pitchfork", "plough", "shovel", "spade", "tractor", "trailer"],
+   "items": [
+    {"pre": "Use the ", "post": " to dig a hole for the new apple tree.", "ok": ["spade"], "why": "A spade has a flat, sharp blade for digging."},
+    {"pre": "He lifted the hay onto the cart with a ", "post": ".", "ok": ["pitchfork"], "why": "A pitchfork is a long fork for lifting hay and straw."},
+    {"pre": "Can you fill this ", "post": " with water for the calves?", "ok": ["bucket"], "why": "A bucket is a round container with a handle, for carrying water or feed."},
+    {"pre": "The ", "post": " is pulling a trailer full of potatoes.", "ok": ["tractor"], "why": "A tractor pulls other machines and trailers."},
+    {"pre": "We loaded the bales onto the ", "post": " and took them to the barn.", "ok": ["trailer"], "why": "A trailer is pulled behind a tractor. It carries hay, crops or animals."},
+    {"pre": "The ", "post": " turned the hay into neat round bales.", "ok": ["baler"], "why": "A baler presses hay or straw into bales."},
+    {"pre": "After the snow, we used a ", "post": " to clear the path to the barn.", "ok": ["shovel"], "why": "A shovel has a wide, curved blade for moving snow, soil or sand."},
+    {"pre": "In spring the farmer uses a ", "post": " to turn over the soil.", "ok": ["plough", "plow"], "why": "A plough (US/Canada plow) turns over the soil before planting."}
+   ]
+  },
+  {
+   "title": "Word order",
+   "kind": "order",
+   "items": [
+    {"answer": "A harrow is used to break up the soil.", "why": "Subject + is used to + verb: A harrow is used to break up the soil."},
+    {"answer": "What is this machine used for?", "why": "Question about purpose: What is + subject + used for? The word for goes at the end."},
+    {"answer": "She wears gloves so that she doesn't cut her hands.", "why": "so that + subject + verb: so that she doesn't cut her hands."},
+    {"answer": "The combine harvester cuts the wheat in August.", "why": "Subject + verb + object + time: The combine harvester cuts the wheat in August."},
+    {"answer": "We need a wheelbarrow to move all this soil.", "why": "need + thing + to + verb (the purpose): a wheelbarrow to move all this soil."}
+   ]
+  },
+  {
+   "title": "Reading",
+   "kind": "reading",
+   "text": "<p><strong>Green Valley Farm: Open Day</strong><br>Saturday 14 September, 10 a.m. to 4 p.m.</p>\n<p>Come and see how a modern farm works! This year our theme is farm machines, old and new.</p>\n<p>In the big barn you can sit in the cab of our new tractor. It has air conditioning and a computer screen, and it uses GPS so that it can drive in perfectly straight lines. Next to it is our combine harvester, which is used for harvesting wheat and barley. It is as tall as a house!</p>\n<p>In the yard, our neighbour Frank will show you his collection of old machines. His oldest plough is more than a hundred years old. In those days, horses were used to pull it.</p>\n<p>Children can try our hand tools in the vegetable garden: they can dig with a spade, collect leaves with a rake and have a wheelbarrow race. At 2 p.m. there is a tractor-and-trailer ride around the farm.</p>\n<p>Tickets cost $10 for adults. Children under twelve are free. Please wear old shoes, because the farmyard can be muddy!</p>",
+   "intro": "Read the leaflet. Then type the missing word from the text, and press <strong>Check</strong>.",
+   "items": [
+    {"ask": "What can you sit in, in the big barn?", "pre": "The cab of the new ", "post": ".", "ok": ["tractor"], "why": "Paragraph 3: 'In the big barn you can sit in the cab of our new tractor.'"},
+    {"ask": "Why does the tractor use GPS?", "pre": "So that it can drive in perfectly straight ", "post": ".", "ok": ["lines"], "why": "Paragraph 3: 'it uses GPS so that it can drive in perfectly straight lines'."},
+    {"ask": "What is the combine harvester used for?", "pre": "Harvesting wheat and ", "post": ".", "ok": ["barley"], "why": "Paragraph 3: 'used for harvesting wheat and barley'."},
+    {"ask": "What pulled the old plough?", "pre": "", "post": ".", "ok": ["horses"], "why": "Paragraph 4: 'In those days, horses were used to pull it.'"},
+    {"ask": "Why should visitors wear old shoes?", "pre": "Because the farmyard can be ", "post": ".", "ok": ["muddy"], "why": "Paragraph 6: 'wear old shoes, because the farmyard can be muddy'."}
+   ]
+  },
+  {
+   "title": "Speaking",
+   "kind": "speaking",
+   "items": [
+    "Choose a tool from your kitchen, garden or toolbox. Describe it without saying its name: <em>It's used for ... It's made of ...</em> Can your teacher guess it?",
+    "How have farm machines changed since your grandparents' time? Do you know anyone who still works by hand or with animals?",
+    "Would you like to drive a tractor or a combine harvester? Why or why not?",
+    "Self-driving tractors and drones are now used on some farms. What do you think they are used for? Is this a good thing?"
+   ]
+  },
+  {
+   "title": "Purpose and mistakes",
+   "parts": [
+    {
+     "h": "used to ... or used for ...?",
+     "kind": "sort",
+     "rule": "<p><strong>Watch out</strong></p>\n<ul>\n<li><strong>used to</strong> + verb: <em>A spade is used to dig holes.</em></li>\n<li><strong>used for</strong> + -ing: <em>A spade is used for digging holes.</em></li>\n<li>Both are correct and mean the same. Never <em>used for dig</em> or <em>used to digging</em> (for a tool's job).</li>\n</ul>",
+     "intro": "Which phrase goes with each ending? Sort them.",
+     "cols": ["is used to ...", "is used for ..."],
+     "chips": [
+      {"t": "dig holes", "col": 0, "why": "Base verb after used to: used to dig holes."},
+      {"t": "digging holes", "col": 1, "why": "-ing after used for: used for digging holes."},
+      {"t": "carry soil", "col": 0, "why": "Base verb after used to: used to carry soil."},
+      {"t": "carrying soil", "col": 1, "why": "-ing after used for: used for carrying soil."},
+      {"t": "collect leaves", "col": 0, "why": "Base verb after used to: used to collect leaves."},
+      {"t": "collecting leaves", "col": 1, "why": "-ing after used for: used for collecting leaves."},
+      {"t": "lift hay", "col": 0, "why": "Base verb after used to: used to lift hay."},
+      {"t": "lifting hay", "col": 1, "why": "-ing after used for: used for lifting hay."},
+      {"t": "remove weeds", "col": 0, "why": "Base verb after used to: used to remove weeds."},
+      {"t": "removing weeds", "col": 1, "why": "-ing after used for: used for removing weeds."}
+     ]
+    },
+    {
+     "h": "Find the mistake",
+     "kind": "spot",
+     "items": [
+      {"q": "A spade is used for dig holes.", "bad": "dig", "fix": "digging", "opts": ["digs", "dug"], "why": "After for, use -ing: used for digging holes. (Or: used to dig holes.)"},
+      {"q": "He bought a trailer for carry the bales.", "bad": "for carry", "fix": "to carry", "opts": ["for to carry", "carrying"], "why": "To say why, use to + verb: He bought a trailer to carry the bales."},
+      {"q": "We covered the hay so that it stays dry.", "bad": "", "why": "Correct: so that + subject + verb: so that it stays dry."},
+      {"q": "The sprayer is used to protecting the crops.", "bad": "protecting", "fix": "protect", "opts": ["protects", "protected"], "why": "is used to + base verb: used to protect the crops."},
+      {"q": "Farmers use a combine for to harvest wheat.", "bad": "for to", "fix": "to", "opts": ["for", "so that"], "why": "Never for to. Say: Farmers use a combine to harvest wheat."}
+     ]
+    }
+   ]
+  }
+ ],
+ "teacher": {
+  "purpose": "give general learners the names of common farm machines and hand tools (<em>tractor, plough, combine harvester, baler; spade, rake, hoe, pitchfork, wheelbarrow</em>) and the language of purpose: <em>is used to + verb</em>, <em>is used for + -ing</em>, <em>to</em>, <em>in order to</em> and <em>so that</em>. The reading is a farm open-day leaflet.",
+  "before": "find photos of three or four farm machines (a tractor, a combine, a baler) and a few garden tools; a garden centre website or a toy catalogue works well. Ask the student to have one tool from home ready to show on camera.",
+  "plan": [
+   ["Warm-up (5 min).", "The three warm-up questions. The third (describe a kitchen tool without its name) shows you how the student already talks about purpose."],
+   ["Key vocabulary (10 min).", "Machines first, in the order of the farming year: plough, harrow, seed drill, sprayer, combine, baler. Then the hand tools, ideally with real objects or photos. Then the purpose phrases."],
+   ["Exercises 1 and 2 (8 min).", "Matching, then the purpose phrases. In Exercise 2, ask the student to say each sentence a second way: <em>used to remove</em> &rarr; <em>used for removing</em>."],
+   ["Exercise 3 or 4 (5 min).", "Do one together and set the other for home."],
+   ["Reading (8 min).", "The open-day leaflet. First ask: &ldquo;Would you go? What would you most like to see?&rdquo; Then the questions. Point out <em>so that it can drive</em> and <em>horses were used to pull it</em>."],
+   ["Speaking (10 min).", "Question 1 (the guessing game) is the core and good fun: take turns. Then Question 2 or 4."],
+   ["Purpose and wrap-up (4 min).", "Exercise 7 Part A together; Part B at home."]
+  ],
+  "pron": [
+   "<strong>plough</strong> /pla&#650;/: rhymes with <em>cow</em>. The <em>-ough</em> spelling confuses everyone (<em>though, through, tough</em>); the US/Canada spelling <em>plow</em> shows the sound.",
+   "<strong>combine</strong>: the machine is /&#712;k&#594;mba&#618;n/ (stress first), the verb <em>to combine</em> is /k&#601;m&#712;ba&#618;n/ (stress second).",
+   "<strong>harrow</strong> /&#712;h&#230;r&#601;&#650;/: like <em>arrow</em> with an <em>h</em>. <strong>hoe</strong> /h&#601;&#650;/: like <em>go</em>.",
+   "<strong>shovel</strong> /&#712;&#643;&#652;v&#601;l/: the <em>o</em> sounds like <em>love</em>, not <em>hot</em>.",
+   "<strong>shears</strong> /&#643;&#618;&#601;z/: rhymes with <em>ears</em>. <strong>wheelbarrow</strong> /&#712;wi&#720;lb&#230;r&#601;&#650;/: stress on <em>wheel</em>.",
+   "<strong>baler</strong> /&#712;be&#618;l&#601;/, <strong>bales</strong> /be&#618;lz/: like <em>sail</em>, not <em>ball</em>."
+  ],
+  "mistakes": [
+   "<strong>for + verb</strong>: Spanish <em>para</em>, French <em>pour</em>, Italian <em>per</em>, Portuguese <em>para</em> + infinitive lead to <em>I came for learn</em> or <em>for to learn</em>. In English, purpose is <em>to + verb</em>; <em>for</em> takes a noun or <em>-ing</em> (<em>for digging, for hay</em>).",
+   "<strong>is used to + verb</strong> (a tool's job) vs <strong>be used to + -ing</strong> (accustomed): <em>A hoe is used to remove weeds</em> vs <em>I'm used to getting up early.</em> Mention it only if the student mixes them.",
+   "<strong>so that</strong> needs a subject and verb: <em>so that it stays dry</em>, <em>so that we can finish</em>. <em>In order to</em> and <em>to</em> need just a verb.",
+   "<strong>spade vs shovel</strong>: a spade digs (flat, sharp edge); a shovel moves loose things (wide, curved). In everyday North American English, people often say <em>shovel</em> for both.",
+   "<strong>machinery, equipment</strong> are uncountable: <em>farm machinery</em>, <em>new equipment</em>. Not <em>machineries</em> or <em>an equipment</em>. Say <em>a machine</em> or <em>a piece of equipment</em>.",
+   "<strong>shears</strong> (and <em>scissors</em>) are always plural: <em>these shears are sharp</em>, <em>a pair of shears</em>."
+  ],
+  "uk_us": [
+   ["plough", "plow", "Canadian spelling varies; both are used."],
+   ["quad bike", "ATV, four-wheeler", "ATV = all-terrain vehicle."],
+   ["combine harvester", "combine", "In the UK too, farmers usually just say the combine."],
+   ["trailer", "trailer, wagon (a hay wagon)", "A hayride in North America is a ride on a hay wagon."],
+   ["fertiliser", "fertilizer", "Canadian spelling often follows the US here."]
+  ],
+  "adapt": [
+   ["Vocabulary", "Focus on tractor, trailer, plough, combine, and spade, shovel, rake, wheelbarrow, bucket. Phrases: used to + verb, used for + -ing, to + verb.", "All words; add <em>cultivator, mower, irrigation system, drone, auger</em>, and <em>so as to, with the aim of, which allows farmers to</em>."],
+   ["Speaking", "The guessing game with everyday tools; say what three tools at home are used for.", "Explain a modern machine (a milking robot, a drone) to someone who has never seen one, or discuss whether technology is good for small farms."]
+  ],
+  "prompts": [
+   "<strong>Guess the tool.</strong> Take turns. Follow up with questions: &ldquo;Is it made of metal?&rdquo; &ldquo;Do you use it outside?&rdquo; &ldquo;What else is it used for?&rdquo; Listen for <em>used for + verb</em>.",
+   "<strong>Machines then and now.</strong> Follow up: &ldquo;What did farmers use before tractors?&rdquo; (horses, oxen) &ldquo;What jobs did people do by hand?&rdquo; Good for <em>were used to pull</em>.",
+   "<strong>Drive a tractor or a combine?</strong> Follow up: &ldquo;What do you think is the hardest part?&rdquo; &ldquo;Why do farmers sometimes work all night at harvest time?&rdquo; (to finish before the rain)",
+   "<strong>Self-driving tractors and drones.</strong> Follow up: &ldquo;What are drones used for on a farm?&rdquo; (checking crops, spraying, finding lost sheep) &ldquo;Who wins and who loses?&rdquo;"
+  ]
+ },
+ "bank": [
+  {"type": "pick", "q": "A ___ is used for lifting hay and straw.", "opts": ["pitchfork", "hoe", "spade"], "a": "pitchfork", "why": "A pitchfork is a long fork for lifting hay and straw. A hoe removes weeds, and a spade digs."},
+  {"type": "pick", "q": "The ___ cuts the wheat and separates the grain from the straw.", "opts": ["combine harvester", "baler", "harrow"], "a": "combine harvester", "why": "A combine harvester cuts grain crops and separates the grain from the straw."},
+  {"type": "pick", "q": "My aunt uses a hoe ___ the weeds between her carrots.", "opts": ["to remove", "for remove", "removing"], "a": "to remove", "why": "use something + to + verb: uses a hoe to remove the weeds."},
+  {"type": "pick", "q": "This machine is used for ___ seeds in straight rows.", "opts": ["planting", "plant", "to plant"], "a": "planting", "why": "After for, use -ing: used for planting seeds."},
+  {"type": "pick", "q": "We got up at five ___ we could finish before the heat.", "opts": ["so that", "in order to", "for"], "a": "so that", "why": "Before a subject and verb (we could finish), use so that."},
+  {"type": "pick", "q": "He rode the quad bike up the hill ___ check the fences.", "opts": ["to", "for", "so that"], "a": "to", "why": "To say why, use to + verb: to check the fences."},
+  {"type": "pick", "q": "Farmers spend a lot of money on ___.", "opts": ["machinery", "machineries", "a machinery"], "a": "machinery", "why": "Machinery is uncountable: no -s and no a. For one, say a machine."},
+  {"type": "pick", "q": "You'll need a ___ to move all those bricks.", "opts": ["wheelbarrow", "rake", "sprayer"], "a": "wheelbarrow", "why": "A wheelbarrow is a small cart with one wheel for carrying heavy things like bricks or soil."},
+  {"type": "type", "q": "In Canada you can plow a field; in Britain you ___ it.", "a": ["plough"], "why": "The British spelling is plough. It sounds the same as plow and rhymes with cow."},
+  {"type": "type", "q": "My neighbour checks his cows on a ___ every morning.", "a": ["quad bike", "quad", "atv", "four-wheeler", "quadbike"], "why": "A quad bike (US/Canada ATV) is a small four-wheeled motorbike for getting around a farm."},
+  {"type": "type", "q": "Use the ___ to collect all the leaves into a pile.", "a": ["rake"], "why": "A rake has a row of teeth for collecting leaves and making soil smooth."},
+  {"type": "type", "q": "The ___ presses the straw into big round bales.", "a": ["baler"], "why": "A baler presses hay or straw into bales."},
+  {"type": "type", "q": "We left early in ___ to avoid the traffic.", "a": ["order"], "why": "in order to + verb is a more formal way to say to: in order to avoid the traffic."},
+  {"type": "spot", "q": "This tool is used for cut hedges.", "bad": "cut", "fix": "cutting", "opts": ["cutting", "cuts", "to cut"], "why": "After for, use -ing: used for cutting hedges. (Or: used to cut hedges.)"},
+  {"type": "spot", "q": "She bought new shears for to cut the wool.", "bad": "for to cut", "fix": "to cut", "opts": ["to cut", "for cut", "cutting"], "why": "Never for to. To say why, use to + verb: She bought new shears to cut the wool."},
+  {"type": "spot", "q": "We put the tools in the shed so that they don't get wet.", "bad": "", "why": "Correct: so that + subject + verb: so that they don't get wet."},
+  {"type": "spot", "q": "The farmer needs a new equipments for the dairy.", "bad": "a new equipments", "fix": "new equipment", "opts": ["new equipment", "new equipments", "a new equipment"], "why": "Equipment is uncountable: no a and no -s. Say new equipment."},
+  {"type": "order", "a": "What do farmers use a harrow for?", "alt": [], "why": "Question about purpose: What do + subject + use + thing + for? For goes at the end."},
+  {"type": "order", "a": "The tractor is pulling a trailer full of hay.", "alt": [], "why": "Subject + is + -ing + object: The tractor is pulling a trailer full of hay."},
+  {"type": "order", "a": "She uses a spade to plant the potatoes.", "alt": [], "why": "use + tool + to + verb (the purpose): uses a spade to plant the potatoes."}
+ ]
+}

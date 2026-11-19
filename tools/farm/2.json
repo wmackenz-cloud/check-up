@@ -1,0 +1,263 @@
+{
+ "n": 2,
+ "title": "Around the Farm: Buildings and Land",
+ "hint": "Barn, stable, silo, orchard, pasture, stile; behind, opposite, across, through, along, past",
+ "why": "when you visit the countryside, book a farm stay or follow a walking map, you need the names of farm buildings and land, and small words like <em>across</em>, <em>through</em> and <em>along</em> to explain where things are and how to get there.",
+ "know": [
+  "farm buildings: <em>farmhouse, farmyard, barn, stable, pigsty, henhouse, silo, shed</em>",
+  "farm land: <em>field, meadow, pasture, orchard, hedge, fence, gate, stile, pond, lane</em>",
+  "prepositions of place and movement: <em>behind, opposite, between, across, through, along, over, past</em>"
+ ],
+ "understand": [
+  "the difference between <em>across</em> (from one side to the other), <em>through</em> (into and out of) and <em>along</em> (following a line)",
+  "why we say <em>behind the barn</em>, not <em>behind of the barn</em>, but <em>in front of the barn</em>"
+ ],
+ "able": [
+  "describe where the buildings on a farm are",
+  "give and follow simple directions in the countryside",
+  "describe a walk: <em>We went through the gate, across the field and along the river.</em>"
+ ],
+ "mistakes": [
+  ["The barn is behind of the house.", "The barn is <strong>behind</strong> the house."],
+  ["The pond is in front the farmhouse.", "The pond is in front <strong>of</strong> the farmhouse."],
+  ["The shop is opposite of the church.", "The shop is <strong>opposite</strong> the church. (US/Canada also: <strong>across from</strong> the church)"],
+  ["We walked along the field to the other side.", "We walked <strong>across</strong> the field to the other side."],
+  ["The cows are in the pastor.", "The cows are in the <strong>pasture</strong>. (a <em>pastor</em> works in a church)"],
+  ["My uncle lives in a farm.", "My uncle lives <strong>on</strong> a farm."]
+ ],
+ "warmup": [
+  "Think of a farm you have seen, in real life, on TV or in a children's book. What buildings were there?",
+  "Have you ever stayed on a farm or in a cottage in the countryside? Would you like to?",
+  "Describe the way from your home to the nearest park or shop. Which words do you use: <em>past, along, across, through</em>?"
+ ],
+ "vocab": [
+  {
+   "h": "Farm buildings",
+   "cols": ["Word", "What it is", "Example"],
+   "rows": [
+    ["farmhouse", "the house where the farmer's family lives", "<em>The farmhouse is two hundred years old.</em>"],
+    ["farmyard", "the open area between the farm buildings (US/Canada also <em>barnyard</em>)", "<em>The hens walk around the farmyard all day.</em>"],
+    ["barn", "a big building for hay, straw, machines or animals", "<em>The hay is stored in the barn.</em>"],
+    ["stable", "a building where horses are kept", "<em>The horses sleep in the stable.</em>"],
+    ["cowshed / milking shed", "where cows are kept or milked (a modern one: a <em>milking parlour</em>)", "<em>The cows walk to the milking shed twice a day.</em>"],
+    ["pigsty (US/Canada pigpen)", "a small building with a yard for pigs", "<em>Your room is as messy as a pigsty!</em>"],
+    ["henhouse / chicken coop", "a small building where hens sleep and lay eggs", "<em>Close the chicken coop at night because of the foxes.</em>"],
+    ["silo", "a tall, round tower for storing grain or animal food", "<em>You can see the silo from the main road.</em>"],
+    ["shed", "a small, simple building, often for tools", "<em>The spades are in the shed.</em>"]
+   ]
+  },
+  {
+   "h": "Farm land",
+   "cols": ["Word", "What it is"],
+   "rows": [
+    ["field", "an area of land with a fence or hedge round it, for crops or animals"],
+    ["meadow", "a field of grass and wild flowers, often cut for hay"],
+    ["pasture", "land with grass where animals eat (graze)"],
+    ["orchard", "a field of fruit trees: apples, pears, cherries"],
+    ["hedge", "a line of bushes growing between fields or along a road"],
+    ["fence / gate", "a fence is a barrier of wood or wire; a gate is the part that opens"],
+    ["stile", "steps that help people climb over a fence or wall"],
+    ["pond", "a small area of still water"],
+    ["lane / track", "a lane is a narrow country road; a track is a rough path for tractors and walkers"]
+   ]
+  },
+  {
+   "h": "Where is it? How do you get there?",
+   "cols": ["Preposition", "Meaning", "Example"],
+   "rows": [
+    ["behind / in front of", "at the back of / at the front of", "<em>The stable is behind the barn. The pond is in front of the farmhouse.</em>"],
+    ["next to / between", "beside / with one thing on each side", "<em>The shed is next to the silo. The pond is between the orchard and the meadow.</em>"],
+    ["opposite (US/Canada also across from)", "on the other side of a road or yard, facing", "<em>Park opposite the farmhouse.</em>"],
+    ["across", "from one side of a flat area to the other", "<em>Walk across the field.</em>"],
+    ["through", "into one side and out of the other", "<em>Go through the gate. The path goes through the orchard.</em>"],
+    ["along", "following a line: a road, a river, a hedge", "<em>Drive along the lane for two kilometres.</em>"],
+    ["over", "from one side of something high to the other", "<em>Climb over the stile.</em>"],
+    ["past", "go by something without stopping", "<em>Go past the church. The farm is on the right.</em>"]
+   ]
+  }
+ ],
+ "say": "<strong>BARN</strong> has a long <em>ah</em>; <strong>MEAdow</strong> sounds like <em>meddo</em>; in <strong>ORchard</strong> the <em>ch</em> is like <em>chair</em>; <strong>SIlo</strong> sounds like <em>sigh-low</em>; <strong>through</strong> sounds exactly like <em>threw</em>; <strong>stile</strong> sounds like <em>style</em>.",
+ "exercises": [
+  {
+   "title": "What is it?",
+   "kind": "match",
+   "intro": "Match each word to its meaning. Tap a word, then tap what it is.",
+   "items": [
+    {"l": "barn", "r": "a big building for hay and machines", "why": "A barn is the biggest farm building. Farmers keep hay, straw, machines and sometimes animals there."},
+    {"l": "stable", "r": "where horses are kept", "why": "A stable is a building for horses. Cows are in a cowshed and pigs in a pigsty."},
+    {"l": "pigsty", "r": "a small building and yard for pigs", "why": "A pigsty (US/Canada pigpen) is where pigs live. People also call a very messy room a pigsty."},
+    {"l": "henhouse", "r": "where hens sleep and lay eggs", "why": "A henhouse, or chicken coop, is a small building for hens. It keeps them safe at night."},
+    {"l": "silo", "r": "a tall tower for storing grain", "why": "A silo is a tall, round tower. Farmers store grain or animal food in it."},
+    {"l": "orchard", "r": "a field of fruit trees", "why": "An orchard is land with fruit trees, like apples, pears or cherries."},
+    {"l": "pasture", "r": "grass where animals eat", "why": "A pasture is grassland where cows, sheep and horses graze (eat grass)."},
+    {"l": "stile", "r": "steps to climb over a fence or wall", "why": "A stile helps walkers climb over a fence or wall, but animals can't use it."}
+   ]
+  },
+  {
+   "title": "Which way?",
+   "kind": "pick",
+   "items": [
+    {"pre": "Walk ", "post": " the field to the big oak tree on the other side.", "opts": ["along", "across", "past"], "a": 1, "why": "Across = from one side of a flat area to the other: walk across the field."},
+    {"pre": "Go ", "post": " the gate and close it behind you.", "opts": ["through", "across", "along"], "a": 0, "why": "Through = into one side and out of the other. You go through a gate, a door or a wood."},
+    {"pre": "Follow the track ", "post": " the river for about a kilometre.", "opts": ["across", "through", "along"], "a": 2, "why": "Along = following a line, like a river, a road or a hedge."},
+    {"pre": "Climb ", "post": " the stile into the next field.", "opts": ["through", "over", "along"], "a": 1, "why": "Over = from one side of something high to the other: climb over a stile, a fence or a wall."},
+    {"pre": "Drive ", "post": " the church, and the farm is the next turning on the left.", "opts": ["past", "through", "over"], "a": 0, "why": "Past = go by something without stopping: drive past the church."},
+    {"pre": "The henhouse is ", "post": " the barn, so you can't see it from the road.", "opts": ["opposite", "behind", "across"], "a": 1, "why": "Behind = at the back of. No of after behind: behind the barn."},
+    {"pre": "The farm shop is ", "post": " the farmhouse, on the other side of the lane.", "opts": ["next", "between", "opposite"], "a": 2, "why": "Opposite = on the other side of a road, facing. No of: opposite the farmhouse."},
+    {"pre": "The pond is ", "post": " the orchard and the meadow.", "opts": ["between", "across", "next"], "a": 0, "why": "Between = with one thing on each side: between the orchard and the meadow."}
+   ]
+  },
+  {
+   "title": "Around the farm",
+   "kind": "type",
+   "bank": ["barn", "coop", "fence", "hedge", "lane", "meadow", "shed", "silo"],
+   "items": [
+    {"pre": "The farmer keeps the hay in the big red ", "post": " next to the house.", "ok": ["barn"], "why": "A barn is a big farm building for hay, straw and machines."},
+    {"pre": "The grain is stored in a tall metal ", "post": ".", "ok": ["silo"], "why": "A silo is a tall, round tower for storing grain."},
+    {"pre": "Close the door of the chicken ", "post": " at night, or a fox will get in.", "ok": ["coop"], "why": "A chicken coop (or henhouse) is where hens sleep. Foxes like to eat hens!"},
+    {"pre": "The tools are in the small ", "post": " behind the stable.", "ok": ["shed"], "why": "A shed is a small, simple building, often for tools."},
+    {"pre": "There's a thick ", "post": " between the two fields, full of birds' nests.", "ok": ["hedge"], "why": "A hedge is a line of bushes between fields. Many birds live in hedges."},
+    {"pre": "The horses can't get out because there's a wooden ", "post": " all round the field.", "ok": ["fence"], "why": "A fence is a barrier of wood or wire round a field."},
+    {"pre": "We drove slowly down a narrow ", "post": " with grass growing in the middle.", "ok": ["lane"], "why": "A lane is a narrow country road."},
+    {"pre": "In June the ", "post": " was full of wild flowers and tall grass.", "ok": ["meadow"], "why": "A meadow is a field of grass and wild flowers, often cut for hay."}
+   ]
+  },
+  {
+   "title": "Word order",
+   "kind": "order",
+   "items": [
+    {"answer": "The stables are behind the farmhouse.", "why": "Subject + are + preposition + place: The stables are behind the farmhouse."},
+    {"answer": "Walk along the lane until you reach the pond.", "why": "Direction first (walk along the lane), then until + where you stop (you reach the pond)."},
+    {"answer": "Please close the gate after you go through.", "why": "Polite instruction: Please + verb. Through can end the sentence: after you go through."},
+    {"answer": "Is the orchard next to the barn?", "why": "Question with be: Is + subject + place? Next to always has to."},
+    {"answer": "The cows are grazing in the pasture by the river.", "why": "Subject + are + -ing + where: in the pasture, then a second place: by the river."}
+   ]
+  },
+  {
+   "title": "Reading",
+   "kind": "reading",
+   "text": "<p><strong>From:</strong> Helen Baxter<br><strong>To:</strong> Sofia and Daniel<br><strong>Subject:</strong> Welcome to Maple Hill Farm</p>\n<p>Hi Sofia and Daniel,</p>\n<p>We're looking forward to your stay next weekend! Here are some directions and a little information about the farm.</p>\n<p>When you leave the main road, drive along the lane for about two kilometres. Go past the old stone church, and our gate is on the right. Please close the gate after you drive through, because the sheep are in the front field this month.</p>\n<p>Park in the farmyard, opposite the farmhouse. Your cottage is next to the big red barn. The horses are in the stable behind the barn, and the children are very welcome to visit them with us.</p>\n<p>There's a lovely walk across the meadow to the pond. You'll need to climb over a stile, so wear good boots. On the way back, walk through the orchard and pick some apples if you like.</p>\n<p>Breakfast is in the farmhouse kitchen at eight. The eggs come from our own hens!</p>\n<p>See you on Friday,<br>Helen and Tom</p>",
+   "intro": "Read the email. Then type the missing word from the text, and press <strong>Check</strong>.",
+   "items": [
+    {"ask": "What do you drive past before you reach the gate?", "pre": "The old stone ", "post": ".", "ok": ["church"], "why": "Paragraph 2: 'Go past the old stone church, and our gate is on the right.'"},
+    {"ask": "Why must guests close the gate?", "pre": "Because the ", "post": " are in the front field.", "ok": ["sheep"], "why": "Paragraph 2: 'the sheep are in the front field this month'."},
+    {"ask": "Where do guests park?", "pre": "In the ", "post": ", opposite the farmhouse.", "ok": ["farmyard"], "why": "Paragraph 3: 'Park in the farmyard, opposite the farmhouse.'"},
+    {"ask": "What is the cottage next to?", "pre": "The big red ", "post": ".", "ok": ["barn"], "why": "Paragraph 3: 'Your cottage is next to the big red barn.'"},
+    {"ask": "What do you climb over on the walk to the pond?", "pre": "A ", "post": ".", "ok": ["stile"], "why": "Paragraph 4: 'You'll need to climb over a stile, so wear good boots.'"}
+   ]
+  },
+  {
+   "title": "Speaking",
+   "kind": "speaking",
+   "items": [
+    "Look at the email again. Draw a quick map of Maple Hill Farm, then describe it: <em>The barn is next to ..., the stable is behind ...</em>",
+    "Describe a farm, a park or a garden you know well. Where are the buildings, paths and water?",
+    "Give directions from your home to a place you like walking. Use <em>along, across, through, past</em> and <em>over</em>.",
+    "Would you enjoy a weekend on a farm stay? What would you most like to do there?"
+   ]
+  },
+  {
+   "title": "Prepositions and mistakes",
+   "parts": [
+    {
+     "h": "Where it is or how you move?",
+     "kind": "sort",
+     "rule": "<p><strong>Watch out</strong></p>\n<ul>\n<li><strong>where it is</strong>: The stable is <em>behind</em> the barn. The pond is <em>between</em> the trees.</li>\n<li><strong>how you move</strong>: Walk <em>across</em> the field, <em>through</em> the gate and <em>along</em> the river.</li>\n<li>No <em>of</em> after <em>behind, opposite, between</em>. But: <em>in front of, next to</em>.</li>\n</ul>",
+     "intro": "Does each preposition tell us where something is, or how you move? Sort them.",
+     "cols": ["where it is", "how you move"],
+     "chips": [
+      {"t": "behind", "col": 0, "why": "Behind tells us where something is: The stable is behind the barn."},
+      {"t": "next to", "col": 0, "why": "Next to tells us where something is: The shed is next to the silo."},
+      {"t": "opposite", "col": 0, "why": "Opposite tells us where something is: The shop is opposite the farmhouse."},
+      {"t": "between", "col": 0, "why": "Between tells us where something is: The pond is between the orchard and the meadow."},
+      {"t": "in front of", "col": 0, "why": "In front of tells us where something is: The car is in front of the barn."},
+      {"t": "across", "col": 1, "why": "Across is about movement from one side to the other: walk across the field."},
+      {"t": "through", "col": 1, "why": "Through is about movement into and out of something: go through the gate."},
+      {"t": "along", "col": 1, "why": "Along is about movement following a line: walk along the river."},
+      {"t": "past", "col": 1, "why": "Past is about moving by something: drive past the church."},
+      {"t": "into", "col": 1, "why": "Into is about movement from outside to inside: the cows walk into the shed."}
+     ]
+    },
+    {
+     "h": "Find the mistake",
+     "kind": "spot",
+     "items": [
+      {"q": "We walked along the field to the other side.", "bad": "along", "fix": "across", "opts": ["through", "past"], "why": "To go from one side of a field to the other, say across: We walked across the field."},
+      {"q": "The barn is opposite of the farmhouse.", "bad": "opposite of", "fix": "opposite", "opts": ["opposite to the", "in opposite"], "why": "No of after opposite: The barn is opposite the farmhouse."},
+      {"q": "The stable is next the barn.", "bad": "next", "fix": "next to", "opts": ["near of", "next of"], "why": "Next always needs to: The stable is next to the barn."},
+      {"q": "Go through the gate and turn left.", "bad": "", "why": "Correct: you go through a gate (into one side and out of the other)."},
+      {"q": "The pigs live in a pigsty behind of the barn.", "bad": "behind of", "fix": "behind", "opts": ["behind to", "back of"], "why": "No of after behind: behind the barn. (But: in front of the barn.)"}
+     ]
+    }
+   ]
+  }
+ ],
+ "teacher": {
+  "purpose": "give general learners the words for farm buildings and farm land (<em>barn, stable, silo, orchard, pasture, hedge, stile</em>) and the prepositions to describe where things are and how to get there (<em>behind, opposite, between; across, through, along, over, past</em>). The reading is a farm-stay welcome email with directions.",
+  "before": "find a picture or simple map of a farm (a children's picture book page works well), or sketch one with a barn, a farmhouse, a pond, an orchard and a lane. Ask the student to think of a walk they know well.",
+  "plan": [
+   ["Warm-up (5 min).", "The three warm-up questions. Note which buildings the student can already name and which prepositions they use for directions."],
+   ["Key vocabulary (10 min).", "Buildings first, then land, using your picture: &ldquo;Where do the horses sleep?&rdquo; &ldquo;What's the tall tower?&rdquo; Then the prepositions: draw a field and move a pen <em>across</em>, <em>along</em> the edge and <em>through</em> a gate."],
+   ["Exercises 1 and 2 (8 min).", "Matching, then the prepositions. In Exercise 2, ask the student to show each movement with a finger on the table."],
+   ["Exercise 3 or 4 (5 min).", "Do one together and set the other for home."],
+   ["Reading (8 min).", "The farm-stay email. First ask the student to draw a quick map while you read it aloud, then check it against the text, then do the questions."],
+   ["Speaking (10 min).", "Question 1 (describe the map) and Question 3 (directions on a real walk) are the core. Follow up with &ldquo;And then?&rdquo; to get a chain of prepositions."],
+   ["Prepositions and wrap-up (4 min).", "Exercise 7 Part A together; Part B at home."]
+  ],
+  "pron": [
+   "<strong>barn</strong> /b&#593;&#720;n/ (North American /b&#593;rn/): a long vowel; not <em>bun</em> or <em>burn</em>.",
+   "<strong>meadow</strong> /&#712;med&#601;&#650;/: <em>ea</em> as in <em>bread</em>, not <em>meet</em>. <strong>pasture</strong> /&#712;p&#593;&#720;st&#643;&#601;/ (North American /&#712;p&#230;st&#643;&#601;r/).",
+   "<strong>orchard</strong> /&#712;&#596;&#720;t&#643;&#601;d/: <em>ch</em> as in <em>chair</em>, not <em>k</em>. Stress on the first syllable.",
+   "<strong>silo</strong> /&#712;sa&#618;l&#601;&#650;/: <em>sigh-low</em>. Spanish and Italian speakers often say <em>see-lo</em>.",
+   "<strong>through</strong> /&#952;ru&#720;/: same as <em>threw</em>. Practise <em>through</em> vs <em>true</em> vs <em>threw</em>; many learners lose the <em>th</em>.",
+   "<strong>across</strong> /&#601;&#712;kr&#594;s/: one <em>c</em>, one syllable stress on <em>-cross</em>. Learners often write and say <em>accross</em>. <strong>stile</strong> /sta&#618;l/ sounds like <em>style</em>."
+  ],
+  "mistakes": [
+   "<strong>behind of, opposite of</strong>: no <em>of</em>. But <em>in front of</em> and <em>next to</em> need their small word. Spanish <em>detr&aacute;s de</em>, <em>enfrente de</em> and French <em>derri&egrave;re</em>, <em>en face de</em> cause these errors.",
+   "<strong>on a farm, in a field</strong>: you live or work <em>on</em> a farm, but the cows are <em>in</em> a field, <em>in</em> the barn, <em>in</em> the farmyard.",
+   "<strong>across / through / along</strong>: across = flat surface, side to side (a field, a road, a river by bridge); through = something with sides or a gap (a gate, a wood, long grass); along = following a line (a river, a lane, a hedge).",
+   "<strong>pasture / pastor</strong>: similar sound, very different meaning. A pastor is a church minister. <strong>stile / style</strong>: same sound.",
+   "<strong>meadow vs pasture</strong>: both are grass. A meadow usually has wild flowers and is cut for hay; a pasture is where animals graze. In everyday speech, <em>field</em> is fine for both.",
+   "<strong>barn, stable, shed</strong>: learners often use <em>barn</em> for everything. Horses live in a <em>stable</em>; a <em>shed</em> is small; a <em>barn</em> is big."
+  ],
+  "uk_us": [
+   ["pigsty", "pigpen", "Both are understood everywhere."],
+   ["farmyard", "barnyard", "Also used in the UK in children's songs and books."],
+   ["lane", "country road, gravel road (Ontario: concession road)", "A UK lane is often narrow with hedges on both sides."],
+   ["opposite", "across from", "Opposite is also fine in North America."],
+   ["milking parlour", "milking parlor, milking barn", "Spelling: parlour (UK/Canada) vs parlor (US)."]
+  ],
+  "adapt": [
+   ["Vocabulary", "Focus on farmhouse, barn, stable, field, orchard, fence, gate, pond. Prepositions: behind, next to, opposite, across, through, along.", "All words; add <em>outbuilding, paddock</em> (a small field for horses), <em>cattle grid</em> (US/Canada <em>cattle guard</em>), <em>footpath, right of way</em>, and <em>beyond, alongside, towards</em>."],
+   ["Speaking", "Describe a simple farm picture or map; give directions on a short walk.", "Guide the teacher around an imaginary farm with eyes closed (&ldquo;Now you're walking along the hedge ...&rdquo;), or compare countryside walking in their country and the UK or Canada."]
+  ],
+  "prompts": [
+   "<strong>Draw and describe the farm in the email.</strong> Follow up: &ldquo;Where's the stable?&rdquo; &ldquo;What's opposite the farmhouse?&rdquo; Listen for <em>behind of</em> and <em>opposite of</em>.",
+   "<strong>A farm, park or garden you know.</strong> Follow up: &ldquo;What's in the middle?&rdquo; &ldquo;What's next to the water?&rdquo; &ldquo;How do you get in?&rdquo;",
+   "<strong>Directions on a walk.</strong> Ask them to give you the walk step by step, then you repeat it back with one mistake (&ldquo;So I go across the river ...&rdquo;) and they correct you.",
+   "<strong>A farm-stay weekend.</strong> Follow up: &ldquo;What would you do first?&rdquo; &ldquo;Would you help with the animals?&rdquo; &ldquo;What could be difficult for a city person?&rdquo;"
+  ]
+ },
+ "bank": [
+  {"type": "pick", "q": "The horses spend the night in the ___.", "opts": ["stable", "silo", "orchard"], "a": "stable", "why": "Horses are kept in a stable. A silo stores grain, and an orchard has fruit trees."},
+  {"type": "pick", "q": "We picked apples and pears in the ___.", "opts": ["orchard", "meadow", "pigsty"], "a": "orchard", "why": "An orchard is a field of fruit trees, so you pick apples and pears there."},
+  {"type": "pick", "q": "The children ran ___ the meadow to the pond on the other side.", "opts": ["across", "along", "between"], "a": "across", "why": "Across = from one side of a flat area to the other: ran across the meadow."},
+  {"type": "pick", "q": "Turn left after you go ___ the post office.", "opts": ["past", "through", "across"], "a": "past", "why": "Past = go by something without stopping: go past the post office."},
+  {"type": "pick", "q": "Our tent was ___ two big oak trees.", "opts": ["between", "between of", "across"], "a": "between", "why": "Between = with one thing on each side, and no of: between two big oak trees."},
+  {"type": "pick", "q": "The farmer keeps his lawnmower in a small ___ behind the house.", "opts": ["shed", "coop", "hedge"], "a": "shed", "why": "A shed is a small, simple building for tools and machines like a lawnmower."},
+  {"type": "pick", "q": "We drove ___ the narrow lane for twenty minutes.", "opts": ["along", "across", "over"], "a": "along", "why": "Along = following a line, like a lane or a river: drove along the lane."},
+  {"type": "pick", "q": "The sheep got into the next field through a hole in the ___.", "opts": ["hedge", "silo", "stable"], "a": "hedge", "why": "A hedge is a line of bushes between fields. Sheep can push through a hole in it."},
+  {"type": "type", "q": "A tall, round tower for storing grain is a ___.", "a": ["silo"], "why": "A silo is a tall, round tower for grain or animal food."},
+  {"type": "type", "q": "Walk ___ the gate, and you'll see the pond.", "a": ["through"], "why": "You go through a gate: into one side and out of the other."},
+  {"type": "type", "q": "The cows eat grass in the ___ all summer.", "a": ["pasture", "field", "meadow", "fields"], "why": "Grassland where animals eat is a pasture (or simply a field)."},
+  {"type": "type", "q": "The pigs are in their ___ behind the barn.", "a": ["pigsty", "pigpen", "sty", "pen"], "why": "Pigs live in a pigsty (US/Canada pigpen)."},
+  {"type": "type", "q": "The car park is ___ the farm shop, on the other side of the road.", "a": ["opposite", "across from"], "why": "On the other side of a road, facing: opposite (US/Canada also across from)."},
+  {"type": "spot", "q": "There's a small pond in front the farmhouse.", "bad": "in front", "fix": "in front of", "opts": ["in front of", "front of", "in the front"], "why": "In front always needs of: in front of the farmhouse."},
+  {"type": "spot", "q": "We climbed across the stile into the field.", "bad": "across", "fix": "over", "opts": ["over", "along", "between"], "why": "You climb over a stile, a fence or a wall (from one side of something high to the other)."},
+  {"type": "spot", "q": "The hens are in the coop next to the shed.", "bad": "", "why": "Correct: next to the shed, with to."},
+  {"type": "spot", "q": "The vegetable garden is behind of the house.", "bad": "behind of", "fix": "behind", "opts": ["behind", "behind to", "back of"], "why": "No of after behind: behind the house."},
+  {"type": "order", "a": "The orchard is between the barn and the lane.", "alt": [], "why": "Between + one thing + and + the other: between the barn and the lane."},
+  {"type": "order", "a": "Follow the path along the river to the mill.", "alt": [], "why": "Instruction: verb + the path + along the river (how) + to the mill (where you finish)."},
+  {"type": "order", "a": "Is there a gate in the fence over there?", "alt": [], "why": "Question: Is there + a gate + where: in the fence over there?"}
+ ]
+}

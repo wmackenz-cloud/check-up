@@ -1,0 +1,258 @@
+{
+ "n": 7,
+ "title": "Weather, Soil and Farm Problems",
+ "hint": "Drought, flood, frost, pests; because of, due to, lead to; if it doesn't rain, if we had more water",
+ "why": "weather and farming are in the news all the time: dry summers, floods, storms and food prices. To understand these stories and talk about them, you need the words for weather problems and clear ways to say what causes what, and what will or would happen.",
+ "know": [
+  "weather problems: <em>drought, flood, frost, hail, heatwave, storm</em>",
+  "soil and crop words: <em>fertile, erosion, irrigation, pest, weed, disease, yield, a good or poor harvest</em>",
+  "cause and effect phrases: <em>because of, due to, so, as a result, lead to, cause</em>"
+ ],
+ "understand": [
+  "why we say <em>because of the drought</em> but <em>because it didn't rain</em>",
+  "the difference between <em>If it doesn't rain, the crops will die</em> (real and possible) and <em>If we had more water, we would grow more</em> (not true now, imagined)"
+ ],
+ "able": [
+  "describe a weather problem and its effects on farms and food",
+  "explain causes and results in simple, clear sentences",
+  "talk about what will happen, and what you would do, in different situations"
+ ],
+ "mistakes": [
+  ["Because of it didn't rain, the crops died.", "<strong>Because</strong> it didn't rain, the crops died. / <strong>Because of</strong> the drought, ..."],
+  ["If it will rain tomorrow, the farmers will be happy.", "If it <strong>rains</strong> tomorrow, the farmers will be happy."],
+  ["If we would have more water, we would grow more.", "If we <strong>had</strong> more water, we would grow more."],
+  ["The drought caused that the crops died.", "The drought <strong>caused the crops to die</strong>. / The drought <strong>killed</strong> the crops."],
+  ["The storm lead to flooding last week.", "The storm <strong>led</strong> to flooding last week."],
+  ["The soil here is very fertility.", "The soil here is very <strong>fertile</strong>."]
+ ],
+ "warmup": [
+  "What was the weather like where you live this year? Was there any extreme weather?",
+  "What kind of weather is bad for farmers? Why?",
+  "Have food prices in your country changed because of the weather? Which foods?"
+ ],
+ "vocab": [
+  {
+   "h": "Weather problems",
+   "cols": ["Word", "Meaning", "Example"],
+   "rows": [
+    ["drought", "a long time with little or no rain", "<em>The drought lasted three months.</em>"],
+    ["flood / flooding", "a lot of water covering land that is usually dry", "<em>The fields were under water after the flood.</em>"],
+    ["frost", "a thin white layer of ice on the ground on a cold night", "<em>A late frost damaged the apple blossom.</em>"],
+    ["hail", "small balls of ice that fall like rain", "<em>The hail broke the greenhouse windows.</em>"],
+    ["heatwave", "a period of very hot weather", "<em>During the heatwave it was 38&deg;C.</em>"],
+    ["storm", "very strong wind, often with heavy rain", "<em>The storm blew the roof off the barn.</em>"]
+   ]
+  },
+  {
+   "h": "Soil and crops",
+   "cols": ["Word", "Meaning", "Example"],
+   "rows": [
+    ["soil", "the top layer of earth where plants grow", "<em>Potatoes like light, sandy soil.</em>"],
+    ["fertile (noun: fertility)", "good for growing plants", "<em>The valley has very fertile soil.</em>"],
+    ["erosion", "when wind or water slowly carries soil away", "<em>Trees and hedges help to stop erosion.</em>"],
+    ["irrigation (verb: irrigate)", "bringing water to fields with pipes or channels", "<em>Without irrigation, nothing grows here in summer.</em>"],
+    ["pest", "an insect or animal that damages crops", "<em>Slugs are a common garden pest.</em>"],
+    ["weed", "a wild plant growing where you don't want it", "<em>We pull up the weeds every week.</em>"],
+    ["disease", "an illness of plants or animals", "<em>A disease killed half the potato plants.</em>"],
+    ["yield", "how much a field or crop produces", "<em>The wheat yield was high this year.</em>"],
+    ["a good / poor harvest; crop failure", "a lot / not much food was collected; the crop didn't grow", "<em>After the drought there was a poor harvest.</em>"]
+   ]
+  },
+  {
+   "h": "Saying what causes what",
+   "cols": ["Phrase", "Use it for", "Example"],
+   "rows": [
+    ["because of / due to + noun", "the cause (a thing)", "<em>The harvest was late because of the rain. The road is closed due to flooding.</em>"],
+    ["because + subject + verb", "the cause (a sentence)", "<em>The harvest was late because it rained a lot.</em>"],
+    ["so / As a result,", "the result", "<em>It was very dry, so the grass turned brown. As a result, hay prices went up.</em>"],
+    ["cause + noun / lead to + noun", "a cause and its result in one sentence", "<em>Frost can cause damage. Heavy rain can lead to floods.</em>"],
+    ["If + present, ... will + verb", "a real, possible future (first conditional)", "<em>If it doesn't rain soon, the crops will fail.</em>"],
+    ["If + past, ... would + verb", "an imagined or unlikely situation (second conditional)", "<em>If we had more water, we would grow more.</em>"]
+   ]
+  }
+ ],
+ "say": "<strong>drought</strong> rhymes with <em>out</em> (the <em>gh</em> is silent); <strong>flood</strong> rhymes with <em>mud</em>, not <em>food</em>; <strong>soil</strong> rhymes with <em>oil</em>; <strong>yield</strong> sounds like <em>yeeld</em>; e<strong>RO</strong>sion, irri<strong>GA</strong>tion.",
+ "exercises": [
+  {
+   "title": "What's the problem?",
+   "kind": "match",
+   "intro": "Match each word to its meaning. Tap a word, then tap its meaning.",
+   "items": [
+    {"l": "drought", "r": "a long time with little or no rain", "why": "A drought is a long period without enough rain. Plants and animals suffer."},
+    {"l": "flood", "r": "water covering land that is usually dry", "why": "A flood happens when rivers or heavy rain put water on land that is normally dry."},
+    {"l": "frost", "r": "thin ice on the ground after a cold night", "why": "Frost is a white layer of ice. A late frost in spring can kill young plants and fruit blossom."},
+    {"l": "hail", "r": "small balls of ice that fall like rain", "why": "Hail is small balls of ice falling from the sky. It can damage crops, cars and windows."},
+    {"l": "heatwave", "r": "a period of very hot weather", "why": "A heatwave is several days of very hot weather."},
+    {"l": "pest", "r": "an insect or animal that damages crops", "why": "A pest is an insect or animal that eats or damages crops, like slugs or aphids."},
+    {"l": "weed", "r": "a wild plant growing where you don't want it", "why": "A weed is a wild plant growing among the crops or in the garden."},
+    {"l": "irrigation", "r": "bringing water to fields with pipes", "why": "Irrigation means bringing water to fields with pipes, sprinklers or channels."}
+   ]
+  },
+  {
+   "title": "Causes and results",
+   "kind": "pick",
+   "items": [
+    {"pre": "The harvest was poor ", "post": " the drought.", "opts": ["because of", "because", "so"], "a": 0, "why": "Before a noun (the drought), use because of. Because needs a subject and verb."},
+    {"pre": "It didn't rain for three months, ", "post": " the grass turned brown.", "opts": ["so", "because", "due to"], "a": 0, "why": "So introduces the result: no rain, so the grass turned brown."},
+    {"pre": "The roads near the farm were closed ", "post": " flooding.", "opts": ["due to", "so", "as a result"], "a": 0, "why": "Due to + noun gives the cause, like because of: due to flooding."},
+    {"pre": "The heavy rain washed away the soil. ", "post": ", the field is now full of stones.", "opts": ["As a result", "Because of", "Due to"], "a": 0, "why": "As a result starts a new sentence about the result, followed by a comma."},
+    {"pre": "A late frost can ", "post": " serious damage to fruit trees.", "opts": ["cause", "lead", "result"], "a": 0, "why": "Cause + noun: frost can cause damage. Lead needs to: lead to damage."},
+    {"pre": "Too much rain can lead ", "post": " plant diseases.", "opts": ["to", "for", "at"], "a": 0, "why": "The phrase is lead to + noun: lead to plant diseases."},
+    {"pre": "If it ", "post": " soon, the crops will die.", "opts": ["doesn't rain", "won't rain", "didn't rain"], "a": 0, "why": "First conditional: if + present simple, then will. If it doesn't rain soon, the crops will die."},
+    {"pre": "If farmers had more water, they ", "post": " more vegetables.", "opts": ["would grow", "will grow", "grow"], "a": 0, "why": "Second conditional: if + past, then would + verb. If they had more water, they would grow more."}
+   ]
+  },
+  {
+   "title": "Soil, crops and weather",
+   "kind": "type",
+   "bank": ["erosion", "fertile", "hail", "harvest", "pests", "soil", "storm", "yield"],
+   "items": [
+    {"pre": "The ", "post": " in this valley is dark and rich, so almost anything grows well.", "ok": ["soil"], "why": "Soil is the top layer of earth where plants grow."},
+    {"pre": "This land is very ", "post": ". Farmers here can grow two crops a year.", "ok": ["fertile"], "why": "Fertile land is good for growing plants. The noun is fertility."},
+    {"pre": "Without trees and hedges, wind and rain carry the soil away. This is called ", "post": ".", "ok": ["erosion"], "why": "Erosion is when wind or water slowly carries soil away."},
+    {"pre": "Balls of ", "post": " the size of golf balls broke the greenhouse windows.", "ok": ["hail"], "why": "Hail is balls of ice that fall from the sky. It is uncountable: balls of hail."},
+    {"pre": "Aphids and slugs are common garden ", "post": ".", "ok": ["pests"], "why": "Pests are insects or animals that damage plants."},
+    {"pre": "This year's ", "post": " was excellent: the farm produced eight tonnes of wheat per hectare.", "ok": ["yield"], "why": "The yield is how much a field or crop produces."},
+    {"pre": "The apple ", "post": " starts in September, when the fruit is ripe.", "ok": ["harvest"], "why": "The harvest is the time when farmers collect the crops. It is also a verb: to harvest."},
+    {"pre": "A big ", "post": " last night blew down two trees and damaged the barn roof.", "ok": ["storm"], "why": "A storm brings very strong wind, often with heavy rain."}
+   ]
+  },
+  {
+   "title": "Word order",
+   "kind": "order",
+   "items": [
+    {"answer": "If it rains tomorrow, the farmers will be happy.", "alt": ["The farmers will be happy if it rains tomorrow."], "why": "First conditional: If + present simple, will + verb. The if part can also come second, with no comma."},
+    {"answer": "The crops failed because of the long drought.", "why": "Result first, then because of + noun: because of the long drought."},
+    {"answer": "If I had a farm, I would keep goats.", "alt": ["I would keep goats if I had a farm."], "why": "Second conditional for an imagined situation: If + past, would + verb."},
+    {"answer": "The flood caused a lot of damage.", "why": "Subject + caused + noun: The flood caused a lot of damage."},
+    {"answer": "Dry weather can lead to forest fires.", "why": "Cause + can lead to + result: Dry weather can lead to forest fires."}
+   ]
+  },
+  {
+   "title": "Reading",
+   "kind": "reading",
+   "text": "<p><strong>Dry summer hits local farmers</strong></p>\n<p>Farmers in the Fraser Valley say this has been the driest summer for thirty years. Only 12 millimetres of rain fell in July and August, compared with 90 millimetres in a normal year.</p>\n<p>&ldquo;The soil is like dust,&rdquo; says dairy farmer Ken Dhaliwal. &ldquo;The grass stopped growing in July, so we're already feeding the cows the hay we saved for winter.&rdquo; As a result, many farmers will have to buy extra hay, and prices have doubled.</p>\n<p>Vegetable growers have done better because most of them use irrigation. But water is now a problem too. Due to low river levels, the town has asked farms to water their fields only at night.</p>\n<p>Fruit farmer Maria Santos lost part of her blueberry crop in a heatwave in early August. &ldquo;If it doesn't rain soon, the plants will suffer next year too,&rdquo; she says. &ldquo;If we had a bigger pond, we would store more water in the winter. That's our plan now.&rdquo;</p>\n<p>Forecasters expect rain next week.</p>",
+   "intro": "Read the news article. Then type the missing word from the text, and press <strong>Check</strong>.",
+   "items": [
+    {"ask": "How much rain fell in July and August?", "pre": "Only ", "post": " millimetres.", "ok": ["12", "twelve"], "why": "Paragraph 1: 'Only 12 millimetres of rain fell in July and August.'"},
+    {"ask": "What are Ken's cows eating now?", "pre": "The ", "post": " he saved for winter.", "ok": ["hay"], "why": "Paragraph 2: 'we're already feeding the cows the hay we saved for winter.'"},
+    {"ask": "Why have vegetable growers done better?", "pre": "Because most of them use ", "post": ".", "ok": ["irrigation"], "why": "Paragraph 3: 'Vegetable growers have done better because most of them use irrigation.'"},
+    {"ask": "When can farms water their fields now?", "pre": "Only at ", "post": ".", "ok": ["night"], "why": "Paragraph 3: the town has asked farms 'to water their fields only at night'."},
+    {"ask": "What would help Maria store more water?", "pre": "A bigger ", "post": ".", "ok": ["pond"], "why": "Paragraph 4: 'If we had a bigger pond, we would store more water in the winter.'"}
+   ]
+  },
+  {
+   "title": "Speaking",
+   "kind": "speaking",
+   "items": [
+    "What is the worst weather you remember? What happened, and what were the results?",
+    "Which weather problems are common in your country: drought, floods, frost, storms? How do they affect farmers and food prices?",
+    "If there was no rain for three months where you live, what would happen? What would you do differently?",
+    "If you had a small farm or garden, what would you grow? What problems do you think you would have?"
+   ]
+  },
+  {
+   "title": "Cause and effect, and mistakes",
+   "parts": [
+    {
+     "h": "A noun or a sentence?",
+     "kind": "sort",
+     "rule": "<p><strong>Watch out</strong></p>\n<ul>\n<li><strong>+ a noun</strong>: because of the rain, due to the drought, as a result of the storm, led to floods, caused damage</li>\n<li><strong>+ a sentence (subject and verb)</strong>: because it rained, so the grass died, if it rains, As a result, prices went up</li>\n</ul>",
+     "intro": "What comes after each phrase? Sort them.",
+     "cols": ["+ a noun: the drought", "+ a sentence: it didn't rain"],
+     "chips": [
+      {"t": "because of ___", "col": 0, "why": "Because of + noun: because of the drought."},
+      {"t": "due to ___", "col": 0, "why": "Due to + noun: due to heavy rain."},
+      {"t": "as a result of ___", "col": 0, "why": "As a result of + noun: as a result of the storm."},
+      {"t": "led to ___", "col": 0, "why": "Lead to + noun: The rain led to floods."},
+      {"t": "caused ___", "col": 0, "why": "Cause + noun: The frost caused damage."},
+      {"t": "because ___", "col": 1, "why": "Because + subject + verb: because it didn't rain."},
+      {"t": "so ___", "col": 1, "why": "So + subject + verb: so the grass died."},
+      {"t": "if ___", "col": 1, "why": "If + subject + verb: if it rains tomorrow."},
+      {"t": "As a result, ___", "col": 1, "why": "As a result, + subject + verb: As a result, prices went up."},
+      {"t": "since ___", "col": 1, "why": "Since (= because) + subject + verb: since it was so dry."}
+     ]
+    },
+    {
+     "h": "Find the mistake",
+     "kind": "spot",
+     "items": [
+      {"q": "If it will be sunny tomorrow, we'll cut the hay.", "bad": "will be", "fix": "is", "opts": ["would be", "was"], "why": "First conditional: no will after if. If it is sunny tomorrow, we'll cut the hay."},
+      {"q": "The crops died because of it was too hot.", "bad": "because of", "fix": "because", "opts": ["due", "so"], "why": "Before a subject and verb (it was), use because, not because of."},
+      {"q": "If I had more land, I would grow apples.", "bad": "", "why": "Correct: second conditional, if + past, would + verb."},
+      {"q": "Heavy rain can lead flooding.", "bad": "lead", "fix": "lead to", "opts": ["lead for", "leads"], "why": "Lead needs to before the result: Heavy rain can lead to flooding."},
+      {"q": "The soil here is very fertility.", "bad": "fertility", "fix": "fertile", "opts": ["fertilise", "fertiled"], "why": "After very, use the adjective fertile. Fertility is the noun."}
+     ]
+    }
+   ]
+  }
+ ],
+ "teacher": {
+  "purpose": "give general learners the language of weather problems and their effects on farms and food (<em>drought, flood, frost, hail, heatwave, pest, erosion, yield, a poor harvest</em>), clear cause-and-effect phrases (<em>because of, due to, so, as a result, lead to, cause</em>), and the first and second conditionals for real and imagined situations. It prepares students to follow and discuss news stories about weather and food.",
+  "before": "find a short, recent news headline or photo about extreme weather and farming in the student's country or yours (a drought, a flood, a frost on fruit trees). It makes the warm-up and speaking real.",
+  "plan": [
+   ["Warm-up (5 min).", "The three warm-up questions, or show your headline first. Note how the student links ideas: do they use <em>because</em> and <em>so</em>, or only <em>and</em>?"],
+   ["Key vocabulary (10 min).", "Weather problems first (draw quick pictures: sun and cracked ground, rain and water, ice). Then soil and crops. Then the cause and effect table: make one chain together: <em>No rain &rarr; dry soil &rarr; poor harvest &rarr; higher prices.</em>"],
+   ["Exercises 1 and 2 (8 min).", "Matching, then the connectors and conditionals. In Exercise 2, ask &ldquo;Is a noun or a sentence after the gap?&rdquo;"],
+   ["Exercise 3 or 4 (5 min).", "Do one together and set the other for home."],
+   ["Reading (8 min).", "The news article. First ask: &ldquo;Who had the biggest problem: the dairy farmer, the vegetable growers or the fruit farmer?&rdquo; Then the questions. Ask the student to find one <em>so</em>, one <em>as a result</em>, one <em>due to</em> and both conditionals."],
+   ["Speaking (10 min).", "Questions 2 and 3 are the core. Push for chains of causes: &ldquo;And what happened because of that?&rdquo;"],
+   ["Cause and effect and wrap-up (4 min).", "Exercise 7 Part A together; Part B at home."]
+  ],
+  "pron": [
+   "<strong>drought</strong> /dra&#650;t/: rhymes with <em>out</em>. Students often say /dr&#594;t/ or /dr&#596;&#720;t/ because of <em>bought, thought</em>.",
+   "<strong>flood</strong> /fl&#652;d/: rhymes with <em>mud</em> and <em>blood</em>, not <em>food</em>.",
+   "<strong>soil</strong> /s&#596;&#618;l/: one syllable with the <em>oi</em> of <em>boy</em>. <strong>hail</strong> /he&#618;l/ sounds the same as <em>hale</em>.",
+   "<strong>fertile</strong>: UK /&#712;f&#604;&#720;ta&#618;l/, North America /&#712;f&#604;&#720;rtl/. Both are correct.",
+   "<strong>yield</strong> /ji&#720;ld/: starts with a <em>y</em> sound, like <em>yes</em>.",
+   "<strong>erosion</strong> /&#618;&#712;r&#601;&#650;&#658;n/ and <strong>irrigation</strong> /&#716;&#618;r&#618;&#712;&#609;e&#618;&#643;n/: the <em>-sion</em> in erosion is the sound in <em>television</em>."
+  ],
+  "mistakes": [
+   "<strong>because vs because of</strong>: the most common error in this lesson. Quick test: if there is a verb after it, use <em>because</em>.",
+   "<strong>due to</strong> works like <em>because of</em>: <em>due to the rain</em>. Not <em>due to it rained</em>.",
+   "<strong>cause</strong>: <em>cause + noun</em> (<em>caused damage</em>) or <em>cause + someone/something + to + verb</em> (<em>caused the river to rise</em>). Not <em>caused that</em> (a direct translation from Spanish <em>caus&oacute; que</em>, French <em>a fait que</em>).",
+   "<strong>lead / led</strong>: the past is <em>led</em>, pronounced like the metal <em>lead</em> /led/. Students often write <em>lead</em> for the past.",
+   "<strong>No will after if</strong> in the first conditional: <em>If it rains</em>, not <em>If it will rain</em>. In the second conditional, no <em>would</em> after if: <em>If we had</em>, not <em>If we would have</em>.",
+   "<strong>weather</strong> is uncountable: <em>bad weather</em>, not <em>a bad weather</em>. <strong>hail</strong> and <strong>flooding</strong> are uncountable; <strong>a flood</strong> and <strong>a storm</strong> are countable.",
+   "<strong>plague</strong> vs <strong>pest</strong>: Spanish <em>plaga</em>, French <em>parasite / nuisible</em>. In English a plague is a big disaster (<em>a plague of locusts</em>); a normal insect problem is a <em>pest</em>."
+  ],
+  "uk_us": [
+   ["fertiliser", "fertilizer", "Same word, different spelling. The site uses -ise; both are fine."],
+   ["hosepipe ban", "watering restrictions", "A rule that stops people watering gardens in a drought."],
+   ["hectare", "acre (also hectare in Canada)", "1 hectare is about 2.5 acres. Canadian farmers often still talk in acres."]
+  ],
+  "adapt": [
+   ["Vocabulary", "Focus on drought, flood, frost, storm, heatwave, soil, pest, weed, harvest; because, because of, so; first conditional.", "Add <em>erosion, yield, crop failure, fertility</em>, <em>as a result of, consequently, resulting in</em>, and the second conditional for policy ideas (<em>If the government paid farmers to plant trees, ...</em>)."],
+   ["Speaking", "Describe one weather event and its effects with because and so.", "Discuss a news story: causes, effects on prices and people, and what you would do if you were a farmer or a minister."]
+  ],
+  "extra": "<h2>A quick check: real or imagined?</h2>\n<p>If the student mixes the two conditionals, ask &ldquo;Is it possible, or are you imagining?&rdquo;</p>\n<ul>\n<li><em>If it rains tomorrow, ...</em>: possible; it might really happen &rarr; <em>will</em>.</li>\n<li><em>If I had a farm, ...</em>: imagined; I don't have one &rarr; <em>would</em>.</li>\n</ul>",
+  "prompts": [
+   "<strong>The worst weather you remember.</strong> Follow up: &ldquo;What happened because of it?&rdquo; &ldquo;What was the result for people near you?&rdquo; Listen for <em>because of + sentence</em>.",
+   "<strong>Weather problems in your country.</strong> Follow up: &ldquo;What happens to food prices after a drought?&rdquo; &ldquo;Which crops suffer most?&rdquo; Good for <em>lead to</em> and <em>as a result</em>.",
+   "<strong>No rain for three months.</strong> Second conditional practice. Follow up: &ldquo;What would happen to the parks? To water bills? Would you change your habits?&rdquo;",
+   "<strong>Your own farm or garden.</strong> Follow up: &ldquo;What pests would you have?&rdquo; &ldquo;What would you do if a frost came in May?&rdquo; Mix first and second conditionals."
+  ]
+ },
+ "bank": [
+  {"type": "pick", "q": "The village was cut off for two days ___ the floods.", "opts": ["due to", "so", "because"], "a": "due to", "why": "Due to + noun gives the cause: due to the floods."},
+  {"type": "pick", "q": "There was a frost last night, ___ the young plants are black this morning.", "opts": ["so", "because of", "due to"], "a": "so", "why": "So introduces the result: a frost, so the plants are black."},
+  {"type": "pick", "q": "If the weather ___ dry next week, they will start the harvest.", "opts": ["stays", "will stay", "stayed"], "a": "stays", "why": "First conditional: if + present simple. If the weather stays dry, they will start."},
+  {"type": "pick", "q": "If I ___ a garden, I would grow my own tomatoes.", "opts": ["had", "have", "would have"], "a": "had", "why": "Second conditional for an imagined situation: if + past, would + verb."},
+  {"type": "pick", "q": "Too much water in the soil can ___ the roots to rot.", "opts": ["cause", "lead", "result"], "a": "cause", "why": "Cause + something + to + verb: cause the roots to rot."},
+  {"type": "pick", "q": "A long period with no rain is called a ___.", "opts": ["drought", "flood", "frost"], "a": "drought", "why": "A drought is a long time with little or no rain."},
+  {"type": "pick", "q": "Farmers use sprays to protect their crops from ___ such as insects and slugs.", "opts": ["pests", "weeds", "yields"], "a": "pests", "why": "Pests are insects or animals that damage crops."},
+  {"type": "pick", "q": "The wheat ___ was lower than last year because of the wet spring.", "opts": ["yield", "weed", "soil"], "a": "yield", "why": "The yield is how much a crop produces."},
+  {"type": "type", "q": "A sudden ___ storm covered the cars with small balls of ice.", "a": ["hail"], "why": "Hail is small balls of ice that fall like rain: a hail storm."},
+  {"type": "type", "q": "In a ___, the temperature stays above 30 degrees for several days.", "a": ["heatwave", "heat wave"], "why": "A heatwave is a period of very hot weather."},
+  {"type": "type", "q": "Wild plants that grow between the vegetables are called ___.", "a": ["weeds"], "why": "Weeds are wild plants growing where you don't want them."},
+  {"type": "type", "q": "If we don't water the plants, they ___ die.", "a": ["will"], "why": "First conditional: if + present, then will + verb."},
+  {"type": "type", "q": "The heavy rain led ___ landslides in the hills.", "a": ["to"], "why": "Lead to + noun: The heavy rain led to landslides."},
+  {"type": "spot", "q": "If it will snow tonight, the roads will be dangerous.", "bad": "will snow", "fix": "snows", "opts": ["snows", "would snow", "snowed"], "why": "No will after if in the first conditional: If it snows tonight, ..."},
+  {"type": "spot", "q": "The farmers lost half their crop because of the hail.", "bad": "", "why": "Correct: because of + noun (the hail)."},
+  {"type": "spot", "q": "If I would live in the country, I would keep chickens.", "bad": "would live", "fix": "lived", "opts": ["lived", "live", "will live"], "why": "Second conditional: if + past simple. If I lived in the country, I would keep chickens."},
+  {"type": "spot", "q": "The dry weather lead to a poor harvest last year.", "bad": "lead", "fix": "led", "opts": ["led", "leaded", "leads"], "why": "Last year needs the past: lead, led, led. The dry weather led to a poor harvest."},
+  {"type": "order", "a": "The river flooded because of the heavy rain.", "alt": [], "why": "Result + because of + noun: The river flooded because of the heavy rain."},
+  {"type": "order", "a": "If it gets colder, the pond will freeze.", "alt": ["The pond will freeze if it gets colder."], "why": "First conditional: If + present, will + verb."},
+  {"type": "order", "a": "What would you do if your crops failed?", "alt": [], "why": "Second conditional question: What would you do + if + past?"}
+ ]
+}

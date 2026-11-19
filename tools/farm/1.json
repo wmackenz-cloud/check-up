@@ -1,0 +1,257 @@
+{
+ "n": 1,
+ "title": "Farm Animals and Their Young",
+ "hint": "Male, female and young animals; herd, flock, litter; sheep, geese, oxen, cattle",
+ "why": "farm animals come up everywhere: in stories, on menus, at the zoo with children, on holiday in the countryside. The words for males, females, babies and groups are short but different from animal to animal, and the plurals have some famous traps.",
+ "know": [
+  "the names for the male, the female and the young of common farm animals: <em>bull, cow, calf; ram, ewe, lamb</em>",
+  "group words: <em>a herd of cows, a flock of sheep, a litter of piglets</em>",
+  "the sounds animals make: <em>moo, baa, oink, neigh, cluck, crow</em>"
+ ],
+ "understand": [
+  "why we say <em>three sheep</em> and <em>two geese</em>, not <em>sheeps</em> or <em>gooses</em>",
+  "why <em>cattle</em> always takes a plural verb: <em>The cattle are in the field.</em>"
+ ],
+ "able": [
+  "name the animals you see on a farm, and their young",
+  "describe a farm visit: what animals there were, how many and what they were doing",
+  "talk about farm animals in your country"
+ ],
+ "mistakes": [
+  ["We saw many sheeps in the field.", "We saw many <strong>sheep</strong> in the field."],
+  ["The cattle is in the field.", "The cattle <strong>are</strong> in the field."],
+  ["The farmer has a big flock of cows.", "The farmer has a big <strong>herd</strong> of cows."],
+  ["Two gooses chased me!", "Two <strong>geese</strong> chased me!"],
+  ["Look at that cow! He's huge.", "Look at that <strong>bull</strong>! He's huge. (a cow is female)"],
+  ["The farmer has twenty porks.", "The farmer has twenty <strong>pigs</strong>. (<em>pork</em> is the meat)"]
+ ],
+ "warmup": [
+  "Which farm animals can you name in English? Make a quick list.",
+  "Did you grow up in a city or in the countryside? Have you ever touched a cow, a sheep or a horse?",
+  "Which farm animal do you think is the cleverest? Which is the funniest?"
+ ],
+ "vocab": [
+  {
+   "h": "Males, females, young and groups",
+   "cols": ["Animal", "Male", "Female", "Young", "Group"],
+   "rows": [
+    ["cow / cattle", "bull", "cow", "calf (two calves)", "a herd"],
+    ["sheep", "ram", "ewe", "lamb", "a flock"],
+    ["pig", "boar", "sow", "piglet", "a litter (born together)"],
+    ["horse", "stallion", "mare", "foal", "a herd"],
+    ["goat", "billy goat / buck", "nanny goat / doe", "kid", "a herd"],
+    ["chicken", "rooster (UK also cockerel)", "hen", "chick", "a flock"],
+    ["duck", "drake", "duck", "duckling", "a flock"],
+    ["goose", "gander", "goose", "gosling", "a flock (on the ground: a gaggle)"]
+   ]
+  },
+  {
+   "h": "Tricky plurals and group nouns",
+   "cols": ["Word", "Plural or grammar", "Example"],
+   "rows": [
+    ["sheep, deer, bison", "the same: one sheep, two sheep", "<em>There are forty sheep in the top field.</em>"],
+    ["goose", "geese", "<em>The geese are very noisy this morning.</em>"],
+    ["mouse", "mice", "<em>There are mice in the barn.</em>"],
+    ["ox", "oxen (strong cattle that pull carts)", "<em>Two oxen pulled the old plough.</em>"],
+    ["calf", "calves (f changes to v)", "<em>Three calves were born this week.</em>"],
+    ["cattle", "plural only: no <em>a cattle</em>, no <em>cattles</em>", "<em>The cattle are coming in for the night.</em>"],
+    ["livestock", "all the farm animals together; no <em>-s</em>", "<em>The farm has a lot of livestock.</em>"]
+   ]
+  },
+  {
+   "h": "What do they say?",
+   "cols": ["Animal", "Verb", "Example"],
+   "rows": [
+    ["cow", "moo", "<em>The cows were mooing at the gate.</em>"],
+    ["sheep, goat", "baa / bleat", "<em>The lambs bleat for their mothers.</em>"],
+    ["pig", "oink / grunt", "<em>The pigs grunted happily in the mud.</em>"],
+    ["horse", "neigh", "<em>The horse neighed when it saw the apples.</em>"],
+    ["hen", "cluck", "<em>The hens cluck after they lay an egg.</em>"],
+    ["rooster", "crow", "<em>The rooster crows at sunrise.</em>"],
+    ["duck", "quack", "<em>The ducks quacked loudly on the pond.</em>"]
+   ]
+  }
+ ],
+ "say": "<strong>SHEEP</strong> has a long <em>ee</em> (not <em>ship</em>); in <strong>calf</strong> the <em>l</em> is silent; in <strong>lamb</strong> the <em>b</em> is silent; <strong>ewe</strong> sounds exactly like <em>you</em>; a <strong>sow</strong> (pig) rhymes with <em>cow</em>.",
+ "exercises": [
+  {
+   "title": "Who's the baby?",
+   "kind": "match",
+   "intro": "Match each young animal to its parent. Tap a baby, then tap what it is.",
+   "items": [
+    {"l": "calf", "r": "a young cow", "why": "A calf is a young cow (or bull). The plural is calves."},
+    {"l": "lamb", "r": "a young sheep", "why": "A lamb is a young sheep. Most lambs are born in spring."},
+    {"l": "piglet", "r": "a young pig", "why": "A piglet is a young pig. A sow often has ten or more piglets at a time."},
+    {"l": "foal", "r": "a young horse", "why": "A foal is a young horse. Its mother is a mare."},
+    {"l": "kid", "r": "a young goat", "why": "A kid is a young goat. (Kid is also an informal word for a child.)"},
+    {"l": "chick", "r": "a young chicken", "why": "A chick is a baby chicken that has just come out of the egg."},
+    {"l": "duckling", "r": "a young duck", "why": "A duckling is a young duck. The -ling ending means small or young."},
+    {"l": "gosling", "r": "a young goose", "why": "A gosling is a young goose. It has the same -ling ending as duckling."}
+   ]
+  },
+  {
+   "title": "One or many?",
+   "kind": "pick",
+   "items": [
+    {"pre": "Three ", "post": " were standing by the gate.", "opts": ["sheep", "sheeps", "sheepes"], "a": 0, "why": "Sheep is the same in the singular and plural: one sheep, three sheep."},
+    {"pre": "The farmer keeps a ", "post": " of two hundred sheep.", "opts": ["herd", "flock", "litter"], "a": 1, "why": "Sheep (and birds like hens and geese) live in a flock. Cows and horses live in a herd."},
+    {"pre": "The cattle ", "post": " in the field near the river.", "opts": ["are", "is", "was"], "a": 0, "why": "Cattle is always plural, so use are: The cattle are in the field."},
+    {"pre": "Our sow had a ", "post": " of twelve piglets last week.", "opts": ["litter", "flock", "herd"], "a": 0, "why": "A litter is a group of babies born together to one mother: a litter of piglets or puppies."},
+    {"pre": "A male horse is called a ", "post": ".", "opts": ["stallion", "mare", "foal"], "a": 0, "why": "A stallion is a male horse. A mare is a female horse, and a foal is a young one."},
+    {"pre": "Two noisy ", "post": " chased us across the yard.", "opts": ["geese", "gooses", "goose"], "a": 0, "why": "Goose has an irregular plural: one goose, two geese."},
+    {"pre": "Every morning the ", "post": " crows at five o'clock.", "opts": ["rooster", "hen", "chick"], "a": 0, "why": "A rooster is a male chicken, and roosters crow. Hens cluck."},
+    {"pre": "The farm has a lot of ", "post": ": cows, sheep and pigs.", "opts": ["livestock", "livestocks", "a livestock"], "a": 0, "why": "Livestock means all the farm animals together. It has no -s and no a."}
+   ]
+  },
+  {
+   "title": "Name the animal",
+   "kind": "type",
+   "bank": ["bull", "calves", "ewe", "herd", "mare", "mice", "oxen", "sow"],
+   "items": [
+    {"pre": "A female sheep is a ", "post": ". In spring, she usually has one or two lambs.", "ok": ["ewe"], "why": "A ewe is a female sheep. It sounds like 'you'."},
+    {"pre": "Be careful in that field. The ", "post": " is big, and he doesn't like strangers.", "ok": ["bull"], "why": "A bull is a male cow. Bulls can be dangerous, so farmers often keep them in a separate field."},
+    {"pre": "The ", "post": " is lying in the straw with her ten piglets.", "ok": ["sow"], "why": "A sow is a female pig, the mother of the piglets."},
+    {"pre": "The old ", "post": " has had six foals, and she is still the calmest horse on the farm.", "ok": ["mare"], "why": "A mare is a female horse. She has foals."},
+    {"pre": "One calf was born on Monday, and two more ", "post": " were born on Tuesday.", "ok": ["calves"], "why": "Calf has an irregular plural: the f changes to v. One calf, two calves."},
+    {"pre": "In the past, farmers used ", "post": " to pull the plough, not tractors.", "ok": ["oxen"], "why": "Ox has an old plural: oxen. Oxen are strong cattle trained to pull carts and ploughs."},
+    {"pre": "There are ", "post": " in the barn. We need a cat!", "ok": ["mice"], "why": "Mouse has an irregular plural: one mouse, two mice."},
+    {"pre": "A ", "post": " of dairy cows walked slowly to the milking shed.", "ok": ["herd"], "why": "Cows live in a herd. Sheep live in a flock."}
+   ]
+  },
+  {
+   "title": "Word order",
+   "kind": "order",
+   "items": [
+    {"answer": "The lambs are born in early spring.", "why": "Passive for facts about animals: The lambs (subject) + are born + when."},
+    {"answer": "How many sheep does your uncle have?", "why": "How many + plural noun + does + subject + have? Sheep is already plural."},
+    {"answer": "The cattle are coming back from the field.", "why": "Cattle is plural, so: The cattle are coming. Then where from: from the field."},
+    {"answer": "Our hens lay about twenty eggs a day.", "why": "Subject + verb + how many + how often: Our hens lay about twenty eggs a day."},
+    {"answer": "A young goat is called a kid.", "why": "To give a name, use is called: A young goat is called a kid."}
+   ]
+  },
+  {
+   "title": "Reading",
+   "kind": "reading",
+   "text": "<p><strong>A weekend on my cousin's farm</strong></p>\n<p>Last weekend I visited my cousin Marta on her family farm near Guelph, Ontario. I'm a city person, so everything was new to me.</p>\n<p>The farm has a herd of about sixty dairy cows. They are milked twice a day, at six in the morning and five in the afternoon. Marta also keeps a small flock of sheep. The ewes had their lambs in March, so the lambs were already running and jumping in the field. My favourite animal was a new calf. She was only two days old, and she followed me everywhere.</p>\n<p>Behind the barn there are about forty hens and one very loud rooster. He crowed at half past four on Sunday morning, so I didn't get much sleep! Marta's children collect the eggs every afternoon. There are also two pigs, a sow and a boar. The sow is going to have piglets next month.</p>\n<p>Next time I want to stay for a whole week. Farm life is hard work, but I loved it.</p>",
+   "intro": "Read the blog post. Then type the missing word from the text, and press <strong>Check</strong>.",
+   "items": [
+    {"ask": "How many dairy cows are there on the farm?", "pre": "About ", "post": ".", "ok": ["sixty", "60"], "why": "Paragraph 2: 'The farm has a herd of about sixty dairy cows.'"},
+    {"ask": "When were the lambs born?", "pre": "In ", "post": ".", "ok": ["march"], "why": "Paragraph 2: 'The ewes had their lambs in March.'"},
+    {"ask": "How old was the calf?", "pre": "Only two ", "post": " old.", "ok": ["days"], "why": "Paragraph 2: 'She was only two days old.'"},
+    {"ask": "Which animal woke the writer up?", "pre": "The ", "post": ".", "ok": ["rooster"], "why": "Paragraph 3: the rooster 'crowed at half past four on Sunday morning'."},
+    {"ask": "What is the sow going to have next month?", "pre": "", "post": ".", "ok": ["piglets"], "why": "Paragraph 3: 'The sow is going to have piglets next month.'"}
+   ]
+  },
+  {
+   "title": "Speaking",
+   "kind": "speaking",
+   "items": [
+    "Have you ever visited a farm? What animals did you see? If not, which farm animal would you most like to see up close?",
+    "Which farm animals are common in your country? Is any animal special in your culture or in your cooking?",
+    "What sounds do animals make in your language? Compare them with English: a cow says <em>moo</em>, a rooster says <em>cock-a-doodle-doo</em>.",
+    "Would you like to keep a few hens or a goat at home? Why or why not?"
+   ]
+  },
+  {
+   "title": "Plurals and mistakes",
+   "parts": [
+    {
+     "h": "Same, changes or add -s?",
+     "kind": "sort",
+     "rule": "<p><strong>Watch out</strong></p>\n<ul>\n<li><strong>the same</strong>: one sheep, two sheep; one deer, two deer</li>\n<li><strong>changes</strong>: goose &rarr; geese, mouse &rarr; mice, ox &rarr; oxen, calf &rarr; calves</li>\n<li><strong>add -s</strong>: most animals: hens, goats, horses</li>\n</ul>",
+     "intro": "How does each word make its plural? Sort them.",
+     "cols": ["the same", "changes", "add -s"],
+     "chips": [
+      {"t": "sheep", "col": 0, "why": "One sheep, two sheep: the plural is the same."},
+      {"t": "deer", "col": 0, "why": "One deer, ten deer: the plural is the same."},
+      {"t": "bison", "col": 0, "why": "One bison, a herd of bison: the plural is usually the same."},
+      {"t": "goose", "col": 1, "why": "One goose, two geese: the vowel changes."},
+      {"t": "mouse", "col": 1, "why": "One mouse, two mice: an irregular plural."},
+      {"t": "ox", "col": 1, "why": "One ox, two oxen: an old plural ending, like children."},
+      {"t": "calf", "col": 1, "why": "One calf, two calves: f changes to v, then add -es."},
+      {"t": "hen", "col": 2, "why": "One hen, two hens: a regular plural."},
+      {"t": "goat", "col": 2, "why": "One goat, two goats: a regular plural."},
+      {"t": "horse", "col": 2, "why": "One horse, two horses: a regular plural."}
+     ]
+    },
+    {
+     "h": "Find the mistake",
+     "kind": "spot",
+     "items": [
+      {"q": "We saw three sheeps in the field.", "bad": "sheeps", "fix": "sheep", "opts": ["sheepes", "sheep's"], "why": "Sheep is the same in the plural: three sheep."},
+      {"q": "The cattle is eating grass by the river.", "bad": "is", "fix": "are", "opts": ["be", "was"], "why": "Cattle is always plural: The cattle are eating grass."},
+      {"q": "A young horse is called a foal.", "bad": "", "why": "Correct: a foal is a young horse."},
+      {"q": "The farmer has a flock of cows.", "bad": "flock", "fix": "herd", "opts": ["litter", "gaggle"], "why": "Cows live in a herd. A flock is for sheep and birds."},
+      {"q": "Two calfs were born last night.", "bad": "calfs", "fix": "calves", "opts": ["calfes", "calve"], "why": "Calf has an irregular plural: one calf, two calves."}
+     ]
+    }
+   ]
+  }
+ ],
+ "teacher": {
+  "purpose": "give general learners the core words for farm animals: the animal, the male, the female, the young and the group (<em>bull, cow, calf, a herd</em>), the sounds they make, and the plural traps (<em>sheep, geese, oxen, calves, cattle, livestock</em>). It is the base for the rest of the Farm English lessons.",
+  "before": "find three or four photos of farm animals with their young (a ewe and lambs, a sow and piglets, a hen and chicks). Or ask the student to bring a photo of a farm or farm animal from their own country.",
+  "plan": [
+   ["Warm-up (5 min).", "The three warm-up questions. Write down every animal the student already knows in English, and note any they say in their own language."],
+   ["Key vocabulary (10 min).", "Go through the first table by animal (across), then test by column: &ldquo;What's a female pig?&rdquo; &ldquo;What's a group of cows?&rdquo; Use your photos. Then the tricky plurals, then the sounds (students usually enjoy making them)."],
+   ["Exercises 1 and 2 (8 min).", "Matching, then the plurals and group words. In Exercise 2, ask why after each answer: <em>sheep</em> is the same, <em>cattle</em> is plural."],
+   ["Exercise 3 or 4 (5 min).", "Do one together and set the other for home."],
+   ["Reading (8 min).", "The farm blog. First ask: &ldquo;How many kinds of animal does Marta have?&rdquo; (five: cows, sheep, hens with a rooster, pigs, and the calf and lambs as babies). Then the questions."],
+   ["Speaking (10 min).", "Questions 1 and 2 are the core. Ask follow-ups that need the plurals: &ldquo;How many sheep?&rdquo; &ldquo;Were there any geese?&rdquo;"],
+   ["Plurals and wrap-up (4 min).", "Exercise 7 Part A together; Part B at home."]
+  ],
+  "pron": [
+   "<strong>sheep</strong> /&#643;i&#720;p/ vs <strong>ship</strong> /&#643;&#618;p/: the long vowel matters. Many learners say <em>ship</em>.",
+   "<strong>calf</strong> /k&#593;&#720;f/ (North American /k&#230;f/): the <em>l</em> is silent, as in <em>half</em>. <strong>calves</strong> /k&#593;&#720;vz/.",
+   "<strong>lamb</strong> /l&#230;m/: the <em>b</em> is silent, as in <em>climb</em> and <em>thumb</em>.",
+   "<strong>ewe</strong> /ju&#720;/: exactly like <em>you</em>. Students often try to say every letter.",
+   "<strong>sow</strong> (a female pig) /sa&#650;/ rhymes with <em>cow</em>; <strong>sow</strong> (to plant seeds, Lesson 4) /s&#601;&#650;/ rhymes with <em>go</em>.",
+   "<strong>goose</strong> /&#609;u&#720;s/, <strong>geese</strong> /&#609;i&#720;s/: an <em>s</em> sound, not <em>z</em>. <strong>foal</strong> /f&#601;&#650;l/, <strong>mare</strong> /me&#601;/."
+  ],
+  "mistakes": [
+   "<strong>cattle</strong> is plural only: <em>the cattle are</em>, <em>forty head of cattle</em> (farmers count cattle as <em>head</em>). Never <em>a cattle</em> or <em>cattles</em>. For one animal, say <em>a cow</em>, <em>a bull</em> or <em>a steer</em>.",
+   "<strong>livestock</strong>: all the farm animals together. No <em>-s</em>, no <em>a</em>. You may hear both <em>livestock is</em> and <em>livestock are</em>; both are fine.",
+   "<strong>cow</strong> is female. In everyday speech people call any cattle &ldquo;cows&rdquo;, but a male is a <em>bull</em>. A young male raised for meat is a <em>steer</em> (B2).",
+   "<strong>chicken</strong> is the general word (and the meat). <strong>Hen</strong> = female, <strong>rooster</strong> = male. In the UK <em>cockerel</em> is also common; in North America say <em>rooster</em>, because <em>cock</em> is also slang.",
+   "<strong>pig / pork</strong>, <strong>cow / beef</strong>, <strong>sheep / lamb, mutton</strong>: live animal vs meat. Lesson 6 covers this; just flag it if the student says <em>porks</em>.",
+   "Spanish <em>ganado</em>, French <em>b&eacute;tail</em>, German <em>Vieh</em> can mean <em>cattle</em> or <em>livestock</em>. Check which one the student means: cattle are only cows and bulls.",
+   "<strong>kid</strong> = a young goat, and also an informal word for a child. Students find this funny; it helps them remember it."
+  ],
+  "uk_us": [
+   ["cockerel (also rooster)", "rooster", "Say rooster everywhere; it is understood in the UK too."],
+   ["nanny goat, billy goat", "doe, buck (farmers); nanny, billy (children's books)", "Both are fine for general learners."]
+  ],
+  "adapt": [
+   ["Vocabulary", "Focus on cows, sheep, pigs, horses and chickens: male, female, young. Groups: herd, flock. Plurals: sheep, geese, calves, cattle.", "All animals and groups; add <em>steer, heifer</em> (a young cow that has not had a calf), <em>gaggle, a pair of oxen, forty head of cattle</em>."],
+   ["Speaking", "Describe a farm visit or photo: what animals, how many, what they are doing.", "Compare farm animals in two countries, or explain why some animals are special in their culture (e.g. cows in India, horses in Mongolia)."]
+  ],
+  "prompts": [
+   "<strong>Have you visited a farm?</strong> Follow up: &ldquo;How many cows were there?&rdquo; &ldquo;Were there any babies?&rdquo; &ldquo;What were the animals doing?&rdquo; Listen for <em>sheeps</em> and <em>the cattle is</em>.",
+   "<strong>Farm animals in your country.</strong> Follow up: &ldquo;Which animal is the most important for farmers there?&rdquo; &ldquo;Do people eat it, use its milk or use it for work?&rdquo;",
+   "<strong>Animal sounds in your language.</strong> A light, fun task. Follow up: &ldquo;What does a rooster say in your language?&rdquo; Compare with <em>cock-a-doodle-doo</em>.",
+   "<strong>Hens or a goat at home?</strong> Good for reasons: <em>because, so, but</em>. Follow up: &ldquo;What would you need?&rdquo; &ldquo;What would your neighbours say?&rdquo;"
+  ]
+ },
+ "bank": [
+  {"type": "pick", "q": "My grandmother kept a small ___ of hens in her garden.", "opts": ["flock", "herd", "litter"], "a": "flock", "why": "Hens, like sheep, live in a flock. A herd is for cows and horses."},
+  {"type": "pick", "q": "Five young ___ were following their mother across the road.", "opts": ["ducklings", "duckling", "duckings"], "a": "ducklings", "why": "A young duck is a duckling; five of them are ducklings."},
+  {"type": "pick", "q": "The ___ are waiting by the gate for their evening hay.", "opts": ["cattle", "cattles", "cattle's"], "a": "cattle", "why": "Cattle is already plural: the cattle are waiting. Never cattles."},
+  {"type": "pick", "q": "A female horse is called a ___.", "opts": ["mare", "stallion", "foal"], "a": "mare", "why": "A mare is a female horse. A stallion is male and a foal is young."},
+  {"type": "pick", "q": "We counted fifty ___ in the field behind the farmhouse.", "opts": ["sheep", "sheeps", "sheepes"], "a": "sheep", "why": "Sheep is the same in the plural: fifty sheep."},
+  {"type": "pick", "q": "A ___ is a male sheep.", "opts": ["ram", "ewe", "lamb"], "a": "ram", "why": "A ram is a male sheep. A ewe is female, and a lamb is young."},
+  {"type": "pick", "q": "Look at those ___! They're trying to eat my sandwich.", "opts": ["geese", "gooses", "goose"], "a": "geese", "why": "One goose, two geese: an irregular plural."},
+  {"type": "pick", "q": "Our neighbour's ___ starts crowing before the sun comes up.", "opts": ["rooster", "hen", "goose"], "a": "rooster", "why": "Roosters (male chickens) crow. Hens cluck."},
+  {"type": "type", "q": "A young goat is called a ___.", "a": ["kid"], "why": "A young goat is a kid."},
+  {"type": "type", "q": "One mouse, two ___.", "a": ["mice"], "why": "Mouse has an irregular plural: mice."},
+  {"type": "type", "q": "Our cow had twin ___ last night: a male and a female.", "a": ["calves"], "why": "A young cow is a calf; two of them are calves (f changes to v)."},
+  {"type": "type", "q": "A female pig is called a ___.", "a": ["sow"], "why": "A female pig is a sow (it rhymes with cow). A male pig is a boar."},
+  {"type": "type", "q": "In spring the ewes give birth to their ___.", "a": ["lambs"], "why": "Ewes (female sheep) have lambs, usually in spring."},
+  {"type": "spot", "q": "I saw a beautiful white stallion with her new foal.", "bad": "stallion", "fix": "mare", "opts": ["mare", "ram", "bull"], "why": "A stallion is male. The mother of a foal is a mare."},
+  {"type": "spot", "q": "There are two oxes pulling the cart.", "bad": "oxes", "fix": "oxen", "opts": ["oxen", "ox", "oxs"], "why": "Ox has an old plural: one ox, two oxen."},
+  {"type": "spot", "q": "The cattle are resting under the trees.", "bad": "", "why": "Correct: cattle is plural, so the cattle are."},
+  {"type": "spot", "q": "My uncle raises bison on his farm in Alberta.", "bad": "", "why": "Correct: bison is the same in the singular and plural."},
+  {"type": "order", "a": "How many piglets did the sow have?", "alt": [], "why": "Question order: How many + noun + did + subject + verb?"},
+  {"type": "order", "a": "The children feed the chickens every morning.", "alt": ["Every morning the children feed the chickens."], "why": "Subject + verb + object + time: The children feed the chickens every morning."},
+  {"type": "order", "a": "A male duck is called a drake.", "alt": [], "why": "To give a name, use is called: A male duck is called a drake."}
+ ]
+}

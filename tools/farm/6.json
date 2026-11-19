@@ -1,0 +1,263 @@
+{
+ "n": 6,
+ "title": "From Farm to Table",
+ "hint": "Beef, pork, lamb; dairy, free-range, organic, local; a carton of milk, a dozen eggs, much/many",
+ "why": "food is something we talk about every day: shopping, cooking, eating out and choosing what to buy. English has different words for the animal and its meat, and many food words are uncountable, so we need <em>a loaf of</em>, <em>a carton of</em> and <em>much</em> or <em>many</em> to talk about amounts.",
+ "know": [
+  "meat words: <em>beef, veal, pork, bacon, ham, lamb, mutton</em>",
+  "food and shopping words: <em>dairy, produce, free-range, organic, grass-fed, local, seasonal, farmers' market, butcher</em>",
+  "amounts: <em>a carton of milk, a dozen eggs, a loaf of bread, a kilo of potatoes, a jar of honey</em>"
+ ],
+ "understand": [
+  "why we eat <em>pork</em> and <em>beef</em>, not <em>pig</em> and <em>cow</em>",
+  "the difference between countable and uncountable food: <em>many eggs, much milk; a few apples, a little butter</em>"
+ ],
+ "able": [
+  "shop at a market or farm shop and ask for the right amount",
+  "explain where your food comes from: <em>The eggs are free-range and the beef is local.</em>",
+  "talk about the food you buy and cook at home"
+ ],
+ "mistakes": [
+  ["I bought two breads.", "I bought two <strong>loaves of bread</strong>."],
+  ["Can I have some milks?", "Can I have some <strong>milk</strong>?"],
+  ["How much eggs do we need?", "How <strong>many</strong> eggs do we need?"],
+  ["We had pig for dinner.", "We had <strong>pork</strong> for dinner."],
+  ["I'd like a dozen of eggs.", "I'd like <strong>a dozen eggs</strong>. (no <em>of</em>)"],
+  ["There is a few cheese left.", "There is <strong>a little</strong> cheese left."]
+ ],
+ "warmup": [
+  "Where do you usually buy food: a supermarket, a market, a small shop or a farm?",
+  "What did you eat yesterday? Which foods came from a farm?",
+  "Do you check where your food comes from? What labels do you look for?"
+ ],
+ "vocab": [
+  {
+   "h": "The animal and its meat",
+   "note": "For most farm animals, the meat has a different name. Many meat words came into English from French about a thousand years ago.",
+   "cols": ["Animal", "Meat", "Example"],
+   "rows": [
+    ["cow, bull (cattle)", "beef", "<em>a beef burger, roast beef</em>"],
+    ["calf", "veal", "<em>Veal is popular in Italian cooking.</em>"],
+    ["pig", "pork, bacon, ham, sausages", "<em>bacon and eggs, a ham sandwich, pork chops</em>"],
+    ["lamb (young sheep)", "lamb", "<em>roast lamb with mint sauce</em>"],
+    ["sheep (older)", "mutton", "<em>mutton curry</em>"],
+    ["chicken, turkey, duck", "the same word", "<em>chicken soup, roast turkey</em>"],
+    ["deer", "venison (B2)", "<em>venison stew</em>"]
+   ]
+  },
+  {
+   "h": "Food and shopping words",
+   "cols": ["Word", "Meaning", "Example"],
+   "rows": [
+    ["dairy", "milk and food made from milk: cream, butter, cheese, yogurt", "<em>Dairy products are in aisle 3.</em>"],
+    ["produce", "fruit, vegetables and other food from a farm (uncountable noun)", "<em>The shop sells local produce.</em>"],
+    ["free-range", "animals that can walk around outside, not kept in cages", "<em>free-range eggs, a free-range chicken</em>"],
+    ["organic", "grown without chemical sprays or artificial fertilisers", "<em>organic carrots</em>"],
+    ["grass-fed", "animals that eat grass, not mostly grain", "<em>grass-fed beef</em>"],
+    ["local / seasonal", "from near here / growing at this time of year (<em>in season</em>)", "<em>Asparagus is in season in May.</em>"],
+    ["farm shop, farmers' market", "a shop on a farm; a market where farmers sell their own food", "<em>We go to the farmers' market on Saturdays.</em>"],
+    ["pick-your-own (US/Canada u-pick)", "a farm where you pick the fruit yourself and pay by weight", "<em>a pick-your-own strawberry farm</em>"],
+    ["butcher, baker, grocer", "a person (or shop) selling meat / bread / fruit and vegetables", "<em>I got the sausages from the butcher's.</em>"]
+   ]
+  },
+  {
+   "h": "Amounts and containers",
+   "cols": ["Amount", "Use it with", "Example"],
+   "rows": [
+    ["a carton of / a bottle of", "milk, juice, cream", "<em>a carton of milk, a bottle of apple juice</em>"],
+    ["a dozen / half a dozen", "eggs (12 / 6), no <em>of</em>", "<em>a dozen eggs</em>"],
+    ["a loaf of (two loaves)", "bread", "<em>a loaf of brown bread</em>"],
+    ["a kilo of / a bag of", "potatoes, apples, flour", "<em>a kilo of potatoes, a bag of flour</em>"],
+    ["a jar of / a pot of", "honey, jam / yogurt", "<em>a jar of honey</em>"],
+    ["a bunch of", "carrots, bananas, flowers", "<em>a bunch of carrots</em>"],
+    ["a piece of / a slice of", "cheese, cake, bread, ham", "<em>a slice of ham, a piece of cheese</em>"],
+    ["many, a few / much, a little", "countable (eggs) / uncountable (milk)", "<em>How many eggs? A few. How much milk? A little.</em>"]
+   ]
+  }
+ ],
+ "say": "<strong>BUTCH</strong>er has the vowel of <em>put</em>, not <em>but</em>; <strong>dozen</strong> sounds like <em>duzzen</em>; <strong>loaf</strong> and <strong>loaves</strong> rhyme with <em>go</em>; <strong>PROD</strong>uce (food) has the stress at the start, but the verb is pro<strong>DUCE</strong>.",
+ "exercises": [
+  {
+   "title": "What's on the plate?",
+   "kind": "match",
+   "intro": "Match each meat to where it comes from. Tap a word, then tap its meaning.",
+   "items": [
+    {"l": "beef", "r": "meat from cattle", "why": "Beef is meat from cows and bulls: roast beef, a beef burger."},
+    {"l": "veal", "r": "meat from a calf", "why": "Veal is meat from a calf, a young cow."},
+    {"l": "pork", "r": "meat from a pig", "why": "Pork is the general word for meat from a pig: pork chops, roast pork."},
+    {"l": "bacon", "r": "salty pig meat, often fried for breakfast", "why": "Bacon is salted meat from a pig, usually cut thin and fried: bacon and eggs."},
+    {"l": "ham", "r": "pig meat from the leg, often in sandwiches", "why": "Ham comes from a pig's back leg. It is often eaten cold, in sandwiches."},
+    {"l": "lamb", "r": "meat from a young sheep", "why": "Lamb is the young animal and also its meat: roast lamb."},
+    {"l": "mutton", "r": "meat from an older sheep", "why": "Mutton is meat from an adult sheep. It has a stronger taste than lamb."},
+    {"l": "venison", "r": "meat from a deer", "why": "Venison is meat from a deer. It is a B2 word you may see on restaurant menus."}
+   ]
+  },
+  {
+   "title": "How much or how many?",
+   "kind": "pick",
+   "items": [
+    {"pre": "Could you get a ", "post": " of milk on your way home?", "opts": ["carton", "loaf", "dozen"], "a": 0, "why": "Milk comes in a carton (or a bottle). A loaf is for bread."},
+    {"pre": "We need a ", "post": " eggs for the cake.", "opts": ["dozen", "dozen of", "dozens of"], "a": 0, "why": "Say a dozen eggs, with no of. (Dozens of eggs means many, many eggs.)"},
+    {"pre": "How ", "post": " cheese do we have left?", "opts": ["much", "many", "a few"], "a": 0, "why": "Cheese is uncountable here, so use how much."},
+    {"pre": "How ", "post": " apples did you pick?", "opts": ["many", "much", "a little"], "a": 0, "why": "Apples are countable (one apple, two apples), so use how many."},
+    {"pre": "There's only ", "post": " butter left, so we need to buy more.", "opts": ["a little", "a few", "many"], "a": 0, "why": "Butter is uncountable, so use a little. A few is for countable nouns: a few eggs."},
+    {"pre": "I bought two ", "post": " of bread at the farm shop.", "opts": ["loaves", "loafs", "breads"], "a": 0, "why": "Bread is uncountable. Count it with loaf: one loaf, two loaves (f changes to v)."},
+    {"pre": "These eggs come from hens that walk around outside all day. They are ", "post": " eggs.", "opts": ["free-range", "organic", "seasonal"], "a": 0, "why": "Free-range means the animals can go outside and move freely, not stay in cages."},
+    {"pre": "Strawberries are ", "post": " in June, so they're cheap and full of flavour.", "opts": ["in season", "on season", "at season"], "a": 0, "why": "Fruit that is growing now is in season. Use the preposition in."}
+   ]
+  },
+  {
+   "title": "At the market",
+   "kind": "type",
+   "bank": ["bunch", "butcher", "dairy", "grass-fed", "jar", "organic", "pick-your-own", "produce"],
+   "items": [
+    {"pre": "Milk, butter, cheese and yogurt are all ", "post": " products.", "ok": ["dairy"], "why": "Dairy products are milk and food made from milk."},
+    {"pre": "We bought some sausages and a chicken from the ", "post": " in the village.", "ok": ["butcher", "butcher's"], "why": "A butcher sells meat. You can say the butcher or the butcher's (shop)."},
+    {"pre": "These vegetables are ", "post": ": the farmer doesn't use chemical sprays or artificial fertilisers.", "ok": ["organic"], "why": "Organic food is grown without chemical sprays or artificial fertilisers."},
+    {"pre": "The market sells fresh local ", "post": ": fruit, vegetables, eggs and honey.", "ok": ["produce"], "why": "Produce means food from a farm, especially fruit and vegetables. It is uncountable."},
+    {"pre": "I'd like a ", "post": " of honey, please. The small one.", "ok": ["jar"], "why": "Honey and jam come in a jar: a glass container with a lid."},
+    {"pre": "Can I have a ", "post": " of carrots? The ones with the green leaves.", "ok": ["bunch"], "why": "Carrots with their leaves, bananas and flowers come in a bunch."},
+    {"pre": "The cows on this farm eat only grass, so the beef is ", "post": ".", "ok": ["grass-fed", "grass fed"], "why": "Grass-fed animals eat grass, not mostly grain."},
+    {"pre": "On Saturday we went to a ", "post": " farm and filled two baskets with strawberries.", "ok": ["pick-your-own", "pick your own"], "why": "At a pick-your-own farm (u-pick in North America) you pick the fruit yourself and pay for it."}
+   ]
+  },
+  {
+   "title": "Word order",
+   "kind": "order",
+   "items": [
+    {"answer": "How much milk do we need for the pancakes?", "why": "How much + uncountable noun + do we need + for what?"},
+    {"answer": "Could I have a loaf of brown bread?", "why": "Polite request: Could I have + amount (a loaf of) + adjective + noun?"},
+    {"answer": "We buy our eggs from a local farm.", "why": "Subject + verb + object + from where: We buy our eggs from a local farm."},
+    {"answer": "There are only a few potatoes left.", "why": "Potatoes are countable: There are only a few potatoes left."},
+    {"answer": "My children love bacon and eggs for breakfast.", "alt": ["For breakfast my children love bacon and eggs."], "why": "Subject + verb + object + for breakfast. Bacon and eggs is a fixed pair."}
+   ]
+  },
+  {
+   "title": "Reading",
+   "kind": "reading",
+   "text": "<p><strong>Riverside Farmers' Market: a visitor's guide</strong></p>\n<p>The market is open every Saturday from 8 a.m. to 1 p.m., from May to October. Everything is grown or made within 100 kilometres of the city, so the food is local and seasonal.</p>\n<p>Start at the Green Valley Dairy stall. They sell fresh milk in glass bottles, butter, yogurt and more than ten kinds of cheese. Ask for a free taste of the blue cheese!</p>\n<p>Next to them, Hill Farm sells free-range eggs by the dozen or half dozen, and grass-fed beef and lamb. If you want pork sausages or bacon, visit the Martins' stall at the end of the row.</p>\n<p>For fruit and vegetables, go to Orchard Lane. In June they have strawberries, and in September apples and pumpkins. Come early: the strawberries are usually gone by ten o'clock.</p>\n<p>Don't forget the bakery van near the entrance. Their sourdough loaves are famous.</p>\n<p>Bring your own bags. Most stallholders take cards, but a little cash is useful.</p>",
+   "intro": "Read the guide. Then type the missing word from the text, and press <strong>Check</strong>.",
+   "items": [
+    {"ask": "When is the market open?", "pre": "Every ", "post": ", from May to October.", "ok": ["saturday"], "why": "Paragraph 1: 'The market is open every Saturday from 8 a.m. to 1 p.m.'"},
+    {"ask": "How far away is the food grown or made?", "pre": "Within ", "post": " kilometres of the city.", "ok": ["100", "a hundred", "one hundred"], "why": "Paragraph 1: 'Everything is grown or made within 100 kilometres of the city.'"},
+    {"ask": "Which stall sells free-range eggs?", "pre": "", "post": " Farm.", "ok": ["hill"], "why": "Paragraph 3: 'Hill Farm sells free-range eggs by the dozen or half dozen.'"},
+    {"ask": "What should you do if you want strawberries?", "pre": "Come ", "post": ".", "ok": ["early"], "why": "Paragraph 4: 'Come early: the strawberries are usually gone by ten o'clock.'"},
+    {"ask": "What is the bakery van famous for?", "pre": "Its sourdough ", "post": ".", "ok": ["loaves"], "why": "Paragraph 5: 'Their sourdough loaves are famous.'"}
+   ]
+  },
+  {
+   "title": "Speaking",
+   "kind": "speaking",
+   "items": [
+    "Describe a market or food shop you like. What does it sell, and why do you go there?",
+    "Is it important to you that food is local, organic or free-range? Is it worth paying more for it?",
+    "What is a typical dish from your country with meat or dairy in it? How do you make it, and how much of each thing do you need?",
+    "Have you ever picked your own fruit or bought food directly from a farmer? What was it like?"
+   ]
+  },
+  {
+   "title": "Countable, uncountable and mistakes",
+   "parts": [
+    {
+     "h": "Countable or uncountable?",
+     "kind": "sort",
+     "rule": "<p><strong>Watch out</strong></p>\n<ul>\n<li><strong>countable</strong>: one egg, two eggs; <em>many, a few, How many?</em></li>\n<li><strong>uncountable</strong>: no plural; <em>much, a little, How much?</em> To count it, use an amount: <em>a loaf of bread, a carton of milk</em></li>\n</ul>",
+     "intro": "Can you count it? Sort the food words.",
+     "cols": ["countable: many, a few", "uncountable: much, a little"],
+     "chips": [
+      {"t": "egg", "col": 0, "why": "One egg, two eggs: countable. How many eggs?"},
+      {"t": "potato", "col": 0, "why": "One potato, two potatoes: countable."},
+      {"t": "sausage", "col": 0, "why": "One sausage, three sausages: countable."},
+      {"t": "carrot", "col": 0, "why": "One carrot, a bunch of carrots: countable."},
+      {"t": "apple", "col": 0, "why": "One apple, a few apples: countable."},
+      {"t": "milk", "col": 1, "why": "Milk is uncountable: some milk, a carton of milk. Not milks."},
+      {"t": "butter", "col": 1, "why": "Butter is uncountable: a little butter, a pack of butter."},
+      {"t": "bread", "col": 1, "why": "Bread is uncountable: some bread, two loaves of bread. Not breads."},
+      {"t": "honey", "col": 1, "why": "Honey is uncountable: a jar of honey."},
+      {"t": "flour", "col": 1, "why": "Flour is uncountable: a bag of flour, a little flour."}
+     ]
+    },
+    {
+     "h": "Find the mistake",
+     "kind": "spot",
+     "items": [
+      {"q": "Can you buy two breads at the bakery?", "bad": "two breads", "fix": "two loaves of bread", "opts": ["two bread", "two breads loaves"], "why": "Bread is uncountable. Say two loaves of bread."},
+      {"q": "How many milk do we need?", "bad": "many", "fix": "much", "opts": ["few", "lot"], "why": "Milk is uncountable, so use how much."},
+      {"q": "We had roast pig for Sunday lunch.", "bad": "pig", "fix": "pork", "opts": ["pigs", "piglet"], "why": "Pig is the animal. The meat is pork: roast pork."},
+      {"q": "I'd like half a dozen eggs, please.", "bad": "", "why": "Correct: half a dozen eggs means six eggs, with no of."},
+      {"q": "There are a little apples in the bowl.", "bad": "a little", "fix": "a few", "opts": ["a much", "little"], "why": "Apples are countable, so use a few. A little is for uncountable nouns like butter."}
+     ]
+    }
+   ]
+  }
+ ],
+ "teacher": {
+  "purpose": "help general learners talk about food from the farm: the meat words that differ from the animal (<em>beef, pork, bacon, ham, lamb, mutton</em>), shopping and label words (<em>dairy, produce, free-range, organic, grass-fed, local, seasonal</em>), and the grammar of amounts: countable and uncountable nouns with containers (<em>a carton of, a loaf of, a dozen</em>) and <em>much / many, a few / a little</em>.",
+  "before": "bring (or show on screen) some real food packaging: an egg box, a milk carton, a bread bag, a honey jar. Labels like <em>free-range</em> or <em>organic</em> are a bonus. Or ask the student to photograph three things from their kitchen.",
+  "plan": [
+   ["Warm-up (5 min).", "The three warm-up questions. Listen for <em>breads, milks, fruits</em> and for animal names used as meat (<em>We ate pig</em>). Note them for later."],
+   ["Key vocabulary (10 min).", "Start with the animal and meat table: test by asking &ldquo;What do we call meat from a pig?&rdquo; Then the shopping words with your packaging. Then the amounts table: hold up each item and ask &ldquo;What is it? A carton of ...?&rdquo;"],
+   ["Exercises 1 and 2 (8 min).", "Matching, then the amounts. In Exercise 2, ask &ldquo;Can you count it?&rdquo; before each answer."],
+   ["Exercise 3 or 4 (5 min).", "Do one together and set the other for home."],
+   ["Reading (8 min).", "The market guide. First ask: &ldquo;Which stall would you visit first, and why?&rdquo; Then the questions. Follow-up: make a shopping list for the market with amounts (<em>a dozen eggs, a loaf of sourdough</em>)."],
+   ["Speaking (10 min).", "Questions 2 and 3 are the core. For question 3, ask for a short recipe with amounts: &ldquo;How much flour? How many eggs?&rdquo;"],
+   ["Countable and wrap-up (4 min).", "Exercise 7 Part A together; Part B at home."]
+  ],
+  "pron": [
+   "<strong>butcher</strong> /&#712;b&#650;t&#643;&#601;/: the vowel of <em>put</em> and <em>push</em>, not <em>but</em>.",
+   "<strong>dozen</strong> /&#712;d&#652;zn/: the <em>o</em> sounds like <em>u</em> in <em>cup</em>.",
+   "<strong>loaf</strong> /l&#601;&#650;f/, <strong>loaves</strong> /l&#601;&#650;vz/: f changes to v, like <em>calf, calves</em> in Lesson 1.",
+   "<strong>produce</strong>: noun /&#712;pr&#594;dju&#720;s/ (stress first: <em>local PROduce</em>), verb /pr&#601;&#712;dju&#720;s/ (<em>farms proDUCE milk</em>).",
+   "<strong>yogurt</strong>: UK /&#712;j&#594;&#609;&#601;t/, North America /&#712;jo&#650;&#609;&#601;rt/. Both are fine.",
+   "<strong>mutton</strong> /&#712;m&#652;tn/, <strong>veal</strong> /vi&#720;l/, <strong>venison</strong> /&#712;ven&#618;sn/: three syllables, stress on the first."
+  ],
+  "mistakes": [
+   "<strong>Animal vs meat.</strong> A nice story for students: after 1066, French-speaking nobles ate the meat (<em>b&oelig;uf, porc, mouton</em>) and English-speaking farmers looked after the animals (<em>cow, pig, sheep</em>). So the meat words come from French.",
+   "<strong>lamb, chicken, turkey, duck</strong> are both the animal and the meat. <strong>fish</strong> too. Only the big farm animals have separate meat words.",
+   "<strong>bread, milk, cheese, butter, fruit, meat, food</strong> are normally uncountable: <em>some bread, a piece of fruit</em>. <em>Cheeses</em> and <em>fruits</em> exist, but mean different kinds (B2).",
+   "<strong>a dozen eggs</strong>, not <em>a dozen of eggs</em>. But <em>dozens of eggs</em> (= a lot). The same with <em>a hundred people</em> / <em>hundreds of people</em>.",
+   "<strong>organic</strong>: Spanish <em>ecol&oacute;gico / biol&oacute;gico</em>, German and French <em>Bio</em>. In English say <em>organic</em>, not <em>ecological</em> or <em>biological</em>.",
+   "<strong>free-range</strong> is about how animals live, not price: <em>free</em> does not mean no cost. Some students guess this.",
+   "<strong>produce</strong> (noun) is uncountable: <em>local produce</em>, not <em>produces</em>."
+  ],
+  "uk_us": [
+   ["pick-your-own (PYO)", "u-pick", "Both are on road signs in Canada."],
+   ["minced beef", "ground beef", "Canada uses ground beef."],
+   ["a punnet of strawberries", "a box / basket / quart of strawberries", "Punnet is very British; say box if unsure."],
+   ["farm shop", "farm stand / farm store", "A farm stand is often a small table or hut by the road."],
+   ["a pot of yogurt", "a container / cup of yogurt", "Both are understood."]
+  ],
+  "adapt": [
+   ["Vocabulary", "Focus on beef, pork, bacon, ham, lamb; dairy, free-range, organic, local; a carton of, a dozen, a loaf of, a bag of; much/many.", "Add <em>mutton, venison, veal</em>, <em>grass-fed, seasonal, produce</em>, <em>a punnet of, a sprig of, a pinch of</em>, and kinds: <em>French cheeses, tropical fruits</em>."],
+   ["Speaking", "Role-play shopping at a market stall: ask for three things with the right amount and price.", "Discuss: Is organic food worth the price? Should cities have more farmers' markets? Give reasons and examples."]
+  ],
+  "prompts": [
+   "<strong>A market or shop you like.</strong> Follow up: &ldquo;What do you usually buy there?&rdquo; &ldquo;How much does a dozen eggs cost?&rdquo; Listen for <em>breads</em> and <em>a dozen of</em>.",
+   "<strong>Local, organic or free-range?</strong> Follow up: &ldquo;Would you pay twice as much for free-range eggs?&rdquo; &ldquo;How do you know the label is true?&rdquo;",
+   "<strong>A typical dish.</strong> Ask for a mini recipe: &ldquo;How much rice? How many onions?&rdquo; This drives <em>much / many, a little / a few</em> naturally.",
+   "<strong>Picking your own fruit.</strong> Follow up: &ldquo;How many kilos did you pick?&rdquo; &ldquo;Did you eat any while you were picking?&rdquo; A light, happy topic."
+  ]
+ },
+ "bank": [
+  {"type": "pick", "q": "Could you buy a ___ of orange juice?", "opts": ["carton", "loaf", "bunch"], "a": "carton", "why": "Juice and milk come in a carton or a bottle."},
+  {"type": "pick", "q": "How ___ potatoes should I peel?", "opts": ["many", "much", "a little"], "a": "many", "why": "Potatoes are countable, so use how many."},
+  {"type": "pick", "q": "We only have ___ flour, so we can't make two cakes.", "opts": ["a little", "a few", "many"], "a": "a little", "why": "Flour is uncountable, so use a little."},
+  {"type": "pick", "q": "Bacon comes from a ___.", "opts": ["pig", "cow", "sheep"], "a": "pig", "why": "Bacon, ham, pork and sausages come from pigs."},
+  {"type": "pick", "q": "Veal is meat from a ___.", "opts": ["calf", "lamb", "piglet"], "a": "calf", "why": "Veal is meat from a calf, a young cow."},
+  {"type": "pick", "q": "There's a ___ near our house where you can buy vegetables straight from the farmer.", "opts": ["farm shop", "butcher", "dairy"], "a": "farm shop", "why": "A farm shop is a shop on a farm that sells its own food."},
+  {"type": "pick", "q": "These tomatoes are ___: they were picked yesterday, ten kilometres away.", "opts": ["local", "frozen", "imported"], "a": "local", "why": "Local food comes from near where you live."},
+  {"type": "pick", "q": "I need ___ eggs for this recipe: six, I think.", "opts": ["half a dozen", "a half dozen of", "half of dozen"], "a": "half a dozen", "why": "Six eggs is half a dozen eggs, with no of."},
+  {"type": "type", "q": "Meat from an adult sheep is called ___.", "a": ["mutton"], "why": "Meat from an adult sheep is mutton. From a young sheep, it is lamb."},
+  {"type": "type", "q": "Milk, cream and cheese are ___ products.", "a": ["dairy"], "why": "Dairy products are milk and food made from milk."},
+  {"type": "type", "q": "Can you get a ___ of bread from the bakery?", "a": ["loaf"], "why": "Count bread with loaf: a loaf of bread."},
+  {"type": "type", "q": "There aren't ___ strawberries left, only five or six.", "a": ["many"], "why": "Strawberries are countable, so use many in a negative: not many."},
+  {"type": "type", "q": "The ___ cut the beef into four thick steaks for us.", "a": ["butcher"], "why": "A butcher is a person who sells and cuts meat."},
+  {"type": "spot", "q": "We bought three breads at the market.", "bad": "three breads", "fix": "three loaves of bread", "opts": ["three loaves of bread", "three bread", "three breadloafs"], "why": "Bread is uncountable. Say three loaves of bread."},
+  {"type": "spot", "q": "How much cheese would you like?", "bad": "", "why": "Correct: cheese is uncountable here, so how much."},
+  {"type": "spot", "q": "Our eggs come from free-range hens.", "bad": "", "why": "Correct: free-range hens can walk around outside."},
+  {"type": "spot", "q": "I'd like a dozen of eggs, please.", "bad": "a dozen of eggs", "fix": "a dozen eggs", "opts": ["a dozen eggs", "a dozens eggs", "dozen of eggs"], "why": "Say a dozen eggs, with no of."},
+  {"type": "order", "a": "How much butter do we need for the cake?", "alt": [], "why": "How much + uncountable noun + do we need + for what?"},
+  {"type": "order", "a": "The farm shop sells honey from its own bees.", "alt": [], "why": "Subject + verb + object + from where: The farm shop sells honey from its own bees."},
+  {"type": "order", "a": "We had roast lamb with potatoes on Sunday.", "alt": ["On Sunday we had roast lamb with potatoes."], "why": "Subject + verb + object + time: We had roast lamb with potatoes on Sunday."}
+ ]
+}
