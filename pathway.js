@@ -29,7 +29,9 @@ window.PATHWAY = {
     { id: "educators", name: "English for Educators", note: "For students who work as teachers, with US and UK school terms; links into the grammar and speaking routes.",
       order: ["ed-1", "ed-2", "ed-3", "ed-4", "ed-5", "ed-6"] },
     { id: "farm", name: "Farm English", note: "For any curious learner: farm animals, places, machines, crops, food, weather and idioms; links into the grammar route.",
-      order: ["fa-1", "fa-2", "fa-3", "fa-4", "fa-5", "fa-6", "fa-7", "fa-8"] }
+      order: ["fa-1", "fa-2", "fa-3", "fa-4", "fa-5", "fa-6", "fa-7", "fa-8"] },
+    { id: "tourism", name: "Tourism English", note: "For students who serve tourists and the public, and for students who travel; both lessons practise closed and open questions.",
+      order: ["to-1", "to-2"] }
   ],
   lessons: {
     "vt-1": { t: "Present Simple", p: "grammar/tense-1.html", next: [["vt-2", "Next tense: Present Continuous."]] },
@@ -131,6 +133,8 @@ window.PATHWAY = {
     "ed-4": { t: "Curriculum, Planning and Teaching", p: "educators/student-4.html", next: [["ed-5", "Assessment, grading and reports."], ["sp-4", "Give opinions about teaching with A.R.E."]] },
     "ed-5": { t: "Assessment, Grading and Reports", p: "educators/student-5.html", next: [["ed-6", "Parents, colleagues and job interviews."], ["gt-8", "The passive for reports: Work is marked by ..."]] },
     "ed-6": { t: "Parents, Colleagues and Job Interviews", p: "educators/student-6.html", next: [["sp-6", "STAR stories for interview answers."], ["v-6", "Formal and informal words for emails to parents."]] },
+    "to-1": { t: "Welcoming Tourists", p: "tourism/student-1.html", next: [["to-2", "The other side: being a tourist and talking to locals."], ["gt-2", "Present simple or continuous: How long are you staying?"]] },
+    "to-2": { t: "Being a Tourist", p: "tourism/student-2.html", next: [["gt-10", "Reported speech, the next step after indirect questions."], ["sp-2", "Rescue phrases: asking people to repeat or slow down."]] },
     "fa-1": { t: "Farm Animals and Their Young", p: "farm/student-1.html", next: [["fa-2", "Around the farm: buildings and land."], ["gt-4", "Countable and uncountable: sheep, cattle, livestock."]] },
     "fa-2": { t: "Around the Farm: Buildings and Land", p: "farm/student-2.html", next: [["fa-3", "Farm machines and tools."], ["v-18", "Fixed phrases with prepositions."]] },
     "fa-3": { t: "Farm Machines and Tools", p: "farm/student-3.html", next: [["fa-4", "Crops and the farming year."], ["gt-5", "Gerund or infinitive: used for digging, used to dig."]] },

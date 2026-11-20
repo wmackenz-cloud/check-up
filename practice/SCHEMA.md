@@ -38,7 +38,7 @@ Rules for writers:
 - Only one correct answer per pick; for `type`, list every acceptable answer.
 
 Lesson ids: `gt-1`…`gt-11` (grammar-traps/student-N), `aa` (grammar/a-or-an), `vt-1`…`vt-14` (grammar/tense-N, built by tools/tenses.py), `am-1`…`am-12` (advanced/metaphors/unit-N) and `as-1`…`as-6` (advanced/similes/unit-N), both built by tools/metaphors.py, `v-1`…`v-20` (vocabulary/student-N),
-`sv-1`…`sv-8` (stanag/student-vocab-N), `sp-1`…`sp-7` (speaking/student-N), `en-1`…`en-5` (engineering/student-N), `bu-1`…`bu-5` (business/student-N), `ed-1`…`ed-6` (educators/student-N), `fa-1`…`fa-8` (farm/student-N, built by tools/farm.py).
+`sv-1`…`sv-8` (stanag/student-vocab-N), `sp-1`…`sp-7` (speaking/student-N), `en-1`…`en-5` (engineering/student-N), `bu-1`…`bu-5` (business/student-N), `ed-1`…`ed-6` (educators/student-N), `fa-1`…`fa-8` (farm/student-N), `to-1`…`to-2` (tourism/student-N), both built by tools/series.py.
 
 ## Practice link (built by My Students)
 

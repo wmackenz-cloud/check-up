@@ -15,6 +15,7 @@
   for (i = 1; i <= 5; i++) IDS.push("bu-" + i);
   for (i = 1; i <= 6; i++) IDS.push("ed-" + i);
   for (i = 1; i <= 8; i++) IDS.push("fa-" + i);
+  for (i = 1; i <= 2; i++) IDS.push("to-" + i);
 
   // The worksheet each lesson reviews (used when a bank file doesn't say, or isn't there yet).
   function pageFor(id) {
@@ -31,6 +32,7 @@
     if (m[1] === "bu") return "business/student-" + m[2] + ".html";
     if (m[1] === "ed") return "educators/student-" + m[2] + ".html";
     if (m[1] === "fa") return "farm/student-" + m[2] + ".html";
+    if (m[1] === "to") return "tourism/student-" + m[2] + ".html";
     return "";
   }
   function groupFor(id) {
@@ -43,6 +45,7 @@
     if (/^bu-/.test(id)) return "Business English";
     if (/^ed-/.test(id)) return "English for Educators";
     if (/^fa-/.test(id)) return "Farm English";
+    if (/^to-/.test(id)) return "Tourism English";
     return "";
   }
 

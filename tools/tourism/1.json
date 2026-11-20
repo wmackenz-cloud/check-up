@@ -1,0 +1,988 @@
+{
+ "n": 1,
+ "title": "Welcoming Tourists",
+ "hint": "Greeting visitors and offering help; closed questions (Is this your first visit? Would you like a map or a guide?) and open questions (Where are you from? What would you like to see?)",
+ "why": "when you work in a hotel, a shop, a café or as a guide, or when you just help a visitor in your town, the first minute matters. A warm welcome and the right questions make visitors feel at home, and small question mistakes like <em>Where you are from?</em> are easy to hear.",
+ "know": [
+  "phrases to welcome visitors and offer help: <em>Welcome to ..., How was your journey?, Would you like ...?, Let me show you ...</em>",
+  "the two kinds of question: <strong>closed</strong> (<em>Is this your first visit? Tea or coffee?</em>) and <strong>open</strong> (<em>Where are you from? What would you like to see?</em>)",
+  "short answers: <em>Yes, I am. No, we don't. Yes, it is.</em>"
+ ],
+ "understand": [
+  "why the helper verb comes before the subject in a question: <em>Are you tired?</em> not <em>Do you are tired?</em>",
+  "when to use a closed question (to check a fact or offer a choice) and when to use an open one (to get people talking)"
+ ],
+ "able": [
+  "greet a visitor and make them feel welcome",
+  "ask closed and open questions with the right word order",
+  "give simple information: opening times, distances and suggestions"
+ ],
+ "mistakes": [
+  [
+   "Where you are from?",
+   "Where <strong>are you</strong> from?"
+  ],
+  [
+   "Do you are tired?",
+   "<strong>Are you</strong> tired?"
+  ],
+  [
+   "How long you stay?",
+   "How long <strong>are you staying</strong>?"
+  ],
+  [
+   "Did you enjoyed the tour?",
+   "Did you <strong>enjoy</strong> the tour? (after <em>did</em>, use the base verb)"
+  ],
+  [
+   "What time opens the museum?",
+   "What time <strong>does the museum open</strong>?"
+  ],
+  [
+   "Are you hungry? Yes, I do.",
+   "Are you hungry? Yes, I <strong>am</strong>. (answer with the same verb as the question)"
+  ]
+ ],
+ "warmup": [
+  "Have you ever worked with tourists, or helped a visitor in your town? What did they ask you?",
+  "When you travel, what is the first question people usually ask you?",
+  "Which questions are easy for you in English? Which ones do you often get wrong?"
+ ],
+ "vocab": [
+  {
+   "h": "Welcoming visitors and offering help",
+   "cols": [
+    "Phrase",
+    "Use it for",
+    "Example"
+   ],
+   "rows": [
+    [
+     "Welcome to ...!",
+     "greeting a visitor when they arrive",
+     "<em>Good evening, and welcome to the Harbour Hotel!</em>"
+    ],
+    [
+     "Nice to meet you.",
+     "the first time you meet someone",
+     "<em>Hi, I'm Sam, your guide for today. Nice to meet you.</em>"
+    ],
+    [
+     "How was your journey / flight?",
+     "friendly small talk after travel",
+     "<em>How was your flight? Not too long, I hope.</em>"
+    ],
+    [
+     "Can I help you?",
+     "offering help in a shop, hotel or café",
+     "<em>Good morning! Can I help you?</em>"
+    ],
+    [
+     "Would you like ...?",
+     "offering something politely",
+     "<em>Would you like a map of the city?</em>"
+    ],
+    [
+     "Let me show you ...",
+     "offering to take or show someone",
+     "<em>Let me show you to your room.</em>"
+    ],
+    [
+     "It's open from ... to ...",
+     "giving opening times",
+     "<em>The gallery is open from ten to six.</em>"
+    ],
+    [
+     "It's a ten-minute walk.",
+     "saying how far something is (no <em>-s</em> on <em>minute</em>)",
+     "<em>The station? It's a five-minute walk from here.</em>"
+    ],
+    [
+     "Enjoy your stay!",
+     "saying goodbye to a guest or visitor",
+     "<em>Here's your key. Enjoy your stay!</em>"
+    ]
+   ]
+  },
+  {
+   "h": "Customer service: plain and polite",
+   "note": "With customers and the public, the polite version sounds warmer and more professional. The grammar is the same; you add <em>would, could, may</em> or a softener.",
+   "cols": [
+    "Plain (OK with friends)",
+    "Polite (with customers)",
+    "Use it for"
+   ],
+   "rows": [
+    [
+     "What do you want?",
+     "<em>What can I get you? / How can I help you?</em>",
+     "starting"
+    ],
+    [
+     "Do you want a bag?",
+     "<em>Would you like a bag?</em>",
+     "offering"
+    ],
+    [
+     "What's your name?",
+     "<em>Could I have your name, please? / May I have your name?</em>",
+     "asking for details"
+    ],
+    [
+     "Wait.",
+     "<em>Would you mind waiting a moment? / I'll be right with you.</em>",
+     "asking someone to wait"
+    ],
+    [
+     "Yes.",
+     "<em>Certainly. / Of course. / Sure, no problem.</em>",
+     "saying yes to a request"
+    ],
+    [
+     "No, it's closed.",
+     "<em>I'm afraid it's closed today, but it opens at nine tomorrow.</em>",
+     "bad news (give an option)"
+    ],
+    [
+     "I don't know.",
+     "<em>I'm not sure, but I'll find out for you.</em>",
+     "when you don't know"
+    ],
+    [
+     "Anything else?",
+     "<em>Is there anything else I can help you with?</em>",
+     "finishing"
+    ]
+   ]
+  },
+  {
+   "h": "Two kinds of question",
+   "cols": [
+    "Type",
+    "Pattern",
+    "Examples",
+    "Use it to"
+   ],
+   "rows": [
+    [
+     "closed: yes/no",
+     "helper verb + subject + verb ...?<br><em>(is, are, do, does, did, have, can, would)</em>",
+     "<em>Is this your first visit? Do you have a reservation? Can I take your coat?</em>",
+     "check a fact quickly: the answer is yes or no"
+    ],
+    [
+     "closed: either/or",
+     "... A or B?",
+     "<em>Would you like tea or coffee? Are you here for work or on holiday?</em>",
+     "offer a quick choice"
+    ],
+    [
+     "open",
+     "question word + helper verb + subject + verb ...?<br><em>(where, what, when, which, who, why, how long, how many)</em>",
+     "<em>Where are you from? How long are you staying? What would you like to see?</em>",
+     "get people talking and find out more"
+    ]
+   ]
+  },
+  {
+   "h": "Short answers",
+   "note": "Answer a closed question with the same helper verb. Just <em>Yes</em> or <em>No</em> can sound a little cold.",
+   "cols": [
+    "Question",
+    "Yes",
+    "No"
+   ],
+   "rows": [
+    [
+     "Are you ...?",
+     "Yes, I am. / Yes, we are.",
+     "No, I'm not."
+    ],
+    [
+     "Is it ...?",
+     "Yes, it is.",
+     "No, it isn't."
+    ],
+    [
+     "Do you ...?",
+     "Yes, I do.",
+     "No, I don't."
+    ],
+    [
+     "Does it ...?",
+     "Yes, it does.",
+     "No, it doesn't."
+    ],
+    [
+     "Did you ...?",
+     "Yes, I did.",
+     "No, I didn't."
+    ],
+    [
+     "Have you ...?",
+     "Yes, I have.",
+     "No, I haven't."
+    ],
+    [
+     "Can I ...?",
+     "Yes, of course.",
+     "I'm sorry, you can't."
+    ]
+   ]
+  },
+  {
+   "h": "Turn a closed question into an open one",
+   "note": "A closed question can stop the conversation: <em>Yes.</em> Use a question word to keep it going.",
+   "cols": [
+    "Closed",
+    "Open"
+   ],
+   "rows": [
+    [
+     "Did you enjoy the tour?",
+     "What did you enjoy most about the tour?"
+    ],
+    [
+     "Is this your first time in Canada?",
+     "What made you choose Canada?"
+    ],
+    [
+     "Are you here for work?",
+     "What brings you to Toronto?"
+    ],
+    [
+     "Do you like the hotel?",
+     "How are you finding the hotel?"
+    ],
+    [
+     "Did you sleep well?",
+     "How did you sleep?"
+    ]
+   ]
+  }
+ ],
+ "say": "In yes/no questions your voice usually goes <strong>up</strong> at the end: <em>Is this your first visit? &#8599;</em> In open questions it usually goes <strong>down</strong>: <em>Where are you from? &#8600;</em> In either/or questions it goes up, then down: <em>Tea &#8599; or coffee &#8600;?</em>",
+ "exercises": [
+  {
+   "title": "Question and answer",
+   "kind": "match",
+   "intro": "Match each question to the best answer. Tap a question, then tap the answer.",
+   "items": [
+    {
+     "l": "Is this your first visit to Toronto?",
+     "r": "Yes, it is. We're very excited.",
+     "why": "A yes/no question with is: answer with is. Yes, it is."
+    },
+    {
+     "l": "Are you staying for the weekend?",
+     "r": "No, we aren't. We're here for a week.",
+     "why": "A question with are needs are in the short answer: No, we aren't."
+    },
+    {
+     "l": "Do you have a reservation?",
+     "r": "Yes, we do. It's under Garcia.",
+     "why": "A question with do needs do in the answer: Yes, we do."
+    },
+    {
+     "l": "Would you like tea or coffee?",
+     "r": "Coffee, please. With milk.",
+     "why": "An either/or question: the answer is one of the choices, not yes or no."
+    },
+    {
+     "l": "Where are you from?",
+     "r": "We're from Lyon, in France.",
+     "why": "Where asks about a place, so the answer is a place."
+    },
+    {
+     "l": "How long are you staying?",
+     "r": "Five nights. We leave on Sunday.",
+     "why": "How long asks about time: five nights, a week, until Sunday."
+    },
+    {
+     "l": "What would you like to see?",
+     "r": "The CN Tower and the islands.",
+     "why": "An open question with what: the answer gives information, not yes or no."
+    },
+    {
+     "l": "How was your flight?",
+     "r": "Long, but fine, thanks.",
+     "why": "How was ...? asks for an opinion or description: fine, long, great."
+    }
+   ]
+  },
+  {
+   "title": "Make the question",
+   "kind": "pick",
+   "items": [
+    {
+     "pre": "",
+     "post": " you staying in the city centre?",
+     "opts": [
+      "Do",
+      "Are",
+      "Is"
+     ],
+     "a": 1,
+     "why": "With staying (be + -ing), use are: Are you staying ...?"
+    },
+    {
+     "pre": "",
+     "post": " you need a map of the city?",
+     "opts": [
+      "Are",
+      "Does",
+      "Do"
+     ],
+     "a": 2,
+     "why": "Need is a normal verb, so use do with you: Do you need a map?"
+    },
+    {
+     "pre": "Where ",
+     "post": " you from?",
+     "opts": [
+      "are",
+      "do",
+      "is"
+     ],
+     "a": 0,
+     "why": "Be from: Where are you from? (I am from ...)"
+    },
+    {
+     "pre": "What time ",
+     "post": " the museum open?",
+     "opts": [
+      "is",
+      "does",
+      "do"
+     ],
+     "a": 1,
+     "why": "Open is a normal verb and the museum is it, so use does: What time does the museum open?"
+    },
+    {
+     "pre": "",
+     "post": " your journey OK?",
+     "opts": [
+      "Did",
+      "Were",
+      "Was"
+     ],
+     "a": 2,
+     "why": "Your journey = it, in the past: Was your journey OK?"
+    },
+    {
+     "pre": "How long ",
+     "post": " you staying?",
+     "opts": [
+      "are",
+      "do",
+      "did"
+     ],
+     "a": 0,
+     "why": "With staying (be + -ing), use are: How long are you staying?"
+    },
+    {
+     "pre": "Did you ",
+     "post": " the boat tour yesterday?",
+     "opts": [
+      "enjoyed",
+      "enjoy",
+      "enjoying"
+     ],
+     "a": 1,
+     "why": "After did, use the base verb: Did you enjoy ...? Did already shows the past."
+    },
+    {
+     "pre": "Would you like a window table ",
+     "post": " one near the fire?",
+     "opts": [
+      "and",
+      "but",
+      "or"
+     ],
+     "a": 2,
+     "why": "An either/or question offers a choice: A or B?"
+    }
+   ]
+  },
+  {
+   "title": "Question words and helpers",
+   "kind": "type",
+   "bank": [
+    "Can",
+    "Have",
+    "How long",
+    "How many",
+    "What time",
+    "Where",
+    "Which",
+    "Would"
+   ],
+   "items": [
+    {
+     "pre": "",
+     "post": " you like me to call a taxi for you?",
+     "ok": [
+      "would"
+     ],
+     "why": "Would you like ...? is the polite way to offer something."
+    },
+    {
+     "pre": "",
+     "post": " is your hotel? I can show you on the map.",
+     "ok": [
+      "where"
+     ],
+     "why": "Where asks about a place: Where is your hotel?"
+    },
+    {
+     "pre": "",
+     "post": " are you staying in Canada? Two weeks or longer?",
+     "ok": [
+      "how long"
+     ],
+     "why": "How long asks about time: How long are you staying?"
+    },
+    {
+     "pre": "",
+     "post": " you been to Niagara Falls yet?",
+     "ok": [
+      "have"
+     ],
+     "why": "Have you been ...? asks about experience up to now (present perfect)."
+    },
+    {
+     "pre": "",
+     "post": " I help you with your bags?",
+     "ok": [
+      "can"
+     ],
+     "why": "Can I help you ...? offers help."
+    },
+    {
+     "pre": "",
+     "post": " does the last bus leave?",
+     "ok": [
+      "what time"
+     ],
+     "why": "What time asks for a clock time: What time does the last bus leave?"
+    },
+    {
+     "pre": "",
+     "post": " people are in your group?",
+     "ok": [
+      "how many"
+     ],
+     "why": "How many + plural noun asks for a number: How many people?"
+    },
+    {
+     "pre": "",
+     "post": " tour would you prefer: the walking tour or the bus tour?",
+     "ok": [
+      "which"
+     ],
+     "why": "Which asks someone to choose from a small number of things."
+    }
+   ]
+  },
+  {
+   "title": "Word order",
+   "kind": "order",
+   "items": [
+    {
+     "answer": "Is this your first time in Canada?",
+     "names": "Canada",
+     "why": "Yes/no question with be: Is + this + your first time ...?"
+    },
+    {
+     "answer": "Where would you like to go tomorrow?",
+     "why": "Open question: question word + would + you + like to go."
+    },
+    {
+     "answer": "Do you need help with your luggage?",
+     "why": "Yes/no question: Do + you + need + the rest."
+    },
+    {
+     "answer": "How was your flight from London?",
+     "names": "London",
+     "why": "How was + subject (your flight) + the rest."
+    },
+    {
+     "answer": "What time does breakfast start?",
+     "why": "Question word + does + subject (breakfast) + base verb (start)."
+    }
+   ]
+  },
+  {
+   "title": "Reading",
+   "kind": "reading",
+   "text": "<p><strong>At the front desk of the Maple Leaf Hostel, Toronto</strong></p>\n<p><strong>Priya:</strong> Good evening, and welcome to the Maple Leaf Hostel! How was your journey?</p>\n<p><strong>Ana:</strong> Long! Our flight from Lisbon was eight hours, and then we took the train from the airport.</p>\n<p><strong>Priya:</strong> Oh, you must be tired. Do you have a reservation?</p>\n<p><strong>Tom:</strong> Yes, we do. It's under Ferreira, for four nights.</p>\n<p><strong>Priya:</strong> Perfect. Here are your keys. You're in room 12, on the second floor. Breakfast is from seven to ten in the kitchen downstairs. Is this your first time in Toronto?</p>\n<p><strong>Ana:</strong> Yes, it is. We don't know anything about the city!</p>\n<p><strong>Priya:</strong> Don't worry. What would you like to do while you're here?</p>\n<p><strong>Tom:</strong> We love music, and we'd like to see the lake.</p>\n<p><strong>Priya:</strong> Then take the ferry to the Toronto Islands. It's a twenty-minute walk to the ferry terminal from here. And there's live jazz at a bar on Queen Street every Friday. Would you like a map?</p>\n<p><strong>Ana:</strong> Yes, please. Thank you so much!</p>",
+   "intro": "Read the conversation. Look at Priya's questions: which are closed and which are open? Then type the missing word from the text, and press <strong>Check</strong>.",
+   "items": [
+    {
+     "ask": "Where did Ana and Tom fly from?",
+     "pre": "",
+     "post": ".",
+     "ok": [
+      "lisbon"
+     ],
+     "why": "Ana says: 'Our flight from Lisbon was eight hours.'"
+    },
+    {
+     "ask": "How many nights are they staying?",
+     "pre": "",
+     "post": " nights.",
+     "ok": [
+      "four",
+      "4"
+     ],
+     "why": "Tom says: 'It's under Ferreira, for four nights.'"
+    },
+    {
+     "ask": "When is breakfast?",
+     "pre": "From seven to ",
+     "post": ".",
+     "ok": [
+      "ten",
+      "10"
+     ],
+     "why": "Priya says: 'Breakfast is from seven to ten in the kitchen downstairs.'"
+    },
+    {
+     "ask": "What do Ana and Tom love?",
+     "pre": "",
+     "post": ".",
+     "ok": [
+      "music"
+     ],
+     "why": "Tom says: 'We love music, and we'd like to see the lake.'"
+    },
+    {
+     "ask": "How can they get to the Toronto Islands?",
+     "pre": "Take the ",
+     "post": ".",
+     "ok": [
+      "ferry"
+     ],
+     "why": "Priya says: 'Then take the ferry to the Toronto Islands.'"
+    }
+   ]
+  },
+  {
+   "title": "Speaking",
+   "kind": "speaking",
+   "intro": "Think about each task. We will practise them in our lesson.",
+   "items": [
+    "Role-play: a visitor arrives at your hotel, café or shop. Greet them and ask three <strong>closed</strong> questions (<em>Is this ...? Do you ...? Would you like ... or ...?</em>).",
+    "Now ask the same visitor three <strong>open</strong> questions (<em>Where ...? How long ...? What ...?</em>). Which questions got longer answers?",
+    "A tourist stops you in your town. They look lost. What do you say first? What questions do you ask to help them?",
+    "Think of a place in your town or country that tourists love. What would you tell a visitor about it: when it's open, how far it is, and what to see?"
+   ]
+  },
+  {
+   "title": "Closed or open, and mistakes",
+   "parts": [
+    {
+     "h": "Closed or open?",
+     "kind": "sort",
+     "rule": "<p><strong>Watch out</strong></p>\n<ul>\n<li><strong>closed</strong>: the answer is <em>yes</em> or <em>no</em>, or one of the choices you give: <em>Do you need a taxi? Tea or coffee?</em></li>\n<li><strong>open</strong>: starts with a question word, and the answer gives new information: <em>Where are you staying?</em></li>\n</ul>",
+     "intro": "Is each question closed or open? Sort them.",
+     "cols": [
+      "closed question",
+      "open question"
+     ],
+     "chips": [
+      {
+       "t": "Is the museum open today?",
+       "col": 0,
+       "why": "The answer is yes or no: a closed question."
+      },
+      {
+       "t": "Do you need a taxi?",
+       "col": 0,
+       "why": "The answer is yes or no: a closed question."
+      },
+      {
+       "t": "Would you like a map?",
+       "col": 0,
+       "why": "The answer is yes or no: a closed question."
+      },
+      {
+       "t": "Tea or coffee?",
+       "col": 0,
+       "why": "An either/or question: the visitor chooses one, so it is closed."
+      },
+      {
+       "t": "Have you got your passport?",
+       "col": 0,
+       "why": "The answer is yes or no: a closed question."
+      },
+      {
+       "t": "Where are you staying?",
+       "col": 1,
+       "why": "It starts with where, and the answer is new information: an open question."
+      },
+      {
+       "t": "What brings you to Canada?",
+       "col": 1,
+       "why": "It starts with what, and invites a longer answer: an open question."
+      },
+      {
+       "t": "How did you get here?",
+       "col": 1,
+       "why": "It starts with how, and the answer gives information: an open question."
+      },
+      {
+       "t": "Who are you travelling with?",
+       "col": 1,
+       "why": "It starts with who, and the answer is new information: an open question."
+      },
+      {
+       "t": "Why did you choose Toronto?",
+       "col": 1,
+       "why": "It starts with why, and invites a longer answer: an open question."
+      }
+     ]
+    },
+    {
+     "h": "Find the mistake",
+     "kind": "spot",
+     "items": [
+      {
+       "q": "Where you are from?",
+       "bad": "you are",
+       "fix": "are you",
+       "opts": [
+        "you is",
+        "do you are"
+       ],
+       "why": "In a question, the helper verb comes before the subject: Where are you from?"
+      },
+      {
+       "q": "Do you are tired after your flight?",
+       "bad": "Do you are",
+       "fix": "Are you",
+       "opts": [
+        "Does you",
+        "You are"
+       ],
+       "why": "With be, don't add do: Are you tired?"
+      },
+      {
+       "q": "What time opens the museum?",
+       "bad": "opens the museum",
+       "fix": "does the museum open",
+       "opts": [
+        "the museum opens",
+        "is open the museum"
+       ],
+       "why": "Question word + does + subject + base verb: What time does the museum open?"
+      },
+      {
+       "q": "Did you enjoyed the tour?",
+       "bad": "enjoyed",
+       "fix": "enjoy",
+       "opts": [
+        "enjoying",
+        "enjoys"
+       ],
+       "why": "After did, use the base verb: Did you enjoy the tour?"
+      },
+      {
+       "q": "How long are you staying in Canada?",
+       "bad": "",
+       "why": "Correct: question word + are + you + staying."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "teacher": {
+  "purpose": "give students the language to welcome a visitor (as a receptionist, café or shop worker, guide, or simply a friendly local) and, above all, to ask questions correctly: closed questions (yes/no and either/or) with short answers, and open wh- questions, with the helper verb before the subject.",
+  "before": "ask the student if they work (or would like to work) with tourists, and where: a hotel, a restaurant, a shop, a tour company. Print or prepare the role-play cards below, and think of one or two real places in the student's town for the speaking tasks.",
+  "plan": [
+   [
+    "Warm-up (5 min).",
+    "The three warm-up questions. Write down any questions the student says, mistakes included; you will come back to them at the end."
+   ],
+   [
+    "Key vocabulary (10 min).",
+    "The welcome phrases first, then the question table. Ask the student to give you one more example of each type. Drill the short answers quickly: you ask, they answer (<em>Are you tired? Yes, I am.</em>). Model the intonation (see below)."
+   ],
+   [
+    "Exercises 1 and 2 (8 min).",
+    "Matching, then the helper verbs. After each item in Exercise 2, ask: &ldquo;Why <em>are</em> and not <em>do</em>?&rdquo; The rule: <em>be</em> and <em>-ing</em> forms take <em>are/is</em>; normal verbs take <em>do/does/did</em>."
+   ],
+   [
+    "Exercise 3 or 4 (5 min).",
+    "Do one together and set the other for home."
+   ],
+   [
+    "Reading (8 min).",
+    "The hostel conversation. Before the questions, ask the student to find Priya's questions and say which are closed and which are open (closed: <em>Do you have a reservation? Is this your first time in Toronto? Would you like a map?</em>; open: <em>How was your journey? What would you like to do while you're here?</em>). Then read it aloud together, the student as Priya."
+   ],
+   [
+    "Speaking (10 min).",
+    "Role-play with the cards. First round: closed questions only. Second round: open questions only. Ask the student which round felt more like a real conversation."
+   ],
+   [
+    "Closed, open and wrap-up (4 min).",
+    "Exercise 7 Part A together. Go back to the questions you wrote down in the warm-up and let the student correct them. Part B at home."
+   ]
+  ],
+  "pron": [
+   "<strong>Intonation</strong>: yes/no questions usually rise at the end (<em>Is this your first visit? &#8599;</em>); wh- questions usually fall (<em>Where are you from? &#8600;</em>). Either/or questions rise, then fall: <em>Tea &#8599; or coffee &#8600;?</em> A rising either/or sounds like a yes/no question (&ldquo;tea or coffee or something else?&rdquo;).",
+   "<strong>Weak forms</strong>: in fast speech <em>do you</em> becomes /dj&#601;/ or /d&#658;&#601;/, <em>are you</em> /&#601;j&#601;/, <em>would you</em> /&#712;w&#650;d&#658;u/, <em>does</em> /d&#601;z/. Students may not hear the helper verb at all; slow down first, then model the natural speed.",
+   "<strong>journey</strong> /&#712;d&#658;&#604;&#720;ni/: the first sound is /d&#658;/ as in <em>jam</em>, and the vowel is like <em>her</em>, not <em>your</em>.",
+   "<strong>welcome</strong> /&#712;welk&#601;m/: stress on the first syllable. <strong>reservation</strong> /&#716;rez&#601;&#712;ve&#618;&#643;&#601;n/: stress on <em>VA</em>.",
+   "<strong>Short answers</strong>: the helper verb is stressed and strong in short answers: <em>Yes, I <strong>am</strong>.</em> /&#230;m/, not /&#601;m/. Negatives: <em>isn't, aren't, don't, doesn't, didn't</em>, with a clear /t/ at the end or a short stop."
+  ],
+  "mistakes_h": "Common mistakes and first-language notes",
+  "mistakes": [
+   "<strong>Statement order with a rising voice</strong>: Spanish, Italian and Portuguese speakers often make questions with intonation only: <em>You are tired?</em> In informal English this is possible to check something you think you heard (<em>You're from Lyon?</em>), but at work use the full form: <em>Are you tired?</em>",
+   "<strong>Chinese and Vietnamese speakers</strong> often keep statement order and add a question word at the end (<em>You are from where?</em>), because their languages use question particles. Drill the pattern: question word + helper + subject + verb.",
+   "<strong>Russian, Polish and Ukrainian speakers</strong> have no helper verbs in questions, so they often drop <em>do</em>: <em>Where you live?</em> German and French speakers may put the main verb first: <em>Like you coffee?</em> Both need <em>do</em>: <em>Where do you live? Do you like coffee?</em>",
+   "<strong>Double past</strong>: <em>Did you enjoyed?</em> Remind the student that <em>did</em> carries the past, so the main verb goes back to the base form.",
+   "<strong>Wrong short answer</strong>: <em>Are you hungry? Yes, I do.</em> The short answer repeats the helper verb of the question: <em>are &rarr; am, do &rarr; do, can &rarr; can</em>.",
+   "<strong>Would you like vs Do you like</strong>: <em>Would you like a coffee?</em> is an offer (now). <em>Do you like coffee?</em> asks about general taste. Students often offer things with <em>Do you like ...?</em>",
+   "<strong>Too direct</strong>: <em>What's your name?</em> or <em>Your passport?</em> can sound abrupt at a hotel desk. Softer: <em>Can I have your name, please? Could I see your passport, please?</em>",
+   "<strong>Register with customers:</strong> learners often use correct but blunt questions (<em>What do you want? Do you want a bag?</em>). Practise the polite forms in the &ldquo;Customer service&rdquo; table: <em>Would you like ...? Could I have ...? I'm afraid ...</em>. In role-plays, ask the student to repeat a blunt question politely."
+  ],
+  "uk_us": [
+   [
+    "holiday",
+    "vacation",
+    "Are you here on holiday? / Are you here on vacation?"
+   ],
+   [
+    "lift",
+    "elevator",
+    "The lift is on your left. / The elevator is on your left."
+   ],
+   [
+    "ground floor, first floor",
+    "first floor, second floor",
+    "In Canada and the US the street level is the first floor. Check which system your guests know."
+   ],
+   [
+    "the bill",
+    "the check (also the bill in Canada)",
+    "Can I have the bill, please?"
+   ],
+   [
+    "queue",
+    "line",
+    "Please wait in the queue / in line."
+   ]
+  ],
+  "adapt": [
+   [
+    "Vocabulary",
+    "Welcome phrases plus yes/no questions with <em>are, is, do, can, would</em>, and wh- questions with <em>where, what, how long</em>. Short answers with <em>am/are/is</em> and <em>do</em>.",
+    "All helper verbs, including <em>have you been</em> and <em>did</em>; add polite indirect questions (<em>Could you tell me ...? Do you know if ...?</em>) and follow-up questions (<em>Oh really? What was that like?</em>)."
+   ],
+   [
+    "Speaking",
+    "One role-play card at a time; the student can read the phrases from the page.",
+    "Longer role-plays with a problem: the room isn't ready, the tour is full, the guest is unhappy. The student must keep asking open questions to find a solution."
+   ]
+  ],
+  "extra": "<h2>Role-play cards</h2>\n<p>Print or read these aloud. You play the visitor first; then swap.</p>\n<table>\n<thead><tr><th>Card</th><th>Host</th><th>Visitor</th></tr></thead>\n<tbody>\n<tr><td><strong>1. Hotel front desk</strong></td><td>Welcome the guest. Ask: reservation? how many nights? how was the journey? Give the room number and breakfast times. Offer a map.</td><td>You arrive late after a long flight from Mexico City. You have a reservation for three nights. You'd like to know where to eat tonight.</td></tr>\n<tr><td><strong>2. Café</strong></td><td>Greet the customer. Offer a table: inside or outside? Ask what they would like. Ask where they are from and what they are planning to see.</td><td>You are a tourist from Australia. You want a coffee and something small to eat. You're in town for two days and want to visit a museum.</td></tr>\n<tr><td><strong>3. Helping a lost visitor</strong></td><td>You see a visitor looking at a map. Offer help. Find out where they want to go, how they want to travel, and tell them how far it is.</td><td>You are looking for the train station (or a famous place in the student's town). You have a big suitcase and you don't know if you should walk or take a taxi.</td></tr>\n</tbody>\n</table>",
+  "prompts": [
+   "<strong>Greet a visitor and ask three closed questions.</strong> Answer with short answers that test them: &ldquo;No, I'm not.&rdquo; &ldquo;Yes, we did.&rdquo; Listen for the helper verb before the subject, and for a rising voice at the end.",
+   "<strong>Ask three open questions.</strong> Give longer answers so the student has to listen and follow up: &ldquo;Oh, Lyon! What's it like?&rdquo; Afterwards, ask which questions kept the conversation going.",
+   "<strong>Helping a lost tourist.</strong> Follow up as the tourist: &ldquo;Is it far?&rdquo; &ldquo;Can I walk?&rdquo; &ldquo;How long does it take?&rdquo; The student practises giving information: <em>It's a ten-minute walk. It's open until six.</em>",
+   "<strong>A place tourists love.</strong> Ask open questions as a curious visitor: &ldquo;What can I do there?&rdquo; &ldquo;When is the best time to go?&rdquo; &ldquo;How much does it cost?&rdquo; Then let the student ask you about a place in your town."
+  ]
+ },
+ "bank": [
+  {
+   "type": "pick",
+   "q": "___ your room comfortable last night?",
+   "opts": [
+    "Did",
+    "Was",
+    "Were"
+   ],
+   "a": "Was",
+   "why": "Your room = it, in the past: Was your room comfortable?"
+  },
+  {
+   "type": "pick",
+   "q": "Where ___ you going this afternoon?",
+   "opts": [
+    "do",
+    "are",
+    "does"
+   ],
+   "a": "are",
+   "why": "With going (be + -ing), use are: Where are you going?"
+  },
+  {
+   "type": "pick",
+   "q": "___ you want a table inside or on the terrace?",
+   "opts": [
+    "Are",
+    "Does",
+    "Do"
+   ],
+   "a": "Do",
+   "why": "Want is a normal verb, so use do with you: Do you want a table ...?"
+  },
+  {
+   "type": "pick",
+   "q": "What time ___ the shop close on Sundays?",
+   "opts": [
+    "does",
+    "is",
+    "do"
+   ],
+   "a": "does",
+   "why": "Close is a normal verb and the shop is it, so use does: What time does the shop close?"
+  },
+  {
+   "type": "pick",
+   "q": "Excuse me, ___ I help you find something?",
+   "opts": [
+    "do",
+    "can",
+    "am"
+   ],
+   "a": "can",
+   "why": "Can I help you ...? is the usual way to offer help."
+  },
+  {
+   "type": "pick",
+   "q": "Would you like a single ___ a double room?",
+   "opts": [
+    "and",
+    "so",
+    "or"
+   ],
+   "a": "or",
+   "why": "An either/or question offers a choice: a single or a double?"
+  },
+  {
+   "type": "pick",
+   "q": "Are you here on holiday? Yes, I ___.",
+   "opts": [
+    "am",
+    "do",
+    "are"
+   ],
+   "a": "am",
+   "why": "The short answer repeats the verb of the question: Are you ...? Yes, I am."
+  },
+  {
+   "type": "pick",
+   "q": "___ did you arrive in Vancouver?",
+   "opts": [
+    "Who",
+    "When",
+    "What"
+   ],
+   "a": "When",
+   "why": "When asks about time: When did you arrive?"
+  },
+  {
+   "type": "type",
+   "q": "___ are you travelling with? Your family or friends?",
+   "a": [
+    "who"
+   ],
+   "why": "Who asks about people: Who are you travelling with?"
+  },
+  {
+   "type": "type",
+   "q": "How ___ nights would you like to stay?",
+   "a": [
+    "many"
+   ],
+   "why": "How many + plural noun asks for a number: How many nights?"
+  },
+  {
+   "type": "type",
+   "q": "___ you ever been to Quebec City?",
+   "a": [
+    "have"
+   ],
+   "why": "Have you ever been ...? asks about experience: present perfect."
+  },
+  {
+   "type": "type",
+   "q": "Did you ___ the concert last night? It was wonderful! (enjoy / enjoyed)",
+   "a": [
+    "enjoy"
+   ],
+   "why": "After did, use the base verb: Did you enjoy ...?"
+  },
+  {
+   "type": "type",
+   "q": "How ___ are you staying in Halifax? A week?",
+   "a": [
+    "long"
+   ],
+   "why": "How long asks about time: How long are you staying?"
+  },
+  {
+   "type": "spot",
+   "q": "Where you would like to sit?",
+   "bad": "you would",
+   "fix": "would you",
+   "opts": [
+    "would you",
+    "you will",
+    "do you would"
+   ],
+   "why": "The helper verb comes before the subject: Where would you like to sit?"
+  },
+  {
+   "type": "spot",
+   "q": "Does the tour includes lunch?",
+   "bad": "includes",
+   "fix": "include",
+   "opts": [
+    "include",
+    "including",
+    "included"
+   ],
+   "why": "Does already has the -s, so use the base verb: Does the tour include lunch?"
+  },
+  {
+   "type": "spot",
+   "q": "Is breakfast included in the price?",
+   "bad": "",
+   "why": "Correct: Is + subject (breakfast) + included."
+  },
+  {
+   "type": "spot",
+   "q": "How many bags you have?",
+   "bad": "you have",
+   "fix": "do you have",
+   "opts": [
+    "do you have",
+    "you having",
+    "are you have"
+   ],
+   "why": "With a normal verb, add do: How many bags do you have?"
+  },
+  {
+   "type": "order",
+   "a": "What would you like to do this evening?",
+   "alt": [],
+   "why": "Question word + would + you + like to + verb + time."
+  },
+  {
+   "type": "order",
+   "a": "Is this your first time in Vancouver?",
+   "alt": [],
+   "why": "Yes/no question with be: Is + this + your first time + place?"
+  },
+  {
+   "type": "order",
+   "a": "How did you hear about our hotel?",
+   "alt": [],
+   "why": "Question word + did + you + base verb (hear) + about our hotel."
+  }
+ ]
+}

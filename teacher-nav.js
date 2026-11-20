@@ -15,7 +15,7 @@
     { label: "BBC videos", note: "6 Minute English with your vocabulary notes", href: "bbc/index.html", match: "bbc/" },
     { label: "Vocabulary", note: "20 worksheets, incl. music and photo lessons", href: "vocabulary/index.html", match: "vocabulary/" },
     { label: "STANAG / JFLT", note: "Placement checks and the speaking interview", href: "stanag/index.html", match: "stanag/index" },
-    { label: "English for Work", note: "Business, Educators, Engineering, Military and Farm English", href: "work/index.html", match: ["work/", "business/", "educators/", "engineering/", "military/", "farm/", "stanag/student-vocab", "stanag/teacher-vocab"] },
+    { label: "English for Work", note: "Business, Educators, Engineering, Military, Farm and Tourism English", href: "work/index.html", match: ["work/", "business/", "educators/", "engineering/", "military/", "farm/", "tourism/", "stanag/student-vocab", "stanag/teacher-vocab"] },
     { label: "Pronunciation", note: "Lessons and drills for Vietnamese and Chinese speakers", href: "pronunciation/teacher-f42702.html", match: "pronunciation/" },
     { label: "Speaking Confidence", note: "7 lessons for students who freeze", href: "speaking/index.html", match: "speaking/" },
     { label: "Practice bank", note: "Review questions and make a practice link", href: "practice/teacher.html", match: "practice/" },

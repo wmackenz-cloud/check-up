@@ -1,0 +1,970 @@
+{
+ "n": 2,
+ "title": "Being a Tourist",
+ "hint": "Directions, tickets, prices and opening times; closed questions (Can I pay by card?), open questions (How do I get to ...?) and polite Could you tell me ...?",
+ "why": "on holiday, almost everything starts with a question: where the station is, how much a ticket costs, what time the museum closes. If the question is clear and polite, people are happy to help, and you get the answer you need the first time.",
+ "know": [
+  "travel words: <em>return ticket, platform, timetable, guided tour, admission, opening hours, souvenir</em>",
+  "the two main kinds of question: <strong>closed</strong> (<em>Does this bus go to the airport?</em>) and <strong>open</strong> (<em>How do I get to the airport?</em>)",
+  "polite openers for strangers: <em>Could you tell me ...? Do you know ...?</em>"
+ ],
+ "understand": [
+  "why the helper verb comes before the subject in a direct question: <em>What time <strong>does</strong> the museum open?</em>",
+  "why it goes back to normal order after <em>Could you tell me</em>: <em>Could you tell me where <strong>the station is</strong>?</em>"
+ ],
+ "able": [
+  "ask for directions, prices, times and tickets, and understand the answers",
+  "check that you understood: <em>So I turn left at the lights?</em>",
+  "ask a stranger a question politely, without sounding too direct"
+ ],
+ "mistakes": [
+  [
+   "What time the museum opens?",
+   "What time <strong>does the museum open</strong>?"
+  ],
+  [
+   "Could you tell me where is the station?",
+   "Could you tell me where <strong>the station is</strong>?"
+  ],
+  [
+   "How much costs it?",
+   "How much <strong>is it</strong>? / How much <strong>does it cost</strong>?"
+  ],
+  [
+   "Where I can buy tickets?",
+   "Where <strong>can I</strong> buy tickets?"
+  ],
+  [
+   "Do you know is there a bus?",
+   "Do you know <strong>if there is</strong> a bus?"
+  ],
+  [
+   "How long it takes?",
+   "How long <strong>does it take</strong>?"
+  ]
+ ],
+ "warmup": [
+  "Think of your last trip. What questions did you ask when you arrived?",
+  "Is it easy for you to ask a stranger for help in English? What do you say first?",
+  "What do you like to do in a new city: museums, food, walking, shopping?"
+ ],
+ "vocab": [
+  {
+   "h": "Travel and sightseeing words",
+   "cols": [
+    "Word",
+    "Meaning",
+    "Example"
+   ],
+   "rows": [
+    [
+     "single (US/Canada one-way)",
+     "a ticket to go there only",
+     "<em>A single to Ottawa, please.</em>"
+    ],
+    [
+     "return (US/Canada round-trip)",
+     "a ticket to go there and come back",
+     "<em>Is it cheaper to buy a return?</em>"
+    ],
+    [
+     "platform",
+     "where you get on the train",
+     "<em>The train leaves from platform 4.</em>"
+    ],
+    [
+     "timetable (US/Canada also schedule)",
+     "a list of times for buses or trains",
+     "<em>Is there a timetable at the bus stop?</em>"
+    ],
+    [
+     "guided tour",
+     "a visit with a guide who explains things",
+     "<em>The guided tour starts at eleven.</em>"
+    ],
+    [
+     "admission",
+     "the price or permission to go in",
+     "<em>Admission is free for children.</em>"
+    ],
+    [
+     "opening hours",
+     "the times when a place is open",
+     "<em>What are the opening hours of the gallery?</em>"
+    ],
+    [
+     "the sights",
+     "famous or interesting places to visit",
+     "<em>We saw all the sights in two days.</em>"
+    ],
+    [
+     "souvenir",
+     "a small thing you buy to remember a trip",
+     "<em>I bought a souvenir for my sister.</em>"
+    ],
+    [
+     "city centre (US/Canada downtown)",
+     "the main central part of a city",
+     "<em>Is the hotel in the city centre?</em>"
+    ]
+   ]
+  },
+  {
+   "h": "Asking questions",
+   "cols": [
+    "Kind",
+    "How it works",
+    "Example"
+   ],
+   "rows": [
+    [
+     "closed: yes / no",
+     "helper verb (is, does, can) + subject + verb; the answer is yes or no",
+     "<em>Does this bus go to the airport? Can I pay by card?</em>"
+    ],
+    [
+     "closed: either / or",
+     "two choices with <em>or</em>; the answer is one of them",
+     "<em>Is it a single or a return? Inside or outside?</em>"
+    ],
+    [
+     "open",
+     "question word + helper verb + subject + verb; the answer is information",
+     "<em>How do I get to the old town? What time does it close?</em>"
+    ],
+    [
+     "open with how / which",
+     "<em>how much</em> (price), <em>how long</em> (time), <em>how often</em>, <em>which</em> + noun",
+     "<em>How long does the tour take? Which platform is it?</em>"
+    ],
+    [
+     "polite indirect",
+     "<em>Could you tell me / Do you know</em> + question word + subject + verb (normal order)",
+     "<em>Could you tell me where the station is?</em>"
+    ],
+    [
+     "polite indirect: yes / no",
+     "<em>Do you know if ...?</em> (or <em>whether</em>)",
+     "<em>Do you know if there's a bank near here?</em>"
+    ]
+   ]
+  },
+  {
+   "h": "Talking to locals: starting, checking and thanking",
+   "note": "Strangers are happy to help when you open politely and thank them at the end.",
+   "cols": [
+    "Phrase",
+    "Use it for"
+   ],
+   "rows": [
+    [
+     "Excuse me, could you help me?",
+     "stopping someone in the street"
+    ],
+    [
+     "Sorry to bother you, but ...",
+     "a polite start when someone is busy"
+    ],
+    [
+     "I'm not from here. Is this the way to ...?",
+     "checking you are on the right road"
+    ],
+    [
+     "Sorry, could you speak a bit more slowly?",
+     "when people talk too fast"
+    ],
+    [
+     "Is there anywhere good to eat around here?",
+     "asking for local tips"
+    ],
+    [
+     "What would you recommend?",
+     "asking a local's opinion"
+    ],
+    [
+     "Thanks so much, that's really helpful.",
+     "thanking"
+    ],
+    [
+     "Have a nice day!",
+     "ending in a friendly way"
+    ]
+   ]
+  },
+  {
+   "h": "Directions and checking",
+   "cols": [
+    "Phrase",
+    "Use it for",
+    "Example"
+   ],
+   "rows": [
+    [
+     "Excuse me / Sorry to bother you",
+     "starting a question to a stranger",
+     "<em>Excuse me, could you help me?</em>"
+    ],
+    [
+     "go straight on",
+     "continue in the same direction",
+     "<em>Go straight on for two blocks.</em>"
+    ],
+    [
+     "turn left / right at ...",
+     "change direction at a place",
+     "<em>Turn left at the lights.</em>"
+    ],
+    [
+     "it's on your left / right",
+     "where the place is when you arrive",
+     "<em>The museum is on your right.</em>"
+    ],
+    [
+     "opposite / next to",
+     "the position of a place",
+     "<em>It's opposite the bank, next to a café.</em>"
+    ],
+    [
+     "Could you say that again?",
+     "asking someone to repeat",
+     "<em>Sorry, could you say that again, a bit more slowly?</em>"
+    ],
+    [
+     "So I ...?",
+     "checking that you understood",
+     "<em>So I turn left at the lights, then it's on my right?</em>"
+    ]
+   ]
+  }
+ ],
+ "say": "Closed questions usually go <strong>up</strong> at the end (<em>Can I pay by card?</em> &uarr;); open questions usually go <strong>down</strong> (<em>Where's the station?</em> &darr;). <strong>souvenir</strong> is soo-ve-<strong>NEER</strong>; <strong>queue</strong> sounds like the letter <em>Q</em>.",
+ "exercises": [
+  {
+   "title": "Questions and answers",
+   "kind": "match",
+   "intro": "Match each question to its answer. Tap a question, then tap the answer.",
+   "items": [
+    {
+     "l": "How much is a return ticket?",
+     "r": "Twenty-four dollars.",
+     "why": "How much asks about price, so the answer is an amount of money."
+    },
+    {
+     "l": "What time does the museum open?",
+     "r": "At ten o'clock.",
+     "why": "What time asks for a time: At ten o'clock."
+    },
+    {
+     "l": "Which platform does the train leave from?",
+     "r": "Platform 4.",
+     "why": "Which platform asks you to choose one platform: Platform 4."
+    },
+    {
+     "l": "How long does the tour take?",
+     "r": "About two hours.",
+     "why": "How long asks about time from start to end: About two hours."
+    },
+    {
+     "l": "Where can I buy a map?",
+     "r": "At the tourist information desk.",
+     "why": "Where asks about a place: At the tourist information desk."
+    },
+    {
+     "l": "Does this bus go to the airport?",
+     "r": "Yes, it does.",
+     "why": "A closed question with does. The short answer uses does too: Yes, it does."
+    },
+    {
+     "l": "Is it a single or a return?",
+     "r": "A return, please.",
+     "why": "An either/or question: the answer is one of the two choices."
+    },
+    {
+     "l": "Can I pay by card?",
+     "r": "No, sorry. Cash only.",
+     "why": "A closed question with can: the answer is yes or no, then more information."
+    }
+   ]
+  },
+  {
+   "title": "Ask the right way",
+   "kind": "pick",
+   "items": [
+    {
+     "pre": "What time ",
+     "post": " the museum close?",
+     "opts": [
+      "does",
+      "is",
+      "do"
+     ],
+     "a": 0,
+     "why": "Open question in the present simple: What time + does + the museum + close?"
+    },
+    {
+     "pre": "",
+     "post": " this train stop at Kingston?",
+     "opts": [
+      "Does",
+      "Is",
+      "Do"
+     ],
+     "a": 0,
+     "why": "Closed question with a normal verb (stop): Does + this train + stop?"
+    },
+    {
+     "pre": "How much ",
+     "post": " a ticket for the boat tour?",
+     "opts": [
+      "is",
+      "costs",
+      "does"
+     ],
+     "a": 0,
+     "why": "How much is ...? is the easiest way to ask a price. 'How much costs' is wrong."
+    },
+    {
+     "pre": "Could you tell me where ",
+     "post": "?",
+     "opts": [
+      "the station is",
+      "is the station",
+      "the station"
+     ],
+     "a": 0,
+     "why": "After Could you tell me, use normal order: where the station is."
+    },
+    {
+     "pre": "Do you know ",
+     "post": " there's a bank near here?",
+     "opts": [
+      "if",
+      "is",
+      "that"
+     ],
+     "a": 0,
+     "why": "For a yes/no question after Do you know, use if (or whether): Do you know if there's a bank?"
+    },
+    {
+     "pre": "How ",
+     "post": " does it take to walk to the old town?",
+     "opts": [
+      "long",
+      "much",
+      "many"
+     ],
+     "a": 0,
+     "why": "How long asks about time: How long does it take?"
+    },
+    {
+     "pre": "Is it a single ",
+     "post": " a return?",
+     "opts": [
+      "or",
+      "and",
+      "but"
+     ],
+     "a": 0,
+     "why": "An either/or question gives two choices joined by or."
+    },
+    {
+     "pre": "Excuse me, ",
+     "post": " get to the old port from here?",
+     "opts": [
+      "how do I",
+      "how I",
+      "what do I"
+     ],
+     "a": 0,
+     "why": "Asking the way: How do I get to ...? The helper do comes before I."
+    }
+   ]
+  },
+  {
+   "title": "At the station and in town",
+   "kind": "type",
+   "bank": [
+    "admission",
+    "downtown",
+    "opposite",
+    "platform",
+    "return",
+    "souvenir",
+    "timetable",
+    "tour"
+   ],
+   "items": [
+    {
+     "pre": "Can I see the bus ",
+     "post": "? I want to know when the next one leaves.",
+     "ok": [
+      "timetable",
+      "schedule"
+     ],
+     "why": "A timetable (US/Canada also schedule) is a list of times for buses or trains."
+    },
+    {
+     "pre": "A ",
+     "post": " ticket, please. I'm coming back this evening.",
+     "ok": [
+      "return",
+      "round-trip"
+     ],
+     "why": "A return (round-trip) ticket takes you there and back."
+    },
+    {
+     "pre": "The train to Toronto leaves from ",
+     "post": " 6.",
+     "ok": [
+      "platform"
+     ],
+     "why": "Trains leave from a numbered platform."
+    },
+    {
+     "pre": "",
+     "post": " to the museum is free on Wednesday evenings.",
+     "ok": [
+      "admission"
+     ],
+     "why": "Admission is the price (or permission) to go in."
+    },
+    {
+     "pre": "We took a guided ",
+     "post": " of the old town with a very funny guide.",
+     "ok": [
+      "tour"
+     ],
+     "why": "A guided tour is a visit with a guide who explains things."
+    },
+    {
+     "pre": "I bought a small ",
+     "post": " for my mother: a bottle of maple syrup.",
+     "ok": [
+      "souvenir"
+     ],
+     "why": "A souvenir is a small thing you buy to remember a trip."
+    },
+    {
+     "pre": "Is this hotel ",
+     "post": ", or do we need a taxi to get to the centre?",
+     "ok": [
+      "downtown"
+     ],
+     "why": "Downtown (UK city centre) is the main central part of a city."
+    },
+    {
+     "pre": "The bank is ",
+     "post": " the church, on the other side of the street.",
+     "ok": [
+      "opposite"
+     ],
+     "why": "Opposite = on the other side, facing it. No of after opposite."
+    }
+   ]
+  },
+  {
+   "title": "Word order",
+   "kind": "order",
+   "items": [
+    {
+     "answer": "How do I get to the train station?",
+     "why": "Asking the way: How do I get to + place?"
+    },
+    {
+     "answer": "What time does the last bus leave?",
+     "why": "Open question: What time + does + subject + verb?"
+    },
+    {
+     "answer": "Can I pay by card here?",
+     "why": "Closed question: Can + I + verb. The answer is yes or no."
+    },
+    {
+     "answer": "Could you tell me where the washroom is?",
+     "why": "After Could you tell me, use normal order: where the washroom is. Washroom is common in Canada."
+    },
+    {
+     "answer": "Do you know if the museum is open today?",
+     "why": "Polite yes/no question: Do you know if + subject + verb?"
+    }
+   ]
+  },
+  {
+   "title": "Reading",
+   "kind": "reading",
+   "text": "<p><strong>At the tourist office in Quebec City</strong></p>\n<p><strong>Ana:</strong> Excuse me, do you speak English?</p>\n<p><strong>Assistant:</strong> Yes, of course. How can I help?</p>\n<p><strong>Ana:</strong> We're here for two days. What should we see first?</p>\n<p><strong>Assistant:</strong> Start with the old town. There's a guided walking tour at ten o'clock every morning. It takes about two hours.</p>\n<p><strong>Ana:</strong> How much is it?</p>\n<p><strong>Assistant:</strong> Twenty-five dollars for adults. You can buy tickets here.</p>\n<p><strong>Ana:</strong> Great. Can I pay by card?</p>\n<p><strong>Assistant:</strong> Yes, no problem.</p>\n<p><strong>Ana:</strong> And could you tell me how we get to the Citadel?</p>\n<p><strong>Assistant:</strong> Sure. Go straight on up this street, then turn left at the big hotel. The Citadel is on your right. It's about fifteen minutes on foot.</p>\n<p><strong>Ana:</strong> So we turn left at the hotel?</p>\n<p><strong>Assistant:</strong> Exactly. And don't miss the ferry to L&eacute;vis. It leaves every thirty minutes, and the view of the city from the river is beautiful.</p>\n<p><strong>Ana:</strong> Thank you so much!</p>",
+   "intro": "Read the conversation. Then type the missing word from the text, and press <strong>Check</strong>.",
+   "items": [
+    {
+     "ask": "What time does the walking tour start?",
+     "pre": "At ",
+     "post": " o'clock.",
+     "ok": [
+      "ten",
+      "10"
+     ],
+     "why": "The assistant says: 'There's a guided walking tour at ten o'clock every morning.'"
+    },
+    {
+     "ask": "How long does the tour take?",
+     "pre": "About two ",
+     "post": ".",
+     "ok": [
+      "hours"
+     ],
+     "why": "The assistant says: 'It takes about two hours.'"
+    },
+    {
+     "ask": "How much is the tour for adults?",
+     "pre": "Twenty-five ",
+     "post": ".",
+     "ok": [
+      "dollars"
+     ],
+     "why": "The assistant says: 'Twenty-five dollars for adults.'"
+    },
+    {
+     "ask": "Where do they turn left?",
+     "pre": "At the big ",
+     "post": ".",
+     "ok": [
+      "hotel"
+     ],
+     "why": "The assistant says: 'turn left at the big hotel'. Ana checks: 'So we turn left at the hotel?'"
+    },
+    {
+     "ask": "How often does the ferry leave?",
+     "pre": "Every thirty ",
+     "post": ".",
+     "ok": [
+      "minutes"
+     ],
+     "why": "The assistant says: 'It leaves every thirty minutes.'"
+    }
+   ]
+  },
+  {
+   "title": "Speaking",
+   "kind": "speaking",
+   "items": [
+    "You are at a tourist office in a city you'd like to visit. Ask five questions to plan your day: two closed (<em>Is there ...? Can I ...?</em>) and three open (<em>What ...? How much ...? How long ...?</em>).",
+    "Role-play: you are lost. Stop a local politely, ask the way to the station, and check that you understood (<em>So I go ...?</em>).",
+    "Role-play: buy a train or bus ticket. Ask about the price, the time of the next one, the platform, and single or return.",
+    "Tell me about a time you asked for help on holiday. What did you ask? Was it easy to understand the answer?"
+   ]
+  },
+  {
+   "title": "Kinds of question and mistakes",
+   "parts": [
+    {
+     "h": "Closed, open or polite indirect?",
+     "kind": "sort",
+     "rule": "<p><strong>Watch out</strong></p>\n<ul>\n<li><strong>closed</strong>: the answer is yes/no or one of two choices: <em>Is this seat free? Single or return?</em></li>\n<li><strong>open</strong>: starts with a question word, and the answer is information: <em>Where ...? How much ...?</em></li>\n<li><strong>polite indirect</strong>: starts with <em>Could you tell me</em> or <em>Do you know</em>, then normal word order</li>\n</ul>",
+     "intro": "What kind of question is each one? Sort them.",
+     "cols": [
+      "closed",
+      "open",
+      "polite indirect"
+     ],
+     "chips": [
+      {
+       "t": "Is this seat free?",
+       "col": 0,
+       "why": "The answer is yes or no, so it is a closed question."
+      },
+      {
+       "t": "Does this bus go downtown?",
+       "col": 0,
+       "why": "Does + subject + verb, and the answer is yes or no: a closed question."
+      },
+      {
+       "t": "Is it a single or a return?",
+       "col": 0,
+       "why": "An either/or question: the answer is one of two choices, so it is closed."
+      },
+      {
+       "t": "Where is the station?",
+       "col": 1,
+       "why": "It starts with where, and the answer is a place: an open question."
+      },
+      {
+       "t": "How much is it?",
+       "col": 1,
+       "why": "How much asks for a price, so the answer is information: an open question."
+      },
+      {
+       "t": "What time does it close?",
+       "col": 1,
+       "why": "What time asks for a time: an open question."
+      },
+      {
+       "t": "How long does it take?",
+       "col": 1,
+       "why": "How long asks about time from start to end: an open question."
+      },
+      {
+       "t": "Could you tell me where the bank is?",
+       "col": 2,
+       "why": "Could you tell me + where + the bank is (normal order): a polite indirect question."
+      },
+      {
+       "t": "Do you know if it's open?",
+       "col": 2,
+       "why": "Do you know if + subject + verb: a polite indirect yes/no question."
+      },
+      {
+       "t": "Do you know what time it closes?",
+       "col": 2,
+       "why": "Do you know + what time + it closes (normal order): a polite indirect question."
+      }
+     ]
+    },
+    {
+     "h": "Find the mistake",
+     "kind": "spot",
+     "items": [
+      {
+       "q": "What time the museum opens?",
+       "bad": "the museum opens",
+       "fix": "does the museum open",
+       "opts": [
+        "the museum open",
+        "is the museum open"
+       ],
+       "why": "A direct question needs the helper does: What time does the museum open?"
+      },
+      {
+       "q": "Could you tell me where is the station?",
+       "bad": "is the station",
+       "fix": "the station is",
+       "opts": [
+        "is station",
+        "the station"
+       ],
+       "why": "After Could you tell me, use normal order: where the station is."
+      },
+      {
+       "q": "How much costs it?",
+       "bad": "costs it",
+       "fix": "is it",
+       "opts": [
+        "it costs",
+        "cost it"
+       ],
+       "why": "Say How much is it? (or How much does it cost?). Not 'How much costs it'."
+      },
+      {
+       "q": "Do you know if there's a bank near here?",
+       "bad": "",
+       "why": "Correct: Do you know if + there's + a bank. Normal order after Do you know."
+      },
+      {
+       "q": "Where I can buy tickets?",
+       "bad": "I can",
+       "fix": "can I",
+       "opts": [
+        "I could",
+        "do I"
+       ],
+       "why": "In a direct question the helper comes first: Where can I buy tickets?"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "teacher": {
+  "purpose": "give learners the questions they need as tourists: directions, tickets, prices, times and opening hours. The grammar focus is question forms: <strong>closed</strong> questions (yes/no with the helper verb first, and either/or), <strong>open</strong> wh- questions (<em>How do I get to ...? How much ...? How long ...? Which platform ...?</em>) and <strong>polite indirect</strong> questions for strangers (<em>Could you tell me where the station is? Do you know if ...?</em>), plus checking that you understood.",
+  "before": "choose a city the student would like to visit (or their own city) and have a map of it ready to share on screen. Print or prepare the role-play cards below.",
+  "plan": [
+   [
+    "Warm-up (5 min).",
+    "The three warm-up questions. Note every question the student makes and the word order they use; you will come back to these."
+   ],
+   [
+    "Key vocabulary (10 min).",
+    "Travel words first, then the question table. Write one question of each kind on the board and ask: &ldquo;Can you answer it with yes or no?&rdquo; That is the closed/open test. Then the directions phrases with the map."
+   ],
+   [
+    "Exercises 1 and 2 (8 min).",
+    "Matching, then the forms. In Exercise 2, ask the student to say each question aloud with the right intonation (up for closed, down for open)."
+   ],
+   [
+    "Exercise 3 or 4 (5 min).",
+    "Do one together and set the other for home."
+   ],
+   [
+    "Reading (8 min).",
+    "The tourist office conversation. First ask: &ldquo;Find two closed questions and two open questions in the text.&rdquo; Then the five questions. Point out Ana's checking question: <em>So we turn left at the hotel?</em>"
+   ],
+   [
+    "Speaking (10 min).",
+    "Role-plays with the cards below. You are the local or the ticket seller. Give directions with two or three steps so the student has to check (<em>So I ...?</em>)."
+   ],
+   [
+    "Question types and wrap-up (4 min).",
+    "Exercise 7 Part A together; Part B at home."
+   ]
+  ],
+  "pron": [
+   "<strong>Intonation</strong>: closed questions usually rise at the end (<em>Can I pay by card?</em> &uarr;), open questions usually fall (<em>Where's the station?</em> &darr;). A rising open question can sound surprised or impatient.",
+   "<strong>Could you</strong> /&#712;k&#650;d&#658;u&#720;/: in fast speech it sounds like <em>coojoo</em>. <strong>Do you know</strong> often sounds like <em>d'you know</em> /dj&#601; &#712;n&#601;&#650;/.",
+   "<strong>Excuse me</strong> /&#618;k&#712;skju&#720;z mi/: stress on <em>-cuse</em>. The noun <em>an excuse</em> ends in /s/, the verb in /z/.",
+   "<strong>souvenir</strong> /&#716;su&#720;v&#601;&#712;n&#618;&#601;/ (North American /&#716;su&#720;v&#601;&#712;n&#618;r/): stress at the end.",
+   "<strong>queue</strong> /kju&#720;/: like the letter Q; the extra letters are silent. <strong>admission</strong> /&#601;d&#712;m&#618;&#643;&#601;n/: stress on <em>-mi-</em>.",
+   "<strong>What time does it</strong>: <em>does it</em> links to /d&#652;z&#618;t/. Students who say every word separately sound slower and more formal than they need to."
+  ],
+  "mistakes": [
+   "<strong>Missing helper verb</strong>: <em>What time the museum opens?</em> Many languages make questions with intonation only. In English, a present simple question needs <em>do / does</em>: <em>What time does the museum open?</em> The <em>-s</em> moves to <em>does</em>.",
+   "<strong>Inversion after Could you tell me</strong>: <em>Could you tell me where is the station?</em> is the most common error at B1 and B2, even for strong students. The question is already in <em>Could you tell me</em>; the rest is normal order.",
+   "<strong>Do you know is there ...?</strong> For yes/no questions inside a polite opener, use <em>if</em> or <em>whether</em>: <em>Do you know if there's a bus?</em>",
+   "<strong>How much costs it?</strong> (Spanish <em>&iquest;Cu&aacute;nto cuesta?</em>, French <em>Combien &ccedil;a co&ucirc;te?</em>). Teach <em>How much is it?</em> as a fixed phrase, and <em>How much does it cost?</em> for B2.",
+   "<strong>Subject questions</strong> (B2): <em>Which bus goes to the airport?</em> has no <em>does</em>, because <em>which bus</em> is the subject. Compare <em>Which bus do I take?</em> Mention only if the student is ready.",
+   "<strong>Too direct</strong>: <em>Where is the toilet?</em> is fine at a counter, but to a stranger in the street start with <em>Excuse me</em> or <em>Sorry to bother you</em>, and use <em>Could you tell me ...?</em>",
+   "<strong>Short answers</strong>: <em>Does this bus go to the airport? Yes, it does.</em> Not <em>Yes, it goes.</em> The short answer repeats the helper verb."
+  ],
+  "uk_us": [
+   [
+    "single (ticket)",
+    "one-way",
+    "Both are understood; Canadians usually say one-way."
+   ],
+   [
+    "return (ticket)",
+    "round-trip",
+    "A return in North America can sound like giving something back to a shop."
+   ],
+   [
+    "city centre",
+    "downtown",
+    "Downtown is the usual word in Canadian and US cities."
+   ],
+   [
+    "timetable",
+    "schedule",
+    "Canadians use both; schedule is more common for buses."
+   ],
+   [
+    "queue",
+    "line",
+    "UK: join the queue; US/Canada: get in line, wait in line."
+   ],
+   [
+    "toilet(s)",
+    "washroom (Canada), restroom (US)",
+    "In Canada, <em>washroom</em> is the polite everyday word in public places."
+   ]
+  ],
+  "adapt": [
+   [
+    "Vocabulary",
+    "Focus on ticket words (single, return, platform, timetable), opening hours, admission, and four direction phrases. Questions: is / does / can, and how do I get to, how much, what time.",
+    "All words; add <em>a day pass, a connection, to change trains, to validate a ticket, accessible, wheelchair access</em>. Add subject questions (<em>Which bus goes ...?</em>) and <em>Would you happen to know ...?</em>"
+   ],
+   [
+    "Speaking",
+    "Short role-plays with the cards; the student asks, you answer simply.",
+    "Longer role-plays with a problem: the tour is full, the train is cancelled, the price is different from the website. The student has to ask follow-up questions and check understanding."
+   ]
+  ],
+  "extra": "<h2>Role-play cards</h2>\n<table>\n<thead><tr><th>Tourist</th><th>Local or staff</th></tr></thead>\n<tbody>\n<tr><td><strong>At the station.</strong> You want to go to Montreal and come back tomorrow. Ask about the price, the time of the next train and the platform. Pay by card if you can.</td><td><strong>Ticket office.</strong> Return to Montreal: $89 (one-way $52). Next train: 14:25, platform 3. Card is fine. The trip takes about five hours.</td></tr>\n<tr><td><strong>In the street.</strong> You are looking for the art gallery. Stop someone politely, ask the way, and check you understood.</td><td><strong>Local.</strong> Go straight on for two blocks, turn right at the bank, the gallery is on the left, opposite a park. About ten minutes on foot.</td></tr>\n<tr><td><strong>At the museum.</strong> Ask about opening hours, the price for adults, guided tours and where to buy souvenirs.</td><td><strong>Museum desk.</strong> Open 10:00 to 17:00, closed Mondays. Adults $20. Guided tour at 11:00 and 14:00, free with your ticket. Gift shop next to the exit.</td></tr>\n</tbody>\n</table>",
+  "prompts": [
+   "<strong>Plan a day at the tourist office.</strong> Follow up with short answers so the student must ask more: &ldquo;Yes, there is.&rdquo; (&ldquo;Where is it? How much is it?&rdquo;). Count closed and open questions.",
+   "<strong>Asking the way.</strong> Give directions with three steps. Listen for a checking question (<em>So I go ...?</em>) and for <em>Could you tell me where ... is?</em> with normal order.",
+   "<strong>Buying a ticket.</strong> Follow up as the ticket seller: &ldquo;Single or return?&rdquo; &ldquo;Today or tomorrow?&rdquo; &ldquo;Card or cash?&rdquo; These either/or questions show how closed questions work.",
+   "<strong>A time you asked for help on holiday.</strong> Past questions: &ldquo;What did you ask?&rdquo; &ldquo;Did they understand you?&rdquo; &ldquo;What would you say now?&rdquo;"
+  ]
+ },
+ "bank": [
+  {
+   "type": "pick",
+   "q": "___ the gallery open on Mondays?",
+   "opts": [
+    "Is",
+    "Does",
+    "Do"
+   ],
+   "a": "Is",
+   "why": "Open here is an adjective, so the question uses is: Is the gallery open?"
+  },
+  {
+   "type": "pick",
+   "q": "How long ___ the ferry take to cross the lake?",
+   "opts": [
+    "does",
+    "is",
+    "do"
+   ],
+   "a": "does",
+   "why": "Present simple question with a normal verb (take): How long does the ferry take?"
+  },
+  {
+   "type": "pick",
+   "q": "Do you know where ___?",
+   "opts": [
+    "the ticket office is",
+    "is the ticket office",
+    "the ticket office does"
+   ],
+   "a": "the ticket office is",
+   "why": "After Do you know, use normal order: where the ticket office is."
+  },
+  {
+   "type": "pick",
+   "q": "Excuse me, ___ this the right platform for Ottawa?",
+   "opts": [
+    "is",
+    "does",
+    "are"
+   ],
+   "a": "is",
+   "why": "A closed question with the verb be: Is this the right platform?"
+  },
+  {
+   "type": "pick",
+   "q": "Would you like a window seat ___ an aisle seat?",
+   "opts": [
+    "or",
+    "and",
+    "but"
+   ],
+   "a": "or",
+   "why": "An either/or question joins two choices with or."
+  },
+  {
+   "type": "pick",
+   "q": "How ___ is a coffee and a croissant?",
+   "opts": [
+    "much",
+    "many",
+    "long"
+   ],
+   "a": "much",
+   "why": "How much asks about price: How much is a coffee and a croissant?"
+  },
+  {
+   "type": "pick",
+   "q": "Could you tell me ___ the tour starts?",
+   "opts": [
+    "what time",
+    "what time does",
+    "when does"
+   ],
+   "a": "what time",
+   "why": "After Could you tell me, no does: Could you tell me what time the tour starts?"
+  },
+  {
+   "type": "pick",
+   "q": "___ platform does the train to Montreal leave from?",
+   "opts": [
+    "Which",
+    "Who",
+    "How"
+   ],
+   "a": "Which",
+   "why": "Which + noun asks you to choose one: Which platform?"
+  },
+  {
+   "type": "type",
+   "q": "___ does this bus go? To the airport or to the station?",
+   "a": [
+    "where"
+   ],
+   "why": "Where asks about a place: Where does this bus go?"
+  },
+  {
+   "type": "type",
+   "q": "Do you know ___ there's a pharmacy near here?",
+   "a": [
+    "if",
+    "whether"
+   ],
+   "why": "A polite yes/no question uses if (or whether): Do you know if there's a pharmacy?"
+  },
+  {
+   "type": "type",
+   "q": "I'd like a ___ ticket to Halifax, please. I'm not coming back.",
+   "a": [
+    "single",
+    "one-way",
+    "one way"
+   ],
+   "why": "A single (US/Canada one-way) ticket takes you there only."
+  },
+  {
+   "type": "type",
+   "q": "___ much is the entrance fee?",
+   "a": [
+    "how"
+   ],
+   "why": "How much asks about price: How much is the entrance fee?"
+  },
+  {
+   "type": "type",
+   "q": "Sorry, could you say that ___? I didn't catch it.",
+   "a": [
+    "again"
+   ],
+   "why": "Could you say that again? asks someone to repeat."
+  },
+  {
+   "type": "spot",
+   "q": "How long it takes to walk to the beach?",
+   "bad": "it takes",
+   "fix": "does it take",
+   "opts": [
+    "does it take",
+    "it does take",
+    "takes it"
+   ],
+   "why": "A direct question needs does before the subject: How long does it take?"
+  },
+  {
+   "type": "spot",
+   "q": "Do you know is the castle open today?",
+   "bad": "is the castle",
+   "fix": "if the castle is",
+   "opts": [
+    "if the castle is",
+    "is if the castle",
+    "the castle is if"
+   ],
+   "why": "For a yes/no question after Do you know, use if + normal order: if the castle is open."
+  },
+  {
+   "type": "spot",
+   "q": "Could you tell me how I get to the harbour?",
+   "bad": "",
+   "why": "Correct: after Could you tell me, use normal order: how I get to the harbour."
+  },
+  {
+   "type": "spot",
+   "q": "Where I can find a taxi?",
+   "bad": "I can",
+   "fix": "can I",
+   "opts": [
+    "can I",
+    "I could",
+    "do I"
+   ],
+   "why": "In a direct question the helper comes first: Where can I find a taxi?"
+  },
+  {
+   "type": "order",
+   "a": "What time does the next boat leave?",
+   "alt": [],
+   "why": "Open question: What time + does + subject + verb?"
+  },
+  {
+   "type": "order",
+   "a": "Could you tell me how much this costs?",
+   "alt": [],
+   "why": "Polite question: Could you tell me + how much + this costs (normal order, no does)."
+  },
+  {
+   "type": "order",
+   "a": "Is there a cash machine near here?",
+   "alt": [],
+   "why": "Closed question with there is: Is there + a thing + where?"
+  }
+ ]
+}
