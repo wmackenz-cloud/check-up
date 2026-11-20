@@ -290,7 +290,7 @@
     },
     {
      "l": "Where are you from?",
-     "r": "We're from Lyon, in France.",
+     "r": "We're from Edinburgh, in France.",
      "why": "Where asks about a place, so the answer is a place."
     },
     {
@@ -515,17 +515,17 @@
   {
    "title": "Reading",
    "kind": "reading",
-   "text": "<p><strong>At the front desk of the Maple Leaf Hostel, Toronto</strong></p>\n<p><strong>Priya:</strong> Good evening, and welcome to the Maple Leaf Hostel! How was your journey?</p>\n<p><strong>Ana:</strong> Long! Our flight from Lisbon was eight hours, and then we took the train from the airport.</p>\n<p><strong>Priya:</strong> Oh, you must be tired. Do you have a reservation?</p>\n<p><strong>Tom:</strong> Yes, we do. It's under Ferreira, for four nights.</p>\n<p><strong>Priya:</strong> Perfect. Here are your keys. You're in room 12, on the second floor. Breakfast is from seven to ten in the kitchen downstairs. Is this your first time in Toronto?</p>\n<p><strong>Ana:</strong> Yes, it is. We don't know anything about the city!</p>\n<p><strong>Priya:</strong> Don't worry. What would you like to do while you're here?</p>\n<p><strong>Tom:</strong> We love music, and we'd like to see the lake.</p>\n<p><strong>Priya:</strong> Then take the ferry to the Toronto Islands. It's a twenty-minute walk to the ferry terminal from here. And there's live jazz at a bar on Queen Street every Friday. Would you like a map?</p>\n<p><strong>Ana:</strong> Yes, please. Thank you so much!</p>",
+   "text": "<p><strong>At the front desk of the Maple Leaf Hostel, Toronto</strong></p>\n<p><strong>Priya:</strong> Good evening, and welcome to the Maple Leaf Hostel! How was your journey?</p>\n<p><strong>Fiona:</strong> Long! Our flight from Glasgow was eight hours, and then we took the train from the airport.</p>\n<p><strong>Priya:</strong> Oh, you must be tired. Do you have a reservation?</p>\n<p><strong>Callum:</strong> Yes, we do. It's under MacLeod, for four nights.</p>\n<p><strong>Priya:</strong> Perfect. Here are your keys. You're in room 12, on the second floor. Breakfast is from seven to ten in the kitchen downstairs. Is this your first time in Toronto?</p>\n<p><strong>Fiona:</strong> Yes, it is. We don't know anything about the city!</p>\n<p><strong>Priya:</strong> Don't worry. What would you like to do while you're here?</p>\n<p><strong>Callum:</strong> We love music, and we'd like to see the lake.</p>\n<p><strong>Priya:</strong> Then take the ferry to the Toronto Islands. It's a twenty-minute walk to the ferry terminal from here. And there's live jazz at a bar on Queen Street every Friday. Would you like a map?</p>\n<p><strong>Fiona:</strong> Yes, please. Thank you so much!</p>",
    "intro": "Read the conversation. Look at Priya's questions: which are closed and which are open? Then type the missing word from the text, and press <strong>Check</strong>.",
    "items": [
     {
-     "ask": "Where did Ana and Tom fly from?",
+     "ask": "Where did Fiona and Callum fly from?",
      "pre": "",
      "post": ".",
      "ok": [
-      "lisbon"
+      "glasgow"
      ],
-     "why": "Ana says: 'Our flight from Lisbon was eight hours.'"
+     "why": "Fiona says: 'Our flight from Glasgow was eight hours.'"
     },
     {
      "ask": "How many nights are they staying?",
@@ -535,7 +535,7 @@
       "four",
       "4"
      ],
-     "why": "Tom says: 'It's under Ferreira, for four nights.'"
+     "why": "Callum says: 'It's under MacLeod, for four nights.'"
     },
     {
      "ask": "When is breakfast?",
@@ -548,13 +548,13 @@
      "why": "Priya says: 'Breakfast is from seven to ten in the kitchen downstairs.'"
     },
     {
-     "ask": "What do Ana and Tom love?",
+     "ask": "What do Fiona and Callum love?",
      "pre": "",
      "post": ".",
      "ok": [
       "music"
      ],
-     "why": "Tom says: 'We love music, and we'd like to see the lake.'"
+     "why": "Callum says: 'We love music, and we'd like to see the lake.'"
     },
     {
      "ask": "How can they get to the Toronto Islands?",
@@ -739,7 +739,7 @@
   ],
   "mistakes_h": "Common mistakes and first-language notes",
   "mistakes": [
-   "<strong>Statement order with a rising voice</strong>: Spanish, Italian and Portuguese speakers often make questions with intonation only: <em>You are tired?</em> In informal English this is possible to check something you think you heard (<em>You're from Lyon?</em>), but at work use the full form: <em>Are you tired?</em>",
+   "<strong>Statement order with a rising voice</strong>: Spanish, Italian and Portuguese speakers often make questions with intonation only: <em>You are tired?</em> In informal English this is possible to check something you think you heard (<em>You're from Edinburgh?</em>), but at work use the full form: <em>Are you tired?</em>",
    "<strong>Chinese and Vietnamese speakers</strong> often keep statement order and add a question word at the end (<em>You are from where?</em>), because their languages use question particles. Drill the pattern: question word + helper + subject + verb.",
    "<strong>Russian, Polish and Ukrainian speakers</strong> have no helper verbs in questions, so they often drop <em>do</em>: <em>Where you live?</em> German and French speakers may put the main verb first: <em>Like you coffee?</em> Both need <em>do</em>: <em>Where do you live? Do you like coffee?</em>",
    "<strong>Double past</strong>: <em>Did you enjoyed?</em> Remind the student that <em>did</em> carries the past, so the main verb goes back to the base form.",
@@ -790,7 +790,7 @@
   "extra": "<h2>Role-play cards</h2>\n<p>Print or read these aloud. You play the visitor first; then swap.</p>\n<table>\n<thead><tr><th>Card</th><th>Host</th><th>Visitor</th></tr></thead>\n<tbody>\n<tr><td><strong>1. Hotel front desk</strong></td><td>Welcome the guest. Ask: reservation? how many nights? how was the journey? Give the room number and breakfast times. Offer a map.</td><td>You arrive late after a long flight from Mexico City. You have a reservation for three nights. You'd like to know where to eat tonight.</td></tr>\n<tr><td><strong>2. Café</strong></td><td>Greet the customer. Offer a table: inside or outside? Ask what they would like. Ask where they are from and what they are planning to see.</td><td>You are a tourist from Australia. You want a coffee and something small to eat. You're in town for two days and want to visit a museum.</td></tr>\n<tr><td><strong>3. Helping a lost visitor</strong></td><td>You see a visitor looking at a map. Offer help. Find out where they want to go, how they want to travel, and tell them how far it is.</td><td>You are looking for the train station (or a famous place in the student's town). You have a big suitcase and you don't know if you should walk or take a taxi.</td></tr>\n</tbody>\n</table>",
   "prompts": [
    "<strong>Greet a visitor and ask three closed questions.</strong> Answer with short answers that test them: &ldquo;No, I'm not.&rdquo; &ldquo;Yes, we did.&rdquo; Listen for the helper verb before the subject, and for a rising voice at the end.",
-   "<strong>Ask three open questions.</strong> Give longer answers so the student has to listen and follow up: &ldquo;Oh, Lyon! What's it like?&rdquo; Afterwards, ask which questions kept the conversation going.",
+   "<strong>Ask three open questions.</strong> Give longer answers so the student has to listen and follow up: &ldquo;Oh, Edinburgh! What's it like?&rdquo; Afterwards, ask which questions kept the conversation going.",
    "<strong>Helping a lost tourist.</strong> Follow up as the tourist: &ldquo;Is it far?&rdquo; &ldquo;Can I walk?&rdquo; &ldquo;How long does it take?&rdquo; The student practises giving information: <em>It's a ten-minute walk. It's open until six.</em>",
    "<strong>A place tourists love.</strong> Ask open questions as a curious visitor: &ldquo;What can I do there?&rdquo; &ldquo;When is the best time to go?&rdquo; &ldquo;How much does it cost?&rdquo; Then let the student ask you about a place in your town."
   ]

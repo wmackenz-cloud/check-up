@@ -491,7 +491,7 @@
   {
    "title": "Reading",
    "kind": "reading",
-   "text": "<p><strong>At the tourist office in Quebec City</strong></p>\n<p><strong>Ana:</strong> Excuse me, do you speak English?</p>\n<p><strong>Assistant:</strong> Yes, of course. How can I help?</p>\n<p><strong>Ana:</strong> We're here for two days. What should we see first?</p>\n<p><strong>Assistant:</strong> Start with the old town. There's a guided walking tour at ten o'clock every morning. It takes about two hours.</p>\n<p><strong>Ana:</strong> How much is it?</p>\n<p><strong>Assistant:</strong> Twenty-five dollars for adults. You can buy tickets here.</p>\n<p><strong>Ana:</strong> Great. Can I pay by card?</p>\n<p><strong>Assistant:</strong> Yes, no problem.</p>\n<p><strong>Ana:</strong> And could you tell me how we get to the Citadel?</p>\n<p><strong>Assistant:</strong> Sure. Go straight on up this street, then turn left at the big hotel. The Citadel is on your right. It's about fifteen minutes on foot.</p>\n<p><strong>Ana:</strong> So we turn left at the hotel?</p>\n<p><strong>Assistant:</strong> Exactly. And don't miss the ferry to L&eacute;vis. It leaves every thirty minutes, and the view of the city from the river is beautiful.</p>\n<p><strong>Ana:</strong> Thank you so much!</p>",
+   "text": "<p><strong>At the tourist office in Quebec City</strong></p>\n<p><strong>Isla:</strong> Excuse me, do you speak English?</p>\n<p><strong>Assistant:</strong> Yes, of course. How can I help?</p>\n<p><strong>Isla:</strong> We're here for two days. What should we see first?</p>\n<p><strong>Assistant:</strong> Start with the old town. There's a guided walking tour at ten o'clock every morning. It takes about two hours.</p>\n<p><strong>Isla:</strong> How much is it?</p>\n<p><strong>Assistant:</strong> Twenty-five dollars for adults. You can buy tickets here.</p>\n<p><strong>Isla:</strong> Great. Can I pay by card?</p>\n<p><strong>Assistant:</strong> Yes, no problem.</p>\n<p><strong>Isla:</strong> And could you tell me how we get to the Citadel?</p>\n<p><strong>Assistant:</strong> Sure. Go straight on up this street, then turn left at the big hotel. The Citadel is on your right. It's about fifteen minutes on foot.</p>\n<p><strong>Isla:</strong> So we turn left at the hotel?</p>\n<p><strong>Assistant:</strong> Exactly. And don't miss the ferry to L&eacute;vis. It leaves every thirty minutes, and the view of the city from the river is beautiful.</p>\n<p><strong>Isla:</strong> Thank you so much!</p>",
    "intro": "Read the conversation. Then type the missing word from the text, and press <strong>Check</strong>.",
    "items": [
     {
@@ -529,7 +529,7 @@
      "ok": [
       "hotel"
      ],
-     "why": "The assistant says: 'turn left at the big hotel'. Ana checks: 'So we turn left at the hotel?'"
+     "why": "The assistant says: 'turn left at the big hotel'. Isla checks: 'So we turn left at the hotel?'"
     },
     {
      "ask": "How often does the ferry leave?",
@@ -694,7 +694,7 @@
    ],
    [
     "Reading (8 min).",
-    "The tourist office conversation. First ask: &ldquo;Find two closed questions and two open questions in the text.&rdquo; Then the five questions. Point out Ana's checking question: <em>So we turn left at the hotel?</em>"
+    "The tourist office conversation. First ask: &ldquo;Find two closed questions and two open questions in the text.&rdquo; Then the five questions. Point out Isla's checking question: <em>So we turn left at the hotel?</em>"
    ],
    [
     "Speaking (10 min).",
