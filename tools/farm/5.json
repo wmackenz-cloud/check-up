@@ -3,15 +3,8 @@
  "title": "Looking After Animals",
  "hint": "Feed, milk, graze, shear, muck out; trough, hay and straw; routines with always/usually; let them out, bring them in",
  "why": "farm animals need care every single day, in every kind of weather. The words for these jobs are useful on a farm visit, in stories and in the news, and talking about daily routines (<em>She always feeds the calves first</em>) is one of the most common things we do in English.",
- "know": [
-  "the daily jobs: <em>feed, water, milk, graze, groom, shear, muck out</em>",
-  "things on the farm: <em>trough, hay, straw, feed, milking parlour, sheepdog, vet</em>",
-  "phrasal verbs: <em>let out, bring in, round up, check on</em>"
- ],
- "understand": [
-  "where adverbs of frequency go: <em>She always feeds the calves</em> but <em>The calves are always hungry</em>",
-  "why we say <em>let them out</em>, not <em>let out them</em>"
- ],
+ "know": ["<em>feed, water, milk, groom, shear, muck out</em>", "<em>trough, hay, straw, milking parlour</em>", "<em>let out, bring in, round up, check on</em>"],
+ "understand": ["<em>She always feeds</em> / <em>They are always hungry</em>", "<em>let them out</em> (not <em>let out them</em>)"],
  "able": [
   "describe a farmer's daily routine, or your own routine with a pet",
   "say how often things happen on a farm",

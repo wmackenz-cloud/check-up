@@ -3,15 +3,8 @@
  "title": "From Farm to Table",
  "hint": "Beef, pork, lamb; dairy, free-range, organic, local; a carton of milk, a dozen eggs, much/many",
  "why": "food is something we talk about every day: shopping, cooking, eating out and choosing what to buy. English has different words for the animal and its meat, and many food words are uncountable, so we need <em>a loaf of</em>, <em>a carton of</em> and <em>much</em> or <em>many</em> to talk about amounts.",
- "know": [
-  "meat words: <em>beef, veal, pork, bacon, ham, lamb, mutton</em>",
-  "food and shopping words: <em>dairy, produce, free-range, organic, grass-fed, local, seasonal, farmers' market, butcher</em>",
-  "amounts: <em>a carton of milk, a dozen eggs, a loaf of bread, a kilo of potatoes, a jar of honey</em>"
- ],
- "understand": [
-  "why we eat <em>pork</em> and <em>beef</em>, not <em>pig</em> and <em>cow</em>",
-  "the difference between countable and uncountable food: <em>many eggs, much milk; a few apples, a little butter</em>"
- ],
+ "know": ["<em>beef, veal, pork, bacon, mutton</em>", "<em>dairy, produce, free-range, organic, butcher</em>", "<em>a carton of milk, a dozen eggs, a jar of honey</em>"],
+ "understand": ["<em>pork, beef</em> (not <em>pig, cow</em>)", "<em>many eggs, much milk; a few, a little</em>"],
  "able": [
   "shop at a market or farm shop and ask for the right amount",
   "explain where your food comes from: <em>The eggs are free-range and the beef is local.</em>",

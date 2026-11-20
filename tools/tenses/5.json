@@ -3,15 +3,8 @@
   "title": "Past Simple",
   "tagline": "finished actions at a finished time",
   "why": "We use the past simple to tell stories, talk about last weekend and describe our work history. It is the tense you use most when you talk about your life.",
-  "know": [
-    "the spelling rules for regular verbs: <em>worked</em>, <em>lived</em>, <em>stopped</em>, <em>studied</em>",
-    "common irregular verbs: <em>go/went</em>, <em>buy/bought</em>, <em>take/took</em>, <em>see/saw</em>",
-    "past time words: <em>yesterday</em>, <em>last week</em>, <em>in 2019</em>, <em>two days ago</em>"
-  ],
-  "understand": [
-    "why we say <em>I didn't go</em>, not <em>I didn't went</em>: <em>did</em> already shows the past",
-    "why a finished time (<em>yesterday</em>, <em>last year</em>) needs the past simple, not the present perfect"
-  ],
+  "know": ["<em>worked, lived, stopped, studied</em>", "<em>went, bought, took, saw</em>", "<em>yesterday, last week, two days ago</em>"],
+  "understand": ["<em>I didn't go</em> (not <em>didn't went</em>)", "<em>yesterday</em> + past simple"],
   "able": [
     "talk about your weekend, your last holiday or your last job",
     "ask questions like <em>Where did you go?</em> and <em>What did you buy?</em>",

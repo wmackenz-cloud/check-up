@@ -3,14 +3,8 @@
   "title": "Making Your Own: Fresh Similes",
   "tagline": "patterns, extended and epic similes, and new life for old clichés",
   "why": "Advanced speakers don't only recognise similes; they make them. Knowing the grammar patterns behind similes lets you create fresh, precise comparisons for stories, presentations and writing, and avoid the tired ones.",
-  "know": [
-    "the main simile patterns: <strong>as ... as</strong>, <strong>like + noun</strong>, <strong>as if / as though</strong>, <strong>the way + clause</strong> and <strong>more ... than</strong>",
-    "what extended and epic (Homeric) similes are and where they come from"
-  ],
-  "understand": [
-    "the difference between a simile, which compares openly, and a metaphor, which says one thing <em>is</em> another",
-    "why a fresh simile is specific and surprising, while a cliché is predictable"
-  ],
+  "know": ["<strong>as ... as</strong>, <strong>like + noun</strong>, <strong>as if</strong>, <strong>the way + clause</strong>", "extended and epic (Homeric) similes"],
+  "understand": ["simile compares, metaphor says one thing <em>is</em> another", "fresh and surprising, not cliché"],
   "able": [
     "build your own similes with five different grammar patterns",
     "develop a simple comparison into an extended simile in speech or writing",

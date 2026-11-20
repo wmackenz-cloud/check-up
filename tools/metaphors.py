@@ -131,14 +131,13 @@ def lis(xs):
 def aims(d):
     return """<section class="aims" aria-labelledby="aims-h">
 <h2 id="aims-h">What this lesson is for</h2>
-<p class="why"><strong>Why this matters:</strong> %s</p>
 <div class="aims-grid">
+<div><h3>You will be able to</h3><ul>%s</ul></div>
 <div><h3>You will know</h3><ul>%s</ul></div>
 <div><h3>You will understand</h3><ul>%s</ul></div>
-<div><h3>You will be able to</h3><ul>%s</ul></div>
 </div>
 </section>
-""" % (d["why"], lis(d["know"]), lis(d["understand"]), lis(d["able"]))
+""" % (lis(d["able"]), lis(d["know"]), lis(d["understand"]))
 
 def mistakes(d, n=None, h="Common mistakes to watch for"):
     xs = d["mistakes"][:n] if n else d["mistakes"]

@@ -3,15 +3,8 @@
  "title": "Around the Farm: Buildings and Land",
  "hint": "Barn, stable, silo, orchard, pasture, stile; behind, opposite, across, through, along, past",
  "why": "when you visit the countryside, book a farm stay or follow a walking map, you need the names of farm buildings and land, and small words like <em>across</em>, <em>through</em> and <em>along</em> to explain where things are and how to get there.",
- "know": [
-  "farm buildings: <em>farmhouse, farmyard, barn, stable, pigsty, henhouse, silo, shed</em>",
-  "farm land: <em>field, meadow, pasture, orchard, hedge, fence, gate, stile, pond, lane</em>",
-  "prepositions of place and movement: <em>behind, opposite, between, across, through, along, over, past</em>"
- ],
- "understand": [
-  "the difference between <em>across</em> (from one side to the other), <em>through</em> (into and out of) and <em>along</em> (following a line)",
-  "why we say <em>behind the barn</em>, not <em>behind of the barn</em>, but <em>in front of the barn</em>"
- ],
+ "know": ["<em>barn, stable, pigsty, silo, shed</em>", "<em>field, meadow, pasture, orchard, stile</em>", "<em>behind, opposite, across, through, along</em>"],
+ "understand": ["<em>across, through, along</em>", "<em>behind the barn</em>, but <em>in front of</em>"],
  "able": [
   "describe where the buildings on a farm are",
   "give and follow simple directions in the countryside",

@@ -3,15 +3,8 @@
  "title": "Weather, Soil and Farm Problems",
  "hint": "Drought, flood, frost, pests; because of, due to, lead to; if it doesn't rain, if we had more water",
  "why": "weather and farming are in the news all the time: dry summers, floods, storms and food prices. To understand these stories and talk about them, you need the words for weather problems and clear ways to say what causes what, and what will or would happen.",
- "know": [
-  "weather problems: <em>drought, flood, frost, hail, heatwave, storm</em>",
-  "soil and crop words: <em>fertile, erosion, irrigation, pest, weed, disease, yield, a good or poor harvest</em>",
-  "cause and effect phrases: <em>because of, due to, so, as a result, lead to, cause</em>"
- ],
- "understand": [
-  "why we say <em>because of the drought</em> but <em>because it didn't rain</em>",
-  "the difference between <em>If it doesn't rain, the crops will die</em> (real and possible) and <em>If we had more water, we would grow more</em> (not true now, imagined)"
- ],
+ "know": ["<em>drought, flood, frost, hail, heatwave</em>", "<em>fertile, erosion, irrigation, pest, yield</em>", "<em>because of, due to, as a result, lead to</em>"],
+ "understand": ["<em>because of the drought</em>, <em>because it didn't rain</em>", "<em>If it doesn't rain ... will</em> vs <em>If we had ... would</em>"],
  "able": [
   "describe a weather problem and its effects on farms and food",
   "explain causes and results in simple, clear sentences",

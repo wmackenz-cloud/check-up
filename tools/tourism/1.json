@@ -3,15 +3,8 @@
  "title": "Welcoming Tourists",
  "hint": "Greeting visitors and offering help; closed questions (Is this your first visit? Would you like a map or a guide?) and open questions (Where are you from? What would you like to see?)",
  "why": "when you work in a hotel, a shop, a café or as a guide, or when you just help a visitor in your town, the first minute matters. A warm welcome and the right questions make visitors feel at home, and small question mistakes like <em>Where you are from?</em> are easy to hear.",
- "know": [
-  "phrases to welcome visitors and offer help: <em>Welcome to ..., How was your journey?, Would you like ...?, Let me show you ...</em>",
-  "the two kinds of question: <strong>closed</strong> (<em>Is this your first visit? Tea or coffee?</em>) and <strong>open</strong> (<em>Where are you from? What would you like to see?</em>)",
-  "short answers: <em>Yes, I am. No, we don't. Yes, it is.</em>"
- ],
- "understand": [
-  "why the helper verb comes before the subject in a question: <em>Are you tired?</em> not <em>Do you are tired?</em>",
-  "when to use a closed question (to check a fact or offer a choice) and when to use an open one (to get people talking)"
- ],
+ "know": ["<em>Welcome to ..., How was your journey?</em>", "<strong>closed</strong> and <strong>open</strong> questions", "<em>Yes, I am. No, we don't.</em>"],
+ "understand": ["<em>Are you tired?</em> (not <em>Do you are tired?</em>)", "closed to check, open to chat"],
  "able": [
   "greet a visitor and make them feel welcome",
   "ask closed and open questions with the right word order",

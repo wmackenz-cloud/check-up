@@ -3,15 +3,8 @@
  "title": "Present Simple",
  "tagline": "habits, facts and routines: I work, she works",
  "why": "We use the present simple to talk about our lives: jobs, routines, likes and facts. It is the tense you use most when you meet people, so small mistakes like <em>he work</em> are easy to hear.",
- "know": [
-  "the endings for <em>he, she, it</em>: <em>works, watches, studies, has</em>",
-  "the helpers <em>do</em> and <em>does</em> for questions and negatives",
-  "frequency words: <em>always, usually, often, sometimes, never</em>"
- ],
- "understand": [
-  "why we add <em>-s</em> only after <em>he, she, it</em> (one person or thing)",
-  "why the <em>-s</em> moves to <em>does</em>: <em>Does she work?</em> not <em>Does she works?</em>"
- ],
+ "know": ["<em>works, watches, studies, has</em>", "<em>do</em> and <em>does</em>", "<em>always, usually, often, sometimes, never</em>"],
+ "understand": ["<em>-s</em> only after <em>he, she, it</em>", "<em>Does she work?</em> (not <em>works</em>)"],
  "able": [
   "describe your daily routine and your job",
   "ask and answer questions like <em>Where do you live?</em> and <em>What does your partner do?</em>",

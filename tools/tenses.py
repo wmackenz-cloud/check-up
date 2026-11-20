@@ -180,14 +180,13 @@ def worksheet(d):
     head = HEAD.format(title=T(d["title"]), item="tense-%d" % n, eyebrow="English grammar practice &middot; Verb tenses &middot; " + T(d["tagline"]), h1=T(d["title"]))
     aims = """<section class="aims" aria-labelledby="aims-h">
 <h2 id="aims-h">What this lesson is for</h2>
-<p class="why"><strong>Why this matters:</strong> %s</p>
 <div class="aims-grid">
+<div><h3>You will be able to</h3><ul>%s</ul></div>
 <div><h3>You will know</h3><ul>%s</ul></div>
 <div><h3>You will understand</h3><ul>%s</ul></div>
-<div><h3>You will be able to</h3><ul>%s</ul></div>
 </div>
 </section>
-""" % (d["why"], lis(d["know"]), lis(d["understand"]), lis(d["able"]))
+""" % (lis(d["able"]), lis(d["know"]), lis(d["understand"]))
     mis = """<section class="mistakes" aria-labelledby="mis-h">
 <h2 id="mis-h">Common mistakes to watch for</h2>
 <ul>

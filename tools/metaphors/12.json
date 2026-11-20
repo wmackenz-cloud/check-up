@@ -3,14 +3,8 @@
   "title": "Bending the Rules",
   "tagline": "playing with idioms, and the garbled forms to avoid",
   "why": "Native speakers twist idioms on purpose for humour, headlines and emphasis, and they also garble them by accident. Knowing the difference lets you enjoy wordplay, avoid embarrassing errors and judge when a fixed phrase is better left alone.",
-  "know": [
-    "the correct forms of eight commonly garbled expressions, such as <em>for all intents and purposes</em> and <em>a moot point</em>",
-    "the terms <em>mixed metaphor</em>, <em>malapropism</em>, <em>eggcorn</em> and <em>dead metaphor</em>"
-  ],
-  "understand": [
-    "that a deliberate twist works only when the original idiom is instantly recognisable",
-    "why stale cliches weaken writing, and when plain language beats an idiom"
-  ],
+  "know": ["correct forms: <em>for all intents and purposes, a moot point</em>", "<em>mixed metaphor, malapropism, eggcorn, dead metaphor</em>"],
+  "understand": ["a twist needs a well-known original", "stale cliches vs plain language"],
   "able": [
     "spot and correct garbled idioms in speech and writing",
     "extend or twist a metaphor deliberately for effect",

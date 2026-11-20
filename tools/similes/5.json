@@ -3,14 +3,8 @@
   "title": "Ironic and Humorous Similes",
   "tagline": "saying the opposite, with a straight face",
   "why": "Ironic similes are everywhere in British and Canadian conversation, and they are easy to misread: <em>as clear as mud</em> means very unclear. Understanding them, and knowing when it's safe to use them, is a mark of real fluency.",
-  "know": [
-    "the ironic frame <strong>(about) as + positive adjective + as + something that lacks that quality</strong>",
-    "eight common ironic and humorous similes, with their British and North American versions"
-  ],
-  "understand": [
-    "how <em>about</em> and a flat, deadpan voice signal that a simile is ironic",
-    "why ironic similes can be funny among friends but risky with strangers or in writing"
-  ],
+  "know": ["<strong>(about) as + positive adjective + as</strong> + its opposite", "eight ironic similes, British and North American"],
+  "understand": ["<em>about</em> + deadpan voice = irony", "funny with friends, risky with strangers"],
   "able": [
     "recognise irony instantly and respond to it naturally",
     "use ironic similes to complain, tease or criticise in a light, indirect way",

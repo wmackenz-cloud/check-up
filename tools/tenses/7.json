@@ -3,15 +3,8 @@
   "title": "Past Perfect",
   "tagline": "the earlier past: had + past participle",
   "why": "When you tell a story, the past perfect shows which thing happened first. It helps the listener follow the order of events without confusion.",
-  "know": [
-    "the form: <em>had</em> + past participle (<em>had left</em>, <em>had seen</em>, <em>had finished</em>)",
-    "the signal words <em>by the time</em>, <em>already</em>, <em>before</em>, <em>after</em>, <em>never ... before</em>",
-    "common past participles: <em>gone</em>, <em>eaten</em>, <em>forgotten</em>, <em>taken</em>, <em>written</em>"
-  ],
-  "understand": [
-    "the difference between <em>When I arrived, she left</em> (she left after I came) and <em>When I arrived, she had left</em> (she left before I came)",
-    "why we often don't need the past perfect when <em>before</em> or <em>after</em> already makes the order clear"
-  ],
+  "know": ["<em>had</em> + past participle: <em>had left, had seen</em>", "<em>by the time, already, before, after</em>", "<em>gone, eaten, forgotten, taken, written</em>"],
+  "understand": ["<em>she left</em> vs <em>she had left</em>", "no past perfect needed with <em>before</em> / <em>after</em>"],
   "able": [
     "tell a story with two past times and make the order clear",
     "explain a past situation: <em>I was hungry because I hadn't eaten.</em>",

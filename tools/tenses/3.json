@@ -3,14 +3,8 @@
  "title": "Present Perfect",
  "tagline": "experience and news: have / has + past participle",
  "why": "The present perfect connects the past to now. You need it to talk about your experience, give news, and say how long something has lasted, for example in a job interview.",
- "know": [
-  "the form <em>have / has + past participle</em>, with irregular verbs: <em>go &rarr; gone</em>, <em>see &rarr; seen</em>, <em>write &rarr; written</em>",
-  "the time words <em>ever, never, just, already, yet, for, since</em>"
- ],
- "understand": [
-  "why a finished time (<em>yesterday, in 2019, two days ago</em>) needs the past simple",
-  "the difference between <em>for</em> (a length of time) and <em>since</em> (a starting point)"
- ],
+ "know": ["<em>have / has</em> + past participle: <em>gone, seen, written</em>", "<em>ever, never, just, already, yet, for, since</em>"],
+ "understand": ["<em>yesterday, in 2019</em> + past simple", "<em>for</em> (length) vs <em>since</em> (start)"],
  "able": [
   "talk about your life experience: <em>I've never tried skiing.</em>",
   "give news: <em>I've just found a new job.</em>",

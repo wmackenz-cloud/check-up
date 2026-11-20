@@ -281,11 +281,10 @@ def student(L):
 <main class="sheet">""" % (SERIES, n, T(L["title"])))
     page.append("""<section class="aims" aria-labelledby="aims-h">
 <h2 id="aims-h">What this lesson is for</h2>
-<p class="why"><strong>Why this matters:</strong> %s</p>
 <div class="aims-grid">
+<div><h3>You will be able to</h3><ul>%s</ul></div>
 <div><h3>You will know</h3><ul>%s</ul></div>
 <div><h3>You will understand</h3><ul>%s</ul></div>
-<div><h3>You will be able to</h3><ul>%s</ul></div>
 </div>
 </section>
 <section class="mistakes" aria-labelledby="mis-h">
@@ -293,7 +292,7 @@ def student(L):
 <ul>
 %s
 </ul>
-</section>""" % (L["why"], li(L["know"]), li(L["understand"]), li(L["able"]),
+</section>""" % (li(L["able"]), li(L["know"]), li(L["understand"]),
                  "\n".join("<li><del>%s</del> %s</li>" % (T(w), r) for w, r in L["mistakes"])))
     page.append("<h2>Warm-up</h2>\n<ul>\n%s\n</ul>" % "\n".join("<li>%s</li>" % w for w in L["warmup"]))
     page.append("<h2>Key vocabulary</h2>\n" + vocab_html(L))

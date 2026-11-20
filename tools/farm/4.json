@@ -3,15 +3,8 @@
  "title": "Crops and the Farming Year",
  "hint": "Wheat, barley, corn, canola, hay and straw; plough, sow, harvest; describing a process with the passive",
  "why": "bread, cereal, cooking oil and chips all start in a farmer's field. Knowing the main crops and the steps of the farming year helps you read food labels and news stories, and the language for describing a process (first, then, the seeds are sown) is useful in any job.",
- "know": [
-  "the main crops: <em>wheat, barley, oats, corn (maize), potatoes, canola (rapeseed), soybeans</em>",
-  "the farming verbs: <em>plough, sow, plant, spray, harvest, store, rotate</em>",
-  "the difference between <em>hay</em> and <em>straw</em>"
- ],
- "understand": [
-  "why we use the passive for a process: <em>The seeds are sown in April.</em> (what happens matters, not who does it)",
-  "how sequencing words show the order of steps: <em>first, then, after that, finally</em>"
- ],
+ "know": ["<em>wheat, barley, oats, corn, canola</em>", "<em>plough, sow, spray, harvest, rotate</em>", "<em>hay</em> vs <em>straw</em>"],
+ "understand": ["passive for a process: <em>The seeds are sown in April.</em>", "<em>first, then, after that, finally</em>"],
  "able": [
   "name the crops that grow in your country and say what they are used for",
   "describe the farming year, season by season",

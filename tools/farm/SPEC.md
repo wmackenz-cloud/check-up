@@ -12,7 +12,8 @@ HTML (<em>, <strong>, <br>) is allowed in: why (top), know/understand/able, mist
 say, pick/type pre/post/ask, reading text, speaking items, sort rule, all teacher fields.
 Plain text only in: every "why" on items and chips, match l/r, pick opts, type ok, order answer/alt, spot q/bad/fix/opts, chip t.
 
-Top level: n, title, hint (one line for the index), why, know[2-3], understand[2], able[2-3],
+Top level: n, title, hint (one line for the index), why (kept but no longer shown), able[2-3] (shown first), know[2-3] and understand[2]
+(short phrases with key examples, 2-8 words, not sentences),
 mistakes[[wrong, right-html] x5-6], warmup[3], vocab[{h, note?, cols[], rows[[...]]}], say (pronunciation hint html),
 exercises[...], teacher{...}, bank[20].
 

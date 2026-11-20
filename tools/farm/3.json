@@ -3,15 +3,8 @@
  "title": "Farm Machines and Tools",
  "hint": "Tractor, plough, combine, baler; spade, rake, hoe, pitchfork; used to, used for, so that, in order to",
  "why": "farm machines are big, loud and everywhere in the countryside, and garden tools are in almost every home. Knowing their names, and how to say what something is <em>used for</em>, helps you describe any tool or machine, on a farm or in your own garden.",
- "know": [
-  "farm machines: <em>tractor, trailer, plough, harrow, seed drill, sprayer, combine harvester, baler, quad bike</em>",
-  "hand tools: <em>spade, shovel, pitchfork, hoe, rake, wheelbarrow, shears, bucket</em>",
-  "purpose phrases: <em>is used to, is used for, to, in order to, so that</em>"
- ],
- "understand": [
-  "the difference between <em>is used to + verb</em> and <em>is used for + -ing</em>",
-  "why we say <em>I came here to learn</em>, not <em>for learn</em> or <em>for to learn</em>"
- ],
+ "know": ["<em>tractor, plough, seed drill, combine harvester</em>", "<em>spade, pitchfork, hoe, rake, wheelbarrow</em>", "<em>is used to, is used for, in order to, so that</em>"],
+ "understand": ["<em>is used to + verb</em>, <em>is used for + -ing</em>", "<em>I came here to learn</em> (not <em>for learn</em>)"],
  "able": [
   "name common farm machines and garden tools",
   "explain what a machine or tool does and what it is used for",

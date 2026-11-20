@@ -3,15 +3,8 @@
  "title": "Being a Tourist",
  "hint": "Directions, tickets, prices and opening times; closed questions (Can I pay by card?), open questions (How do I get to ...?) and polite Could you tell me ...?",
  "why": "on holiday, almost everything starts with a question: where the station is, how much a ticket costs, what time the museum closes. If the question is clear and polite, people are happy to help, and you get the answer you need the first time.",
- "know": [
-  "travel words: <em>return ticket, platform, timetable, guided tour, admission, opening hours, souvenir</em>",
-  "the two main kinds of question: <strong>closed</strong> (<em>Does this bus go to the airport?</em>) and <strong>open</strong> (<em>How do I get to the airport?</em>)",
-  "polite openers for strangers: <em>Could you tell me ...? Do you know ...?</em>"
- ],
- "understand": [
-  "why the helper verb comes before the subject in a direct question: <em>What time <strong>does</strong> the museum open?</em>",
-  "why it goes back to normal order after <em>Could you tell me</em>: <em>Could you tell me where <strong>the station is</strong>?</em>"
- ],
+ "know": ["<em>return ticket, platform, timetable, admission, souvenir</em>", "<strong>closed</strong> and <strong>open</strong> questions", "<em>Could you tell me ...? Do you know ...?</em>"],
+ "understand": ["<em>What time <strong>does</strong> the museum open?</em>", "<em>Could you tell me where <strong>the station is</strong>?</em>"],
  "able": [
   "ask for directions, prices, times and tickets, and understand the answers",
   "check that you understood: <em>So I turn left at the lights?</em>",

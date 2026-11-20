@@ -3,15 +3,8 @@
   "title": "Past Perfect Continuous",
   "tagline": "how long something had been happening",
   "why": "This tense explains a past situation: how long something had been going on, or why someone looked tired, wet or upset. It makes your stories clearer and more natural.",
-  "know": [
-    "the form: <em>had been</em> + verb<em>-ing</em> (<em>had been waiting</em>, <em>had been working</em>)",
-    "the time words <em>for</em>, <em>since</em>, <em>all day</em>, <em>how long</em>",
-    "state verbs that use the past perfect simple instead: <em>had known</em>, <em>had had</em>, <em>had been</em>"
-  ],
-  "understand": [
-    "the difference between <em>I had been painting</em> (the activity, maybe not finished) and <em>I had painted two rooms</em> (the result, finished)",
-    "how this tense explains a past result: <em>Her eyes were red because she had been crying.</em>"
-  ],
+  "know": ["<em>had been</em> + verb<em>-ing</em>: <em>had been waiting</em>", "<em>for, since, all day, how long</em>", "state verbs: <em>had known, had had</em>"],
+  "understand": ["<em>had been painting</em> (activity) vs <em>had painted</em> (result)", "<em>Her eyes were red because she had been crying.</em>"],
   "able": [
     "say how long something had been happening before another past moment",
     "give the reason for a past situation you could see or feel",

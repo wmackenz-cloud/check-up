@@ -3,14 +3,8 @@
   "title": "Future Continuous",
   "tagline": "in progress at a future time: will be + -ing",
   "why": "Use it to say what you will be in the middle of at a time in the future, and to ask polite questions about people's plans. It sounds natural and friendly in everyday English.",
-  "know": [
-    "the form <em>will be</em> + verb-<em>ing</em>: <em>I'll be working</em>",
-    "time phrases like <em>at 8 pm tomorrow</em>, <em>this time next week</em> and <em>when you arrive</em>"
-  ],
-  "understand": [
-    "the difference between an action <em>in progress</em> at a future time and a single future action",
-    "why <em>Will you be using the car?</em> sounds softer and more polite than <em>Will you use the car?</em>"
-  ],
+  "know": ["<em>will be</em> + verb-<em>ing</em>: <em>I'll be working</em>", "<em>this time next week, at 8 pm tomorrow</em>"],
+  "understand": ["an action <em>in progress</em> in the future", "polite <em>Will you be using the car?</em>"],
   "able": [
     "say what you will be doing at a certain time tomorrow or next week",
     "ask politely about someone's plans before you ask a favour"

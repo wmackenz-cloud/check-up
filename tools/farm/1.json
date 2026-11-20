@@ -3,15 +3,8 @@
  "title": "Farm Animals and Their Young",
  "hint": "Male, female and young animals; herd, flock, litter; sheep, geese, oxen, cattle",
  "why": "farm animals come up everywhere: in stories, on menus, at the zoo with children, on holiday in the countryside. The words for males, females, babies and groups are short but different from animal to animal, and the plurals have some famous traps.",
- "know": [
-  "the names for the male, the female and the young of common farm animals: <em>bull, cow, calf; ram, ewe, lamb</em>",
-  "group words: <em>a herd of cows, a flock of sheep, a litter of piglets</em>",
-  "the sounds animals make: <em>moo, baa, oink, neigh, cluck, crow</em>"
- ],
- "understand": [
-  "why we say <em>three sheep</em> and <em>two geese</em>, not <em>sheeps</em> or <em>gooses</em>",
-  "why <em>cattle</em> always takes a plural verb: <em>The cattle are in the field.</em>"
- ],
+ "know": ["<em>bull, cow, calf; ram, ewe, lamb</em>", "<em>herd, flock, litter</em>", "animal sounds: <em>moo, baa, oink</em>"],
+ "understand": ["<em>three sheep, two geese</em> (not <em>sheeps, gooses</em>)", "<em>the cattle are</em> (always plural)"],
  "able": [
   "name the animals you see on a farm, and their young",
   "describe a farm visit: what animals there were, how many and what they were doing",
